@@ -136,3 +136,7 @@ includes[adminimal] = makefiles/themes/adminimal.make
 includes[bootstrap] = makefiles/themes/bootstrap.make
 ;includes[foundation] = makefiles/themes/foundation.make
 ;includes[omega] = makefiles/themes/omega.make
+
+;=== Contrib modules for MDA34 ================================================
+projects[domain][subdir] = contrib
+projects[domain][version] = "3.11"
