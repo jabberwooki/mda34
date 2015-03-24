@@ -33,6 +33,18 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'machine_name' => 'parents_mda34_org',
     ),
   );
+  $domain_aliases['philado_mda34_org'] = array(
+    'philado.mda34.dev' => array(
+      'pattern' => 'philado.mda34.dev',
+      'redirect' => 0,
+      'machine_name' => 'philado_mda34_org',
+    ),
+    'philado.mda34.korora.fr' => array(
+      'pattern' => 'philado.mda34.korora.fr',
+      'redirect' => 0,
+      'machine_name' => 'philado_mda34_org',
+    ),
+  );
   $domain_aliases['radio_mda34_org'] = array(
     'radio.mda34.dev' => array(
       'pattern' => 'radio.mda34.dev',
