@@ -1,5 +1,38 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Domains feature.
  */
+
+include_once 'mda_domains.features.inc';
+
+/**
+ * Implements hook_block_info().
+ */
+function mda_domains_block_info() {
+	$blocks = array();
+
+	$blocks['mda_domain_name'] = array(
+			'info' => t('MDA domain_name'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+
+	return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function mda_domains_block_view($delta = '') {
+	switch ($delta) {
+		case 'mda_domain_name':
+			$block['subject'] = '';
+			$content = '';
+			$current_domain = domain_get_domain();
+			if ($current_domain['machine_name'] != 'www_mda34_org') {
+				$block['content'] = $current_domain['sitename'];
+			}
+			return $block;
+			break;
+	}
+}
