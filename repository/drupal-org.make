@@ -168,8 +168,3 @@ projects[filefield_sources_scald][version] = "1.0-rc2"
 
 projects[plupload][subdir] = contrib
 projects[plupload][version] = "1.7"
-
-libraries[plupload][download][type] = "file"
-libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.tar.gz"
-libraries[plupload][directory_name] = "plupload"
-libraries[plupload][destination] = "libraries"
