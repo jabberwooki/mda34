@@ -137,6 +137,39 @@ includes[bootstrap] = makefiles/themes/bootstrap.make
 ;includes[foundation] = makefiles/themes/foundation.make
 ;includes[omega] = makefiles/themes/omega.make
 
-;=== Contrib modules for MDA34 ================================================
+;=== Contrib modules and libraries for MDA34 ================================================
+;--- Domain Access related ----------------------------------------------------
 projects[domain][subdir] = contrib
 projects[domain][version] = "3.11"
+
+;--- Scald and media related ------------------------------------------------------------
+projects[scald][subdir] = contrib
+projects[scald][version] = "1.3"
+
+projects[scald_file][subdir] = contrib
+projects[scald_file][version] = "1.01"
+
+projects[scald_soundcloud][subdir] = contrib
+projects[scald_soundcloud][version] = "1.2"
+
+projects[scald_gallery][subdir] = contrib
+projects[scald_gallery][version] = "2.4"
+
+libraries[galleria][download][type] = "file"
+libraries[galleria][download][url] = "https://github.com/aino/galleria/archive/1.4.2.tar.gz"
+libraries[galleria][directory_name] = "galleria"
+libraries[galleria][destination] = "libraries"
+
+projects[filefield_sources][subdir] = contrib
+projects[filefield_sources][version] = "1.9"
+
+projects[filefield_sources_scald][subdir] = contrib
+projects[filefield_sources_scald][version] = "1.0-rc2"
+
+projects[plupload][subdir] = contrib
+projects[plupload][version] = "1.7"
+
+libraries[plupload][download][type] = "file"
+libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.tar.gz"
+libraries[plupload][directory_name] = "plupload"
+libraries[plupload][destination] = "libraries"
