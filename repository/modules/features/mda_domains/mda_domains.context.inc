@@ -23,18 +23,7 @@ function mda_domains_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'mda_domains-mda_domain_name' => array(
-          'module' => 'mda_domains',
-          'delta' => 'mda_domain_name',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables
