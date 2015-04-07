@@ -139,6 +139,18 @@ function mda_multimedia_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'front_block' => array(
+        'custom_settings' => TRUE,
+      ),
+      'content_block' => array(
+        'custom_settings' => TRUE,
+      ),
+      'sidebar_block' => array(
+        'custom_settings' => TRUE,
+      ),
+      'zoom_block' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -149,6 +161,22 @@ function mda_multimedia_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'front_block' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'content_block' => array(
+            'weight' => '-2',
+            'visible' => TRUE,
+          ),
+          'sidebar_block' => array(
+            'weight' => '-2',
+            'visible' => TRUE,
+          ),
+          'zoom_block' => array(
             'weight' => '-2',
             'visible' => TRUE,
           ),
@@ -232,6 +260,15 @@ function mda_multimedia_strongarm() {
       'render_language' => 'XHTML',
       'parseable' => TRUE,
       'formats' => array(),
+    ),
+    'list' => array(
+      'name' => 'list',
+      'title' => 'List',
+      'description' => 'The Entity lists Rep',
+      'render_language' => 'XHTML',
+      'parseable' => TRUE,
+      'formats' => array(),
+      'provider' => 'scald',
     ),
   );
   $export['scald_custom_contexts'] = $strongarm;
