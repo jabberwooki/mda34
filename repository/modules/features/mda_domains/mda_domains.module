@@ -40,12 +40,12 @@ function mda_domains_block_view($delta = '') {
 /**
  * Implements MODULE_preprocess_menu_link().
  */
-	function mda_domains_preprocess_menu_link(&$variables) {
-		if (substr($variables['element']['#href'],0,4) == 'http') {
-			$current_domain = domain_get_domain();
-			$domain_suffix = substr($current_domain['subdomain'], -3);
-			if ($domain_suffix != 'org') {
-				$variables['element']['#href'] = str_replace('org', $domain_suffix, $variables['element']['#href']);
-			}
+function mda_domains_preprocess_menu_link(&$variables) {
+	if (substr($variables['element']['#href'],0,4) == 'http') {
+		$current_domain = domain_get_domain();
+		$domain_parts = explode('.mda34.', $current_domain['subdomain']);
+		if ($domain_parts[1] != 'org') {
+			$variables['element']['#href'] = str_replace('org', $domain_parts[1], $variables['element']['#href']);
 		}
 	}
+}
