@@ -137,12 +137,18 @@ includes[bootstrap] = makefiles/themes/bootstrap.make
 ;includes[foundation] = makefiles/themes/foundation.make
 ;includes[omega] = makefiles/themes/omega.make
 
-;=== Contrib modules and libraries for MDA34 ================================================
+;=== Contrib modules and libraries for MDA34 ==================================
 ;--- Domain Access related ----------------------------------------------------
 projects[domain][subdir] = contrib
 projects[domain][version] = "3.11"
 
-;--- Scald and media related ------------------------------------------------------------
+projects[domaincontext][subdir] = contrib
+projects[domaincontext][version] = "1.0-alpha1"
+
+projects[domain_menu_access][subdir] = contrib
+projects[domain_menu_access][version] = "1.2"
+
+;--- Scald and media related --------------------------------------------------
 projects[scald][subdir] = contrib
 projects[scald][version] = "1.3"
 
