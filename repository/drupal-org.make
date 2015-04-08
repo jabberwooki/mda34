@@ -148,6 +148,9 @@ projects[domaincontext][version] = "1.0-alpha1"
 projects[domain_menu_access][subdir] = contrib
 projects[domain_menu_access][version] = "1.2"
 
+projects[domain_views][subdir] = contrib
+projects[domain_views][version] = "1.5"
+
 ;--- Scald and media related --------------------------------------------------
 projects[scald][subdir] = contrib
 projects[scald][version] = "1.3"
