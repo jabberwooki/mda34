@@ -119,7 +119,7 @@ function kbootstrap_strongarm() {
   $strongarm->name = 'theme_mda_settings';
   $strongarm->value = array(
     'toggle_logo' => 1,
-    'toggle_name' => 0,
+    'toggle_name' => 1,
     'toggle_slogan' => 1,
     'toggle_node_user_picture' => 1,
     'toggle_comment_user_picture' => 1,
@@ -145,6 +145,9 @@ function kbootstrap_strongarm() {
     'bootstrap_region_well-highlighted' => '',
     'bootstrap_region_well-help' => '',
     'bootstrap_region_well-content' => '',
+    'bootstrap_region_well-preface_first' => '',
+    'bootstrap_region_well-preface_second' => '',
+    'bootstrap_region_well-preface_third' => '',
     'bootstrap_region_well-sidebar_first' => 'well',
     'bootstrap_region_well-sidebar_second' => '',
     'bootstrap_region_well-footer' => '',
