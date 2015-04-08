@@ -11,7 +11,7 @@ function mda_domains_domain_default_domains() {
   $domains = array();
   $domains['ados_mda34_org'] = array(
     'subdomain' => 'ados.mda34.org',
-    'sitename' => 'Espace Adolescents',
+    'sitename' => 'espace adolescents',
     'scheme' => 'http',
     'valid' => 1,
     'weight' => 1,
@@ -20,7 +20,7 @@ function mda_domains_domain_default_domains() {
   );
   $domains['parents_mda34_org'] = array(
     'subdomain' => 'parents.mda34.org',
-    'sitename' => 'Espace Parents',
+    'sitename' => 'espace parents',
     'scheme' => 'http',
     'valid' => 1,
     'weight' => 2,
@@ -29,7 +29,7 @@ function mda_domains_domain_default_domains() {
   );
   $domains['philado_mda34_org'] = array(
     'subdomain' => 'philado.mda34.org',
-    'sitename' => 'Philado',
+    'sitename' => 'philado',
     'scheme' => 'http',
     'valid' => 1,
     'weight' => 5,
@@ -38,7 +38,7 @@ function mda_domains_domain_default_domains() {
   );
   $domains['radio_mda34_org'] = array(
     'subdomain' => 'radio.mda34.org',
-    'sitename' => 'La Radio',
+    'sitename' => 'la radio',
     'scheme' => 'http',
     'valid' => 1,
     'weight' => 4,
@@ -47,7 +47,7 @@ function mda_domains_domain_default_domains() {
   );
   $domains['reseau_pro_mda34_org'] = array(
     'subdomain' => 'reseau-pro.mda34.org',
-    'sitename' => 'Espace Pro',
+    'sitename' => 'espace pro',
     'scheme' => 'http',
     'valid' => 1,
     'weight' => 3,
@@ -56,7 +56,7 @@ function mda_domains_domain_default_domains() {
   );
   $domains['www_mda34_org'] = array(
     'subdomain' => 'www.mda34.org',
-    'sitename' => 'Portail MDA34',
+    'sitename' => 'maison des adolescents',
     'scheme' => 'http',
     'valid' => 1,
     'weight' => -1,
