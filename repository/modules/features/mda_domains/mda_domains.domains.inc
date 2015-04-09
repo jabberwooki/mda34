@@ -32,7 +32,7 @@ function mda_domains_domain_default_domains() {
     'sitename' => 'philado',
     'scheme' => 'http',
     'valid' => 1,
-    'weight' => 5,
+    'weight' => 3,
     'is_default' => 0,
     'machine_name' => 'philado_mda34_org',
   );
@@ -50,7 +50,7 @@ function mda_domains_domain_default_domains() {
     'sitename' => 'espace pro',
     'scheme' => 'http',
     'valid' => 1,
-    'weight' => 3,
+    'weight' => 5,
     'is_default' => 0,
     'machine_name' => 'reseau_pro_mda34_org',
   );
