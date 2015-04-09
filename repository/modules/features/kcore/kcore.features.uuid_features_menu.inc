@@ -44,7 +44,7 @@ function kcore_menu_default_uuid_features_menu() {
     'options' => array(
       'alter' => TRUE,
       'attributes' => array(
-        'title' => 'Accueil portail MDA34',
+        'title' => '',
       ),
     ),
     'module' => 'menu',
@@ -139,7 +139,7 @@ function kcore_menu_default_uuid_features_menu() {
     'options' => array(
       'domain_menu_access' => array(
         'show' => array(
-          'd4' => 'd4',
+          'd6' => 'd6',
         ),
       ),
       'alter' => TRUE,
