@@ -1,0 +1,48 @@
+<?php
+/**
+ * @file
+ * Code for the Structures feature.
+ */
+
+include_once 'mda_structures.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mda_structures_form_structure_node_form_alter(&$form, &$form_state, $form_id) {
+	// Large weight value pushes "Paramétrages MDA supplémentaires" tab down the list of vertical tabs
+	$form['#groups']['group_additionnal_settings']->weight = 1000;
+}
+
+/**
+ * Implements template_preprocess_field().
+ */
+function mda_structures_preprocess_field(&$variables) {
+	if ($variables['element']['#bundle'] == 'structure') {
+		if ($variables['element']['#field_name'] == 'field_email') {
+			$variables['label'] = 'Email'; // Replaces 'Contact email'.
+		}
+		if ($variables['element']['#field_name'] == 'field_phone') {
+			$variables['label'] = 'Tél'; // Replaces 'Contact téléphone'.
+			$phone_number = $variables['element'][0]['#markup'];
+			if ($phone_number) {
+			  for($i=0;$i<5;$i++) {
+			    $subnumbers[] = substr($phone_number, $i*2, 2);
+			  }
+			  $variables['items'][0]['#markup'] = implode(' ', $subnumbers);
+			}
+		}
+	}
+}
+
+/**
+ * Implements hook_init().
+ */
+function mda_structures_init() {
+	// Fixes bug appearing when setting field_coordinates as leaflet display.
+	// Thanks to jrb for his solution described at https://www.drupal.org/node/2156371#comment-8670755.
+	global $theme_key;
+	if (strpos($theme_key, 'bootstrap')===FALSE) {
+		include_once(drupal_get_path('theme', 'bootstrap') . '/theme/process.inc');
+	}
+}
