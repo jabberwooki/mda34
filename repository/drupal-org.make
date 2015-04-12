@@ -78,6 +78,9 @@ projects[views][subdir] = contrib
 projects[views][version] = "3.10"
 
 ;=== Modules - optional =======================================================
+projects[addressfield][subdir] = contrib
+projects[addressfield][version] = "1.0"
+
 ;projects[bean][subdir] = contrib
 ;projects[bean][version] = "1.9"
 
@@ -98,6 +101,12 @@ projects[entityreference][version] = "1.1"
 projects[field_collection][subdir] = contrib
 projects[field_collection][version] = "1.0-beta8"
 
+projects[field_formatter_class][subdir] = contrib
+projects[field_formatter_class][version] = "1.1"
+
+projects[field_formatter_settings][subdir] = contrib
+projects[field_formatter_settings][version] = "1.1"
+
 projects[filefield_sources][subdir] = contrib
 projects[filefield_sources][version] = "1.9"
 
@@ -106,6 +115,9 @@ projects[filefield_sources][version] = "1.9"
 
 ;projects[migrate_extras][subdir] = contrib
 ;projects[migrate_extras][version] = "2.5"
+
+projects[phone][subdir] = contrib
+projects[phone][version] = "1.0-beta1"
 
 ;projects[views_bulk_operations][subdir] = contrib
 ;projects[views_bulk_operations][version] = "3.2"
@@ -177,3 +189,27 @@ projects[filefield_sources_scald][version] = "1.0-rc2"
 
 projects[plupload][subdir] = contrib
 projects[plupload][version] = "1.7"
+
+;--- Maps ---------------------------------------------------------------------
+projects[geocoder][subdir] = contrib
+projects[geocoder][version] = "1.2"
+projects[geocoder][patch][] = "https://www.drupal.org/files/issues/geocoder-mapquest-nominatim-1748412-46.patch"
+
+projects[geofield][subdir] = contrib
+projects[geofield][version] = "2.3"
+
+projects[geophp][subdir] = contrib
+projects[geophp][version] = "1.7"
+
+projects[leaflet][subdir] = contrib
+projects[leaflet][version] = "1.1"
+
+;libraries[leaflet][download][type] = "file"
+;libraries[leaflet][download][url] = "https://github.com/Leaflet/Leaflet/archive/v0.7.3.zip"
+;libraries[leaflet][directory_name] = "leaflet"
+;libraries[leaflet][destination] = "libraries"
+
+
+;--- Others -------------------------------------------------------------------
+projects[office_hours][subdir] = contrib
+projects[office_hours][version] = "1.4"
