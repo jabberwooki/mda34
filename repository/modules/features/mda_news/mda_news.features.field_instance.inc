@@ -20,14 +20,18 @@ function mda_news_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 3,
       ),
@@ -35,6 +39,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'field_formatter_class' => '',
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -107,7 +112,9 @@ function mda_news_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'list_default',
         'weight' => 1,
       ),
@@ -153,6 +160,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',
@@ -162,6 +170,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'sdl_editor_representation',
@@ -210,6 +219,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',
@@ -219,6 +229,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'sdl_editor_representation',
@@ -267,6 +278,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',
@@ -276,6 +288,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'sdl_editor_representation',
@@ -324,18 +337,20 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',
         'weight' => 3,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
-        'type' => 'sdl_editor_representation',
+        'type' => 'full',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -381,6 +396,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',
@@ -390,6 +406,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'sdl_editor_representation',
@@ -441,7 +458,9 @@ function mda_news_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'list_default',
         'weight' => 2,
       ),
