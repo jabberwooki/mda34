@@ -55,29 +55,6 @@ function mda_structures_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'publics' => array(
-      'name' => 'Publics',
-      'machine_name' => 'publics',
-      'description' => '',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
-    ),
     'structure_types' => array(
       'name' => 'Types de structure',
       'machine_name' => 'structure_types',
