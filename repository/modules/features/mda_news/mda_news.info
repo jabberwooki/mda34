@@ -1,4 +1,4 @@
-name = Actualités
+name = News
 core = 7.x
 package = App
 version = 7.x-1.0
