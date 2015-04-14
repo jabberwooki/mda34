@@ -79,6 +79,10 @@ function mda_structures_strongarm() {
             'weight' => '0',
             'visible' => TRUE,
           ),
+          'teaser' => array(
+            'weight' => '15',
+            'visible' => FALSE,
+          ),
         ),
         'sharethis' => array(
           'default' => array(
@@ -92,6 +96,10 @@ function mda_structures_strongarm() {
           'list' => array(
             'weight' => '1',
             'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '14',
+            'visible' => FALSE,
           ),
         ),
       ),
@@ -142,6 +150,13 @@ function mda_structures_strongarm() {
   $strongarm->name = 'node_submitted_structure';
   $strongarm->value = 0;
   $export['node_submitted_structure'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_structure_pattern';
+  $strongarm->value = 'annuaire/[node:title]';
+  $export['pathauto_node_structure_pattern'] = $strongarm;
 
   return $export;
 }
