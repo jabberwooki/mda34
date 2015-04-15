@@ -93,6 +93,8 @@ function kcore_strongarm() {
   $strongarm->name = 'sharethis_node_types';
   $strongarm->value = array(
     'news' => 'news',
+    'event' => 'event',
+    'faq' => 'faq',
     'structure' => 'structure',
     'media_tester' => 0,
     'page' => 0,
