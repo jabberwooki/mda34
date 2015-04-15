@@ -139,7 +139,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['header']['view']['field'] = 'view';
   $handler->display->display_options['header']['view']['label'] = 'Types d\'événement';
   $handler->display->display_options['header']['view']['empty'] = TRUE;
-  $handler->display->display_options['header']['view']['view_to_insert'] = 'isotope_filters:event_types_filter';
+  $handler->display->display_options['header']['view']['view_to_insert'] = 'events_filter:event_types_filter';
   $handler->display->display_options['path'] = 'agenda';
 
   /* Display: Accueil portail (ados) */
@@ -624,6 +624,75 @@ function mda_events_views_default_views() {
     t('Bloc événements pros'),
   );
   $export['events'] = $view;
+
+  $view = new view();
+  $view->name = 'events_filter';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'taxonomy_term_data';
+  $view->human_name = 'Events filter';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Isotope filters';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'plus';
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Appliquer';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Réinitialiser';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Trier par';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  /* Relation: Terme de taxonomie: Contenu utilisant Type d&#039;événement */
+  $handler->display->display_options['relationships']['reverse_field_event_type_node']['id'] = 'reverse_field_event_type_node';
+  $handler->display->display_options['relationships']['reverse_field_event_type_node']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['relationships']['reverse_field_event_type_node']['field'] = 'reverse_field_event_type_node';
+  $handler->display->display_options['relationships']['reverse_field_event_type_node']['required'] = TRUE;
+  /* Champ: Terme de taxonomie: Nom */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['name']['element_default_classes'] = FALSE;
+  /* Sort criterion: Terme de taxonomie: Nom */
+  $handler->display->display_options['sorts']['name']['id'] = 'name';
+  $handler->display->display_options['sorts']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['sorts']['name']['field'] = 'name';
+  /* Filter criterion: Vocabulaire de taxonomie: Nom système */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'event_types' => 'event_types',
+  );
+
+  /* Display: Filtre Agenda */
+  $handler = $view->new_display('block', 'Filtre Agenda', 'event_types_filter');
+  $translatables['events_filter'] = array(
+    t('Master'),
+    t('Isotope filters'),
+    t('plus'),
+    t('Appliquer'),
+    t('Réinitialiser'),
+    t('Trier par'),
+    t('Asc'),
+    t('Desc'),
+    t('field_event_type'),
+    t('Filtre Agenda'),
+  );
+  $export['events_filter'] = $view;
 
   return $export;
 }

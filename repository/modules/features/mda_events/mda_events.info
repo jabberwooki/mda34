@@ -94,6 +94,7 @@ features[variable][] = node_preview_event
 features[variable][] = node_submitted_event
 features[variable][] = pathauto_node_event_pattern
 features[views_view][] = events
+features[views_view][] = events_filter
 features_exclude[dependencies][fe_block] = fe_block
 features_exclude[dependencies][kcore] = kcore
 features_exclude[dependencies][leaflet] = leaflet
