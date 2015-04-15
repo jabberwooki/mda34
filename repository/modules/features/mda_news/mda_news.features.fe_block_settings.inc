@@ -41,7 +41,7 @@ function mda_news_default_fe_block_settings() {
 
   $export['views-events-block_front_events'] = array(
     'cache' => -1,
-    'css_class' => 'col-sm-4',
+    'css_class' => 'col-sm-6',
     'custom' => 0,
     'delta' => 'events-block_front_events',
     'module' => 'views',
