@@ -21,7 +21,6 @@ function mda_news_context_default_contexts() {
       'values' => array(
         2 => 2,
         3 => 3,
-        6 => 6,
       ),
     ),
     'path' => array(
