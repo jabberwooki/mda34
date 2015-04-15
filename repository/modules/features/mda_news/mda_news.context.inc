@@ -70,23 +70,23 @@ function mda_news_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-news-block_1' => array(
+        'views-news-block_front_ados' => array(
           'module' => 'views',
-          'delta' => 'news-block_1',
+          'delta' => 'news-block_front_ados',
           'region' => 'preface_first',
           'weight' => '-10',
         ),
-        'views-news-block_2' => array(
+        'views-news-block_front_parents' => array(
           'module' => 'views',
-          'delta' => 'news-block_2',
+          'delta' => 'news-block_front_parents',
           'region' => 'preface_second',
-          'weight' => '-10',
+          'weight' => '-2',
         ),
-        'views-news-block_3' => array(
+        'views-news-block_front_pros' => array(
           'module' => 'views',
-          'delta' => 'news-block_3',
+          'delta' => 'news-block_front_pros',
           'region' => 'preface_third',
-          'weight' => '-10',
+          'weight' => '2',
         ),
       ),
     ),

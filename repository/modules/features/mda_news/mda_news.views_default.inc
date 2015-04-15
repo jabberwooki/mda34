@@ -239,7 +239,7 @@ function mda_news_views_default_views() {
   );
 
   /* Display: Accueil portail ados */
-  $handler = $view->new_display('block', 'Accueil portail ados', 'block_1');
+  $handler = $view->new_display('block', 'Accueil portail ados', 'block_front_ados');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Actualités';
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -303,7 +303,7 @@ function mda_news_views_default_views() {
   );
 
   /* Display: Accueil portail parents */
-  $handler = $view->new_display('block', 'Accueil portail parents', 'block_2');
+  $handler = $view->new_display('block', 'Accueil portail parents', 'block_front_parents');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Actualités';
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -367,7 +367,7 @@ function mda_news_views_default_views() {
   );
 
   /* Display: Accueil portail pros */
-  $handler = $view->new_display('block', 'Accueil portail pros', 'block_3');
+  $handler = $view->new_display('block', 'Accueil portail pros', 'block_front_pros');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Actualités';
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -431,7 +431,7 @@ function mda_news_views_default_views() {
   );
 
   /* Display: Bloc actus */
-  $handler = $view->new_display('block', 'Bloc actus', 'block_4');
+  $handler = $view->new_display('block', 'Bloc actus', 'block_actus');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Les actualités';
   $handler->display->display_options['defaults']['pager'] = FALSE;

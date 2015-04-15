@@ -12,11 +12,35 @@ function mda_news_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
-  $export['views-news-block_1'] = array(
+  $export['views-events-block_front_ados'] = array(
     'cache' => -1,
     'css_class' => '',
+    'delta' => 'events-block_front_ados',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
+      'mda' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'mda',
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  $export['views-events-block_front_events'] = array(
+    'cache' => -1,
+    'css_class' => 'col-sm-4',
     'custom' => 0,
-    'delta' => 'news-block_1',
+    'delta' => 'events-block_front_events',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
@@ -39,11 +63,10 @@ function mda_news_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['views-news-block_2'] = array(
+  $export['views-events-block_front_parents'] = array(
     'cache' => -1,
     'css_class' => '',
-    'custom' => 0,
-    'delta' => 'news-block_2',
+    'delta' => 'events-block_front_parents',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
@@ -62,15 +85,12 @@ function mda_news_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '',
-    'visibility' => 0,
   );
 
-  $export['views-news-block_3'] = array(
+  $export['views-events-block_front_pros'] = array(
     'cache' => -1,
     'css_class' => '',
-    'custom' => 0,
-    'delta' => 'news-block_3',
+    'delta' => 'events-block_front_pros',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
@@ -89,35 +109,6 @@ function mda_news_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-news-block_4'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'news-block_4',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'adminimal' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'adminimal',
-        'weight' => 0,
-      ),
-      'mda' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'mda',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
   );
 
   return $export;
