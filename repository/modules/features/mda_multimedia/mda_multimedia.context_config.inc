@@ -25,10 +25,10 @@ function mda_multimedia_default_scald_context_config() {
       '*' => 'passthrough',
     ),
     'image' => array(
-      '*' => 'style-medium',
+      '*' => 'style-large',
     ),
     'video' => array(
-      '*' => 'passthrough',
+      '*' => 'style-large',
     ),
   );
   $context_config->player = array(
@@ -149,6 +149,7 @@ function mda_multimedia_default_scald_context_config() {
     ),
     'video' => array(
       '*' => 'default',
+      'settings' => array(),
     ),
   );
   $context_config->data = array(
@@ -194,6 +195,7 @@ function mda_multimedia_default_scald_context_config() {
     ),
     'video' => array(
       '*' => 'default',
+      'settings' => array(),
     ),
   );
   $context_config->data = array(
@@ -249,6 +251,7 @@ function mda_multimedia_default_scald_context_config() {
     ),
     'video' => array(
       '*' => 'default',
+      'settings' => array(),
     ),
   );
   $context_config->data = array(
