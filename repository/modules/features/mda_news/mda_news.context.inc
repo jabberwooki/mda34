@@ -33,9 +33,9 @@ function mda_news_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-news-block_4' => array(
+        'views-news-block_actus' => array(
           'module' => 'views',
-          'delta' => 'news-block_4',
+          'delta' => 'news-block_actus',
           'region' => 'content',
           'weight' => '-10',
         ),

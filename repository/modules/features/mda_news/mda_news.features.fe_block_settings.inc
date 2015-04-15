@@ -15,6 +15,7 @@ function mda_news_default_fe_block_settings() {
   $export['views-events-block_front_ados'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'events-block_front_ados',
     'module' => 'views',
     'node_types' => array(),
@@ -34,6 +35,8 @@ function mda_news_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-events-block_front_events'] = array(
@@ -66,6 +69,7 @@ function mda_news_default_fe_block_settings() {
   $export['views-events-block_front_parents'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'events-block_front_parents',
     'module' => 'views',
     'node_types' => array(),
@@ -85,11 +89,14 @@ function mda_news_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-events-block_front_pros'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'events-block_front_pros',
     'module' => 'views',
     'node_types' => array(),
@@ -109,6 +116,8 @@ function mda_news_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;
