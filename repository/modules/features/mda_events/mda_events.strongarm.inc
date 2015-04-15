@@ -30,7 +30,7 @@ function mda_events_strongarm() {
         'custom_settings' => TRUE,
       ),
       'list' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
         'custom_settings' => TRUE,
