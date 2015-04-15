@@ -119,6 +119,9 @@ projects[filefield_sources][version] = "1.9"
 projects[phone][subdir] = contrib
 projects[phone][version] = "1.0-beta1"
 
+projects[references_dialog][subdir] = contrib
+projects[references_dialog][version] = "1.0-beta1"
+
 ;projects[views_bulk_operations][subdir] = contrib
 ;projects[views_bulk_operations][version] = "3.2"
 
@@ -204,12 +207,18 @@ projects[geophp][version] = "1.7"
 projects[leaflet][subdir] = contrib
 projects[leaflet][version] = "1.1"
 
-;libraries[leaflet][download][type] = "file"
-;libraries[leaflet][download][url] = "https://github.com/Leaflet/Leaflet/archive/v0.7.3.zip"
-;libraries[leaflet][directory_name] = "leaflet"
-;libraries[leaflet][destination] = "libraries"
+libraries[leaflet][download][type] = "file"
+libraries[leaflet][download][url] = "http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.3.zip"
+libraries[leaflet][directory_name] = "leaflet"
+libraries[leaflet][destination] = "libraries"
 
+;--- Events -------------------------------------------------------------------
+projects[registration][subdir] = contrib
+projects[registration][version] = "1.4"
 
 ;--- Others -------------------------------------------------------------------
 projects[office_hours][subdir] = contrib
 projects[office_hours][version] = "1.4"
+
+projects[views_isotope][subdir] = contrib
+projects[views_isotope][version] = "1.0-beta2"
