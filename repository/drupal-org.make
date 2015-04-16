@@ -222,3 +222,6 @@ projects[office_hours][version] = "1.4"
 
 projects[views_isotope][subdir] = contrib
 projects[views_isotope][version] = "1.0-beta2"
+
+projects[sharethis][subdir] = contrib
+projects[sharethis][version] = "2.10"
