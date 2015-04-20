@@ -184,7 +184,7 @@ function kbootstrap_strongarm() {
     ),
     'bootstrap_tooltip_delay' => '0',
     'bootstrap_tooltip_container' => 'body',
-    'bootstrap_cdn' => '3.0.2',
+    'bootstrap_cdn' => '',
     'bootstrap_bootswatch' => '',
     'bootstrap_rebuild_registry' => 0,
     'bootstrap_toggle_jquery_error' => 0,
