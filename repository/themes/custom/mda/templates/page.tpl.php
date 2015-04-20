@@ -83,7 +83,7 @@
       <?php endif; ?>
 
       <?php if (!empty($site_name)): ?>
-      <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+        <h1><a class="name navbar-brand" href="<?php print $front_page; ?>" ><?php print $site_name; ?></a></h1>
       <?php endif; ?>
       <?php if (!empty($site_slogan)): ?>
       <p class="slogan"><?php print $site_slogan; ?></p>
