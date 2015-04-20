@@ -87,6 +87,12 @@ function mda_events_context_default_contexts() {
           'region' => 'preface_third',
           'weight' => '-6',
         ),
+        'views-events-block_front_trainings' => array(
+          'module' => 'views',
+          'delta' => 'events-block_front_trainings',
+          'region' => 'preface_third',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
@@ -122,6 +128,12 @@ function mda_events_context_default_contexts() {
           'module' => 'views',
           'delta' => 'events-block_events_pros',
           'region' => 'content',
+          'weight' => '-10',
+        ),
+        'views-events-block_pros_trainings' => array(
+          'module' => 'views',
+          'delta' => 'events-block_pros_trainings',
+          'region' => 'sidebar_second',
           'weight' => '-10',
         ),
       ),
