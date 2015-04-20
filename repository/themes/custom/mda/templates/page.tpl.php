@@ -136,6 +136,17 @@
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
+    <?php
+    if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    	$content_column_class = ' class="col-sm-4"';
+    }
+    elseif (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
+    	$content_column_class = ' class="col-sm-8"';
+    }
+    else {
+    	$content_column_class = ' class="col-sm-12"';
+    }
+    ?>
     <section<?php print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
