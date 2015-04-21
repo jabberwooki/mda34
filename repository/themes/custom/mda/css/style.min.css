@@ -1,4 +1,5 @@
-@font-face{font-family:'Eligible bold';src:url(../fonts/Eligible-Bold.eot);src:url(../fonts/Eligible-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/Eligible-Bold.woff) format('woff'),url(../fonts/Eligible-Bold.ttf) format('truetype');font-weight:400;font-style:normal}
+@font-face{font-family:'Eligible bold';src:url(../fonts/Eligible-Bold/Eligible-Bold.eot);src:url(../fonts/Eligible-Bold/Eligible-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/Eligible-Bold/Eligible-Bold.woff) format('woff'),url(../fonts/Eligible-Bold/Eligible-Bold.ttf) format('truetype');font-weight:400;font-style:normal}
+@font-face{font-family:Rockwell;src:url(../fonts/Rockwell/Rock.TTF);font-weight:400;font-style:normal}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
@@ -74,7 +75,7 @@ hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}
 .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small{font-size:65%}
 .h4,.h5,.h6,h4,h5,h6{margin-top:10px;margin-bottom:10px}
 .h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{font-size:75%}
-.h1,h1{font-size:27px}
+.h1,h1{font-size:26px}
 .h2,h2{font-size:30px}
 .h3,h3{font-size:24px}
 .h4,h4{font-size:18px}
@@ -1524,5 +1525,12 @@ table .checkbox input[type=checkbox],table .radio input[type=radio]{max-width:in
 .alert-warning a{color:#66512c}
 .alert-danger a{color:#843534}
 body{background:url(../images/bg_header.jpg) 50% 0 no-repeat}
-.navbar-header .navbar-brand a{font-family:"Eligible bold","Times New Roman",monospace;color:#000;font-size:27px}
-.navbar-header h1.navbar-brand{margin-bottom:0;margin-top:10px}
+.navbar-header{float:none}
+.navbar-header .navbar-brand{padding-right:0}
+.navbar-header h1.navbar-brand{margin-bottom:0;margin-top:10px;float:none}
+.navbar-header h1.navbar-brand a{font-family:"Eligible bold","Times New Roman",monospace;color:#000;font-size:26px;white-space:nowrap}
+.navbar-header h1.navbar-brand a:hover{text-decoration:none}
+@media screen and (min-width:768px){.navbar-header h1.navbar-brand a{float:left}}
+@media screen and (min-width:1200px){.navbar-header h1.navbar-brand a{float:right}}
+.navbar-header .slogan{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;width:162px;border-top:1px solid #000;margin-left:193px;text-align:center}
+@media (max-width:768px){.navbar-header .slogan{text-align:left;margin-left:120px;width:120px}}
