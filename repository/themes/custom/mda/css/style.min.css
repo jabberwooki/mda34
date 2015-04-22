@@ -2,7 +2,6 @@
 @font-face{font-family:Rockwell;src:url(../fonts/Rockwell/Rock.TTF);font-weight:400;font-style:normal}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
 audio:not([controls]){display:none;height:0}
@@ -1524,7 +1523,10 @@ table .checkbox input[type=checkbox],table .radio input[type=radio]{max-width:in
 .alert-info a{color:#245269}
 .alert-warning a{color:#66512c}
 .alert-danger a{color:#843534}
-body{background:url(../images/bg_header.jpg) 50% 0 no-repeat}
+.no-marg-padd{margin:0;padding:0}
+body{background:url(../images/bg_header.jpg) 50% 0 no-repeat;margin:0;padding:0}
+#skip-link{position:absolute;width:1px;height:1px;top:-1000em;overflow:hidden}
+#navbar{margin-top:10px}
 .navbar-header{float:none}
 .navbar-header .navbar-brand{padding-right:0}
 .navbar-header h1.navbar-brand{margin-bottom:0;margin-top:10px;float:none}
@@ -1534,3 +1536,10 @@ body{background:url(../images/bg_header.jpg) 50% 0 no-repeat}
 @media screen and (min-width:1200px){.navbar-header h1.navbar-brand a{float:right}}
 .navbar-header .slogan{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;width:162px;border-top:1px solid #000;margin-left:193px;text-align:center}
 @media (max-width:768px){.navbar-header .slogan{text-align:left;margin-left:120px;width:120px}}
+button.navbar-toggle{margin-top:-25px}
+#main-top-menu{margin-top:-5px}
+@media (min-width:768px){#main-top-menu{margin-top:60px}}
+#main-top-menu>ul>li>a{text-transform:uppercase;font-weight:700;color:#000;display:block;box-shadow:0 0 2px 2px #dfdfdf;border-radius:1px;margin-right:7px;background-color:#fff;padding:10px}
+#main-top-menu>ul>li>a.active{color:#fff;box-shadow:0 0 #dfdfdf;padding-bottom:18px;background-color:#000}
+@media (min-width:768px){#main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu.png) 50% 100% no-repeat #000}}
+#main-top-menu>ul>li>a:hover{color:#fff;background-color:#000}

@@ -1,5 +1,24 @@
+.no-marg-padd{
+  margin: 0;
+  padding: 0;
+}
 body{
   background: url(../images/bg_header.jpg) no-repeat 50% 0;
+  .no-marg-padd();
+}
+
+#skip-link{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: -1000em;
+  overflow: hidden; 
+}
+/*
+* Logo et slogan 
+*******************************************************************************/
+#navbar{
+  margin-top: 10px;
 }
 .navbar-header{
   float: none;
@@ -26,8 +45,7 @@ body{
       }
       
     }
-  }
-  
+  }  
   .slogan{
     font-family: @rockwellFamily;
     width: 162px;
@@ -38,6 +56,42 @@ body{
       text-align: left;
       margin-left: 120px;
       width: 120px;
+    }
+  }
+}
+/*
+* Menu principal
+*******************************************************************************/
+button.navbar-toggle{
+  margin-top: -25px;
+}
+#main-top-menu{
+  @media (min-width: @screen-sm-min) {
+    margin-top: 60px;
+  }
+  margin-top: -5px;
+  > ul > li > a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: @gray-base;
+    display: block;
+    box-shadow: 0px 0px 2px 2px #dfdfdf;
+    border-radius: 1px;
+    margin-right: 7px;
+    background-color: white;
+    padding: 10px;
+    &.active{
+      color: white;
+      box-shadow: 0px 0px 0px 0px #dfdfdf;
+      padding-bottom: 18px;
+      background-color:  @gray-base;
+      @media (min-width: @screen-sm-min) {
+        background: @gray-base url(../images/arrow-down-menu.png) no-repeat 50% 100%;
+      }
+    }
+    &:hover{
+      color: white;
+      background-color: @gray-base;
     }
   }
 }

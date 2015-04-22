@@ -104,7 +104,7 @@
     <div class="col-md-7">
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <div class="navbar-collapse collapse">
-          <nav role="navigation">
+          <nav role="navigation" id="main-top-menu">
             <?php if (!empty($primary_nav)): ?>
               <?php print render($primary_nav); ?>
             <?php endif; ?>
