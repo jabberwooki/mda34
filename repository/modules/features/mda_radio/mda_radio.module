@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Radio feature.
+ */
+
+include_once 'mda_radio.features.inc';
