@@ -1,5 +1,8 @@
 @font-face{font-family:'Eligible bold';src:url(../fonts/Eligible-Bold/Eligible-Bold.eot);src:url(../fonts/Eligible-Bold/Eligible-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/Eligible-Bold/Eligible-Bold.woff) format('woff'),url(../fonts/Eligible-Bold/Eligible-Bold.ttf) format('truetype');font-weight:400;font-style:normal}
 @font-face{font-family:Rockwell;src:url(../fonts/Rockwell/Rock.TTF);font-weight:400;font-style:normal}
+@font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix) format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294) format('woff'),url(../images/fontello/font/fontello.ttf?90885294) format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello) format('svg');font-weight:400;font-style:normal}
+[class*=" icon-"]:before,[class^=icon-]:before{font-family:fontello;font-style:normal;font-weight:400;font-size:50px;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-twitter:before{content:"\e800";font-size:8em}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
@@ -38,7 +41,7 @@ td,th{padding:0}
 a,a:visited{text-decoration:underline}
 a[href]:after{content:" (" attr(href) ")"}
 abbr[title]:after{content:" (" attr(title) ")"}
-a[href^="#"]:after,a[href^="javascript:"]:after{content:""}
+a[href^="javascript:"]:after,a[href^="#"]:after{content:""}
 blockquote,pre{border:1px solid #999;page-break-inside:avoid}
 thead{display:table-header-group}
 img,tr{page-break-inside:avoid}
@@ -1543,3 +1546,4 @@ button.navbar-toggle{margin-top:-25px}
 #main-top-menu>ul>li>a.active{color:#fff;box-shadow:0 0 #dfdfdf;padding-bottom:18px;background-color:#000}
 @media (min-width:768px){#main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu.png) 50% 100% no-repeat #000}}
 #main-top-menu>ul>li>a:hover{color:#fff;background-color:#000}
+.no-content{text-indent:-9000px;display:block}
