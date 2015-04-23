@@ -95,6 +95,7 @@ function kcore_strongarm() {
     'news' => 'news',
     'event' => 'event',
     'faq' => 'faq',
+    'resource' => 'resource',
     'structure' => 'structure',
     'media_tester' => 0,
     'page' => 0,
