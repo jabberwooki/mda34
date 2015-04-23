@@ -39,14 +39,42 @@ function kcontextes_context_default_contexts() {
   $context->description = 'Front page only';
   $context->tag = 'Core';
   $context->conditions = array(
+    'domain' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
     'path' => array(
       'values' => array(
         '<front>' => '<front>',
       ),
     ),
   );
-  $context->reactions = array();
-  $context->condition_mode = 0;
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'kcore-mda_shortcut_ados' => array(
+          'module' => 'kcore',
+          'delta' => 'mda_shortcut_ados',
+          'region' => 'header',
+          'weight' => '0',
+        ),
+        'kcore-mda_shortcut_parents' => array(
+          'module' => 'kcore',
+          'delta' => 'mda_shortcut_parents',
+          'region' => 'header',
+          'weight' => '1',
+        ),
+        'kcore-mda_shortcut_pros' => array(
+          'module' => 'kcore',
+          'delta' => 'mda_shortcut_pros',
+          'region' => 'header',
+          'weight' => '2',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.
