@@ -12,7 +12,7 @@ function theme_mda_shortcut_block($variables) {
 	$current_domain_suffix = mda_url_suffix($current_domain['subdomain']);
 	$block_url = $variables['mda_shortcut_data']['url'];
 	$block_url_suffix = mda_url_suffix($block_url);
-	if ($current_domain_suffix != $shortcut_url_suffix) {
+	if ($current_domain_suffix != $block_url_suffix) {
 		$block_url = str_replace($block_url_suffix, $current_domain_suffix, $block_url);
 	}
 	
