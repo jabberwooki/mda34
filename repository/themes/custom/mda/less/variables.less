@@ -94,12 +94,20 @@
   font-weight: normal;
   font-style: normal;
 }
+[class*=" icon-"], [class*=" icon-"]{
+  float:left;
+  margin-right: 28px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 2em;   
   speak: none;
 
   display: inline-block;
@@ -121,21 +129,30 @@
   margin-left: .2em;
 
   /* You can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-
+  
+  color: black;
+  &:hover {
+    text-decoration: none;
+  }
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-.icon-facebook{
   
 }
+.icon-facebook:before{
+  content: "\e801";
+} 
 .icon-twitter:before{
   content: "\e800";
-  font-size: 8em;
+}
+.icon-youtube:before{
+  content: "\e802";
+}
+.icon-gplus:before{
+  content: "\e803";
 }
 
 
