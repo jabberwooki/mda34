@@ -4,6 +4,7 @@ core = 7.x
 package = App
 version = 7.x-1.0
 project = kcontextes
+dependencies[] = block
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = kcore
