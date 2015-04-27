@@ -30,7 +30,7 @@ function kcontextes_context_default_contexts() {
           'module' => 'block',
           'delta' => '1',
           'region' => 'footer',
-          'weight' => '-10',
+          'weight' => '0',
         ),
       ),
     ),
