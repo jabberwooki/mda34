@@ -1,19 +1,35 @@
 /* Top content links */
 body.front .block-kcore{
+  & .block-wrapper-custom a{
+    display: block;
+    padding: 12px 0 15px 70px;
+  }
   &#block-kcore-mda-shortcut-ados .block-wrapper-custom{
-    border-bottom : 1px solid @orange-mda;
-    margin-right: 28px
+    background: transparent url(../images/button_fleche_ados.png) no-repeat 98% 50%;
+    & a{
+      border-bottom : 1px solid @orange-mda;
+      background: transparent url(../images/button_maison_ados.png) no-repeat 0 0;
+    }
   }
   &#block-kcore-mda-shortcut-parents .block-wrapper-custom{
-    border-bottom : 1px solid @green-mda;
-    margin-right: 28px
+    background: transparent url(../images/button_fleche_parents.png) no-repeat 98% 50%;
+    & a{
+      border-bottom : 1px solid @green-mda;
+      background: transparent url(../images/button_maison_parents.png) no-repeat 0 0;
+    }
   }
   &#block-kcore-mda-shortcut-pros .block-wrapper-custom{
-    border-bottom : 1px solid @violet-mda;
+    background: transparent url(../images/button_fleche_pros.png) no-repeat 98% 50%;
+    & a{
+      border-bottom : 1px solid @violet-mda;
+      background: transparent url(../images/button_maison_pros.png) no-repeat 0 0;
+    }
   }
-  & a h2{
+  & a h2, & a p{
     font-family: @rockwellFamily;
     color: @gray-base;
+    margin: 0;
+    padding: 0;
   }
   
 }

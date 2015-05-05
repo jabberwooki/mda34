@@ -1590,13 +1590,12 @@ body{background:url(../images/bg_header.jpg)50% 0 no-repeat}
 .navbar-header .navbar-brand{padding-right:0}
 .navbar-header h1.navbar-brand{margin-bottom:0;margin-top:10px;float:none}
 .navbar-header h1.navbar-brand a{font-family:"Eligible bold","Times New Roman",monospace;color:#000;font-size:26px;white-space:nowrap}
-.navbar-header .slogan,body.front .block-kcore a h2{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
 .navbar-header h1.navbar-brand a:hover{text-decoration:none}
 @media screen and (min-width:768px){.navbar-header h1.navbar-brand a{float:left}
 }
 @media screen and (min-width:1200px){.navbar-header h1.navbar-brand a{float:right}
 }
-.navbar-header .slogan{width:162px;border-top:1px solid #000;margin-left:193px;text-align:center}
+.navbar-header .slogan{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;width:162px;border-top:1px solid #000;margin-left:193px;text-align:center}
 @media (max-width:768px){.navbar-header .slogan{text-align:left;margin-left:120px;width:120px}
 }
 button.navbar-toggle{margin-top:-25px}
@@ -1608,7 +1607,11 @@ button.navbar-toggle{margin-top:-25px}
 }
 #main-top-menu>ul>li>a:hover{color:#fff;background-color:#000}
 .no-content{text-indent:-9000px;display:block}
-body.front .block-kcore#block-kcore-mda-shortcut-ados .block-wrapper-custom{border-bottom:1px solid #f78c26;margin-right:28px}
-body.front .block-kcore#block-kcore-mda-shortcut-parents .block-wrapper-custom{border-bottom:1px solid #32903f;margin-right:28px}
-body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom{border-bottom:1px solid #575095}
-body.front .block-kcore a h2{color:#000}
+body.front .block-kcore .block-wrapper-custom a{display:block;padding:12px 0 15px 70px}
+body.front .block-kcore#block-kcore-mda-shortcut-ados .block-wrapper-custom{background:url(../images/button_fleche_ados.png)98% 50% no-repeat}
+body.front .block-kcore#block-kcore-mda-shortcut-ados .block-wrapper-custom a{border-bottom:1px solid #f78c26;background:url(../images/button_maison_ados.png)no-repeat}
+body.front .block-kcore#block-kcore-mda-shortcut-parents .block-wrapper-custom{background:url(../images/button_fleche_parents.png)98% 50% no-repeat}
+body.front .block-kcore#block-kcore-mda-shortcut-parents .block-wrapper-custom a{border-bottom:1px solid #32903f;background:url(../images/button_maison_parents.png)no-repeat}
+body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom{background:url(../images/button_fleche_pros.png)98% 50% no-repeat}
+body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom a{border-bottom:1px solid #575095;background:url(../images/button_maison_pros.png)no-repeat}
+body.front .block-kcore a h2,body.front .block-kcore a p{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;color:#000;margin:0;padding:0}
