@@ -139,7 +139,7 @@
     <?php if (!empty($page['preface_first'])): ?>
       <div class="col-lg-4" id="preface-first">
       	<div class="panel panel-default">
-      		<div class="panel-heading">Espace Adolescents</div>
+          <div class="panel-heading"><h2 class="h2-home icon-doc">Espace Adolescents</h2></div>
       		<div class="panel-body">
         		<?php print render($page['preface_first']); ?>
         	</div>
@@ -150,7 +150,7 @@
     <?php if (!empty($page['preface_second'])): ?>
       <div class="col-lg-4" id="preface-second">
       	<div class="panel panel-default">
-      		<div class="panel-heading">Espace Parents</div>
+      		<div class="panel-heading"><h2 class="h2-home">Espace Parents</h2></div>
       		<div class="panel-body">
         		<?php print render($page['preface_second']); ?>
         	</div>
@@ -161,7 +161,7 @@
     <?php if (!empty($page['preface_third'])): ?>
       <div class="col-lg-4" id="preface-third">
       	<div class="panel panel-default">
-      		<div class="panel-heading">Espace Professionnels</div>
+      		<div class="panel-heading"><h2 class="h2-home">Espace Professionnels</h2></div>
       		<div class="panel-body">
         		<?php print render($page['preface_third']); ?>
         	</div>
