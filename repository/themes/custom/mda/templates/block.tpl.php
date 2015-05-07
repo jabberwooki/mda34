@@ -45,11 +45,27 @@
  * @ingroup themeable
  */
 ?>
+<?php 
+/*
+ * search and remove icon-xxx class from $classes and put it in $title_attributes
+ */
+ $iconClass = '';
+ $pattern = '/(icon-[^ ]*)/';
+ $replacement = '';
+ if (preg_match($pattern, $classes, $matches)) {
+  $iconClass = $matches[0];
+  $classes = preg_replace($pattern, $replacement, $classes);
+
+  $pattern = '/(class=")/';
+  $replacement = '$1' . $iconClass . ' ';
+  $title_attributes = preg_replace($pattern, $replacement, $title_attributes);
+ }
+?>
 <section id="<?php print $block_html_id; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
-    <h3<?php print $title_attributes; ?>><?php print $title; ?></h3>
+    <h3<?php print $title_attributes; ?> ><?php print $title; ?></h3>
   <?php endif;?>
   <?php print render($title_suffix); ?>
   <div class="block-wrapper-custom">  
