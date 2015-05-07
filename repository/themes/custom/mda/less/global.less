@@ -5,3 +5,43 @@
 img{
   max-width: 100%;
 }
+h2,h3,h4{
+  font-family: @rockwellFamily;
+  text-transform: uppercase;
+}
+p{
+  font-family: arial;
+}
+/* Titre entouré de lignes ****************************************************/
+.line-right-left{
+  overflow: hidden;
+  text-align: center;
+  &:before,&:after{
+    border-bottom: 1px solid @gray-base;
+    content: "";
+    display: inline-block;
+    height: .1em;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: .15em;
+  }
+  &:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  &:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+}
+/* Couleurs *******************************************************************/
+.orange{
+  color: @orange-mda;
+}
+.black{
+  color: @gray-base;
+}
+.green{
+  color: @green-mda;
+}

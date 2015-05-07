@@ -31,6 +31,34 @@ body.front .block-kcore{
     margin: 0;
     padding: 0;
   }
-  
+}
+/* Blocks, Images link's title */
+.block{
+  &.block-views{
+    border-bottom: 1px solid @gray-base;
+    padding-bottom: 15px;
+  }
+  & .img-title-wrapper{
+    position: relative;
+    & h4{
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      background-color: @gray-base;
+      opacity: 0.7;
+      width: 100%;
+      & a{
+        display: block;
+        color: white;
+        font-size: 1.1em;
+        padding: 10px 15px;
+      }
+    }
+  }
+  & p{
+    color: @gray-base;
+    padding: 10px 15px;
+  }
 }
 
