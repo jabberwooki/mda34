@@ -74,7 +74,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'faq' => 'faq',
   );
-  /* Filter criterion: Domain Access: Available on current domain */
+  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
@@ -115,7 +115,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Au hasard */
+  /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -167,7 +167,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Au hasard */
+  /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -219,7 +219,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Au hasard */
+  /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -264,6 +264,7 @@ function mda_faqs_views_default_views() {
     t('dernier »'),
     t('Liste des FAQs'),
     t('Foire aux questions'),
+    t('more'),
     t('Accueil portail (ados)'),
     t('FAQ'),
     t('Accueil portail (parents)'),
@@ -298,7 +299,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Relation: Terme de taxonomie: Contenu utilisant Catégorie */
+  /* Relationship: Terme de taxonomie: Contenu using Catégorie */
   $handler->display->display_options['relationships']['reverse_field_faq_category_node']['id'] = 'reverse_field_faq_category_node';
   $handler->display->display_options['relationships']['reverse_field_faq_category_node']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['relationships']['reverse_field_faq_category_node']['field'] = 'reverse_field_faq_category_node';
@@ -336,6 +337,7 @@ function mda_faqs_views_default_views() {
     t('Desc'),
     t('field_faq_category'),
     t('Filtre FAQs'),
+    t('more'),
   );
   $export['faqs_filter'] = $view;
 

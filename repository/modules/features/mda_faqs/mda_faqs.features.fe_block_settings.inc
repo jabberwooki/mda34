@@ -14,7 +14,8 @@ function mda_faqs_default_fe_block_settings() {
 
   $export['views-2538eed9477e4d4ca66b677e97cf28dc'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'icon-question',
+    'custom' => 0,
     'delta' => '2538eed9477e4d4ca66b677e97cf28dc',
     'module' => 'views',
     'node_types' => array(),
@@ -34,11 +35,14 @@ function mda_faqs_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-faqs-block_faqs_parents'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'green icon-question',
+    'custom' => 0,
     'delta' => 'faqs-block_faqs_parents',
     'module' => 'views',
     'node_types' => array(),
@@ -58,11 +62,14 @@ function mda_faqs_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-faqs-block_front_ados'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'orange icon-question',
+    'custom' => 0,
     'delta' => 'faqs-block_front_ados',
     'module' => 'views',
     'node_types' => array(),
@@ -82,11 +89,14 @@ function mda_faqs_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-faqs-block_front_parents'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'green icon-question',
+    'custom' => 0,
     'delta' => 'faqs-block_front_parents',
     'module' => 'views',
     'node_types' => array(),
@@ -106,6 +116,8 @@ function mda_faqs_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;
