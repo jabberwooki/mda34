@@ -1610,6 +1610,9 @@ p{font-family:arial}
 .orange{color:#f78c26}
 .black{color:#000}
 .green{color:#32903f}
+.violet{color:#575095}
+.blue{color:#0080ff}
+.cyan{color:#32903f}
 body.front .block-kcore .block-wrapper-custom a{display:block;padding:12px 0 15px 70px}
 body.front .block-kcore#block-kcore-mda-shortcut-ados .block-wrapper-custom{background:url(../images/button_fleche_ados.png)98% 50% no-repeat}
 body.front .block-kcore#block-kcore-mda-shortcut-ados .block-wrapper-custom a{border-bottom:1px solid #f78c26;background:url(../images/button_maison_ados.png)no-repeat}
