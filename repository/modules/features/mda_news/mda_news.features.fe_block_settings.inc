@@ -14,7 +14,7 @@ function mda_news_default_fe_block_settings() {
 
   $export['views-news-block_actus'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'icon-doc',
     'custom' => 0,
     'delta' => 'news-block_actus',
     'module' => 'views',
@@ -95,7 +95,7 @@ function mda_news_default_fe_block_settings() {
 
   $export['views-news-block_front_pros'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'icon-doc violet',
     'custom' => 0,
     'delta' => 'news-block_front_pros',
     'module' => 'views',
