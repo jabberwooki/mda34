@@ -228,6 +228,186 @@ function mda_multimedia_default_scald_context_config() {
   $context_config = new stdClass();
   $context_config->disabled = FALSE; /* Edit this to true to make a default context_config disabled initially */
   $context_config->api_version = 1;
+  $context_config->context = 'scald_col_12';
+  $context_config->transcoder = array(
+    'audio' => array(
+      '*' => 'passthrough',
+    ),
+    'file' => array(
+      '*' => 'passthrough',
+    ),
+    'gallery' => array(
+      '*' => 'passthrough',
+    ),
+    'image' => array(
+      '*' => 'style-img-col-12',
+    ),
+    'video' => array(
+      '*' => 'passthrough',
+    ),
+  );
+  $context_config->player = array(
+    'audio' => array(
+      '*' => 'default',
+    ),
+    'file' => array(
+      '*' => 'default',
+    ),
+    'gallery' => array(
+      '*' => 'default',
+    ),
+    'image' => array(
+      '*' => 'default',
+      'settings' => array(),
+    ),
+    'video' => array(
+      '*' => 'default',
+    ),
+  );
+  $context_config->data = array(
+    'width' => '',
+    'height' => '',
+  );
+  $export['scald_col_12'] = $context_config;
+
+  $context_config = new stdClass();
+  $context_config->disabled = FALSE; /* Edit this to true to make a default context_config disabled initially */
+  $context_config->api_version = 1;
+  $context_config->context = 'scald_col_2';
+  $context_config->transcoder = array(
+    'audio' => array(
+      '*' => 'passthrough',
+    ),
+    'file' => array(
+      '*' => 'passthrough',
+    ),
+    'gallery' => array(
+      '*' => 'passthrough',
+    ),
+    'image' => array(
+      '*' => 'style-img-col-2',
+    ),
+    'video' => array(
+      '*' => 'passthrough',
+    ),
+  );
+  $context_config->player = array(
+    'audio' => array(
+      '*' => 'default',
+    ),
+    'file' => array(
+      '*' => 'default',
+    ),
+    'gallery' => array(
+      '*' => 'default',
+    ),
+    'image' => array(
+      '*' => 'default',
+      'settings' => array(),
+    ),
+    'video' => array(
+      '*' => 'default',
+    ),
+  );
+  $context_config->data = array(
+    'width' => '',
+    'height' => '',
+  );
+  $export['scald_col_2'] = $context_config;
+
+  $context_config = new stdClass();
+  $context_config->disabled = FALSE; /* Edit this to true to make a default context_config disabled initially */
+  $context_config->api_version = 1;
+  $context_config->context = 'scald_col_4';
+  $context_config->transcoder = array(
+    'audio' => array(
+      '*' => 'passthrough',
+    ),
+    'file' => array(
+      '*' => 'passthrough',
+    ),
+    'gallery' => array(
+      '*' => 'passthrough',
+    ),
+    'image' => array(
+      '*' => 'style-img-col-4',
+    ),
+    'video' => array(
+      '*' => 'passthrough',
+    ),
+  );
+  $context_config->player = array(
+    'audio' => array(
+      '*' => 'default',
+    ),
+    'file' => array(
+      '*' => 'default',
+    ),
+    'gallery' => array(
+      '*' => 'default',
+    ),
+    'image' => array(
+      '*' => 'default',
+      'settings' => array(),
+    ),
+    'video' => array(
+      '*' => 'default',
+    ),
+  );
+  $context_config->data = array(
+    'width' => '',
+    'height' => '',
+  );
+  $export['scald_col_4'] = $context_config;
+
+  $context_config = new stdClass();
+  $context_config->disabled = FALSE; /* Edit this to true to make a default context_config disabled initially */
+  $context_config->api_version = 1;
+  $context_config->context = 'scald_col_8';
+  $context_config->transcoder = array(
+    'audio' => array(
+      '*' => 'passthrough',
+    ),
+    'file' => array(
+      '*' => 'passthrough',
+    ),
+    'gallery' => array(
+      '*' => 'passthrough',
+    ),
+    'image' => array(
+      '*' => 'style-img-col-8',
+    ),
+    'video' => array(
+      '*' => 'passthrough',
+    ),
+  );
+  $context_config->player = array(
+    'audio' => array(
+      '*' => 'default',
+    ),
+    'file' => array(
+      '*' => 'default',
+    ),
+    'gallery' => array(
+      '*' => 'default',
+    ),
+    'image' => array(
+      '*' => 'default',
+      'settings' => array(),
+    ),
+    'video' => array(
+      '*' => 'default',
+    ),
+  );
+  $context_config->data = array(
+    'width' => '',
+    'height' => '',
+  );
+  $export['scald_col_8'] = $context_config;
+
+  $context_config = new stdClass();
+  $context_config->disabled = FALSE; /* Edit this to true to make a default context_config disabled initially */
+  $context_config->api_version = 1;
   $context_config->context = 'sdl_editor_representation';
   $context_config->transcoder = array(
     'audio' => array(

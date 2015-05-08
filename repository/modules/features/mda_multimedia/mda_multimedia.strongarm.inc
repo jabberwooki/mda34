@@ -363,31 +363,6 @@ function mda_multimedia_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'scald_custom_contexts';
   $strongarm->value = array(
-    'front_block' => array(
-      'name' => 'front_block',
-      'title' => 'Front block',
-      'description' => 'The Front Page Rep',
-      'render_language' => 'XHTML',
-      'parseable' => TRUE,
-      'formats' => array(),
-      'provider' => 'scald',
-    ),
-    'content_block' => array(
-      'name' => 'content_block',
-      'title' => 'Content Block',
-      'description' => 'The Content region blocks Rep',
-      'render_language' => 'XHTML',
-      'parseable' => TRUE,
-      'formats' => array(),
-    ),
-    'sidebar_block' => array(
-      'name' => 'sidebar_block',
-      'title' => 'Sidebar Block',
-      'description' => 'The Sidebar region blocks Rep',
-      'render_language' => 'XHTML',
-      'parseable' => TRUE,
-      'formats' => array(),
-    ),
     'zoom_block' => array(
       'name' => 'zoom_block',
       'title' => 'Zoom block',
@@ -404,6 +379,38 @@ function mda_multimedia_strongarm() {
       'parseable' => TRUE,
       'formats' => array(),
       'provider' => 'scald',
+    ),
+    'scald_col_8' => array(
+      'name' => 'scald_col_8',
+      'title' => 'scald-col-8',
+      'description' => '',
+      'render_language' => 'XHTML',
+      'parseable' => TRUE,
+      'formats' => array(),
+    ),
+    'scald_col_4' => array(
+      'name' => 'scald_col_4',
+      'title' => 'scald-col-4',
+      'description' => '',
+      'render_language' => 'XHTML',
+      'parseable' => TRUE,
+      'formats' => array(),
+    ),
+    'scald_col_2' => array(
+      'name' => 'scald_col_2',
+      'title' => 'scald-col-2',
+      'description' => '',
+      'render_language' => 'XHTML',
+      'parseable' => TRUE,
+      'formats' => array(),
+    ),
+    'scald_col_12' => array(
+      'name' => 'scald_col_12',
+      'title' => 'scald-col-12',
+      'description' => '',
+      'render_language' => 'XHTML',
+      'parseable' => TRUE,
+      'formats' => array(),
     ),
   );
   $export['scald_custom_contexts'] = $strongarm;
