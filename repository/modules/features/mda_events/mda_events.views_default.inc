@@ -166,18 +166,19 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['label'] = '';
+  $handler->display->display_options['fields']['field_event_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_event_image']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'img-col-4',
     'image_link' => 'content',
-    'field_formatter_class' => '',
   );
   /* Champ: Contenu: Type d'événement */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['label'] = '';
+  $handler->display->display_options['fields']['field_event_type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_type']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_event_type']['element_class'] = 'isotope-filter';
   $handler->display->display_options['fields']['field_event_type']['element_label_colon'] = FALSE;
@@ -191,6 +192,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['label'] = '';
+  $handler->display->display_options['fields']['field_event_dates']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_dates']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['settings'] = array(
     'format_type' => 'short',
@@ -198,15 +200,28 @@ function mda_events_views_default_views() {
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'field_formatter_class' => '',
   );
   /* Champ: Contenu: Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Champ: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
+[field_event_image]
+[field_event_dates]
+<div class="event-type-block">[field_event_type] </div>
+<h4>[title]</h4>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Champ: Contenu: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -215,8 +230,9 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '100';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'field_formatter_class' => '',
+    'trim_length' => '150',
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -242,16 +258,6 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'ados_mda34_org' => 'ados_mda34_org',
   );
-  /* Filter criterion: Contenu: Type d&#039;événement (field_event_type) */
-  $handler->display->display_options['filters']['field_event_type_tid']['id'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    99 => '99',
-  );
-  $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
 
   /* Display: Accueil portail (parents) */
   $handler = $view->new_display('block', 'Accueil portail (parents)', 'block_front_parents');
@@ -267,18 +273,19 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['label'] = '';
+  $handler->display->display_options['fields']['field_event_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_event_image']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'img-col-4',
     'image_link' => 'content',
-    'field_formatter_class' => '',
   );
   /* Champ: Contenu: Type d'événement */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['label'] = '';
+  $handler->display->display_options['fields']['field_event_type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_type']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_event_type']['element_class'] = 'isotope-filter';
   $handler->display->display_options['fields']['field_event_type']['element_label_colon'] = FALSE;
@@ -292,6 +299,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['label'] = '';
+  $handler->display->display_options['fields']['field_event_dates']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_dates']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['settings'] = array(
     'format_type' => 'short',
@@ -299,15 +307,28 @@ function mda_events_views_default_views() {
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'field_formatter_class' => '',
   );
   /* Champ: Contenu: Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Champ: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
+[field_event_image]
+[field_event_dates]
+<div class="event-type-block">[field_event_type] </div>
+<h4>[title]</h4>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Champ: Contenu: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -316,8 +337,9 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '100';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'field_formatter_class' => '',
+    'trim_length' => '150',
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -343,16 +365,6 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'parents_mda34_org' => 'parents_mda34_org',
   );
-  /* Filter criterion: Contenu: Type d&#039;événement (field_event_type) */
-  $handler->display->display_options['filters']['field_event_type_tid']['id'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    99 => '99',
-  );
-  $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
 
   /* Display: Accueil portail (pros) */
   $handler = $view->new_display('block', 'Accueil portail (pros)', 'block_front_pros');
@@ -368,18 +380,19 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['label'] = '';
+  $handler->display->display_options['fields']['field_event_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_event_image']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'img-col-4',
     'image_link' => 'content',
-    'field_formatter_class' => '',
   );
   /* Champ: Contenu: Type d'événement */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['label'] = '';
+  $handler->display->display_options['fields']['field_event_type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_type']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_event_type']['element_class'] = 'isotope-filter';
   $handler->display->display_options['fields']['field_event_type']['element_label_colon'] = FALSE;
@@ -393,6 +406,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['label'] = '';
+  $handler->display->display_options['fields']['field_event_dates']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_dates']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['settings'] = array(
     'format_type' => 'short',
@@ -400,15 +414,28 @@ function mda_events_views_default_views() {
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'field_formatter_class' => '',
   );
   /* Champ: Contenu: Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Champ: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
+[field_event_image]
+[field_event_dates]
+<div class="event-type-block">[field_event_type] </div>
+<h4>[title]</h4>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Champ: Contenu: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -417,8 +444,9 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '100';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'field_formatter_class' => '',
+    'trim_length' => '150',
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -444,16 +472,6 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'reseau_pro_mda34_org' => 'reseau_pro_mda34_org',
   );
-  /* Filter criterion: Contenu: Type d&#039;événement (field_event_type) */
-  $handler->display->display_options['filters']['field_event_type_tid']['id'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    99 => '99',
-  );
-  $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
 
   /* Display: Bloc événements */
   $handler = $view->new_display('block', 'Bloc événements', 'block_front_events');
@@ -853,7 +871,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
   $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    99 => '99',
+    58 => '58',
   );
   $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
@@ -877,6 +895,12 @@ function mda_events_views_default_views() {
     t('more'),
     t('Types d\'événement'),
     t('Accueil portail (ados)'),
+    t('<div class="img-title-wrapper">
+[field_event_image]
+[field_event_dates]
+<div class="event-type-block">[field_event_type] </div>
+<h4>[title]</h4>
+</div>'),
     t('Accueil portail (parents)'),
     t('Accueil portail (pros)'),
     t('Bloc événements'),
