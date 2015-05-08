@@ -1,0 +1,96 @@
+/* Blocks, Images link's title */
+.block{
+  &.block-views{
+    border-bottom: 1px solid @gray-base;
+    padding-bottom: 10px;
+  }
+  & .views-row{
+    padding: 10px 0;
+    & .views-field-title a{
+      color: @gray-base;
+    }
+  }
+  & .views-row:not(.views-row-last){
+    border-bottom: 1px solid @gray-lighter;
+  }
+  & .img-title-wrapper{
+    position: relative;
+    & h4{
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      background-color: @gray-base;
+      opacity: 0.7;
+      width: 100%;
+      & a{
+        display: block;
+        color: white;
+        font-size: 1.1em;
+        padding: 10px 15px;
+      }
+    }
+    & .date-display-single{ /* specific to events blocks */
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      padding: 0 5px;
+      color: white;
+    }
+    & .event-type-block{ /* specific to events blocks */
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      padding: 3px 5px;
+      background-color: @gray-base;
+      color: white;
+      z-index: 1;
+    }
+  }
+  & p{
+    color: @gray-base;
+    padding: 10px 15px 0 15px;
+  }
+}
+/* Blocks agenda **************************************************************/
+.block.orange{
+  & .event-type-block, & .date-display-single{ 
+      background-color: @orange-mda;
+    }
+}
+.block.green{
+  & .event-type-block, & .date-display-single{ 
+      background-color: @green-mda;
+    }
+}
+.block.violet{
+  & .event-type-block, & .date-display-single{ 
+      background-color: @violet-mda;
+    }
+}
+/* Titre entouré de lignes ****************************************************/
+.line-right-left{
+  overflow: hidden;
+  text-align: center;
+  &:before,&:after{
+    border-bottom: 1px solid @gray-base;
+    content: "";
+    display: inline-block;
+    height: .1em;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: .15em;
+  }
+  &:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  &:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+}
+
