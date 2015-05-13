@@ -121,6 +121,12 @@
   </div>
 </header>
 
+<?php if (!empty($page['zoom'])): ?>
+<div class="" id="zoom">
+	<?php print render($page['zoom']); ?>
+</div>  <!-- /#zoom -->
+<?php endif; ?>
+
 <div class="main-container container">
 
   <header role="banner" id="page-header" >
