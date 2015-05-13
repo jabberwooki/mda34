@@ -40,5 +40,63 @@ body.front .block-kcore{
 h2.line-right-left{
   font-size: 1.5em;
 }
-
+/* Caroussel ******************************************************************/
+body.front .carousel-inner {
+  & .group-all-diapo .container{
+    position: relative;
+    & .group-link-theme{
+      width: 550px;
+      height: 200px;
+      position: absolute;
+      bottom : 0;
+      left: 0;
+      background-color: @gray-base;
+      opacity: 0.6;
+      & h3 a{
+        color: white;
+        padding: 0 25px 5px 25px;
+        display : block;
+        font-size: 1.2em;
+      }
+      & h4{
+        display: inline-block;
+        padding: 5px 5px 5px 25px;
+        color: white;
+        &.orange{
+          background-color: @orange-mda;
+        }
+        &.violet{
+          background-color: @violet-mda;
+        }
+        &.green{
+          background-color: @green-mda;
+        }
+        &.blue{
+          background-color: @blue-mda;
+        }
+        &:before{
+          color: white;
+        }
+      }
+      & .field-name-field-thematique-diapo{
+        background-color: @orange-mda;
+        padding: 8px 8px 8px 25px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2em;
+      }
+    }
+  }
+  
+}
+body.front{
+  & .carousel-indicators li{
+    border: 2px solid @gray-base;
+    &.active{
+      @media screen and (min-width: @screen-sm){
+        background-color: @gray-base;
+      }
+    }
+  }
+}
 

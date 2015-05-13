@@ -1673,3 +1673,16 @@ body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom{back
 body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom a{border-bottom:1px solid #575095;background:url(../images/button_maison_pros.png)no-repeat}
 body.front .block-kcore a h2,body.front .block-kcore a p{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;color:#000;margin:0;padding:0}
 h2.line-right-left{font-size:1.5em}
+body.front .carousel-inner .group-all-diapo .container{position:relative}
+body.front .carousel-inner .group-all-diapo .container .group-link-theme{width:550px;height:200px;position:absolute;bottom:0;left:0;background-color:#000;opacity:.6}
+body.front .carousel-inner .group-all-diapo .container .group-link-theme h3 a{color:#fff;padding:0 25px 5px;display:block;font-size:1.2em}
+body.front .carousel-inner .group-all-diapo .container .group-link-theme h4{display:inline-block;padding:5px 5px 5px 25px;color:#fff}
+body.front .carousel-inner .group-all-diapo .container .group-link-theme h4.orange{background-color:#f78c26}
+body.front .carousel-inner .group-all-diapo .container .group-link-theme h4.violet{background-color:#575095}
+body.front .carousel-inner .group-all-diapo .container .group-link-theme h4.green{background-color:#32903f}
+body.front .carousel-inner .group-all-diapo .container .group-link-theme h4.blue{background-color:#0080ff}
+body.front .carousel-inner .group-all-diapo .container .group-link-theme h4:before{color:#fff}
+body.front .carousel-inner .group-all-diapo .container .group-link-theme .field-name-field-thematique-diapo{background-color:#f78c26;padding:8px 8px 8px 25px;color:#fff;text-transform:uppercase;font-size:1.2em}
+body.front .carousel-indicators li{border:2px solid #000}
+@media screen and (min-width:768px){body.front .carousel-indicators li.active{background-color:#000}
+}
