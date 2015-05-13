@@ -1566,9 +1566,9 @@ a .glyphicon-spin{display:inline-block;text-decoration:none}
 td.checkbox,td.radio,th.checkbox,th.radio{display:table-cell}
 .views-display-settings .label{font-size:100%;color:#666}
 .views-display-settings .footer{padding:0;margin:4px 0 0}
-.no-marg-padd,body{padding:0;margin:0}
 table .checkbox input[type=checkbox],table .radio input[type=radio]{max-width:inherit}
 .form-horizontal .form-group label{position:relative;min-height:1px;margin-top:0;margin-bottom:0;padding-top:7px;padding-left:15px;padding-right:15px;text-align:right}
+.no-marg-padd,body{margin:0;padding:0}
 @media (min-width:768px){.form-horizontal .form-group label{float:left;width:16.66666667%}
 }
 .alert a{font-weight:700}
@@ -1576,6 +1576,7 @@ table .checkbox input[type=checkbox],table .radio input[type=radio]{max-width:in
 .alert-info a{color:#245269}
 .alert-warning a{color:#66512c}
 .alert-danger a{color:#843534}
+#zoom .block.block-views{border:0;margin-bottom:20px}
 .no-content{text-indent:-9000px;display:block}
 img{max-width:100%}
 h2,h3,h4{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
