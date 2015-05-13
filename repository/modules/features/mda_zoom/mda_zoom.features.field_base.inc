@@ -10,6 +10,61 @@
 function mda_zoom_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_couleur'
+  $field_bases['field_couleur'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_couleur',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'orange' => 'orange',
+        'green' => 'green',
+        'violet' => 'violet',
+        'blue' => 'blue',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
+  // Exported field_base: 'field_icone'
+  $field_bases['field_icone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_icone',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'icon-doc' => 'icon-doc',
+        'icon-question' => 'icon-question',
+        'icon-calendar' => 'icon-calendar',
+        'icon-people' => 'icon-people',
+        'icon-radio' => 'icon-radio',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_slide_image'
   $field_bases['field_slide_image'] = array(
     'active' => 1,
@@ -68,6 +123,27 @@ function mda_zoom_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_subtitle',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_thematique_diapo'
+  $field_bases['field_thematique_diapo'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_thematique_diapo',
     'indexes' => array(
       'format' => array(
         0 => 'format',

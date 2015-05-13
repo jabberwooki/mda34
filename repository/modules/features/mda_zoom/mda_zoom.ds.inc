@@ -32,7 +32,12 @@ function mda_zoom_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'slide';
   $ds_fieldsetting->view_mode = 'portal_slide';
   $ds_fieldsetting->settings = array(
-    'title' => array(
+    'lien_diapo_h2' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'thematic_class' => array(
       'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
@@ -59,6 +64,51 @@ function mda_zoom_ds_field_settings_info() {
 }
 
 /**
+ * Implements hook_ds_custom_fields_info().
+ */
+function mda_zoom_ds_custom_fields_info() {
+  $export = array();
+
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
+  $ds_field->field = 'lien_diapo_h2';
+  $ds_field->label = 'lien diapo h2';
+  $ds_field->field_type = 5;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->ui_limit = '';
+  $ds_field->properties = array(
+    'code' => array(
+      'value' => '<h3 class="diapo-link">[node:field_slide_link]</h3>',
+      'format' => 'ds_code',
+    ),
+    'use_token' => 1,
+  );
+  $export['lien_diapo_h2'] = $ds_field;
+
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
+  $ds_field->field = 'thematic_class';
+  $ds_field->label = 'Thematique avec class';
+  $ds_field->field_type = 5;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->ui_limit = '';
+  $ds_field->properties = array(
+    'code' => array(
+      'value' => '<h4 class="[node:field_icone] [node:field_couleur]">[node:field_thematique_diapo]</h4>',
+      'format' => 'ds_code',
+    ),
+    'use_token' => 1,
+  );
+  $export['thematic_class'] = $ds_field;
+
+  return $export;
+}
+
+/**
  * Implements hook_ds_layout_settings_info().
  */
 function mda_zoom_ds_layout_settings_info() {
@@ -70,34 +120,30 @@ function mda_zoom_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'slide';
   $ds_layout->view_mode = 'full';
-  $ds_layout->layout = 'bootstrap_12';
+  $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'regions' => array(
-      'central' => array(
+      'ds_content' => array(
         0 => 'field_slide_image',
-        1 => 'title',
-        2 => 'field_subtitle',
-        3 => 'body',
-        4 => 'field_slide_link',
-        5 => 'domain',
+        1 => 'field_subtitle',
+        2 => 'body',
+        3 => 'field_slide_link',
+        4 => 'domain',
       ),
     ),
     'fields' => array(
-      'field_slide_image' => 'central',
-      'title' => 'central',
-      'field_subtitle' => 'central',
-      'body' => 'central',
-      'field_slide_link' => 'central',
-      'domain' => 'central',
+      'field_slide_image' => 'ds_content',
+      'field_subtitle' => 'ds_content',
+      'body' => 'ds_content',
+      'field_slide_link' => 'ds_content',
+      'domain' => 'ds_content',
     ),
     'classes' => array(),
-    'wrappers' => array(
-      'central' => 'div',
-    ),
+    'wrappers' => array(),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
+    'layout_attributes_merge' => TRUE,
+    'layout_link_attribute' => FALSE,
     'layout_link_custom' => '',
   );
   $export['node|slide|full'] = $ds_layout;
@@ -112,21 +158,21 @@ function mda_zoom_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_slide_image',
-        1 => 'title',
-        2 => 'field_subtitle',
-        3 => 'body',
-        4 => 'field_slide_link',
-        5 => 'domain',
+        0 => 'lien_diapo_h2',
+        1 => 'group_all_diapo',
+        2 => 'field_slide_image',
+        3 => 'thematic_class',
+        4 => 'group_conteneur_diapo',
+        5 => 'group_link_theme',
       ),
     ),
     'fields' => array(
+      'lien_diapo_h2' => 'ds_content',
+      'group_all_diapo' => 'ds_content',
       'field_slide_image' => 'ds_content',
-      'title' => 'ds_content',
-      'field_subtitle' => 'ds_content',
-      'body' => 'ds_content',
-      'field_slide_link' => 'ds_content',
-      'domain' => 'ds_content',
+      'thematic_class' => 'ds_content',
+      'group_conteneur_diapo' => 'ds_content',
+      'group_link_theme' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

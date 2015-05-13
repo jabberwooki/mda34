@@ -59,7 +59,7 @@ function mda_zoom_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'slide' => 'slide',
   );
-  /* Filter criterion: Domain Access: Available on current domain */
+  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
@@ -107,6 +107,7 @@ function mda_zoom_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Zoom sites'),
+    t('more'),
     t('Zoom portail'),
   );
   $export['slides'] = $view;

@@ -92,8 +92,8 @@ function mda_zoom_strongarm() {
             'visible' => TRUE,
           ),
           'portal_slide' => array(
-            'weight' => '5',
-            'visible' => TRUE,
+            'weight' => '15',
+            'visible' => FALSE,
           ),
           'site_slide' => array(
             'weight' => '5',
@@ -114,7 +114,7 @@ function mda_zoom_strongarm() {
             'visible' => FALSE,
           ),
           'portal_slide' => array(
-            'weight' => '13',
+            'weight' => '17',
             'visible' => FALSE,
           ),
           'site_slide' => array(
