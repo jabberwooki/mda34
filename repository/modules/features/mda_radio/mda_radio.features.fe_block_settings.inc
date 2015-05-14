@@ -15,6 +15,7 @@ function mda_radio_default_fe_block_settings() {
   $export['views-3f4e173bd26d52126cc2667994a7a13f'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => '3f4e173bd26d52126cc2667994a7a13f',
     'module' => 'views',
     'node_types' => array(),
@@ -34,6 +35,8 @@ function mda_radio_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;

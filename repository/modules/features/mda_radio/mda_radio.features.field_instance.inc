@@ -353,7 +353,7 @@ function mda_radio_field_default_field_instances() {
           'field_formatter_class' => '',
           'link' => 0,
         ),
-        'type' => 'content_block',
+        'type' => 'scald_col_8',
         'weight' => 4,
       ),
       'last_item' => array(
@@ -363,7 +363,7 @@ function mda_radio_field_default_field_instances() {
           'field_formatter_class' => '',
           'link' => 0,
         ),
-        'type' => 'content_block',
+        'type' => 'scald_col_8',
         'weight' => 6,
       ),
       'list' => array(
@@ -373,7 +373,7 @@ function mda_radio_field_default_field_instances() {
           'field_formatter_class' => '',
           'link' => 0,
         ),
-        'type' => 'content_block',
+        'type' => 'scald_col_8',
         'weight' => 5,
       ),
     ),
