@@ -41,6 +41,27 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relation: Contenu: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['label'] = 'Event type';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'event_types' => 'event_types',
+    'scald_authors' => 0,
+    'scald_tags' => 0,
+    'authors' => 0,
+    'radio_prog_categories' => 0,
+    'faq_categories' => 0,
+    'competence_fields' => 0,
+    'editors' => 0,
+    'publics' => 0,
+    'resource_publics' => 0,
+    'themes' => 0,
+    'action_types' => 0,
+    'resource_types' => 0,
+    'structure_types' => 0,
+  );
   /* Champ: Contenu: Image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
@@ -98,7 +119,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -116,21 +137,19 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Domain Access: Available on current domain */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
-  /* Filter criterion: Contenu: Type d&#039;événement (field_event_type) */
-  $handler->display->display_options['filters']['field_event_type_tid']['id'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    99 => '99',
-  );
-  $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
+  $handler->display->display_options['filters']['current_all']['group'] = 1;
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['operator'] = '!=';
 
   /* Display: Liste des événements */
   $handler = $view->new_display('page_with_page_title', 'Liste des événements', 'list_events');
@@ -258,6 +277,13 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'ados_mda34_org' => 'ados_mda34_org',
   );
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['operator'] = '!=';
+  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
 
   /* Display: Accueil portail (parents) */
   $handler = $view->new_display('block', 'Accueil portail (parents)', 'block_front_parents');
@@ -365,6 +391,13 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'parents_mda34_org' => 'parents_mda34_org',
   );
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['operator'] = '!=';
+  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
 
   /* Display: Accueil portail (pros) */
   $handler = $view->new_display('block', 'Accueil portail (pros)', 'block_front_pros');
@@ -472,6 +505,13 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'reseau_pro_mda34_org' => 'reseau_pro_mda34_org',
   );
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['operator'] = '!=';
+  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
 
   /* Display: Bloc événements */
   $handler = $view->new_display('block', 'Bloc événements', 'block_front_events');
@@ -556,21 +596,19 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Filter criterion: Domain Access: Available on current domain */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
-  /* Filter criterion: Contenu: Type d&#039;événement (field_event_type) */
-  $handler->display->display_options['filters']['field_event_type_tid']['id'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    99 => '99',
-  );
-  $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
+  $handler->display->display_options['filters']['current_all']['group'] = 1;
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['operator'] = '!=';
+  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
 
   /* Display: Bloc événements pros */
   $handler = $view->new_display('block', 'Bloc événements pros', 'block_events_pros');
@@ -662,21 +700,19 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Filter criterion: Domain Access: Available on current domain */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
-  /* Filter criterion: Contenu: Type d&#039;événement (field_event_type) */
-  $handler->display->display_options['filters']['field_event_type_tid']['id'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    99 => '99',
-  );
-  $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
+  $handler->display->display_options['filters']['current_all']['group'] = 1;
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['operator'] = '!=';
+  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
 
   /* Display: Liste des formations */
   $handler = $view->new_display('page_with_page_title', 'Liste des formations', 'list_trainings');
@@ -738,20 +774,19 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Domain Access: Available on current domain */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
-  /* Filter criterion: Contenu: Type d&#039;événement (field_event_type) */
-  $handler->display->display_options['filters']['field_event_type_tid']['id'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    99 => '99',
-  );
-  $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
+  $handler->display->display_options['filters']['current_all']['group'] = 1;
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
   $handler->display->display_options['path'] = 'formations';
 
   /* Display: Accueil portail (formations) */
@@ -800,20 +835,19 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Domain Access: Available on current domain */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
-  /* Filter criterion: Contenu: Type d&#039;événement (field_event_type) */
-  $handler->display->display_options['filters']['field_event_type_tid']['id'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    99 => '99',
-  );
-  $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
+  $handler->display->display_options['filters']['current_all']['group'] = 1;
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
 
   /* Display: Accueil pros (formations) */
   $handler = $view->new_display('block', 'Accueil pros (formations)', 'block_pros_trainings');
@@ -861,20 +895,19 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'event' => 'event',
   );
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Domain Access: Available on current domain */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
-  /* Filter criterion: Contenu: Type d&#039;événement (field_event_type) */
-  $handler->display->display_options['filters']['field_event_type_tid']['id'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['filters']['field_event_type_tid']['field'] = 'field_event_type_tid';
-  $handler->display->display_options['filters']['field_event_type_tid']['value'] = array(
-    58 => '58',
-  );
-  $handler->display->display_options['filters']['field_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_event_type_tid']['vocabulary'] = 'event_types';
+  $handler->display->display_options['filters']['current_all']['group'] = 1;
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
   $translatables['events'] = array(
     t('Master'),
     t('plus'),
@@ -890,9 +923,9 @@ function mda_events_views_default_views() {
     t('‹ précédent'),
     t('suivant ›'),
     t('dernier »'),
+    t('Event type'),
     t('Liste des événements'),
     t('Agenda'),
-    t('more'),
     t('Types d\'événement'),
     t('Accueil portail (ados)'),
     t('<div class="img-title-wrapper">
@@ -940,7 +973,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Relationship: Terme de taxonomie: Contenu using Type d&#039;événement */
+  /* Relation: Terme de taxonomie: Contenu utilisant Type d&#039;événement */
   $handler->display->display_options['relationships']['reverse_field_event_type_node']['id'] = 'reverse_field_event_type_node';
   $handler->display->display_options['relationships']['reverse_field_event_type_node']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['relationships']['reverse_field_event_type_node']['field'] = 'reverse_field_event_type_node';
@@ -979,7 +1012,6 @@ function mda_events_views_default_views() {
     t('Desc'),
     t('field_event_type'),
     t('Filtre Agenda'),
-    t('more'),
   );
   $export['events_filter'] = $view;
 
