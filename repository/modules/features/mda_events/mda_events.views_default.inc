@@ -150,6 +150,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
+  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
 
   /* Display: Liste des événements */
   $handler = $view->new_display('page_with_page_title', 'Liste des événements', 'list_events');
