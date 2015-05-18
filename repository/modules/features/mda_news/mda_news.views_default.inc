@@ -108,7 +108,7 @@ function mda_news_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['next'] = 'suivant ›';
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -130,7 +130,7 @@ function mda_news_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'news' => 'news',
   );
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Filter criterion: Domain Access: Available on current domain */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
@@ -188,7 +188,7 @@ function mda_news_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Lire la suite >';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -224,7 +224,7 @@ function mda_news_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'news' => 'news',
   );
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Filter criterion: Domain Access: Available on current domain */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
@@ -404,26 +404,32 @@ function mda_news_views_default_views() {
   $handler->display->display_options['fields']['field_scald_image']['table'] = 'field_data_field_scald_image';
   $handler->display->display_options['fields']['field_scald_image']['field'] = 'field_scald_image';
   $handler->display->display_options['fields']['field_scald_image']['label'] = '';
+  $handler->display->display_options['fields']['field_scald_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_scald_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_scald_image']['type'] = 'scald_col_4';
   $handler->display->display_options['fields']['field_scald_image']['settings'] = array(
     'link' => '1',
+    'field_formatter_class' => '',
   );
   /* Champ: Contenu: Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Champ: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
 [field_scald_image]
 <h4>[title]</h4>
 </div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Champ: Contenu: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -505,7 +511,7 @@ function mda_news_views_default_views() {
     'trim_length' => '150',
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -527,7 +533,7 @@ function mda_news_views_default_views() {
     'news' => 'news',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Filter criterion: Domain Access: Available on current domain */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
@@ -550,7 +556,6 @@ function mda_news_views_default_views() {
     t('Lire la suite >'),
     t('Liste des actus'),
     t('Les actualités de la MDA34'),
-    t('more'),
     t('Dernière actu'),
     t('La dernière actualité'),
     t('Tout'),
@@ -562,7 +567,6 @@ function mda_news_views_default_views() {
 </div>'),
     t('Accueil portail parents'),
     t('Accueil portail pros'),
-    t('Custom text'),
     t('Bloc actus'),
     t('Les actualités'),
   );
