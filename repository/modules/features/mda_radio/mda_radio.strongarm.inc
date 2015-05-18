@@ -49,6 +49,15 @@ function mda_radio_strongarm() {
       'last_item' => array(
         'custom_settings' => TRUE,
       ),
+      'sidebar_item' => array(
+        'custom_settings' => TRUE,
+      ),
+      'portal_slide' => array(
+        'custom_settings' => FALSE,
+      ),
+      'site_slide' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -79,12 +88,16 @@ function mda_radio_strongarm() {
             'visible' => TRUE,
           ),
           'list' => array(
-            'weight' => '6',
+            'weight' => '15',
             'visible' => FALSE,
           ),
           'last_item' => array(
-            'weight' => '13',
+            'weight' => '15',
             'visible' => FALSE,
+          ),
+          'sidebar_item' => array(
+            'weight' => '2',
+            'visible' => TRUE,
           ),
         ),
         'sharethis' => array(
@@ -97,11 +110,15 @@ function mda_radio_strongarm() {
             'visible' => TRUE,
           ),
           'list' => array(
-            'weight' => '3',
+            'weight' => '4',
             'visible' => TRUE,
           ),
           'last_item' => array(
-            'weight' => '5',
+            'weight' => '6',
+            'visible' => TRUE,
+          ),
+          'sidebar_item' => array(
+            'weight' => '1',
             'visible' => TRUE,
           ),
         ),

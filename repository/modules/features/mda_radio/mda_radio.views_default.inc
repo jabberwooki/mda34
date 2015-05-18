@@ -169,6 +169,7 @@ function mda_radio_views_default_views() {
 
   /* Display: Dernière émission (attachement) */
   $handler = $view->new_display('attachment', 'Dernière émission (attachement)', 'programmes_last');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -221,7 +222,7 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
   $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
-  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Lire la suite';
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = '+ d\'infos';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['settings'] = array(
@@ -244,8 +245,8 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['arguments']['null']['validate_options']['code'] = 'return !isset($_GET[\'page\']);';
   $handler->display->display_options['displays'] = array(
     'default' => 0,
-    'radio_programmes_list' => 0,
-    'block_last_radio_programme' => 0,
+    'programmes_list' => 0,
+    'block_last_programme' => 0,
   );
 
   /* Display: Bloc dernière émission */
@@ -266,6 +267,114 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['row_options']['delta_fieldset']['delta_fields'] = array();
   $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
   $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'last_item';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Champ: Contenu: Image */
+  $handler->display->display_options['fields']['field_radio_image']['id'] = 'field_radio_image';
+  $handler->display->display_options['fields']['field_radio_image']['table'] = 'field_data_field_radio_image';
+  $handler->display->display_options['fields']['field_radio_image']['field'] = 'field_radio_image';
+  $handler->display->display_options['fields']['field_radio_image']['label'] = '';
+  $handler->display->display_options['fields']['field_radio_image']['element_class'] = 'col-sm-5';
+  $handler->display->display_options['fields']['field_radio_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_radio_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_radio_image']['settings'] = array(
+    'image_style' => 'medium',
+    'image_link' => 'content',
+    'field_formatter_class' => '',
+  );
+  /* Champ: Intitulé bloc */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = 'Intitulé bloc';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'La dernière émission';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Champ: Contenu: Titre */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Champ: Contenu: Date d'enregistrement */
+  $handler->display->display_options['fields']['field_record_date']['id'] = 'field_record_date';
+  $handler->display->display_options['fields']['field_record_date']['table'] = 'field_data_field_record_date';
+  $handler->display->display_options['fields']['field_record_date']['field'] = 'field_record_date';
+  $handler->display->display_options['fields']['field_record_date']['settings'] = array(
+    'format_type' => 'date_only_short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'field_formatter_class' => '',
+  );
+  /* Champ: Contenu: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Lire la suite';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'field_formatter_class' => '',
+  );
+  /* Champ: Contenu: Lien */
+  $handler->display->display_options['fields']['view_node_1']['id'] = 'view_node_1';
+  $handler->display->display_options['fields']['view_node_1']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node_1']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node_1']['label'] = '';
+  $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node_1']['text'] = 'Lire la suite';
+  /* Champ: Contenu: Son */
+  $handler->display->display_options['fields']['field_scald_audio']['id'] = 'field_scald_audio';
+  $handler->display->display_options['fields']['field_scald_audio']['table'] = 'field_data_field_scald_audio';
+  $handler->display->display_options['fields']['field_scald_audio']['field'] = 'field_scald_audio';
+  $handler->display->display_options['fields']['field_scald_audio']['label'] = '';
+  $handler->display->display_options['fields']['field_scald_audio']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_scald_audio']['type'] = 'content_block';
+  $handler->display->display_options['fields']['field_scald_audio']['settings'] = array(
+    'link' => '0',
+    'field_formatter_class' => '',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Global: Null */
+  $handler->display->display_options['arguments']['null']['id'] = 'null';
+  $handler->display->display_options['arguments']['null']['table'] = 'views';
+  $handler->display->display_options['arguments']['null']['field'] = 'null';
+  $handler->display->display_options['arguments']['null']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['null']['exception']['title'] = 'Tout';
+  $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'nimportnawak';
+  $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['null']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['null']['validate']['type'] = 'php';
+  $handler->display->display_options['arguments']['null']['validate_options']['code'] = 'return !isset($_GET[\'page\']);';
+
+  /* Display: Bloc colonne droite */
+  $handler = $view->new_display('block', 'Bloc colonne droite', 'block_sidebar');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Radio';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'sidebar_item';
+  $handler->display->display_options['row_options']['alternating'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['delta_fieldset']['delta_fields'] = array();
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'sidebar_item';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Champ: Contenu: Image */
@@ -374,9 +483,12 @@ function mda_radio_views_default_views() {
     t('Trier les émissions par catégorie'),
     t('Dernière émission (attachement)'),
     t('La dernière émission'),
-    t('Lire la suite'),
+    t('+ d\'infos'),
     t('Tout'),
     t('Bloc dernière émission'),
+    t('Lire la suite'),
+    t('Bloc colonne droite'),
+    t('Radio'),
   );
   $export['radio_programmes'] = $view;
 

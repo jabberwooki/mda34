@@ -31,16 +31,16 @@ function mda_radio_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-c3871541e49762b8423f91dd14cecd03' => array(
+        'views-3f4e173bd26d52126cc2667994a7a13f' => array(
           'module' => 'views',
-          'delta' => 'c3871541e49762b8423f91dd14cecd03',
-          'region' => 'content',
+          'delta' => '3f4e173bd26d52126cc2667994a7a13f',
+          'region' => 'highlighted',
           'weight' => '-10',
         ),
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.

@@ -33,7 +33,7 @@ function mda_radio_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
-        'link text' => 'Lire la suite',
+        'link text' => '+ d\'infos',
         'wrapper' => '',
         'class' => '',
         'field_formatter_class' => '',
@@ -50,9 +50,15 @@ function mda_radio_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'list';
   $ds_fieldsetting->settings = array(
     'node_link' => array(
-      'weight' => '4',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'link text' => '+ d\'infos',
+        'wrapper' => '',
+        'class' => '',
+        'field_formatter_class' => '',
+      ),
     ),
   );
   $export['node|radio_programme|list'] = $ds_fieldsetting;
@@ -123,8 +129,8 @@ function mda_radio_ds_layout_settings_info() {
         2 => 'field_record_date',
         3 => 'body',
         4 => 'node_link',
-        5 => 'sharethis',
-        6 => 'field_scald_audio',
+        5 => 'field_scald_audio',
+        6 => 'sharethis',
       ),
     ),
     'fields' => array(
@@ -133,8 +139,8 @@ function mda_radio_ds_layout_settings_info() {
       'field_record_date' => 'right',
       'body' => 'right',
       'node_link' => 'right',
-      'sharethis' => 'right',
       'field_scald_audio' => 'right',
+      'sharethis' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -163,17 +169,17 @@ function mda_radio_ds_layout_settings_info() {
       ),
       'right' => array(
         1 => 'field_record_date',
-        2 => 'sharethis',
-        3 => 'node_link',
-        4 => 'field_scald_audio',
+        2 => 'node_link',
+        3 => 'field_scald_audio',
+        4 => 'sharethis',
       ),
     ),
     'fields' => array(
       'field_radio_image' => 'left',
       'field_record_date' => 'right',
-      'sharethis' => 'right',
       'node_link' => 'right',
       'field_scald_audio' => 'right',
+      'sharethis' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
