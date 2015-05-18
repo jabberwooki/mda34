@@ -93,10 +93,12 @@ function kcore_strongarm() {
   $strongarm->name = 'sharethis_node_types';
   $strongarm->value = array(
     'news' => 'news',
+    'radio_programme' => 'radio_programme',
     'event' => 'event',
     'faq' => 'faq',
     'resource' => 'resource',
     'structure' => 'structure',
+    'slide' => 0,
     'media_tester' => 0,
     'page' => 0,
   );
@@ -107,8 +109,8 @@ function kcore_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_option_extras';
   $strongarm->value = array(
+    'Facebook Like:fblike' => 'Facebook Like:fblike',
     'Google Plus One:plusone' => 0,
-    'Facebook Like:fblike' => 0,
   );
   $export['sharethis_option_extras'] = $strongarm;
 
@@ -116,7 +118,7 @@ function kcore_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_service_option';
-  $strongarm->value = '"Email:email","Twitter:twitter","Facebook:facebook","Google +:googleplus","LinkedIn:linkedin","Print:print"';
+  $strongarm->value = '"Facebook:facebook","Twitter:twitter","Google +:googleplus","LinkedIn:linkedin"';
   $export['sharethis_service_option'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -137,7 +139,7 @@ function kcore_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
-  $strongarm->value = '3';
+  $strongarm->value = 193262079;
   $export['user_admin_role'] = $strongarm;
 
   return $export;
