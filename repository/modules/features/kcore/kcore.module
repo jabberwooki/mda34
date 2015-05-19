@@ -114,7 +114,7 @@ function kcore_block_configure($delta = '') {
  * This hook declares how the configured options for a block
  * provided by this module are saved.
  */
-function block_example_block_save($delta = '', $edit = array()) {
+function kcore_block_save($delta = '', $edit = array()) {
 	switch ($delta) {
 		case 'mda_shortcut_ados':
 			variable_set('mda_shortcut_ados_title', $edit['mda_shortcut_ados_title']);
@@ -144,7 +144,7 @@ function kcore_block_view($delta = '') {
 				'title_tag' => variable_get('mda_shortcut_ados_title_tag', 'h2'),
 				'title' => variable_get('mda_shortcut_ados_title', 'Adolescents'),
 				'text' => variable_get('mda_shortcut_ados_text', 'La MDA34 répond à vos questions'),
-				'url' => variable_get('mda_shortcut_ados_url', 'ados.mda34.org/faq'),
+				'url' => variable_get('mda_shortcut_ados_url', 'ados.mda34.org'),
 			);
 			$block['content'] = theme('mda_shortcut_block', $variables);
 			return $block;
