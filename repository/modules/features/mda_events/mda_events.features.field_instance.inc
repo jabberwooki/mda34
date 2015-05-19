@@ -522,7 +522,7 @@ function mda_events_field_default_field_instances() {
             'imce' => 0,
             'reference' => 0,
             'remote' => 0,
-            'scald' => 0,
+            'scald' => 'scald',
             'upload' => 'upload',
           ),
           'source_attach' => array(
