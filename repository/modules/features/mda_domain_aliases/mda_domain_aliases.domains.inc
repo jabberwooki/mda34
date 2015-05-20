@@ -20,6 +20,11 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'ados_mda34_org',
     ),
+    'ados-prod.mda34.korora.fr' => array(
+      'pattern' => 'ados-prod.mda34.korora.fr',
+      'redirect' => 0,
+      'machine_name' => 'ados_mda34_org',
+    ),
   );
   $domain_aliases['parents_mda34_org'] = array(
     'parents.mda34.dev' => array(
@@ -29,6 +34,11 @@ function mda_domain_aliases_domain_alias_default_aliases() {
     ),
     'parents.mda34.korora.fr' => array(
       'pattern' => 'parents.mda34.korora.fr',
+      'redirect' => 0,
+      'machine_name' => 'parents_mda34_org',
+    ),
+    'parents-prod.mda34.korora.fr' => array(
+      'pattern' => 'parents-prod.mda34.korora.fr',
       'redirect' => 0,
       'machine_name' => 'parents_mda34_org',
     ),
@@ -44,6 +54,11 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'philado_mda34_org',
     ),
+    'philado-prod.mda34.korora.fr' => array(
+      'pattern' => 'philado-prod.mda34.korora.fr',
+      'redirect' => 0,
+      'machine_name' => 'philado_mda34_org',
+    ),
   );
   $domain_aliases['radio_mda34_org'] = array(
     'radio.mda34.dev' => array(
@@ -53,6 +68,11 @@ function mda_domain_aliases_domain_alias_default_aliases() {
     ),
     'radio.mda34.korora.fr' => array(
       'pattern' => 'radio.mda34.korora.fr',
+      'redirect' => 0,
+      'machine_name' => 'radio_mda34_org',
+    ),
+    'radio-prod.mda34.korora.fr' => array(
+      'pattern' => 'radio-prod.mda34.korora.fr',
       'redirect' => 0,
       'machine_name' => 'radio_mda34_org',
     ),
@@ -68,6 +88,11 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'reseau_pro_mda34_org',
     ),
+    'reseau-pro-prod.mda34.korora.fr' => array(
+      'pattern' => 'reseau-pro-prod.mda34.korora.fr',
+      'redirect' => 0,
+      'machine_name' => 'reseau_pro_mda34_org',
+    ),
   );
   $domain_aliases['www_mda34_org'] = array(
     'www.mda34.dev' => array(
@@ -77,6 +102,11 @@ function mda_domain_aliases_domain_alias_default_aliases() {
     ),
     'www.mda34.korora.fr' => array(
       'pattern' => 'www.mda34.korora.fr',
+      'redirect' => 0,
+      'machine_name' => 'www_mda34_org',
+    ),
+    'www-prod.mda34.korora.fr' => array(
+      'pattern' => 'www-prod.mda34.korora.fr',
       'redirect' => 0,
       'machine_name' => 'www_mda34_org',
     ),
