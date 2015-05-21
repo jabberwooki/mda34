@@ -21,7 +21,7 @@ function mda_resources_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Paramètres MDA supplémentaires',
-    'weight' => '21',
+    'weight' => '18',
     'children' => array(
       0 => 'field_practical_title',
     ),

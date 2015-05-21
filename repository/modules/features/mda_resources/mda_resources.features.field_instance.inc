@@ -378,6 +378,81 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
     ),
   );
 
+  // Exported field_instance: 'node-resource-field_resource_files'
+  $field_instances['node-resource-field_resource_files'] = array(
+    'bundle' => 'resource',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'file_default',
+        'weight' => 14,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'file',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'file_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_resource_files',
+    'label' => 'Fichier(s)',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'file_directory' => 'mda/resources',
+      'file_extensions' => 'pdf doc docx xls xlsx odt ods',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'filefield_sources' => array(
+          'filefield_sources' => array(
+            'attach' => 0,
+            'clipboard' => 0,
+            'imce' => 0,
+            'reference' => 0,
+            'remote' => 0,
+            'scald' => 'scald',
+            'upload' => 'upload',
+          ),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+          ),
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-resource-field_resource_image'
   $field_instances['node-resource-field_resource_image'] = array(
     'bundle' => 'resource',
@@ -656,7 +731,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
           'link' => 0,
         ),
         'type' => 'scald_col_8',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -686,7 +761,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -715,7 +790,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
           'link' => 0,
         ),
         'type' => 'scald_col_8',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -745,7 +820,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -774,7 +849,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
           'link' => 0,
         ),
         'type' => 'scald_col_8',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -804,7 +879,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -872,6 +947,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
   t('Auteurs');
   t('Body');
   t('Editeur');
+  t('Fichier(s)');
   t('Galerie photo');
   t('ISBN');
   t('Image');
