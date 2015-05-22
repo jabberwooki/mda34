@@ -22,7 +22,10 @@
       padding: 0;
       background-color: @gray-base;
       opacity: 0.7;
-      width: 360px;
+      @media (min-width:@screen-xs){
+        width: 360px;
+      }
+      
       & a{
         display: block;
         color: white;
@@ -47,6 +50,9 @@
       background-color: @gray-base;
       color: white;
       z-index: 1;
+      @media (max-width:@screen-xs){
+        top: 0;
+      }
     }
   }
   & p{

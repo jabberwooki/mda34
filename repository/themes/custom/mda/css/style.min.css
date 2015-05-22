@@ -1603,8 +1603,9 @@ p{font-family:arial}
 body{background:url(../images/bg_header.jpg)50% 0 no-repeat}
 [class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a,body.domain-ados-mda34-org h1.navbar-brand a{padding-left:28px}
 #skip-link{position:absolute;width:1px;height:1px;top:-1000em;overflow:hidden}
-#navbar{margin-top:10px}
+#navbar{margin-top:0}
 .navbar-header{float:none}
+.navbar-header a.logo{margin-right:10px}
 .navbar-header .navbar-brand{padding-right:0}
 .navbar-header h1.navbar-brand{margin-bottom:0;margin-top:10px;float:none}
 .navbar-header h1.navbar-brand a{font-family:"Eligible bold","Times New Roman",monospace;color:#000;font-size:26px;white-space:nowrap}
@@ -1612,9 +1613,13 @@ body{background:url(../images/bg_header.jpg)50% 0 no-repeat}
 @media screen and (min-width:768px){.navbar-header h1.navbar-brand a{float:left}
 }
 .navbar-header .slogan{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;width:162px;border-top:1px solid #000;margin-left:193px;text-align:center}
-@media (max-width:768px){.navbar-header .slogan{text-align:left;margin-left:120px;width:120px}
+@media (max-width:768px){.navbar-header .slogan{text-align:left;margin-left:120px;width:140px}
 }
 [class*=" domain-ado"] .navbar-header .slogan,[class*=" domain-parent"] .navbar-header .slogan,[class*=" domain-reseau"] .navbar-header .slogan,[class*=" domain-radio"] .navbar-header .slogan,body.domain-ados-mda34-org .navbar-header .slogan{margin-left:150px}
+@media (max-width:480px){.navbar-header h1.navbar-brand a{font-size:1em;white-space:normal}
+.navbar-header h1.navbar-brand{margin-top:0}
+.navbar-header .slogan{margin-top:10px}
+}
 [class*=" domain-ado"] a.logo,[class*=" domain-parent"] a.logo,[class*=" domain-reseau"] a.logo,[class*=" domain-radio"] a.logo{text-indent:-6000px;width:72px;height:83px}
 body.domain-ados-mda34-org a.logo{background:url(../images/home_ado_big.gif)no-repeat}
 body.domain-parents-mda34-org a.logo{background:url(../images/home_parents_big.gif)no-repeat}
@@ -1626,7 +1631,9 @@ body.domain-reseau-pro-mda34-org h1.navbar-brand a{padding-left:20px}
 body.domain-radio-mda34-org a.logo{background:url(../images/home_radio_big.gif)no-repeat;width:97px}
 body.domain-radio-mda34-org .navbar-header .slogan{margin-left:117px}
 body.domain-radio-mda34-org h1.navbar-brand a{padding-left:33px}
-button.navbar-toggle{margin-top:-25px}
+button.navbar-toggle{margin-top:-25px;margin-bottom:0}
+@media (max-width:480px){button.navbar-toggle{margin-top:-15px;margin-right:-20px}
+}
 #main-top-menu{margin-top:-5px}
 #main-top-menu>ul>li>a{text-transform:uppercase;font-weight:700;font-size:.8em;color:#000;display:block;box-shadow:0 0 2px 2px #dfdfdf;border-radius:1px;margin-right:7px;background-color:#fff;padding:4px 6px}
 #main-top-menu>ul>li>a.active{color:#fff;box-shadow:0 0 0 0 #dfdfdf;padding-bottom:12px;background-color:#000}
@@ -1639,7 +1646,9 @@ button.navbar-toggle{margin-top:-25px}
 .block .views-row .views-field-title a{color:#000}
 .block .views-row:not(.views-row-last){border-bottom:1px solid #cdcdcd}
 .block .img-title-wrapper{position:relative}
-.block .img-title-wrapper h4{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;opacity:.7;width:360px}
+.block .img-title-wrapper h4{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;opacity:.7}
+@media (min-width:480px){.block .img-title-wrapper h4{width:360px}
+}
 .block .img-title-wrapper h4 a{display:block;color:#fff;font-size:1.1em;padding:10px 15px}
 .block .img-title-wrapper .date-display-single{position:absolute;top:0;right:0;display:block;padding:0 5px;color:#fff}
 .block .img-title-wrapper .event-type-block{position:absolute;top:50%;left:0;display:block;padding:3px 5px;background-color:#000;color:#fff;z-index:1}
@@ -1674,16 +1683,19 @@ body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom{back
 body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom a{border-bottom:1px solid #575095;background:url(../images/button_maison_pros.png)no-repeat}
 body.front .block-kcore a h2,body.front .block-kcore a p{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;color:#000;margin:0;padding:0}
 h2.line-right-left{font-size:1.5em}
-body.front .carousel-inner .group-all-diapo .container{position:relative}
-body.front .carousel-inner .group-all-diapo .container .group-link-theme{width:550px;height:200px;position:absolute;bottom:0;left:0;background-color:#000;opacity:.6}
-body.front .carousel-inner .group-all-diapo .container .group-link-theme h3 a{color:#fff;padding:0 25px 5px;display:block;font-size:1.2em}
-body.front .carousel-inner .group-all-diapo .container .group-link-theme h4{display:inline-block;padding:5px 5px 5px 25px;color:#fff}
-body.front .carousel-inner .group-all-diapo .container .group-link-theme h4.orange{background-color:#f78c26}
-body.front .carousel-inner .group-all-diapo .container .group-link-theme h4.violet{background-color:#575095}
-body.front .carousel-inner .group-all-diapo .container .group-link-theme h4.green{background-color:#32903f}
-body.front .carousel-inner .group-all-diapo .container .group-link-theme h4.blue{background-color:#0080ff}
-body.front .carousel-inner .group-all-diapo .container .group-link-theme h4:before{color:#fff}
-body.front .carousel-inner .group-all-diapo .container .group-link-theme .field-name-field-thematique-diapo{background-color:#f78c26;padding:8px 8px 8px 25px;color:#fff;text-transform:uppercase;font-size:1.2em}
+@media (max-width:480px){.block .img-title-wrapper .event-type-block{top:0}
+body.front #zoom{margin-top:-10px}
+}
+body.front #zoom .group-all-diapo .container{position:relative}
+body.front #zoom .group-all-diapo .container .group-link-theme{width:550px;height:200px;position:absolute;bottom:0;left:0;background-color:#000;opacity:.6}
+body.front #zoom .group-all-diapo .container .group-link-theme h3 a{color:#fff;padding:0 25px 5px;display:block;font-size:1.2em}
+body.front #zoom .group-all-diapo .container .group-link-theme h4{display:inline-block;padding:5px 5px 5px 25px;color:#fff}
+body.front #zoom .group-all-diapo .container .group-link-theme h4.orange{background-color:#f78c26}
+body.front #zoom .group-all-diapo .container .group-link-theme h4.violet{background-color:#575095}
+body.front #zoom .group-all-diapo .container .group-link-theme h4.green{background-color:#32903f}
+body.front #zoom .group-all-diapo .container .group-link-theme h4.blue{background-color:#0080ff}
+body.front #zoom .group-all-diapo .container .group-link-theme h4:before{color:#fff}
+body.front #zoom .group-all-diapo .container .group-link-theme .field-name-field-thematique-diapo{background-color:#f78c26;padding:8px 8px 8px 25px;color:#fff;text-transform:uppercase;font-size:1.2em}
 body.front .carousel-indicators li{border:2px solid #000}
 @media screen and (min-width:768px){body.front .carousel-indicators li.active{background-color:#000}
 }
