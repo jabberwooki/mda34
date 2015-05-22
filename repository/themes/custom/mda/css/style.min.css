@@ -902,7 +902,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .nav-tabs>li>a{margin-right:2px;line-height:1.42857143;border:1px solid transparent;border-radius:4px 4px 0 0}
 .nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:focus,.nav-tabs-justified>.active>a:hover,.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:focus,.nav-tabs.nav-justified>.active>a:hover{border:1px solid #ddd}
 .nav-tabs>li>a:hover{border-color:#cdcdcd #cdcdcd #ddd}
-.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:#555;background-color:#0f0;border:1px solid #ddd;border-bottom-color:transparent;cursor:default}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:#555;border:1px solid #ddd;border-bottom-color:transparent;cursor:default}
 .nav-tabs.nav-justified{width:100%;border-bottom:0}
 .nav-tabs.nav-justified>li{float:none}
 .nav-tabs.nav-justified>li>a{text-align:center;margin-bottom:5px;margin-right:0;border-radius:4px}
@@ -1587,6 +1587,7 @@ p{font-family:arial}
 .violet{color:#575095}
 .blue{color:#0080ff}
 .cyan{color:#32903f}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{background-color:#cdcdcd}
 @font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix)format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294)format('woff'),url(../images/fontello/font/fontello.ttf?90885294)format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello)format('svg');font-weight:400;font-style:normal}
 [class*=" icon-"]{float:left}
 [class*=" icon-"]:hover{text-decoration:none}
@@ -1641,6 +1642,12 @@ button.navbar-toggle{margin-top:-25px;margin-bottom:0}
 #main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu.png)50% 100% no-repeat #000}
 }
 #main-top-menu>ul>li>a:hover{color:#fff;background-color:#000}
+@media (min-width:768px){body.domain-ados-mda34-org #main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu-ado.png)50% 100% no-repeat #f78c26}
+}
+body.domain-ados-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#f78c26}
+@media (min-width:768px){body.domain-parents-mda34-org #main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu-parents.png)50% 100% no-repeat #f78c26}
+}
+body.domain-parents-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#f78c26}
 .block.block-views{border-bottom:1px solid #000;padding-bottom:10px}
 .block .views-row{padding:10px 0}
 .block .views-row .views-field-title a{color:#000}
