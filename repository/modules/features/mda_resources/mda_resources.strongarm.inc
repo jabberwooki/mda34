@@ -53,16 +53,16 @@ function mda_resources_strongarm() {
           'weight' => '1',
         ),
         'metatags' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '12',
+          'weight' => '13',
         ),
         'redirect' => array(
-          'weight' => '13',
+          'weight' => '14',
         ),
       ),
       'display' => array(

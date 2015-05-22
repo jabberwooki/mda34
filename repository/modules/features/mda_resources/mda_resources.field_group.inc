@@ -21,7 +21,7 @@ function mda_resources_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Paramètres MDA supplémentaires',
-    'weight' => '18',
+    'weight' => '19',
     'children' => array(
       0 => 'field_practical_title',
     ),
@@ -50,11 +50,12 @@ function mda_resources_field_group_info() {
     'label' => 'Contenu infos pratiques',
     'weight' => '15',
     'children' => array(
-      0 => 'field_resource_authors',
-      1 => 'field_resource_public',
-      2 => 'field_editor',
-      3 => 'field_isbn',
+      0 => 'field_editor',
+      1 => 'field_isbn',
+      2 => 'field_resource_authors',
+      3 => 'field_resource_public',
       4 => 'field_resource_url',
+      5 => 'field_resource_date_parution',
     ),
     'format_type' => 'div',
     'format_settings' => array(
