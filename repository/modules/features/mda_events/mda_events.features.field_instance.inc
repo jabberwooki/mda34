@@ -33,7 +33,7 @@ function mda_events_field_default_field_instances() {
           'field_formatter_class' => 'col-sm-6',
         ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -169,12 +169,13 @@ function mda_events_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'addressfield',
+      'module' => 'addressfield_autocomplete',
       'settings' => array(
         'available_countries' => array(
           'FR' => 'FR',
         ),
         'default_country' => 'FR',
+        'draggable' => 1,
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-postal-code' => 0,
@@ -185,8 +186,17 @@ function mda_events_field_default_field_instances() {
           'name-oneline' => 0,
           'address-optional' => 0,
         ),
+        'geolocation' => TRUE,
+        'html5_geocode' => 1,
+        'manual_text' => 'Saisir une adresse manuellement',
+        'map' => 1,
+        'restrict_country' => array(),
+        'reveal' => 1,
+        'reverse_geocode' => 0,
+        'types' => 'geocode',
+        'visible_markers' => 1,
       ),
-      'type' => 'addressfield_standard',
+      'type' => 'addressfield_autocomplete',
       'weight' => 7,
     ),
   );
@@ -194,21 +204,12 @@ function mda_events_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_coordinates'
   $field_instances['node-event-field_coordinates'] = array(
     'bundle' => 'event',
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'geofield',
-        'settings' => array(
-          'data' => 'full',
-          'field_formatter_class' => '',
-        ),
-        'type' => 'geofield_wkt',
-        'weight' => 11,
-      ),
-      'full' => array(
-        'label' => 'hidden',
         'module' => 'leaflet',
         'settings' => array(
           'field_formatter_class' => '',
@@ -239,8 +240,8 @@ function mda_events_field_default_field_instances() {
           ),
           'leaflet_map' => 'OSM Mapnik',
           'popup' => array(
-            'show' => 0,
-            'text' => '',
+            'show' => 1,
+            'text' => '[node-title]',
           ),
           'vector_display' => array(
             'clickable' => 0,
@@ -255,13 +256,46 @@ function mda_events_field_default_field_instances() {
             'weight' => '',
           ),
           'zoom' => array(
-            'initialZoom' => -1,
+            'initialZoom' => 13,
             'maxZoom' => -1,
             'minZoom' => 1,
           ),
         ),
         'type' => 'geofield_leaflet',
-        'weight' => 7,
+        'weight' => 11,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'geofield_map',
+        'settings' => array(
+          'field_formatter_class' => '',
+          'geofield_map_baselayers_hybrid' => 0,
+          'geofield_map_baselayers_map' => 1,
+          'geofield_map_baselayers_physical' => 0,
+          'geofield_map_baselayers_satellite' => 0,
+          'geofield_map_center' => array(
+            'geocode' => 'Find my location',
+            'lat' => '',
+            'lon' => '',
+          ),
+          'geofield_map_controltype' => 'default',
+          'geofield_map_draggable' => 1,
+          'geofield_map_height' => '400px',
+          'geofield_map_maptype' => 'map',
+          'geofield_map_max_zoom' => 0,
+          'geofield_map_min_zoom' => 0,
+          'geofield_map_mtc' => 'standard',
+          'geofield_map_overview' => 0,
+          'geofield_map_overview_opened' => 0,
+          'geofield_map_pancontrol' => 1,
+          'geofield_map_scale' => 1,
+          'geofield_map_scrollwheel' => 1,
+          'geofield_map_streetview_show' => 0,
+          'geofield_map_width' => '100%',
+          'geofield_map_zoom' => 14,
+        ),
+        'type' => 'geofield_map_map',
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'above',
@@ -289,25 +323,12 @@ function mda_events_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'geocoder',
+      'module' => 'addressfield_autocomplete',
       'settings' => array(
+        'addressfield_autocomplete_field' => 'field_address',
         'delta_handling' => 'default',
-        'geocoder_field' => 'field_address',
-        'geocoder_handler' => 'mapquest_nominatim',
-        'handler_settings' => array(
-          'google' => array(
-            'all_results' => 0,
-            'geometry_type' => 'point',
-            'reject_results' => array(
-              'APPROXIMATE' => 0,
-              'GEOMETRIC_CENTER' => 0,
-              'RANGE_INTERPOLATED' => 0,
-              'ROOFTOP' => 0,
-            ),
-          ),
-        ),
       ),
-      'type' => 'geocoder',
+      'type' => 'addressfield_autocomplete_latlng',
       'weight' => 14,
     ),
   );
@@ -332,7 +353,7 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 19,
       ),
       'list' => array(
         'label' => 'above',
@@ -476,7 +497,7 @@ function mda_events_field_default_field_instances() {
           'image_style' => 'medium',
         ),
         'type' => 'image',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'list' => array(
         'label' => 'above',
@@ -569,7 +590,7 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 18,
       ),
       'list' => array(
         'label' => 'above',
@@ -699,7 +720,7 @@ function mda_events_field_default_field_instances() {
           'field_formatter_class' => 'btn btn-success',
         ),
         'type' => 'link_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -911,7 +932,7 @@ function mda_events_field_default_field_instances() {
           'field_formatter_class' => '',
         ),
         'type' => 'registration_form',
-        'weight' => 3,
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
