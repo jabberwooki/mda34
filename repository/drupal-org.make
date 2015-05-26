@@ -87,7 +87,8 @@ projects[addressfield][version] = "1.0"
 projects[block_class][subdir] = contrib
 projects[block_class][version] = "2.1"
 
-;projects[boxes][subdir] = contrib
+projects[boxes][subdir] = contrib
+projects[boxes][version] = "1.2"
 
 projects[date][subdir] = contrib
 projects[date][version] = "2.8"
@@ -97,6 +98,9 @@ projects[email][version] = "1.3"
 
 projects[entityreference][subdir] = contrib
 projects[entityreference][version] = "1.1"
+
+projects[entityform][subdir] = contrib
+projects[entityform][version] = "2.0-rc1"
 
 projects[field_collection][subdir] = contrib
 projects[field_collection][version] = "1.0-beta8"
@@ -121,6 +125,9 @@ projects[phone][version] = "1.0-beta1"
 
 projects[references_dialog][subdir] = contrib
 projects[references_dialog][version] = "1.0-beta1"
+
+projects[rules][subdir] = contrib
+projects[rules][version] = "2.9"
 
 ;projects[views_bulk_operations][subdir] = contrib
 ;projects[views_bulk_operations][version] = "3.2"
