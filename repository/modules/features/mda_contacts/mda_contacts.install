@@ -3,6 +3,6 @@
 /**
  * Activate boxes, entityform and rules modules.
  */
-function mda_contact_update_7001() {
+function mda_contacts_update_7001() {
 	module_enable(array('boxes','entityform','rules'));
 }
