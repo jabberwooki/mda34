@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Contacts feature.
+ */
+
+include_once 'mda_contacts.features.inc';
