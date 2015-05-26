@@ -212,6 +212,17 @@ libraries[leaflet][download][url] = "http://leaflet-cdn.s3.amazonaws.com/build/l
 libraries[leaflet][directory_name] = "leaflet"
 libraries[leaflet][destination] = "libraries"
 
+projects[gmap][subdir] = contrib
+projects[gmap][version] = "2.9"
+
+projects[addressfield_autocomplete][subdir] = contrib
+projects[addressfield_autocomplete][version] = "1.0-beta5"
+
+libraries[geocomplete][download][type] = "file"
+libraries[geocomplete][download][url] = "https://github.com/ubilabs/geocomplete/archive/1.6.4.tar.gz"
+libraries[geocomplete][directory_name] = "geocomplete"
+libraries[geocomplete][destination] = "libraries"
+
 ;--- Events -------------------------------------------------------------------
 projects[registration][subdir] = contrib
 projects[registration][version] = "1.4"
