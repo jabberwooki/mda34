@@ -41,7 +41,10 @@ h2.line-right-left{
   font-size: 1.5em;
 }
 /* Caroussel ******************************************************************/
-body.front .carousel-inner {
+body.front #zoom {
+  @media (max-width:@screen-xs){
+    margin-top: -10px;
+  }
   & .group-all-diapo .container{
     position: relative;
     & .group-link-theme{
