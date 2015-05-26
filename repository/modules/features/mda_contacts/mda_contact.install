@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Activate boxes, entityform and rules modules.
+ */
+function kcore_update_7001() {
+	module_enable(array('gmap','addressfield_autocomplete','geofield_map'));
+}
