@@ -65,16 +65,16 @@ function mda_structures_strongarm() {
           'weight' => '1',
         ),
         'metatags' => array(
-          'weight' => '18',
+          'weight' => '19',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '16',
+          'weight' => '17',
         ),
         'redirect' => array(
-          'weight' => '17',
+          'weight' => '18',
         ),
       ),
       'display' => array(
