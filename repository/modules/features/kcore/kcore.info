@@ -28,6 +28,7 @@ features[fe_block_settings][] = kcore-mda_shortcut_pros
 features[features_api][] = api:2
 features[menu_custom][] = main-menu
 features[menu_custom][] = menu-footer-menu
+features[menu_custom][] = menu-shortcuts
 features[taxonomy][] = publics
 features[user_role][] = admin philado
 features[user_role][] = administrateur
