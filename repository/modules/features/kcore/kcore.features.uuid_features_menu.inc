@@ -56,7 +56,14 @@ function kcore_menu_default_uuid_features_menu() {
       ),
       'alter' => TRUE,
       'attributes' => array(
-        'title' => '',
+        'class' => array(
+          0 => 'link-shortcut-login',
+        ),
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
       ),
     ),
     'module' => 'menu',
