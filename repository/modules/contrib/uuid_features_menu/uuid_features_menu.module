@@ -136,9 +136,11 @@ function uuid_features_menu_encode_path($path) {
       $keys = array_keys($load_function);
       $load_function = $keys[0];
     }
-    $inst = call_user_func($load_function, $args[$arg]);
-    if ($inst) {
-      $args[$arg] = $inst->uuid;
+    if(!empty($load_function)) {
+    	$inst = call_user_func($load_function, $args[$arg]);
+	    if ($inst && isset($inst->uuid)) {
+	      $args[$arg] = $inst->uuid;
+	    }
     }
   }
 

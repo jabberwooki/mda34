@@ -1,0 +1,19 @@
+diff --git a/repository/modules/contrib/uuid_features_menu/uuid_features_menu.module b/repository/modules/contrib/uuid_features_menu/uuid_features_menu.module
+index 1d3ba79..8509d03 100644
+--- a/repository/modules/contrib/uuid_features_menu/uuid_features_menu.module
++++ b/repository/modules/contrib/uuid_features_menu/uuid_features_menu.module
+@@ -136,9 +136,11 @@ function uuid_features_menu_encode_path($path) {
+       $keys = array_keys($load_function);
+       $load_function = $keys[0];
+     }
+-    $inst = call_user_func($load_function, $args[$arg]);
+-    if ($inst) {
+-      $args[$arg] = $inst->uuid;
++    if(!empty($load_function)) {
++    	$inst = call_user_func($load_function, $args[$arg]);
++	    if ($inst && !isset($inst->entityform_id)) {
++	      $args[$arg] = $inst->uuid;
++	    }
+     }
+   }
+ 

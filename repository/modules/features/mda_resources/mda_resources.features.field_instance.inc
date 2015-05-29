@@ -884,7 +884,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
   // Exported field_instance: 'node-resource-field_themes'
   $field_instances['node-resource-field_themes'] = array(
     'bundle' => 'resource',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -922,7 +922,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
+      'type' => 'options_buttons',
       'weight' => 3,
     ),
   );
