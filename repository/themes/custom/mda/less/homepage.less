@@ -13,12 +13,18 @@ body.front .block-kcore{
       border-bottom : 1px solid @orange-mda;
       background: transparent url(../images/button_maison_ados.png) no-repeat 0 0;
     }
+    @media screen and (max-width:@screen-lg) and (min-width:@screen-sm){
+      background-image: none;
+    }
   }
   &#block-kcore-mda-shortcut-parents .block-wrapper-custom{
     background: transparent url(../images/button_fleche_parents.png) no-repeat 98% 50%;
     & a{
       border-bottom : 1px solid @green-mda;
       background: transparent url(../images/button_maison_parents.png) no-repeat 0 0;
+    }
+    @media screen and (max-width:@screen-lg) and (min-width:@screen-sm){
+      background-image: none;
     }
   }
   &#block-kcore-mda-shortcut-pros .block-wrapper-custom{
@@ -27,6 +33,9 @@ body.front .block-kcore{
       border-bottom : 1px solid @violet-mda;
       background: transparent url(../images/button_maison_pros.png) no-repeat 0 0;
     }
+    @media screen and (max-width:@screen-lg) and (min-width:@screen-sm){
+      background-image: none;
+    }
   }
   & a h2, & a p{
     font-family: @rockwellFamily;
@@ -34,6 +43,7 @@ body.front .block-kcore{
     margin: 0;
     padding: 0;
   }
+  
 }
 
 /* Profil's title **************************************************************/
@@ -44,6 +54,10 @@ h2.line-right-left{
 body.front #zoom {
   @media (max-width:@screen-xs){
     margin-top: -10px;
+  }
+  & .block.block-views{
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   & .group-all-diapo .container{
     position: relative;
@@ -102,4 +116,10 @@ body.front{
     }
   }
 }
-
+/* Middle background image ****************************************************/
+body.domain-www-mda34-org #home-main-container-wrapper{
+  background: url(../images/bg_header.jpg) no-repeat 50% 0; /**/
+  & #page-header{
+    padding: 43px 0;
+  }
+}
