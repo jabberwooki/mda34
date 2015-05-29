@@ -126,108 +126,113 @@
 	<?php print render($page['zoom']); ?>
 </div>  <!-- /#zoom -->
 <?php endif; ?>
+<div id="home-main-container-wrapper">
+  <div class="main-container container">
 
-<div class="main-container container">
+    <header role="banner" id="page-header" >
+      <!-- Site slogan removed
+      <?php if (!empty($site_slogan)): ?>
+          <p class="lead"><?php print $site_slogan; ?></p>
+      <?php endif; ?>
+      -->
+      <div class="row">
+        <?php print render($page['header']); ?>
+      </div>
+    </header> <!-- /#page-header -->
 
-  <header role="banner" id="page-header" >
-  	<!-- Site slogan removed
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
-		-->
-		<div class="row">
-      <?php print render($page['header']); ?>
+    <div class="row">	
+
+      <?php if (!empty($page['preface_first'])): ?>
+        <div class="col-lg-4" id="preface-first">
+          <div class="">
+            <div class=""><h2 class="line-right-left">Adolescents</h2></div>
+            <div class="">
+              <?php print render($page['preface_first']); ?>
+            </div>
+          </div>
+        </div>  <!-- /#preface-first -->
+      <?php endif; ?>
+
+      <?php if (!empty($page['preface_second'])): ?>
+        <div class="col-lg-4" id="preface-second">
+          <div class="">
+            <div class=""><h2 class="line-right-left">Parents</h2></div>
+            <div class="">
+              <?php print render($page['preface_second']); ?>
+            </div>
+          </div>
+        </div>  <!-- /#preface-second -->
+      <?php endif; ?>
+
+      <?php if (!empty($page['preface_third'])): ?>
+        <div class="col-lg-4" id="preface-third">
+          <div class="">
+            <div class=""><h2 class="line-right-left">Professionnels</h2></div>
+            <div class="">
+              <?php print render($page['preface_third']); ?>
+            </div>
+          </div>
+        </div>  <!-- /#preface-third -->
+      <?php endif; ?>
+
     </div>
-  </header> <!-- /#page-header -->
-  
-  <div class="row">	
-  
-    <?php if (!empty($page['preface_first'])): ?>
-      <div class="col-lg-4" id="preface-first">
-      	<div class="">
-          <div class=""><h2 class="line-right-left">Adolescents</h2></div>
-      		<div class="">
-        		<?php print render($page['preface_first']); ?>
-        	</div>
-        </div>
-      </div>  <!-- /#preface-first -->
-    <?php endif; ?>
-    
-    <?php if (!empty($page['preface_second'])): ?>
-      <div class="col-lg-4" id="preface-second">
-      	<div class="">
-      		<div class=""><h2 class="line-right-left">Parents</h2></div>
-      		<div class="">
-        		<?php print render($page['preface_second']); ?>
-        	</div>
-      	</div>
-      </div>  <!-- /#preface-second -->
-    <?php endif; ?>
-    
-    <?php if (!empty($page['preface_third'])): ?>
-      <div class="col-lg-4" id="preface-third">
-      	<div class="">
-      		<div class=""><h2 class="line-right-left">Professionnels</h2></div>
-      		<div class="">
-        		<?php print render($page['preface_third']); ?>
-        	</div>
-        </div>
-      </div>  <!-- /#preface-third -->
-    <?php endif; ?>
-    
-  </div>
 
-  <div class="row">
+    <div class="row">
 
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-4" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
+      <?php if (!empty($page['sidebar_first'])): ?>
+        <aside class="col-sm-4" role="complementary">
+          <?php print render($page['sidebar_first']); ?>
+        </aside>  <!-- /#sidebar-first -->
+      <?php endif; ?>
 
-    <?php
-    if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
-    	$content_column_class = ' class="col-sm-4"';
-    }
-    elseif (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
-    	$content_column_class = ' class="col-sm-8"';
-    }
-    else {
-    	$content_column_class = ' class="col-sm-12"';
-    }
-    ?>
-    <section<?php print $content_column_class; ?>>
+      <?php
+      if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+        $content_column_class = ' class="col-sm-4"';
+      } elseif (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
+        $content_column_class = ' class="col-sm-8"';
+      } else {
+        $content_column_class = ' class="col-sm-12"';
+      }
+      ?>
+      <section<?php print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
-      <?php if (!empty($page['help'])): ?>
-        <?php print render($page['help']); ?>
-      <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-    </section>
+          <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+        <?php endif; ?>
+        <?php if (!empty($breadcrumb)): print $breadcrumb;
+        endif; ?>
+        <a id="main-content"></a>
+        <?php print render($title_prefix); ?>
+        <?php if (!empty($title)): ?>
+          <h1 class="page-header"><?php print $title; ?></h1>
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
+        <?php print $messages; ?>
+        <?php if (!empty($tabs)): ?>
+          <?php print render($tabs); ?>
+        <?php endif; ?>
+        <?php if (!empty($page['help'])): ?>
+          <?php print render($page['help']); ?>
+        <?php endif; ?>
+        <?php if (!empty($action_links)): ?>
+          <ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+        <?php print render($page['content']); ?>
+      </section>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-4" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
+      <?php if (!empty($page['sidebar_second'])): ?>
+        <aside class="col-sm-4" role="complementary">
+          <?php print render($page['sidebar_second']); ?>
+        </aside>  <!-- /#sidebar-second -->
+      <?php endif; ?>
 
+    </div>
   </div>
 </div>
-<footer class="footer container">
+<footer class="footer" id="main-footer">
+  <div class="footer-center container" >
   <?php print render($page['footer']); ?>
+  <a class="logo-footer" href="/" title="Accueil">
+    <img src="http://www.mda34.dev/profiles/mda/themes/custom/mda/logo.png" alt="Accueil" style="width:50px; height:50px">
+  </a>
+  </div>
 </footer>
