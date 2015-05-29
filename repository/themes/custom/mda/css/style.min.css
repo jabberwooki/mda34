@@ -1645,6 +1645,10 @@ button.navbar-toggle{margin-top:-25px;margin-bottom:0}
 #main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu.png)50% 100% no-repeat #000}
 }
 #main-top-menu>ul>li>a:hover{color:#fff;background-color:#000}
+body.domain-www-mda34-org #main-top-menu>ul>li>a.menu-ado:hover{color:#fff;background-color:#f78c26}
+body.domain-www-mda34-org #main-top-menu>ul>li>a.menu-parents:hover{color:#fff;background-color:#32903f}
+body.domain-www-mda34-org #main-top-menu>ul>li>a.menu-pro:hover{color:#fff;background-color:#575095}
+body.domain-www-mda34-org #main-top-menu>ul>li>a.menu-radio:hover{color:#fff;background-color:#0080ff}
 @media (min-width:768px){body.domain-ados-mda34-org #main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu-ado.png)50% 100% no-repeat #f78c26}
 }
 body.domain-ados-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#f78c26}
