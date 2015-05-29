@@ -147,6 +147,11 @@ function mda_resources_views_default_views() {
   );
   $handler->display->display_options['filters']['field_themes_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_themes_tid']['vocabulary'] = 'themes';
+  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
+  $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['value'] = '1';
   $handler->display->display_options['path'] = 'ressources';
   $translatables['resources'] = array(
     t('Master'),
