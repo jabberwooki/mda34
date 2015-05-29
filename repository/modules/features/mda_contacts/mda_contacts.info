@@ -41,6 +41,5 @@ features[field_instance][] = entityform-contact-field_name_nickname
 features[field_instance][] = entityform-contact-field_subject
 features[rules_config][] = rules_send_email_recipient_contact_form
 features[rules_config][] = rules_send_email_webmaster_contact_form
-features[uuid_features_menu][] = 4f151f19-3863-4616-8848-6982f1c27193
 features_exclude[menu_custom][menu-shortcuts] = menu-shortcuts
 project path = profiles/mda/modules/features

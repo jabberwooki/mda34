@@ -183,6 +183,11 @@
 
   </div>
 </div>
-<footer class="footer container">
+<footer class="footer" id="main-footer">
+  <div class="footer-center container" >
   <?php print render($page['footer']); ?>
+  <a class="logo-footer" href="/" title="Accueil">
+    <img src="http://www.mda34.dev/profiles/mda/themes/custom/mda/logo.png" alt="Accueil" style="width:50px; height:50px">
+  </a>
+  </div>
 </footer>
