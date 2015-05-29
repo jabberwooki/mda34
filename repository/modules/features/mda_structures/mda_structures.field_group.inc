@@ -21,7 +21,7 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Paramètres supplémentaires',
-    'weight' => '15',
+    'weight' => '16',
     'children' => array(
       0 => 'field_practical_title',
     ),

@@ -35,6 +35,31 @@ function kcore_menu_default_uuid_features_menu() {
     'weight' => 20,
     'uuid' => '6a1586bb-604b-4514-9e14-ccbbaf3f654d',
   );
+  // Exported menu link: 6a26fb9c-ecd8-44d0-9c78-8e2e2335d67f
+  $menu_uuid_links['6a26fb9c-ecd8-44d0-9c78-8e2e2335d67f'] = array(
+    'menu_name' => 'menu-shortcuts',
+    'link_path' => 'user/login',
+    'router_path' => 'user/login',
+    'link_title' => 'Login',
+    'options' => array(
+      'domain_menu_access' => array(
+        'show' => array(
+          'd1' => 'd1',
+        ),
+      ),
+      'alter' => TRUE,
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 2,
+    'uuid' => '6a26fb9c-ecd8-44d0-9c78-8e2e2335d67f',
+  );
   // Exported menu link: 78002f88-148f-41b6-9209-3f00d4cfbc1b
   $menu_uuid_links['78002f88-148f-41b6-9209-3f00d4cfbc1b'] = array(
     'menu_name' => 'main-menu',
@@ -186,6 +211,7 @@ function kcore_menu_default_uuid_features_menu() {
   // Included for use with string extractors like potx.
   t('Accueil');
   t('Adolescents');
+  t('Login');
   t('Parents');
   t('Philado');
   t('Portail');
