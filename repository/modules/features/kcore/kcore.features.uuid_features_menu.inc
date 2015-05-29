@@ -24,7 +24,14 @@ function kcore_menu_default_uuid_features_menu() {
       ),
       'alter' => TRUE,
       'attributes' => array(
-        'title' => '',
+        'class' => array(
+          0 => 'link-menu-parents',
+        ),
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
       ),
     ),
     'module' => 'menu',
@@ -94,7 +101,14 @@ function kcore_menu_default_uuid_features_menu() {
       ),
       'alter' => TRUE,
       'attributes' => array(
-        'title' => '',
+        'class' => array(
+          0 => 'link-menu-pro',
+        ),
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
       ),
     ),
     'module' => 'menu',
@@ -112,15 +126,22 @@ function kcore_menu_default_uuid_features_menu() {
     'router_path' => '',
     'link_title' => 'Adolescents',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
       'domain_menu_access' => array(
         'show' => array(
           'd1' => 'd1',
         ),
       ),
       'alter' => TRUE,
+      'attributes' => array(
+        'class' => array(
+          0 => 'link-menu-ado',
+        ),
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -195,7 +216,14 @@ function kcore_menu_default_uuid_features_menu() {
       ),
       'alter' => TRUE,
       'attributes' => array(
-        'title' => '',
+        'class' => array(
+          0 => 'link-menu-radio',
+        ),
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
       ),
     ),
     'module' => 'menu',
