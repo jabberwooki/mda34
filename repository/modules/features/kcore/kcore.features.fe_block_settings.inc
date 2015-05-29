@@ -35,7 +35,7 @@ function kcore_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '',
+    'title' => '<none>',
     'visibility' => 0,
   );
 
@@ -72,6 +72,33 @@ function kcore_default_fe_block_settings() {
     'custom' => 0,
     'delta' => 'mda_shortcut_pros',
     'module' => 'kcore',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
+      'mda' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'mda',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['menu-menu-shortcuts'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'menu-shortcuts',
+    'module' => 'menu',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
