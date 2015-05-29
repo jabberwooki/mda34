@@ -26,7 +26,14 @@ function mda_faqs_menu_default_uuid_features_menu() {
       ),
       'alter' => TRUE,
       'attributes' => array(
-        'title' => '',
+        'class' => array(
+          0 => 'link-shortcut-faq',
+        ),
+      ),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
       ),
     ),
     'module' => 'menu',

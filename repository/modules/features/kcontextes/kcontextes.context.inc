@@ -32,6 +32,18 @@ function kcontextes_context_default_contexts() {
           'region' => 'footer',
           'weight' => '10',
         ),
+        'block-1' => array(
+          'module' => 'block',
+          'delta' => '1',
+          'region' => 'footer',
+          'weight' => '0',
+        ),
+        'menu-menu-footer-menu' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-menu',
+          'region' => 'footer',
+          'weight' => '5',
+        ),
       ),
     ),
   );

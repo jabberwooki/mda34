@@ -243,3 +243,6 @@ projects[views_isotope][version] = "1.0-beta2"
 
 projects[sharethis][subdir] = contrib
 projects[sharethis][version] = "2.10"
+
+projects[menu_attributes][subdir] = contrib
+projects[menu_attributes][version] = "1.0-rc3"

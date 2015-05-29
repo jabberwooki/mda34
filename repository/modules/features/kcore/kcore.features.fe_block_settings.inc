@@ -93,5 +93,32 @@ function kcore_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['menu-menu-shortcuts'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'menu-shortcuts',
+    'module' => 'menu',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
+      'mda' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'mda',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
   return $export;
 }
