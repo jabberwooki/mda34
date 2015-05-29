@@ -26,11 +26,11 @@ function kcontextes_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => '1',
+        'menu-menu-shortcuts' => array(
+          'module' => 'menu',
+          'delta' => 'menu-shortcuts',
           'region' => 'footer',
-          'weight' => '0',
+          'weight' => '10',
         ),
       ),
     ),

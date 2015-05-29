@@ -8,6 +8,7 @@ dependencies[] = block
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = kcore
+dependencies[] = menu
 features[context][] = all
 features[context][] = front
 features[context][] = not-front
