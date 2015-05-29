@@ -1,10 +1,20 @@
-.region-footer{
+#main-footer{
+  background: url(../images/bg_header.jpg) no-repeat 50% 0; 
+}
+.footer-center{
   margin: 0 auto;
-  @media @wide {
-    width: 182px;
+  @media (min-width: @container-desktop) {
+    width: 210px;
   }
   @media (max-width: @container-desktop){
-    width: 320px;
+    width: auto;
+    & div > section > div > div{
+      text-align: center;
+    }
+  }
+  & .logo-footer{
+    display: block;
+    text-align: center;
   }
   
 }
@@ -27,7 +37,7 @@ a.icon-social{
   @media (max-width: @container-desktop){
     &:before{
       font-size: 2em;
-      margin: 0 40px 0 0;
+      margin: 0 34px 0 0;
       width: auto;
     }
   }
