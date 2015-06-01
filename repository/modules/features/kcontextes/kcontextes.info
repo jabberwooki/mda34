@@ -7,6 +7,7 @@ project = kcontextes
 dependencies[] = block
 dependencies[] = context
 dependencies[] = ctools
+dependencies[] = fe_block
 dependencies[] = kcore
 dependencies[] = menu
 features[context][] = all

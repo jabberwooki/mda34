@@ -26,11 +26,11 @@ function kcontextes_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu-menu-shortcuts' => array(
+        'menu-menu-top-menu' => array(
           'module' => 'menu',
-          'delta' => 'menu-shortcuts',
-          'region' => 'footer',
-          'weight' => '10',
+          'delta' => 'menu-top-menu',
+          'region' => 'navigation',
+          'weight' => '-10',
         ),
         'block-1' => array(
           'module' => 'block',
@@ -43,6 +43,12 @@ function kcontextes_context_default_contexts() {
           'delta' => 'menu-footer-menu',
           'region' => 'footer',
           'weight' => '5',
+        ),
+        'menu-menu-shortcuts' => array(
+          'module' => 'menu',
+          'delta' => 'menu-shortcuts',
+          'region' => 'footer',
+          'weight' => '10',
         ),
       ),
     ),
