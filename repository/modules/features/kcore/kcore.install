@@ -7,6 +7,16 @@ function kcore_update_7001() {
 	module_enable(array('gmap','addressfield_autocomplete','geofield_map'));
 }
 
+/**
+ * Activate menu_attributes module.
+ */
 function kcore_update_7002() {
 	module_enable(array('menu_attributes'));
+}
+
+/**
+ * Activates custom_search module.
+ */
+function kcore_update_7003() {
+	module_enable(array('custom_search'));
 }
