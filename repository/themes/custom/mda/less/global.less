@@ -32,3 +32,63 @@ p{
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
   background-color: @gray-lighter;
 }
+/* liens raccourcis ***********************************************************/
+#block-menu-menu-shortcuts {
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    top: 500px;
+    margin-top: -100px;
+    z-index: 5000;
+    color: #FFF;
+    text-align: center;
+    & a{
+      box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+    }
+    & .link-shortcut-faq{
+      background-color: @blue-mda;
+      color: white;
+      &:hover{
+        background-color: @gray-darker;
+      }
+    }
+    & .link-shortcut-contact{
+      background-color: @deep-blue-mda;
+      color: white;
+      &:hover{
+        background-color: @gray-darker;
+      }
+    }
+    & .link-shortcut-login{
+      background-color: white;
+      color: @gray-base;
+      &:hover{
+        background-color: @gray-darker;
+        color: white;
+      }
+      
+    }
+    & [class*=" icon-"]:before{
+      color: white;
+    }
+    & .icon-person:before{
+      color: @gray-base;
+      &:hover{
+        color: white;
+      }
+    }
+    & .nav > li{ 
+      text-align: right;
+      height: auto;
+      
+      & > a{
+        display: inline-block;
+        padding: 8px 12px 8px 10px;
+        margin: 0;
+      text-transform: uppercase;
+        &:before{
+          margin-right: 6px
+        }
+      }
+    }
+}
