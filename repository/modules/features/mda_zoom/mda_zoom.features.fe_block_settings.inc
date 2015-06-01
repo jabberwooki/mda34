@@ -14,7 +14,7 @@ function mda_zoom_default_fe_block_settings() {
 
   $export['views-slides-block_portal_zoom'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'zoom',
     'custom' => 0,
     'delta' => 'slides-block_portal_zoom',
     'module' => 'views',
@@ -41,7 +41,7 @@ function mda_zoom_default_fe_block_settings() {
 
   $export['views-slides-block_sites_zoom'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'zoom',
     'custom' => 0,
     'delta' => 'slides-block_sites_zoom',
     'module' => 'views',
