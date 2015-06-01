@@ -13,6 +13,13 @@ function mda_resources_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_format_tres_court';
+  $strongarm->value = 'd/m/y';
+  $export['date_format_tres_court'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__resource';
   $strongarm->value = array(
     'view_modes' => array(
@@ -75,6 +82,10 @@ function mda_resources_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'teaser' => array(
+            'weight' => '12',
+            'visible' => FALSE,
+          ),
         ),
         'sharethis' => array(
           'default' => array(
@@ -84,6 +95,10 @@ function mda_resources_strongarm() {
           'full' => array(
             'weight' => '0',
             'visible' => TRUE,
+          ),
+          'teaser' => array(
+            'weight' => '13',
+            'visible' => FALSE,
           ),
         ),
       ),

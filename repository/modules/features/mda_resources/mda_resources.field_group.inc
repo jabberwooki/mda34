@@ -40,6 +40,40 @@ function mda_resources_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_link_resources|node|resource|teaser';
+  $field_group->group_name = 'group_link_resources';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'resource';
+  $field_group->mode = 'teaser';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'group-link-resources',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_resource_type',
+      1 => 'field_themes',
+      2 => 'post_date',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'group-link-resources',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-link-resources field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_link_resources|node|resource|teaser'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_practical_content|node|resource|full';
   $field_group->group_name = 'group_practical_content';
   $field_group->entity_type = 'node';
