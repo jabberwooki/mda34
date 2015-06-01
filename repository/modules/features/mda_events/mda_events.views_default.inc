@@ -786,7 +786,6 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
 [field_event_image]
 [field_event_dates]
-[field_address_locality]
 <div class="event-type-block">[field_event_type]</div>
 <div class="event-location-block">[field_address_locality]</div>
 <h4>[title]</h4>
@@ -1052,7 +1051,6 @@ function mda_events_views_default_views() {
     t('<div class="img-title-wrapper">
 [field_event_image]
 [field_event_dates]
-[field_address_locality]
 <div class="event-type-block">[field_event_type]</div>
 <div class="event-location-block">[field_address_locality]</div>
 <h4>[title]</h4>
