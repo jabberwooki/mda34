@@ -1,0 +1,62 @@
+.group-link-resources{
+  .clearfix();
+  .field-items{
+    float: left;
+    margin-right: 20px;
+    &:before {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1em;   
+      speak: none;
+
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+
+      color: @gray-light;
+
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;  
+      
+    }
+    & .field-item{
+      display: inline;
+    }
+  }
+  & .field-name-field-resource-type .field-items:before{
+    content: "\e804";
+  }
+  & .field-name-post-date{ 
+    /*padding-left: 30px;*/
+    & .field-items:before{
+      /*content: "Publié le \e807 : ";*/
+      content: "\e807";
+      white-space: nowrap;
+    }
+  }
+  & .field-name-field-themes .field-items{
+    &:before{
+      content: "\e82a";
+    }
+    & a:after{
+      content: " - "
+    }
+  }
+  
+}
+

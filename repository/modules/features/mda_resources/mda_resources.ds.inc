@@ -5,6 +5,40 @@
  */
 
 /**
+ * Implements hook_ds_field_settings_info().
+ */
+function mda_resources_ds_field_settings_info() {
+  $export = array();
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|resource|teaser';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'resource';
+  $ds_fieldsetting->view_mode = 'teaser';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h3',
+        'class' => '',
+      ),
+    ),
+    'post_date' => array(
+      'weight' => '3',
+      'label' => 'hidden',
+      'format' => 'ds_post_date_tres_court',
+    ),
+  );
+  $export['node|resource|teaser'] = $ds_fieldsetting;
+
+  return $export;
+}
+
+/**
  * Implements hook_ds_layout_settings_info().
  */
 function mda_resources_ds_layout_settings_info() {
@@ -71,6 +105,44 @@ function mda_resources_ds_layout_settings_info() {
     'layout_link_custom' => '',
   );
   $export['node|resource|full'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|resource|teaser';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'resource';
+  $ds_layout->view_mode = 'teaser';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'title',
+        1 => 'group_link_resources',
+        2 => 'field_resource_type',
+        3 => 'post_date',
+        4 => 'body',
+        5 => 'field_themes',
+      ),
+    ),
+    'fields' => array(
+      'title' => 'ds_content',
+      'group_link_resources' => 'ds_content',
+      'field_resource_type' => 'ds_content',
+      'post_date' => 'ds_content',
+      'body' => 'ds_content',
+      'field_themes' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|resource|teaser'] = $ds_layout;
 
   return $export;
 }

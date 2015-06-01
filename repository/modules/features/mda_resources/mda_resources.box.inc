@@ -32,18 +32,19 @@ function mda_resources_default_box() {
   $box->api_version = 1;
   $box->delta = 'pros_resources_link';
   $box->plugin_key = 'simple';
-  $box->title = '<none>';
+  $box->title = '';
   $box->description = 'MDA : Lien ressources MDA34';
   $box->options = array(
     'body' => array(
-      'value' => '<a href="/ressources">
-  <h2>Pros</h2>
-  <div>
-    Consultez les ressources de la MDA34
-  </div>
-</a>',
+      'value' => '<div>
+<h2><a href="/ressources">Pros</a></h2>
+
+<div><a href="/ressources">Consultez les ressources de la MDA34</a></div>
+</div>
+',
       'format' => 'full_html',
     ),
+    'additional_classes' => 'violet',
   );
   $export['pros_resources_link'] = $box;
 
