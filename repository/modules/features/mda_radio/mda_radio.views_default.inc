@@ -462,6 +462,122 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['arguments']['null']['specify_validation'] = TRUE;
   $handler->display->display_options['arguments']['null']['validate']['type'] = 'php';
   $handler->display->display_options['arguments']['null']['validate_options']['code'] = 'return !isset($_GET[\'page\']);';
+
+  /* Display: Accueil portail ados */
+  $handler = $view->new_display('block', 'Accueil portail ados', 'radio_portal_front_ados');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Radio';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Champ: Contenu: Titre */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Champ: Contenu: Son */
+  $handler->display->display_options['fields']['field_scald_audio']['id'] = 'field_scald_audio';
+  $handler->display->display_options['fields']['field_scald_audio']['table'] = 'field_data_field_scald_audio';
+  $handler->display->display_options['fields']['field_scald_audio']['field'] = 'field_scald_audio';
+  $handler->display->display_options['fields']['field_scald_audio']['label'] = '';
+  $handler->display->display_options['fields']['field_scald_audio']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_scald_audio']['type'] = 'scald_col_4';
+  $handler->display->display_options['fields']['field_scald_audio']['settings'] = array(
+    'link' => '0',
+    'field_formatter_class' => '',
+  );
+  $handler->display->display_options['fields']['field_scald_audio']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Contenu: Publié */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Contenu: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'radio_programme' => 'radio_programme',
+  );
+  /* Filter criterion: Contenu: Promu en page d'accueil */
+  $handler->display->display_options['filters']['promote']['id'] = 'promote';
+  $handler->display->display_options['filters']['promote']['table'] = 'node';
+  $handler->display->display_options['filters']['promote']['field'] = 'promote';
+  $handler->display->display_options['filters']['promote']['value'] = '1';
+  /* Filter criterion: Domain Access: Identifiant (ID) du domaine */
+  $handler->display->display_options['filters']['gid']['id'] = 'gid';
+  $handler->display->display_options['filters']['gid']['table'] = 'domain_access';
+  $handler->display->display_options['filters']['gid']['field'] = 'gid';
+  $handler->display->display_options['filters']['gid']['value'] = array(
+    1 => '1',
+  );
+
+  /* Display: Accueil portail pros */
+  $handler = $view->new_display('block', 'Accueil portail pros', 'radio_front_portal_pros');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Radio';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Champ: Contenu: Titre */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Champ: Contenu: Son */
+  $handler->display->display_options['fields']['field_scald_audio']['id'] = 'field_scald_audio';
+  $handler->display->display_options['fields']['field_scald_audio']['table'] = 'field_data_field_scald_audio';
+  $handler->display->display_options['fields']['field_scald_audio']['field'] = 'field_scald_audio';
+  $handler->display->display_options['fields']['field_scald_audio']['label'] = '';
+  $handler->display->display_options['fields']['field_scald_audio']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_scald_audio']['type'] = 'scald_col_4';
+  $handler->display->display_options['fields']['field_scald_audio']['settings'] = array(
+    'link' => '0',
+    'field_formatter_class' => '',
+  );
+  $handler->display->display_options['fields']['field_scald_audio']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Contenu: Publié */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Contenu: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'radio_programme' => 'radio_programme',
+  );
+  /* Filter criterion: Contenu: Promu en page d'accueil */
+  $handler->display->display_options['filters']['promote']['id'] = 'promote';
+  $handler->display->display_options['filters']['promote']['table'] = 'node';
+  $handler->display->display_options['filters']['promote']['field'] = 'promote';
+  $handler->display->display_options['filters']['promote']['value'] = '1';
+  /* Filter criterion: Domain Access: Identifiant (ID) du domaine */
+  $handler->display->display_options['filters']['gid']['id'] = 'gid';
+  $handler->display->display_options['filters']['gid']['table'] = 'domain_access';
+  $handler->display->display_options['filters']['gid']['field'] = 'gid';
+  $handler->display->display_options['filters']['gid']['value'] = array(
+    6 => '6',
+  );
   $translatables['radio_programmes'] = array(
     t('Master'),
     t('plus'),
@@ -489,6 +605,8 @@ function mda_radio_views_default_views() {
     t('Lire la suite'),
     t('Bloc colonne droite'),
     t('Radio'),
+    t('Accueil portail ados'),
+    t('Accueil portail pros'),
   );
   $export['radio_programmes'] = $view;
 
