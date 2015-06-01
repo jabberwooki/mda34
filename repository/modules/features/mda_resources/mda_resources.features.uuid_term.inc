@@ -77,17 +77,8 @@ function mda_resources_uuid_features_default_terms() {
     'name' => 'Scolarisation',
     'description' => '',
     'format' => 'full_html',
-    'weight' => 9,
+    'weight' => 0,
     'uuid' => '4a8972d5-d4c4-4938-a70f-e599afada369',
-    'vocabulary_machine_name' => 'themes',
-    'metatags' => array(),
-  );
-  $terms[] = array(
-    'name' => 'Social',
-    'description' => '',
-    'format' => 'full_html',
-    'weight' => 8,
-    'uuid' => '57316f26-cc60-45ed-9168-581fd3dd2aca',
     'vocabulary_machine_name' => 'themes',
     'metatags' => array(),
   );
@@ -108,21 +99,15 @@ function mda_resources_uuid_features_default_terms() {
     'uuid' => '62986096-cd9d-4971-b20c-e186b0c5f52b',
     'vocabulary_machine_name' => 'themes',
     'metatags' => array(),
-    'parent' => array(
-      0 => '57316f26-cc60-45ed-9168-581fd3dd2aca',
-    ),
   );
   $terms[] = array(
     'name' => 'Parentalité',
     'description' => '',
     'format' => 'full_html',
-    'weight' => 1,
+    'weight' => 0,
     'uuid' => '6ff99e4c-13a4-4b75-aef6-b86c638bbb49',
     'vocabulary_machine_name' => 'themes',
     'metatags' => array(),
-    'parent' => array(
-      0 => 'bb87f3b7-4fba-45cf-9630-4cc36591bf2e',
-    ),
   );
   $terms[] = array(
     'name' => 'Document',
@@ -149,15 +134,6 @@ function mda_resources_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '92e8c80a-d192-4055-9e97-06ae0954fb1a',
     'vocabulary_machine_name' => 'resource_types',
-    'metatags' => array(),
-  );
-  $terms[] = array(
-    'name' => 'Sociologie',
-    'description' => '',
-    'format' => 'full_html',
-    'weight' => 10,
-    'uuid' => 'bb87f3b7-4fba-45cf-9630-4cc36591bf2e',
-    'vocabulary_machine_name' => 'themes',
     'metatags' => array(),
   );
   $terms[] = array(
