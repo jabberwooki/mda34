@@ -51,7 +51,9 @@ h2.line-right-left{
   font-size: 1.5em;
 }
 /* Caroussel ******************************************************************/
-body.front #zoom {
+body.front .zoom {
+  border-bottom: 0;
+  padding-bottom: 0;
   @media (max-width:@screen-xs){
     margin-top: -10px;
   }
@@ -68,7 +70,7 @@ body.front #zoom {
       bottom : 0;
       left: 0;
       background-color: @gray-base;
-      opacity: 0.6;
+      opacity: 0.8;
       & h3 a{
         color: white;
         padding: 0 25px 5px 25px;
@@ -106,6 +108,7 @@ body.front #zoom {
   }
   
 }
+/* puces de navigation ***/
 body.front{
   & .carousel-indicators li{
     border: 2px solid @gray-base;
@@ -113,6 +116,18 @@ body.front{
       @media screen and (min-width: @screen-sm){
         background-color: @gray-base;
       }
+    }
+  }
+}
+/* Caroussels autre que le portail ********************************************/
+body.front .highlighted.jumbotron{
+  padding:0;
+}
+body.front:not(.domain-www-mda34-org) .zoom{
+  & .group-all-diapo .container .group-link-theme > div{
+    padding-left: 80px;
+    & h3 a{
+      padding-left: 0;
     }
   }
 }
