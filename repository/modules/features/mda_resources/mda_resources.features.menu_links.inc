@@ -26,9 +26,7 @@ function mda_resources_menu_default_menu_links() {
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_ressources:ressources',
     ),
     'module' => 'menu',

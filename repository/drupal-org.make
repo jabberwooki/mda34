@@ -90,6 +90,9 @@ projects[block_class][version] = "2.1"
 projects[boxes][subdir] = contrib
 projects[boxes][version] = "1.2"
 
+projects[custom_search][subdir] = contrib
+projects[custom_search][version] = "1.18"
+
 projects[date][subdir] = contrib
 projects[date][version] = "2.8"
 
