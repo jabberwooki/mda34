@@ -10,7 +10,7 @@
 function mda_articles_taxonomy_default_vocabularies() {
   return array(
     'article_types' => array(
-      'name' => 'Types d\'article',
+      'name' => 'Rubrique',
       'machine_name' => 'article_types',
       'description' => '',
       'hierarchy' => 0,
