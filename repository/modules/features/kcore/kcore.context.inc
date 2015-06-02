@@ -23,6 +23,12 @@ function kcore_context_default_contexts() {
         6 => 6,
       ),
     ),
+    'path' => array(
+      'values' => array(
+        '~agenda*' => '~agenda*',
+        '~faq*' => '~faq*',
+      ),
+    ),
     'sitewide' => array(
       'values' => array(
         1 => 1,
@@ -63,8 +69,8 @@ function kcore_context_default_contexts() {
     ),
     'path' => array(
       'values' => array(
-        '~agenda' => '~agenda',
-        '~faq' => '~faq',
+        '~agenda*' => '~agenda*',
+        '~faq*' => '~faq*',
       ),
     ),
     'sitewide' => array(

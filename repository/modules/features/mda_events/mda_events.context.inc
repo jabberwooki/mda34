@@ -152,6 +152,11 @@ function mda_events_context_default_contexts() {
         6 => 6,
       ),
     ),
+    'path' => array(
+      'values' => array(
+        '~agenda*' => '~agenda*',
+      ),
+    ),
     'sitewide' => array(
       'values' => array(
         1 => 1,

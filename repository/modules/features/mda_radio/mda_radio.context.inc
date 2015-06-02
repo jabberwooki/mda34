@@ -24,8 +24,8 @@ function mda_radio_context_default_contexts() {
     ),
     'path' => array(
       'values' => array(
-        '~agenda' => '~agenda',
-        '~faq' => '~faq',
+        '~agenda*' => '~agenda*',
+        '~faq*' => '~faq*',
       ),
     ),
   );

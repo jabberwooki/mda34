@@ -73,7 +73,7 @@ function mda_resources_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'En savoir plus';
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -177,7 +177,6 @@ function mda_resources_views_default_views() {
     t('dernier »'),
     t('En savoir plus'),
     t('Liste ressources'),
-    t('more'),
     t('Type'),
     t('Thème'),
   );

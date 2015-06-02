@@ -29,7 +29,9 @@ function mda_resources_field_default_field_instances() {
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 5,
       ),
@@ -37,6 +39,7 @@ function mda_resources_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'field_formatter_class' => '',
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -114,7 +117,9 @@ function mda_resources_field_default_field_instances() {
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
       ),
@@ -173,7 +178,9 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 2,
       ),
@@ -257,7 +264,9 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       'full' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 14,
       ),
@@ -337,7 +346,9 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
@@ -377,6 +388,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'field_formatter_class' => '',
           'format_type' => 'long',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -390,6 +402,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
+          'field_formatter_class' => '',
           'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -451,7 +464,9 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       'full' => array(
         'label' => 'hidden',
         'module' => 'file',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'file_default',
         'weight' => 6,
       ),
@@ -527,6 +542,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => 'large',
         ),
@@ -608,14 +624,18 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 2,
       ),
@@ -655,7 +675,9 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       'full' => array(
         'label' => 'hidden',
         'module' => 'link',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'link_default',
         'weight' => 5,
       ),
@@ -728,6 +750,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'scald_col_8',
@@ -786,6 +809,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'scald_col_8',
@@ -844,6 +868,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'scald_col_8',
@@ -900,14 +925,18 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 4,
       ),
