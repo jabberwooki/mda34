@@ -82,9 +82,7 @@ function kcore_menu_default_uuid_features_menu() {
     'link_title' => 'Accueil',
     'options' => array(
       'alter' => TRUE,
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -194,12 +192,10 @@ function kcore_menu_default_uuid_features_menu() {
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
