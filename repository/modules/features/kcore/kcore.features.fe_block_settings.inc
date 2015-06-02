@@ -39,6 +39,33 @@ function kcore_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['kcore-mda_filsantejeunes'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'mda_filsantejeunes',
+    'module' => 'kcore',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
+      'mda' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'mda',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['kcore-mda_shortcut_ados'] = array(
     'cache' => -1,
     'css_class' => 'col-sm-4',

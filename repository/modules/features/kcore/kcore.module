@@ -36,6 +36,10 @@ function kcore_block_info() {
 			'info' => t('MDA : Bloc raccourci pros'),
 			'cache' => DRUPAL_NO_CACHE,
 	);
+	$blocks['mda_filsantejeunes'] = array(
+			'info' => t('MDA : Lien Fil Santé Jeunes'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
 
 	return $blocks;
 }
@@ -171,6 +175,18 @@ function kcore_block_view($delta = '') {
 			$block['content'] = theme('mda_shortcut_block', $variables);
 			return $block;
 			break;
+		case 'mda_filsantejeunes':
+			$block['subject'] = '';
+			
+			$href = 'http://www.filsantejeunes.com';
+			$image_filename = 'filsantejeunes.jpg';
+			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
+			
+			$content = '<a href="' . $href .'" target="_blank">';
+			$content .= '<img src="' . $image_url . '" class="fil-sante-jeunes">';
+			$content .= '</a>';
+			$block['content'] = $content;
+			return $block;
 	}
 }
 
