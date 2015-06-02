@@ -17,6 +17,7 @@ dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = uuid_features
 dependencies[] = views
+features[context][] = radio_ados
 features[context][] = radio_front
 features[context][] = radio_front_portal
 features[ctools][] = context:context:3
