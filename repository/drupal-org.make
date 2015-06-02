@@ -237,6 +237,10 @@ libraries[geocomplete][destination] = "libraries"
 projects[registration][subdir] = contrib
 projects[registration][version] = "1.4"
 
+;--- Newsletter ---------------------------------------------------------------
+projects[mailchimp][subdir] = contrib
+projects[mailchimp][version] = "3.3"
+
 ;--- Others -------------------------------------------------------------------
 projects[office_hours][subdir] = contrib
 projects[office_hours][version] = "1.4"

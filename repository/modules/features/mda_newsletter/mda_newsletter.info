@@ -1,0 +1,12 @@
+name = Newsletter
+core = 7.x
+package = App
+version = 7.x-1.0
+project = mda_newsletter
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = mailchimp_signup
+features[context][] = newsletter_all
+features[ctools][] = context:context:3
+features[features_api][] = api:2
+project path = profiles/mda/modules/features
