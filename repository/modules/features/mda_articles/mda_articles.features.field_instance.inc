@@ -110,11 +110,7 @@ function mda_articles_field_default_field_instances() {
   // Exported field_instance: 'node-article-field_article_type'
   $field_instances['node-article-field_article_type'] = array(
     'bundle' => 'article',
-    'default_value' => array(
-      0 => array(
-        'tid' => 155,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -139,7 +135,7 @@ function mda_articles_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_article_type',
-    'label' => 'Type d\'article',
+    'label' => 'Rubrique',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -489,8 +485,8 @@ function mda_articles_field_default_field_instances() {
   t('Fichier(s)');
   t('Galerie photo');
   t('Image');
+  t('Rubrique');
   t('Son');
-  t('Type d\'article');
   t('Vidéo');
 
   return $field_instances;
