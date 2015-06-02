@@ -12,6 +12,33 @@ function kcore_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['block-social_networks_links'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'machine_name' => 'social_networks_links',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
+      'mda' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'mda',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'Nous suivre',
+    'visibility' => 0,
+  );
+
   $export['kcore-mda_shortcut_ados'] = array(
     'cache' => -1,
     'css_class' => 'col-sm-4',
@@ -143,7 +170,7 @@ function kcore_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '',
+    'title' => '<none>',
     'visibility' => 0,
   );
 

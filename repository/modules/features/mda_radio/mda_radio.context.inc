@@ -13,6 +13,44 @@ function mda_radio_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'radio_ados';
+  $context->description = '';
+  $context->tag = 'Radio';
+  $context->conditions = array(
+    'domain' => array(
+      'values' => array(
+        2 => 2,
+      ),
+    ),
+    'path' => array(
+      'values' => array(
+        '~agenda' => '~agenda',
+        '~faq' => '~faq',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-radio_programmes-block_sidebar' => array(
+          'module' => 'views',
+          'delta' => 'radio_programmes-block_sidebar',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Radio');
+  $export['radio_ados'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'radio_front';
   $context->description = '';
   $context->tag = 'Radio';

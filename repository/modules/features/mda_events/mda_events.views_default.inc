@@ -41,7 +41,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Contenu: Taxonomy terms on node */
+  /* Relation: Contenu: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
@@ -119,7 +119,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -957,8 +957,8 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
 
-  /* Display: Accueil pros (formations) */
-  $handler = $view->new_display('block', 'Accueil pros (formations)', 'block_pros_trainings');
+  /* Display: Espace pros (formations) */
+  $handler = $view->new_display('block', 'Espace pros (formations)', 'block_pros_trainings');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Formations à venir';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -1034,7 +1034,6 @@ function mda_events_views_default_views() {
     t('Event type'),
     t('Liste des événements'),
     t('Agenda'),
-    t('more'),
     t('Types d\'événement'),
     t('Accueil portail (ados)'),
     t('<div class="img-title-wrapper">
@@ -1058,7 +1057,7 @@ function mda_events_views_default_views() {
     t('Liste des formations'),
     t('Formations'),
     t('Accueil portail (formations)'),
-    t('Accueil pros (formations)'),
+    t('Espace pros (formations)'),
     t('Formations à venir'),
   );
   $export['events'] = $view;
@@ -1090,7 +1089,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Relationship: Terme de taxonomie: Contenu using Type d&#039;événement */
+  /* Relation: Terme de taxonomie: Contenu utilisant Type d&#039;événement */
   $handler->display->display_options['relationships']['reverse_field_event_type_node']['id'] = 'reverse_field_event_type_node';
   $handler->display->display_options['relationships']['reverse_field_event_type_node']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['relationships']['reverse_field_event_type_node']['field'] = 'reverse_field_event_type_node';
@@ -1129,7 +1128,6 @@ function mda_events_views_default_views() {
     t('Desc'),
     t('field_event_type'),
     t('Filtre Agenda'),
-    t('more'),
   );
   $export['events_filter'] = $view;
 
