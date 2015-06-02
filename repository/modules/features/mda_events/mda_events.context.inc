@@ -130,12 +130,6 @@ function mda_events_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
-        'views-events-block_pros_trainings' => array(
-          'module' => 'views',
-          'delta' => 'events-block_pros_trainings',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
       ),
     ),
   );
@@ -145,6 +139,43 @@ function mda_events_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('Agenda');
   $export['agenda_front_pros'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'agenda_pros';
+  $context->description = '';
+  $context->tag = 'Agenda';
+  $context->conditions = array(
+    'domain' => array(
+      'values' => array(
+        6 => 6,
+      ),
+    ),
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-events-block_pros_trainings' => array(
+          'module' => 'views',
+          'delta' => 'events-block_pros_trainings',
+          'region' => 'sidebar_second',
+          'weight' => '-5',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Agenda');
+  $export['agenda_pros'] = $context;
 
   return $export;
 }

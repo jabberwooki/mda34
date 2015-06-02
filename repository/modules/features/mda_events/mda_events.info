@@ -33,6 +33,7 @@ dependencies[] = views_isotope
 features[context][] = agenda_front
 features[context][] = agenda_front_portal
 features[context][] = agenda_front_pros
+features[context][] = agenda_pros
 features[ctools][] = context:context:3
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
