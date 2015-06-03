@@ -187,7 +187,7 @@ projects[scald_dailymotion][subdir] = contrib
 projects[scald_dailymotion][version] = "1.4"
 
 projects[scald_vimeo][subdir] = contrib
-projects[scald_vimeo][version] = "1.3"
+projects[scald_vimeo][version] = "1.4"
 
 projects[scald_soundcloud][subdir] = contrib
 projects[scald_soundcloud][version] = "1.2"
