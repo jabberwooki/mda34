@@ -24,6 +24,31 @@ function mda_structures_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function mda_structures_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: logo_120x120.
+  $styles['logo_120x120'] = array(
+    'label' => 'Logo (120x120)',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 120,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function mda_structures_node_info() {
