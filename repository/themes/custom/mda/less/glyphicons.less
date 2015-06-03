@@ -19,9 +19,7 @@
     text-decoration: none;
   }
 }
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
+.glyphicon{
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -50,6 +48,10 @@
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  .glyphicon();
 }
 
 
