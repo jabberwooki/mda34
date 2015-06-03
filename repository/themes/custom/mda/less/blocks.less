@@ -132,3 +132,39 @@
   }
 }
 
+/* Block radio ****************************************************************/
+.block-wrapper-custom {
+  padding-left: 15px;
+    & .views-row {
+    padding: 0 0 0 15px;
+  }
+  & .view-radio-programmes .field-content a{
+    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+    display: block;
+    color: @gray-base;
+    font-size: 1.6em;
+  }
+}
+/* Block recherche ************************************************************/
+#search-block-form{
+  padding: 18px;
+  background-color: @gray-ultra-light;
+  border-radius: 4px;
+  .btn{
+    font-family: arial;
+    text-transform: uppercase;
+    color: white;
+    background-color: @gray;
+    margin-left: 4px;
+  }
+}
+body.domain-reseau-pro-mda34-org{
+  #search-block-form{
+    .btn{
+      background-color: @violet-mda;
+    }
+  }
+}
+
+
+
