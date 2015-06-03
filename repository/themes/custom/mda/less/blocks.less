@@ -12,6 +12,8 @@
     & .views-field-title a{
       color: @gray-base;
     }
+    .clearfix();
+    margin-bottom: 20px;
   }
   & .views-row:not(.views-row-last){
     border-bottom: 1px solid @gray-lighter;
@@ -19,6 +21,7 @@
   & .img-title-wrapper{
     position: relative;
     width: 360px;
+    min-height: 50px;
     & h4{
       position: absolute;
       bottom: 0;
@@ -55,12 +58,12 @@
         padding: 10px 15px;
       }
     }
-    & .date-display-single{ /* specific to events blocks */
+    & .dates-custom-wrapper{ /* specific to events blocks */
       position: absolute;
       top: 0;
       right: 0;
       display: block;
-      padding: 0 5px;
+      padding: 0 2px 0 5px;
       color: white;
     }
     & .event-type-block, & .event-location-block{ /* specific to events blocks */
@@ -88,17 +91,17 @@
 }
 /* Blocks agenda **************************************************************/
 .block.orange{
-  & .event-type-block, & .date-display-single{ 
+  & .event-type-block, & .dates-custom-wrapper{ 
     background-color: @orange-mda;
   }
 }
 .block.green{
-  & .event-type-block, & .date-display-single{ 
+  & .event-type-block, & .dates-custom-wrapper{ 
     background-color: @green-mda;
   }
 }
 .block.violet{
-  & .event-type-block, & .img-title-wrapper .date-display-single{ 
+  & .event-type-block, & .img-title-wrapper .dates-custom-wrapper{ 
     background-color: @violet-mda;
   }
 }
