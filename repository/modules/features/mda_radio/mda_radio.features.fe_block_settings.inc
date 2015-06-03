@@ -41,7 +41,7 @@ function mda_radio_default_fe_block_settings() {
 
   $export['views-3f4e173bd26d52126cc2667994a7a13f'] = array(
     'cache' => -1,
-    'css_class' => 'block-radio ',
+    'css_class' => 'block-radio icon-radio',
     'custom' => 0,
     'delta' => '3f4e173bd26d52126cc2667994a7a13f',
     'module' => 'views',
@@ -95,7 +95,7 @@ function mda_radio_default_fe_block_settings() {
 
   $export['views-radio_programmes-block_sidebar'] = array(
     'cache' => -1,
-    'css_class' => 'block-radio ',
+    'css_class' => 'block-radio icon-radio',
     'custom' => 0,
     'delta' => 'radio_programmes-block_sidebar',
     'module' => 'views',
