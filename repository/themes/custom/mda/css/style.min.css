@@ -1610,6 +1610,7 @@ p{font-family:arial}
 #block-menu-menu-top-menu a{color:#000;display:block;padding-left:25px;font-family:FontAwesome,arial;background:url(../images/retour-accueil.png)3px 10px no-repeat}
 .no-marg-padd,body{margin:0;padding:0}
 #block-menu-menu-top-menu a:hover{background:url(../images/retour-accueil.png)3px -75px no-repeat #000;color:#fff}
+.domain-ados-mda34-org h3.block-title{color:#f78c26}
 @font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix)format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294)format('woff'),url(../images/fontello/font/fontello.ttf?90885294)format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello)format('svg');font-weight:400;font-style:normal}
 [class*=" icon-"]:hover{text-decoration:none}
 .glyphicon{font-style:normal;speak:none;-moz-osx-font-smoothing:grayscale}
