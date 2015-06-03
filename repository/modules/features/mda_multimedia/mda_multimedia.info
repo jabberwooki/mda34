@@ -45,6 +45,7 @@ features[scald_context_config][] = scald_col_8
 features[scald_context_config][] = sdl_editor_representation
 features[scald_context_config][] = sidebar_block
 features[scald_context_config][] = zoom_block
+features[user_permission][] = view any atom
 features[variable][] = field_bundle_settings_scald_atom__audio
 features[variable][] = field_bundle_settings_scald_atom__file
 features[variable][] = field_bundle_settings_scald_atom__gallery
