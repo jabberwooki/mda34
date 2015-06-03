@@ -14,7 +14,7 @@ function kcore_default_fe_block_settings() {
 
   $export['block-social_networks_links'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'block-social-networks',
     'custom' => 0,
     'machine_name' => 'social_networks_links',
     'module' => 'block',
