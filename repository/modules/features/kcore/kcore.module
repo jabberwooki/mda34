@@ -181,8 +181,9 @@ function kcore_block_view($delta = '') {
 			$href = 'http://www.filsantejeunes.com';
 			$image_filename = 'filsantejeunes.jpg';
 			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
+			$alt = 'Fil Santé Jeunes. Besoin de t\'exprimer, envie de t\'informer. 0 800 235 238, 01 44 93 30 74. Anonyme et gratuit.';
 			
-			$content = '<a href="' . $href .'" target="_blank">';
+			$content = '<a href="' . $href .'" alt="' . $alt . '" target="_blank">';
 			$content .= '<img src="' . $image_url . '" class="fil-sante-jeunes">';
 			$content .= '</a>';
 			$block['content'] = $content;
