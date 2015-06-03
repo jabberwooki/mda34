@@ -48,15 +48,15 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = 'group_practical_infos';
   $field_group->data = array(
     'label' => 'Contenu infos pratiques',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
-      0 => 'field_logo',
-      1 => 'field_website',
+      0 => 'field_access_means',
+      1 => 'field_address',
       2 => 'field_email',
-      3 => 'field_phone',
-      4 => 'field_address',
-      5 => 'field_access_means',
-      6 => 'field_office_hours',
+      3 => 'field_logo',
+      4 => 'field_office_hours',
+      5 => 'field_phone',
+      6 => 'field_website',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -86,7 +86,7 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Informations pratiques',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_practical_title',
       1 => 'group_practical_content',

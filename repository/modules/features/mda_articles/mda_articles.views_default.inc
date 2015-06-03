@@ -34,6 +34,27 @@ function mda_articles_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
+  /* Relation: Contenu: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'article_types' => 'article_types',
+    'scald_authors' => 0,
+    'scald_tags' => 0,
+    'authors' => 0,
+    'radio_prog_categories' => 0,
+    'faq_categories' => 0,
+    'competence_fields' => 0,
+    'editors' => 0,
+    'publics' => 0,
+    'resource_publics' => 0,
+    'themes' => 0,
+    'action_types' => 0,
+    'event_types' => 0,
+    'resource_types' => 0,
+    'structure_types' => 0,
+  );
   /* Champ: Contenu: Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -64,6 +85,12 @@ function mda_articles_views_default_views() {
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
+  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = 'bf758768-f301-433f-9ae3-75517d424535';
 
   /* Display: Liste */
   $handler = $view->new_display('page', 'Liste', 'page_articles_list');
@@ -76,6 +103,7 @@ function mda_articles_views_default_views() {
     t('Trier par'),
     t('Asc'),
     t('Desc'),
+    t('term'),
     t('Liste'),
   );
   $export['articles'] = $view;
