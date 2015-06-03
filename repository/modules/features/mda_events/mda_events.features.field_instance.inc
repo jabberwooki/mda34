@@ -110,7 +110,7 @@ function mda_events_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_address'
   $field_instances['node-event-field_address'] = array(
     'bundle' => 'event',
-    'default_value' => array(),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(

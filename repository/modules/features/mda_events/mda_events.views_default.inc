@@ -41,7 +41,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Contenu: Taxonomy terms on node */
+  /* Relation: Contenu: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
@@ -119,7 +119,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -301,7 +301,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
 [field_event_image]
-[field_event_dates]
+<div class="dates-custom-wrapper">[field_event_dates]</div>
 <div class="event-type-block">[field_event_type] </div>
 <h4>[title]</h4>
 </div>';
@@ -421,7 +421,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
 [field_event_image]
-[field_event_dates]
+<div class="dates-custom-wrapper">[field_event_dates]</div>
 <div class="event-type-block">[field_event_type] </div>
 <h4>[title]</h4>
 </div>';
@@ -534,7 +534,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
 [field_event_image]
-[field_event_dates]
+<div class="dates-custom-wrapper">[field_event_dates]</div>
 <div class="event-type-block">[field_event_type] </div>
 <h4>[title]</h4>
 </div>';
@@ -662,10 +662,10 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
 [field_event_image]
-[field_event_dates]
+<div class="dates-custom-wrapper">[field_event_dates]</div>
 <div class="event-type-block">[field_event_type]</div>
 <div class="event-location-block">[field_address_locality]</div>
-<h3>[title]</h4>
+<h3>[title]</h3>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -779,7 +779,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="img-title-wrapper">
 [field_event_image]
-[field_event_dates]
+<div class="dates-custom-wrapper">[field_event_dates]</div>
 <div class="event-type-block">[field_event_type]</div>
 <div class="event-location-block">[field_address_locality]</div>
 <h4>[title]</h4>
@@ -1028,12 +1028,11 @@ function mda_events_views_default_views() {
     t('Event type'),
     t('Liste des événements'),
     t('Agenda'),
-    t('more'),
     t('Types d\'événement'),
     t('Accueil portail (ados)'),
     t('<div class="img-title-wrapper">
 [field_event_image]
-[field_event_dates]
+<div class="dates-custom-wrapper">[field_event_dates]</div>
 <div class="event-type-block">[field_event_type] </div>
 <h4>[title]</h4>
 </div>'),
@@ -1042,15 +1041,15 @@ function mda_events_views_default_views() {
     t('Bloc événements'),
     t('<div class="img-title-wrapper">
 [field_event_image]
-[field_event_dates]
+<div class="dates-custom-wrapper">[field_event_dates]</div>
 <div class="event-type-block">[field_event_type]</div>
 <div class="event-location-block">[field_address_locality]</div>
-<h3>[title]</h4>
+<h3>[title]</h3>
 </div>'),
     t('Bloc événements pros'),
     t('<div class="img-title-wrapper">
 [field_event_image]
-[field_event_dates]
+<div class="dates-custom-wrapper">[field_event_dates]</div>
 <div class="event-type-block">[field_event_type]</div>
 <div class="event-location-block">[field_address_locality]</div>
 <h4>[title]</h4>
@@ -1090,7 +1089,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Relationship: Terme de taxonomie: Contenu using Type d&#039;événement */
+  /* Relation: Terme de taxonomie: Contenu utilisant Type d&#039;événement */
   $handler->display->display_options['relationships']['reverse_field_event_type_node']['id'] = 'reverse_field_event_type_node';
   $handler->display->display_options['relationships']['reverse_field_event_type_node']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['relationships']['reverse_field_event_type_node']['field'] = 'reverse_field_event_type_node';
@@ -1129,7 +1128,6 @@ function mda_events_views_default_views() {
     t('Desc'),
     t('field_event_type'),
     t('Filtre Agenda'),
-    t('more'),
   );
   $export['events_filter'] = $view;
 
