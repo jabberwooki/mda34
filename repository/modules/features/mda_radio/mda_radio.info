@@ -52,6 +52,7 @@ features[variable][] = menu_parent_radio_programme
 features[variable][] = node_options_radio_programme
 features[variable][] = node_preview_radio_programme
 features[variable][] = node_submitted_radio_programme
+features[variable][] = pathauto_node_radio_programme_pattern
 features[views_view][] = radio_programmes
 features_exclude[dependencies][atom_reference] = atom_reference
 features_exclude[dependencies][ctools] = ctools

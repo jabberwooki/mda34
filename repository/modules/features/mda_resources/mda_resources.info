@@ -84,6 +84,7 @@ features[variable][] = menu_parent_resource
 features[variable][] = node_options_resource
 features[variable][] = node_preview_resource
 features[variable][] = node_submitted_resource
+features[variable][] = pathauto_node_resource_pattern
 features[views_view][] = resources
 features_exclude[dependencies][atom_reference] = atom_reference
 features_exclude[dependencies][ctools] = ctools
