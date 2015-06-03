@@ -203,13 +203,51 @@ function kcore_theme() {
 }
 
 /**
- * Implements hook_theme().
+ * Implements hoo_menu().
  */
-// function kcore_theme() {
-// 	return array(
-// 			'rouergue_agenda_nav' => array(
-// 					'variables' => array('agenda_nav_links' => NULL),
-// 					'file' => 'feature_events.theme.inc',
-// 			),
-// 	);
-// }
+function kcore_menu() {
+	$items['resources-restricted-access'] = array(
+			'title' => 'Accès aux ressources de la MDA34',
+			'page callback' => 'resources_restricted_page',
+			'access callback' => TRUE,
+	);
+	$items['admin/config/mda'] = array(
+			'title' => t('MDA'),
+			'description' => 'MDA settings',
+			'page callback' => 'drupal_get_form',
+			'page arguments' => array('mda_settings_form'),
+			'access arguments' => array('administer MDA'),
+			'file' => 'kcore.admin.inc',
+			'type' => MENU_NORMAL_ITEM,
+	);
+	
+	return $items;
+}
+
+/**
+ * Page callback for /resources-restricted-access.
+ */
+function resources_restricted_page() {
+	$default_text = "<p>L'accès à cette ressource est réservée aux professionnels possédant un compte sur ce site.</p>\n";
+	$default_text .= "<p><a href=" . "/user" . ">Accès au formulaire de connexion</a>.</p>\n";
+	$default_text .= '<p>Si vous êtes un professionnel et que vous ne possédez pas de compte,';
+	$default_text .= ' rendez-vous sur la page de création d\'un <a href="/user/register">nouveau compte</a>.';
+	
+	return array(
+        '#type' => 'markup',
+        '#markup' => variable_get('mda_restricted_access_text', $default_text),
+    );
+}
+
+
+/**
+ * Implements hook_node_view().
+ */
+function kcore_node_view($node, $view_mode, $langcode) {
+	// Controls access to non public resources.
+	if ($node->type == 'resource' && $view_mode == 'full') {
+		if (!user_is_logged_in() && $node->field_visibility['und'][0]['value'] == 1) {
+			drupal_goto('resources-restricted-access');
+		}
+	}
+}
