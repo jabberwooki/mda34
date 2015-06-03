@@ -160,6 +160,7 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',
