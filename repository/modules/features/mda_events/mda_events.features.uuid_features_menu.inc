@@ -10,17 +10,17 @@
 function mda_events_menu_default_uuid_features_menu() {
   $menu_uuid_links = array();
 
-  // Exported menu link: 494c6277-83ce-4b4b-ab17-6ba06f185d1c
-  $menu_uuid_links['494c6277-83ce-4b4b-ab17-6ba06f185d1c'] = array(
+  // Exported menu link: 61a15f79-7a94-4294-a3d4-68462cc03625
+  $menu_uuid_links['61a15f79-7a94-4294-a3d4-68462cc03625'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'annuaire',
-    'router_path' => 'annuaire',
-    'link_title' => 'Annuaire',
+    'link_path' => 'agenda',
+    'router_path' => 'agenda',
+    'link_title' => 'Agenda',
     'options' => array(
       'domain_menu_access' => array(
         'show' => array(
+          'd2' => 'd2',
           'd3' => 'd3',
-          'd4' => 'd4',
           'd6' => 'd6',
         ),
       ),
@@ -28,20 +28,19 @@ function mda_events_menu_default_uuid_features_menu() {
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_annuaire:annuaire',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 12,
-    'uuid' => '494c6277-83ce-4b4b-ab17-6ba06f185d1c',
+    'weight' => 4,
+    'uuid' => '61a15f79-7a94-4294-a3d4-68462cc03625',
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Annuaire');
+  t('Agenda');
 
   return $menu_uuid_links;
 }

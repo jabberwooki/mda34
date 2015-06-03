@@ -5,3 +5,10 @@
  */
 
 include_once 'mda_multimedia.features.inc';
+
+/**
+ * Activate scald_dailymotion and scald_vimeo modules.
+ */
+function mda_multimedia_update_7001() {
+	module_enable(array('scald_dailymotion','scald_vimeo'));
+}
