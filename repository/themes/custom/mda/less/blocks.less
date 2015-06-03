@@ -120,7 +120,7 @@
 #block-boxes-pros-resources-link{
   background: transparent url(../images/bg_blocks.gif);
   padding: 0;
-
+  margin-top: 25px;
   & > div.block-wrapper-custom{
     padding: 0 0 0 150px;
     margin: 0;
@@ -164,6 +164,47 @@ body.domain-reseau-pro-mda34-org{
     }
   }
 }
+/* Block newsletter ***********************************************************/
+#block-mailchimp-signup-newsletter{
+  background: url('../images/bg_blocks.gif') repeat scroll 0% 0% transparent;
+  padding: 0px;
+  margin-top: 45px;
+  & h3.block-title{
+    background-color: @deep-blue-mda;
+    margin: 0;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    &:before {
+      .glyphicon();
+      content: "\e82c";
+      color: white;
+      margin-right: 10px
+    }
+  }
+  & label{
+    display: inline-block;
+    width: 25%;
+    padding-left: 5%;
+    margin-top: 18px;
+    color: @deep-blue-mda;
+  }
+  & input{
+    width: 70%;
+    display: inline-block;
+    margin-top: 18px;
+  }
+  & button{
+    display: block;
+    width: 110px;
+    margin: 10px auto;
+    text-transform: uppercase;
+    color: white;
+    font-family: arial;
+    background-color: @deep-blue-mda;
+  }
+}
+
 
 
 
