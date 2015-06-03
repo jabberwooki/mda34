@@ -1,3 +1,6 @@
+.bg-block{
+  background: url('../images/bg_blocks.gif') repeat scroll 0% 0% transparent;
+}
 /* Blocks, Images link's title */
 .block{
   &.block-views{
@@ -118,7 +121,7 @@
   }
 }
 #block-boxes-pros-resources-link{
-  background: transparent url(../images/bg_blocks.gif);
+  .bg-block();
   padding: 0;
   margin-top: 25px;
   & > div.block-wrapper-custom{
@@ -142,6 +145,23 @@
       color: @gray-base;
       font-size: 1.6em;
     }
+    & h2{
+      margin-top: 0;
+      padding-top: 0;
+      line-height: 0.6em;
+      &>a{
+        font-size: 0.6em;
+        color: @gray-base;
+      }
+    }
+  }
+  .views-row{
+    padding: 0;
+  }
+}
+body.domain-ados-mda34-org{
+  h3.icon-radio{
+    color: @orange-mda;
   }
 }
 /* Block recherche ************************************************************/
@@ -166,7 +186,7 @@ body.domain-reseau-pro-mda34-org{
 }
 /* Block newsletter ***********************************************************/
 #block-mailchimp-signup-newsletter{
-  background: url('../images/bg_blocks.gif') repeat scroll 0% 0% transparent;
+  .bg-block();
   padding: 0px;
   margin-top: 45px;
   & h3.block-title{
@@ -204,6 +224,23 @@ body.domain-reseau-pro-mda34-org{
     background-color: @deep-blue-mda;
   }
 }
+/* block "nous suivre" ********************************************************/
+#block-block-2, .block-social-networks{
+  .bg-block();
+  margin-top: 20px;
+  & h3{
+    display: inline-block;
+    background-color: @orange-mda;
+    padding: 10px 13px;
+    color: white;
+    float: left;
+  }
+}
+/* bloc "Fil santé jeunes"*****************************************************/
+#block-kcore-mda-filsantejeunes{
+  margin: 20px 0;
+}
+
 
 
 
