@@ -37,6 +37,24 @@
         padding: 10px 15px;
       }
     }
+    & h3{
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      background-color: @gray-base;
+      opacity: 0.7;
+      @media (min-width:@screen-xs){
+        width: 360px;
+      }
+
+      & a{
+        display: block;
+        color: white;
+        font-size: 0.8em;
+        padding: 10px 15px;
+      }
+    }
     & .date-display-single{ /* specific to events blocks */
       position: absolute;
       top: 0;
@@ -227,6 +245,10 @@ body.domain-reseau-pro-mda34-org{
 /* block "nous suivre" ********************************************************/
 #block-block-2, .block-social-networks{
   .bg-block();
+  .block-wrapper-custom{
+    text-align: right;
+    margin-top: 10px;
+  }
   margin-top: 20px;
   & h3{
     display: inline-block;
@@ -234,8 +256,53 @@ body.domain-reseau-pro-mda34-org{
     padding: 10px 13px;
     color: white;
     float: left;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 44px 0 0 0;
+  }
+  .icon-social{
+    text-decoration: none;
+    padding:0;
+    border:0;
+    margin:0 5px 0 0;
+    height: auto;
+    width: auto;
+    &:before{
+      color: white;  
+      width: 30px;
+      padding:0 5px;
+      border:0;
+      margin:0;
+      height: auto;
+      font-size: 0.8em;
+    }
+  }
+  .icon-twitter{
+    background-color: @blue-twitter;
+    &:before{
+      background-color: @blue-twitter;
+    }
+  }
+  .icon-youtube{
+    background-color: @red-youtube;
+    &:before{
+      background-color: @red-youtube;
+    }
+  }
+  .icon-facebook{
+    background-color: @blue-facebook;
+    &:before{
+      background-color: @blue-facebook;
+    }
+  }
+  .icon-gplus{
+    background-color: @orange-gplus;
+    &:before{
+      background-color: @orange-gplus;
+    }
   }
 }
+
 /* bloc "Fil santé jeunes"*****************************************************/
 #block-kcore-mda-filsantejeunes{
   margin: 20px 0;

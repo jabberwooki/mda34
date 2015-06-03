@@ -46,11 +46,11 @@ body.front .block-kcore{
   
 }
 
-/* Profil's title **************************************************************/
+/* Profil's title *************************************************************/
 h2.line-right-left{
   font-size: 1.5em;
 }
-/* Caroussel ******************************************************************/
+/* Caroussel portail   ********************************************************/
 body.front .zoom {
   border-bottom: 0;
   padding-bottom: 0;
@@ -138,4 +138,19 @@ body.domain-www-mda34-org #home-main-container-wrapper{
   & #page-header{
     padding: 43px 0;
   }
+}
+
+/* Home ado on 2 cols *********************************************************/
+#block-views-news-block-actus, #block-views-events-block-front-events{
+  float: left;
+  width: 47.9167%;
+  margin-right: 1.04167%;
+  @media screen and (max-width:@screen-sm){
+      width: 97.916666666666666666666666666667%;
+      margin-right: 0;
+      float: none;
+    }
+}
+#block-views-events-block-front-events{
+  margin-right: 0;
 }
