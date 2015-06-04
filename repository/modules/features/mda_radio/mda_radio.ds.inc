@@ -49,6 +49,17 @@ function mda_radio_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'radio_programme';
   $ds_fieldsetting->view_mode = 'list';
   $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '0',
+        'wrapper' => 'h3',
+        'class' => '',
+        'field_formatter_class' => '',
+      ),
+    ),
     'node_link' => array(
       'weight' => '2',
       'label' => 'hidden',
@@ -164,17 +175,19 @@ function mda_radio_ds_layout_settings_info() {
   $ds_layout->layout = 'bootstrap_3_9';
   $ds_layout->settings = array(
     'regions' => array(
-      'left' => array(
-        0 => 'field_radio_image',
-      ),
       'right' => array(
-        1 => 'field_record_date',
-        2 => 'node_link',
-        3 => 'field_scald_audio',
-        4 => 'sharethis',
+        0 => 'title',
+        2 => 'field_record_date',
+        3 => 'node_link',
+        4 => 'field_scald_audio',
+        5 => 'sharethis',
+      ),
+      'left' => array(
+        1 => 'field_radio_image',
       ),
     ),
     'fields' => array(
+      'title' => 'right',
       'field_radio_image' => 'left',
       'field_record_date' => 'right',
       'node_link' => 'right',
