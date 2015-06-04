@@ -5,11 +5,55 @@
     float: left;
     display: block;
     background-color: @gray-lighter;
-    padding: 10px 16px;
     margin-right: 10px;
     & a{
       color: @gray-base;
       text-transform: uppercase;
+      padding: 10px 14px 8px 14px;
+      &:after{
+        content: '';
+      }
+    }
+  }
+}
+body.page-faq {
+  & h2.page-header{
+    color: @green-mda;
+    &:before{
+      .glyphicon();
+      content: "\e805";
+    } 
+  }
+  & .view-faqs {
+    & .view-header{
+      margin-bottom: 37px;
+    }
+    & > .view-content {
+      background: transparent url(../images/fond_faq_parents.png) no-repeat 50% 0;
+      min-height: 900px;
+      & > .views-row{
+        width:276px;
+        background: transparent url(../images/bottom_faq_parents.png) no-repeat 0 100%;
+        float: left;
+        margin: 20px 10px 0 10px;
+        padding: 0 0 18px 0;
+        border: 0;
+        & .faq-parents-custom-wrapper{
+          border-top: 1px solid @green-mda;
+          border-left: 1px solid @green-mda;
+          border-right: 1px solid @green-mda;
+          padding: 20px;
+          margin:0;
+          background-color: white;
+          color: @green-mda;
+          & a{
+            color: @gray-base;
+            &:after{
+            content: '';
+          }
+          }
+        }
+      }
     }
   }
 }

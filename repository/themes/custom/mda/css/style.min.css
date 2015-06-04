@@ -1375,7 +1375,7 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .hidden,.visible-lg,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block,.visible-md,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-sm,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-xs,.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block{display:none!important}
 .invisible{visibility:hidden}
 .text-hide{font:0/0 a;color:transparent;background-color:transparent;border:0}
-#block-boxes-radio-faq-link h3:before,#block-mailchimp-signup-newsletter h3.block-title:before,.block-wrapper-custom .view-faqs a:after,.group-link-resources .field-items:before,body.page-annuaire h2.page-header:before{font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased}
+#block-boxes-radio-faq-link h3:before,#block-mailchimp-signup-newsletter h3.block-title:before,.block-wrapper-custom .view-faqs a:after,.group-link-resources .field-items:before,body.page-annuaire h2.page-header:before,body.page-faq h2.page-header:before{font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased}
 .hidden{visibility:hidden!important}
 .affix{position:fixed}
 @-ms-viewport{width:device-width}
@@ -1744,9 +1744,9 @@ body.domain-reseau-pro-mda34-org #search-block-form .btn{background-color:#57509
 #block-mailchimp-signup-newsletter label{display:inline-block;width:25%;padding-left:5%;margin-top:18px;color:#034b93}
 #block-mailchimp-signup-newsletter input{width:70%;display:inline-block;margin-top:18px}
 #block-mailchimp-signup-newsletter button{display:block;width:110px;margin:10px auto;text-transform:uppercase;color:#fff;font-family:arial;background-color:#034b93}
-#block-boxes-radio-faq-link h3:before,.block-wrapper-custom .view-faqs a:after{display:inline-block;width:1em;font-size:1em;text-transform:none;font-family:fontello}
 .block-social-networks{background:url(../images/bg_blocks.gif);margin-top:20px}
 .block-social-networks .block-wrapper-custom{text-align:right;margin-top:10px}
+#block-boxes-radio-faq-link h3:before,.block-wrapper-custom .view-faqs a:after,.group-link-resources .field-items:before,body.page-faq h2.page-header:before{font-weight:400;text-decoration:inherit;text-align:center}
 .block-social-networks h3{display:inline-block;background-color:#f78c26;padding:10px 13px;color:#fff;float:left;font-size:1em;font-weight:700;margin:44px 0 0}
 .block-social-networks .icon-social{text-decoration:none;padding:0;border:0;margin:0 5px 0 0;height:auto;width:auto}
 .block-social-networks .icon-social:before{color:#fff;width:30px;padding:0 5px;border:0;margin:0;height:auto;font-size:.8em}
@@ -1757,10 +1757,10 @@ body.domain-reseau-pro-mda34-org #search-block-form .btn{background-color:#57509
 #block-kcore-mda-filsantejeunes{margin:20px 0}
 .block-wrapper-custom .view-faqs .views-row-last a{padding-bottom:0}
 .block-wrapper-custom .view-faqs a{display:block;padding-bottom:15px;font-weight:700}
-.block-wrapper-custom .view-faqs a:after{position:relative;top:1px;font-weight:400;speak:none;text-decoration:inherit;margin-right:.2em;text-align:center;line-height:1em;margin-left:.2em;-moz-osx-font-smoothing:grayscale;content:"\e82d";color:#32903f;white-space:nowrap}
+.block-wrapper-custom .view-faqs a:after{position:relative;top:1px;font-family:fontello;font-size:1em;speak:none;display:inline-block;width:1em;margin-right:.2em;text-transform:none;line-height:1em;margin-left:.2em;-moz-osx-font-smoothing:grayscale;content:"\e82d";color:#32903f;white-space:nowrap}
 #block-boxes-radio-faq-link{background:url(../images/bg-faq-ado.png)no-repeat;margin-top:22px;height:168px}
 #block-boxes-radio-faq-link h3{background-color:#009ee0;color:#fff;display:inline-block;margin:0;border:0;padding:5px 20px 5px 5px}
-#block-boxes-radio-faq-link h3:before{position:relative;top:1px;font-weight:400;speak:none;text-decoration:inherit;margin-right:.2em;text-align:center;line-height:1em;margin-left:.2em;-moz-osx-font-smoothing:grayscale;content:"\e805";color:#fff}
+#block-boxes-radio-faq-link h3:before{position:relative;top:1px;font-family:fontello;font-size:1em;speak:none;display:inline-block;width:1em;margin-right:.2em;text-transform:none;line-height:1em;margin-left:.2em;-moz-osx-font-smoothing:grayscale;content:"\e805";color:#fff}
 #block-boxes-radio-faq-link a{display:block;color:#333;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;font-size:1.7em;padding:20px 80px 0 45px;margin-bottom:0}
 #block-boxes-radio-faq-link .boxes-box-controls{position:relative;top:-20px}
 .view-display-id-programmes_list{background-color:#fff}
@@ -1779,8 +1779,17 @@ a.icon-social:hover:before{color:#0080ff}
 @media (max-width:970px){a.icon-social:before{font-size:2em;margin:0 34px 0 0;width:auto}
 }
 #isotope-options ul#filters{padding:0;margin:0}
-#isotope-options ul#filters li{float:left;display:block;background-color:#cdcdcd;padding:10px 16px;margin-right:10px}
-#isotope-options ul#filters li a{color:#000;text-transform:uppercase}
+#isotope-options ul#filters li{float:left;display:block;background-color:#cdcdcd;margin-right:10px}
+#isotope-options ul#filters li a{color:#000;text-transform:uppercase;padding:10px 14px 8px}
+#isotope-options ul#filters li a:after{content:''}
+body.page-faq h2.page-header{color:#32903f}
+body.page-faq h2.page-header:before{position:relative;top:1px;font-family:fontello;font-size:1em;speak:none;display:inline-block;width:1em;margin-right:.2em;text-transform:none;line-height:1em;margin-left:.2em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e805"}
+body.page-faq .view-faqs .view-header{margin-bottom:37px}
+body.page-faq .view-faqs>.view-content{background:url(../images/fond_faq_parents.png)50% 0 no-repeat;min-height:900px}
+body.page-faq .view-faqs>.view-content>.views-row{width:276px;background:url(../images/bottom_faq_parents.png)0 100% no-repeat;float:left;margin:20px 10px 0;padding:0 0 18px;border:0}
+body.page-faq .view-faqs>.view-content>.views-row .faq-parents-custom-wrapper{border-top:1px solid #32903f;border-left:1px solid #32903f;border-right:1px solid #32903f;padding:20px;margin:0;background-color:#fff;color:#32903f}
+body.page-faq .view-faqs>.view-content>.views-row .faq-parents-custom-wrapper a{color:#000}
+body.page-faq .view-faqs>.view-content>.views-row .faq-parents-custom-wrapper a:after{content:''}
 body.front .block-kcore .block-wrapper-custom a{display:block;padding:12px 0 15px 70px}
 body.front .block-kcore .block-wrapper-custom h2{text-transform:none}
 body.front .block-kcore#block-kcore-mda-shortcut-ados .block-wrapper-custom{background:url(../images/button_fleche_ados.png)98% 50% no-repeat}
@@ -1825,7 +1834,7 @@ body.domain-www-mda34-org #home-main-container-wrapper #page-header{padding:43px
 #block-views-events-block-front-events{margin-right:0;padding-left:0;margin-left:1.04167%}
 .group-link-resources:after,.group-link-resources:before{content:" ";display:table}
 .group-link-resources .field-items{float:left;margin-right:20px}
-.group-link-resources .field-items:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;color:#999;-moz-osx-font-smoothing:grayscale}
+.group-link-resources .field-items:before{position:relative;top:1px;font-family:fontello;font-size:1em;speak:none;display:inline-block;width:1em;margin-right:.2em;text-transform:none;line-height:1em;margin-left:.2em;color:#999;-moz-osx-font-smoothing:grayscale}
 .group-link-resources .field-items .field-item{display:inline}
 .group-link-resources .field-name-field-resource-type .field-items:before{content:"\e804"}
 .group-link-resources .field-name-post-date .field-items:before{content:"\e807";white-space:nowrap}
