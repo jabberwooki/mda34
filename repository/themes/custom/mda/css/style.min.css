@@ -1,6 +1,6 @@
-.popover>.arrow,.popover>.arrow:after,.tooltip-arrow{width:0;height:0;border-color:transparent;border-style:solid}
-#block-boxes-radio-faq-link h3:before,.block-wrapper-custom .view-faqs a:after,.glyphicon,.group-link-resources .field-items:before{-moz-osx-font-smoothing:grayscale;speak:none}
+.text-left,caption,th{text-align:left}
 #isotope-options ul#filters li,.carousel-indicators,.dropdown-menu,.list-inline,.list-unstyled,.media-list,.nav,.pager,ul li.collapsed,ul li.expanded,ul li.leaf{list-style:none}
+.popover>.arrow,.popover>.arrow:after,.tooltip-arrow{width:0;height:0;border-color:transparent;border-style:solid}
 @font-face{font-family:'Eligible bold';src:url(../fonts/Eligible-Bold/Eligible-Bold.eot);src:url(../fonts/Eligible-Bold/Eligible-Bold.eot?#iefix)format('embedded-opentype'),url(../fonts/Eligible-Bold/Eligible-Bold.woff)format('woff'),url(../fonts/Eligible-Bold/Eligible-Bold.ttf)format('truetype');font-weight:400;font-style:normal}
 @font-face{font-family:Rockwell;src:url(../fonts/Rockwell/Rock.TTF);font-weight:400;font-style:normal}
 @font-face{font-family:FontAwesome;src:url(../fonts/font-awesome/fonts/fontawesome-webfont.eot?v=4.3.0);src:url(../fonts/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0)format('embedded-opentype'),url(.../fonts/font-awesome/fonts/fontawesome-webfont.woff2?v=4.3.0)format('woff2'),url(../fonts/font-awesome/fonts/fontawesome-webfont.woff?v=4.3.0)format('woff'),url(../fonts/font-awesome/fonts/fontawesome-webfont.ttf?v=4.3.0)format('truetype'),url(../fonts/font-awesome/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular)format('svg');font-weight:400;font-style:normal}
@@ -92,7 +92,6 @@ dt,kbd kbd,label{font-weight:700}
 }
 .small,small{font-size:85%}
 .mark,mark{background-color:#fcf8e3;padding:.2em}
-.text-left{text-align:left}
 .text-right{text-align:right}
 .text-justify{text-align:justify}
 .text-nowrap{white-space:nowrap}
@@ -134,7 +133,7 @@ dd{margin-left:0}
 @media (min-width:768px){.dl-horizontal dt{float:left;width:160px;clear:left;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .dl-horizontal dd{margin-left:180px}
 }
-.block .views-row:after,.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-actions,.form-horizontal .form-group:after,.group-link-resources:after,.modal-footer:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after,fieldset .panel-body{clear:both}
+.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-actions,.form-horizontal .form-group:after,.modal-footer:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after,fieldset .panel-body{clear:both}
 abbr[data-original-title],abbr[title]{cursor:help;border-bottom:1px dotted #999}
 .initialism{font-size:90%}
 blockquote{padding:10px 20px;margin:0 0 20px;font-size:17.5px;border-left:5px solid #cdcdcd}
@@ -143,7 +142,6 @@ blockquote .small,blockquote footer,blockquote small{display:block;font-size:80%
 code,kbd{font-size:90%}
 blockquote .small:before,blockquote footer:before,blockquote small:before{content:'\2014 \00A0'}
 .blockquote-reverse,blockquote.pull-right{padding-right:15px;padding-left:0;border-right:5px solid #cdcdcd;border-left:0;text-align:right}
-caption,th{text-align:left}
 code,kbd{padding:2px 4px}
 .blockquote-reverse .small:before,.blockquote-reverse footer:before,.blockquote-reverse small:before,blockquote.pull-right .small:before,blockquote.pull-right footer:before,blockquote.pull-right small:before{content:''}
 .blockquote-reverse .small:after,.blockquote-reverse footer:after,.blockquote-reverse small:after,blockquote.pull-right .small:after,blockquote.pull-right footer:after,blockquote.pull-right small:after{content:'\00A0 \2014'}
@@ -1252,10 +1250,10 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-gro
 .panel-info>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#bce8f1}
 .panel-warning{border-color:#faebcc}
 .panel-warning>.panel-heading{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}
+.panel-danger,input.error{border-color:#ebccd1}
 .panel-warning>.panel-heading+.panel-collapse>.panel-body{border-top-color:#faebcc}
 .panel-warning>.panel-heading .badge{color:#fcf8e3;background-color:#8a6d3b}
 .panel-warning>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#faebcc}
-.panel-danger{border-color:#ebccd1}
 .panel-danger>.panel-heading{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
 .panel-danger>.panel-heading+.panel-collapse>.panel-body{border-top-color:#ebccd1}
 .panel-danger>.panel-heading .badge{color:#f2dede;background-color:#a94442}
@@ -1377,7 +1375,7 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .hidden,.visible-lg,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block,.visible-md,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-sm,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-xs,.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block{display:none!important}
 .invisible{visibility:hidden}
 .text-hide{font:0/0 a;color:transparent;background-color:transparent;border:0}
-#block-boxes-radio-faq-link h3:before,#block-mailchimp-signup-newsletter h3.block-title:before,.block-wrapper-custom .view-faqs a:after,.group-link-resources .field-items:before{font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased}
+#block-boxes-radio-faq-link h3:before,#block-mailchimp-signup-newsletter h3.block-title:before,.block-wrapper-custom .view-faqs a:after,.group-link-resources .field-items:before,body.page-annuaire h2.page-header:before{font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased}
 .hidden{visibility:hidden!important}
 .affix{position:fixed}
 @-ms-viewport{width:device-width}
@@ -1489,7 +1487,7 @@ ul.action-links{margin:12px 0;padding:0}
 ul.action-links li{display:inline;margin:0;padding:0 6px 0 0}
 ul.action-links .glyphicon{padding-right:.5em}
 .uneditable-input,input,select,textarea{max-width:100%;width:auto}
-input.error{color:#a94442;border-color:#ebccd1}
+input.error{color:#a94442}
 fieldset legend.panel-heading{float:left;line-height:1em;margin:0}
 fieldset .panel-heading a.panel-title{color:inherit;display:block;margin:-10px -15px;padding:10px 15px}
 fieldset .panel-heading a.panel-title:hover{text-decoration:none}
@@ -1519,6 +1517,7 @@ div.password-confirm{float:right;margin-top:1.5em;visibility:hidden;width:17em}
 div.form-item div.password-suggestions{padding:.2em .5em;margin:.7em 0;width:38.5em;border:1px solid #B4B4B4}
 div.password-suggestions ul{margin-bottom:0}
 .confirm-parent,.password-parent{clear:left;margin:0;width:36.3em}
+.block .views-row:after,.group-link-resources:after{clear:both}
 .progress-wrapper .progress{margin-bottom:10px}
 .pagination ul>li>a.progress-disabled{float:left}
 .form-autocomplete .glyphicon{color:#999;font-size:120%}
@@ -1575,7 +1574,7 @@ table .checkbox input[type=checkbox],table .radio input[type=radio]{max-width:in
 @media (min-width:768px){.form-horizontal .form-group label{float:left;width:16.66666667%}
 }
 .alert a{font-weight:700}
-.glyphicon,[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{color:#999;display:inline-block;font-family:fontello;margin-right:.2em;margin-left:.2em;text-transform:none;text-align:center;font-weight:400}
+.glyphicon,[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{color:#999;display:inline-block;font-family:fontello;margin-right:.2em;margin-left:.2em;text-transform:none;text-align:center;width:1em;font-weight:400}
 .alert-success a{color:#2b542c}
 .alert-info a{color:#245269}
 .alert-warning a{color:#66512c}
@@ -1588,6 +1587,7 @@ h2,h3,h4{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman
 p{font-family:arial}
 .no-padding-margin{padding:0;margin:0}
 a#main-content{height:1px;overflow:hidden}
+.isotope-element img{width:360px}
 .orange{color:#f78c26}
 .black{color:#000}
 .green{color:#32903f}
@@ -1616,8 +1616,8 @@ a#main-content{height:1px;overflow:hidden}
 #block-menu-menu-top-menu a:hover{background:url(../images/retour-accueil.png)3px -75px no-repeat #000;color:#fff}
 @font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix)format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294)format('woff'),url(../images/fontello/font/fontello.ttf?90885294)format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello)format('svg');font-weight:400;font-style:normal}
 [class*=" icon-"]:hover{text-decoration:none}
-.glyphicon{font-style:normal;font-size:1em;text-decoration:inherit;width:1em;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased}
-[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{position:relative;top:1px;font-style:normal;font-size:1em;speak:none;text-decoration:inherit;width:1em;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.glyphicon{font-style:normal;font-size:1em;speak:none;text-decoration:inherit;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{position:relative;top:1px;font-style:normal;font-size:1em;speak:none;text-decoration:inherit;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-facebook:before{content:"\e801"}
 .icon-twitter:before{content:"\e800"}
 .icon-youtube:before{content:"\e802"}
@@ -1692,7 +1692,7 @@ body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;backgro
 body.domain-radio-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#009ee0}
 aside.col-sm-4 h3.block-title{font-size:1.2em;border-bottom:1px solid #cdcdcd;padding-bottom:8px;font-weight:700}
 .bg-block{background:url(../images/bg_blocks.gif)}
-.domain-ados-mda34-org h3.block-title{color:#f78c26}
+.domain-ados-mda34-org h3.block-title{color:#fff}
 .domain-parents-mda34-org h3.block-title{color:#32903f}
 .block.block-views{border-bottom:1px solid #000;padding-bottom:10px}
 .block .views-row{padding:10px 0;margin-bottom:20px}
@@ -1744,11 +1744,11 @@ body.domain-reseau-pro-mda34-org #search-block-form .btn{background-color:#57509
 #block-mailchimp-signup-newsletter label{display:inline-block;width:25%;padding-left:5%;margin-top:18px;color:#034b93}
 #block-mailchimp-signup-newsletter input{width:70%;display:inline-block;margin-top:18px}
 #block-mailchimp-signup-newsletter button{display:block;width:110px;margin:10px auto;text-transform:uppercase;color:#fff;font-family:arial;background-color:#034b93}
+#block-boxes-radio-faq-link h3:before,.block-wrapper-custom .view-faqs a:after{display:inline-block;width:1em;font-size:1em;text-transform:none;font-family:fontello}
 .block-social-networks{background:url(../images/bg_blocks.gif);margin-top:20px}
 .block-social-networks .block-wrapper-custom{text-align:right;margin-top:10px}
 .block-social-networks h3{display:inline-block;background-color:#f78c26;padding:10px 13px;color:#fff;float:left;font-size:1em;font-weight:700;margin:44px 0 0}
 .block-social-networks .icon-social{text-decoration:none;padding:0;border:0;margin:0 5px 0 0;height:auto;width:auto}
-#block-boxes-radio-faq-link h3:before,.block-wrapper-custom .view-faqs a:after{display:inline-block;font-weight:400;width:1em;font-size:1em;text-decoration:inherit}
 .block-social-networks .icon-social:before{color:#fff;width:30px;padding:0 5px;border:0;margin:0;height:auto;font-size:.8em}
 .block-social-networks .icon-twitter,.block-social-networks .icon-twitter:before{background-color:#009fe3}
 .block-social-networks .icon-youtube,.block-social-networks .icon-youtube:before{background-color:red}
@@ -1757,10 +1757,10 @@ body.domain-reseau-pro-mda34-org #search-block-form .btn{background-color:#57509
 #block-kcore-mda-filsantejeunes{margin:20px 0}
 .block-wrapper-custom .view-faqs .views-row-last a{padding-bottom:0}
 .block-wrapper-custom .view-faqs a{display:block;padding-bottom:15px;font-weight:700}
-.block-wrapper-custom .view-faqs a:after{position:relative;top:1px;font-family:fontello;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;content:"\e82d";color:#32903f;white-space:nowrap}
+.block-wrapper-custom .view-faqs a:after{position:relative;top:1px;font-weight:400;speak:none;text-decoration:inherit;margin-right:.2em;text-align:center;line-height:1em;margin-left:.2em;-moz-osx-font-smoothing:grayscale;content:"\e82d";color:#32903f;white-space:nowrap}
 #block-boxes-radio-faq-link{background:url(../images/bg-faq-ado.png)no-repeat;margin-top:22px;height:168px}
 #block-boxes-radio-faq-link h3{background-color:#009ee0;color:#fff;display:inline-block;margin:0;border:0;padding:5px 20px 5px 5px}
-#block-boxes-radio-faq-link h3:before{position:relative;top:1px;font-family:fontello;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;content:"\e805";color:#fff}
+#block-boxes-radio-faq-link h3:before{position:relative;top:1px;font-weight:400;speak:none;text-decoration:inherit;margin-right:.2em;text-align:center;line-height:1em;margin-left:.2em;-moz-osx-font-smoothing:grayscale;content:"\e805";color:#fff}
 #block-boxes-radio-faq-link a{display:block;color:#333;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;font-size:1.7em;padding:20px 80px 0 45px;margin-bottom:0}
 #block-boxes-radio-faq-link .boxes-box-controls{position:relative;top:-20px}
 .view-display-id-programmes_list{background-color:#fff}
@@ -1825,7 +1825,7 @@ body.domain-www-mda34-org #home-main-container-wrapper #page-header{padding:43px
 #block-views-events-block-front-events{margin-right:0;padding-left:0;margin-left:1.04167%}
 .group-link-resources:after,.group-link-resources:before{content:" ";display:table}
 .group-link-resources .field-items{float:left;margin-right:20px}
-.group-link-resources .field-items:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;color:#999}
+.group-link-resources .field-items:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;color:#999;-moz-osx-font-smoothing:grayscale}
 .group-link-resources .field-items .field-item{display:inline}
 .group-link-resources .field-name-field-resource-type .field-items:before{content:"\e804"}
 .group-link-resources .field-name-post-date .field-items:before{content:"\e807";white-space:nowrap}
@@ -1858,3 +1858,13 @@ body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks{
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks .block-wrapper-custom{text-align:right;margin-top:0}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks .block-wrapper-custom p{padding-top:18px}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks h3{margin:20px 0;color:#fff;background-color:#333}
+body.page-annuaire h2.page-header:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e82f"}
+body.page-annuaire #views-exposed-form-structures-list-structures{background-color:#e9e9e9;padding:20px}
+body.page-annuaire #views-exposed-form-structures-list-structures label{color:#575095}
+body.page-annuaire #views-exposed-form-structures-list-structures button{background-color:#575095;text-transform:uppercase;margin-top:26px}
+body.page-annuaire table.views-table{margin-top:33px}
+body.page-annuaire table.views-table th{background-color:#575095;color:#fff;border:2px solid #fff}
+body.page-annuaire table.views-table tr.odd{background-color:#e9e9e9}
+body.page-annuaire table.views-table tr.even{background-color:#cdcdcd}
+body.page-annuaire table.views-table td{border:2px solid #fff}
+body.page-annuaire table.views-table td.views-field-title a{font-weight:700;color:#000}
