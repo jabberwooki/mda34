@@ -1,0 +1,54 @@
+body.domain-radio-mda34-org #home-main-container-wrapper{
+  background-color: @gray-dark;
+  .view-display-id-block_last_programme .view-content{/* Dernière émission */
+    background-color: white;
+    & div.field-item img{
+      max-width: 293px;
+      max-height: 293px;
+      float: left;
+      margin: 0 14px 0 0;
+    }
+    & h3{
+      margin-bottom: 0;
+    }
+    & .field-name-field-record-date {
+      color: @cyan-mda;
+      display: block;
+      min-height: 20px;
+      font-size: 0.9em;
+    }
+    & .field-type-date:after{
+      clear: none;
+    }
+    & .field-name-body{
+      & p{
+        font-size: 1em;
+      }
+      margin-bottom: 30px;
+      height: 70px;
+      overflow: hidden;
+      position: relative;
+      left: -13px;
+    }
+    & .field-name-field-scald-audio{
+      margin-bottom: 20px;
+    }
+  }
+  /* block "nous suivre" ******************************************************/
+  & .block-social-networks{
+    margin-top: 0;
+    .block-wrapper-custom{
+      text-align: right;
+      margin-top: 0;
+      & p{
+        padding-top: 18px;
+      }
+    }
+    & h3{
+      margin: 20px 0 20px 0;
+      color: white;
+      background-color: @gray-dark;
+    }
+  }
+}
+

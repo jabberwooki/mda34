@@ -1,4 +1,5 @@
 .popover>.arrow,.popover>.arrow:after,.tooltip-arrow{width:0;height:0;border-color:transparent;border-style:solid}
+#block-boxes-radio-faq-link h3:before,.block-wrapper-custom .view-faqs a:after,.glyphicon,.group-link-resources .field-items:before{-moz-osx-font-smoothing:grayscale;speak:none}
 #isotope-options ul#filters li,.carousel-indicators,.dropdown-menu,.list-inline,.list-unstyled,.media-list,.nav,.pager,ul li.collapsed,ul li.expanded,ul li.leaf{list-style:none}
 @font-face{font-family:'Eligible bold';src:url(../fonts/Eligible-Bold/Eligible-Bold.eot);src:url(../fonts/Eligible-Bold/Eligible-Bold.eot?#iefix)format('embedded-opentype'),url(../fonts/Eligible-Bold/Eligible-Bold.woff)format('woff'),url(../fonts/Eligible-Bold/Eligible-Bold.ttf)format('truetype');font-weight:400;font-style:normal}
 @font-face{font-family:Rockwell;src:url(../fonts/Rockwell/Rock.TTF);font-weight:400;font-style:normal}
@@ -1251,10 +1252,10 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-gro
 .panel-info>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#bce8f1}
 .panel-warning{border-color:#faebcc}
 .panel-warning>.panel-heading{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}
-.panel-danger,input.error{border-color:#ebccd1}
 .panel-warning>.panel-heading+.panel-collapse>.panel-body{border-top-color:#faebcc}
 .panel-warning>.panel-heading .badge{color:#fcf8e3;background-color:#8a6d3b}
 .panel-warning>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#faebcc}
+.panel-danger{border-color:#ebccd1}
 .panel-danger>.panel-heading{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
 .panel-danger>.panel-heading+.panel-collapse>.panel-body{border-top-color:#ebccd1}
 .panel-danger>.panel-heading .badge{color:#f2dede;background-color:#a94442}
@@ -1376,7 +1377,7 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .hidden,.visible-lg,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block,.visible-md,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-sm,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-xs,.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block{display:none!important}
 .invisible{visibility:hidden}
 .text-hide{font:0/0 a;color:transparent;background-color:transparent;border:0}
-#block-mailchimp-signup-newsletter h3.block-title:before,.block-wrapper-custom .view-faqs a:after,.group-link-resources .field-items:before{font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased}
+#block-boxes-radio-faq-link h3:before,#block-mailchimp-signup-newsletter h3.block-title:before,.block-wrapper-custom .view-faqs a:after,.group-link-resources .field-items:before{font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased}
 .hidden{visibility:hidden!important}
 .affix{position:fixed}
 @-ms-viewport{width:device-width}
@@ -1488,7 +1489,7 @@ ul.action-links{margin:12px 0;padding:0}
 ul.action-links li{display:inline;margin:0;padding:0 6px 0 0}
 ul.action-links .glyphicon{padding-right:.5em}
 .uneditable-input,input,select,textarea{max-width:100%;width:auto}
-input.error{color:#a94442}
+input.error{color:#a94442;border-color:#ebccd1}
 fieldset legend.panel-heading{float:left;line-height:1em;margin:0}
 fieldset .panel-heading a.panel-title{color:inherit;display:block;margin:-10px -15px;padding:10px 15px}
 fieldset .panel-heading a.panel-title:hover{text-decoration:none}
@@ -1591,7 +1592,7 @@ p{font-family:arial}
 .green{color:#32903f}
 .violet{color:#575095}
 .blue{color:#0080ff}
-.cyan{color:#32903f}
+.cyan{color:#009ee0}
 .nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{background-color:#cdcdcd}
 #block-menu-menu-shortcuts{display:inline-block;position:fixed;right:0;top:500px;margin-top:-100px;z-index:5000;color:#FFF;text-align:center}
 #block-menu-menu-shortcuts a{box-shadow:-2px 2px 5px 0 rgba(0,0,0,.75)}
@@ -1614,7 +1615,7 @@ p{font-family:arial}
 #block-menu-menu-top-menu a:hover{background:url(../images/retour-accueil.png)3px -75px no-repeat #000;color:#fff}
 @font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix)format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294)format('woff'),url(../images/fontello/font/fontello.ttf?90885294)format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello)format('svg');font-weight:400;font-style:normal}
 [class*=" icon-"]:hover{text-decoration:none}
-.glyphicon{font-style:normal;font-size:1em;speak:none;text-decoration:inherit;width:1em;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.glyphicon{font-style:normal;font-size:1em;text-decoration:inherit;width:1em;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased}
 [class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{position:relative;top:1px;font-style:normal;font-size:1em;speak:none;text-decoration:inherit;width:1em;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-facebook:before{content:"\e801"}
 .icon-twitter:before{content:"\e800"}
@@ -1685,9 +1686,9 @@ body.domain-parents-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background
 @media (min-width:768px){body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu-pro.png)50% 100% no-repeat #575095}
 }
 body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#575095}
-@media (min-width:768px){body.domain-radio-mda34-org #main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu-radio.png)50% 100% no-repeat #32903f}
+@media (min-width:768px){body.domain-radio-mda34-org #main-top-menu>ul>li>a.active{background:url(../images/arrow-down-menu-radio.png)50% 100% no-repeat #009ee0}
 }
-body.domain-radio-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#32903f}
+body.domain-radio-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#009ee0}
 aside.col-sm-4 h3.block-title{font-size:1.2em;border-bottom:1px solid #cdcdcd;padding-bottom:8px;font-weight:700}
 .bg-block{background:url(../images/bg_blocks.gif)}
 .domain-ados-mda34-org h3.block-title{color:#f78c26}
@@ -1742,19 +1743,26 @@ body.domain-reseau-pro-mda34-org #search-block-form .btn{background-color:#57509
 #block-mailchimp-signup-newsletter label{display:inline-block;width:25%;padding-left:5%;margin-top:18px;color:#034b93}
 #block-mailchimp-signup-newsletter input{width:70%;display:inline-block;margin-top:18px}
 #block-mailchimp-signup-newsletter button{display:block;width:110px;margin:10px auto;text-transform:uppercase;color:#fff;font-family:arial;background-color:#034b93}
-#block-block-2,.block-social-networks{background:url(../images/bg_blocks.gif);margin-top:20px}
-#block-block-2 .block-wrapper-custom,.block-social-networks .block-wrapper-custom{text-align:right;margin-top:10px}
-#block-block-2 h3,.block-social-networks h3{display:inline-block;background-color:#f78c26;padding:10px 13px;color:#fff;float:left;font-size:1em;font-weight:700;margin:44px 0 0}
-#block-block-2 .icon-social,.block-social-networks .icon-social{text-decoration:none;padding:0;border:0;margin:0 5px 0 0;height:auto;width:auto}
-#block-block-2 .icon-social:before,.block-social-networks .icon-social:before{color:#fff;width:30px;padding:0 5px;border:0;margin:0;height:auto;font-size:.8em}
-#block-block-2 .icon-twitter,#block-block-2 .icon-twitter:before,.block-social-networks .icon-twitter,.block-social-networks .icon-twitter:before{background-color:#009fe3}
-#block-block-2 .icon-youtube,#block-block-2 .icon-youtube:before,.block-social-networks .icon-youtube,.block-social-networks .icon-youtube:before{background-color:red}
-#block-block-2 .icon-facebook,#block-block-2 .icon-facebook:before,.block-social-networks .icon-facebook,.block-social-networks .icon-facebook:before{background-color:#00497f}
-#block-block-2 .icon-gplus,#block-block-2 .icon-gplus:before,.block-social-networks .icon-gplus,.block-social-networks .icon-gplus:before{background-color:#ea5b0c}
+.block-social-networks{background:url(../images/bg_blocks.gif);margin-top:20px}
+.block-social-networks .block-wrapper-custom{text-align:right;margin-top:10px}
+.block-social-networks h3{display:inline-block;background-color:#f78c26;padding:10px 13px;color:#fff;float:left;font-size:1em;font-weight:700;margin:44px 0 0}
+.block-social-networks .icon-social{text-decoration:none;padding:0;border:0;margin:0 5px 0 0;height:auto;width:auto}
+#block-boxes-radio-faq-link h3:before,.block-wrapper-custom .view-faqs a:after{display:inline-block;font-weight:400;width:1em;font-size:1em;text-decoration:inherit}
+.block-social-networks .icon-social:before{color:#fff;width:30px;padding:0 5px;border:0;margin:0;height:auto;font-size:.8em}
+.block-social-networks .icon-twitter,.block-social-networks .icon-twitter:before{background-color:#009fe3}
+.block-social-networks .icon-youtube,.block-social-networks .icon-youtube:before{background-color:red}
+.block-social-networks .icon-facebook,.block-social-networks .icon-facebook:before{background-color:#00497f}
+.block-social-networks .icon-gplus,.block-social-networks .icon-gplus:before{background-color:#ea5b0c}
 #block-kcore-mda-filsantejeunes{margin:20px 0}
 .block-wrapper-custom .view-faqs .views-row-last a{padding-bottom:0}
 .block-wrapper-custom .view-faqs a{display:block;padding-bottom:15px;font-weight:700}
-.block-wrapper-custom .view-faqs a:after{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;-moz-osx-font-smoothing:grayscale;content:"\e82d";color:#32903f;white-space:nowrap}
+.block-wrapper-custom .view-faqs a:after{position:relative;top:1px;font-family:fontello;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;content:"\e82d";color:#32903f;white-space:nowrap}
+#block-boxes-radio-faq-link{background:url(../images/bg-faq-ado.png)no-repeat;margin-top:22px;height:168px}
+#block-boxes-radio-faq-link h3{background-color:#009ee0;color:#fff;display:inline-block;margin:0;border:0;padding:5px 20px 5px 5px}
+#block-boxes-radio-faq-link h3:before{position:relative;top:1px;font-family:fontello;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;content:"\e805";color:#fff}
+#block-boxes-radio-faq-link a{display:block;color:#333;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;font-size:1.7em;padding:20px 80px 0 45px;margin-bottom:0}
+#block-boxes-radio-faq-link .boxes-box-controls{position:relative;top:-20px}
+.view-display-id-programmes_list{background-color:#fff}
 #main-footer{background:url(../images/bg_header.jpg)50% 0 no-repeat}
 .footer-center{margin:0 auto}
 @media (min-width:970px){.footer-center{width:210px}
@@ -1816,9 +1824,22 @@ body.domain-www-mda34-org #home-main-container-wrapper #page-header{padding:43px
 #block-views-events-block-front-events{margin-right:0;padding-left:0;margin-left:1.04167%}
 .group-link-resources:after,.group-link-resources:before{content:" ";display:table}
 .group-link-resources .field-items{float:left;margin-right:20px}
-.group-link-resources .field-items:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;color:#999;-moz-osx-font-smoothing:grayscale}
+.group-link-resources .field-items:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;text-transform:none;line-height:1em;margin-left:.2em;color:#999}
 .group-link-resources .field-items .field-item{display:inline}
 .group-link-resources .field-name-field-resource-type .field-items:before{content:"\e804"}
 .group-link-resources .field-name-post-date .field-items:before{content:"\e807";white-space:nowrap}
 .group-link-resources .field-name-field-themes .field-items:before{content:"\e82a"}
 .group-link-resources .field-name-field-themes .field-items a:after{content:" - "}
+body.domain-radio-mda34-org #home-main-container-wrapper{background-color:#333}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content{background-color:#fff}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content div.field-item img{max-width:293px;max-height:293px;float:left;margin:0 14px 0 0}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content h3{margin-bottom:0}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content .field-name-field-record-date{color:#009ee0;display:block;min-height:20px;font-size:.9em}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content .field-type-date:after{clear:none}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content .field-name-body{margin-bottom:30px;height:70px;overflow:hidden;position:relative;left:-13px}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content .field-name-body p{font-size:1em}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content .field-name-field-scald-audio{margin-bottom:20px}
+body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks{margin-top:0}
+body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks .block-wrapper-custom{text-align:right;margin-top:0}
+body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks .block-wrapper-custom p{padding-top:18px}
+body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks h3{margin:20px 0;color:#fff;background-color:#333}
