@@ -1,0 +1,34 @@
+/* Agenda Parents *************************************************************/
+body.page-agenda.domain-parents-mda34-org {
+  & h2.page-header{
+    color: @green-mda;
+    &:before{
+      .glyphicon();
+      content: "\e807";
+    } 
+  }
+  & #isotope-options {
+    background-color: transparent;
+  }
+  /* isotope ********************************************************************/
+  & .isotope-element {
+    height: 337px;
+    overflow: hidden;
+    background-color: white;
+    border-bottom : 1px solid @gray-base;
+    & img {
+      width: 360px;
+      height: 240px;
+    }
+    & .dates-custom-wrapper{
+      background-color: @green-mda;
+    }
+    & .views-field-field-address-locality{
+      color: @green-mda;
+    }
+    & .views-field-field-event-type a{
+      background-color: @green-mda;
+      padding : 2px 5px;
+    }
+  }
+}
