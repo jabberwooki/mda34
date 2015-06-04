@@ -114,7 +114,7 @@ function mda_radio_strongarm() {
             'visible' => TRUE,
           ),
           'last_item' => array(
-            'weight' => '6',
+            'weight' => '5',
             'visible' => TRUE,
           ),
           'sidebar_item' => array(

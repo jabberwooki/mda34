@@ -39,7 +39,6 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'field_formatter_class' => '',
           'trim_length' => 200,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -123,9 +122,8 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'field_formatter_class' => '',
-          'image_link' => 'content',
-          'image_style' => 'medium',
+          'image_link' => '',
+          'image_style' => 'large-crop',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -295,7 +293,6 @@ function mda_radio_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
-          'field_formatter_class' => '',
           'format_type' => 'long',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -384,11 +381,10 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
         ),
-        'type' => 'scald_col_8',
-        'weight' => 5,
+        'type' => 'scald_large_square',
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'hidden',
