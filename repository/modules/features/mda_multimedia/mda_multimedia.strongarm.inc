@@ -428,6 +428,14 @@ function mda_multimedia_strongarm() {
       'parseable' => TRUE,
       'formats' => array(),
     ),
+    'scald_large_square' => array(
+      'name' => 'scald_large_square',
+      'title' => 'scald-large-square',
+      'description' => '',
+      'render_language' => 'XHTML',
+      'parseable' => TRUE,
+      'formats' => array(),
+    ),
   );
   $export['scald_custom_contexts'] = $strongarm;
 
