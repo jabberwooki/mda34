@@ -38,23 +38,12 @@ function mda_radio_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'list';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
         'link' => '0',
         'wrapper' => 'h3',
-        'class' => '',
-        'field_formatter_class' => '',
-      ),
-    ),
-    'node_link' => array(
-      'weight' => '2',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link text' => '+ d\'infos',
-        'wrapper' => '',
         'class' => '',
         'field_formatter_class' => '',
       ),
@@ -155,32 +144,27 @@ function mda_radio_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'radio_programme';
   $ds_layout->view_mode = 'list';
-  $ds_layout->layout = 'bootstrap_3_9';
+  $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'regions' => array(
-      'right' => array(
-        0 => 'title',
+      'ds_content' => array(
+        0 => 'field_radio_image',
+        1 => 'title',
         2 => 'field_record_date',
-        3 => 'node_link',
-        4 => 'field_scald_audio',
-        5 => 'sharethis',
-      ),
-      'left' => array(
-        1 => 'field_radio_image',
+        3 => 'field_scald_audio',
+        4 => 'sharethis',
       ),
     ),
     'fields' => array(
-      'title' => 'right',
-      'field_radio_image' => 'left',
-      'field_record_date' => 'right',
-      'node_link' => 'right',
-      'field_scald_audio' => 'right',
-      'sharethis' => 'right',
+      'field_radio_image' => 'ds_content',
+      'title' => 'ds_content',
+      'field_record_date' => 'ds_content',
+      'field_scald_audio' => 'ds_content',
+      'sharethis' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'left' => 'div',
-      'right' => 'div',
+      'ds_content' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
