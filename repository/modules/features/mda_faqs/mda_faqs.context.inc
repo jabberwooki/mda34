@@ -67,6 +67,7 @@ function mda_faqs_context_default_contexts() {
     ),
     'path' => array(
       'values' => array(
+        '~agenda*' => '~agenda*',
         '~faq*' => '~faq*',
       ),
     ),
@@ -74,11 +75,17 @@ function mda_faqs_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'boxes-parents_faq_link' => array(
+          'module' => 'boxes',
+          'delta' => 'parents_faq_link',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
         'views-faqs-block_faqs_parents' => array(
           'module' => 'views',
           'delta' => 'faqs-block_faqs_parents',
           'region' => 'sidebar_second',
-          'weight' => '-6',
+          'weight' => '-8',
         ),
       ),
     ),
