@@ -272,6 +272,7 @@ function mda_multimedia_default_scald_context_config() {
     ),
     'video' => array(
       '*' => 'default',
+      'settings' => array(),
     ),
   );
   $context_config->data = array(
@@ -327,6 +328,7 @@ function mda_multimedia_default_scald_context_config() {
     ),
     'video' => array(
       '*' => 'default',
+      'settings' => array(),
     ),
   );
   $context_config->data = array(
@@ -382,10 +384,11 @@ function mda_multimedia_default_scald_context_config() {
     ),
     'video' => array(
       '*' => 'default',
+      'settings' => array(),
     ),
   );
   $context_config->data = array(
-    'width' => '',
+    'width' => '100%',
     'height' => '',
   );
   $export['scald_col_4'] = $context_config;
@@ -437,6 +440,7 @@ function mda_multimedia_default_scald_context_config() {
     ),
     'video' => array(
       '*' => 'default',
+      'settings' => array(),
     ),
   );
   $context_config->data = array(
