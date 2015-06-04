@@ -67,14 +67,13 @@ function mda_multimedia_image_default_styles() {
   $styles['img-col-4'] = array(
     'label' => 'img-col-4 (360px)',
     'effects' => array(
-      2 => array(
-        'name' => 'image_scale',
+      8 => array(
+        'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 360,
-          'height' => '',
-          'upscale' => 0,
+          'height' => 240,
         ),
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
