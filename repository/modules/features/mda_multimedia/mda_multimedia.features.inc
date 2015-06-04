@@ -95,5 +95,20 @@ function mda_multimedia_image_default_styles() {
     ),
   );
 
+  // Exported image style: large-crop.
+  $styles['large-crop'] = array(
+    'label' => 'large-crop (480x480)',
+    'effects' => array(
+      7 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 480,
+          'height' => 480,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
