@@ -81,22 +81,58 @@ function mda_structures_views_default_views() {
   );
 
   /* Display: Liste */
-  $handler = $view->new_display('page_with_page_title', 'Liste', 'page_with_page_title_1');
+  $handler = $view->new_display('page_with_page_title', 'Liste', 'list_structures');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'L\'annuaire';
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Logo */
-  $handler->display->display_options['fields']['field_logo']['id'] = 'field_logo';
-  $handler->display->display_options['fields']['field_logo']['table'] = 'field_data_field_logo';
-  $handler->display->display_options['fields']['field_logo']['field'] = 'field_logo';
-  $handler->display->display_options['fields']['field_logo']['label'] = '';
-  $handler->display->display_options['fields']['field_logo']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_logo']['settings'] = array(
-    'image_style' => 'logo_120x120',
-    'image_link' => 'content',
-    'field_formatter_class' => '',
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_competence_fields' => 'field_competence_fields',
+    'field_address_locality' => 'field_address_locality',
+    'field_phone' => 'field_phone',
+    'field_public' => 'field_public',
   );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_competence_fields' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_address_locality' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_phone' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_public' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Champ: Contenu: Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -104,34 +140,98 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Type de structure */
-  $handler->display->display_options['fields']['field_structure_type']['id'] = 'field_structure_type';
-  $handler->display->display_options['fields']['field_structure_type']['table'] = 'field_data_field_structure_type';
-  $handler->display->display_options['fields']['field_structure_type']['field'] = 'field_structure_type';
-  $handler->display->display_options['fields']['field_structure_type']['label'] = '';
-  $handler->display->display_options['fields']['field_structure_type']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_structure_type']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_structure_type']['settings'] = array(
+  /* Champ: Contenu: Champs d'intervention */
+  $handler->display->display_options['fields']['field_competence_fields']['id'] = 'field_competence_fields';
+  $handler->display->display_options['fields']['field_competence_fields']['table'] = 'field_data_field_competence_fields';
+  $handler->display->display_options['fields']['field_competence_fields']['field'] = 'field_competence_fields';
+  $handler->display->display_options['fields']['field_competence_fields']['label'] = 'Champ d\'intervention';
+  $handler->display->display_options['fields']['field_competence_fields']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_competence_fields']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_competence_fields']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '300',
+  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
+  $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
+  $handler->display->display_options['fields']['field_address_locality']['label'] = 'Ville';
+  $handler->display->display_options['fields']['field_address_locality']['element_label_colon'] = FALSE;
+  /* Champ: Contenu: Contact téléphone */
+  $handler->display->display_options['fields']['field_phone']['id'] = 'field_phone';
+  $handler->display->display_options['fields']['field_phone']['table'] = 'field_data_field_phone';
+  $handler->display->display_options['fields']['field_phone']['field'] = 'field_phone';
+  $handler->display->display_options['fields']['field_phone']['label'] = 'Téléphone';
+  $handler->display->display_options['fields']['field_phone']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Lien */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'En savoir plus';
+  /* Champ: Contenu: Public concerné */
+  $handler->display->display_options['fields']['field_public']['id'] = 'field_public';
+  $handler->display->display_options['fields']['field_public']['table'] = 'field_data_field_public';
+  $handler->display->display_options['fields']['field_public']['field'] = 'field_public';
+  $handler->display->display_options['fields']['field_public']['label'] = 'Public';
+  $handler->display->display_options['fields']['field_public']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_public']['settings'] = array(
+    'field_formatter_class' => '',
+  );
+  $handler->display->display_options['fields']['field_public']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Contenu: Publié */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Contenu: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'structure' => 'structure',
+  );
+  /* Filter criterion: Contenu: Type de structure (field_structure_type) */
+  $handler->display->display_options['filters']['field_structure_type_tid']['id'] = 'field_structure_type_tid';
+  $handler->display->display_options['filters']['field_structure_type_tid']['table'] = 'field_data_field_structure_type';
+  $handler->display->display_options['filters']['field_structure_type_tid']['field'] = 'field_structure_type_tid';
+  $handler->display->display_options['filters']['field_structure_type_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['operator_id'] = 'field_structure_type_tid_op';
+  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['label'] = 'Type de structure';
+  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['operator'] = 'field_structure_type_tid_op';
+  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['identifier'] = 'field_structure_type_tid';
+  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    141037677 => 0,
+    183916278 => 0,
+    155963314 => 0,
+    22875792 => 0,
+    193262079 => 0,
+    109177673 => 0,
+  );
+  $handler->display->display_options['filters']['field_structure_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_structure_type_tid']['vocabulary'] = 'structure_types';
+  /* Filter criterion: Contenu: Types d&#039;action (field_action_types) */
+  $handler->display->display_options['filters']['field_action_types_tid']['id'] = 'field_action_types_tid';
+  $handler->display->display_options['filters']['field_action_types_tid']['table'] = 'field_data_field_action_types';
+  $handler->display->display_options['filters']['field_action_types_tid']['field'] = 'field_action_types_tid';
+  $handler->display->display_options['filters']['field_action_types_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_action_types_tid']['expose']['operator_id'] = 'field_action_types_tid_op';
+  $handler->display->display_options['filters']['field_action_types_tid']['expose']['label'] = 'Type d\'action';
+  $handler->display->display_options['filters']['field_action_types_tid']['expose']['operator'] = 'field_action_types_tid_op';
+  $handler->display->display_options['filters']['field_action_types_tid']['expose']['identifier'] = 'field_action_types_tid';
+  $handler->display->display_options['filters']['field_action_types_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    141037677 => 0,
+    183916278 => 0,
+    155963314 => 0,
+    22875792 => 0,
+    193262079 => 0,
+    109177673 => 0,
+  );
+  $handler->display->display_options['filters']['field_action_types_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_action_types_tid']['vocabulary'] = 'action_types';
   $handler->display->display_options['path'] = 'annuaire';
 
   /* Display: Infos contact */
@@ -203,7 +303,12 @@ function mda_structures_views_default_views() {
     t('dernier »'),
     t('Liste'),
     t('L\'annuaire'),
-    t('En savoir plus'),
+    t('Champ d\'intervention'),
+    t('Ville'),
+    t('Téléphone'),
+    t('Public'),
+    t('Type de structure'),
+    t('Type d\'action'),
     t('Infos contact'),
     t('Infos visibles sur une fiche événement'),
     t('Contact email'),
