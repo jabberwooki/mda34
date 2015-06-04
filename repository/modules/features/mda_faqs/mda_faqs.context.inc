@@ -97,5 +97,42 @@ function mda_faqs_context_default_contexts() {
   t('FAQs');
   $export['faq_parents'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'faq_radio';
+  $context->description = '';
+  $context->tag = 'FAQs';
+  $context->conditions = array(
+    'domain' => array(
+      'values' => array(
+        5 => 5,
+      ),
+    ),
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'boxes-radio_faq_link' => array(
+          'module' => 'boxes',
+          'delta' => 'radio_faq_link',
+          'region' => 'sidebar_second',
+          'weight' => '-1',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('FAQs');
+  $export['faq_radio'] = $context;
+
   return $export;
 }
