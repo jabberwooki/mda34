@@ -1,5 +1,20 @@
+/* général ********************************************************************/
+aside.col-sm-4 h3.block-title{
+  font-size: 1.2em;
+  border-bottom: 1px solid @gray-lighter;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
 .bg-block{
   background: url('../images/bg_blocks.gif') repeat scroll 0% 0% transparent;
+}
+/* ADOS ***********************************************************************/
+.domain-ados-mda34-org h3.block-title{
+  color: @orange-mda;
+}
+/* Parents ********************************************************************/
+.domain-parents-mda34-org h3.block-title{
+  color: @green-mda;
 }
 /* Blocks, Images link's title */
 .block{
@@ -90,12 +105,12 @@
   }
 }
 /* Blocks agenda **************************************************************/
-.block.orange{
+.block.orange,  body.domain-ados-mda34-org #block-views-events-block-front-events{/* ados */
   & .event-type-block, & .dates-custom-wrapper{ 
     background-color: @orange-mda;
   }
 }
-.block.green{
+.block.green, body.domain-parents-mda34-org #block-views-events-block-front-events{/* parents */
   & .event-type-block, & .dates-custom-wrapper{ 
     background-color: @green-mda;
   }
@@ -128,7 +143,7 @@
     margin-right: -50%;
   }
 }
-/* bloc Pro ressources ********************************************************/
+/* bloc Pro ressources resources **********************************************/
 .block-boxes{
   &.violet{
     & h2 a{
@@ -155,7 +170,32 @@
     }
   }
 }
-
+/* block accueil parents ******************************************************/
+#block-boxes-parents-faq-link{
+  .bg-block();
+  padding: 7px 0 0 0;
+  margin-top: 25px;
+  height: 138px;
+  & > div.block-wrapper-custom{
+    padding: 0 0 0 130px;
+    margin: 0;
+    background: transparent url(../images/accueil_parents.png) no-repeat 8px 50%;
+    border: 1px solid transparent;
+    & a{
+      display: block;
+      color: @gray-base;
+      font-family: @rockwellFamily;
+      color: @gray-dark;
+    }
+    & h2 > a{
+      color: @green-mda;
+    }
+    & div > a{
+      font-family: @fontMyriad;
+      font-size: 1.6em;
+    }
+  }
+}
 /* Block radio ****************************************************************/
 .block-wrapper-custom {
   & .view-radio-programmes {
@@ -216,6 +256,7 @@ body.domain-reseau-pro-mda34-org{
     color: white;
     display: inline-block;
     padding: 10px;
+    font-size: 1.4em;
     &:before {
       .glyphicon();
       content: "\e82c";
@@ -309,6 +350,25 @@ body.domain-reseau-pro-mda34-org{
 /* bloc "Fil santé jeunes"*****************************************************/
 #block-kcore-mda-filsantejeunes{
   margin: 20px 0;
+}
+/* block faq ******************************************************************/
+.block-wrapper-custom .view-faqs{
+  .views-row-last{
+    & a{
+      padding-bottom: 0;
+    }
+  }
+  & a{
+    display: block;
+    padding-bottom: 15px;
+    font-weight: bold;
+    &:after{
+      .glyphicon();
+      content: "\e82d";
+      color: @green-mda;
+      white-space: nowrap;
+    } 
+  }
 }
 
 
