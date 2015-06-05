@@ -84,6 +84,11 @@ function mda_structures_views_default_views() {
   $handler = $view->new_display('page_with_page_title', 'Liste', 'list_structures');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'L\'annuaire';
+  $handler->display->display_options['defaults']['exposed_form'] = FALSE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Rechercher';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Réinitialiser';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Trier par';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -93,7 +98,7 @@ function mda_structures_views_default_views() {
     'field_phone' => 'field_phone',
     'field_public' => 'field_public',
   );
-  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['default'] = 'title';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
       'sortable' => 1,
@@ -103,14 +108,14 @@ function mda_structures_views_default_views() {
       'empty_column' => 0,
     ),
     'field_competence_fields' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
     'field_address_locality' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
@@ -137,7 +142,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['label'] = 'Nom';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Champ: Contenu: Champs d'intervention */
@@ -190,10 +195,33 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'structure' => 'structure',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Contenu: Titre */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['group'] = 1;
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Nom de la structure';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    141037677 => 0,
+    183916278 => 0,
+    155963314 => 0,
+    22875792 => 0,
+    193262079 => 0,
+    109177673 => 0,
+  );
   /* Filter criterion: Contenu: Type de structure (field_structure_type) */
   $handler->display->display_options['filters']['field_structure_type_tid']['id'] = 'field_structure_type_tid';
   $handler->display->display_options['filters']['field_structure_type_tid']['table'] = 'field_data_field_structure_type';
   $handler->display->display_options['filters']['field_structure_type_tid']['field'] = 'field_structure_type_tid';
+  $handler->display->display_options['filters']['field_structure_type_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_structure_type_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_structure_type_tid']['expose']['operator_id'] = 'field_structure_type_tid_op';
   $handler->display->display_options['filters']['field_structure_type_tid']['expose']['label'] = 'Type de structure';
@@ -215,6 +243,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['filters']['field_action_types_tid']['id'] = 'field_action_types_tid';
   $handler->display->display_options['filters']['field_action_types_tid']['table'] = 'field_data_field_action_types';
   $handler->display->display_options['filters']['field_action_types_tid']['field'] = 'field_action_types_tid';
+  $handler->display->display_options['filters']['field_action_types_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_action_types_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_action_types_tid']['expose']['operator_id'] = 'field_action_types_tid_op';
   $handler->display->display_options['filters']['field_action_types_tid']['expose']['label'] = 'Type d\'action';
@@ -303,10 +332,13 @@ function mda_structures_views_default_views() {
     t('dernier »'),
     t('Liste'),
     t('L\'annuaire'),
+    t('Rechercher'),
+    t('Nom'),
     t('Champ d\'intervention'),
     t('Ville'),
     t('Téléphone'),
     t('Public'),
+    t('Nom de la structure'),
     t('Type de structure'),
     t('Type d\'action'),
     t('Infos contact'),
