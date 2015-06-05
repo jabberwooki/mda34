@@ -76,6 +76,7 @@ features[field_instance][] = node-event-field_unregistered_organiser
 features[node][] = event
 features[taxonomy][] = event_types
 features[uuid_features_menu][] = 61a15f79-7a94-4294-a3d4-68462cc03625
+features[uuid_features_menu][] = 61b8d9f0-5376-4f7f-8d62-ee2e60925e17
 features[uuid_term][] = 041ab6a4-7227-4475-a1f4-afb66a336e75
 features[uuid_term][] = 069e2b8a-0306-4ad7-9249-6288a2cf0dd1
 features[uuid_term][] = 10d305b7-9eb3-41a2-8152-6f277a9cb2a2

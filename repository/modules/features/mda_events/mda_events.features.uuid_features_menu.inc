@@ -37,10 +37,37 @@ function mda_events_menu_default_uuid_features_menu() {
     'weight' => 4,
     'uuid' => '61a15f79-7a94-4294-a3d4-68462cc03625',
   );
+  // Exported menu link: 61b8d9f0-5376-4f7f-8d62-ee2e60925e17
+  $menu_uuid_links['61b8d9f0-5376-4f7f-8d62-ee2e60925e17'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'formations',
+    'router_path' => 'formations',
+    'link_title' => 'Formations',
+    'options' => array(
+      'domain_menu_access' => array(
+        'show' => array(
+          'd4' => 'd4',
+          'd6' => 'd6',
+        ),
+      ),
+      'alter' => TRUE,
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 10,
+    'uuid' => '61b8d9f0-5376-4f7f-8d62-ee2e60925e17',
+  );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Agenda');
+  t('Formations');
 
   return $menu_uuid_links;
 }
