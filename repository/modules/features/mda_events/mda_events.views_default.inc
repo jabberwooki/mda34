@@ -123,6 +123,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['filter_groups']['operator'] = 'OR';
   /* Filter criterion: Contenu: Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -151,6 +152,19 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  $handler->display->display_options['filters']['uuid']['group'] = 1;
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['operator'] = '<=';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
 
   /* Display: Liste des événements */
   $handler = $view->new_display('page_with_page_title', 'Liste des événements', 'list_events');
