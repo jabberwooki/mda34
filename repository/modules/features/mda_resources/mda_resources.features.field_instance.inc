@@ -413,11 +413,11 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
           'field_formatter_class' => '',
-          'format_type' => 'long',
+          'format_type' => 'mda_year',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
