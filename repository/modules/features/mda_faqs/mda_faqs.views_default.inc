@@ -41,6 +41,13 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Champ: Contenu: Titre */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Champ: Contenu: Catégorie */
   $handler->display->display_options['fields']['field_faq_category']['id'] = 'field_faq_category';
   $handler->display->display_options['fields']['field_faq_category']['table'] = 'field_data_field_faq_category';
@@ -53,13 +60,6 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['field_faq_category']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Titre */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Filter criterion: Contenu: Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -84,6 +84,12 @@ function mda_faqs_views_default_views() {
   $handler = $view->new_display('page_with_page_title', 'Liste des FAQs', 'page_faqs');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Foire aux questions';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'isotope';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   /* Entête: Global: View area */
   $handler->display->display_options['header']['view']['id'] = 'view';
@@ -92,16 +98,12 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['header']['view']['view_to_insert'] = 'faqs_filter:faq_categories_filter';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Champ: Contenu: Catégorie */
-  $handler->display->display_options['fields']['field_faq_category']['id'] = 'field_faq_category';
-  $handler->display->display_options['fields']['field_faq_category']['table'] = 'field_data_field_faq_category';
-  $handler->display->display_options['fields']['field_faq_category']['field'] = 'field_faq_category';
-  $handler->display->display_options['fields']['field_faq_category']['label'] = '';
-  $handler->display->display_options['fields']['field_faq_category']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_faq_category']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_faq_category']['element_class'] = 'isotope-filter';
-  $handler->display->display_options['fields']['field_faq_category']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_faq_category']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_faq_category']['settings'] = array(
+  $handler->display->display_options['fields']['field_faq_category_1']['id'] = 'field_faq_category_1';
+  $handler->display->display_options['fields']['field_faq_category_1']['table'] = 'field_data_field_faq_category';
+  $handler->display->display_options['fields']['field_faq_category_1']['field'] = 'field_faq_category';
+  $handler->display->display_options['fields']['field_faq_category_1']['label'] = '';
+  $handler->display->display_options['fields']['field_faq_category_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_faq_category_1']['settings'] = array(
     'field_formatter_class' => '',
   );
   /* Champ: Contenu: Titre */
@@ -109,20 +111,23 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Champ: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="faq-parents-custom-wrapper">
-[field_faq_category] 
-[title] 
-</div>';
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Champ: Filtre isotope */
+  $handler->display->display_options['fields']['field_faq_category']['id'] = 'field_faq_category';
+  $handler->display->display_options['fields']['field_faq_category']['table'] = 'field_data_field_faq_category';
+  $handler->display->display_options['fields']['field_faq_category']['field'] = 'field_faq_category';
+  $handler->display->display_options['fields']['field_faq_category']['ui_name'] = 'Filtre isotope';
+  $handler->display->display_options['fields']['field_faq_category']['label'] = '';
+  $handler->display->display_options['fields']['field_faq_category']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_faq_category']['element_class'] = 'isotope-filter';
+  $handler->display->display_options['fields']['field_faq_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_faq_category']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_faq_category']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_faq_category']['settings'] = array(
+    'field_formatter_class' => '',
+  );
   $handler->display->display_options['path'] = 'faq';
 
   /* Display: Accueil portail (ados) */
@@ -148,7 +153,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Random */
+  /* Sort criterion: Global: Au hasard */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -200,7 +205,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Random */
+  /* Sort criterion: Global: Au hasard */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -252,7 +257,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Random */
+  /* Sort criterion: Global: Au hasard */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -297,11 +302,6 @@ function mda_faqs_views_default_views() {
     t('dernier »'),
     t('Liste des FAQs'),
     t('Foire aux questions'),
-    t('more'),
-    t('<div class="faq-parents-custom-wrapper">
-[field_faq_category] 
-[title] 
-</div>'),
     t('Accueil portail (ados)'),
     t('FAQ'),
     t('Accueil portail (parents)'),
@@ -336,11 +336,6 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Relationship: Terme de taxonomie: Contenu using Catégorie */
-  $handler->display->display_options['relationships']['reverse_field_faq_category_node']['id'] = 'reverse_field_faq_category_node';
-  $handler->display->display_options['relationships']['reverse_field_faq_category_node']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['relationships']['reverse_field_faq_category_node']['field'] = 'reverse_field_faq_category_node';
-  $handler->display->display_options['relationships']['reverse_field_faq_category_node']['required'] = TRUE;
   /* Champ: Terme de taxonomie: Nom */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -372,9 +367,7 @@ function mda_faqs_views_default_views() {
     t('Trier par'),
     t('Asc'),
     t('Desc'),
-    t('field_faq_category'),
     t('Filtre FAQs'),
-    t('more'),
   );
   $export['faqs_filter'] = $view;
 
