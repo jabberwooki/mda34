@@ -238,15 +238,16 @@ function mda_events_views_default_views() {
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Champ: Contenu: Type d'événement */
-  $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
-  $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
-  $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
-  $handler->display->display_options['fields']['field_event_type']['label'] = '';
-  $handler->display->display_options['fields']['field_event_type']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_event_type']['settings'] = array(
+  $handler->display->display_options['fields']['field_event_type_1']['id'] = 'field_event_type_1';
+  $handler->display->display_options['fields']['field_event_type_1']['table'] = 'field_data_field_event_type';
+  $handler->display->display_options['fields']['field_event_type_1']['field'] = 'field_event_type';
+  $handler->display->display_options['fields']['field_event_type_1']['label'] = '';
+  $handler->display->display_options['fields']['field_event_type_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_type_1']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_event_type_1']['settings'] = array(
     'field_formatter_class' => '',
   );
-  $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_event_type_1']['delta_offset'] = '0';
   /* Champ: Contenu: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -259,6 +260,21 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'field_formatter_class' => '',
   );
+  /* Champ: Filtre isotope */
+  $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
+  $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
+  $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
+  $handler->display->display_options['fields']['field_event_type']['ui_name'] = 'Filtre isotope';
+  $handler->display->display_options['fields']['field_event_type']['label'] = '';
+  $handler->display->display_options['fields']['field_event_type']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_event_type']['element_class'] = 'isotope-filter';
+  $handler->display->display_options['fields']['field_event_type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_type']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_event_type']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_event_type']['settings'] = array(
+    'field_formatter_class' => '',
+  );
+  $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'agenda';
 
   /* Display: Accueil portail (ados) */
