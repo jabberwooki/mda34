@@ -27,11 +27,6 @@ function mda_resources_ds_field_settings_info() {
         'class' => '',
       ),
     ),
-    'post_date' => array(
-      'weight' => '3',
-      'label' => 'hidden',
-      'format' => 'ds_post_date_tres_court',
-    ),
   );
   $export['node|resource|teaser'] = $ds_fieldsetting;
 
@@ -119,7 +114,7 @@ function mda_resources_ds_layout_settings_info() {
         0 => 'title',
         1 => 'group_link_resources',
         2 => 'field_resource_type',
-        3 => 'post_date',
+        3 => 'field_resource_date_parution',
         4 => 'body',
         5 => 'field_themes',
       ),
@@ -128,7 +123,7 @@ function mda_resources_ds_layout_settings_info() {
       'title' => 'ds_content',
       'group_link_resources' => 'ds_content',
       'field_resource_type' => 'ds_content',
-      'post_date' => 'ds_content',
+      'field_resource_date_parution' => 'ds_content',
       'body' => 'ds_content',
       'field_themes' => 'ds_content',
     ),

@@ -52,7 +52,7 @@ function mda_resources_field_group_info() {
     'children' => array(
       0 => 'field_resource_type',
       1 => 'field_themes',
-      2 => 'post_date',
+      2 => 'field_resource_date_parution',
     ),
     'format_type' => 'div',
     'format_settings' => array(
