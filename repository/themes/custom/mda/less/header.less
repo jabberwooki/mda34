@@ -22,7 +22,7 @@ body{
 }
 .navbar-header{
   float: none;
-  & a.logo {
+  a.logo {
     margin-right: 10px;
   }
   .navbar-brand{
@@ -74,17 +74,17 @@ body{
 }
 /* logo adolescents ***********************************************************/
 [class*=" domain-ado"], [class*=" domain-parent"], [class*=" domain-reseau"], [class*=" domain-radio"]{
-  & a.logo {
+  a.logo {
     text-indent: -6000px;
     width: 72px;
     height: 83px;
   }
-  & .navbar-header{
-    & .slogan{
+  .navbar-header{
+    .slogan{
       margin-left: 150px;
     }
   }
-  & h1.navbar-brand a{
+  h1.navbar-brand a{
     padding-left: 28px;
     @media @wide {
         float: none;
@@ -93,58 +93,58 @@ body{
 }
 /* logo adolescents ***********************************************************/
 body.domain-ados-mda34-org {
-  & a.logo {
+  a.logo {
     background: url(../images/home_ado_big.gif) no-repeat 0 0;
   }
-  & .navbar-header{
-    & .slogan{
+  .navbar-header{
+    .slogan{
       margin-left: 150px;
     }
   }
-  & h1.navbar-brand a{
+  h1.navbar-brand a{
     padding-left: 28px;
   }
 }
 /* logo parents ***************************************************************/
 body.domain-parents-mda34-org {
-  & a.logo {
+  a.logo {
     background: url(../images/home_parents_big.gif) no-repeat 0 0;
   }
-  & .navbar-header{
-    & .slogan{
+  .navbar-header{
+    .slogan{
       margin-left: 115px;
     }
   }
-  & h1.navbar-brand a{
+  h1.navbar-brand a{
     padding-left: 25px;
   }
 }
 /* logo parents ***************************************************************/
 body.domain-reseau-pro-mda34-org {
-  & a.logo {
+  a.logo {
     background: url(../images/home_pro_big.gif) no-repeat 0 0;
   }
-  & .navbar-header{
-    & .slogan{
+  .navbar-header{
+    .slogan{
       margin-left: 90px;
     }
   }
-  & h1.navbar-brand a{
+  h1.navbar-brand a{
     padding-left: 20px;
   }
 }
 /* logo radio *****************************************************************/
 body.domain-radio-mda34-org {
-  & a.logo {
+  a.logo {
     background: url(../images/home_radio_big.gif) no-repeat 0 0;
     width: 97px;
   }
-  & .navbar-header{
-    & .slogan{
+  .navbar-header{
+    .slogan{
       margin-left: 117px;
     }
   }
-  & h1.navbar-brand a{
+  h1.navbar-brand a{
     padding-left: 33px;
   }
 }
@@ -211,7 +211,7 @@ body.domain-www-mda34-org #main-top-menu > ul > li > a{
 }
 /* Menu ados ******************************************************************/
 body.domain-ados-mda34-org #main-top-menu{
-  & > ul > li > a{
+  > ul > li > a{
     &.active{
       @media (min-width: @screen-sm-min) {
         background: @orange-mda url(../images/arrow-down-menu-ado.png) no-repeat 50% 100%;
@@ -225,7 +225,7 @@ body.domain-ados-mda34-org #main-top-menu{
 }
 /* Menu parents ******************************************************************/
 body.domain-parents-mda34-org #main-top-menu{
-  & > ul > li > a{
+  > ul > li > a{
     &.active{
       @media (min-width: @screen-sm-min){
         background: @green-mda url(../images/arrow-down-menu-parents.png) no-repeat 50% 100%;
@@ -239,7 +239,7 @@ body.domain-parents-mda34-org #main-top-menu{
 }
 /* Menu pros ******************************************************************/
 body.domain-reseau-pro-mda34-org #main-top-menu{
-  & > ul > li > a{
+  > ul > li > a{
     &.active{
       @media (min-width: @screen-sm-min) {
         background: @violet-mda url(../images/arrow-down-menu-pro.png) no-repeat 50% 100%;
@@ -253,7 +253,7 @@ body.domain-reseau-pro-mda34-org #main-top-menu{
 }
 /* Menu radio ******************************************************************/
 body.domain-radio-mda34-org #main-top-menu{
-  & > ul > li > a{
+  > ul > li > a{
     &.active{
       @media (min-width: @screen-sm-min) {
         background: @cyan-mda url(../images/arrow-down-menu-radio.png) no-repeat 50% 100%;

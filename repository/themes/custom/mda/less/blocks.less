@@ -22,22 +22,22 @@ aside.col-sm-4 h3.block-title{
     border-bottom: 1px solid @gray-base;
     padding-bottom: 10px;
   }
-  & .views-row{
+  .views-row{
     padding: 10px 0;
-    & .views-field-title a{
+    .views-field-title a{
       color: @gray-base;
     }
     .clearfix();
     margin-bottom: 20px;
   }
-  & .views-row:not(.views-row-last){
+  .views-row:not(.views-row-last){
     border-bottom: 1px solid @gray-lighter;
   }
-  & .img-title-wrapper{
+  .img-title-wrapper{
     position: relative;
     width: 360px;
     min-height: 50px;
-    & h4{
+    h4{
       position: absolute;
       bottom: 0;
       margin: 0;
@@ -48,14 +48,14 @@ aside.col-sm-4 h3.block-title{
         width: 360px;
       }
 
-      & a{
+      a{
         display: block;
         color: white;
         font-size: 1.1em;
         padding: 10px 15px;
       }
     }
-    & h3{
+    h3{
       position: absolute;
       bottom: 0;
       margin: 0;
@@ -66,14 +66,14 @@ aside.col-sm-4 h3.block-title{
         width: 360px;
       }
 
-      & a{
+      a{
         display: block;
         color: white;
         font-size: 0.8em;
         padding: 10px 15px;
       }
     }
-    & .dates-custom-wrapper{ /* specific to events blocks */
+    .dates-custom-wrapper{ /* specific to events blocks */
       position: absolute;
       top: 0;
       right: 0;
@@ -81,7 +81,7 @@ aside.col-sm-4 h3.block-title{
       padding: 0 2px 0 5px;
       color: white;
     }
-    & .event-type-block, & .event-location-block{ /* specific to events blocks */
+    .event-type-block, .event-location-block{ /* specific to events blocks */
       position: absolute;
       top: 33%;
       left: 0;
@@ -94,29 +94,29 @@ aside.col-sm-4 h3.block-title{
         top: 0;
       }
     }
-    & .event-location-block{
+    .event-location-block{
       left: auto;
       right: 0;
     }
   }
-  & p{
+  p{
     color: @gray-base;
     padding: 10px 15px 0 15px;
   }
 }
 /* Blocks agenda **************************************************************/
 .block.orange,  body.domain-ados-mda34-org #block-views-events-block-front-events{/* ados */
-  & .event-type-block, & .dates-custom-wrapper{ 
+  .event-type-block, .dates-custom-wrapper{ 
     background-color: @orange-mda;
   }
 }
 .block.green, body.domain-parents-mda34-org #block-views-events-block-front-events{/* parents */
-  & .event-type-block, & .dates-custom-wrapper{ 
+  .event-type-block, .dates-custom-wrapper{ 
     background-color: @green-mda;
   }
 }
 .block.violet{
-  & .event-type-block, & .img-title-wrapper .dates-custom-wrapper{ 
+  .event-type-block, .img-title-wrapper .dates-custom-wrapper{ 
     background-color: @violet-mda;
   }
 }
@@ -146,10 +146,10 @@ aside.col-sm-4 h3.block-title{
 /* bloc Pro ressources resources **********************************************/
 .block-boxes{
   &.violet{
-    & h2 a{
+    h2 a{
       color: @violet-mda;
     }
-    & a{
+    a{
       color: @gray-base;
       font-family: @rockwellFamily;
       font-size: 1.4em;
@@ -160,12 +160,12 @@ aside.col-sm-4 h3.block-title{
   .bg-block();
   padding: 0;
   margin-top: 25px;
-  & > div.block-wrapper-custom{
+  > div.block-wrapper-custom{
     padding: 0 0 0 150px;
     margin: 0;
     background: transparent url(../images/home_book.png) no-repeat 5px 50%;
     border: 1px solid transparent;
-    & a{
+    a{
       display: block;
     }
   }
@@ -176,21 +176,21 @@ aside.col-sm-4 h3.block-title{
   padding: 7px 0 0 0;
   margin-top: 25px;
   height: 138px;
-  & > div.block-wrapper-custom{
+  > div.block-wrapper-custom{
     padding: 0 0 0 130px;
     margin: 0;
     background: transparent url(../images/accueil_parents.png) no-repeat 8px 50%;
     border: 1px solid transparent;
-    & a{
+    a{
       display: block;
       color: @gray-base;
       font-family: @rockwellFamily;
       color: @gray-dark;
     }
-    & h2 > a{
+    h2 > a{
       color: @green-mda;
     }
-    & div > a{
+    div > a{
       font-family: @fontMyriad;
       font-size: 1.6em;
     }
@@ -198,15 +198,15 @@ aside.col-sm-4 h3.block-title{
 }
 /* Block radio ****************************************************************/
 .block-wrapper-custom {
-  & .view-radio-programmes {
+  .view-radio-programmes {
     padding-left: 15px;
-    & .view-radio-programmes .field-content a{
+    .view-radio-programmes .field-content a{
       font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
       display: block;
       color: @gray-base;
       font-size: 1.6em;
     }
-    & h2{
+    h2{
       margin-top: 0;
       padding-top: 0;
       line-height: 0.6em;
@@ -250,7 +250,7 @@ body.domain-reseau-pro-mda34-org{
   .bg-block();
   padding: 0px;
   margin-top: 45px;
-  & h3.block-title{
+  h3.block-title{
     background-color: @deep-blue-mda;
     margin: 0;
     color: white;
@@ -264,19 +264,19 @@ body.domain-reseau-pro-mda34-org{
       margin-right: 10px
     }
   }
-  & label{
+  label{
     display: inline-block;
     width: 25%;
     padding-left: 5%;
     margin-top: 18px;
     color: @deep-blue-mda;
   }
-  & input{
+  input{
     width: 70%;
     display: inline-block;
     margin-top: 18px;
   }
-  & button{
+  button{
     display: block;
     width: 110px;
     margin: 10px auto;
@@ -294,7 +294,7 @@ body.domain-reseau-pro-mda34-org{
     margin-top: 10px;
   }
   margin-top: 20px;
-  & h3{
+  h3{
     display: inline-block;
     background-color: @orange-mda;
     padding: 10px 13px;
@@ -354,11 +354,11 @@ body.domain-reseau-pro-mda34-org{
 /* block faq ******************************************************************/
 .block-wrapper-custom .view-faqs{
   .views-row-last{
-    & a{
+    a{
       padding-bottom: 0;
     }
   }
-  & a{
+  a{
     display: block;
     padding-bottom: 15px;
     font-weight: bold;
@@ -376,7 +376,7 @@ body.domain-reseau-pro-mda34-org{
   background: transparent url(../images/bg-faq-ado.png) no-repeat 0 0;
   margin-top: 22px;
   height: 168px;
-  & h3{
+  h3{
     background-color: @cyan-mda;
     color: white;
     &:before{
@@ -389,7 +389,7 @@ body.domain-reseau-pro-mda34-org{
     border: 0;
     padding: 5px 20px 5px 5px;
   }
-  & a{
+  a{
     display: block;
     color: @gray-dark;
     font-family: @rockwellFamily;

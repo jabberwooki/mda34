@@ -1833,7 +1833,7 @@ body.domain-www-mda34-org #home-main-container-wrapper #page-header{padding:43px
 body.domain-ados-mda34-org h2.page-header:before,body.page-agenda.domain-parents-mda34-org h2.page-header:before,body.page-faq h2.page-header:before{display:inline-block;text-transform:none;text-decoration:inherit;margin-right:.2em}
 #isotope-options ul#filters li a{background-color:#cdcdcd;display:block;color:#000;text-transform:uppercase;padding:10px 14px 8px;text-align:center;text-decoration:none}
 #isotope-options ul#filters li a.selected{background-color:#32903f;color:#fff}
-.isotope-element{width:278px;background:url(../images/bg_faq_green.png)0 100% no-repeat;height:auto;border-top:1px solid #32903f;padding-bottom:17px}
+.isotope-element{width:278px;background:url(../images/bg_faq_green.png)0 100% no-repeat;height:auto;padding-bottom:17px}
 .isotope-element .views-field-field-faq-category-1{padding:20px 20px 0;background-color:#fff;border-left:1px solid #32903f;border-right:1px solid #32903f}
 .isotope-element .views-field-field-faq-category-1 a{color:#32903f!important;font-size:.8em;font-weight:lighter;padding-bottom:0;margin-bottom:0}
 body.domain-ados-mda34-org h2.page-header:before,body.page-agenda.domain-parents-mda34-org h2.page-header:before,body.page-faq h2.page-header:before{font-family:fontello;font-size:1em;font-weight:400}
@@ -1844,17 +1844,20 @@ body.page-agenda.domain-parents-mda34-org h2.page-header:before{position:relativ
 body.page-agenda .isotope-element .views-field-field-event-type-1 .field-content,body.page-agenda.domain-parents-mda34-org .isotope-element .views-field-field-address-locality{color:#32903f}
 body.page-agenda.domain-parents-mda34-org #isotope-options{background-color:transparent}
 body.page-agenda.domain-parents-mda34-org .isotope-element img{width:360px;height:240px}
+body.page-agenda.domain-parents-mda34-org .isotope-element .h3,body.page-agenda.domain-parents-mda34-org .isotope-element .img-title-wrapper,body.page-agenda.domain-parents-mda34-org .isotope-element h3{width:auto}
 body.page-agenda.domain-parents-mda34-org .isotope-element .dates-custom-wrapper{background-color:#32903f}
 body.page-agenda.domain-parents-mda34-org .isotope-element .views-field-field-event-type a{background-color:#32903f;padding:2px 5px}
 body.page-agenda .isotope-element{background-image:none;border:0}
 body.page-agenda .isotope-element .field-content{color:#000}
 body.page-faq h2.page-header{color:#32903f}
 body.page-faq h2.page-header:before{position:relative;top:1px;speak:none;width:1em;text-align:center;line-height:1em;margin-left:.2em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e805"}
+body.domain-ados-mda34-org h2.page-header,body.page-agenda.domain-ados-mda34-org .isotope-element .views-field-field-event-type-1 .field-content{color:#f78c26}
 body.page-faq .view-faqs .view-header{margin-bottom:37px}
 body.page-faq .view-faqs>.view-content{background:url(../images/fond_faq_parents.png)50% 0 no-repeat;min-height:900px}
-body.domain-ados-mda34-org h2.page-header{color:#f78c26}
+body.domain-ados-mda34-org #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org .isotope-element .dates-custom-wrapper{background-color:#f78c26}
+body.page-agenda.domain-ados-mda34-org .isotope-element img{width:360px;height:240px}
+body.page-agenda.domain-ados-mda34-org .isotope-element .h3,body.page-agenda.domain-ados-mda34-org .isotope-element .img-title-wrapper,body.page-agenda.domain-ados-mda34-org .isotope-element h3{width:auto}
 body.domain-ados-mda34-org h2.page-header:before{position:relative;top:1px;speak:none;width:1em;text-align:center;line-height:1em;margin-left:.2em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e807"}
-body.domain-ados-mda34-org #isotope-options ul#filters li a.selected{background-color:#f78c26}
 body.domain-ados-mda34-org .isotope-element{border-top:1px solid #32903f;padding-bottom:17px}
 body.domain-ados-mda34-org .isotope-element .views-field-field-faq-category-1 a{color:#f78c26!important}
 body.domain-radio-mda34-org #home-main-container-wrapper{background-color:#333}

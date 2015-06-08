@@ -1,15 +1,15 @@
 /* Top content links */
 body.front .block-kcore{
-  & .block-wrapper-custom a{
+  .block-wrapper-custom a{
     display: block;
     padding: 12px 0 15px 70px;
   }
-  & .block-wrapper-custom h2{
+  .block-wrapper-custom h2{
     text-transform: none;
   }
   &#block-kcore-mda-shortcut-ados .block-wrapper-custom{
     background: transparent url(../images/button_fleche_ados.png) no-repeat 98% 50%;
-    & a{
+    a{
       border-bottom : 1px solid @orange-mda;
       background: transparent url(../images/button_maison_ados.png) no-repeat 0 0;
     }
@@ -19,7 +19,7 @@ body.front .block-kcore{
   }
   &#block-kcore-mda-shortcut-parents .block-wrapper-custom{
     background: transparent url(../images/button_fleche_parents.png) no-repeat 98% 50%;
-    & a{
+    a{
       border-bottom : 1px solid @green-mda;
       background: transparent url(../images/button_maison_parents.png) no-repeat 0 0;
     }
@@ -29,7 +29,7 @@ body.front .block-kcore{
   }
   &#block-kcore-mda-shortcut-pros .block-wrapper-custom{
     background: transparent url(../images/button_fleche_pros.png) no-repeat 98% 50%;
-    & a{
+    a{
       border-bottom : 1px solid @violet-mda;
       background: transparent url(../images/button_maison_pros.png) no-repeat 0 0;
     }
@@ -37,7 +37,7 @@ body.front .block-kcore{
       background-image: none;
     }
   }
-  & a h2, & a p{
+  a h2, a p{
     font-family: @rockwellFamily;
     color: @gray-base;
     margin: 0;
@@ -57,13 +57,13 @@ body.front .zoom {
   @media (max-width:@screen-xs){
     margin-top: -10px;
   }
-  & .block.block-views{
+  .block.block-views{
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  & .group-all-diapo .container{
+  .group-all-diapo .container{
     position: relative;
-    & .group-link-theme{
+    .group-link-theme{
       width: 550px;
       height: 200px;
       position: absolute;
@@ -71,13 +71,13 @@ body.front .zoom {
       left: 0;
       background-color: @gray-base;
       opacity: 0.8;
-      & h3 a{
+      h3 a{
         color: white;
         padding: 0 25px 5px 25px;
         display : block;
         font-size: 1.2em;
       }
-      & h4{
+      h4{
         display: inline-block;
         padding: 5px 5px 5px 25px;
         color: white;
@@ -97,7 +97,7 @@ body.front .zoom {
           color: white;
         }
       }
-      & .field-name-field-thematique-diapo{
+      .field-name-field-thematique-diapo{
         background-color: @orange-mda;
         padding: 8px 8px 8px 25px;
         color: white;
@@ -110,7 +110,7 @@ body.front .zoom {
 }
 /* puces de navigation ***/
 body.front{
-  & .carousel-indicators li{
+  .carousel-indicators li{
     border: 2px solid @gray-base;
     &.active{
       @media screen and (min-width: @screen-sm){
@@ -125,9 +125,9 @@ body.front .highlighted.jumbotron{
   background-color: transparent;
 }
 body.front:not(.domain-www-mda34-org) .zoom{
-  & .group-all-diapo .container .group-link-theme > div{
+  .group-all-diapo .container .group-link-theme > div{
     padding-left: 80px;
-    & h3 a{
+    h3 a{
       padding-left: 0;
     }
   }
@@ -135,7 +135,7 @@ body.front:not(.domain-www-mda34-org) .zoom{
 /* Middle background image ****************************************************/
 body.domain-www-mda34-org #home-main-container-wrapper{
   background: url(../images/bg_header.jpg) no-repeat 50% 0; /**/
-  & #page-header{
+  #page-header{
     padding: 43px 0;
   }
 }
