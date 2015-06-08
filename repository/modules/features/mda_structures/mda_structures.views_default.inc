@@ -122,7 +122,7 @@ function mda_structures_views_default_views() {
       'empty_column' => 0,
     ),
     'field_phone' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
@@ -174,6 +174,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_public']['table'] = 'field_data_field_public';
   $handler->display->display_options['fields']['field_public']['field'] = 'field_public';
   $handler->display->display_options['fields']['field_public']['label'] = 'Public';
+  $handler->display->display_options['fields']['field_public']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_public']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_public']['settings'] = array(
     'field_formatter_class' => '',
@@ -211,12 +212,21 @@ function mda_structures_views_default_views() {
     2 => '2',
     1 => 0,
     141037677 => 0,
+    217795369 => 0,
     183916278 => 0,
+    231346920 => 0,
     155963314 => 0,
     22875792 => 0,
     193262079 => 0,
     109177673 => 0,
   );
+  $handler->display->display_options['filters']['title']['expose']['autocomplete_filter'] = 1;
+  $handler->display->display_options['filters']['title']['expose']['autocomplete_items'] = '10';
+  $handler->display->display_options['filters']['title']['expose']['autocomplete_min_chars'] = '0';
+  $handler->display->display_options['filters']['title']['expose']['autocomplete_field'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['autocomplete_raw_suggestion'] = 1;
+  $handler->display->display_options['filters']['title']['expose']['autocomplete_raw_dropdown'] = 1;
+  $handler->display->display_options['filters']['title']['expose']['autocomplete_dependent'] = 0;
   /* Filter criterion: Contenu: Type de structure (field_structure_type) */
   $handler->display->display_options['filters']['field_structure_type_tid']['id'] = 'field_structure_type_tid';
   $handler->display->display_options['filters']['field_structure_type_tid']['table'] = 'field_data_field_structure_type';
@@ -261,6 +271,42 @@ function mda_structures_views_default_views() {
   );
   $handler->display->display_options['filters']['field_action_types_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_action_types_tid']['vocabulary'] = 'action_types';
+  /* Filter criterion: Contenu: Public concerné (field_public) */
+  $handler->display->display_options['filters']['field_public_tid']['id'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['table'] = 'field_data_field_public';
+  $handler->display->display_options['filters']['field_public_tid']['field'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['value'] = array(
+    21 => '21',
+    22 => '22',
+    26 => '26',
+    28 => '28',
+    23 => '23',
+    24 => '24',
+    25 => '25',
+    27 => '27',
+    29 => '29',
+  );
+  $handler->display->display_options['filters']['field_public_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_public_tid']['expose']['operator_id'] = 'field_public_tid_op';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['label'] = 'Public concerné';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['operator'] = 'field_public_tid_op';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['identifier'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    141037677 => 0,
+    217795369 => 0,
+    183916278 => 0,
+    231346920 => 0,
+    155963314 => 0,
+    22875792 => 0,
+    193262079 => 0,
+    109177673 => 0,
+  );
+  $handler->display->display_options['filters']['field_public_tid']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_public_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_public_tid']['vocabulary'] = 'publics';
+  $handler->display->display_options['filters']['field_public_tid']['hierarchy'] = 1;
   $handler->display->display_options['path'] = 'annuaire';
 
   /* Display: Infos contact */
@@ -341,6 +387,7 @@ function mda_structures_views_default_views() {
     t('Nom de la structure'),
     t('Type de structure'),
     t('Type d\'action'),
+    t('Public concerné'),
     t('Infos contact'),
     t('Infos visibles sur une fiche événement'),
     t('Contact email'),
