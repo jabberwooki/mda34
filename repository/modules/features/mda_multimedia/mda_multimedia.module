@@ -7,6 +7,13 @@
 include_once 'mda_multimedia.features.inc';
 
 /**
+ * Implements hook_init().
+ */
+function mda_multimedia_init() {
+	drupal_add_js(drupal_get_path('module', 'mda_multimedia') .'/mda_multimedia.js');
+}
+
+/**
  * Activate scald_dailymotion and scald_vimeo modules.
  */
 function mda_multimedia_update_7001() {
