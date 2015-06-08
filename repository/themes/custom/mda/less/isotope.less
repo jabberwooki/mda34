@@ -48,6 +48,7 @@
       }
     }
   }
+  
   & .views-field-title{
     background-color: white;
     border-left: 1px solid @green-mda;
@@ -60,6 +61,50 @@
         content: '';
       }
     }
+  }
+}
+
+/* Agenda Parents *************************************************************/
+body.page-agenda.domain-parents-mda34-org {
+  & h2.page-header{
+    color: @green-mda;
+    &:before{
+      .glyphicon();
+      content: "\e807";
+    } 
+  }
+  & #isotope-options {
+    background-color: transparent;
+  }
+  /* isotope **/
+  & .isotope-element {
+    /*border-bottom : 1px solid @gray-base;*/
+    & img {
+      width: 360px;
+      height: 240px;
+    }
+    & .dates-custom-wrapper{
+      background-color: @green-mda;
+    }
+    & .views-field-field-address-locality{
+      color: @green-mda;
+    }
+    & .views-field-field-event-type a{
+      background-color: @green-mda;
+      padding : 2px 5px;
+    }
+  }
+}
+body.page-agenda .isotope-element{
+  background-image: none;
+  border: 0;
+  .views-field-field-event-type-1{
+    .field-content{
+      color: @green-mda;
+    }
+  }
+  .field-content{
+    color: @gray-base;
   }
 }
 body.page-faq {
