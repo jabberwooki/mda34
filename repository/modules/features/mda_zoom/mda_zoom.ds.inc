@@ -80,8 +80,9 @@ function mda_zoom_ds_custom_fields_info() {
   $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
-      'value' => '<h3 class="diapo-link">[node:field_slide_link]</h3>',
-      'format' => 'ds_code',
+      'value' => '<h3 class="diapo-link">[node:field_slide_link]</h3>
+',
+      'format' => 'full_html',
     ),
     'use_token' => 1,
   );
@@ -98,8 +99,9 @@ function mda_zoom_ds_custom_fields_info() {
   $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'code' => array(
-      'value' => '<h4 class="[node:field_icone] [node:field_couleur]">[node:field_thematique_diapo]</h4>',
-      'format' => 'ds_code',
+      'value' => '<h4 class="[node:field_icone] [node:field_couleur]">[node:field_thematique_diapo]</h4>
+',
+      'format' => 'full_html',
     ),
     'use_token' => 1,
   );
