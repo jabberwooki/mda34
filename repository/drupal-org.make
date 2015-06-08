@@ -259,3 +259,6 @@ projects[sharethis][version] = "2.10"
 
 projects[menu_attributes][subdir] = contrib
 projects[menu_attributes][version] = "1.0-rc3"
+
+projects[views_autocomplete_filters][subdir] = contrib
+projects[views_autocomplete_filters][version] = "1.2"
