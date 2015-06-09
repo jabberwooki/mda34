@@ -1861,7 +1861,7 @@ body.page-agenda.domain-parents-mda34-org .isotope-element .views-field-field-ev
 body.page-agenda .isotope-element{background-image:none;border:0}
 body.page-agenda .isotope-element .field-content{color:#000}
 body.page-faq.domain-parents-mda34-org .view-faqs>.view-content{background:url(../images/fond_faq_parents.png)50% 0 no-repeat}
-body.domain-ados-mda34-org.page-faq #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org .isotope-element .dates-custom-wrapper{background-color:#f78c26}
+body.domain-ados-mda34-org.page-faq #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org .isotope-element .dates-custom-wrapper{background-color:#f78c26}
 body.page-agenda.domain-ados-mda34-org .isotope-element .views-field-field-event-type-1 .field-content{color:#f78c26}
 body.page-agenda.domain-ados-mda34-org .isotope-element img{width:360px;height:240px}
 body.page-agenda.domain-ados-mda34-org .isotope-element .h3,body.page-agenda.domain-ados-mda34-org .isotope-element .img-title-wrapper,body.page-agenda.domain-ados-mda34-org .isotope-element h3{width:auto}
