@@ -19,7 +19,6 @@ function mda_resources_menu_default_menu_links() {
     'options' => array(
       'domain_menu_access' => array(
         'show' => array(
-          'd3' => 'd3',
           'd4' => 'd4',
           'd6' => 'd6',
         ),
