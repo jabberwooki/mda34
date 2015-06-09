@@ -312,6 +312,8 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
+  $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
   /* Champ: Contenu: Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
@@ -435,6 +437,8 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
+  $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
   /* Champ: Contenu: Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
@@ -551,6 +555,8 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
+  $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
   /* Champ: Contenu: Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
@@ -671,6 +677,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
+  $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
   /* Champ: Contenu: Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
@@ -788,6 +795,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
+  $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
   /* Champ: Contenu: Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
