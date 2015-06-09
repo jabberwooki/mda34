@@ -27,6 +27,23 @@
     }
   }
 }
+body.page-faq {
+  h2.page-header{
+    &:before{
+      .glyphicon();
+      content: "\e805";
+    } 
+  }
+  .view-faqs {
+    .view-header{
+      margin-bottom: 37px;
+    }
+    > .view-content {
+      min-height: 900px;
+     
+    }
+  }
+}
 /* Eléments isotope base + parents ********************************************/
 .isotope-element{
   width: 278px;
@@ -115,22 +132,10 @@ body.page-agenda .isotope-element{
   }
 }
 /* faq parents *****/
-body.page-faq {
-  h2.page-header{
-    color: @green-mda;
-    &:before{
-      .glyphicon();
-      content: "\e805";
-    } 
-  }
-  .view-faqs {
-    .view-header{
-      margin-bottom: 37px;
-    }
+body.page-faq.domain-parents-mda34-org{
+  .view-faqs { 
     > .view-content {
       background: transparent url(../images/fond_faq_parents.png) no-repeat 50% 0;
-      min-height: 900px;
-     
     }
   }
 }
@@ -160,9 +165,8 @@ body.page-agenda.domain-ados-mda34-org{
   }
 }
 /* FAQ Ados *******************************************************************/
-body.domain-ados-mda34-org{
+body.domain-ados-mda34-org.page-faq{
   h2.page-header{
-    color: @orange-mda;
     &:before{
       .glyphicon();
       content: "\e807";
