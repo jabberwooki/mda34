@@ -19,15 +19,18 @@ function mda_resources_menu_default_menu_links() {
     'options' => array(
       'domain_menu_access' => array(
         'show' => array(
-          'd2' => 'd2',
-          'd3' => 'd3',
           'd4' => 'd4',
           'd6' => 'd6',
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(),
       'identifier' => 'main-menu_ressources:ressources',
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
