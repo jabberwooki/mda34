@@ -1,3 +1,8 @@
+a{
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
 #page-header{
   padding-top: 24px;
 }
@@ -52,7 +57,7 @@ a#main-content{
     color: #FFF;
     text-align: center;
     a{
-      box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+      box-shadow: -1px 1px 5px 0 rgba(0,0,0,.2);
     }
     .link-shortcut-faq{
       background-color: @blue-mda;
@@ -92,11 +97,25 @@ a#main-content{
       
       > a{
         display: inline-block;
-        padding: 8px 12px 8px 10px;
+        padding: 5px 12px 5px 10px;
         margin: 0;
-      text-transform: uppercase;
+        text-transform: uppercase;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 14px;
         &:before{
-          margin-right: 6px
+          margin-right: 6px;
+          color: white;
+        }
+        &.link-shortcut-faq:before{
+          .glyphicon();
+          content: "\e805";
+          color: white;
+        }
+        &.link-shortcut-login:before{
+          .glyphicon();
+          content: "\e80A";
+          color: @gray-base;
         }
       }
     }

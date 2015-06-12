@@ -3,8 +3,8 @@
   padding: 0;
 }
 body{
-  background: url(../images/bg_header.jpg) no-repeat 50% -43px;
   .no-marg-padd();
+  background-color: white;
 }
 
 #skip-link{
@@ -17,8 +17,17 @@ body{
 /*
 * Logo et slogan 
 *******************************************************************************/
+.navbar-inverse{
+  background: #F8F8F8 url(../images/bg_header.jpg) no-repeat 50% -43px;
+}
+#block-views-slides-block-portal-zoom{
+  margin-top:100px; /*à voir en mediaqueries la hauteur doit varier*/
+}
 #navbar{
   margin-top: 0;
+  .container.row{
+    margin: 0 auto;
+  }
 }
 .navbar-header{
   float: none;
@@ -178,10 +187,20 @@ button.navbar-toggle{
     &.active{
       color: white;
       box-shadow: 0px 0px 0px 0px #dfdfdf;
-      padding-bottom: 12px;
       background-color:  @gray-base;
-      @media (min-width: @screen-sm-min) {
-        background: @gray-base url(../images/arrow-down-menu.png) no-repeat 50% 100%;
+
+      &:after{
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-top-color: #000;
+        border-width: 5px;
+        margin-left: -5px;
       }
     }
     &:hover{
@@ -213,9 +232,11 @@ body.domain-www-mda34-org #main-top-menu > ul > li > a{
 body.domain-ados-mda34-org #main-top-menu{
   > ul > li > a{
     &.active{
-      @media (min-width: @screen-sm-min) {
-        background: @orange-mda url(../images/arrow-down-menu-ado.png) no-repeat 50% 100%;
+      background-color: @orange-mda;
+      &:after{
+        border-top-color: @orange-mda;
       }
+
     }
     &:hover{
       color: white;
@@ -227,8 +248,9 @@ body.domain-ados-mda34-org #main-top-menu{
 body.domain-parents-mda34-org #main-top-menu{
   > ul > li > a{
     &.active{
-      @media (min-width: @screen-sm-min){
-        background: @green-mda url(../images/arrow-down-menu-parents.png) no-repeat 50% 100%;
+      background-color: @green-mda;
+      &:after{
+        border-top-color: @green-mda;
       }
     }
     &:hover{
@@ -241,8 +263,9 @@ body.domain-parents-mda34-org #main-top-menu{
 body.domain-reseau-pro-mda34-org #main-top-menu{
   > ul > li > a{
     &.active{
-      @media (min-width: @screen-sm-min) {
-        background: @violet-mda url(../images/arrow-down-menu-pro.png) no-repeat 50% 100%;
+      background-color: @violet-mda;
+      &:after{
+        border-top-color: @violet-mda;
       }
     }
     &:hover{
@@ -255,8 +278,9 @@ body.domain-reseau-pro-mda34-org #main-top-menu{
 body.domain-radio-mda34-org #main-top-menu{
   > ul > li > a{
     &.active{
-      @media (min-width: @screen-sm-min) {
-        background: @cyan-mda url(../images/arrow-down-menu-radio.png) no-repeat 50% 100%;
+      background-color: @cyan-mda;
+      &:after{
+        border-top-color: @cyan-mda;
       }
     }
     &:hover{

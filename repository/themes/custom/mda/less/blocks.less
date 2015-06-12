@@ -5,6 +5,10 @@ aside.col-sm-4 h3.block-title{
   padding-bottom: 8px;
   font-weight: bold;
 }
+.views-field-field-address-locality > .field-content{
+  padding-left: 15px;
+  font-weight: bold;
+}
 .bg-block{
   background: url('../images/bg_blocks.gif') repeat scroll 0% 0% transparent;
 }
@@ -21,6 +25,10 @@ aside.col-sm-4 h3.block-title{
   &.block-views{
     border-bottom: 1px solid @gray-base;
     padding-bottom: 10px;
+    h3{
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
   }
   .views-row{
     padding: 10px 0;
@@ -35,7 +43,7 @@ aside.col-sm-4 h3.block-title{
   }
   .img-title-wrapper{
     position: relative;
-    width: 360px;
+    width: 100%;
     min-height: 50px;
     h4{
       position: absolute;
@@ -43,9 +51,10 @@ aside.col-sm-4 h3.block-title{
       margin: 0;
       padding: 0;
       background-color: @gray-base;
-      opacity: 0.7;
+      background-color: rgba(0, 0, 0, 0.5);
       @media (min-width:@screen-xs){
         width: 360px;
+        height: 80px;
       }
 
       a{
@@ -61,9 +70,10 @@ aside.col-sm-4 h3.block-title{
       margin: 0;
       padding: 0;
       background-color: @gray-base;
-      opacity: 0.7;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-weight: bold;
       @media (min-width:@screen-xs){
-        width: 360px;
+        /*width: 360px;*/
       }
 
       a{
@@ -83,7 +93,7 @@ aside.col-sm-4 h3.block-title{
     }
     .event-type-block, .event-location-block{ /* specific to events blocks */
       position: absolute;
-      top: 33%;
+      top: 53%;
       left: 0;
       display: block;
       padding: 3px 5px;
@@ -362,6 +372,7 @@ body.domain-reseau-pro-mda34-org{
     display: block;
     padding-bottom: 15px;
     font-weight: bold;
+    padding-left: 15px;
     &:after{
       .glyphicon();
       content: "\e82d";
