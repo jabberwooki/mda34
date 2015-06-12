@@ -444,57 +444,6 @@ function mda_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_zoom_promoted'
-  $field_instances['node-news-field_zoom_promoted'] = array(
-    'bundle' => 'news',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Si coché, l\'actualité apparaîtra dans le diaporama de la page d\'accueil.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'list_default',
-        'weight' => 2,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 17,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_zoom_promoted',
-    'label' => 'Zoom',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 0,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 43,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Bloc accueil');
@@ -503,10 +452,8 @@ function mda_news_field_default_field_instances() {
   t('Galerie photo');
   t('Image');
   t('Si coché, l\'actualité apparaitra dans le bloc Actus de la page d\'accueil.');
-  t('Si coché, l\'actualité apparaîtra dans le diaporama de la page d\'accueil.');
   t('Son');
   t('Vidéo');
-  t('Zoom');
 
   return $field_instances;
 }
