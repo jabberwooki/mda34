@@ -73,6 +73,10 @@
  * @ingroup themeable
  */
 ?>
+<?php dpm($navbar_classes);
+  $navbar_classes = str_replace('container', '', $navbar_classes = str_replace('navbar-default', '', $navbar_classes));
+  $navbar_classes .= ' navbar-inverse navbar-fixed-top';
+?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container row">
     <div class="col-md-5">
