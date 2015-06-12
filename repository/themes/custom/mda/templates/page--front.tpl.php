@@ -73,7 +73,7 @@
  * @ingroup themeable
  */
 ?>
-<?php dpm($navbar_classes);
+<?php
   $navbar_classes = str_replace('container', '', $navbar_classes = str_replace('navbar-default', '', $navbar_classes));
   $navbar_classes .= ' navbar-inverse navbar-fixed-top';
 ?>
