@@ -67,3 +67,37 @@ function kcore_features_date_type_default() {
   );
   return $fdt_config;
 }
+
+/**
+ * Implements hook_image_default_styles().
+ */
+function kcore_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: img-col-4-crop_360x240.
+  $styles['img-col-4-crop_360x240'] = array(
+    'label' => 'img-col-4-crop (360x240)',
+    'effects' => array(
+      3 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 360,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+      4 => array(
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 360,
+          'height' => 240,
+          'anchor' => 'center-top',
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  return $styles;
+}
