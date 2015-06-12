@@ -38,6 +38,7 @@ features[fe_block_settings][] = kcore-mda_filsantejeunes
 features[fe_block_settings][] = kcore-mda_shortcut_ados
 features[fe_block_settings][] = kcore-mda_shortcut_parents
 features[fe_block_settings][] = kcore-mda_shortcut_pros
+features[fe_block_settings][] = menu-menu-footer-menu
 features[fe_block_settings][] = menu-menu-shortcuts
 features[fe_block_settings][] = menu-menu-top-menu
 features[features_api][] = api:2
