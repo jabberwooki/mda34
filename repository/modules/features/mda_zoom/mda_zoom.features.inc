@@ -30,6 +30,40 @@ function mda_zoom_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function mda_zoom_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: slide_750x576.
+  $styles['slide_750x576'] = array(
+    'label' => 'Diapo (750x576)',
+    'effects' => array(
+      6 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '',
+          'height' => 576,
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+      7 => array(
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 750,
+          'height' => 576,
+          'anchor' => 'center-center',
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function mda_zoom_node_info() {

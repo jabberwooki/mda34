@@ -43,12 +43,9 @@ function mda_zoom_field_default_field_instances() {
       ),
       'site_slide' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 3,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'slide' => array(
         'label' => 'hidden',
@@ -154,7 +151,7 @@ function mda_zoom_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 19,
       ),
     ),
     'entity_type' => 'node',
@@ -205,7 +202,7 @@ function mda_zoom_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 20,
       ),
     ),
     'entity_type' => 'node',
@@ -269,10 +266,10 @@ function mda_zoom_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'image_link' => '',
-          'image_style' => 'large',
+          'image_style' => 'slide_750x576',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'slide' => array(
         'label' => 'hidden',
@@ -368,12 +365,9 @@ function mda_zoom_field_default_field_instances() {
       ),
       'site_slide' => array(
         'label' => 'hidden',
-        'module' => 'link',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'link_default',
-        'weight' => 4,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
       ),
       'slide' => array(
         'label' => 'hidden',
@@ -459,12 +453,9 @@ function mda_zoom_field_default_field_instances() {
       ),
       'site_slide' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 2,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'slide' => array(
         'label' => 'hidden',
@@ -558,7 +549,7 @@ function mda_zoom_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 18,
       ),
     ),
     'entity_type' => 'node',

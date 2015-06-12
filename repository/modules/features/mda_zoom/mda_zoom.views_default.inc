@@ -76,10 +76,10 @@ function mda_zoom_views_default_views() {
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'ds';
-  $handler->display->display_options['row_options']['view_mode'] = 'portal_slide';
+  $handler->display->display_options['row_options']['view_mode'] = 'site_slide';
   $handler->display->display_options['row_options']['advanced'] = 0;
   $handler->display->display_options['row_options']['delta_fieldset']['delta_fields'] = array();
-  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'portal_slide';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'site_slide';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
 
   /* Display: Zoom portail */

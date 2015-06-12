@@ -52,8 +52,13 @@ function mda_zoom_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'slide';
   $ds_fieldsetting->view_mode = 'site_slide';
   $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '1',
+    'lien_diapo_h2' => array(
+      'weight' => '3',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'thematic_class' => array(
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -198,21 +203,21 @@ function mda_zoom_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_slide_image',
-        1 => 'title',
-        2 => 'field_subtitle',
-        3 => 'body',
-        4 => 'field_slide_link',
-        5 => 'domain',
+        0 => 'group_all_diapo',
+        1 => 'field_slide_image',
+        2 => 'group_conteneur_diapo',
+        3 => 'lien_diapo_h2',
+        4 => 'thematic_class',
+        5 => 'group_link_theme',
       ),
     ),
     'fields' => array(
+      'group_all_diapo' => 'ds_content',
       'field_slide_image' => 'ds_content',
-      'title' => 'ds_content',
-      'field_subtitle' => 'ds_content',
-      'body' => 'ds_content',
-      'field_slide_link' => 'ds_content',
-      'domain' => 'ds_content',
+      'group_conteneur_diapo' => 'ds_content',
+      'lien_diapo_h2' => 'ds_content',
+      'thematic_class' => 'ds_content',
+      'group_link_theme' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
