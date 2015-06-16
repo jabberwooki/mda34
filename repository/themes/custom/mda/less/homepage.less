@@ -162,7 +162,7 @@ body.domain-www-mda34-org #home-main-container-wrapper{
 }
 
 /* Home news and events on 2 cols *********************************************/
-#block-views-news-block-actus, #block-views-events-block-front-events{
+#block-views-news-block-actus{
   float: left;
   width: 47.9167%;
   margin-right: 1.04167%;
@@ -171,6 +171,16 @@ body.domain-www-mda34-org #home-main-container-wrapper{
       margin-right: 0;
       float: none;
     }
+}
+#block-views-events-block-front-events{
+  float: left;
+  width: 50%;
+  margin-right: 0;
+  @media screen and (max-width:@screen-sm){
+    width: 97.916666666666666666666666666667%;
+    margin-right: 0;
+    float: none;
+  }
 }
 #block-views-events-block-front-events{
   margin-right: 0;
