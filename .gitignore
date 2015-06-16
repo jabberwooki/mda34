@@ -1,5 +1,7 @@
 # Ignore kstarter folders
 builds/*
+# Ignore phpstorm folder
+.idea/*
 !builds/README.txt
 shared/settings.php
 shared/files/*
