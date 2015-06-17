@@ -11,7 +11,7 @@ function mda_radio_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'Atelier hebdomadaire',
+    'name' => 'Reportage',
     'description' => '',
     'format' => 'full_html',
     'weight' => 0,
@@ -20,7 +20,7 @@ function mda_radio_uuid_features_default_terms() {
     'metatags' => array(),
   );
   $terms[] = array(
-    'name' => 'Reportage',
+    'name' => 'Emission',
     'description' => '',
     'format' => 'full_html',
     'weight' => 0,
@@ -29,7 +29,7 @@ function mda_radio_uuid_features_default_terms() {
     'metatags' => array(),
   );
   $terms[] = array(
-    'name' => 'Stage radio',
+    'name' => 'Chronique',
     'description' => '',
     'format' => 'full_html',
     'weight' => 0,
