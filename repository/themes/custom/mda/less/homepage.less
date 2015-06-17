@@ -12,6 +12,9 @@ body.front .block-kcore{
     a{
       border-bottom : 1px solid @orange-mda;
       background: transparent url(../images/button_maison_ados.png) no-repeat 0 0;
+      &:hover h2, &:hover p{
+        color: @orange-mda;
+      }
     }
     @media screen and (max-width:@screen-lg) and (min-width:@screen-sm){
       background-image: none;
@@ -22,6 +25,9 @@ body.front .block-kcore{
     a{
       border-bottom : 1px solid @green-mda;
       background: transparent url(../images/button_maison_parents.png) no-repeat 0 0;
+      &:hover h2, &:hover p{
+        color: @green-mda;
+      }
     }
     @media screen and (max-width:@screen-lg) and (min-width:@screen-sm){
       background-image: none;
@@ -32,16 +38,31 @@ body.front .block-kcore{
     a{
       border-bottom : 1px solid @violet-mda;
       background: transparent url(../images/button_maison_pros.png) no-repeat 0 0;
+      &:hover h2, &:hover p{
+        color: @violet-mda;
+      }
     }
     @media screen and (max-width:@screen-lg) and (min-width:@screen-sm){
       background-image: none;
     }
   }
-  a h2, a p{
-    font-family: @rockwellFamily;
-    color: @gray-base;
-    margin: 0;
-    padding: 0;
+  a{
+    h2{
+      font-family: @rockwellFamily;
+      color: @gray-base;
+      margin: 0;
+      padding: 0;
+    }
+    p{
+      font-family: arial;
+      color: @gray-base;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+    }
+    &:hover{
+      text-decoration: none;
+    }
   }
   
 }
@@ -141,7 +162,7 @@ body.domain-www-mda34-org #home-main-container-wrapper{
 }
 
 /* Home news and events on 2 cols *********************************************/
-#block-views-news-block-actus, #block-views-events-block-front-events{
+#block-views-news-block-actus{
   float: left;
   width: 47.9167%;
   margin-right: 1.04167%;
@@ -150,6 +171,16 @@ body.domain-www-mda34-org #home-main-container-wrapper{
       margin-right: 0;
       float: none;
     }
+}
+#block-views-events-block-front-events{
+  float: left;
+  width: 50%;
+  margin-right: 0;
+  @media screen and (max-width:@screen-sm){
+    width: 97.916666666666666666666666666667%;
+    margin-right: 0;
+    float: none;
+  }
 }
 #block-views-events-block-front-events{
   margin-right: 0;

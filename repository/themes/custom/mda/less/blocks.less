@@ -1,4 +1,7 @@
 /* général ********************************************************************/
+.block-views h3{
+  margin-top: 10px;
+}
 aside.col-sm-4 h3.block-title{
   font-size: 1.2em;
   border-bottom: 1px solid @gray-lighter;
@@ -36,7 +39,7 @@ aside.col-sm-4 h3.block-title{
       color: @gray-base;
     }
     .clearfix();
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .views-row:not(.views-row-last){
     border-bottom: 1px solid @gray-lighter;
@@ -44,7 +47,7 @@ aside.col-sm-4 h3.block-title{
   .img-title-wrapper{
     position: relative;
     width: 100%;
-    min-height: 50px;
+    min-height: 100px;
     h4{
       position: absolute;
       bottom: 0;
@@ -90,16 +93,20 @@ aside.col-sm-4 h3.block-title{
       display: block;
       padding: 0 2px 0 5px;
       color: white;
+      font-family: arial;
+      font-weight: bold;
     }
     .event-type-block, .event-location-block{ /* specific to events blocks */
       position: absolute;
-      top: 53%;
+      top: 56%;
       left: 0;
       display: block;
       padding: 3px 5px;
       background-color: @gray-base;
       color: white;
       z-index: 1;
+      font-family: arial;
+      font-weight: bold;
       @media (max-width:@screen-xs){
         top: 0;
       }
@@ -362,6 +369,10 @@ body.domain-reseau-pro-mda34-org{
   margin: 20px 0;
 }
 /* block faq ******************************************************************/
+[id*="block-views"] .views-row{
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
 .block-wrapper-custom .view-faqs{
   .views-row-last{
     a{
@@ -374,12 +385,22 @@ body.domain-reseau-pro-mda34-org{
     font-weight: bold;
     padding-left: 15px;
     &:after{
-      .glyphicon();
-      content: "\e82d";
-      color: @green-mda;
-      white-space: nowrap;
+      content: "";
+      display: inline-block;
+      background: transparent url(../images/arrow-green.png) no-repeat 0 0;
+      width: 8px;
+      height: 15px;
+      margin-left: 12px;
     } 
   }
+}
+#block-views-faqs-block-front-ados .block-wrapper-custom .view-faqs a:after{
+  content: "";
+  display: inline-block;
+  background: transparent url(../images/arrow-orange.png) no-repeat 0 0;
+  width: 8px;
+  height: 15px;
+  margin-left: 12px;
 }
 /* bloc faq ado ***************************************************************/
 
