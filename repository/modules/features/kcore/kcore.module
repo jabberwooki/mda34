@@ -170,7 +170,7 @@ function kcore_block_view($delta = '') {
 				'title_tag' => variable_get('mda_shortcut_pro_title_tag', 'h2'),
 				'title' => variable_get('mda_shortcut_pros_title', 'Professionnels'),
 				'text' => variable_get('mda_shortcut_pros_text', 'Consultez nos ressources en ligne'),
-				'url' => variable_get('mda_shortcut_pros_url', 'reseau-pro.mda34.org/ressources'),
+				'url' => variable_get('mda_shortcut_pros_url', 'reseau-pro.mda34.org'),
 			);
 			$block['content'] = theme('mda_shortcut_block', $variables);
 			return $block;
