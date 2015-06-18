@@ -367,37 +367,6 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '150',
   );
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'event' => 'event',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domaines: Nom système */
-  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
-  $handler->display->display_options['filters']['machine_name']['table'] = 'domain';
-  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
-  $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'ados_mda34_org' => 'ados_mda34_org',
-  );
-  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
-  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
-  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
-  $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['filters']['uuid']['operator'] = '!=';
-  $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
 
   /* Display: Accueil portail (parents) */
   $handler = $view->new_display('block', 'Accueil portail (parents)', 'block_front_parents');
@@ -516,6 +485,20 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'parents_mda34_org' => 'parents_mda34_org',
   );
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['expose']['operator_id'] = 'field_event_pubdates_value_op';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['expose']['label'] = 'Dates de publication - date de début (field_event_pubdates)';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['expose']['operator'] = 'field_event_pubdates_value_op';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['expose']['identifier'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
 
   /* Display: Accueil portail (pros) */
   $handler = $view->new_display('block', 'Accueil portail (pros)', 'block_front_pros');
@@ -641,6 +624,16 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
 
   /* Display: Bloc événements */
   $handler = $view->new_display('block', 'Bloc événements', 'block_front_events');
@@ -752,6 +745,16 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
 
   /* Display: Bloc événements pros */
   $handler = $view->new_display('block', 'Bloc événements pros', 'block_events_pros');
@@ -870,6 +873,16 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
 
   /* Display: Liste des formations */
   $handler = $view->new_display('page_with_page_title', 'Liste des formations', 'list_trainings');
@@ -944,6 +957,16 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
   $handler->display->display_options['path'] = 'formations';
 
   /* Display: Accueil portail (formations) */
@@ -1005,6 +1028,16 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
 
   /* Display: Espace pros (formations) */
   $handler = $view->new_display('block', 'Espace pros (formations)', 'block_pros_trainings');
@@ -1065,6 +1098,32 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['expose']['operator_id'] = 'field_event_pubdates_value_op';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['expose']['label'] = 'Dates de publication - date de début (field_event_pubdates)';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['expose']['operator'] = 'field_event_pubdates_value_op';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['expose']['identifier'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    141037677 => 0,
+    217795369 => 0,
+    183916278 => 0,
+    231346920 => 0,
+    155963314 => 0,
+    22875792 => 0,
+    193262079 => 0,
+    109177673 => 0,
+  );
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
   $translatables['events'] = array(
     t('Master'),
     t('plus'),
@@ -1097,6 +1156,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>'),
     t('Accueil portail (parents)'),
+    t('Dates de publication - date de début (field_event_pubdates)'),
     t('Accueil portail (pros)'),
     t('Bloc événements'),
     t('<div class="img-title-wrapper">
