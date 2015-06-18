@@ -27,3 +27,10 @@ function kcore_update_7003() {
 function kcore_update_7004() {
 	module_enable(array('features_date_formats'));
 }
+
+/**
+ * Activates email_registration and menu_trial_by_path modules.
+ */
+function kcore_update_7005() {
+  module_enable(array('email_registration','menu_trail_by_path'));
+}

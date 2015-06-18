@@ -99,6 +99,9 @@ projects[date][version] = "2.8"
 projects[email][subdir] = contrib
 projects[email][version] = "1.3"
 
+projects[email_registration][subdir] = contrib
+projects[email_registration][version] = "1.2"
+
 projects[entityreference][subdir] = contrib
 projects[entityreference][version] = "1.1"
 
@@ -116,6 +119,9 @@ projects[field_formatter_settings][version] = "1.1"
 
 projects[filefield_sources][subdir] = contrib
 projects[filefield_sources][version] = "1.9"
+
+projects[menu_trail_by_path][subdir] = contrib
+projects[menu_trail_by_path][version] = "20
 
 ;projects[migrate][subdir] = contrib
 ;projects[migrate][version] = "2.7"
