@@ -108,6 +108,9 @@ function mda_resources_uuid_features_default_terms() {
     'uuid' => '62986096-cd9d-4971-b20c-e186b0c5f52b',
     'vocabulary_machine_name' => 'themes',
     'metatags' => array(),
+    'parent' => array(
+      0 => '57316f26-cc60-45ed-9168-581fd3dd2aca',
+    ),
   );
   $terms[] = array(
     'name' => 'Parentalité',
@@ -117,6 +120,9 @@ function mda_resources_uuid_features_default_terms() {
     'uuid' => '6ff99e4c-13a4-4b75-aef6-b86c638bbb49',
     'vocabulary_machine_name' => 'themes',
     'metatags' => array(),
+    'parent' => array(
+      0 => 'bb87f3b7-4fba-45cf-9630-4cc36591bf2e',
+    ),
   );
   $terms[] = array(
     'name' => 'Document',
