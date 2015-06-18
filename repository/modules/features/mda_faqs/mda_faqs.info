@@ -98,6 +98,7 @@ features[uuid_term][] = b5d2a01d-2f3e-4928-ac4b-f510f0b61a91
 features[uuid_term][] = b82bbcd8-5eae-4b27-9d92-c66a027266fc
 features[uuid_term][] = be7e0cd1-a1eb-4e07-acfd-2d8892c4c710
 features[uuid_term][] = c423a4e3-c980-4ae9-9374-3ab6867f18f7
+features[variable][] = domain_node_faq
 features[variable][] = field_bundle_settings_node__faq
 features[variable][] = language_content_type_faq
 features[variable][] = menu_options_faq

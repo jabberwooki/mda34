@@ -155,7 +155,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_competence_fields']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -169,11 +169,10 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Public concerné */
+  /* Champ: Contenu: Public */
   $handler->display->display_options['fields']['field_public']['id'] = 'field_public';
   $handler->display->display_options['fields']['field_public']['table'] = 'field_data_field_public';
   $handler->display->display_options['fields']['field_public']['field'] = 'field_public';
-  $handler->display->display_options['fields']['field_public']['label'] = 'Public';
   $handler->display->display_options['fields']['field_public']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_public']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_public']['settings'] = array(
@@ -271,7 +270,7 @@ function mda_structures_views_default_views() {
   );
   $handler->display->display_options['filters']['field_action_types_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_action_types_tid']['vocabulary'] = 'action_types';
-  /* Filter criterion: Contenu: Public concerné (field_public) */
+  /* Filter criterion: Contenu: Public (field_public) */
   $handler->display->display_options['filters']['field_public_tid']['id'] = 'field_public_tid';
   $handler->display->display_options['filters']['field_public_tid']['table'] = 'field_data_field_public';
   $handler->display->display_options['filters']['field_public_tid']['field'] = 'field_public_tid';
@@ -332,11 +331,10 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Email du gestionnaire */
+  /* Champ: Contenu: Contact email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
-  $handler->display->display_options['fields']['field_email']['label'] = 'Contact email';
   $handler->display->display_options['fields']['field_email']['settings'] = array(
     'field_formatter_class' => '',
   );
@@ -347,7 +345,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Lieu de l'événement */
+  /* Champ: Contenu: Adresse */
   $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
   $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address']['field'] = 'field_address';

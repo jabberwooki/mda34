@@ -29,7 +29,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 8,
       ),
@@ -124,7 +126,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 7,
       ),
@@ -213,7 +217,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 7,
       ),
@@ -275,6 +281,7 @@ function mda_structures_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'addressfield',
         'settings' => array(
+          'field_formatter_class' => '',
           'format_handlers' => array(
             0 => 'address',
           ),
@@ -363,7 +370,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 6,
       ),
@@ -443,6 +452,7 @@ function mda_structures_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'geofield_map',
         'settings' => array(
+          'field_formatter_class' => '',
           'geofield_map_baselayers_hybrid' => 0,
           'geofield_map_baselayers_map' => 1,
           'geofield_map_baselayers_physical' => 0,
@@ -526,7 +536,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'inline',
         'module' => 'email',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'email_default',
         'weight' => 4,
       ),
@@ -588,6 +600,7 @@ function mda_structures_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => 'logo_120x120',
         ),
@@ -676,14 +689,18 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 16,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 2,
       ),
@@ -797,6 +814,7 @@ function mda_structures_field_default_field_instances() {
           ),
           'date_first_day' => 1,
           'daysformat' => 'long',
+          'field_formatter_class' => '',
           'grouped' => FALSE,
           'hoursformat' => 0,
           'separator_day_hours' => ': ',
@@ -879,7 +897,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'inline',
         'module' => 'phone',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'phone',
         'weight' => 5,
       ),
@@ -946,7 +966,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -1032,7 +1054,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 5,
       ),
@@ -1087,7 +1111,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 4,
       ),
@@ -1142,7 +1168,9 @@ function mda_structures_field_default_field_instances() {
       'full' => array(
         'label' => 'hidden',
         'module' => 'link',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'link_default',
         'weight' => 3,
       ),

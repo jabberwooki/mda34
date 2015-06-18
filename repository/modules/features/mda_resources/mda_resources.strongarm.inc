@@ -20,6 +20,22 @@ function mda_resources_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'domain_node_resource';
+  $strongarm->value = array(
+    'DOMAIN_ACTIVE' => 'DOMAIN_ACTIVE',
+    'DOMAIN_ALL' => 0,
+    'www_mda34_org' => 0,
+    'ados_mda34_org' => 0,
+    'parents_mda34_org' => 0,
+    'philado_mda34_org' => 0,
+    'radio_mda34_org' => 0,
+    'reseau_pro_mda34_org' => 0,
+  );
+  $export['domain_node_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__resource';
   $strongarm->value = array(
     'view_modes' => array(

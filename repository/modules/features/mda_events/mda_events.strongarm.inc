@@ -15,8 +15,14 @@ function mda_events_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'domain_node_event';
   $strongarm->value = array(
-    0 => 'DOMAIN_ALL',
-    1 => 'DOMAIN_ACTIVE',
+    'DOMAIN_ACTIVE' => 'DOMAIN_ACTIVE',
+    'DOMAIN_ALL' => 0,
+    'www_mda34_org' => 0,
+    'ados_mda34_org' => 0,
+    'parents_mda34_org' => 0,
+    'philado_mda34_org' => 0,
+    'radio_mda34_org' => 0,
+    'reseau_pro_mda34_org' => 0,
   );
   $export['domain_node_event'] = $strongarm;
 
