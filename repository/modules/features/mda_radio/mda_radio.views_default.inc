@@ -83,7 +83,7 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'En savoir plus';
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -491,7 +491,7 @@ function mda_radio_views_default_views() {
     'field_formatter_class' => '',
   );
   $handler->display->display_options['fields']['field_scald_audio']['delta_offset'] = '0';
-  /* Champ: Contenu: ShareThis Link */
+  /* Champ: Contenu: Lien ShareThis */
   $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
   $handler->display->display_options['fields']['sharethis']['table'] = 'node';
   $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
@@ -555,7 +555,7 @@ function mda_radio_views_default_views() {
     'field_formatter_class' => '',
   );
   $handler->display->display_options['fields']['field_scald_audio']['delta_offset'] = '0';
-  /* Champ: Contenu: ShareThis Link */
+  /* Champ: Contenu: Lien ShareThis */
   $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
   $handler->display->display_options['fields']['sharethis']['table'] = 'node';
   $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
@@ -608,7 +608,6 @@ function mda_radio_views_default_views() {
     t('Date d\'enregistrement'),
     t('En savoir plus'),
     t('Liste des émissions'),
-    t('more'),
     t('Trier les émissions par catégorie'),
     t('Dernière émission (attachement)'),
     t('La dernière émission'),
