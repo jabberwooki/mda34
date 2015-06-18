@@ -40,6 +40,11 @@ function kcore_block_info() {
 			'info' => t('MDA : Lien Fil Santé Jeunes'),
 			'cache' => DRUPAL_NO_CACHE,
 	);
+	
+	$blocks['mda_radio_partenaires'] = array(
+			'info' => t('MDA : Lien vers les partenaires radios'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
 
 	return $blocks;
 }
@@ -182,6 +187,19 @@ function kcore_block_view($delta = '') {
 			$image_filename = 'filsantejeunes.jpg';
 			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
 			$alt = 'Fil Santé Jeunes. Besoin de t\'exprimer, envie de t\'informer. 0 800 235 238, 01 44 93 30 74. Anonyme et gratuit.';
+			
+			$content = '<a href="' . $href .'" target="_blank">';
+			$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="fil-sante-jeunes">';
+			$content .= '</a>';
+			$block['content'] = $content;
+			return $block;
+		break;
+		case 'mda_radio_partenaires':
+			$block['subject'] = '';
+			$href = 'http://www.oaqadi.fr';
+			$image_filename = 'oaqadi.jpg';
+			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
+			$alt = 'Patenaires oaqadi.fr';
 			
 			$content = '<a href="' . $href .'" target="_blank">';
 			$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="fil-sante-jeunes">';
