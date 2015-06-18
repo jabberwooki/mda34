@@ -171,4 +171,25 @@ a#main-content{
     }
   }
 }
+/* Puces dans texte *************************************************************/
+#block-system-main {
+  a{
+    color: @gray-darker;
+    &:hover{
+    color: @gray-base;
+    }
+    &:visited{
+      color: @gray;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      padding-left: 15px;
+      background: url(../images/arrow-black.png) no-repeat 0 50%;
+    }
+  }
+}
 
