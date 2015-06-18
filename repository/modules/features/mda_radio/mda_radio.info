@@ -53,6 +53,7 @@ features[taxonomy][] = radio_prog_categories
 features[uuid_term][] = 0167d008-21e2-4fbc-a69f-6c3ff4aef982
 features[uuid_term][] = 2f553660-6047-4407-9558-6757bb016242
 features[uuid_term][] = 6679fa96-7b95-41a0-ac95-22589bf6168a
+features[variable][] = domain_node_radio_programme
 features[variable][] = field_bundle_settings_node__radio_programme
 features[variable][] = language_content_type_radio_programme
 features[variable][] = menu_options_radio_programme

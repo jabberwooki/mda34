@@ -107,6 +107,7 @@ features[uuid_term][] = e5f13504-5b3b-4938-a456-c042b939cd2d
 features[uuid_term][] = eba30b80-d0ae-4cf1-ad4e-6d5eeb3c956e
 features[uuid_term][] = f337d14e-9751-4f21-afaa-0866972d9141
 features[uuid_term][] = f5c5cf8e-915b-4d18-8f45-6ec822356a1f
+features[variable][] = domain_node_structure
 features[variable][] = field_bundle_settings_node__structure
 features[variable][] = language_content_type_structure
 features[variable][] = menu_options_structure

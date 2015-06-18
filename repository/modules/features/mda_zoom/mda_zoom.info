@@ -57,6 +57,7 @@ features[field_instance][] = node-slide-field_subtitle
 features[field_instance][] = node-slide-field_thematique_diapo
 features[image][] = slide_750x576
 features[node][] = slide
+features[variable][] = domain_node_slide
 features[variable][] = field_bundle_settings_node__slide
 features[variable][] = language_content_type_slide
 features[variable][] = menu_options_slide

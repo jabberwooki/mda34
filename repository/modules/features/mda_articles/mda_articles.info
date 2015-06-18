@@ -39,6 +39,7 @@ features[node][] = article
 features[taxonomy][] = article_types
 features[uuid_features_menu][] = 6a5adf28-14b9-41ce-9dcd-037ae153bbe0
 features[uuid_term][] = bf758768-f301-433f-9ae3-75517d424535
+features[variable][] = domain_node_article
 features[variable][] = field_bundle_settings_node__article
 features[variable][] = language_content_type_article
 features[variable][] = menu_options_article
