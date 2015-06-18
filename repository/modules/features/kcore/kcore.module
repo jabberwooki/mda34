@@ -195,15 +195,12 @@ function kcore_block_view($delta = '') {
 			return $block;
 		break;
 		case 'mda_radio_partenaires':
-			$block['subject'] = '';
+			$block['subject'] = 'Partenaires';
 			$href = 'http://www.oaqadi.fr';
 			$image_filename = 'oaqadi.png';
 			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
-			$alt = 'Patenaires oaqadi.fr';
-			
-			$content = '<a href="' . $href .'" target="_blank">';
-			$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="fil-sante-jeunes">';
-			$content .= '</a>';
+			$alt = 'Patenaire oaqadi.fr';
+			$content = '<img src="' . $image_url . '" alt="' . $alt . '" class="partenaires">';
 			$block['content'] = $content;
 			return $block;
 	}
