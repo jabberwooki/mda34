@@ -37,5 +37,23 @@ function mda_radio_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'radio_prog_categories',
     'metatags' => array(),
   );
+  $terms[] = array(
+    'name' => 'Evènements',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '9ad0958a-6467-44ea-8048-94b95ab5761d',
+    'vocabulary_machine_name' => 'radio_prog_categories',
+    'metatags' => array(),
+  );
+  $terms[] = array(
+    'name' => 'Musique',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'ac2daa62-d872-401a-9efe-1cb461a633f5',
+    'vocabulary_machine_name' => 'radio_prog_categories',
+    'metatags' => array(),
+  );
   return $terms;
 }
