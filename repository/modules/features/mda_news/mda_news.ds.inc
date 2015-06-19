@@ -18,7 +18,7 @@ function mda_news_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
     'summary' => array(
-      'weight' => '3',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -56,10 +56,10 @@ function mda_news_ds_layout_settings_info() {
     'regions' => array(
       'central' => array(
         0 => 'submitted_by',
-        1 => 'sharethis',
-        2 => 'group_submitted_socialnetworks',
-        3 => 'summary',
-        4 => 'field_scald_image',
+        1 => 'group_submitted_socialnetworks',
+        2 => 'sharethis',
+        3 => 'field_scald_image',
+        4 => 'summary',
         5 => 'body',
         6 => 'field_scald_audio',
         7 => 'field_scald_gallery',
@@ -70,10 +70,10 @@ function mda_news_ds_layout_settings_info() {
     ),
     'fields' => array(
       'submitted_by' => 'central',
-      'sharethis' => 'central',
       'group_submitted_socialnetworks' => 'central',
-      'summary' => 'central',
+      'sharethis' => 'central',
       'field_scald_image' => 'central',
+      'summary' => 'central',
       'body' => 'central',
       'field_scald_audio' => 'central',
       'field_scald_gallery' => 'central',

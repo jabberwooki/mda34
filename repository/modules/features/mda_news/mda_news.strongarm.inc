@@ -82,7 +82,7 @@ function mda_news_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '10',
+            'weight' => '8',
             'visible' => TRUE,
           ),
         ),
