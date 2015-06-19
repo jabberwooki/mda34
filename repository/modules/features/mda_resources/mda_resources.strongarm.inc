@@ -99,7 +99,7 @@ function mda_resources_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '12',
+            'weight' => '15',
             'visible' => FALSE,
           ),
         ),
@@ -113,7 +113,7 @@ function mda_resources_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '13',
+            'weight' => '16',
             'visible' => FALSE,
           ),
         ),
