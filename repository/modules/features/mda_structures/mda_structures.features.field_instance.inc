@@ -1035,63 +1035,6 @@ function mda_structures_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-structure-field_public'
-  $field_instances['node-structure-field_public'] = array(
-    'bundle' => 'structure',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 9,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
-      ),
-      'list' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 21,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_public',
-    'label' => 'Public',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 5,
-    ),
-  );
-
   // Exported field_instance: 'node-structure-field_structure_type'
   $field_instances['node-structure-field_structure_type'] = array(
     'bundle' => 'structure',
@@ -1246,7 +1189,6 @@ function mda_structures_field_default_field_instances() {
   t('Logo');
   t('Mission');
   t('Moyens d\'accès');
-  t('Public');
   t('Site web');
   t('Titre infos pratiques');
   t('Type de structure');

@@ -72,7 +72,6 @@ features[field_instance][] = node-event-field_event_pubdates
 features[field_instance][] = node-event-field_event_type
 features[field_instance][] = node-event-field_event_website
 features[field_instance][] = node-event-field_organiser
-features[field_instance][] = node-event-field_public
 features[field_instance][] = node-event-field_registration
 features[field_instance][] = node-event-field_unregistered_organiser
 features[field_instance][] = registration-event_registration-field_registrant_firstname
