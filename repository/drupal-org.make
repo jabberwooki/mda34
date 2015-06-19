@@ -121,8 +121,7 @@ projects[filefield_sources][subdir] = contrib
 projects[filefield_sources][version] = "1.9"
 
 projects[menu_trail_by_path][subdir] = contrib
-projects[menu_trail_by_path][version] = "20
-
+projects[menu_trail_by_path][version] = "2.0"
 ;projects[migrate][subdir] = contrib
 ;projects[migrate][version] = "2.7"
 
