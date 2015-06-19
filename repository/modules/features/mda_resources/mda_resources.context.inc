@@ -61,7 +61,7 @@ function mda_resources_context_default_contexts() {
     ),
     'path' => array(
       'values' => array(
-        '~agenda*' => '~agenda*',
+        '~agenda' => '~agenda',
       ),
     ),
     'sitewide' => array(
