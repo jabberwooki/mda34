@@ -19,6 +19,8 @@
       text-decoration: none;
       &:after{
         content: '';
+        background-image: none;
+        margin:0;
       }
       &.selected{
         background-color: @green-mda;
@@ -49,6 +51,11 @@ body.page-faq {
   }
 }
 /* Eléments isotope base + parents ********************************************/
+
+#isotope-options ul#filters li{
+  padding: 0;
+  background-image: none;
+}
 .isotope-element{
   width: 278px;
   background: transparent url(../images/bg_faq_green.png) no-repeat 0 100%;
@@ -67,6 +74,7 @@ body.page-faq {
       margin-bottom: 0;
       &:after{
         content: '';
+        background-image: none;
       }
     }
   }

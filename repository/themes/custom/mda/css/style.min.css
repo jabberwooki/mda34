@@ -1646,7 +1646,8 @@ body{background-color:#fff}
 [class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a,body.domain-ados-mda34-org h1.navbar-brand a{padding-left:28px}
 #skip-link{position:absolute;width:1px;height:1px;top:-1000em;overflow:hidden}
 .navbar-inverse{background:url(../images/bg_header.jpg)50% -43px no-repeat #f8f8f8;border-color:#fff!important}
-body.front #block-views-slides-block-portal-zoom{margin-top:100px}
+body.front #block-views-slides-block-portal-zoom,body.front.domain-radio-mda34-org .main-container{margin-top:100px}
+body.front:not(.domain-www-mda34-org) #home-main-container-wrapper{margin-top:76px}
 body:not(.front) .main-container{margin-top:120px}
 #navbar{margin-top:0}
 #navbar .container.row{margin:0 auto}
@@ -1687,24 +1688,24 @@ button.navbar-toggle{margin-top:-25px;margin-bottom:0}
 @media (min-width:768px){#main-top-menu{margin-top:60px}
 }
 #main-top-menu>ul>li>a{text-transform:uppercase;font-weight:700;font-size:.8em;color:#000;display:block;box-shadow:0 0 2px 2px #dfdfdf;border-radius:1px;margin-right:7px;background-color:#fff;padding:4px 6px}
-#main-top-menu>ul>li>a.active{color:#fff;box-shadow:0 0 0 0 #dfdfdf;background-color:#000}
-#main-top-menu>ul>li>a.active:after{top:100%;left:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-top-color:#000;border-width:5px;margin-left:-5px}
+#main-top-menu>ul>li>a.active,#main-top-menu>ul>li>a.active-trail{color:#fff;box-shadow:0 0 0 0 #dfdfdf;background-color:#000}
+#main-top-menu>ul>li>a.active-trail:after,#main-top-menu>ul>li>a.active:after{top:100%;left:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-top-color:#000;border-width:5px;margin-left:-5px}
 #main-top-menu>ul>li>a:hover{color:#fff;background-color:#000}
 body.domain-www-mda34-org #main-top-menu>ul>li>a.link-menu-ado:hover{color:#fff;background-color:#f78c26}
 body.domain-www-mda34-org #main-top-menu>ul>li>a.link-menu-parents:hover{color:#fff;background-color:#32903f}
 body.domain-www-mda34-org #main-top-menu>ul>li>a.link-menu-pro:hover{color:#fff;background-color:#575095}
 body.domain-www-mda34-org #main-top-menu>ul>li>a.link-menu-radio:hover{color:#fff;background-color:#0080ff}
-body.domain-ados-mda34-org #main-top-menu>ul>li>a.active{background-color:#f78c26}
-body.domain-ados-mda34-org #main-top-menu>ul>li>a.active:after{border-top-color:#f78c26}
+body.domain-ados-mda34-org #main-top-menu>ul>li>a.active,body.domain-ados-mda34-org #main-top-menu>ul>li>a.active-trail{background-color:#f78c26}
+body.domain-ados-mda34-org #main-top-menu>ul>li>a.active-trail:after,body.domain-ados-mda34-org #main-top-menu>ul>li>a.active:after{border-top-color:#f78c26}
 body.domain-ados-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#f78c26}
-body.domain-parents-mda34-org #main-top-menu>ul>li>a.active{background-color:#32903f}
-body.domain-parents-mda34-org #main-top-menu>ul>li>a.active:after{border-top-color:#32903f}
+body.domain-parents-mda34-org #main-top-menu>ul>li>a.active,body.domain-parents-mda34-org #main-top-menu>ul>li>a.active-trail{background-color:#32903f}
+body.domain-parents-mda34-org #main-top-menu>ul>li>a.active-trail:after,body.domain-parents-mda34-org #main-top-menu>ul>li>a.active:after{border-top-color:#32903f}
 body.domain-parents-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#32903f}
-body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a.active{background-color:#575095}
-body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a.active:after{border-top-color:#575095}
+body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a.active,body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a.active-trail{background-color:#575095}
+body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a.active-trail:after,body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a.active:after{border-top-color:#575095}
 body.domain-reseau-pro-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#575095}
-body.domain-radio-mda34-org #main-top-menu>ul>li>a.active{background-color:#009ee0}
-body.domain-radio-mda34-org #main-top-menu>ul>li>a.active:after{border-top-color:#009ee0}
+body.domain-radio-mda34-org #main-top-menu>ul>li>a.active,body.domain-radio-mda34-org #main-top-menu>ul>li>a.active-trail{background-color:#009ee0}
+body.domain-radio-mda34-org #main-top-menu>ul>li>a.active-trail:after,body.domain-radio-mda34-org #main-top-menu>ul>li>a.active:after{border-top-color:#009ee0}
 body.domain-radio-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-color:#009ee0}
 .block-views h3{margin-top:10px}
 aside.col-sm-4 h3.block-title{font-size:1.2em;padding-bottom:8px;font-weight:700}
@@ -1718,12 +1719,13 @@ aside.col-sm-4 h3.block-title{font-size:1.2em;padding-bottom:8px;font-weight:700
 .block .views-row{padding:10px 0;margin-bottom:0}
 .block .views-row .views-field-title a{color:#000}
 .block .views-row:after,.block .views-row:before{content:" ";display:table}
-.block .img-title-wrapper{position:relative;width:100%;min-height:100px}
+.block .img-title-wrapper{position:relative;width:360px;min-height:100px}
 .block .img-title-wrapper h4{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.5)}
-@media (min-width:480px){.block .img-title-wrapper h4{width:360px;height:80px}
-}
 .block .img-title-wrapper h4 a{display:block;color:#fff;font-size:1.1em;padding:10px 15px}
-.block .img-title-wrapper h3{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.5);height:80px;overflow:hidden;font-weight:700}
+.block .img-title-wrapper h3{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.5);height:80px;overflow:hidden;font-weight:700;widows:100%}
+@media (min-width:480px){.block .img-title-wrapper h4{width:360px;height:80px}
+.block .img-title-wrapper h3{width:360px}
+}
 .block .img-title-wrapper h3 a{display:block;color:#fff;font-size:.8em;padding:10px 15px}
 .block .img-title-wrapper .dates-custom-wrapper{position:absolute;top:0;right:0;display:block;padding:0 2px 0 5px;color:#fff;font-family:arial;font-weight:700}
 .block .img-title-wrapper .event-location-block,.block .img-title-wrapper .event-type-block{position:absolute;top:56%;left:0;display:block;padding:3px 5px;background-color:#000;color:#fff;z-index:1;font-family:arial;font-weight:700}
@@ -1744,7 +1746,7 @@ body.front .block .views-row:not(.views-row-last),body.front .block.block-views 
 #block-boxes-pros-resources-link{background:url(../images/bg_blocks.gif);padding:0;margin-top:25px}
 #block-boxes-pros-resources-link>div.block-wrapper-custom{padding:0 0 0 150px;margin:0;background:url(../images/home_book.png)5px 50% no-repeat;border:1px solid transparent}
 #block-boxes-pros-resources-link>div.block-wrapper-custom a{display:block}
-#block-boxes-parents-faq-link{background:url(../images/bg_blocks.gif);padding:7px 0 0;margin-top:25px;height:138px}
+#block-boxes-parents-faq-link{background:url(../images/bg_blocks.gif);padding:7px 0 0;margin-top:25px;margin-bottom:25px;height:138px}
 #block-boxes-parents-faq-link>div.block-wrapper-custom{padding:0 0 0 130px;margin:0;background:url(../images/accueil_parents.png)8px 50% no-repeat;border:1px solid transparent}
 #block-boxes-parents-faq-link>div.block-wrapper-custom a{display:block;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;color:#333}
 #block-boxes-parents-faq-link>div.block-wrapper-custom h2>a{color:#32903f}
@@ -1811,12 +1813,16 @@ body.domain-reseau-pro-mda34-org #search-block-form .btn{background-color:#57509
 #block-menu-menu-footer-menu ul.menu li a:hover{background-color:transparent;text-decoration:underline}
 body.domain-parents-mda34-org #block-system-main a,body.domain-parents-mda34-org h2.page-header{color:#32903f}
 body.domain-parents-mda34-org #block-system-main ul li{background:url(../images/arrow-green.png)0 50% no-repeat}
+body.domain-parents-mda34-org #block-system-main .field-name-field-event-website a{background-color:#32903f;color:#fff;margin:10px 0;border:0}
 body.domain-ados-mda34-org #block-system-main a,body.domain-ados-mda34-org h2.page-header{color:#f78c26}
 body.domain-ados-mda34-org #block-system-main ul li{background:url(../images/arrow-orange.png)0 50% no-repeat}
+body.domain-ados-mda34-org #block-system-main .field-name-field-event-website a{background-color:#f78c26;color:#fff;margin:10px 0;border:0}
 body.domain-reseau-pro-mda34-org #block-system-main a,body.domain-reseau-pro-mda34-org h2.page-header{color:#575095}
 body.domain-reseau-pro-mda34-org #block-system-main ul li{background:url(../images/arrow-violet.png)0 50% no-repeat}
+body.domain-reseau-pro-mda34-org #block-system-main .field-name-field-event-website a{background-color:#575095;color:#fff;margin:10px 0;border:0}
 body.domain-radio-mda34-org #block-system-main a,body.domain-radio-mda34-org h2.page-header{color:#0080ff}
 body.domain-radio-mda34-org #block-system-main ul li{background:url(../images/arrow-blue.png)0 50% no-repeat}
+body.domain-radio-mda34-org #block-system-main .field-name-field-event-website a{background-color:#0080ff;color:#fff;margin:10px 0;border:0}
 body.front .block-kcore .block-wrapper-custom a{display:block;padding:12px 0 15px 70px}
 body.front .block-kcore .block-wrapper-custom h2{text-transform:none}
 body.front .block-kcore#block-kcore-mda-shortcut-ados .block-wrapper-custom{background:url(../images/button_fleche_ados.png)98% 50% no-repeat}
@@ -1881,21 +1887,23 @@ body.domain-www-mda34-org #home-main-container-wrapper #page-header{padding:43px
 #isotope-options ul#filters{padding:0;margin:0;background-color:#fff}
 #isotope-options ul#filters li{list-style:none;float:left;display:block;margin-right:10px;margin-bottom:8px}
 #isotope-options ul#filters li a{background-color:#cdcdcd;display:block;color:#000;text-transform:uppercase;padding:8px 14px;text-align:center;text-decoration:none}
-.node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before,body.domain-ados-mda34-org.page-faq h2.page-header:before,body.page-agenda.domain-parents-mda34-org h2.page-header:before{font-family:fontello;font-size:1em;font-weight:400;display:inline-block;text-transform:none}
-#isotope-options ul#filters li a:after{content:''}
+.node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before,body.domain-ados-mda34-org.page-faq h2.page-header:before,body.page-agenda.domain-parents-mda34-org h2.page-header:before{font-family:fontello;font-size:1em;font-weight:400;margin-right:10px;display:inline-block}
+#isotope-options ul#filters li a:after{content:'';background-image:none;margin:0}
 #isotope-options ul#filters li a.selected{background-color:#32903f;color:#fff}
 body.page-faq h2.page-header:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;color:#999;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:"\e805"}
-.isotope-element .views-field-field-faq-category-1 a:after,.isotope-element .views-field-title a:after{content:''}
 body.page-faq .view-faqs .view-header{margin-bottom:37px}
 body.page-faq .view-faqs>.view-content{min-height:900px}
+#isotope-options ul#filters li{padding:0;background-image:none}
 .isotope-element{width:278px;background:url(../images/bg_faq_green.png)0 100% no-repeat;height:auto;padding-bottom:17px}
 body.page-agenda .isotope-element img,body.page-agenda.domain-ados-mda34-org .isotope-element img{width:360px;height:240px}
 .isotope-element .views-field-field-faq-category-1{padding:20px 20px 0;background-color:#fff;border-left:1px solid #32903f;border-right:1px solid #32903f}
 .isotope-element .views-field-field-faq-category-1 a{color:#32903f!important;font-size:.8em;font-weight:lighter;padding-bottom:0;margin-bottom:0}
+.isotope-element .views-field-field-faq-category-1 a:after{content:'';background-image:none}
 .isotope-element .views-field-title{background-color:#fff;border-left:1px solid #32903f;border-right:1px solid #32903f;padding:0 20px}
 .isotope-element .views-field-title a{color:#000!important;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
+.isotope-element .views-field-title a:after{content:''}
 body.page-agenda.domain-parents-mda34-org h2.page-header{color:#32903f}
-body.page-agenda.domain-parents-mda34-org h2.page-header:before{position:relative;top:1px;speak:none;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e807"}
+body.page-agenda.domain-parents-mda34-org h2.page-header:before{position:relative;top:1px;speak:none;text-decoration:inherit;width:1em;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e807"}
 body.page-agenda .isotope-element .views-field-field-event-type-1 .field-content,body.page-agenda.domain-parents-mda34-org .isotope-element .views-field-field-address-locality{color:#32903f}
 body.page-agenda.domain-parents-mda34-org #isotope-options{background-color:transparent}
 body.page-agenda.domain-parents-mda34-org .isotope-element img{width:360px;height:240px}
@@ -1910,10 +1918,10 @@ body.page-agenda.domain-reseau-pro-mda34-org #isotope-options ul#filters li a.se
 body.domain-ados-mda34-org.page-faq #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org .isotope-element .dates-custom-wrapper{background-color:#f78c26}
 body.page-agenda.domain-ados-mda34-org .isotope-element .views-field-field-event-type-1 .field-content{color:#f78c26}
 body.page-agenda.domain-ados-mda34-org .isotope-element .h3,body.page-agenda.domain-ados-mda34-org .isotope-element .img-title-wrapper,body.page-agenda.domain-ados-mda34-org .isotope-element h3{width:auto}
-body.domain-ados-mda34-org.page-faq h2.page-header:before{position:relative;top:1px;speak:none;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e805"}
+body.domain-ados-mda34-org.page-faq h2.page-header:before{position:relative;top:1px;speak:none;text-decoration:inherit;width:1em;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e805"}
 body.domain-ados-mda34-org.page-faq .isotope-element{border-top:1px solid #32903f;padding-bottom:17px}
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-field-faq-category-1 a{color:#f78c26!important}
-.node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before{position:relative;top:1px;speak:none;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e808"}
+.node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before{position:relative;top:1px;speak:none;text-decoration:inherit;width:1em;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e808"}
 body.domain-radio-mda34-org #home-main-container-wrapper{background-color:#333}
 body.domain-radio-mda34-org #home-main-container-wrapper h2.icon-radio{color:#fff;background:url(../images/ondes_radio.png)97% 50% no-repeat;margin-bottom:15px;margin-top:-10px}
 body.domain-radio-mda34-org #home-main-container-wrapper h2.icon-radio:before{font-size:1em}
@@ -1948,7 +1956,7 @@ body.page-annuaire #views-exposed-form-structures-list-structures label{color:#5
 body.page-annuaire #views-exposed-form-structures-list-structures button{background-color:#575095;text-transform:uppercase;margin-top:26px}
 body.page-annuaire table.views-table{margin-top:33px}
 body.page-annuaire table.views-table th{background-color:#575095;color:#fff;border:2px solid #fff}
-body.page-annuaire table.views-table th a{color:#fff}
+body.page-annuaire table.views-table th a{color:#fff!important}
 body.page-annuaire table.views-table tr.odd{background-color:#e9e9e9}
 body.page-annuaire table.views-table tr.even{background-color:#cdcdcd}
 body.page-annuaire table.views-table td{border:2px solid #fff}
@@ -1957,12 +1965,17 @@ body.page-annuaire table.views-table td.views-field-title a{font-weight:700;colo
 .page-actualites .view-news a>img{float:left;margin-right:30px;max-width:33.33%}
 .page-actualites .view-news.view-display-id-news_last_news a>img{max-width:48%}
 .page-actualites .view-news .views-row{border-bottom:1px solid #999;margin-bottom:10px}
-.page-actualites .view-news .views-row .views-field-view-node{float:right}
-.page-actualites .view-news .views-row .views-field-view-node:after{content:'';display:block;clear:both;height:10px;border:5px solid red;float:none}
-.page-actualites .view-news .views-row .views-field-view-node a{display:block;padding-left:16px;background:url(../images/lire_suite.gif)0 50% no-repeat;text-transform:uppercase;text-decoration:none}
+.page-actualites .view-news .views-row .news-item-fields:after{content:'';display:block;clear:both;height:10px;margin:10px 0;float:none}
+div.node-event .group-event-infos-1 .field-name-field-address,div.node-event .group-event-infos-1 .field-name-field-public{clear:left}
+.page-actualites .view-news .views-row .news-item-fields>a{display:block;padding-left:16px;background:url(../images/lire_suite.gif)0 50% no-repeat;text-transform:uppercase;text-decoration:none;float:right}
 .node-type-news .node-news .group-submitted-socialnetworks{border-bottom:1px solid #cdcdcd;margin-bottom:10px;height:50px}
 .node-type-news .node-news .group-submitted-socialnetworks .field-name-submitted-by{float:left}
 .node-type-news .node-news .group-submitted-socialnetworks .sharethis-buttons{float:right}
 .node-type-event h2.page-header:before,.page-agenda h2.page-header:before{position:relative;top:1px;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e807"}
 .page-formations h2.page-header:before{position:relative;top:1px;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e806"}
 .page-agenda .view-events.icon-doc:before{content:''}
+div.node-event .group-event-infos-1{border-bottom:1px solid #cdcdcd;margin-bottom:20px;padding-bottom:20px}
+div.node-event .group-event-infos-1 .field-name-field-event-dates,div.node-event .group-event-infos-1 .field-name-field-event-type{float:left;margin-right:10px}
+div.node-event .group-event-infos-1 .field-name-field-public .field-item,div.node-event .group-event-infos-1 .field-name-field-public .field-label{float:left;margin-right:10px}
+div.node-event .group-event-infos-1 .field-name-field-address .field-item>div{float:left;padding-right:5px}
+div.node-event .group-event-infos-1 .field-name-field-address .field-item>div div.thoroughfare:after,div.node-event .group-event-infos-1 .field-name-field-address .field-item>div span.locality:after{content:" -"}
