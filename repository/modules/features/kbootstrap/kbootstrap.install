@@ -1,0 +1,14 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: chris
+ * Date: 19/06/15
+ * Time: 08:09
+ */
+
+/**
+ * Activates ds_bootstrap_layouts module.
+ */
+function kbootstrap_update_7001() {
+  module_enable(array('ds_bootstrap_layouts'));
+}
