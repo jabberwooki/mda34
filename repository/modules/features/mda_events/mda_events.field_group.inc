@@ -29,6 +29,7 @@ function mda_events_field_group_info() {
       3 => 'field_address',
       4 => 'field_event_dates',
       5 => 'field_public',
+      6 => 'sharethis',
     ),
     'format_type' => 'div',
     'format_settings' => array(

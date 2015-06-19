@@ -104,7 +104,7 @@ function mda_events_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '8',
+            'weight' => '7',
             'visible' => TRUE,
           ),
         ),
@@ -118,7 +118,7 @@ function mda_events_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '1',
+            'weight' => '7',
             'visible' => TRUE,
           ),
         ),
@@ -126,6 +126,155 @@ function mda_events_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__event'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_registration__event_registration';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => TRUE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'registration_form' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(
+        'redirect' => array(
+          'weight' => '4',
+        ),
+        'who_is_registering' => array(
+          'weight' => '0',
+        ),
+        'anon_mail' => array(
+          'weight' => '3',
+        ),
+      ),
+      'display' => array(
+        'mail' => array(
+          'default' => array(
+            'weight' => '2',
+            'visible' => TRUE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'registration_form' => array(
+            'weight' => '2',
+            'visible' => TRUE,
+          ),
+        ),
+        'host_entity_link' => array(
+          'default' => array(
+            'weight' => '9',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'registration_form' => array(
+            'weight' => '9',
+            'visible' => FALSE,
+          ),
+        ),
+        'created' => array(
+          'default' => array(
+            'weight' => '7',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'registration_form' => array(
+            'weight' => '7',
+            'visible' => FALSE,
+          ),
+        ),
+        'updated' => array(
+          'default' => array(
+            'weight' => '8',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'registration_form' => array(
+            'weight' => '8',
+            'visible' => FALSE,
+          ),
+        ),
+        'spaces' => array(
+          'default' => array(
+            'weight' => '6',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'registration_form' => array(
+            'weight' => '6',
+            'visible' => FALSE,
+          ),
+        ),
+        'author' => array(
+          'default' => array(
+            'weight' => '5',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'registration_form' => array(
+            'weight' => '5',
+            'visible' => FALSE,
+          ),
+        ),
+        'user' => array(
+          'default' => array(
+            'weight' => '3',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'registration_form' => array(
+            'weight' => '3',
+            'visible' => FALSE,
+          ),
+        ),
+        'state' => array(
+          'default' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'registration_form' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
+    ),
+  );
+  $export['field_bundle_settings_registration__event_registration'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

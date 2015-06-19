@@ -30,10 +30,10 @@ function mda_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'field_formatter_class' => 'col-sm-6',
+          'field_formatter_class' => '',
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -353,7 +353,7 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 18,
       ),
       'list' => array(
         'label' => 'above',
@@ -492,12 +492,12 @@ function mda_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'field_formatter_class' => 'col-sm-6',
+          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => 'medium',
         ),
         'type' => 'image',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'list' => array(
         'label' => 'above',
@@ -590,7 +590,7 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'list' => array(
         'label' => 'above',
@@ -720,7 +720,7 @@ function mda_events_field_default_field_instances() {
           'field_formatter_class' => 'btn btn-success',
         ),
         'type' => 'link_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'above',
@@ -916,7 +916,7 @@ function mda_events_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'registration',
         'settings' => array(
           'field_formatter_class' => '',
@@ -926,13 +926,13 @@ function mda_events_field_default_field_instances() {
         'weight' => 7,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'registration',
         'settings' => array(
           'field_formatter_class' => '',
         ),
         'type' => 'registration_form',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -953,7 +953,7 @@ function mda_events_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_registration',
-    'label' => 'Pré-inscription',
+    'label' => 'Inscription',
     'required' => 0,
     'settings' => array(
       'default_registration_settings' => array(
@@ -1080,6 +1080,176 @@ function mda_events_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'registration-event_registration-field_registrant_firstname'
+  $field_instances['registration-event_registration-field_registrant_firstname'] = array(
+    'bundle' => 'event_registration',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'registration_form' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'registration',
+    'field_name' => 'field_registrant_firstname',
+    'label' => 'Prénom',
+    'required' => 1,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'context' => 'debug',
+      'context_default' => 'sdl_editor_representation',
+      'dnd_enabled' => 0,
+      'linkit' => array(
+        'button_text' => 'Rechercher',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'mee_enabled' => 0,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'registration-event_registration-field_registrant_lastname'
+  $field_instances['registration-event_registration-field_registrant_lastname'] = array(
+    'bundle' => 'event_registration',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'registration_form' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'registration',
+    'field_name' => 'field_registrant_lastname',
+    'label' => 'Nom',
+    'required' => 1,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'context' => 'debug',
+      'context_default' => 'sdl_editor_representation',
+      'dnd_enabled' => 0,
+      'linkit' => array(
+        'button_text' => 'Rechercher',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'mee_enabled' => 0,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Coordonnées géographiques');
@@ -1088,10 +1258,12 @@ function mda_events_field_default_field_instances() {
   t('Descriptif');
   t('Email du gestionnaire');
   t('Image');
+  t('Inscription');
   t('Lieu de l\'événement');
+  t('Nom');
   t('Organisateur');
   t('Organisateur non enregistré');
-  t('Pré-inscription');
+  t('Prénom');
   t('Public concerné');
   t('Site web');
   t('Type d\'événement');
