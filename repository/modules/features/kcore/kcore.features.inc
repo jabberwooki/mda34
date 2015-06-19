@@ -49,6 +49,12 @@ function kcore_features_date_format_default() {
     'type' => 'custom',
     'locked' => 0,
   );
+  $fdf_config[] = array(
+    'dfid' => 50,
+    'format' => 'd/m/Y',
+    'type' => 'custom',
+    'locked' => 0,
+  );
   return $fdf_config;
 }
 
@@ -63,6 +69,13 @@ function kcore_features_date_type_default() {
     'module' => '',
     'type' => 'mda_year',
     'title' => 'Année',
+    'locked' => 0,
+  );
+  $fdt_config[] = array(
+    'is_new' => FALSE,
+    'module' => '',
+    'type' => 'short_no_time',
+    'title' => 'Court sans heure',
     'locked' => 0,
   );
   return $fdt_config;

@@ -104,6 +104,13 @@ function kcore_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_format_short_no_time';
+  $strongarm->value = 'd/m/Y';
+  $export['date_format_short_no_time'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'file_public_path';
   $strongarm->value = 'sites/default/files';
   $export['file_public_path'] = $strongarm;
