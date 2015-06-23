@@ -214,15 +214,28 @@ body.domain-ados-mda34-org.page-faq{
       }
     }
   }
+  .view-display-id-page_faqs{
+    background-color: @orange-mda;
+  }
   .isotope-element{
-    border-top: 1px solid @green-mda;
+    background: transparent url(../images/bg_faq_orange.png) no-repeat 0 100%;
+    border-top: 1px solid @orange-mda;
     padding-bottom: 17px;
     .views-field-field-faq-category-1{
-
+      border-left: 1px solid @orange-mda;
+      border-right: 1px solid @orange-mda;
       a{
         color: @orange-mda !important;
+      }
+    }
+    .views-field-title{
+      border-left: 1px solid @orange-mda;
+      border-right: 1px solid @orange-mda;
+      a:after {
+        background: url('../images/arrow-orange.png') no-repeat scroll 0% 0% transparent;
       }
     }
 
   }
 }
+

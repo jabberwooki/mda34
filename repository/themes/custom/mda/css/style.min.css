@@ -1375,7 +1375,7 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .hidden,.visible-lg,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block,.visible-md,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-sm,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-xs,.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block{display:none!important}
 .invisible{visibility:hidden}
 .text-hide{font:0/0 a;color:transparent;background-color:transparent;border:0}
-#block-boxes-radio-faq-link h3:before,#block-mailchimp-signup-newsletter h3.block-title:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before,.group-link-resources .field-items:before,.node-type-event h2.page-header:before,.node-type-news h2.page-header:before,.node-type-radio-programme h2.page-header:before,.node-type-resource h2.page-header:before,.page-actualites h2.page-header:before,.page-agenda h2.page-header:before,.page-emissions h2.page-header:before,.page-formations h2.page-header:before,.page-ressources h2.page-header:before,[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before,body.domain-ados-mda34-org.page-faq h2.page-header:before,body.page-agenda.domain-parents-mda34-org h2.page-header:before,body.page-annuaire h2.page-header:before{font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased}
+#block-boxes-radio-faq-link h3:before,#block-mailchimp-signup-newsletter h3.block-title:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before,#block-views-multimedia-block-last-video h3.block-title:before,.node-type-event h2.page-header:before,.node-type-news h2.page-header:before,.node-type-radio-programme h2.page-header:before,.node-type-resource h2.page-header:before,.page-actualites h2.page-header:before,.page-agenda h2.page-header:before,.page-emissions h2.page-header:before,.page-formations h2.page-header:before,.page-ressources h2.page-header:before,[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before,body.domain-ados-mda34-org.page-faq h2.page-header:before,body.page-agenda.domain-parents-mda34-org h2.page-header:before,body.page-annuaire h2.page-header:before,body.page-faq h2.page-header:before{font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased}
 .hidden{visibility:hidden!important}
 .affix{position:fixed}
 @-ms-viewport{width:device-width}
@@ -1625,6 +1625,8 @@ a#main-content{height:1px;overflow:hidden}
 #block-system-main ul{padding:0;margin:0}
 #block-system-main ul li{list-style:none;padding-left:15px;background:url(../images/arrow-black.png)0 50% no-repeat}
 .no-marg-padd,body{margin:0;padding:0}
+.stButton .st-facebook-counter,.stButton .st-twitter-counter{height:22px!important}
+.st_fblike_hcount{margin-left:-15px;margin-top:-2px}
 [class*=" node-type-"] h2.page-header{text-transform:none}
 [class*=" node-type-"] div.node img{max-width:47%;float:left;margin-right:18px}
 @font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix)format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294)format('woff'),url(../images/fontello/font/fontello.ttf?90885294)format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello)format('svg');font-weight:400;font-style:normal}
@@ -1648,6 +1650,8 @@ body{background-color:#fff}
 .navbar-inverse{background:url(../images/bg_header.jpg)50% -43px no-repeat #f8f8f8;border-color:#fff!important}
 body.front #block-views-slides-block-portal-zoom,body.front.domain-radio-mda34-org .main-container{margin-top:100px}
 body.front:not(.domain-www-mda34-org) #home-main-container-wrapper{margin-top:76px}
+body.front.logged-in:not(.domain-www-mda34-org) #home-main-container-wrapper{margin-top:106px}
+body.front.logged-in.domain-radio-mda34-org #home-main-container-wrapper{margin-top:126px}
 body:not(.front) .main-container{margin-top:120px}
 #navbar{margin-top:0}
 #navbar .container.row{margin:0 auto}
@@ -1785,10 +1789,16 @@ body.domain-reseau-pro-mda34-org #search-block-form .btn{background-color:#57509
 #block-boxes-radio-faq-link{background:url(../images/bg-faq-ado.png)no-repeat;margin-top:22px;height:168px}
 #block-boxes-radio-faq-link h3{background-color:#009ee0;color:#fff;display:inline-block;margin:0;border:0;padding:5px 20px 5px 5px}
 #block-boxes-radio-faq-link h3:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;text-transform:none;line-height:1em;-moz-osx-font-smoothing:grayscale;content:"\e805";color:#fff}
-#block-boxes-radio-faq-link a,body.front .block-kcore a h2{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
-#block-boxes-radio-faq-link a{display:block;color:#333;font-size:1.7em;padding:20px 80px 0 45px;margin-bottom:0}
+#block-boxes-radio-faq-link a{display:block;color:#333;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;font-size:1.7em;padding:20px 80px 0 45px;margin-bottom:0}
 #block-boxes-radio-faq-link .boxes-box-controls{position:relative;top:-20px}
 .view-display-id-programmes_list{background-color:#fff}
+#block-views-multimedia-block-last-video{position:relative}
+#block-views-multimedia-block-last-video .view-header a{position:absolute;top:10px;right:0;color:#000;padding-right:15px;background:url(../images/arrow-black.png)100% 50% no-repeat}
+#block-views-multimedia-block-last-video h3.block-title:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e82e"}
+body.domain-parents-mda34-org #block-views-multimedia-block-last-video .view-header a{background:url(../images/arrow-green.png)100% 50% no-repeat}
+body.domain-ados-mda34-org #block-views-multimedia-block-last-video .view-header a{background:url(../images/arrow-orange.png)100% 50% no-repeat}
+body.domain-reseau-pro-mda34-org #block-views-multimedia-block-last-video .view-header a{background:url(../images/arrow-violet.png)100% 50% no-repeat}
+body.domain-radio-mda34-org #block-views-multimedia-block-last-video .view-header a{background:url(../images/arrow-blue.png)100% 50% no-repeat}
 .footer{margin-top:45px;padding-top:14px;padding-bottom:36px;border-top:1px solid #E5E5E5}
 #main-footer{background:url(../images/bg_header.jpg)50% 0 no-repeat}
 .footer-center{margin:0 auto}
@@ -1823,6 +1833,7 @@ body.domain-reseau-pro-mda34-org #block-system-main .field-name-field-event-webs
 body.domain-radio-mda34-org #block-system-main a,body.domain-radio-mda34-org h2.page-header{color:#0080ff}
 body.domain-radio-mda34-org #block-system-main ul li{background:url(../images/arrow-blue.png)0 50% no-repeat}
 body.domain-radio-mda34-org #block-system-main .field-name-field-event-website a{background-color:#0080ff;color:#fff;margin:10px 0;border:0}
+body.no-front #block-system-main ul.pagination li{background-image:none}
 body.front .block-kcore .block-wrapper-custom a{display:block;padding:12px 0 15px 70px}
 body.front .block-kcore .block-wrapper-custom h2{text-transform:none}
 body.front .block-kcore#block-kcore-mda-shortcut-ados .block-wrapper-custom{background:url(../images/button_fleche_ados.png)98% 50% no-repeat}
@@ -1840,7 +1851,7 @@ body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom a{bo
 body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom a:hover h2,body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom a:hover p{color:#575095}
 @media screen and (max-width:1200px)and (min-width:768px){body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom{background-image:none}
 }
-body.front .block-kcore a h2{color:#000;margin:0;padding:0}
+body.front .block-kcore a h2{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;color:#000;margin:0;padding:0}
 body.front .block-kcore a p{font-family:arial;color:#000;margin:0;padding:0;font-weight:700}
 .group-link-resources .field-items:before,.node-type-resource h2.page-header:before,.page-ressources h2.page-header:before{width:1em;color:#999;text-transform:none;font-size:1em;text-decoration:inherit;font-family:fontello}
 body.front .block-kcore a:hover{text-decoration:none}
@@ -1876,7 +1887,7 @@ body.domain-www-mda34-org #home-main-container-wrapper #page-header{padding:43px
 .node-type-resource h2.page-header:before,.page-ressources h2.page-header:before{position:relative;top:1px;font-weight:400;speak:none;display:inline-block;margin-right:10px;text-align:center;line-height:1em;-moz-osx-font-smoothing:grayscale;content:"\e804"}
 .group-link-resources:after,.group-link-resources:before{content:" ";display:table}
 .group-link-resources .field-items{float:left;margin-right:20px}
-.group-link-resources .field-items:before{position:relative;top:1px;font-weight:400;speak:none;display:inline-block;margin-right:10px;text-align:center;line-height:1em;-moz-osx-font-smoothing:grayscale}
+.group-link-resources .field-items:before{position:relative;top:1px;font-style:normal;font-weight:400;speak:none;display:inline-block;margin-right:10px;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .group-link-resources .field-items .field-item{display:inline}
 .group-link-resources .field-name-field-resource-type .field-items:before{content:"\e804"}
 .group-link-resources .field-name-post-date .field-items:before{content:"\e807";white-space:nowrap}
@@ -1890,7 +1901,7 @@ body.domain-www-mda34-org #home-main-container-wrapper #page-header{padding:43px
 .node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before,body.domain-ados-mda34-org.page-faq h2.page-header:before,body.page-agenda.domain-parents-mda34-org h2.page-header:before{font-family:fontello;font-size:1em;font-weight:400;margin-right:10px;display:inline-block}
 #isotope-options ul#filters li a:after{content:'';background-image:none;margin:0}
 #isotope-options ul#filters li a.selected{background-color:#32903f;color:#fff}
-body.page-faq h2.page-header:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;color:#999;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:"\e805"}
+body.page-faq h2.page-header:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e805"}
 body.page-faq .view-faqs .view-header{margin-bottom:37px}
 body.page-faq .view-faqs>.view-content{min-height:900px}
 #isotope-options ul#filters li{padding:0;background-image:none}
@@ -1900,6 +1911,7 @@ body.page-agenda .isotope-element img,body.page-agenda.domain-ados-mda34-org .is
 .isotope-element .views-field-field-faq-category-1 a{color:#32903f!important;font-size:.8em;font-weight:lighter;padding-bottom:0;margin-bottom:0}
 .isotope-element .views-field-field-faq-category-1 a:after{content:'';background-image:none}
 .isotope-element .views-field-title{background-color:#fff;border-left:1px solid #32903f;border-right:1px solid #32903f;padding:0 20px}
+body.domain-ados-mda34-org.page-faq .isotope-element .views-field-field-faq-category-1,body.domain-ados-mda34-org.page-faq .isotope-element .views-field-title{border-left:1px solid #f78c26;border-right:1px solid #f78c26}
 .isotope-element .views-field-title a{color:#000!important;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
 .isotope-element .views-field-title a:after{content:''}
 body.page-agenda.domain-parents-mda34-org h2.page-header{color:#32903f}
@@ -1915,12 +1927,13 @@ body.page-agenda .isotope-element .field-content{color:#000}
 body.page-faq.domain-parents-mda34-org .view-faqs>.view-content{background:url(../images/fond_faq_parents.png)50% 0 no-repeat}
 body.page-agenda.domain-reseau-pro-mda34-org .isotope-element .views-field-field-event-type-1 .field-content{color:#575095}
 body.page-agenda.domain-reseau-pro-mda34-org #isotope-options ul#filters li a.selected,body.page-agenda.domain-reseau-pro-mda34-org .isotope-element .dates-custom-wrapper{background-color:#575095}
-body.domain-ados-mda34-org.page-faq #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org .isotope-element .dates-custom-wrapper{background-color:#f78c26}
+body.domain-ados-mda34-org.page-faq #isotope-options ul#filters li a.selected,body.domain-ados-mda34-org.page-faq .view-display-id-page_faqs,body.page-agenda.domain-ados-mda34-org #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org .isotope-element .dates-custom-wrapper{background-color:#f78c26}
 body.page-agenda.domain-ados-mda34-org .isotope-element .views-field-field-event-type-1 .field-content{color:#f78c26}
 body.page-agenda.domain-ados-mda34-org .isotope-element .h3,body.page-agenda.domain-ados-mda34-org .isotope-element .img-title-wrapper,body.page-agenda.domain-ados-mda34-org .isotope-element h3{width:auto}
 body.domain-ados-mda34-org.page-faq h2.page-header:before{position:relative;top:1px;speak:none;text-decoration:inherit;width:1em;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e805"}
-body.domain-ados-mda34-org.page-faq .isotope-element{border-top:1px solid #32903f;padding-bottom:17px}
+body.domain-ados-mda34-org.page-faq .isotope-element{background:url(../images/bg_faq_orange.png)0 100% no-repeat;border-top:1px solid #f78c26;padding-bottom:17px}
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-field-faq-category-1 a{color:#f78c26!important}
+body.domain-ados-mda34-org.page-faq .isotope-element .views-field-title a:after{background:url(../images/arrow-orange.png)no-repeat}
 .node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before{position:relative;top:1px;speak:none;text-decoration:inherit;width:1em;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e808"}
 body.domain-radio-mda34-org #home-main-container-wrapper{background-color:#333}
 body.domain-radio-mda34-org #home-main-container-wrapper h2.icon-radio{color:#fff;background:url(../images/ondes_radio.png)97% 50% no-repeat;margin-bottom:15px;margin-top:-10px}

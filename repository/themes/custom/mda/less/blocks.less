@@ -460,7 +460,40 @@ body.domain-reseau-pro-mda34-org{
 .view-display-id-programmes_list{
   background-color: white;
 }
+/* bloc dernière vidéo ********************************************************/
+#block-views-multimedia-block-last-video{
+  position: relative;
+  .view-header a{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: @gray-base;
+    padding-right: 15px;
+    background: url(../images/arrow-black.png) no-repeat 100% 50%;
+  }
+  h3.block-title{
 
+    &:before{
+      .glyphicon();
+      content: "\e82e";
+    }
+  }
+}
+body.domain-parents-mda34-org #block-views-multimedia-block-last-video .view-header a{
+    background: url(../images/arrow-green.png) no-repeat 100% 50%;
+}
+body.domain-parents-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-green.png) no-repeat 100% 50%;
+}
+body.domain-ados-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-orange.png) no-repeat 100% 50%;
+}
+body.domain-reseau-pro-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-violet.png) no-repeat 100% 50%;
+}
+body.domain-radio-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-blue.png) no-repeat 100% 50%;
+}
 
 
 
