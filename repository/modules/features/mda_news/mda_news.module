@@ -5,3 +5,45 @@
  */
 
 include_once 'mda_news.features.inc';
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function mda_news_views_pre_render(&$view) {
+  //dpm($view);
+}
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function mda_news_block_view_alter(&$data, $block) {
+  //dpm($block);
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ * In this case, MODULE = views and DELTA = news_block_front_ados.
+ */
+function mda_news_block_view_views_news_block_front_ados_alter(&$data, $block) {
+  $replace = '<a href="http://ados.mda34' . mda_domain_suffix() . '/actualites/';
+  $data['content']['#markup'] = str_replace('<a href="/actualites/',$replace, $data['content']['#markup']);
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ * In this case, MODULE = views and DELTA = news_block_front_parents.
+ */
+function mda_news_block_view_views_news_block_front_parents_alter(&$data, $block) {
+  $replace = '<a href="http://parents.mda34' . mda_domain_suffix() . '/actualites/';
+  $data['content']['#markup'] = str_replace('<a href="/actualites/',$replace, $data['content']['#markup']);
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ * In this case, MODULE = views and DELTA = news_block_front_pros.
+ */
+function mda_news_block_view_views_news_block_front_pros_alter(&$data, $block) {
+  $replace = '<a href="http://reseau-pro.mda34' . mda_domain_suffix() . '/actualites/';
+  $data['content']['#markup'] = str_replace('<a href="/actualites/',$replace, $data['content']['#markup']);
+}
+

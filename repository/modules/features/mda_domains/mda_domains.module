@@ -16,3 +16,14 @@ function mda_domains_preprocess_menu_link(&$variables) {
 		}
 	}
 }
+
+/**
+ * Helper function
+ *
+ * @return string Domain suffix (ex: .org, .dev, .korora.fr, ...)
+ */
+function mda_domain_suffix() {
+  $current_domain = domain_get_domain();
+  $parts = explode('mda34', $current_domain['subdomain']);
+  return $parts[1];
+}
