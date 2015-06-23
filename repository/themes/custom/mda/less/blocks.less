@@ -47,7 +47,7 @@ aside.col-sm-4 h3.block-title{
 
   .img-title-wrapper{
     position: relative;
-    width: 100%;
+    width: 360px;
     min-height: 100px;
     h4{
       position: absolute;
@@ -78,8 +78,9 @@ aside.col-sm-4 h3.block-title{
       height:80px;
       overflow: hidden;
       font-weight: bold;
+      widows: 100%;
       @media (min-width:@screen-xs){
-        /*width: 360px;*/
+        width: 360px;
       }
 
       a{
@@ -206,6 +207,7 @@ body.front {
   .bg-block();
   padding: 7px 0 0 0;
   margin-top: 25px;
+  margin-bottom: 25px;
   height: 138px;
   > div.block-wrapper-custom{
     padding: 0 0 0 130px;
@@ -458,7 +460,40 @@ body.domain-reseau-pro-mda34-org{
 .view-display-id-programmes_list{
   background-color: white;
 }
+/* bloc dernière vidéo ********************************************************/
+#block-views-multimedia-block-last-video{
+  position: relative;
+  .view-header a{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: @gray-base;
+    padding-right: 15px;
+    background: url(../images/arrow-black.png) no-repeat 100% 50%;
+  }
+  h3.block-title{
 
+    &:before{
+      .glyphicon();
+      content: "\e82e";
+    }
+  }
+}
+body.domain-parents-mda34-org #block-views-multimedia-block-last-video .view-header a{
+    background: url(../images/arrow-green.png) no-repeat 100% 50%;
+}
+body.domain-parents-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-green.png) no-repeat 100% 50%;
+}
+body.domain-ados-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-orange.png) no-repeat 100% 50%;
+}
+body.domain-reseau-pro-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-violet.png) no-repeat 100% 50%;
+}
+body.domain-radio-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-blue.png) no-repeat 100% 50%;
+}
 
 
 

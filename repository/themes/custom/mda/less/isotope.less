@@ -19,6 +19,8 @@
       text-decoration: none;
       &:after{
         content: '';
+        background-image: none;
+        margin:0;
       }
       &.selected{
         background-color: @green-mda;
@@ -49,6 +51,11 @@ body.page-faq {
   }
 }
 /* Eléments isotope base + parents ********************************************/
+
+#isotope-options ul#filters li{
+  padding: 0;
+  background-image: none;
+}
 .isotope-element{
   width: 278px;
   background: transparent url(../images/bg_faq_green.png) no-repeat 0 100%;
@@ -67,6 +74,7 @@ body.page-faq {
       margin-bottom: 0;
       &:after{
         content: '';
+        background-image: none;
       }
     }
   }
@@ -206,15 +214,28 @@ body.domain-ados-mda34-org.page-faq{
       }
     }
   }
+  .view-display-id-page_faqs{
+    background-color: @orange-mda;
+  }
   .isotope-element{
-    border-top: 1px solid @green-mda;
+    background: transparent url(../images/bg_faq_orange.png) no-repeat 0 100%;
+    border-top: 1px solid @orange-mda;
     padding-bottom: 17px;
     .views-field-field-faq-category-1{
-
+      border-left: 1px solid @orange-mda;
+      border-right: 1px solid @orange-mda;
       a{
         color: @orange-mda !important;
+      }
+    }
+    .views-field-title{
+      border-left: 1px solid @orange-mda;
+      border-right: 1px solid @orange-mda;
+      a:after {
+        background: url('../images/arrow-orange.png') no-repeat scroll 0% 0% transparent;
       }
     }
 
   }
 }
+
