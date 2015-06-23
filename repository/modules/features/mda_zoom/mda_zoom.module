@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Zoom feature.
+ */
+
+include_once 'mda_zoom.features.inc';

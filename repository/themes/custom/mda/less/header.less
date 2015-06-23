@@ -1,1 +1,306 @@
-// Insert your styling here.
+.no-marg-padd{
+  margin: 0;
+  padding: 0;
+}
+body{
+  .no-marg-padd();
+  background-color: white;
+}
+
+#skip-link{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: -1000em;
+  overflow: hidden; 
+}
+/*
+*Navbar inamovible
+*******************************************************************************/
+.navbar-inverse{
+  background: #F8F8F8 url(../images/bg_header.jpg) no-repeat 50% -43px;
+  border-color: white !important;
+}
+body.front #block-views-slides-block-portal-zoom,
+body.front.domain-radio-mda34-org .main-container{
+  margin-top:100px; /*à voir en mediaqueries la hauteur doit varier*/
+}
+body.front:not(.domain-www-mda34-org) #home-main-container-wrapper {
+  margin-top:76px; /*à voir en mediaqueries la hauteur doit varier*/
+}
+body.front.logged-in:not(.domain-www-mda34-org) #home-main-container-wrapper{
+  margin-top:106px; /*à voir en mediaqueries la hauteur doit varier*/
+}
+body.front.logged-in.domain-radio-mda34-org #home-main-container-wrapper{
+  margin-top:126px;
+}
+body:not(.front) .main-container{
+  margin-top:120px;
+}
+#navbar{
+  margin-top: 0;
+  .container.row{
+    margin: 0 auto;
+  }
+}
+.navbar-header{
+  float: none;
+  a.logo {
+    margin-right: 10px;
+  }
+  .navbar-brand{
+    padding-right:0;
+  }
+  h1.navbar-brand{
+    margin-bottom: 0;
+    margin-top: 10px;
+    float: none;
+    a{
+      font-family: @baselineFontFamily;
+      color: @brand-baseline;
+      font-size: @font-size-h1;	
+      white-space: nowrap;
+      &:hover {
+        text-decoration: none;
+      }
+      @media @tablet {
+        float:left;
+      }
+      @media @wide {
+        float:right;
+      }
+      @media (max-width:@screen-xs){
+        font-size: 1em;
+        white-space: normal;
+      }
+    }
+    @media (max-width:@screen-xs){
+        margin-top: 0;
+    }
+  }  
+  .slogan{
+    font-family: @rockwellFamily;
+    width: 162px;
+    border-top: 1px solid black;
+    margin-left: 193px;
+    text-align: center;
+    @media (max-width: @screen-sm-min) {
+      text-align: left;
+      margin-left: 120px;
+      width: 140px;
+    }
+    @media (max-width:@screen-xs){
+        margin-top: 10px;
+    }
+    
+  }
+}
+/* logo adolescents ***********************************************************/
+[class*=" domain-ado"], [class*=" domain-parent"], [class*=" domain-reseau"], [class*=" domain-radio"]{
+  a.logo {
+    text-indent: -6000px;
+    width: 72px;
+    height: 83px;
+  }
+  .navbar-header{
+    .slogan{
+      margin-left: 150px;
+    }
+  }
+  h1.navbar-brand a{
+    padding-left: 28px;
+    @media @wide {
+        float: none;
+      }
+  }
+}
+/* logo adolescents ***********************************************************/
+body.domain-ados-mda34-org {
+  a.logo {
+    background: url(../images/home_ado_big.gif) no-repeat 0 0;
+  }
+  .navbar-header{
+    .slogan{
+      margin-left: 150px;
+    }
+  }
+  h1.navbar-brand a{
+    padding-left: 28px;
+  }
+}
+/* logo parents ***************************************************************/
+body.domain-parents-mda34-org {
+  a.logo {
+    background: url(../images/home_parents_big.gif) no-repeat 0 0;
+  }
+  .navbar-header{
+    .slogan{
+      margin-left: 115px;
+    }
+  }
+  h1.navbar-brand a{
+    padding-left: 25px;
+  }
+}
+/* logo parents ***************************************************************/
+body.domain-reseau-pro-mda34-org {
+  a.logo {
+    background: url(../images/home_pro_big.gif) no-repeat 0 0;
+  }
+  .navbar-header{
+    .slogan{
+      margin-left: 90px;
+    }
+  }
+  h1.navbar-brand a{
+    padding-left: 20px;
+  }
+}
+/* logo radio *****************************************************************/
+body.domain-radio-mda34-org {
+  a.logo {
+    background: url(../images/home_radio_big.gif) no-repeat 0 0;
+    width: 97px;
+  }
+  .navbar-header{
+    .slogan{
+      margin-left: 117px;
+    }
+  }
+  h1.navbar-brand a{
+    padding-left: 33px;
+  }
+}
+/*
+* Menu principal
+*******************************************************************************/
+button.navbar-toggle{
+  margin-top: -25px;
+  margin-bottom: 0;
+  @media (max-width:@screen-xs){
+    margin-top: -15px;
+    margin-right: -20px;
+  }
+}
+#main-top-menu{
+  @media (min-width: @screen-sm-min) {
+    margin-top: 60px;
+  }
+  margin-top: -5px;
+  > ul > li > a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: @gray-base;
+    display: block;
+    box-shadow: 0px 0px 2px 2px #dfdfdf;
+    border-radius: 1px;
+    margin-right: 7px;
+    background-color: white;
+    padding: 4px 6px;
+    &.active, &.active-trail{
+      color: white;
+      box-shadow: 0px 0px 0px 0px #dfdfdf;
+      background-color:  @gray-base;
+
+      &:after{
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-top-color: #000;
+        border-width: 5px;
+        margin-left: -5px;
+      }
+    }
+    &:hover{
+      color: white;
+      background-color: @gray-base;
+    }
+  }
+}
+/* Menu portail ***************************************************************/
+body.domain-www-mda34-org #main-top-menu > ul > li > a{
+  &.link-menu-ado:hover{
+    color: white;
+    background-color: @orange-mda;
+  }
+  &.link-menu-parents:hover{
+    color: white;
+    background-color: @green-mda;
+  }
+  &.link-menu-pro:hover{
+    color: white;
+    background-color: @violet-mda;
+  }
+  &.link-menu-radio:hover{
+    color: white;
+    background-color: @blue-mda;
+  }
+}
+/* Menu ados ******************************************************************/
+body.domain-ados-mda34-org #main-top-menu{
+  > ul > li > a{
+    &.active, &.active-trail{
+      background-color: @orange-mda;
+      &:after{
+        border-top-color: @orange-mda;
+      }
+
+    }
+    &:hover{
+      color: white;
+      background-color: @orange-mda;
+    }
+  }
+}
+/* Menu parents ******************************************************************/
+body.domain-parents-mda34-org #main-top-menu{
+  > ul > li > a{
+    &.active, &.active-trail{
+      background-color: @green-mda;
+      &:after{
+        border-top-color: @green-mda;
+      }
+    }
+    &:hover{
+      color: white;
+      background-color: @green-mda;
+    }
+  }
+}
+/* Menu pros ******************************************************************/
+body.domain-reseau-pro-mda34-org #main-top-menu{
+  > ul > li > a{
+    &.active, &.active-trail{
+      background-color: @violet-mda;
+      &:after{
+        border-top-color: @violet-mda;
+      }
+    }
+    &:hover{
+      color: white;
+      background-color: @violet-mda;
+    }
+  }
+}
+/* Menu radio ******************************************************************/
+body.domain-radio-mda34-org #main-top-menu{
+  > ul > li > a{
+    &.active, &.active-trail{
+      background-color: @cyan-mda;
+      &:after{
+        border-top-color: @cyan-mda;
+      }
+    }
+    &:hover{
+      color: white;
+      background-color: @cyan-mda;
+    }
+  }
+}
+

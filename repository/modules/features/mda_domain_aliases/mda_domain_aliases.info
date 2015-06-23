@@ -1,0 +1,14 @@
+name = Domain aliases
+core = 7.x
+package = App
+version = 7.x-1.0
+project = mda_domain_aliases
+dependencies[] = domain_alias
+features[domain_alias][] = ados_mda34_org
+features[domain_alias][] = parents_mda34_org
+features[domain_alias][] = philado_mda34_org
+features[domain_alias][] = radio_mda34_org
+features[domain_alias][] = reseau_pro_mda34_org
+features[domain_alias][] = www_mda34_org
+features[features_api][] = api:2
+project path = profiles/mda/modules/features

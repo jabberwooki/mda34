@@ -1,0 +1,47 @@
+.page-agenda h2.page-header:before, .node-type-event h2.page-header:before{
+  .glyphicon();
+  content: "\e807";
+}
+.page-formations h2.page-header:before{
+  .glyphicon();
+  content: "\e806";
+}
+/* cas de l'icône de doc (.icon-doc) que l'on est pas arrivé à enlever */
+.page-agenda .view-events.icon-doc:before{
+  content: '';
+}
+div.node-event {
+  .group-event-infos-1{
+    border-bottom: 1px solid @gray-lighter;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    .field-name-field-event-type, .field-name-field-event-dates{
+      float: left;
+      margin-right: 10px;
+    }
+    .field-name-field-public{
+      clear: left;
+      .field-label, .field-item{
+        float: left;
+        margin-right: 10px;
+      }
+    }
+    .field-name-field-address{
+      clear: left;
+      .field-item > div{
+        float: left;
+        padding-right: 5px;
+        div.thoroughfare:after{
+          content: " -";
+        }
+        span.locality:after{
+          content: " -";
+        }
+      }
+    }
+    .sharethis-buttons{
+
+    }
+  }
+
+}

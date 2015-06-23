@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Code for the Radio feature.
+ */
+
+include_once 'mda_radio.features.inc';
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function mda_radio_block_view_alter(&$data, $block) {
+  if (isset($block->context) && $block->context == "radio_front_portal") {
+    $replace = '<a href="http://radio.mda34' . mda_domain_suffix() . '/';
+    $data['content']['#markup'] = str_replace('<a href="/',$replace, $data['content']['#markup']);
+  }
+}

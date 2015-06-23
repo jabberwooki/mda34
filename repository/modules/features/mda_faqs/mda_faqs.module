@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ * Code for the FAQs feature.
+ */
+
+include_once 'mda_faqs.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mda_faqs_form_faq_node_form_alter(&$form, &$form_state, $form_id) {
+	// Large weight value pushes "Paramétrages MDA supplémentaires" tab down the list of vertical tabs
+	$form['#groups']['group_additionnal_settings']->weight = 1000;
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ * In this case, MODULE = views and DELTA = faqs_block_front_ados.
+ */
+function mda_faqs_block_view_views_faqs_block_front_ados_alter(&$data, $block) {
+  $replace = '<a href="http://ados.mda34' . mda_domain_suffix() . '/faq/';
+  $data['content']['#markup'] = str_replace('<a href="/faq/',$replace, $data['content']['#markup']);
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ * In this case, MODULE = views and DELTA = news_block_front_parents.
+ */
+function mda_faqs_block_view_views_faqs_block_front_parents_alter(&$data, $block) {
+  $replace = '<a href="http://parents.mda34' . mda_domain_suffix() . '/faq/';
+  $data['content']['#markup'] = str_replace('<a href="/faq/',$replace, $data['content']['#markup']);
+}

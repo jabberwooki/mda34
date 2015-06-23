@@ -1,0 +1,54 @@
+.page-actualites h2.page-header:before, .node-type-news h2.page-header:before{
+  .glyphicon();
+  content: "\e804";
+}
+.page-actualites .view-news{
+  a > img {
+    float: left;
+    margin-right: 30px;
+    max-width: 33.33%;
+  }
+  &.view-display-id-news_last_news {
+    a > img {
+      max-width: 48%;
+    }
+  }
+  .views-row{
+    border-bottom: 1px solid @gray-light;
+    margin-bottom: 10px;
+    .news-item-fields{
+      &:after{
+        content: '';
+        display: block;
+        clear: both;
+        height: 10px;
+        margin: 10px 0;
+        float: none;
+      }
+      &>a{
+        display: block;
+        padding-left: 16px;
+        background: url(../images/lire_suite.gif) no-repeat 0 50%;
+        text-transform: uppercase;
+        text-decoration: none;
+        float: right;
+      }
+    }
+  }
+
+}
+.node-type-news .node-news{
+
+  .group-submitted-socialnetworks{
+    border-bottom: 1px solid @gray-lighter;
+    margin-bottom: 10px;
+    height: 50px;
+    .field-name-submitted-by{
+      float: left;
+    }
+    .sharethis-buttons{
+      float: right;
+    }
+  }
+
+}

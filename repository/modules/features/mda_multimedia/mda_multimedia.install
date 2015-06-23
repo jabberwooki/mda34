@@ -1,0 +1,14 @@
+<?php
+/**
+ * Activate scald_dailymotion and scald_vimeo modules.
+ */
+function mda_multimedia_update_7001() {
+	module_enable(array('scald_dailymotion','scald_vimeo'));
+}
+
+/**
+ * Activate views_autocomplete_filters module.
+ */
+function mda_multimedia_update_7002() {
+	module_enable(array('views_autocomplete_filters'));
+}

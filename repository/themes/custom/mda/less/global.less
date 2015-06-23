@@ -1,0 +1,203 @@
+a{
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 14px;
+}
+
+nav.shrink .navbar-brand {
+  background: url("../images/logo-mda34_60px.png") no-repeat;
+  font-size: 16px;
+  width: auto;
+  padding-left: 70px;
+  height: 70px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+
+#page-header{
+  padding-top: 24px;
+}
+.zoom .block.block-views{
+  border: 0;
+  margin-bottom: 20px;
+}
+.no-content{
+  text-indent: -9000px;
+  display: block;
+}
+img{
+  max-width: 100%;
+}
+h2,h3,h4{
+  font-family: @rockwellFamily;
+  text-transform: uppercase;
+}
+p{
+  font-family: arial;
+}
+.no-padding-margin{
+  padding: 0;
+  margin: 0;
+}
+a#main-content{
+  height: 1px;
+  overflow: hidden;
+}
+
+
+/* Couleurs *******************************************************************/
+.orange {color: @orange-mda;}  /* Ados */
+.black  {color: @gray-base;}   /* */
+.green  {color: @green-mda;}   /* Parents*/
+.violet {color: @violet-mda;}  /* Pros */
+.blue   {color: @blue-mda;}    /* philado */
+.cyan   {color: @cyan-mda;}    /* radio */
+
+/* onglets ********************************************************************/
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  background-color: @gray-lighter;
+}
+/* liens raccourcis ***********************************************************/
+#block-menu-menu-shortcuts {
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    top: 500px;
+    margin-top: -100px;
+    z-index: 5000;
+    color: #FFF;
+    text-align: center;
+    a{
+      box-shadow: -1px 1px 5px 0 rgba(0,0,0,.2);
+    }
+    .link-shortcut-faq{
+      background-color: @blue-mda;
+      color: white;
+      &:hover{
+        background-color: @gray-darker;
+      }
+    }
+    .link-shortcut-contact{
+      background-color: @deep-blue-mda;
+      color: white;
+      &:hover{
+        background-color: @gray-darker;
+      }
+    }
+    .link-shortcut-login{
+      background-color: white;
+      color: @gray-base;
+      &:hover{
+        background-color: @gray-darker;
+        color: white;
+      }
+      
+    }
+    [class*=" icon-"]:before{
+      color: white;
+    }
+    .icon-person:before{
+      color: @gray-base;
+      &:hover{
+        color: white;
+      }
+    }
+    .nav > li{ 
+      text-align: right;
+      height: auto;
+      
+      > a{
+        display: inline-block;
+        padding: 5px 12px 5px 10px;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 14px;
+        &:before{
+          margin-right: 6px;
+          color: white;
+        }
+        &.link-shortcut-faq:before{
+          .glyphicon();
+          content: "\e805";
+          color: white;
+        }
+        &.link-shortcut-login:before{
+          .glyphicon();
+          content: "\e80A";
+          color: @gray-base;
+        }
+      }
+    }
+}
+/* PROS ***********************************************************************/
+.domain-reseau-pro-mda34-org {
+  h2, h3, h4{
+    color: @violet-mda;
+    a{
+      color: @violet-mda;
+    }
+  }
+}
+
+/* Retour accueil *************************************************************/
+#block-menu-menu-top-menu{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  a{
+    color: @gray-base;
+    display: block;
+    padding-left: 25px;
+    font-family: @fontAwesome;
+    background: url(../images/retour-accueil.png) no-repeat 3px 10px;
+    &:hover{
+      background: @gray-base url(../images/retour-accueil.png) no-repeat 3px -75px;
+      color: white;
+    }
+  }
+}
+/* Puces dans texte *************************************************************/
+#block-system-main {
+  a{
+    color: @gray-darker;
+    &:hover{
+    color: @gray-base;
+    }
+    &:visited{
+      color: @gray;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      padding-left: 15px;
+      background: url(../images/arrow-black.png) no-repeat 0 50%;
+    }
+  }
+}
+
+/* Boutons réseaux sociaux *******************************************************/
+.stButton .st-twitter-counter, .stButton .st-facebook-counter {
+  height: 22px !important;
+}
+.st_fblike_hcount{
+  margin-left: -15px;
+  margin-top: -2px;
+}

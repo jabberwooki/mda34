@@ -10,6 +10,7 @@ projects[diff][version] = "3.2"
 
 projects[features_diff][subdir] = contrib
 projects[features_diff][version] = "1.0-beta1"
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/features_diff-undefined_constant_menu_item-2145859-6-D7.patch"
 
 projects[filter_perms][subdir] = contrib
 projects[filter_perms][version] = "1.0"

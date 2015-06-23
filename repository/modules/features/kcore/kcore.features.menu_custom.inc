@@ -22,11 +22,25 @@ function kcore_menu_default_menu_custom() {
     'title' => 'Footer menu',
     'description' => '',
   );
+  // Exported menu: menu-shortcuts.
+  $menus['menu-shortcuts'] = array(
+    'menu_name' => 'menu-shortcuts',
+    'title' => 'Raccourcis',
+    'description' => '',
+  );
+  // Exported menu: menu-top-menu.
+  $menus['menu-top-menu'] = array(
+    'menu_name' => 'menu-top-menu',
+    'title' => 'Top menu',
+    'description' => '',
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Footer menu');
   t('Main menu');
+  t('Raccourcis');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
+  t('Top menu');
 
 
   return $menus;

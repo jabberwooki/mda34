@@ -1,0 +1,46 @@
+.page-ressources h2.page-header:before, .node-type-resource h2.page-header:before{
+  .glyphicon();
+  content: "\e804";
+}
+.group-link-resources{
+  .clearfix();
+  .field-items{
+    float: left;
+    margin-right: 20px;
+    &:before {
+      .glyphicon();
+    }
+    .field-item{
+      display: inline;
+    }
+  }
+  .field-name-field-resource-type .field-items:before{
+    content: "\e804";
+  }
+  .field-name-post-date{ 
+    /*padding-left: 30px;*/
+    .field-items:before{
+      /*content: "Publié le \e807 : ";*/
+      content: "\e807";
+      white-space: nowrap;
+    }
+  }
+  .field-name-field-themes .field-items{
+    &:before{
+      content: "\e82a";
+    }
+    a:after{
+      content: " - "
+    }
+  }
+}
+.node-type-resource{
+  .group-practical-infos{
+    border: 1px solid white;
+  }
+  .field-type-taxonomy-term-reference .field-item{
+    float: left;
+    margin-right: 15px;
+  }
+}
+

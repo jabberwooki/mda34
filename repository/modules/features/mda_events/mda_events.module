@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file
+ * Code for the Events feature.
+ */
+
+include_once 'mda_events.features.inc';
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ * In this case, MODULE = views and DELTA = events_block_front_ados.
+ */
+function mda_events_block_view_views_events_block_front_ados_alter(&$data, $block) {
+  $replace = '<a href="http://ados.mda34' . mda_domain_suffix() . '/agenda/';
+  $data['content']['#markup'] = str_replace('<a href="/agenda/',$replace, $data['content']['#markup']);
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ * In this case, MODULE = views and DELTA = events_block_front_parents.
+ */
+function mda_events_block_view_views_events_block_front_parents_alter(&$data, $block) {
+  $replace = '<a href="http://parents.mda34' . mda_domain_suffix() . '/agenda/';
+  $data['content']['#markup'] = str_replace('<a href="/agenda/',$replace, $data['content']['#markup']);
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ * In this case, MODULE = views and DELTA = events_block_front_pros.
+ */
+function mda_events_block_view_views_events_block_front_pros_alter(&$data, $block) {
+  $replace = '<a href="http://reseau-pro.mda34' . mda_domain_suffix() . '/agenda/';
+  $data['content']['#markup'] = str_replace('<a href="/agenda/',$replace, $data['content']['#markup']);
+}
+
+/**
+ * Implements hook_block_view_MODULE_DELTA_alter().
+ * In this case, MODULE = views and DELTA = events_block_front_training.
+ */
+function mda_events_block_view_views_events_block_front_trainings_alter(&$data, $block) {
+  $replace = '<a href="http://reseau-pro.mda34' . mda_domain_suffix() . '/agenda/';
+  $data['content']['#markup'] = str_replace('<a href="/agenda/',$replace, $data['content']['#markup']);
+}

@@ -1,1 +1,80 @@
-// Insert your styling here.
+.footer {
+  margin-top: 45px;
+  padding-top: 14px;
+  padding-bottom: 36px;
+  border-top: 1px solid #E5E5E5;
+}
+#main-footer{
+  background: url(../images/bg_header.jpg) no-repeat 50% 0; 
+}
+.footer-center{
+  margin: 0 auto;
+  @media (min-width: @container-desktop) {
+    width: 600px;
+    text-align: center;
+  }
+  @media (max-width: @container-desktop){
+    width: auto;
+    div > section > div > div{
+      text-align: center;
+    }
+  }
+  /* social icons ***************************************************************/
+  a.icon-social{
+    font-size: 2em;
+    display: inline-block;
+    &:before{
+      color: @gray-base;
+      margin: 0 20px 0 0;
+      padding: 0;
+      width: 30px;
+      overflow: hidden;
+    }
+    &.icon-gplus:before{/* last has no right margin */
+      margin: 0;
+    }
+    &.icon-twitter:hover:before{
+      color: @blue-twitter;
+    }
+    &.icon-youtube:hover:before{
+      color: @red-youtube;
+    }
+    &.icon-facebook:hover:before{
+      color: @blue-facebook;
+    }
+    &.icon-gplus:hover:before{
+      color: @orange-gplus;
+    }
+
+    @media (max-width: @container-desktop){
+      &:before{
+        font-size: 2em;
+        margin: 0 34px 0 0;
+        width: auto;
+      }
+    }
+  }
+  .logo-footer{
+    display: block;
+    text-align: center;
+  }
+  
+}
+
+/* Menu bas **********************************************************************/
+#block-menu-menu-footer-menu ul.menu {
+  text-align: center;
+  padding: 0;
+  li {
+    display: inline-block;
+    a{
+      color: black;
+      &:hover{
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+

@@ -18,3 +18,252 @@ function empty_front_page_callback() {
 	drupal_set_title('');
 	return array();
 }
+
+/**
+ * Implements hook_block_info().
+ */
+function kcore_block_info() {
+	$blocks = array();
+	$blocks['mda_shortcut_ados'] = array(
+			'info' => t('MDA : Bloc raccourci adolescents'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+	$blocks['mda_shortcut_parents'] = array(
+			'info' => t('MDA : Bloc raccourci parents'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+	$blocks['mda_shortcut_pros'] = array(
+			'info' => t('MDA : Bloc raccourci pros'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+	$blocks['mda_filsantejeunes'] = array(
+			'info' => t('MDA : Lien Fil Santé Jeunes'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+	
+	$blocks['mda_radio_partenaires'] = array(
+			'info' => t('MDA : Lien vers les partenaires radios'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+
+	return $blocks;
+}
+
+/**
+ * Implements hook_block_configure().
+ *
+ * This hook declares configuration options for blocks provided by this module.
+ */
+function kcore_block_configure($delta = '') {
+	$form = array();
+	$tag_options = array('aucune' => 'aucune', 'h2' => 'h2', 'h3' => 'h3');
+	switch ($delta) {
+		case 'mda_shortcut_ados':
+			$form['mda_shortcut_ados_title'] = array(
+				'#type' => 'textfield',
+				'#title' => 'Intitulé du contenu',
+				'#size' => 60,
+				'#default_value' => variable_get('mda_shortcut_ados_title', 'Adolescents'),
+			);
+			$form['mda_shortcut_ados_title_tag'] = array(
+				'#type' => 'select',
+				'#title' => 'Balise HTML de l\'intitulé',
+				'#options' => $tag_options,
+				'#default_value' => variable_get('mda_shortcut_ados_title_tag', 'h2'),
+			);
+			$form['mda_shortcut_ados_text'] = array(
+				'#type' => 'textfield',
+				'#title' => 'Contenu',
+				'#size' => 100,
+				'#default_value' => variable_get('mda_shortcut_ados_text', 'La MDA34 répond à vos questions'),
+			);
+			$form['mda_shortcut_ados_url'] = array(
+				'#type' => 'textfield',
+				'#title' => 'Url',
+				'#size' => 100,
+				'#field_prefix' => 'http://',
+				'#default_value' => variable_get('mda_shortcut_ados_url', 'ados.mda34.org'),
+			);
+			break;
+		case 'mda_shortcut_parents':
+			$form['mda_shortcut_parents_title'] = array(
+				'#type' => 'textfield',
+				'#title' => 'Intitulé du contenu',
+				'#size' => 60,
+				'#default_value' => variable_get('mda_shortcut_parents_title', 'Parents'),
+			);
+			$form['mda_shortcut_parents_title_tag'] = array(
+				'#type' => 'select',
+				'#title' => 'Balise HTML de l\'intitulé',
+				'#options' => $tag_options,
+				'#default_value' => variable_get('mda_shortcut_parents_title_tag', 'h2'),
+			);
+			break;
+		case 'mda_shortcut_pros':
+			$form['mda_shortcut_pros_title'] = array(
+				'#type' => 'textfield',
+				'#title' => 'Intitulé du contenu',
+				'#size' => 60,
+				'#default_value' => variable_get('mda_shortcut_pros_title', 'Professionnels'),
+			);
+			$form['mda_shortcut_pros_title_tag'] = array(
+				'#type' => 'select',
+				'#title' => 'Balise HTML de l\'intitulé',
+				'#options' => $tag_options,
+				'#default_value' => variable_get('mda_shortcut_pros_title_tag', 'h2'),
+			);
+			break;
+	}
+	return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ *
+ * This hook declares how the configured options for a block
+ * provided by this module are saved.
+ */
+function kcore_block_save($delta = '', $edit = array()) {
+	switch ($delta) {
+		case 'mda_shortcut_ados':
+			variable_set('mda_shortcut_ados_title', $edit['mda_shortcut_ados_title']);
+			variable_set('mda_shortcut_ados_title_tag', $edit['mda_shortcut_ados_title_tag']);
+			variable_set('mda_shortcut_ados_text', $edit['mda_shortcut_ados_text']);
+			variable_set('mda_shortcut_ados_url', $edit['mda_shortcut_ados_url']);
+			break;
+		case 'mda_shortcut_parents':
+			variable_set('mda_shortcut_parents_title', $edit['mda_shortcut_parents_title']);
+			variable_set('mda_shortcut_parents_title_tag', $edit['mda_shortcut_parents_title_tag']);
+			break;
+		case 'mda_shortcut_pros':
+			variable_set('mda_shortcut_pros_title', $edit['mda_shortcut_pros_title']);
+			variable_set('mda_shortcut_pros_title_tag', $edit['mda_shortcut_pros_title_tag']);
+			break;
+	}
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function kcore_block_view($delta = '') {
+	switch ($delta) {
+		case 'mda_shortcut_ados':
+			$block['subject'] = '';
+			$variables['mda_shortcut_data'] = array(
+				'title_tag' => variable_get('mda_shortcut_ados_title_tag', 'h2'),
+				'title' => variable_get('mda_shortcut_ados_title', 'Adolescents'),
+				'text' => variable_get('mda_shortcut_ados_text', 'La MDA34 répond à vos questions'),
+				'url' => variable_get('mda_shortcut_ados_url', 'ados.mda34.org'),
+			);
+			$block['content'] = theme('mda_shortcut_block', $variables);
+			return $block;
+			break;
+		case 'mda_shortcut_parents':
+			$block['subject'] = '';
+			$variables['mda_shortcut_data'] = array(
+				'title_tag' => variable_get('mda_shortcut_parents_title_tag', 'h2'),
+				'title' => variable_get('mda_shortcut_parents_title', 'Parents'),
+				'text' => variable_get('mda_shortcut_parents_text', 'Comment la MDA34 vous accueille'),
+				'url' => variable_get('mda_shortcut_parents_url', 'parents.mda34.org'),
+			);
+			$block['content'] = theme('mda_shortcut_block', $variables);
+			return $block;
+			break;
+		case 'mda_shortcut_pros':
+			$block['subject'] = '';
+			$variables['mda_shortcut_data'] = array(
+				'title_tag' => variable_get('mda_shortcut_pro_title_tag', 'h2'),
+				'title' => variable_get('mda_shortcut_pros_title', 'Professionnels'),
+				'text' => variable_get('mda_shortcut_pros_text', 'Consultez nos ressources en ligne'),
+				'url' => variable_get('mda_shortcut_pros_url', 'reseau-pro.mda34.org'),
+			);
+			$block['content'] = theme('mda_shortcut_block', $variables);
+			return $block;
+			break;
+		case 'mda_filsantejeunes':
+			$block['subject'] = '';
+			
+			$href = 'http://www.filsantejeunes.com';
+			$image_filename = 'filsantejeunes.jpg';
+			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
+			$alt = 'Fil Santé Jeunes. Besoin de t\'exprimer, envie de t\'informer. 0 800 235 238, 01 44 93 30 74. Anonyme et gratuit.';
+			
+			$content = '<a href="' . $href .'" target="_blank">';
+			$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="fil-sante-jeunes">';
+			$content .= '</a>';
+			$block['content'] = $content;
+			return $block;
+		break;
+		case 'mda_radio_partenaires':
+			$block['subject'] = 'Partenaires';
+			$href = 'http://www.oaqadi.fr';
+			$image_filename = 'oaqadi.png';
+			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
+			$alt = 'Patenaire oaqadi.fr';
+			$content = '<img src="' . $image_url . '" alt="' . $alt . '" class="partenaires">';
+			$block['content'] = $content;
+			return $block;
+	}
+}
+
+/**
+ * Implements hook_theme().
+ */
+function kcore_theme() {
+	return array(
+		'mda_shortcut_block' => array(
+			'variables' => array('mda_shortcut_data' => NULL),
+			'file' => 'kcore.theme.inc',
+		),
+	);
+}
+
+/**
+ * Implements hoo_menu().
+ */
+function kcore_menu() {
+	$items['resources-restricted-access'] = array(
+			'title' => 'Accès aux ressources de la MDA34',
+			'page callback' => 'resources_restricted_page',
+			'access callback' => TRUE,
+	);
+	$items['admin/config/mda'] = array(
+			'title' => t('MDA'),
+			'description' => 'MDA settings',
+			'page callback' => 'drupal_get_form',
+			'page arguments' => array('mda_settings_form'),
+			'access arguments' => array('administer MDA'),
+			'file' => 'kcore.admin.inc',
+			'type' => MENU_NORMAL_ITEM,
+	);
+	
+	return $items;
+}
+
+/**
+ * Page callback for /resources-restricted-access.
+ */
+function resources_restricted_page() {
+	$default_text = "<p>L'accès à cette ressource est réservée aux professionnels possédant un compte sur ce site.</p>\n";
+	$default_text .= "<p><a href=" . "/user" . ">Accès au formulaire de connexion</a>.</p>\n";
+	$default_text .= '<p>Si vous êtes un professionnel et que vous ne possédez pas de compte,';
+	$default_text .= ' rendez-vous sur la page de création d\'un <a href="/user/register">nouveau compte</a>.';
+	
+	return array(
+        '#type' => 'markup',
+        '#markup' => variable_get('mda_restricted_access_text', $default_text),
+    );
+}
+
+
+/**
+ * Implements hook_node_view().
+ */
+function kcore_node_view($node, $view_mode, $langcode) {
+	// Controls access to non public resources.
+	if ($node->type == 'resource' && $view_mode == 'full') {
+		if (!user_is_logged_in() && $node->field_visibility['und'][0]['value'] == 1) {
+			drupal_goto('resources-restricted-access');
+		}
+	}
+}

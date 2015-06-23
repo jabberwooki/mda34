@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * Activate gmap and addressfield_autocomplete modules.
+ */
+function kcore_update_7001() {
+	module_enable(array('gmap','addressfield_autocomplete','geofield_map'));
+}
+
+/**
+ * Activate menu_attributes module.
+ */
+function kcore_update_7002() {
+	module_enable(array('menu_attributes'));
+}
+
+/**
+ * Activates custom_search module.
+ */
+function kcore_update_7003() {
+	module_enable(array('custom_search'));
+}
+
+/**
+ * Activates features_date_formats module.
+ */
+function kcore_update_7004() {
+	module_enable(array('features_date_formats'));
+}
+
+/**
+ * Activates email_registration and menu_trial_by_path modules.
+ */
+function kcore_update_7005() {
+  module_enable(array('email_registration','menu_trail_by_path'));
+}

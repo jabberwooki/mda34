@@ -1,0 +1,500 @@
+/* général ********************************************************************/
+.block-views h3{
+  margin-top: 10px;
+}
+aside.col-sm-4 h3.block-title{
+  font-size: 1.2em;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+.views-field-field-address-locality > .field-content{
+  padding-left: 15px;
+  font-weight: bold;
+}
+.bg-block{
+  background: url('../images/bg_blocks.gif') repeat scroll 0% 0% transparent;
+}
+/* ADOS ***********************************************************************/
+.domain-ados-mda34-org .block-social-networks h3.block-title{
+  color: white;
+}
+/* Parents ********************************************************************/
+.domain-parents-mda34-org h3.block-title{
+  color: @green-mda;
+}
+
+/* Blocks, Images link's title */
+.block{
+  &.block-views{
+    padding-bottom: 10px;
+    border:0;
+    h3{
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    p{
+      padding: 10px 15px 0 15px;
+    }
+  }
+  .views-row{
+    padding: 10px 0;
+    .views-field-title a{
+      color: @gray-base;
+    }
+    .clearfix();
+    margin-bottom: 0;
+  }
+
+  .img-title-wrapper{
+    position: relative;
+    width: 360px;
+    min-height: 100px;
+    h4{
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      background-color: @gray-base;
+      background-color: rgba(0, 0, 0, 0.5);
+      @media (min-width:@screen-xs){
+        width: 360px;
+        height: 80px;
+      }
+
+      a{
+        display: block;
+        color: white;
+        font-size: 1.1em;
+        padding: 10px 15px;
+      }
+    }
+    h3{
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      background-color: @gray-base;
+      background-color: rgba(0, 0, 0, 0.5);
+      height:80px;
+      overflow: hidden;
+      font-weight: bold;
+      widows: 100%;
+      @media (min-width:@screen-xs){
+        width: 360px;
+      }
+
+      a{
+        display: block;
+        color: white;
+        font-size: 0.8em;
+        padding: 10px 15px;
+      }
+    }
+    .dates-custom-wrapper{ /* specific to events blocks */
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      padding: 0 2px 0 5px;
+      color: white;
+      font-family: arial;
+      font-weight: bold;
+    }
+    .event-type-block, .event-location-block{ /* specific to events blocks */
+      position: absolute;
+      top: 56%;
+      left: 0;
+      display: block;
+      padding: 3px 5px;
+      background-color: @gray-base;
+      color: white;
+      z-index: 1;
+      font-family: arial;
+      font-weight: bold;
+      @media (max-width:@screen-xs){
+        top: 0;
+      }
+    }
+    .event-location-block{
+      left: auto;
+      right: 0;
+    }
+  }
+  p{
+    color: @gray-base;
+  }
+}
+/* Seuls les blocs  affichés en page d'accueil sont souligés */
+body.front {
+  .block {
+    &.block-views h3{
+      border-bottom: 1px solid @gray-lighter;
+    }
+    .views-row:not(.views-row-last){
+      border-bottom: 1px solid @gray-lighter;
+    }
+  }
+}
+
+/* Blocks agenda **************************************************************/
+.block.orange,  body.domain-ados-mda34-org #block-views-events-block-front-events{/* ados */
+  .event-type-block, .dates-custom-wrapper{ 
+    background-color: @orange-mda;
+  }
+}
+.block.green, body.domain-parents-mda34-org #block-views-events-block-front-events{/* parents */
+  .event-type-block, .dates-custom-wrapper{ 
+    background-color: @green-mda;
+  }
+}
+.block.violet{
+  .event-type-block, .img-title-wrapper .dates-custom-wrapper{ 
+    background-color: @violet-mda;
+  }
+}
+/* Titre entouré de lignes ****************************************************/
+.line-right-left{
+  overflow: hidden;
+  text-align: center;
+  &:before,&:after{
+    border-bottom: 1px solid @gray-base;
+    content: "";
+    display: inline-block;
+    height: .1em;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: .15em;
+  }
+  &:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  &:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+}
+/* bloc Pro ressources resources **********************************************/
+.block-boxes{
+  &.violet{
+    h2 a{
+      color: @violet-mda;
+    }
+    a{
+      color: @gray-base;
+      font-family: @rockwellFamily;
+      font-size: 1.4em;
+    }
+  }
+}
+#block-boxes-pros-resources-link{
+  .bg-block();
+  padding: 0;
+  margin-top: 25px;
+  > div.block-wrapper-custom{
+    padding: 0 0 0 150px;
+    margin: 0;
+    background: transparent url(../images/home_book.png) no-repeat 5px 50%;
+    border: 1px solid transparent;
+    a{
+      display: block;
+    }
+  }
+}
+/* block accueil parents ******************************************************/
+#block-boxes-parents-faq-link{
+  .bg-block();
+  padding: 7px 0 0 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 138px;
+  > div.block-wrapper-custom{
+    padding: 0 0 0 130px;
+    margin: 0;
+    background: transparent url(../images/accueil_parents.png) no-repeat 8px 50%;
+    border: 1px solid transparent;
+    a{
+      display: block;
+      color: @gray-base;
+      font-family: @rockwellFamily;
+      color: @gray-dark;
+    }
+    h2 > a{
+      color: @green-mda;
+    }
+    div > a{
+      font-family: @fontMyriad;
+      font-size: 1.6em;
+    }
+  }
+}
+/* Block radio ****************************************************************/
+.block-wrapper-custom {
+  .view-radio-programmes {
+    padding-left: 15px;
+    .view-radio-programmes .field-content a{
+      font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+      display: block;
+      color: @gray-base;
+      font-size: 1.6em;
+    }
+    h2{
+      margin-top: 0;
+      padding-top: 0;
+      line-height: 0.6em;
+      &>a{
+        font-size: 0.6em;
+        color: @gray-base;
+      }
+    }
+    .views-field-title a{
+      font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+      display: block;
+      color: @gray-base;
+      font-size: 1.6em;
+    }
+  }
+  .views-row{
+    padding: 0;
+  }
+}
+body.domain-ados-mda34-org{
+  h3.icon-radio{
+    color: @orange-mda;
+  }
+}
+/* Block recherche ************************************************************/
+#search-block-form{
+  padding: 18px;
+  background-color: @gray-ultra-light;
+  border-radius: 4px;
+  .btn{
+    font-family: arial;
+    text-transform: uppercase;
+    color: white;
+    background-color: @gray;
+    margin-left: 4px;
+  }
+}
+body.domain-reseau-pro-mda34-org{
+  #search-block-form{
+    .btn{
+      background-color: @violet-mda;
+    }
+  }
+}
+/* Block newsletter ***********************************************************/
+#block-mailchimp-signup-newsletter{
+  .bg-block();
+  padding: 0px;
+  margin-top: 45px;
+  h3.block-title{
+    background-color: @deep-blue-mda;
+    margin: 0;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.4em;
+    &:before {
+      .glyphicon();
+      content: "\e82c";
+      color: white;
+      margin-right: 10px
+    }
+  }
+  label{
+    display: inline-block;
+    width: 25%;
+    padding-left: 5%;
+    margin-top: 18px;
+    color: @deep-blue-mda;
+  }
+  input{
+    width: 70%;
+    display: inline-block;
+    margin-top: 18px;
+  }
+  button{
+    display: block;
+    width: 110px;
+    margin: 10px auto;
+    text-transform: uppercase;
+    color: white;
+    font-family: arial;
+    background-color: @deep-blue-mda;
+  }
+}
+/* block "nous suivre" ********************************************************/
+.block-social-networks{
+  .bg-block();
+  .block-wrapper-custom{
+    text-align: right;
+    margin-top: 10px;
+  }
+  margin-top: 20px;
+  h3{
+    display: inline-block;
+    background-color: @orange-mda;
+    padding: 10px 13px;
+    color: white;
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 44px 0 0 0;
+  }
+  .icon-social{
+    text-decoration: none;
+    padding:0;
+    border:0;
+    margin:0 5px 0 0;
+    height: auto;
+    width: auto;
+    &:before{
+      color: white;  
+      width: 30px;
+      height: 30px;
+      padding:5px 5px;
+      border:0;
+      margin:0;
+      font-size: 1.4em;
+    }
+  }
+  .icon-twitter{
+    background-color: @blue-twitter;
+    &:before{
+      background-color: @blue-twitter;
+    }
+  }
+  .icon-youtube{
+    background-color: @red-youtube;
+    &:before{
+      background-color: @red-youtube;
+    }
+  }
+  .icon-facebook{
+    background-color: @blue-facebook;
+    &:before{
+      background-color: @blue-facebook;
+    }
+  }
+  .icon-gplus{
+    background-color: @orange-gplus;
+    &:before{
+      background-color: @orange-gplus;
+    }
+  }
+}
+
+/* bloc "Fil santé jeunes"*****************************************************/
+#block-kcore-mda-filsantejeunes{
+  margin: 20px 0;
+}
+/* block faq ******************************************************************/
+[id*="block-views"] .views-row{
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.block-wrapper-custom .view-faqs{
+  .views-row-last{
+    a{
+      padding-bottom: 0;
+    }
+  }
+  a{
+    display: block;
+    padding-bottom: 15px;
+    font-weight: bold;
+    padding-left: 15px;
+    &:after{
+      content: "";
+      display: inline-block;
+      background: transparent url(../images/arrow-green.png) no-repeat 0 0;
+      width: 8px;
+      height: 15px;
+      margin-left: 12px;
+    } 
+  }
+}
+#block-views-faqs-block-front-ados .block-wrapper-custom .view-faqs a:after{
+  content: "";
+  display: inline-block;
+  background: transparent url(../images/arrow-orange.png) no-repeat 0 0;
+  width: 8px;
+  height: 15px;
+  margin-left: 12px;
+}
+/* bloc faq ado ***************************************************************/
+
+#block-boxes-radio-faq-link{
+  background: transparent url(../images/bg-faq-ado.png) no-repeat 0 0;
+  margin-top: 22px;
+  height: 168px;
+  h3{
+    background-color: @cyan-mda;
+    color: white;
+    &:before{
+      .glyphicon();
+      content: "\e805";
+      color: white;
+    }
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    padding: 5px 20px 5px 5px;
+  }
+  a{
+    display: block;
+    color: @gray-dark;
+    font-family: @rockwellFamily;
+    font-size: 1.7em;
+    padding: 20px 80px 0 45px;
+    margin-bottom: 0;
+  }
+  .boxes-box-controls{
+    position: relative;
+    top: -20px;
+  }
+}
+/* liste des émissions radio **************************************************/
+.view-display-id-programmes_list{
+  background-color: white;
+}
+/* bloc dernière vidéo ********************************************************/
+#block-views-multimedia-block-last-video{
+  position: relative;
+  .view-header a{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: @gray-base;
+    padding-right: 15px;
+    background: url(../images/arrow-black.png) no-repeat 100% 50%;
+  }
+  h3.block-title{
+
+    &:before{
+      .glyphicon();
+      content: "\e82e";
+    }
+  }
+}
+body.domain-parents-mda34-org #block-views-multimedia-block-last-video .view-header a{
+    background: url(../images/arrow-green.png) no-repeat 100% 50%;
+}
+body.domain-parents-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-green.png) no-repeat 100% 50%;
+}
+body.domain-ados-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-orange.png) no-repeat 100% 50%;
+}
+body.domain-reseau-pro-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-violet.png) no-repeat 100% 50%;
+}
+body.domain-radio-mda34-org #block-views-multimedia-block-last-video .view-header a{
+  background: url(../images/arrow-blue.png) no-repeat 100% 50%;
+}
+
+
+
+

@@ -13,4 +13,5 @@ features[variable][] = jquery_update_jquery_admin_version
 features[variable][] = jquery_update_jquery_cdn
 features[variable][] = jquery_update_jquery_version
 features[variable][] = theme_mda_bootstrap_settings
+features[variable][] = theme_mda_settings
 project path = profiles/mda/modules/features

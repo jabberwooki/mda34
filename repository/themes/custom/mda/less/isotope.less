@@ -1,0 +1,241 @@
+/* Liens haut isotope base + parents ******************************************/
+#isotope-options ul#filters{
+  .no-padding-margin();
+  background-color: white;
+  li{
+    list-style: none;
+    float: left;
+    display: block;
+    
+    margin-right: 10px;
+    margin-bottom: 8px;
+    a{
+      background-color: @gray-lighter;
+      display: block;
+      color: @gray-base;
+      text-transform: uppercase;
+      padding: 8px 14px 8px 14px;
+      text-align: center;
+      text-decoration: none;
+      &:after{
+        content: '';
+        background-image: none;
+        margin:0;
+      }
+      &.selected{
+        background-color: @green-mda;
+        color: white;
+      }
+    }
+  }
+}
+/* Largeur totale prise par les réponses pour le fond ***********************/
+/*.view-display-id-page_faqs > .view-content{
+  margin: 0 -1500px;
+}*/
+body.page-faq {
+  h2.page-header{
+    &:before{
+      .glyphicon();
+      content: "\e805";
+    } 
+  }
+  .view-faqs {
+    .view-header{
+      margin-bottom: 37px;
+    }
+    > .view-content {
+      min-height: 900px;
+     
+    }
+  }
+}
+/* Eléments isotope base + parents ********************************************/
+
+#isotope-options ul#filters li{
+  padding: 0;
+  background-image: none;
+}
+.isotope-element{
+  width: 278px;
+  background: transparent url(../images/bg_faq_green.png) no-repeat 0 100%;
+  height: auto;
+  padding-bottom: 17px;
+  .views-field-field-faq-category-1{
+    padding: 20px 20px 0 20px;
+    background-color: white;
+    border-left: 1px solid @green-mda;
+    border-right: 1px solid @green-mda;
+    a{
+      color: @green-mda !important;
+      font-size: 0.8em;
+      font-weight: lighter;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      &:after{
+        content: '';
+        background-image: none;
+      }
+    }
+  }
+  
+  .views-field-title{
+    background-color: white;
+    border-left: 1px solid @green-mda;
+    border-right: 1px solid @green-mda;
+    padding: 0px 20px 0 20px;
+    a{
+      color: @gray-base !important;
+      font-family: @rockwellFamily;
+      &:after{
+        content: '';
+      }
+    }
+  }
+}
+
+/* Agenda Parents *************************************************************/
+body.page-agenda.domain-parents-mda34-org {
+  h2.page-header{
+    color: @green-mda;
+    &:before{
+      .glyphicon();
+      content: "\e807";
+    } 
+  }
+  #isotope-options {
+    background-color: transparent;
+  }
+  /* isotope **/
+  .isotope-element {
+    /*border-bottom : 1px solid @gray-base;*/
+    img{
+      width: 360px;
+      height: 240px;
+    }
+    .img-title-wrapper, h3{
+      width: auto;
+    }
+    .h3{
+      width: auto;
+    }
+    .dates-custom-wrapper{
+      background-color: @green-mda;
+    }
+    .views-field-field-address-locality{
+      color: @green-mda;
+    }
+    .views-field-field-event-type a{
+      background-color: @green-mda;
+      padding : 2px 5px;
+    }
+  }
+}
+body.page-agenda .isotope-element{
+  background-image: none;
+  border: 0;
+  img{
+    width: 360px;
+    height: 240px;
+  }
+  .views-field-field-event-type-1{
+    .field-content{
+      color: @green-mda;
+    }
+  }
+  .field-content{
+    color: @gray-base;
+  }
+}
+/* faq parents *****/
+body.page-faq.domain-parents-mda34-org{
+  .view-faqs { 
+    > .view-content {
+      background: transparent url(../images/fond_faq_parents.png) no-repeat 50% 0;
+    }
+  }
+}
+/* Agenda pro *****************************************************************/
+body.page-agenda.domain-reseau-pro-mda34-org {
+  .isotope-element {
+    .views-field-field-event-type-1 .field-content {
+      color: @violet-mda;
+    }
+    .dates-custom-wrapper{
+      background-color:@violet-mda;
+    }
+  }
+  #isotope-options ul#filters li a.selected {
+    background-color:@violet-mda;
+  }
+}
+/* Agenda Ados ****************************************************************/
+body.page-agenda.domain-ados-mda34-org{ 
+  /* isotope **/
+  #isotope-options ul#filters li a.selected{
+    background-color: @orange-mda;
+  }
+  .isotope-element{
+    .views-field-field-event-type-1{
+    .field-content{
+      color: @orange-mda;
+    }
+  }
+    /*border-bottom : 1px solid @gray-base;*/
+    img {
+      width: 360px;
+      height: 240px;
+    }
+    .img-title-wrapper, h3{
+      width: auto;
+    }
+    .dates-custom-wrapper{
+      background-color: @orange-mda;
+    }
+    .h3{
+      width: auto;
+    }
+  }
+}
+/* FAQ Ados *******************************************************************/
+body.domain-ados-mda34-org.page-faq{
+  h2.page-header{
+    &:before{
+      .glyphicon();
+      content: "\e805";
+    } 
+  }
+  #isotope-options ul#filters{
+    li{
+      a{
+        &.selected{
+          background-color: @orange-mda;
+        }
+      }
+    }
+  }
+  .view-display-id-page_faqs{
+    background-color: @orange-mda;
+  }
+  .isotope-element{
+    background: transparent url(../images/bg_faq_orange.png) no-repeat 0 100%;
+    border-top: 1px solid @orange-mda;
+    padding-bottom: 17px;
+    .views-field-field-faq-category-1{
+      border-left: 1px solid @orange-mda;
+      border-right: 1px solid @orange-mda;
+      a{
+        color: @orange-mda !important;
+      }
+    }
+    .views-field-title{
+      border-left: 1px solid @orange-mda;
+      border-right: 1px solid @orange-mda;
+      a:after {
+        background: url('../images/arrow-orange.png') no-repeat scroll 0% 0% transparent;
+      }
+    }
+
+  }
+}
+

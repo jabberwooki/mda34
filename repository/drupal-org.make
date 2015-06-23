@@ -78,13 +78,20 @@ projects[views][subdir] = contrib
 projects[views][version] = "3.10"
 
 ;=== Modules - optional =======================================================
+projects[addressfield][subdir] = contrib
+projects[addressfield][version] = "1.0"
+
 ;projects[bean][subdir] = contrib
 ;projects[bean][version] = "1.9"
 
 projects[block_class][subdir] = contrib
 projects[block_class][version] = "2.1"
 
-;projects[boxes][subdir] = contrib
+projects[boxes][subdir] = contrib
+projects[boxes][version] = "1.2"
+
+projects[custom_search][subdir] = contrib
+projects[custom_search][version] = "1.18"
 
 projects[date][subdir] = contrib
 projects[date][version] = "2.8"
@@ -92,20 +99,43 @@ projects[date][version] = "2.8"
 projects[email][subdir] = contrib
 projects[email][version] = "1.3"
 
+projects[email_registration][subdir] = contrib
+projects[email_registration][version] = "1.2"
+
 projects[entityreference][subdir] = contrib
 projects[entityreference][version] = "1.1"
+
+projects[entityform][subdir] = contrib
+projects[entityform][version] = "2.0-rc1"
 
 projects[field_collection][subdir] = contrib
 projects[field_collection][version] = "1.0-beta8"
 
+projects[field_formatter_class][subdir] = contrib
+projects[field_formatter_class][version] = "1.1"
+
+projects[field_formatter_settings][subdir] = contrib
+projects[field_formatter_settings][version] = "1.1"
+
 projects[filefield_sources][subdir] = contrib
 projects[filefield_sources][version] = "1.9"
 
+projects[menu_trail_by_path][subdir] = contrib
+projects[menu_trail_by_path][version] = "2.0"
 ;projects[migrate][subdir] = contrib
 ;projects[migrate][version] = "2.7"
 
 ;projects[migrate_extras][subdir] = contrib
 ;projects[migrate_extras][version] = "2.5"
+
+projects[phone][subdir] = contrib
+projects[phone][version] = "1.0-beta1"
+
+projects[references_dialog][subdir] = contrib
+projects[references_dialog][version] = "1.0-beta1"
+
+projects[rules][subdir] = contrib
+projects[rules][version] = "2.9"
 
 ;projects[views_bulk_operations][subdir] = contrib
 ;projects[views_bulk_operations][version] = "3.2"
@@ -136,3 +166,104 @@ includes[adminimal] = makefiles/themes/adminimal.make
 includes[bootstrap] = makefiles/themes/bootstrap.make
 ;includes[foundation] = makefiles/themes/foundation.make
 ;includes[omega] = makefiles/themes/omega.make
+
+;=== Contrib modules and libraries for MDA34 ==================================
+;--- Domain Access related ----------------------------------------------------
+projects[domain][subdir] = contrib
+projects[domain][version] = "3.11"
+
+projects[domaincontext][subdir] = contrib
+projects[domaincontext][version] = "1.0-alpha1"
+
+projects[domain_menu_access][subdir] = contrib
+projects[domain_menu_access][version] = "1.2"
+
+projects[domain_views][subdir] = contrib
+projects[domain_views][version] = "1.5"
+
+;--- Scald and media related --------------------------------------------------
+projects[scald][subdir] = contrib
+projects[scald][version] = "1.3"
+
+projects[scald_file][subdir] = contrib
+projects[scald_file][version] = "1.01"
+
+projects[scald_dailymotion][subdir] = contrib
+projects[scald_dailymotion][version] = "1.4"
+
+projects[scald_vimeo][subdir] = contrib
+projects[scald_vimeo][version] = "1.4"
+
+projects[scald_soundcloud][subdir] = contrib
+projects[scald_soundcloud][version] = "1.2"
+
+projects[scald_gallery][subdir] = contrib
+projects[scald_gallery][version] = "2.4"
+
+libraries[galleria][download][type] = "file"
+libraries[galleria][download][url] = "https://github.com/aino/galleria/archive/1.4.2.zip"
+libraries[galleria][directory_name] = "galleria"
+libraries[galleria][destination] = "libraries"
+
+projects[filefield_sources][subdir] = contrib
+projects[filefield_sources][version] = "1.9"
+
+projects[filefield_sources_scald][subdir] = contrib
+projects[filefield_sources_scald][version] = "1.0-rc2"
+
+projects[plupload][subdir] = contrib
+projects[plupload][version] = "1.7"
+
+;--- Maps ---------------------------------------------------------------------
+projects[geocoder][subdir] = contrib
+projects[geocoder][version] = "1.2"
+projects[geocoder][patch][] = "https://www.drupal.org/files/issues/geocoder-mapquest-nominatim-1748412-46.patch"
+
+projects[geofield][subdir] = contrib
+projects[geofield][version] = "2.3"
+
+projects[geophp][subdir] = contrib
+projects[geophp][version] = "1.7"
+
+projects[leaflet][subdir] = contrib
+projects[leaflet][version] = "1.1"
+
+libraries[leaflet][download][type] = "file"
+libraries[leaflet][download][url] = "http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.3.zip"
+libraries[leaflet][directory_name] = "leaflet"
+libraries[leaflet][destination] = "libraries"
+
+projects[gmap][subdir] = contrib
+projects[gmap][version] = "2.9"
+
+projects[addressfield_autocomplete][subdir] = contrib
+projects[addressfield_autocomplete][version] = "1.0-beta5"
+
+libraries[geocomplete][download][type] = "file"
+libraries[geocomplete][download][url] = "https://github.com/ubilabs/geocomplete/archive/1.6.4.tar.gz"
+libraries[geocomplete][directory_name] = "geocomplete"
+libraries[geocomplete][destination] = "libraries"
+
+;--- Events -------------------------------------------------------------------
+projects[registration][subdir] = contrib
+projects[registration][version] = "1.4"
+
+;--- Newsletter ---------------------------------------------------------------
+projects[mailchimp][subdir] = contrib
+projects[mailchimp][version] = "3.3"
+
+;--- Others -------------------------------------------------------------------
+projects[office_hours][subdir] = contrib
+projects[office_hours][version] = "1.4"
+
+projects[views_isotope][subdir] = contrib
+projects[views_isotope][version] = "1.0-beta2"
+
+projects[sharethis][subdir] = contrib
+projects[sharethis][version] = "2.10"
+
+projects[menu_attributes][subdir] = contrib
+projects[menu_attributes][version] = "1.0-rc3"
+
+projects[views_autocomplete_filters][subdir] = contrib
+projects[views_autocomplete_filters][version] = "1.2"
