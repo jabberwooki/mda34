@@ -1,0 +1,21 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: chris
+ * Date: 25/06/15
+ * Time: 16:48
+ */
+
+/**
+ * Removes field_resources_public from resources content type and deletes resource_publics vocabulary.
+ */
+function mda_news_update_7001() {
+  // Field removal.
+  if ($instance = field_info_instance('node', 'field_resources_public', 'resource')) {
+    field_delete_instance($instance);
+  }
+
+  // Vocabulary deletion.
+  $vid = taxonomy_vocabulary_machine_name_load('resource_publics')->vid;
+  taxonomy_vocabulary_delete($vid);
+}
