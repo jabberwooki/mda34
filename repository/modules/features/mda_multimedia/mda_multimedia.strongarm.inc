@@ -43,6 +43,21 @@ function mda_multimedia_strongarm() {
       'list' => array(
         'custom_settings' => TRUE,
       ),
+      'scald_col_8' => array(
+        'custom_settings' => TRUE,
+      ),
+      'scald_col_4' => array(
+        'custom_settings' => TRUE,
+      ),
+      'scald_col_2' => array(
+        'custom_settings' => FALSE,
+      ),
+      'scald_col_12' => array(
+        'custom_settings' => FALSE,
+      ),
+      'scald_large_square' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -73,6 +88,14 @@ function mda_multimedia_strongarm() {
             'visible' => TRUE,
           ),
           'list' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'scald_col_8' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'scald_col_4' => array(
             'weight' => '0',
             'visible' => TRUE,
           ),
@@ -110,10 +133,25 @@ function mda_multimedia_strongarm() {
         'custom_settings' => FALSE,
       ),
       'zoom_block' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'list' => array(
         'custom_settings' => TRUE,
+      ),
+      'scald_col_8' => array(
+        'custom_settings' => TRUE,
+      ),
+      'scald_col_4' => array(
+        'custom_settings' => TRUE,
+      ),
+      'scald_col_2' => array(
+        'custom_settings' => FALSE,
+      ),
+      'scald_col_12' => array(
+        'custom_settings' => FALSE,
+      ),
+      'scald_large_square' => array(
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(
@@ -133,6 +171,18 @@ function mda_multimedia_strongarm() {
             'visible' => TRUE,
           ),
           'list' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'zoom_block' => array(
+            'weight' => '-2',
+            'visible' => TRUE,
+          ),
+          'scald_col_8' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'scald_col_4' => array(
             'weight' => '0',
             'visible' => TRUE,
           ),
@@ -175,13 +225,28 @@ function mda_multimedia_strongarm() {
       'list' => array(
         'custom_settings' => TRUE,
       ),
+      'scald_col_8' => array(
+        'custom_settings' => TRUE,
+      ),
+      'scald_col_4' => array(
+        'custom_settings' => TRUE,
+      ),
+      'scald_col_2' => array(
+        'custom_settings' => FALSE,
+      ),
+      'scald_col_12' => array(
+        'custom_settings' => FALSE,
+      ),
+      'scald_large_square' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
       'display' => array(
         'atom' => array(
           'default' => array(
-            'weight' => '-2',
+            'weight' => '0',
             'visible' => TRUE,
           ),
           'full' => array(
@@ -205,6 +270,14 @@ function mda_multimedia_strongarm() {
             'visible' => TRUE,
           ),
           'list' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'scald_col_8' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'scald_col_4' => array(
             'weight' => '0',
             'visible' => TRUE,
           ),
@@ -247,6 +320,21 @@ function mda_multimedia_strongarm() {
       'list' => array(
         'custom_settings' => TRUE,
       ),
+      'scald_col_8' => array(
+        'custom_settings' => TRUE,
+      ),
+      'scald_col_4' => array(
+        'custom_settings' => TRUE,
+      ),
+      'scald_col_2' => array(
+        'custom_settings' => FALSE,
+      ),
+      'scald_col_12' => array(
+        'custom_settings' => FALSE,
+      ),
+      'scald_large_square' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -277,6 +365,14 @@ function mda_multimedia_strongarm() {
             'visible' => TRUE,
           ),
           'list' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'scald_col_8' => array(
+            'weight' => '-2',
+            'visible' => TRUE,
+          ),
+          'scald_col_4' => array(
             'weight' => '-2',
             'visible' => TRUE,
           ),
@@ -320,15 +416,18 @@ function mda_multimedia_strongarm() {
         'custom_settings' => TRUE,
       ),
       'scald_col_4' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'scald_col_8' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'scald_col_2' => array(
         'custom_settings' => FALSE,
       ),
       'scald_col_12' => array(
+        'custom_settings' => FALSE,
+      ),
+      'scald_large_square' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -361,10 +460,14 @@ function mda_multimedia_strongarm() {
             'visible' => TRUE,
           ),
           'list' => array(
-            'weight' => '-2',
+            'weight' => '0',
             'visible' => TRUE,
           ),
           'scald_col_4' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'scald_col_8' => array(
             'weight' => '0',
             'visible' => TRUE,
           ),
