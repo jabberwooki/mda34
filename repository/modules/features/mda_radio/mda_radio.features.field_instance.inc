@@ -20,14 +20,18 @@ function mda_radio_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'text_default',
         'weight' => 3,
       ),
@@ -35,6 +39,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'field_formatter_class' => '',
           'trim_length' => 200,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -96,6 +101,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
+          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => '',
         ),
@@ -106,6 +112,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => 'large',
         ),
@@ -116,6 +123,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => 'large-crop',
         ),
@@ -126,6 +134,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
+          'field_formatter_class' => '',
           'image_link' => 'content',
           'image_style' => 'img-col-2',
         ),
@@ -198,14 +207,18 @@ function mda_radio_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 4,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'field_formatter_class' => '',
+        ),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 0,
       ),
@@ -254,6 +267,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'field_formatter_class' => '',
           'format_type' => 'mda_year',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -267,6 +281,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
+          'field_formatter_class' => '',
           'format_type' => 'mda_year',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -280,6 +295,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
+          'field_formatter_class' => '',
           'format_type' => 'mda_year',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -293,6 +309,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
+          'field_formatter_class' => '',
           'format_type' => 'mda_year',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -347,6 +364,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',
@@ -356,6 +374,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'scald_col_8',
@@ -365,6 +384,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'scald_large_square',
@@ -374,6 +394,7 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
+          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'scald_col_8',
