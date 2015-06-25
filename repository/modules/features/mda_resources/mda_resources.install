@@ -9,7 +9,7 @@
 /**
  * Removes field_resources_public from resources content type and deletes resource_publics vocabulary.
  */
-function mda_news_update_7001() {
+function mda_resources_update_7001() {
   // Field removal.
   if ($instance = field_info_instance('node', 'field_resources_public', 'resource')) {
     field_delete_instance($instance);
