@@ -92,15 +92,6 @@ function mda_resources_uuid_features_default_terms() {
     'metatags' => array(),
   );
   $terms[] = array(
-    'name' => 'Enseignants',
-    'description' => '',
-    'format' => 'full_html',
-    'weight' => 0,
-    'uuid' => '5808c55b-0dd8-4836-88f5-fa6c1ec968ba',
-    'vocabulary_machine_name' => 'resource_publics',
-    'metatags' => array(),
-  );
-  $terms[] = array(
     'name' => 'Insertion',
     'description' => '',
     'format' => 'full_html',
@@ -158,24 +149,6 @@ function mda_resources_uuid_features_default_terms() {
     'weight' => 7,
     'uuid' => 'bb87f3b7-4fba-45cf-9630-4cc36591bf2e',
     'vocabulary_machine_name' => 'themes',
-    'metatags' => array(),
-  );
-  $terms[] = array(
-    'name' => 'Educateurs',
-    'description' => '',
-    'format' => 'full_html',
-    'weight' => 0,
-    'uuid' => 'c71673a9-e54c-48c5-95b1-08929ba2f820',
-    'vocabulary_machine_name' => 'resource_publics',
-    'metatags' => array(),
-  );
-  $terms[] = array(
-    'name' => 'Chercheurs',
-    'description' => '',
-    'format' => 'full_html',
-    'weight' => 0,
-    'uuid' => 'fc024817-3b28-48d1-abdf-11e65b05aaf4',
-    'vocabulary_machine_name' => 'resource_publics',
     'metatags' => array(),
   );
   return $terms;
