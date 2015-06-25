@@ -155,7 +155,7 @@ function mda_multimedia_default_scald_context_config() {
       'settings' => array(
         'width' => '690',
         'height' => '450',
-        'fullscreen_link' => FALSE,
+        'fullscreen_link' => 1,
         'thumb_style' => 'thumbnail',
         'normal_style' => 'large',
         'big_style' => 'original',
@@ -207,8 +207,17 @@ function mda_multimedia_default_scald_context_config() {
       '*' => 'default',
     ),
     'gallery' => array(
-      '*' => 'default',
-      'settings' => array(),
+      '*' => 'galleria',
+      'settings' => array(
+        'width' => '690',
+        'height' => '450',
+        'fullscreen_link' => 1,
+        'thumb_style' => 'thumbnail',
+        'normal_style' => 'large',
+        'big_style' => 'original',
+        'theme' => 'classic',
+        'options' => '',
+      ),
     ),
     'image' => array(
       '*' => 'default',
@@ -258,7 +267,7 @@ function mda_multimedia_default_scald_context_config() {
       'settings' => array(
         'width' => '690',
         'height' => '450',
-        'fullscreen_link' => FALSE,
+        'fullscreen_link' => 1,
         'thumb_style' => 'thumbnail',
         'normal_style' => 'large',
         'big_style' => 'original',
@@ -370,7 +379,7 @@ function mda_multimedia_default_scald_context_config() {
       'settings' => array(
         'width' => '690',
         'height' => '450',
-        'fullscreen_link' => FALSE,
+        'fullscreen_link' => 1,
         'thumb_style' => 'thumbnail',
         'normal_style' => 'large',
         'big_style' => 'original',
@@ -426,7 +435,7 @@ function mda_multimedia_default_scald_context_config() {
       'settings' => array(
         'width' => '690',
         'height' => '450',
-        'fullscreen_link' => FALSE,
+        'fullscreen_link' => 1,
         'thumb_style' => 'thumbnail',
         'normal_style' => 'large',
         'big_style' => 'original',
@@ -479,6 +488,7 @@ function mda_multimedia_default_scald_context_config() {
     ),
     'gallery' => array(
       '*' => 'default',
+      'settings' => array(),
     ),
     'image' => array(
       '*' => 'default',
@@ -639,7 +649,7 @@ function mda_multimedia_default_scald_context_config() {
       'settings' => array(
         'width' => '690',
         'height' => '450',
-        'fullscreen_link' => FALSE,
+        'fullscreen_link' => 1,
         'thumb_style' => 'thumbnail',
         'normal_style' => 'large',
         'big_style' => 'original',
