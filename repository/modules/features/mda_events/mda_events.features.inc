@@ -109,9 +109,8 @@ function mda_events_default_registration_type() {
     "label" : "Inscription \\u00e0 un \\u00e9v\\u00e9nement ",
     "locked" : "0",
     "default_state" : null,
+    "data" : null,
     "weight" : "0",
-    "held_expire" : "1",
-    "held_expire_state" : "canceled",
     "rdf_mapping" : []
   }');
   return $items;
