@@ -154,7 +154,7 @@ kbd kbd{padding:0;font-size:100%;box-shadow:none}
 pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;word-break:break-all;word-wrap:break-word;color:#333;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px}
 .container,.container-fluid{margin-right:auto;margin-left:auto}
 pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;border-radius:0}
-.badge,.btn,.dropdown-header,.dropdown-menu>li>a,.input-group-btn,.label{white-space:nowrap}
+.badge,.btn,.dropdown-header,.dropdown-menu>li>a,.input-group-btn,.label,.navbar-header h1.navbar-brand a{white-space:nowrap}
 .container,.container-fluid{padding-left:15px;padding-right:15px}
 .pre-scrollable{max-height:340px;overflow-y:scroll}
 @media (min-width:768px){.container{width:750px}
@@ -1060,7 +1060,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .pagination>li:first-child>a,.pagination>li:first-child>span{margin-left:0;border-bottom-left-radius:4px;border-top-left-radius:4px}
 .pagination>li:last-child>a,.pagination>li:last-child>span{border-bottom-right-radius:4px;border-top-right-radius:4px}
 .pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover{color:#23527c;background-color:#cdcdcd;border-color:#ddd}
-.pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover{z-index:2;color:#fff;background-color:#337ab7;border-color:#337ab7;cursor:default}
+.pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover{z-index:2;cursor:default}
 .pagination>.disabled>a,.pagination>.disabled>a:focus,.pagination>.disabled>a:hover,.pagination>.disabled>span,.pagination>.disabled>span:focus,.pagination>.disabled>span:hover{color:#999;background-color:#fff;border-color:#ddd;cursor:not-allowed}
 .pagination-lg>li>a,.pagination-lg>li>span{padding:10px 16px;font-size:18px}
 .pagination-lg>li:first-child>a,.pagination-lg>li:first-child>span{border-bottom-left-radius:6px;border-top-left-radius:6px}
@@ -1526,6 +1526,7 @@ div.password-suggestions ul{margin-bottom:0}
 .ajax-progress .glyphicon{font-size:90%;margin:0 -.25em 0 .5em}
 .glyphicon-spin{display:inline-block;-moz-animation:spin 1s infinite linear;-o-animation:spin 1s infinite linear;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}
 a .glyphicon-spin{display:inline-block;text-decoration:none}
+#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before,.glyphicon{text-transform:none;font-size:1em;text-align:center;width:1em;text-decoration:inherit}
 @-moz-keyframes spin{0%{-moz-transform:rotate(0)}
 100%{-moz-transform:rotate(359deg)}
 }
@@ -1582,7 +1583,6 @@ a{transition:all .25s ease-in-out;-moz-transition:all .25s ease-in-out;-webkit-t
 nav.navbar.shrink{min-height:35px}
 nav.shrink a{padding-top:10px!important;padding-bottom:10px!important;font-size:14px}
 nav.shrink .navbar-brand{background:url(../images/logo-mda34_60px.png)no-repeat;font-size:16px;width:auto;padding-left:70px;height:70px}
-#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before,.glyphicon{text-transform:none;font-weight:400;font-size:1em;text-align:center;width:1em}
 nav.shrink .navbar-toggle{padding:4px 5px;margin:8px 15px 8px 0}
 #page-header{padding-top:24px}
 .zoom .block.block-views{border:0;margin-bottom:20px}
@@ -1613,8 +1613,8 @@ a#main-content{height:1px;overflow:hidden}
 #block-menu-menu-shortcuts .nav>li{text-align:right;height:auto}
 #block-menu-menu-shortcuts .nav>li>a{display:inline-block;padding:5px 12px 5px 10px;margin:0;text-transform:uppercase;font-family:arial;font-weight:700;font-size:14px}
 #block-menu-menu-shortcuts .nav>li>a:before{margin-right:6px;color:#fff}
-#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before{position:relative;top:1px;font-family:fontello;speak:none;display:inline-block;text-decoration:inherit;margin-right:10px;line-height:1em;-moz-osx-font-smoothing:grayscale;content:"\e805";color:#fff}
-#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before{position:relative;top:1px;font-family:fontello;speak:none;display:inline-block;text-decoration:inherit;margin-right:10px;line-height:1em;-moz-osx-font-smoothing:grayscale;content:"\e80A";color:#000}
+#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before{position:relative;top:1px;font-family:fontello;font-weight:400;speak:none;display:inline-block;margin-right:10px;line-height:1em;-moz-osx-font-smoothing:grayscale;content:"\e805";color:#fff}
+#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before{position:relative;top:1px;font-family:fontello;font-weight:400;speak:none;display:inline-block;margin-right:10px;line-height:1em;-moz-osx-font-smoothing:grayscale;content:"\e80A";color:#000}
 .domain-reseau-pro-mda34-org h2,.domain-reseau-pro-mda34-org h2 a,.domain-reseau-pro-mda34-org h3,.domain-reseau-pro-mda34-org h3 a,.domain-reseau-pro-mda34-org h4,.domain-reseau-pro-mda34-org h4 a{color:#575095}
 #block-menu-menu-top-menu{display:inline-block;position:absolute;right:0;top:0}
 #block-menu-menu-top-menu a{color:#000;display:block;padding-left:25px;font-family:FontAwesome,arial;background:url(../images/retour-accueil.png)3px 10px no-repeat}
@@ -1628,11 +1628,12 @@ a#main-content{height:1px;overflow:hidden}
 .stButton .st-facebook-counter,.stButton .st-twitter-counter{height:22px!important}
 .st_fblike_hcount{margin-left:-15px;margin-top:-2px}
 #block-system-main ul.pagination{margin-top:20px}
+.pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover{background-color:transparent;border-color:#000;color:#000!important;font-weight:700}
 [class*=" node-type-"] h2.page-header{text-transform:none}
 [class*=" node-type-"] div.node img{max-width:47%;float:left;margin-right:18px}
 @font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix)format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294)format('woff'),url(../images/fontello/font/fontello.ttf?90885294)format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello)format('svg');font-weight:400;font-style:normal}
 [class*=" icon-"]:hover{text-decoration:none}
-.glyphicon{font-family:fontello;font-style:normal;speak:none;display:inline-block;text-decoration:inherit;margin-right:10px;font-variant:normal;line-height:1em;color:#999;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.glyphicon{font-family:fontello;font-style:normal;font-weight:400;speak:none;display:inline-block;margin-right:10px;font-variant:normal;line-height:1em;color:#999;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 [class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale}
 .icon-facebook:before{content:"\e801"}
 .icon-twitter:before{content:"\e800"}
@@ -1660,7 +1661,7 @@ body:not(.front) .main-container{margin-top:120px}
 .navbar-header a.logo{margin-right:10px}
 .navbar-header .navbar-brand{padding-right:0}
 .navbar-header h1.navbar-brand{margin-bottom:0;margin-top:10px;float:none}
-.navbar-header h1.navbar-brand a{font-family:"Eligible bold","Times New Roman",monospace;color:#000;font-size:26px;white-space:nowrap}
+.navbar-header h1.navbar-brand a{font-family:"Eligible bold","Times New Roman",monospace;color:#000;font-size:26px}
 .navbar-header h1.navbar-brand a:hover{text-decoration:none}
 @media screen and (min-width:768px){.navbar-header h1.navbar-brand a{float:left}
 }
@@ -1890,6 +1891,7 @@ body.domain-www-mda34-org #home-main-container-wrapper #page-header{padding:43px
 }
 .node-type-resource h2.page-header:before,.page-ressources h2.page-header:before{position:relative;top:1px;font-weight:400;speak:none;width:1em;text-align:center;line-height:1em;-moz-osx-font-smoothing:grayscale;content:"\e804"}
 .field-name-field-resource-date-parution .field-label:before{position:relative;top:1px;font-weight:400;speak:none;width:1em;text-align:center;line-height:1em;-moz-osx-font-smoothing:grayscale;content:"\e807"}
+.view-display-id-list_resources .field-name-field-resource-image{float:left;margin-right:20px}
 .group-link-resources:after,.group-link-resources:before{content:" ";display:table}
 .group-link-resources .field-items{float:left;margin-right:20px}
 .group-link-resources .field-items:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;color:#999;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
@@ -2000,3 +2002,5 @@ div.node-event .group-event-infos-1 .field-name-field-event-dates,div.node-event
 div.node-event .group-event-infos-1 .field-name-field-public .field-item,div.node-event .group-event-infos-1 .field-name-field-public .field-label{float:left;margin-right:10px}
 div.node-event .group-event-infos-1 .field-name-field-address .field-item>div{float:left;padding-right:5px}
 div.node-event .group-event-infos-1 .field-name-field-address .field-item>div div.thoroughfare:after,div.node-event .group-event-infos-1 .field-name-field-address .field-item>div span.locality:after{content:" -"}
+.field-name-field-articles-image{float:left;margin:0 20px 0 0}
+.node-type-article div.node img{max-width:100%}
