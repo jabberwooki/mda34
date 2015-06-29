@@ -2001,6 +2001,7 @@ div.node-event .group-event-infos-1 .field-name-field-event-dates,div.node-event
 div.node-event .group-event-infos-1 .field-name-field-public .field-item,div.node-event .group-event-infos-1 .field-name-field-public .field-label{float:left;margin-right:10px}
 div.node-event .group-event-infos-1 .field-name-field-address .field-item>div{float:left;padding-right:5px}
 div.node-event .group-event-infos-1 .field-name-field-address .field-item>div div.thoroughfare:after,div.node-event .group-event-infos-1 .field-name-field-address .field-item>div span.locality:after{content:" -"}
+div.node-event .group-event-infos-1 .sharethis-buttons{float:right;min-width:280px}
 .field-name-field-articles-image{float:left;margin:0 20px 0 0}
 .node-type-article div.node img{max-width:100%!important;margin-right:0}
 body.html.not-front.page-presentation h2{text-transform:none}
