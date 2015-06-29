@@ -153,7 +153,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Au hasard */
+  /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -205,7 +205,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Au hasard */
+  /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -257,7 +257,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Au hasard */
+  /* Sort criterion: Global: Random */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -302,6 +302,7 @@ function mda_faqs_views_default_views() {
     t('dernier »'),
     t('Liste des FAQs'),
     t('Foire aux questions'),
+    t('more'),
     t('Accueil portail (ados)'),
     t('FAQ'),
     t('Accueil portail (parents)'),
@@ -368,6 +369,7 @@ function mda_faqs_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Filtre FAQs'),
+    t('more'),
   );
   $export['faqs_filter'] = $view;
 

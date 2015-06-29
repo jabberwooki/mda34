@@ -98,7 +98,7 @@ function mda_faqs_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '2',
+            'weight' => '1',
             'visible' => TRUE,
           ),
         ),
