@@ -1091,15 +1091,15 @@ a.badge:focus,a.badge:hover{color:#fff;text-decoration:none;cursor:pointer}
 .list-group-item>.badge{float:right}
 .list-group-item>.badge+.badge{margin-right:5px}
 .nav-pills>li>a>.badge{margin-left:3px}
-.jumbotron{padding:30px 15px;margin-bottom:30px;background-color:#cdcdcd}
-.jumbotron p{margin-bottom:15px;font-size:21px;font-weight:200}
+.jumbotron{padding:15px 7.5px;margin-bottom:15px;background-color:#cdcdcd}
+.jumbotron p{margin-bottom:7.5px;font-size:21px;font-weight:200}
 .alert .alert-link,.close{font-weight:700}
 .alert,.thumbnail{margin-bottom:20px}
 .jumbotron>hr{border-top-color:#b4b4b4}
 .container .jumbotron,.container-fluid .jumbotron{border-radius:6px}
 .jumbotron .container{max-width:100%}
-@media screen and (min-width:768px){.jumbotron{padding:48px 0}
-.container .jumbotron,.container-fluid .jumbotron{padding-left:60px;padding-right:60px}
+@media screen and (min-width:768px){.jumbotron{padding:24px 0}
+.container .jumbotron,.container-fluid .jumbotron{padding-left:30px;padding-right:30px}
 .jumbotron .h1,.jumbotron h1{font-size:63px}
 }
 .thumbnail{padding:4px;line-height:1.42857143;background-color:#0f0;border:1px solid #ddd;border-radius:4px;-webkit-transition:border .2s ease-in-out;-o-transition:border .2s ease-in-out;transition:border .2s ease-in-out}
@@ -1760,7 +1760,7 @@ body.domain-ados-mda34-org h3.icon-radio{color:#f78c26}
 #search-block-form{padding:18px;background-color:#e9e9e9;border-radius:4px}
 #search-block-form .btn{font-family:arial;text-transform:uppercase;color:#fff;background-color:#555;margin-left:4px}
 body.domain-reseau-pro-mda34-org #search-block-form .btn{background-color:#575095}
-#block-mailchimp-signup-newsletter{background:url(../images/bg_blocks.gif);padding:0;margin-top:45px}
+#block-mailchimp-signup-newsletter{background:url(../images/bg_blocks.gif);padding:0;margin-top:15px}
 #block-mailchimp-signup-newsletter h3.block-title{background-color:#034b93;margin:0;color:#fff;display:inline-block;padding:10px;font-size:1.4em}
 #block-mailchimp-signup-newsletter h3.block-title:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:"\e82c";color:#fff;margin-right:10px}
 #block-mailchimp-signup-newsletter label{display:inline-block;width:25%;padding-left:5%;margin-top:18px;color:#034b93}
@@ -1935,6 +1935,7 @@ body.domain-ados-mda34-org.page-faq .isotope-element .views-field-field-faq-cate
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-title a:after{background:url(../images/arrow-orange.png) no-repeat}
 .node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before{color:#999;content:"\e808"}
 body.domain-radio-mda34-org .views-row-first{padding-bottom:0}
+body.domain-radio-mda34-org .block-wrapper-custom .view-radio-programmes{padding:0}
 body.domain-radio-mda34-org h3.block-title{color:#fff}
 body.domain-radio-mda34-org #home-main-container-wrapper{background-color:#333}
 body.domain-radio-mda34-org #home-main-container-wrapper h2.icon-radio{color:#fff;background:url(../images/ondes_radio.png) 97% 50% no-repeat;margin-bottom:15px;margin-top:-10px}
@@ -1949,16 +1950,16 @@ body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content .field-name-body p{font-size:1em}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content .field-name-field-scald-audio{margin-bottom:20px}
 body.domain-radio-mda34-org #home-main-container-wrapper #views-exposed-form-radio-programmes-programmes-list>div{border:1px solid #fff;display:block}
-body.domain-radio-mda34-org #home-main-container-wrapper #views-exposed-form-radio-programmes-programmes-list>div>div{background-color:#e9e9e9;margin:14px 14px 14px 0;padding:10px 30px;display:block;clear:both}
+body.domain-radio-mda34-org #home-main-container-wrapper #views-exposed-form-radio-programmes-programmes-list>div>div{background-color:#e9e9e9;margin:14px;padding:10px 30px;display:block;clear:both}
 body.domain-radio-mda34-org #home-main-container-wrapper #views-exposed-form-radio-programmes-programmes-list>div>div label{float:left;margin-right:20px;margin-top:8px;color:#0080ff;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
 body.domain-radio-mda34-org #home-main-container-wrapper #views-exposed-form-radio-programmes-programmes-list>div>div .views-widget{float:left;margin-top:0}
 body.domain-radio-mda34-org #home-main-container-wrapper #views-exposed-form-radio-programmes-programmes-list>div>div button{float:left;margin-top:0;background-color:#0080ff;text-transform:uppercase}
-body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-programmes_list .views-row{height:196px;border-bottom:1px solid #cdcdcd;display:block}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-programmes_list .views-row{height:196px;border-bottom:1px solid #cdcdcd;padding:10px;margin:0 5px;display:block}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-programmes_list .views-row:after{content:"";display:block;clear:both}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-programmes_list .views-row .field-name-field-radio-image img{float:left;margin-right:15px}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-programmes_list .views-row .field-type-date{height:20px}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-programmes_list .views-row .field-type-date:after{clear:none}
-body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-programmes_list .views-row .field-name-field-scald-audio{margin-top:30px}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-programmes_list .views-row .field-name-field-scald-audio{margin-top:15px}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks{margin-top:0}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks .block-wrapper-custom{text-align:right;margin-top:0}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks .block-wrapper-custom p{padding-top:18px}
