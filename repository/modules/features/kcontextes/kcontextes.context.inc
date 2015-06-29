@@ -118,14 +118,43 @@ function kcontextes_context_default_contexts() {
   $context->description = 'All pages but front';
   $context->tag = 'Core';
   $context->conditions = array(
+    'domain' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
     'path' => array(
       'values' => array(
         '~<front>' => '~<front>',
+        '~faq' => '~faq',
       ),
     ),
   );
-  $context->reactions = array();
-  $context->condition_mode = 0;
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'search-form' => array(
+          'module' => 'search',
+          'delta' => 'form',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'mailchimp_signup-newsletter' => array(
+          'module' => 'mailchimp_signup',
+          'delta' => 'newsletter',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
+        'boxes-pros_resources_link' => array(
+          'module' => 'boxes',
+          'delta' => 'pros_resources_link',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.
