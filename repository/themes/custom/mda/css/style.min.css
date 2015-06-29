@@ -2007,3 +2007,5 @@ div.node-event .group-event-infos-1 .field-name-field-address .field-item>div di
 div.node-event .group-event-infos-1 .sharethis-buttons{float:right;min-width:280px}
 .field-name-field-articles-image{float:left;margin:0 20px 0 0}
 .node-type-article div.node img{max-width:100%}
+.node-type-faq .sharethis-buttons{float:right;min-width:280px}
+.node-type-faq .field-name-body,.node-type-faq .group-attached-resources{margin-top:20px}
