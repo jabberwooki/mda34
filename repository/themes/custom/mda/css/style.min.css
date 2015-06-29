@@ -1250,10 +1250,10 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-gro
 .panel-info>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#bce8f1}
 .panel-warning{border-color:#faebcc}
 .panel-warning>.panel-heading{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}
-.panel-danger,input.error{border-color:#ebccd1}
 .panel-warning>.panel-heading+.panel-collapse>.panel-body{border-top-color:#faebcc}
 .panel-warning>.panel-heading .badge{color:#fcf8e3;background-color:#8a6d3b}
 .panel-warning>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#faebcc}
+.panel-danger{border-color:#ebccd1}
 .panel-danger>.panel-heading{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
 .panel-danger>.panel-heading+.panel-collapse>.panel-body{border-top-color:#ebccd1}
 .panel-danger>.panel-heading .badge{color:#f2dede;background-color:#a94442}
@@ -1486,7 +1486,7 @@ ul.action-links{margin:12px 0;padding:0}
 ul.action-links li{display:inline;margin:0;padding:0 6px 0 0}
 ul.action-links .glyphicon{padding-right:.5em}
 .uneditable-input,input,select,textarea{max-width:100%;width:auto}
-input.error{color:#a94442}
+input.error{color:#a94442;border-color:#ebccd1}
 fieldset legend.panel-heading{float:left;line-height:1em;margin:0}
 fieldset .panel-heading a.panel-title{color:inherit;display:block;margin:-10px -15px;padding:10px 15px}
 fieldset .panel-heading a.panel-title:hover{text-decoration:none}
@@ -2002,5 +2002,6 @@ div.node-event .group-event-infos-1 .field-name-field-event-dates,div.node-event
 div.node-event .group-event-infos-1 .field-name-field-public .field-item,div.node-event .group-event-infos-1 .field-name-field-public .field-label{float:left;margin-right:10px}
 div.node-event .group-event-infos-1 .field-name-field-address .field-item>div{float:left;padding-right:5px}
 div.node-event .group-event-infos-1 .field-name-field-address .field-item>div div.thoroughfare:after,div.node-event .group-event-infos-1 .field-name-field-address .field-item>div span.locality:after{content:" -"}
+div.node-event .group-event-infos-1 .sharethis-buttons{float:right;min-width:280px}
 .field-name-field-articles-image{float:left;margin:0 20px 0 0}
 .node-type-article div.node img{max-width:100%}
