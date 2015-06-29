@@ -100,7 +100,7 @@ function mda_articles_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '1',
+            'weight' => '3',
             'visible' => TRUE,
           ),
           'list' => array(
@@ -108,7 +108,7 @@ function mda_articles_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '1',
+            'weight' => '2',
             'visible' => TRUE,
           ),
         ),
@@ -118,7 +118,7 @@ function mda_articles_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '10',
+            'weight' => '7',
             'visible' => TRUE,
           ),
           'list' => array(
@@ -126,7 +126,7 @@ function mda_articles_strongarm() {
             'visible' => TRUE,
           ),
           'teaser' => array(
-            'weight' => '2',
+            'weight' => '3',
             'visible' => FALSE,
           ),
         ),

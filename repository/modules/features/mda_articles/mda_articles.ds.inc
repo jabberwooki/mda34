@@ -60,16 +60,18 @@ function mda_articles_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'body',
-        1 => 'field_scald_gallery',
-        2 => 'domain',
-        3 => 'field_scald_video',
-        4 => 'field_scald_audio',
-        5 => 'field_scald_file',
-        6 => 'sharethis',
+        0 => 'field_articles_image',
+        1 => 'body',
+        2 => 'field_scald_gallery',
+        3 => 'domain',
+        4 => 'field_scald_video',
+        5 => 'field_scald_audio',
+        6 => 'field_scald_file',
+        7 => 'sharethis',
       ),
     ),
     'fields' => array(
+      'field_articles_image' => 'ds_content',
       'body' => 'ds_content',
       'field_scald_gallery' => 'ds_content',
       'domain' => 'ds_content',
@@ -79,11 +81,13 @@ function mda_articles_ds_layout_settings_info() {
       'sharethis' => 'ds_content',
     ),
     'classes' => array(),
-    'wrappers' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
-    'layout_attributes_merge' => TRUE,
-    'layout_link_attribute' => FALSE,
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
     'layout_link_custom' => '',
   );
   $export['node|article|full'] = $ds_layout;

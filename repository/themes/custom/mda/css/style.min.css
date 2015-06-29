@@ -1940,13 +1940,15 @@ body.domain-ados-mda34-org.page-faq .isotope-element{background:url(../images/bg
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-field-faq-category-1 a{color:#f78c26!important}
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-title a:after{background:url(../images/arrow-orange.png)no-repeat}
 .node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before{position:relative;top:1px;speak:none;text-decoration:inherit;width:1em;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e808"}
+body.domain-radio-mda34-org .views-row-first{padding-bottom:0}
+body.domain-radio-mda34-org h3.block-title{color:#fff}
 body.domain-radio-mda34-org #home-main-container-wrapper{background-color:#333}
 body.domain-radio-mda34-org #home-main-container-wrapper h2.icon-radio{color:#fff;background:url(../images/ondes_radio.png)97% 50% no-repeat;margin-bottom:15px;margin-top:-10px}
 body.domain-radio-mda34-org #home-main-container-wrapper h2.icon-radio:before{font-size:1em}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme{padding-left:0}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content{background-color:#fff}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content div.field-item img{max-width:293px;max-height:293px;float:left;margin:0 14px 0 0}
-body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content h3{margin-bottom:0}
+body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content h3{margin-bottom:0;border:0;margin-right:.25em}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content .field-name-field-record-date{color:#009ee0;display:block;min-height:20px;font-size:.9em}
 .node-type-event h2.page-header:before,.node-type-news h2.page-header:before,.page-actualites h2.page-header:before,.page-agenda h2.page-header:before,.page-formations h2.page-header:before,body.page-annuaire h2.page-header:before{text-align:center;font-family:fontello;font-size:1em}
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-block_last_programme .view-content .field-type-date:after{clear:none}
