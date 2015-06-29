@@ -138,10 +138,10 @@ blockquote{padding:10px 20px;margin:0 0 20px;font-size:17.5px;border-left:5px so
 blockquote ol:last-child,blockquote p:last-child,blockquote ul:last-child{margin-bottom:0}
 blockquote .small,blockquote footer,blockquote small{display:block;font-size:80%;color:#999}
 blockquote .small:before,blockquote footer:before,blockquote small:before{content:'\2014 \00A0'}
-#isotope-options ul#filters li a:after,.blockquote-reverse .small:before,.blockquote-reverse footer:before,.blockquote-reverse small:before,blockquote.pull-right .small:before,blockquote.pull-right footer:before,blockquote.pull-right small:before{content:''}
 .blockquote-reverse,blockquote.pull-right{padding-right:15px;padding-left:0;border-right:5px solid #cdcdcd;border-left:0;text-align:right}
 caption,th{text-align:left}
 code,kbd{padding:2px 4px;font-size:90%}
+.blockquote-reverse .small:before,.blockquote-reverse footer:before,.blockquote-reverse small:before,blockquote.pull-right .small:before,blockquote.pull-right footer:before,blockquote.pull-right small:before{content:''}
 .blockquote-reverse .small:after,.blockquote-reverse footer:after,.blockquote-reverse small:after,blockquote.pull-right .small:after,blockquote.pull-right footer:after,blockquote.pull-right small:after{content:'\00A0 \2014'}
 address{margin-bottom:20px;font-style:normal}
 code,kbd,pre,samp{font-family:Menlo,Monaco,Consolas,"Courier New",monospace}
@@ -1277,7 +1277,6 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .modal-footer .btn-group .btn+.btn{margin-left:-1px}
 .modal-footer .btn-block+.btn-block{margin-left:0}
 .modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}
-.carousel-inner,.region-help .block{overflow:hidden}
 @media (min-width:768px){.modal-dialog{width:600px;margin:30px auto}
 .modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,.5);-moz-box-shadow:0 5px 15px rgba(0,0,0,.5);box-shadow:0 5px 15px rgba(0,0,0,.5)}
 .modal-sm{width:300px}
@@ -1322,7 +1321,7 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .popover.bottom>.arrow:after{content:" ";top:1px;margin-left:-10px;border-top-width:0;border-bottom-color:#fff}
 .popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}
 .popover.left>.arrow:after{right:1px;border-right-width:0;border-left-color:#fff}
-.carousel-inner{width:100%}
+.carousel-inner{overflow:hidden;width:100%}
 .carousel-inner>.item{display:none;position:relative;-webkit-transition:.6s ease-in-out left;-o-transition:.6s ease-in-out left;transition:.6s ease-in-out left}
 .carousel-inner>.item>a>img,.carousel-inner>.item>img{line-height:1}
 @media all and (transform-3d),(-webkit-transform-3d){.carousel-inner>.item{-webkit-transition:-webkit-transform .6s ease-in-out;-moz-transition:-moz-transform .6s ease-in-out;-o-transition:-o-transform .6s ease-in-out;transition:transform .6s ease-in-out;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000;-moz-perspective:1000;perspective:1000}
@@ -1469,6 +1468,7 @@ ul.secondary{float:right}
 .block:first-child h2.block-title,.page-header{margin-top:0}
 p:last-child{margin-bottom:0}
 .region-help>.glyphicon{font-size:18px;float:left;margin:-.05em .5em 0 0}
+.region-help .block{overflow:hidden}
 form#search-block-form{margin:0}
 .navbar #block-search-form{float:none;margin:5px 0 5px 5px}
 @media screen and (min-width:992px){.navbar #block-search-form{float:right}
@@ -1577,7 +1577,6 @@ a{transition:all .25s ease-in-out;-moz-transition:all .25s ease-in-out;-webkit-t
 nav.navbar.shrink{min-height:35px}
 nav.shrink a{padding-top:10px!important;padding-bottom:10px!important;font-size:14px}
 nav.shrink .navbar-brand{background:url(../images/logo-mda34_60px.png) no-repeat;font-size:16px;width:auto;padding-left:70px;height:70px}
-#skip-link,a#main-content{overflow:hidden;height:1px}
 nav.shrink .navbar-toggle{padding:4px 5px;margin:8px 15px 8px 0}
 #page-header{padding-top:24px}
 .zoom .block.block-views{border:0;margin-bottom:20px}
@@ -1586,6 +1585,7 @@ img{max-width:100%}
 h2,h3,h4{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
 p{font-family:arial}
 .no-padding-margin{padding:0;margin:0}
+a#main-content{height:1px;overflow:hidden}
 .orange{color:#f78c26}
 .black{color:#000}
 .green{color:#32903f}
@@ -1607,7 +1607,7 @@ p{font-family:arial}
 #block-menu-menu-shortcuts .nav>li{text-align:right;height:auto}
 #block-menu-menu-shortcuts .nav>li>a{display:inline-block;padding:5px 12px 5px 10px;margin:0;text-transform:uppercase;font-family:arial;font-weight:700;font-size:14px}
 #block-menu-menu-shortcuts .nav>li>a:before{margin-right:6px;color:#fff}
-#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before{position:relative;top:1px;text-transform:none;display:inline-block;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before{position:relative;text-transform:none;display:inline-block;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 #block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before{content:"\e805";color:#fff}
 #block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before{content:"\e80A";color:#000}
 .domain-reseau-pro-mda34-org h2,.domain-reseau-pro-mda34-org h2 a,.domain-reseau-pro-mda34-org h3,.domain-reseau-pro-mda34-org h3 a,.domain-reseau-pro-mda34-org h4,.domain-reseau-pro-mda34-org h4 a{color:#575095}
@@ -1643,7 +1643,7 @@ p{font-family:arial}
 .icon-person:before{content:"\e80A"}
 body{background-color:#fff}
 [class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a,body.domain-ados-mda34-org h1.navbar-brand a{padding-left:28px}
-#skip-link{position:absolute;width:1px;top:-1000em}
+#skip-link{position:absolute;width:1px;height:1px;top:-1000em;overflow:hidden}
 .navbar-inverse{background:url(../images/bg_header.jpg) 50% -43px no-repeat #f8f8f8;border-color:#fff!important}
 body.front #block-views-slides-block-portal-zoom,body.front.domain-radio-mda34-org .main-container{margin-top:100px}
 body.front:not(.domain-www-mda34-org) #home-main-container-wrapper{margin-top:76px}
@@ -1903,7 +1903,7 @@ body.front .block.block-views h3{border-bottom:0 solid #cdcdcd}
 #isotope-options ul#filters{padding:0;margin:0;background-color:#fff}
 #isotope-options ul#filters li{list-style:none;float:left;display:block;margin-right:10px;margin-bottom:8px}
 #isotope-options ul#filters li a{background-color:#cdcdcd;display:block;color:#000;text-transform:uppercase;padding:8px 14px;text-align:center;text-decoration:none}
-#isotope-options ul#filters li a:after{background-image:none;margin:0}
+#isotope-options ul#filters li a:after{content:'';background-image:none;margin:0}
 body.page-agenda.domain-parents-mda34-org h2.page-header:before,body.page-faq h2.page-header:before{position:relative;top:1px;font-style:normal;speak:none;display:inline-block;text-decoration:inherit;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 #isotope-options ul#filters li a.selected{background-color:#32903f;color:#fff}
 body.page-faq h2.page-header:before{color:#999;content:"\e805"}
@@ -1935,7 +1935,7 @@ body.page-agenda.domain-reseau-pro-mda34-org #isotope-options ul#filters li a.se
 body.domain-ados-mda34-org.page-faq #isotope-options ul#filters li a.selected,body.domain-ados-mda34-org.page-faq .view-display-id-page_faqs,body.page-agenda.domain-ados-mda34-org #isotope-options ul#filters li a.selected,body.page-agenda.domain-ados-mda34-org .isotope-element .dates-custom-wrapper{background-color:#f78c26}
 body.page-agenda.domain-ados-mda34-org .isotope-element .views-field-field-event-type-1 .field-content{color:#f78c26}
 body.page-agenda.domain-ados-mda34-org .isotope-element .h3,body.page-agenda.domain-ados-mda34-org .isotope-element .img-title-wrapper,body.page-agenda.domain-ados-mda34-org .isotope-element h3{width:auto}
-.node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before,body.domain-ados-mda34-org.page-faq h2.page-header:before{font-weight:400;text-transform:none;position:relative;font-size:1em;top:1px;font-family:fontello;font-style:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before,body.domain-ados-mda34-org.page-faq h2.page-header:before{font-weight:400;position:relative;font-size:1em;top:1px;font-family:fontello;font-style:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 body.domain-ados-mda34-org.page-faq h2.page-header:before{color:#999;content:"\e805"}
 body.domain-ados-mda34-org.page-faq .isotope-element{background:url(../images/bg_faq_orange.png) 0 100% no-repeat;border-top:1px solid #f78c26;padding-bottom:17px}
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-field-faq-category-1 a{color:#f78c26!important}
@@ -1989,7 +1989,7 @@ body.page-annuaire table.views-table td.views-field-title a{font-weight:700;colo
 .page-actualites .view-news .views-row{border-bottom:1px solid #999;margin-bottom:10px}
 .page-actualites .view-news .views-row .news-item-fields:after{content:'';display:block;clear:both;height:10px;margin:10px 0;float:none}
 .page-actualites .view-news .views-row .news-item-fields>a{display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-transform:uppercase;text-decoration:none;float:right}
-.node-type-event h2.page-header:before,.page-agenda h2.page-header:before,.page-formations h2.page-header:before{margin-right:10px;position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;color:#999;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.node-type-event h2.page-header:before,.page-agenda h2.page-header:before,.page-formations h2.page-header:before{text-transform:none;margin-right:10px;position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;text-align:center;font-variant:normal;line-height:1em;color:#999;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .node-type-news .node-news .group-submitted-socialnetworks{border-bottom:1px solid #cdcdcd;margin-bottom:10px;height:50px}
 .node-type-news .node-news .group-submitted-socialnetworks .field-name-submitted-by{float:left}
 .node-type-news .node-news .group-submitted-socialnetworks .sharethis-buttons{float:right}
@@ -2002,4 +2002,7 @@ div.node-event .group-event-infos-1 .field-name-field-public .field-item,div.nod
 div.node-event .group-event-infos-1 .field-name-field-address .field-item>div{float:left;padding-right:5px}
 div.node-event .group-event-infos-1 .field-name-field-address .field-item>div div.thoroughfare:after,div.node-event .group-event-infos-1 .field-name-field-address .field-item>div span.locality:after{content:" -"}
 .field-name-field-articles-image{float:left;margin:0 20px 0 0}
-.node-type-article div.node img{max-width:100%}
+.node-type-article div.node img{max-width:100%!important;margin-right:0}
+body.html.not-front.page-presentation h2{text-transform:none}
+body.html.not-front.page-presentation #block-system-main a:visited{color:#000}
+body.html.not-front.page-presentation #block-system-main ul li{list-style:none;display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-transform:uppercase;text-decoration:none;float:right}
