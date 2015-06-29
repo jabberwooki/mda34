@@ -1831,14 +1831,16 @@ body.domain-ados-mda34-org #block-system-main a,body.domain-ados-mda34-org h2.pa
 body.domain-ados-mda34-org #block-system-main ul li{background:url(../images/arrow-orange.png)0 50% no-repeat}
 body.domain-ados-mda34-org #block-system-main ul.pagination li{background-image:none}
 body.domain-ados-mda34-org #block-system-main .field-name-field-event-website a{background-color:#f78c26;color:#fff;margin:10px 0;border:0}
-body.domain-reseau-pro-mda34-org #block-system-main a,body.domain-reseau-pro-mda34-org h2.page-header{color:#575095}
-body.domain-reseau-pro-mda34-org #block-system-main ul li{background:url(../images/arrow-violet.png)0 50% no-repeat}
-body.domain-reseau-pro-mda34-org #block-system-main ul.pagination li{background-image:none}
-body.domain-reseau-pro-mda34-org #block-system-main .field-name-field-event-website a{background-color:#575095;color:#fff;margin:10px 0;border:0}
-body.domain-radio-mda34-org #block-system-main a,body.domain-radio-mda34-org h2.page-header{color:#0080ff}
-body.domain-radio-mda34-org #block-system-main ul li{background:url(../images/arrow-blue.png)0 50% no-repeat}
-body.domain-radio-mda34-org #block-system-main ul.pagination li,body.no-front #block-system-main ul.pagination li{background-image:none}
-body.domain-radio-mda34-org #block-system-main .field-name-field-event-website a{background-color:#0080ff;color:#fff;margin:10px 0;border:0}
+body.domain-reseau-pro-mda34-org #block-system-main #block-system-main a,body.domain-reseau-pro-mda34-org #block-system-main h2.page-header{color:#575095}
+body.domain-reseau-pro-mda34-org #block-system-main #block-system-main ul li{background:url(../images/arrow-violet.png)0 50% no-repeat}
+body.domain-reseau-pro-mda34-org #block-system-main #block-system-main ul.pagination li{background-image:none}
+body.domain-reseau-pro-mda34-org #block-system-main #block-system-main .field-name-field-event-website a{background-color:#575095;color:#fff;margin:10px 0;border:0}
+body.domain-reseau-pro-mda34-org #block-system-main .btn-success{background-color:#575095;color:#fff;border:0;margin-top:5px}
+body.domain-radio-mda34-org #block-system-main #block-system-main a,body.domain-radio-mda34-org #block-system-main h2.page-header{color:#0080ff}
+body.domain-radio-mda34-org #block-system-main #block-system-main ul li{background:url(../images/arrow-blue.png)0 50% no-repeat}
+body.domain-radio-mda34-org #block-system-main #block-system-main ul.pagination li,body.no-front #block-system-main ul.pagination li{background-image:none}
+body.domain-radio-mda34-org #block-system-main #block-system-main .field-name-field-event-website a{background-color:#0080ff;color:#fff;margin:10px 0;border:0}
+body.domain-radio-mda34-org #block-system-main .btn-success{background-color:#0080ff;color:#fff;border:0}
 body.front .block-kcore .block-wrapper-custom a{display:block;padding:12px 0 15px 70px}
 body.front .block-kcore .block-wrapper-custom h2{text-transform:none}
 body.front .block-kcore#block-kcore-mda-shortcut-ados .block-wrapper-custom{background:url(../images/button_fleche_ados.png)98% 50% no-repeat}
@@ -1985,6 +1987,14 @@ body.page-annuaire table.views-table tr.odd{background-color:#e9e9e9}
 body.page-annuaire table.views-table tr.even{background-color:#cdcdcd}
 body.page-annuaire table.views-table td{border:2px solid #fff}
 body.page-annuaire table.views-table td.views-field-title a{font-weight:700;color:#000}
+body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures{background-color:#e9e9e9;padding:20px}
+body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures label{color:#32903f}
+body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures button,body.page-annuaire.domain-parents-mda34-org table.views-table th{background-color:#32903f}
+body.node-type-structure .group-practical-infos{float:right}
+body.node-type-structure .sharethis-buttons{float:right;min-width:240px;margin-bottom:20px}
+body.node-type-structure .field-name-body,body.node-type-structure .field-name-field-competence-fields,body.node-type-structure .field-name-field-structure-type:after{clear:left}
+body.node-type-structure .field-label,body.node-type-structure .field-name-field-action-types .field-items .field-item,body.node-type-structure .field-name-field-public .field-items .field-item{float:left;margin-right:10px}
+body.node-type-structure .field-name-field-coordinates{clear:both}
 .node-type-news h2.page-header:before,.page-actualites h2.page-header:before{position:relative;top:1px;font-family:fontello;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;text-transform:none;line-height:1em;color:#999;-moz-osx-font-smoothing:grayscale;content:"\e804"}
 .page-actualites .view-news a>img{float:left;margin-right:30px;max-width:33.33%}
 .page-actualites .view-news.view-display-id-news_last_news a>img{max-width:48%}
