@@ -145,7 +145,7 @@
     </header> <!-- /#page-header -->
 
     <div class="row">	
-
+<?php print $messages; ?>
       <?php if (!empty($page['preface_first'])): ?>
         <div class="col-lg-4" id="preface-first">
           <div class="">
@@ -210,7 +210,7 @@
           <h1 class="page-header"><?php print $title; ?></h1>
         <?php endif; ?>
         <?php print render($title_suffix); ?>
-        <?php print $messages; ?>
+        
         <?php if (!empty($tabs)): ?>
           <?php print render($tabs); ?>
         <?php endif; ?>
