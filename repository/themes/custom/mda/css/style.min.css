@@ -2014,7 +2014,7 @@ div.node-event .group-event-infos-1 .field-name-field-address .field-item>div di
 div.node-event .group-event-infos-1 .sharethis-buttons{float:right;min-width:280px}
 .field-name-field-articles-image{float:left;margin:0 20px 0 0}
 .node-type-article div.node img{max-width:100%!important;margin-right:0}
-body.html.not-front.page-presentation h2{text-transform:none}
+body.html.not-front.page-presentation h2{text-transform:none;font-size:24px}
 body.html.not-front.page-presentation #block-system-main a:visited{color:#000}
 body.html.not-front.page-presentation #block-system-main ul li{list-style:none;display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-transform:uppercase;text-decoration:none;float:right}
 .node-type-faq .sharethis-buttons{float:right;min-width:280px}
