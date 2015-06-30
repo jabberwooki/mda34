@@ -1821,6 +1821,7 @@ body.domain-ados-mda34-org #block-system-main a,body.domain-ados-mda34-org h2.pa
 body.domain-ados-mda34-org #block-system-main ul li{background:url(../images/arrow-orange.png) 0 50% no-repeat}
 body.domain-ados-mda34-org #block-system-main ul.pagination li{background-image:none}
 body.domain-ados-mda34-org #block-system-main .field-name-field-event-website a{background-color:#f78c26;color:#fff;margin:10px 0;border:0}
+body.domain-ados-mda34-org .block-wrapper-custom h3{text-transform:none;margin:0}
 body.domain-reseau-pro-mda34-org #block-system-main a,body.domain-reseau-pro-mda34-org h2.page-header{color:#575095}
 body.domain-reseau-pro-mda34-org #block-system-main ul li{background:url(../images/arrow-violet.png) 0 50% no-repeat}
 body.domain-reseau-pro-mda34-org #block-system-main ul.pagination li{background-image:none}
@@ -1991,9 +1992,9 @@ body.node-type-structure .field-name-body,body.node-type-structure .field-name-f
 body.node-type-structure .field-label,body.node-type-structure .field-name-field-action-types .field-items .field-item,body.node-type-structure .field-name-field-public .field-items .field-item{float:left;margin-right:10px}
 body.node-type-structure .field-name-field-coordinates{clear:both}
 .node-type-news h2.page-header:before,.page-actualites h2.page-header:before{font-weight:400;text-transform:none;color:#999;content:"\e804"}
-.page-actualites .view-news a>img{float:left;margin-right:30px;max-width:33.33%}
+.page-actualites .view-news a>img{float:left;margin-right:20px;max-width:33.33%}
 .page-actualites .view-news.view-display-id-news_last_news a>img{max-width:48%}
-.page-actualites .view-news .views-row{border-bottom:1px solid #999;margin-bottom:10px}
+.page-actualites .view-news .views-row{border-bottom:0 solid #999;margin-bottom:10px}
 .page-actualites .view-news .views-row .news-item-fields:after{content:'';display:block;clear:both;height:10px;margin:10px 0;float:none}
 div.node-event .group-event-infos-1 .field-name-field-address,div.node-event .group-event-infos-1 .field-name-field-public{clear:left}
 .page-actualites .view-news .views-row .news-item-fields>a{display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-transform:uppercase;text-decoration:none;float:right}
