@@ -1611,8 +1611,8 @@ a#main-content{height:1px;overflow:hidden}
 #block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before{content:"\e80A";color:#000}
 .domain-reseau-pro-mda34-org h2,.domain-reseau-pro-mda34-org h2 a,.domain-reseau-pro-mda34-org h3,.domain-reseau-pro-mda34-org h3 a,.domain-reseau-pro-mda34-org h4,.domain-reseau-pro-mda34-org h4 a{color:#575095}
 #block-menu-menu-top-menu{display:inline-block;position:absolute;right:0;top:0}
-#block-menu-menu-top-menu a{color:#000;display:block;padding-left:25px;font-family:FontAwesome,arial;background:url(../images/retour-accueil.png) 3px 10px no-repeat}
-#block-menu-menu-top-menu a:hover{background:url(../images/retour-accueil.png) 3px -75px no-repeat #000;color:#fff}
+#block-menu-menu-top-menu a{color:#000;display:block;padding-left:40px;font-family:FontAwesome,arial;margin-top:.85em;font-size:.85em;background:url(../images/retour-accueil.png) 3px 3px no-repeat}
+#block-menu-menu-top-menu a:hover{text-decoration:underline}
 #block-system-main a{color:#222}
 #block-system-main a:hover{color:#000}
 #block-system-main a:visited{color:#555}
