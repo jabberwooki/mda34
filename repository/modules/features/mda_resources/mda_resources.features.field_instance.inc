@@ -619,54 +619,6 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
     ),
   );
 
-  // Exported field_instance: 'node-resource-field_resource_public'
-  $field_instances['node-resource-field_resource_public'] = array(
-    'bundle' => 'resource',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
-      ),
-      'full' => array(
-        'label' => 'inline',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_resource_public',
-    'label' => 'Public concerné',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance: 'node-resource-field_resource_type'
   $field_instances['node-resource-field_resource_type'] = array(
     'bundle' => 'resource',
@@ -1090,7 +1042,6 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
   t('ISBN');
   t('Image');
   t('Lien');
-  t('Public concerné');
   t('Publié le');
   t('Son');
   t('Thèmes');

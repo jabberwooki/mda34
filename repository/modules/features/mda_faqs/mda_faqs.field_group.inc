@@ -49,10 +49,9 @@ function mda_faqs_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Ressources liées',
-    'weight' => '9',
+    'weight' => '8',
     'children' => array(
       0 => 'field_attached_resources',
-      1 => 'field_titre_resources_title',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -61,7 +60,7 @@ function mda_faqs_field_group_info() {
         'id' => '',
         'classes' => 'group-attached-resources field-group-div panel panel-default',
         'description' => '',
-        'show_label' => '0',
+        'show_label' => '1',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'none',

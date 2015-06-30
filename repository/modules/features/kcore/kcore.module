@@ -267,3 +267,13 @@ function kcore_node_view($node, $view_mode, $langcode) {
 		}
 	}
 }
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function kcore_block_view_alter(&$data, $block) {
+  if (isset($data['delta']) && $data['delta'] == 'pros_resources_link') {
+	$replace = '<a href="http://reseau-pro.mda34' . mda_domain_suffix() . '/ressources">';
+	$data['content'] = str_replace('<a href="/ressources">',$replace, $data['content']);
+  }
+}

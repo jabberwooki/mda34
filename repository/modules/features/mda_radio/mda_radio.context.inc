@@ -112,6 +112,12 @@ function mda_radio_context_default_contexts() {
           'region' => 'highlighted',
           'weight' => '-10',
         ),
+        'kcore-mda_radio_partenaires' => array(
+          'module' => 'kcore',
+          'delta' => 'mda_radio_partenaires',
+          'region' => 'sidebar_second',
+          'weight' => '10',
+        ),
       ),
     ),
   );

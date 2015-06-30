@@ -182,6 +182,32 @@ function mda_events_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
+  // Exported field_base: 'field_public'
+  $field_bases['field_public'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_public',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'publics',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_registrant_firstname'
   $field_bases['field_registrant_firstname'] = array(
     'active' => 1,

@@ -162,12 +162,13 @@ a#main-content{
   a{
     color: @gray-base;
     display: block;
-    padding-left: 25px;
+    padding-left: 40px;
     font-family: @fontAwesome;
-    background: url(../images/retour-accueil.png) no-repeat 3px 10px;
+    margin-top: 0.85em;
+    font-size:0.85em;
+    background: url(../images/retour-accueil.png) no-repeat 3px 3px;
     &:hover{
-      background: @gray-base url(../images/retour-accueil.png) no-repeat 3px -75px;
-      color: white;
+      text-decoration: underline;
     }
   }
 }
@@ -200,4 +201,14 @@ a#main-content{
 .st_fblike_hcount{
   margin-left: -15px;
   margin-top: -2px;
+}
+/* pagination bas de page ********************************************************/
+#block-system-main ul.pagination{
+  margin-top: 20px;
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  background-color: transparent;
+  border-color: none;
+  color: @gray-base !important;
+
 }

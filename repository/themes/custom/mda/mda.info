@@ -1,4 +1,4 @@
-name = Mda
+name = mda
 description = A Bootstrap sub-theme.
 core = 7.x
 base theme = bootstrap

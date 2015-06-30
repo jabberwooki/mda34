@@ -10,6 +10,9 @@ body.domain-parents-mda34-org{
     ul li{
       background: url(../images/arrow-green.png) no-repeat 0 50%;
     }
+    ul.pagination li{
+      background-image: none;
+    }
     .field-name-field-event-website a{
       background-color: @green-mda;
       color: white;
@@ -30,12 +33,20 @@ body.domain-ados-mda34-org{
     ul li{
       background: url(../images/arrow-orange.png) no-repeat 0 50%;
     }
+    ul.pagination li{
+      background-image: none;
+    }
     .field-name-field-event-website a{
       background-color: @orange-mda;
       color: white;
       margin: 10px 0;
       border: 0;
     }
+    
+  }
+    .block-wrapper-custom h3  {
+text-transform: none;
+margin:0;
   }
 }
 /* Pros ***********************************************************************/
@@ -46,9 +57,13 @@ body.domain-reseau-pro-mda34-org{
   #block-system-main{
     a{
       color: @violet-mda;
+      
     }
     ul li{
       background: url(../images/arrow-violet.png) no-repeat 0 50%;
+    }
+    ul.pagination li{
+      background-image: none;
     }
     .field-name-field-event-website a{
       background-color: @violet-mda;
@@ -57,9 +72,20 @@ body.domain-reseau-pro-mda34-org{
       border: 0;
     }
   }
+  .btn-success{
+    background-color: @violet-mda;
+    color: white;
+    border: 0;
+    margin-top: 5px;
+  }
+  .block-wrapper-custom h3  {
+text-transform: none;
+
+  }
+  
 }
 /* Radio ***********************************************************************/
-body.domain-radio-mda34-org{
+body.domain-radio-mda34-org #block-system-main{
   h2.page-header{
     color: @blue-mda;
   }
@@ -70,12 +96,20 @@ body.domain-radio-mda34-org{
     ul li{
       background: url(../images/arrow-blue.png) no-repeat 0 50%;
     }
+    ul.pagination li{
+      background-image: none;
+    }
     .field-name-field-event-website a{
       background-color: @blue-mda;
       color: white;
       margin: 10px 0;
       border: 0;
     }
+  }
+  .btn-success{
+    background-color: @blue-mda;
+    color: white;
+    border: 0;
   }
 }
 /* Pas de flèches en bas de page ************************************************/

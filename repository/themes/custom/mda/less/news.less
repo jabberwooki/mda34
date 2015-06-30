@@ -5,7 +5,7 @@
 .page-actualites .view-news{
   a > img {
     float: left;
-    margin-right: 30px;
+    margin-right: 20px;
     max-width: 33.33%;
   }
   &.view-display-id-news_last_news {
@@ -14,7 +14,7 @@
     }
   }
   .views-row{
-    border-bottom: 1px solid @gray-light;
+    border-bottom: 0px solid @gray-light;
     margin-bottom: 10px;
     .news-item-fields{
       &:after{
@@ -38,16 +38,20 @@
 
 }
 .node-type-news .node-news{
-
+  img {
+    max-width: 100% !important;
+  }
   .group-submitted-socialnetworks{
     border-bottom: 1px solid @gray-lighter;
     margin-bottom: 10px;
     height: 50px;
     .field-name-submitted-by{
       float: left;
+      font-size: 0.9em;
     }
     .sharethis-buttons{
       float: right;
+      min-width: 280px;
     }
   }
 
