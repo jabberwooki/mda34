@@ -1619,6 +1619,8 @@ a#main-content{height:1px;overflow:hidden}
 #block-menu-menu-top-menu{display:inline-block;position:absolute;right:0;top:0}
 #block-menu-menu-top-menu a{color:#000;display:block;padding-left:25px;font-family:FontAwesome,arial;background:url(../images/retour-accueil.png)3px 10px no-repeat}
 #block-menu-menu-top-menu a:hover{background:url(../images/retour-accueil.png)3px -75px no-repeat #000;color:#fff}
+@media screen and (max-width:768px){#block-menu-menu-top-menu{position:absolute;top:-120px;right:-10px}
+}
 #block-system-main a{color:#222}
 #block-system-main a:hover{color:#000}
 #block-system-main a:visited{color:#555}
