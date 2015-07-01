@@ -169,7 +169,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Gestionnaire défectueux/manquant */
+  /* Champ: Contenu: Public concerné */
   $handler->display->display_options['fields']['field_public']['id'] = 'field_public';
   $handler->display->display_options['fields']['field_public']['table'] = 'field_data_field_public';
   $handler->display->display_options['fields']['field_public']['field'] = 'field_public';
@@ -265,7 +265,7 @@ function mda_structures_views_default_views() {
   );
   $handler->display->display_options['filters']['field_action_types_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_action_types_tid']['vocabulary'] = 'action_types';
-  /* Filter criterion: Gestionnaire défectueux/manquant */
+  /* Filter criterion: Contenu: Public concerné (field_public) */
   $handler->display->display_options['filters']['field_public_tid']['id'] = 'field_public_tid';
   $handler->display->display_options['filters']['field_public_tid']['table'] = 'field_data_field_public';
   $handler->display->display_options['filters']['field_public_tid']['field'] = 'field_public_tid';
@@ -297,6 +297,7 @@ function mda_structures_views_default_views() {
     193262079 => 0,
     109177673 => 0,
   );
+  $handler->display->display_options['filters']['field_public_tid']['vocabulary'] = 'publics';
   $handler->display->display_options['path'] = 'annuaire';
 
   /* Display: Infos contact */
@@ -372,11 +373,10 @@ function mda_structures_views_default_views() {
     t('Champ d\'intervention'),
     t('Ville'),
     t('Téléphone'),
-    t('Broken handler field_data_field_public.field_public'),
+    t('Public concerné'),
     t('Nom de la structure'),
     t('Type de structure'),
     t('Type d\'action'),
-    t('Public concerné'),
     t('Infos contact'),
     t('Infos visibles sur une fiche événement'),
     t('Email du gestionnaire'),
