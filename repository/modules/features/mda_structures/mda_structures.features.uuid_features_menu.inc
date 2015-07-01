@@ -25,7 +25,9 @@ function mda_structures_menu_default_uuid_features_menu() {
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_annuaire:annuaire',
     ),
     'module' => 'menu',
