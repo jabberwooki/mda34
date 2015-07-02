@@ -127,7 +127,7 @@ function mda_radio_strongarm() {
           ),
           'list' => array(
             'weight' => '4',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
           'last_item' => array(
             'weight' => '5',

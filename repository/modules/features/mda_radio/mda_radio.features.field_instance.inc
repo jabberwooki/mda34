@@ -47,9 +47,12 @@ function mda_radio_field_default_field_instances() {
       ),
       'list' => array(
         'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 14,
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 150,
+        ),
+        'type' => 'text_trimmed',
+        'weight' => 2,
       ),
       'sidebar_item' => array(
         'label' => 'hidden',
@@ -134,7 +137,6 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'field_formatter_class' => '',
           'image_link' => 'content',
           'image_style' => 'img-col-2',
         ),
@@ -309,7 +311,6 @@ function mda_radio_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
-          'field_formatter_class' => '',
           'format_type' => 'mda_year',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -394,7 +395,6 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'scald_col_8',
