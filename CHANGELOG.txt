@@ -1,3 +1,13 @@
+MDA34 - 2015-07-02
+------------------
+- Agenda and FAQ isotope views improvement. Terms with no attached content
+are no longer visible in filters.
+
+
+MDA34 - 2015-07-02
+------------------
+First official release from MDA.
+
 MDA34 - 2015-06-30
 ------------------
 A number of css modifications and tickets resolution.

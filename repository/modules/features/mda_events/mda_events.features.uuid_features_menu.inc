@@ -25,7 +25,9 @@ function mda_events_menu_default_uuid_features_menu() {
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -49,7 +51,9 @@ function mda_events_menu_default_uuid_features_menu() {
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,

@@ -41,7 +41,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Contenu: Taxonomy terms on node */
+  /* Relation: Contenu: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
@@ -119,7 +119,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -1083,7 +1083,6 @@ function mda_events_views_default_views() {
     t('Event type'),
     t('Liste des événements'),
     t('Agenda'),
-    t('more'),
     t('Types d\'événement'),
     t('<div class="img-title-wrapper">
   [field_event_image]
@@ -1150,11 +1149,12 @@ function mda_events_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Relationship: Terme de taxonomie: Contenu using Type d&#039;événement */
-  $handler->display->display_options['relationships']['reverse_field_event_type_node']['id'] = 'reverse_field_event_type_node';
-  $handler->display->display_options['relationships']['reverse_field_event_type_node']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['relationships']['reverse_field_event_type_node']['field'] = 'reverse_field_event_type_node';
-  $handler->display->display_options['relationships']['reverse_field_event_type_node']['required'] = TRUE;
+  /* Relation: Terme de taxonomie: Content with term */
+  $handler->display->display_options['relationships']['nid']['id'] = 'nid';
+  $handler->display->display_options['relationships']['nid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['relationships']['nid']['field'] = 'nid';
+  $handler->display->display_options['relationships']['nid']['label'] = 'nœud(s) rattaché(s) au terme';
+  $handler->display->display_options['relationships']['nid']['required'] = TRUE;
   /* Champ: Terme de taxonomie: Nom */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -1175,6 +1175,26 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'event_types' => 'event_types',
   );
+  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
+  $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['relationship'] = 'nid';
+  $handler->display->display_options['filters']['current_all']['value'] = '1';
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['relationship'] = 'nid';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['operator'] = '<=';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['relationship'] = 'nid';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
 
   /* Display: Filtre Agenda */
   $handler = $view->new_display('block', 'Filtre Agenda', 'event_types_filter');
@@ -1187,9 +1207,8 @@ function mda_events_views_default_views() {
     t('Trier par'),
     t('Asc'),
     t('Desc'),
-    t('field_event_type'),
+    t('nœud(s) rattaché(s) au terme'),
     t('Filtre Agenda'),
-    t('more'),
   );
   $export['events_filter'] = $view;
 

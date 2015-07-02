@@ -43,17 +43,29 @@
   }
 }
 .node-type-resource{
+  .sharethis-buttons{
+    float: right;
+    min-width: 240px;
+    margin-bottom: 20px;
+  }
+  .field-name-body{
+    clear: left;
+    margin-top: 20px;
+  }
   .group-practical-infos{
-    border: 1px solid white;
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    min-width: 33%;
+    @media print and (max-width:@screen-sm){
+      width: 98%;
+      float: none;
+    }
   }
   .field-type-taxonomy-term-reference .field-item{
     float: left;
     margin-right: 15px;
   }
-}
 
-.group-link-resources.field-group-div {
-  font-size: 0.95em;
-  margin-bottom: 0.5em;
 }
 

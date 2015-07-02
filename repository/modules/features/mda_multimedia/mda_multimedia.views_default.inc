@@ -59,10 +59,10 @@ function mda_multimedia_views_default_views() {
   $handler = $view->new_display('page', 'Liste', 'page');
   $handler->display->display_options['path'] = 'multimedia';
 
-  /* Display: Bloc dernière video */
-  $handler = $view->new_display('block', 'Bloc dernière video', 'block_last_video');
+  /* Display: Notre chaine */
+  $handler = $view->new_display('block', 'Notre chaine', 'block_last_video');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'La dernière video';
+  $handler->display->display_options['title'] = 'Notre chaine';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -83,11 +83,10 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['fields']['representation']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['representation']['context'] = 'scald_col_4';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Atome: Date de création */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'scald_atoms';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Global: Au hasard */
+  $handler->display->display_options['sorts']['random']['id'] = 'random';
+  $handler->display->display_options['sorts']['random']['table'] = 'views';
+  $handler->display->display_options['sorts']['random']['field'] = 'random';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Atome: Type */
@@ -146,8 +145,7 @@ function mda_multimedia_views_default_views() {
     t('dernier »'),
     t('Identifiant Scald'),
     t('Liste'),
-    t('Bloc dernière video'),
-    t('La dernière video'),
+    t('Notre chaine'),
     t('Lien Toutes les vidéos'),
     t('<a href="/multimedia/videos">Toutes nos videos</a>'),
     t('Videos'),
