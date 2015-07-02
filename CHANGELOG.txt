@@ -1,3 +1,7 @@
+MDA34 - 2015-07-02
+------------------
+First official release from MDA.
+
 MDA34 - 2015-06-30
 ------------------
 A number of css modifications and tickets resolution.
