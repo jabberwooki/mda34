@@ -153,7 +153,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Random */
+  /* Sort criterion: Global: Au hasard */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -205,7 +205,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Random */
+  /* Sort criterion: Global: Au hasard */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -257,7 +257,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Random */
+  /* Sort criterion: Global: Au hasard */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
@@ -302,7 +302,6 @@ function mda_faqs_views_default_views() {
     t('dernier »'),
     t('Liste des FAQs'),
     t('Foire aux questions'),
-    t('more'),
     t('Accueil portail (ados)'),
     t('FAQ'),
     t('Accueil portail (parents)'),
@@ -337,6 +336,12 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  /* Relation: Terme de taxonomie: Content with term */
+  $handler->display->display_options['relationships']['nid']['id'] = 'nid';
+  $handler->display->display_options['relationships']['nid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['relationships']['nid']['field'] = 'nid';
+  $handler->display->display_options['relationships']['nid']['label'] = 'nœud(s) rattaché(s) au terme';
+  $handler->display->display_options['relationships']['nid']['required'] = TRUE;
   /* Champ: Terme de taxonomie: Nom */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -357,6 +362,12 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'faq_categories' => 'faq_categories',
   );
+  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
+  $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['relationship'] = 'nid';
+  $handler->display->display_options['filters']['current_all']['value'] = '1';
 
   /* Display: Filtre FAQs */
   $handler = $view->new_display('block', 'Filtre FAQs', 'faq_categories_filter');
@@ -368,8 +379,8 @@ function mda_faqs_views_default_views() {
     t('Trier par'),
     t('Asc'),
     t('Desc'),
+    t('nœud(s) rattaché(s) au terme'),
     t('Filtre FAQs'),
-    t('more'),
   );
   $export['faqs_filter'] = $view;
 
