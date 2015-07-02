@@ -349,7 +349,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -474,7 +474,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -592,7 +592,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -693,7 +693,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -811,7 +811,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -1149,11 +1149,12 @@ function mda_events_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Relation: Terme de taxonomie: Contenu utilisant Type d&#039;événement */
-  $handler->display->display_options['relationships']['reverse_field_event_type_node']['id'] = 'reverse_field_event_type_node';
-  $handler->display->display_options['relationships']['reverse_field_event_type_node']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['relationships']['reverse_field_event_type_node']['field'] = 'reverse_field_event_type_node';
-  $handler->display->display_options['relationships']['reverse_field_event_type_node']['required'] = TRUE;
+  /* Relation: Terme de taxonomie: Content with term */
+  $handler->display->display_options['relationships']['nid']['id'] = 'nid';
+  $handler->display->display_options['relationships']['nid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['relationships']['nid']['field'] = 'nid';
+  $handler->display->display_options['relationships']['nid']['label'] = 'nœud(s) rattaché(s) au terme';
+  $handler->display->display_options['relationships']['nid']['required'] = TRUE;
   /* Champ: Terme de taxonomie: Nom */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -1174,6 +1175,26 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'event_types' => 'event_types',
   );
+  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
+  $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['relationship'] = 'nid';
+  $handler->display->display_options['filters']['current_all']['value'] = '1';
+  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['relationship'] = 'nid';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['operator'] = '<=';
+  $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
+  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['relationship'] = 'nid';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_pubdates_value2']['default_date'] = 'now';
 
   /* Display: Filtre Agenda */
   $handler = $view->new_display('block', 'Filtre Agenda', 'event_types_filter');
@@ -1186,7 +1207,7 @@ function mda_events_views_default_views() {
     t('Trier par'),
     t('Asc'),
     t('Desc'),
-    t('field_event_type'),
+    t('nœud(s) rattaché(s) au terme'),
     t('Filtre Agenda'),
   );
   $export['events_filter'] = $view;
