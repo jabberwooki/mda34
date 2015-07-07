@@ -289,14 +289,14 @@ function mda_structures_views_default_views() {
     2 => '2',
     1 => 0,
     141037677 => 0,
-    217795369 => 0,
     183916278 => 0,
-    231346920 => 0,
     155963314 => 0,
     22875792 => 0,
     193262079 => 0,
     109177673 => 0,
   );
+  $handler->display->display_options['filters']['field_public_tid']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_public_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_public_tid']['vocabulary'] = 'publics';
   $handler->display->display_options['path'] = 'annuaire';
 
