@@ -1624,7 +1624,6 @@ a#main-content{height:1px;overflow:hidden}
 .st_fblike_hcount{margin-left:-15px;margin-top:-2px}
 #block-system-main ul.pagination{margin-top:20px}
 .pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover{background-color:transparent;border-color:none;color:#000!important}
-.boxes-box-content{margin-bottom:1em}
 [class*=" node-type-"] h2.page-header{text-transform:none}
 [class*=" node-type-"] div.node img{max-width:47%;float:left;margin-right:1em;margin-bottom:1em}
 .glyphicon,[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{font-style:normal;speak:none;font-variant:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;font-family:fontello;font-weight:400;font-size:1em;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-transform:none;line-height:1em;color:#999}
@@ -1830,12 +1829,14 @@ body.domain-ados-mda34-org #block-system-main a.btn-success{color:#fff;margin-to
 body.domain-ados-mda34-org #block-system-main ul li{background:url(../images/arrow-orange.png) 0 50% no-repeat}
 body.domain-ados-mda34-org #block-system-main ul.pagination li{background-image:none}
 body.domain-ados-mda34-org #block-system-main .field-name-field-event-website a{background-color:#f78c26;color:#fff;margin:10px 0;border:0}
-body.domain-reseau-pro-mda34-org #block-system-main #block-system-main a,body.domain-reseau-pro-mda34-org #block-system-main h2.page-header{color:#575095}
-body.domain-reseau-pro-mda34-org #block-system-main #block-system-main a.btn-success{color:#fff;margin-top:10px}
-body.domain-reseau-pro-mda34-org #block-system-main #block-system-main ul li{background:url(../images/arrow-violet.png) 0 50% no-repeat}
-body.domain-reseau-pro-mda34-org #block-system-main #block-system-main ul.pagination li{background-image:none}
-body.domain-reseau-pro-mda34-org #block-system-main #block-system-main .field-name-field-event-website a{background-color:#575095;color:#fff;margin:10px 0;border:0}
-body.domain-reseau-pro-mda34-org #block-system-main .btn-success{background-color:#575095;color:#fff;border:0;margin-top:5px}
+body.domain-reseau-pro-mda34-org #block-system-main a,body.domain-reseau-pro-mda34-org h2.page-header{color:#575095}
+body.domain-reseau-pro-mda34-org #block-system-main a.btn-success{color:#fff;margin-top:10px}
+body.domain-reseau-pro-mda34-org #block-system-main ul li{background:url(../images/arrow-violet.png) 0 50% no-repeat}
+body.domain-reseau-pro-mda34-org #block-system-main ul.pagination li{background-image:none}
+body.domain-reseau-pro-mda34-org #block-system-main .field-name-field-event-website a{background-color:#575095;color:#fff;margin:10px 0;border:0}
+body.domain-reseau-pro-mda34-org .btn-success{background-color:#575095;color:#fff;border:0;margin-top:5px}
+.domain-reseau-pro-mda34-org h3{text-transform:none}
+.group-link-resources.field-group-div{font-size:.9em;margin-bottom:1em}
 body.domain-radio-mda34-org #block-system-main #block-system-main a,body.domain-radio-mda34-org #block-system-main h2.page-header{color:#0080ff}
 body.domain-radio-mda34-org #block-system-main #block-system-main a.btn-success{color:#fff;margin-top:10px}
 body.domain-radio-mda34-org #block-system-main #block-system-main ul li{background:url(../images/arrow-blue.png) 0 50% no-repeat}
