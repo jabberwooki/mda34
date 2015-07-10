@@ -1,5 +1,11 @@
 MDA34 - 2015-07-10
 ------------------
+- Hotfix on mda_domains_preprocess_menu_link() function for same bug
+as previous release (url without www.), but in main menu.
+Previous fix was for sidebar block links only.
+
+MDA34 - 2015-07-10
+------------------
 - css improvements.
 - Annuaire view filter modified.
 - Fixes bug of wrong urls in main menu urls when http://mda34.org/ is used.
