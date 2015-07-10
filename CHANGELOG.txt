@@ -1,3 +1,9 @@
+MDA34 - 2015-07-10
+------------------
+- css improvements.
+- Annuaire view filter modified.
+- Fixes bug of wrong urls in main menu urls when http://mda34.org/ is used.
+
 MDA34 - 2015-07-02
 ------------------
 - Agenda and FAQ isotope views improvement. Terms with no attached content
