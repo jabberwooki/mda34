@@ -36,8 +36,10 @@ function mda_tag_shortcut_title($title,$tag) {
 }
 
 function mda_url_suffix($url) {
-	$parts = explode('.mda34.', $url);
-	$suffix = $parts[1];
-	$subparts = explode('/', $suffix);
-	return $subparts[0];
+  // previous code "$parts = explode('.mda34.', $url)" caused a bug when accessing site with htt://mda34.org (without www.).
+  $parts = explode('mda34', $url);
+  $suffix = $parts[1];
+  $subparts = explode('/', $suffix);
+  $suffix = $subparts[0];
+  return substr($suffix, 1);
 }
