@@ -29,9 +29,7 @@ function mda_events_field_default_field_instances() {
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 3,
       ),
@@ -131,7 +129,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'addressfield',
         'settings' => array(
-          'field_formatter_class' => '',
           'format_handlers' => array(
             0 => 'address',
           ),
@@ -245,7 +242,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'leaflet',
         'settings' => array(
-          'field_formatter_class' => '',
           'height' => 300,
           'icon' => array(
             'html' => '',
@@ -413,7 +409,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
-          'field_formatter_class' => '',
           'format_type' => 'long',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -492,7 +487,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => 'img-col-4',
         ),
@@ -659,9 +653,7 @@ function mda_events_field_default_field_instances() {
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 8,
       ),
@@ -716,9 +708,7 @@ function mda_events_field_default_field_instances() {
       'full' => array(
         'label' => 'hidden',
         'module' => 'link',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'link_default',
         'weight' => 4,
       ),
@@ -800,7 +790,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 1,
         ),
         'type' => 'entityreference_label',
@@ -866,9 +855,7 @@ function mda_events_field_default_field_instances() {
       'full' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 10,
       ),
@@ -928,9 +915,7 @@ function mda_events_field_default_field_instances() {
       'full' => array(
         'label' => 'hidden',
         'module' => 'registration',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'registration_form',
         'weight' => 5,
       ),
@@ -1008,9 +993,7 @@ function mda_events_field_default_field_instances() {
       'full' => array(
         'label' => 'inline',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 13,
       ),
