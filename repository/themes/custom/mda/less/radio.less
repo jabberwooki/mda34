@@ -3,19 +3,33 @@
   content: "\e808";
 }
 
-
 body.domain-radio-mda34-org
 {
 	.views-row-first{
 	padding-bottom: 0;
 	}
+
+	.view-content{
+  margin: 0 0px 0em;
+	}
 	
-	.block-wrapper-custom .view-radio-programmes {
+	.block-wrapper-custom  {
+  padding: 0 0px;
+  margin-bottom: 0;
+	}
+	
+	.footer{
+  margin-top: 0em;
+}
+	
+	.view-radio-programmes {
   padding: 0 0px;
 	}
+	
 	h3.block-title{
 	color:white;
 	}
+	
 }
 
 body.domain-radio-mda34-org #home-main-container-wrapper{
@@ -24,7 +38,8 @@ body.domain-radio-mda34-org #home-main-container-wrapper{
     color: white;
     background: transparent url(../images/ondes_radio.png) no-repeat 97% 50%;
     margin-bottom: 15px;
-    margin-top: -10px;
+      margin-top: 5px;
+        margin-left: 0.5em;
     &:before{
       font-size: 1em;
     }
@@ -39,12 +54,16 @@ body.domain-radio-mda34-org #home-main-container-wrapper{
         float: left;
         margin: 0 14px 0 0;
       }
-      h3{
+      h3 a{
         margin-bottom: 0;
         border:0px;
         margin-right: 0.25em;
-        
+        text-transform: none;
+        color :#222;
       }
+      
+      
+      
       .field-name-field-record-date {
         color: @cyan-mda;
         display: block;
@@ -103,16 +122,20 @@ body.domain-radio-mda34-org #home-main-container-wrapper{
   /* liste des émissions en page d'accueil ************************************/
   .view-display-id-programmes_list  {
     .views-row{
-      height: 196px;
-      border-bottom: 1px solid @gray-lighter;
-      padding : 10px;
-        margin: 0 5px;
+      border-bottom: 0px solid @gray-lighter;
+        padding: 0 1em 1.5em;
+        margin: 0;
       display: block;
       &:after{
         content:"";
         display: block;
         clear: both;
       }
+    
+      h3{
+        text-transform:none;
+        }
+      
       .field-name-field-radio-image img{
         float: left;
         margin-right: 15px;
@@ -153,4 +176,9 @@ body.domain-radio-mda34-org #home-main-container-wrapper{
   color: #000;
   text-transform: none;
 }
+
+.ds-1col.node.node-radio-programme.view-mode-last_item.clearfix {
+  padding: 1em;
+}
+
 
