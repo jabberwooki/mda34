@@ -29,9 +29,7 @@ function mda_articles_field_default_field_instances() {
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
       ),
@@ -170,7 +168,6 @@ function mda_articles_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'scald_col_4',
@@ -233,7 +230,6 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',
@@ -302,10 +298,9 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
-          'link' => 0,
+          'link' => 1,
         ),
-        'type' => 'title',
+        'type' => 'file_representation',
         'weight' => 6,
       ),
       'list' => array(
@@ -371,7 +366,6 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',
@@ -440,7 +434,6 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
         ),
         'type' => 'title',

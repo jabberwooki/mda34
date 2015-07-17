@@ -39,7 +39,7 @@ function mda_articles_views_default_views() {
   $handler->display->display_options['row_options']['delta_fieldset']['delta_fields'] = array();
   $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
   $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'teaser';
-  /* Relationship: Contenu: Taxonomy terms on node */
+  /* Relation: Contenu: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
@@ -67,7 +67,7 @@ function mda_articles_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Contenu: Post date */
+  /* Sort criterion: Contenu: Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -110,7 +110,6 @@ function mda_articles_views_default_views() {
     t('Desc'),
     t('term'),
     t('Liste'),
-    t('more'),
   );
   $export['articles'] = $view;
 

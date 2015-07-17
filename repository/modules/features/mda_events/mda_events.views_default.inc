@@ -349,7 +349,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -474,7 +474,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -592,7 +592,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -693,7 +693,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -811,7 +811,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Adresse - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -897,12 +897,11 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_dates']['label'] = '';
   $handler->display->display_options['fields']['field_event_dates']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'short_no_time',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'field_formatter_class' => '',
   );
   /* Champ: Contenu: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
@@ -1022,12 +1021,11 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_dates']['label'] = '';
   $handler->display->display_options['fields']['field_event_dates']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'short_no_time',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'field_formatter_class' => '',
   );
   /* Champ: Contenu: Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
