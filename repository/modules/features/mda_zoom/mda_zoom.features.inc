@@ -39,20 +39,20 @@ function mda_zoom_image_default_styles() {
   $styles['slide_750x576'] = array(
     'label' => 'Diapo (750x576)',
     'effects' => array(
-      6 => array(
+      5 => array(
         'name' => 'image_scale',
         'data' => array(
           'width' => '',
-          'height' => 576,
+          'height' => 487,
           'upscale' => 0,
         ),
         'weight' => 1,
       ),
-      7 => array(
+      6 => array(
         'name' => 'image_crop',
         'data' => array(
           'width' => 750,
-          'height' => 576,
+          'height' => 487,
           'anchor' => 'center-center',
         ),
         'weight' => 2,
