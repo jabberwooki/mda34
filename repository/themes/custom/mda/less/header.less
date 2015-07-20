@@ -76,6 +76,7 @@ body:not(.front) .main-container{
     }
     @media (max-width:@screen-xs){
         margin-top: 0;
+          padding-top: 2em;
     }
   }  
   .slogan{
@@ -85,9 +86,9 @@ body:not(.front) .main-container{
     margin-left: 193px;
     text-align: center;
     @media (max-width: @screen-sm-min) {
-      text-align: left;
+      text-align: center;
       margin-left: 120px;
-      width: 140px;
+      width: 111px;
     }
     @media (max-width:@screen-xs){
         margin-top: 10px;
@@ -105,13 +106,22 @@ body:not(.front) .main-container{
   .navbar-header{
     .slogan{
       margin-left: 150px;
+      @media (max-width:@screen-xs) {
+       margin-left:100px;
+      }
     }
   }
+  
+  
   h1.navbar-brand a{
     padding-left: 28px;
     @media @wide {
         float: none;
       }
+      @media (max-width:@screen-xs) {
+      padding-left: 0px;
+      }
+      
   }
 }
 /* logo adolescents ***********************************************************/
@@ -119,14 +129,7 @@ body.domain-ados-mda34-org {
   a.logo {
     background: url(../images/home_ado_big.gif) no-repeat 0 0;
   }
-  .navbar-header{
-    .slogan{
-      margin-left: 150px;
-    }
-  }
-  h1.navbar-brand a{
-    padding-left: 28px;
-  }
+
 }
 /* logo parents ***************************************************************/
 body.domain-parents-mda34-org {
