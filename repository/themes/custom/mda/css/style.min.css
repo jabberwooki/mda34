@@ -1727,7 +1727,7 @@ aside.col-sm-4 h3.block-title{font-size:1.2em;padding-bottom:8px;font-weight:700
 .block .img-title-wrapper{position:relative;width:360px;min-height:100px}
 .block .img-title-wrapper h4{position:absolute;bottom:0;text-transform:none;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.6)}
 .block .img-title-wrapper h4 a{color:#fff;font-size:1.15em;padding:5px 10px;display:block}
-.block .img-title-wrapper h3{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.5);height:80px;overflow:hidden;font-weight:700;widows:100%}
+.block .img-title-wrapper h3{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.5);height:80px;overflow:hidden;font-weight:700;widows:100%;text-transform:none}
 @media (min-width:480px){.block .img-title-wrapper h4{width:360px;height:80px}
 .block .img-title-wrapper h3{width:360px}
 }
@@ -2023,7 +2023,7 @@ body.node-type-structure .field-name-field-coordinates{clear:both}
 .page-actualites .view-news.view-display-id-news_last_news a>img{max-width:48%}
 .page-actualites .view-news .views-row{border-bottom:0 solid #999;margin-bottom:10px}
 .page-actualites .view-news .views-row .news-item-fields:after{content:'';display:block;clear:both;height:10px;margin:10px 0;float:none}
-.page-actualites .view-news .views-row .news-item-fields>a{display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-transform:uppercase;text-decoration:none;float:right}
+.page-actualites .view-news .views-row .news-item-fields>a{display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-decoration:none;float:right}
 .node-type-news .node-news img{max-width:100%!important}
 .node-type-news .node-news .group-submitted-socialnetworks{border-bottom:1px solid #cdcdcd;margin-bottom:10px;height:50px}
 .node-type-news .node-news .group-submitted-socialnetworks .field-name-submitted-by{float:left;font-size:.9em}
@@ -2044,6 +2044,6 @@ div.node-event .group-event-infos-1 .sharethis-buttons{float:right;min-width:280
 .node-type-article div.node img{max-width:100%!important;margin-right:0}
 body.html.not-front.page-presentation h2{text-transform:none;font-size:24px}
 body.html.not-front.page-presentation #block-system-main a:visited{color:#000}
-body.html.not-front.page-presentation #block-system-main ul li{list-style:none;display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-transform:uppercase;text-decoration:none;float:right;font-size:.85em;margin-top:1em}
+body.html.not-front.page-presentation #block-system-main ul li{list-style:none;display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-decoration:none;float:right;font-size:.85em;margin-top:1em}
 .node-type-faq .sharethis-buttons{float:right;min-width:280px}
 .node-type-faq .field-name-body,.node-type-faq .group-attached-resources{margin-top:20px}
