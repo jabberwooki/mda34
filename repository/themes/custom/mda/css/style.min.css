@@ -1671,7 +1671,7 @@ body:not(.front) .main-container{margin-top:120px}
 [class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{float:none}
 }
 @media (max-width:480px){.navbar-header h1.navbar-brand a{font-size:1em;white-space:normal}
-.navbar-header h1.navbar-brand{margin-top:0;padding-top:2em}
+.navbar-header h1.navbar-brand{margin-top:0;padding-top:1em}
 .navbar-header .slogan{margin-top:10px}
 [class*=" domain-ado"] .navbar-header .slogan,[class*=" domain-parent"] .navbar-header .slogan,[class*=" domain-reseau"] .navbar-header .slogan,[class*=" domain-radio"] .navbar-header .slogan{margin-left:100px}
 [class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{padding-left:0}
