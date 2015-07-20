@@ -1620,7 +1620,7 @@ a#main-content{height:1px;overflow:hidden}
 .st_fblike_hcount{margin-left:-15px;margin-top:-2px}
 #block-system-main ul.pagination{margin-top:20px}
 .pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover{background-color:transparent;border-color:none;color:#000!important}
-[class*=" node-type-"] h2.page-header{text-transform:none}
+.zoom .group-all-diapo .container .group-link-theme h4,[class*=" node-type-"] h2.page-header{text-transform:none}
 [class*=" node-type-"] div.node img{max-width:47%;float:left;margin-right:1em;margin-bottom:1em}
 .glyphicon,[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{font-style:normal;speak:none;font-variant:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;font-family:fontello;font-weight:400;font-size:1em;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-transform:none;line-height:1em;color:#999}
 @font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix) format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294) format('woff'),url(../images/fontello/font/fontello.ttf?90885294) format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello) format('svg');font-weight:400;font-style:normal}
@@ -1867,9 +1867,9 @@ body.front .zoom{border-bottom:0;padding-bottom:0}
 }
 body.front .zoom .block.block-views{margin-bottom:0;padding-bottom:0}
 body.front .zoom .group-all-diapo .container{position:relative}
-body.front .zoom .group-all-diapo .container .group-link-theme{width:550px;height:200px;position:absolute;bottom:0;left:0;background-color:#000;background-color:rgba(0,0,0,.5)}
+body.front .zoom .group-all-diapo .container .group-link-theme{width:550px;height:170px;position:absolute;bottom:0;left:0;background-color:#000;background-color:rgba(0,0,0,.5)}
 body.front .zoom .group-all-diapo .container .group-link-theme h3 a{color:#fff;padding:10px 20px;display:block;font-size:1.2em;text-transform:none}
-body.front .zoom .group-all-diapo .container .group-link-theme h4{display:inline-block;padding:5px 5px 5px 25px;color:#fff}
+body.front .zoom .group-all-diapo .container .group-link-theme h4{display:inline-block;padding:5px 25px;color:#fff}
 body.front .zoom .group-all-diapo .container .group-link-theme h4.orange{background-color:#f78c26}
 body.front .zoom .group-all-diapo .container .group-link-theme h4.violet{background-color:#575095}
 body.front .zoom .group-all-diapo .container .group-link-theme h4.green{background-color:#32903f}
