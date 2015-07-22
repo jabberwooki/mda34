@@ -149,7 +149,7 @@ function kcontextes_context_default_contexts() {
           'module' => 'boxes',
           'delta' => 'pros_resources_link',
           'region' => 'sidebar_second',
-          'weight' => '-8',
+          'weight' => '-7',
         ),
       ),
     ),

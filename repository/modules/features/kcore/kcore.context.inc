@@ -56,6 +56,53 @@ function kcore_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'reseaux';
+  $context->description = 'reseaux partenaires';
+  $context->tag = 'Core';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'article' => 'article',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+    'views' => array(
+      'values' => array(
+        'articles:page_articles_list' => 'articles:page_articles_list',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'kcore-mda_financeurs' => array(
+          'module' => 'kcore',
+          'delta' => 'mda_financeurs',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
+        'kcore-mda_anmda' => array(
+          'module' => 'kcore',
+          'delta' => 'mda_anmda',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Core');
+  t('reseaux partenaires');
+  $export['reseaux'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'search_all';
   $context->description = '';
   $context->tag = 'Search';
