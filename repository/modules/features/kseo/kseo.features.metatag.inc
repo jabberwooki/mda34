@@ -66,7 +66,13 @@ function kseo_metatag_export_default() {
         'value' => '[site:name] | [site:slogan]',
       ),
       'description' => array(
-        'value' => 'La MDA 34 est un lieu pour les jeunes de 11 à 21 ans. Il est possible d’y rencontrer différents professionnels à l’écoute des adolescents : éducateurs, psychologues, assistantes sociale, infirmiers, médecins... Accueillir, écouter, accompagner, informer, orienter sont les missions de la MDA 34.',
+        'value' => 'La MDA 34 est un lieu pour les jeunes de 11 à 21 ans. Il est possible d’y rencontrer différents professionnels à l’écoute des adolescents : éducateurs, psychologues, assistantes sociale, infirmiers, médecins. Accueillir, écouter, accompagner, informer, orienter sont les missions de la MDA 34.',
+      ),
+      'abstract' => array(
+        'value' => 'Professionnels de la MDA à l’écoute des adolescents. Accueillir, écouter, accompagner, informer, orienter sont les missions de la MDA 34.',
+      ),
+      'keywords' => array(
+        'value' => 'Adolescents, Hérault, maison',
       ),
       'canonical' => array(
         'value' => '[site:url]',
