@@ -3,14 +3,17 @@ description = Provides various modules and configuration for search engine optim
 core = 7.x
 package = App
 version = 7.x-1.0
-
-;=== Contrib dependencies =====================================================
+project = kseo
 dependencies[] = globalredirect
-dependencies[] = metatag
 dependencies[] = page_title
 dependencies[] = pathauto
 dependencies[] = redirect
 dependencies[] = transliteration
 dependencies[] = xmlsitemap
-
 features[features_api][] = api:2
+features[metatag][] = global
+features[metatag][] = global:403
+features[metatag][] = global:404
+features[metatag][] = global:frontpage
+features[metatag][] = node
+features_exclude[dependencies][metatag] = metatag
