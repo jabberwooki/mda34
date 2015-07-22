@@ -46,6 +46,22 @@ function kcore_block_info() {
 			'cache' => DRUPAL_NO_CACHE,
 	);
 
+	$blocks['mda_anmda'] = array(
+			'info' => t('MDA : Lien vers la anmda'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+	
+	$blocks['mda_gcsms'] = array(
+			'info' => t('MDA : Lien vers le gcsms'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+	
+	$blocks['mda_financeurs'] = array(
+			'info' => t('MDA : Lien vers les financeurs'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+	
+
 	return $blocks;
 }
 
@@ -203,6 +219,40 @@ function kcore_block_view($delta = '') {
 			$content = '<img src="' . $image_url . '" alt="' . $alt . '" class="partenaires">';
 			$block['content'] = $content;
 			return $block;
+
+		break;
+		case 'mda_anmda':
+			$block['subject'] = 'Le Réseau';
+			$href = 'http://www.anmda.fr/';
+			$image_filename = 'logo-anmda.png';
+			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
+			$alt = 'anmda';
+			$content = '<a href="' . $href .'" target="_blank">';
+			$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="anmda">';
+			$content .= '</a>';
+			$block['content'] = $content;
+			return $block;
+			
+		break;
+		case 'mda_gcsms':
+			$block['subject'] = 'Gérée par';
+			$image_filename = 'gcsms.jpg';
+			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
+			$alt = 'gcsms';
+			$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="gcsms">';
+			$block['content'] = $content;
+			return $block;
+			
+			break;
+		case 'mda_financeurs':
+			$block['subject'] = 'Financée par';
+			$image_filename = 'financeurs.jpg';
+			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
+			$alt = 'financeurs';
+			$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="financeurs">';
+			$block['content'] = $content;
+			return $block;
+				
 	}
 }
 

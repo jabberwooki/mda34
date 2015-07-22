@@ -1671,7 +1671,7 @@ body:not(.front) .main-container{margin-top:120px}
 [class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{float:none}
 }
 @media (max-width:480px){.navbar-header h1.navbar-brand a{font-size:1em;white-space:normal}
-.navbar-header h1.navbar-brand{margin-top:0;padding-top:2em}
+.navbar-header h1.navbar-brand{margin-top:0;padding-top:1em}
 .navbar-header .slogan{margin-top:10px}
 [class*=" domain-ado"] .navbar-header .slogan,[class*=" domain-parent"] .navbar-header .slogan,[class*=" domain-reseau"] .navbar-header .slogan,[class*=" domain-radio"] .navbar-header .slogan{margin-left:100px}
 [class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{padding-left:0}
@@ -1727,7 +1727,7 @@ aside.col-sm-4 h3.block-title{font-size:1.2em;padding-bottom:8px;font-weight:700
 .block .img-title-wrapper{position:relative;width:360px;min-height:100px}
 .block .img-title-wrapper h4{position:absolute;bottom:0;text-transform:none;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.6)}
 .block .img-title-wrapper h4 a{color:#fff;font-size:1.15em;padding:5px 10px;display:block}
-.block .img-title-wrapper h3{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.5);height:80px;overflow:hidden;font-weight:700;widows:100%}
+.block .img-title-wrapper h3{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.5);height:80px;overflow:hidden;font-weight:700;widows:100%;text-transform:none}
 @media (min-width:480px){.block .img-title-wrapper h4{width:360px;height:80px}
 .block .img-title-wrapper h3{width:360px}
 }
@@ -1821,8 +1821,8 @@ body.domain-ados-mda34-org .block.block-views h3{color:#f78c26}
 #block-menu-menu-footer-menu ul.menu{text-align:center;padding:0}
 #block-menu-menu-footer-menu ul.menu li{display:inline-block}
 #block-menu-menu-footer-menu ul.menu li a{color:#000}
-#block-menu-menu-footer-menu ul.menu li a:hover{background-color:transparent;text-decoration:underline}
 body.domain-parents-mda34-org #block-system-main a,body.domain-parents-mda34-org h2.page-header{color:#32903f}
+#block-menu-menu-footer-menu ul.menu li a:hover{background-color:transparent;text-decoration:underline}
 body.domain-parents-mda34-org #block-system-main a.btn-success{color:#fff;margin-top:10px}
 body.domain-parents-mda34-org #block-system-main ul li{background:url(../images/arrow-green.png) 0 50% no-repeat}
 body.domain-parents-mda34-org #block-system-main ul.pagination li{background-image:none}
@@ -1833,6 +1833,8 @@ body.domain-ados-mda34-org #block-system-main ul li{background:url(../images/arr
 body.domain-ados-mda34-org #block-system-main ul.pagination li{background-image:none}
 body.domain-ados-mda34-org #block-system-main .field-name-field-event-website a{background-color:#f78c26;color:#fff;margin:10px 0;border:0}
 body.domain-reseau-pro-mda34-org #block-system-main a,body.domain-reseau-pro-mda34-org h2.page-header{color:#575095}
+@media (max-width:480px){body.domain-ados-mda34-org .zoom,body.domain-parents-mda34-org .zoom,body.domain-reseau-pro-mda34-org .zoom{display:none}
+}
 body.domain-reseau-pro-mda34-org #block-system-main a.btn-success{color:#fff;margin-top:10px}
 body.domain-reseau-pro-mda34-org #block-system-main ul li{background:url(../images/arrow-violet.png) 0 50% no-repeat}
 body.domain-reseau-pro-mda34-org #block-system-main ul.pagination li{background-image:none}
@@ -1870,7 +1872,8 @@ h2.line-right-left{font-size:1.5em;display:none}
 h2.line-right-left{display:block}
 }
 body.front .zoom{border-bottom:0;padding-bottom:0}
-@media (max-width:480px){body.front .zoom{margin-top:-10px}
+@media (max-width:480px){body.front .zoom{margin-top:0}
+body.front .zoom .carousel{display:none}
 }
 body.front .zoom .block.block-views{margin-bottom:0;padding-bottom:0}
 body.front .zoom .group-all-diapo .container{position:relative}
@@ -2023,7 +2026,7 @@ body.node-type-structure .field-name-field-coordinates{clear:both}
 .page-actualites .view-news.view-display-id-news_last_news a>img{max-width:48%}
 .page-actualites .view-news .views-row{border-bottom:0 solid #999;margin-bottom:10px}
 .page-actualites .view-news .views-row .news-item-fields:after{content:'';display:block;clear:both;height:10px;margin:10px 0;float:none}
-.page-actualites .view-news .views-row .news-item-fields>a{display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-transform:uppercase;text-decoration:none;float:right}
+.page-actualites .view-news .views-row .news-item-fields>a{display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-decoration:none;float:right}
 .node-type-news .node-news img{max-width:100%!important}
 .node-type-news .node-news .group-submitted-socialnetworks{border-bottom:1px solid #cdcdcd;margin-bottom:10px;height:50px}
 .node-type-news .node-news .group-submitted-socialnetworks .field-name-submitted-by{float:left;font-size:.9em}
@@ -2044,6 +2047,6 @@ div.node-event .group-event-infos-1 .sharethis-buttons{float:right;min-width:280
 .node-type-article div.node img{max-width:100%!important;margin-right:0}
 body.html.not-front.page-presentation h2{text-transform:none;font-size:24px}
 body.html.not-front.page-presentation #block-system-main a:visited{color:#000}
-body.html.not-front.page-presentation #block-system-main ul li{list-style:none;display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-transform:uppercase;text-decoration:none;float:right;font-size:.85em;margin-top:1em}
+body.html.not-front.page-presentation #block-system-main ul li{list-style:none;display:block;padding-left:16px;background:url(../images/lire_suite.gif) 0 50% no-repeat;text-decoration:none;float:right;font-size:.85em;margin-top:1em}
 .node-type-faq .sharethis-buttons{float:right;min-width:280px}
 .node-type-faq .field-name-body,.node-type-faq .group-attached-resources{margin-top:20px}

@@ -24,6 +24,7 @@ dependencies[] = uuid
 dependencies[] = uuid_features
 dependencies[] = uuid_features_menu
 features[context][] = ados_filsantejeunes
+features[context][] = reseaux
 features[context][] = search_all
 features[context][] = social_all
 features[ctools][] = context:context:3
