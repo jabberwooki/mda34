@@ -49,6 +49,11 @@ aside.col-sm-4 h3.block-title{
     position: relative;
     width: 360px;
     min-height: 100px;
+    
+    @media screen and (max-width:@screen-sm){
+	width: auto;
+	}
+   
     h4{
       position: absolute;
       bottom: 0;
@@ -117,6 +122,7 @@ aside.col-sm-4 h3.block-title{
       font-weight: bold;
       @media (max-width:@screen-xs){
         top: 0;
+        display: none;
       }
     }
     .event-location-block{

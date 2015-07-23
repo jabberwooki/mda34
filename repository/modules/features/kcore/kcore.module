@@ -249,8 +249,8 @@ function kcore_block_view($delta = '') {
 			$image_filename = 'financeurs.jpg';
 			$image_url = 'http://' . $_SERVER['HTTP_HOST'] . '/profiles/mda/modules/features/kcore/images/' . $image_filename;
 			$alt = 'financeurs';
-			$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="financeurs">';
-			$block['content'] = $content;
+			//$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="financeurs">';
+			//$block['content'] = $content;
 			return $block;
 				
 	}

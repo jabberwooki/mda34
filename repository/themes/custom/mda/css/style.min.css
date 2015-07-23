@@ -1612,7 +1612,7 @@ p{font-family:arial}
 #block-menu-menu-top-menu{display:inline-block;position:absolute;right:0;top:0}
 #block-menu-menu-top-menu a{color:#000;display:block;padding-left:40px;font-family:FontAwesome,arial;margin-top:.85em;font-size:.85em;background:url(../images/retour-accueil.png) 3px 3px no-repeat}
 #block-menu-menu-top-menu a:hover{text-decoration:underline}
-@media screen and (max-width:768px){#block-menu-menu-top-menu{position:absolute;top:-120px;right:-10px}
+@media screen and (max-width:768px){#block-menu-menu-top-menu{position:absolute;top:-120px;right:-20px;font-size:.8em}
 }
 #block-system-main a{color:#222}
 #block-system-main a:hover{color:#000}
@@ -1671,10 +1671,10 @@ body:not(.front) .main-container{margin-top:120px}
 [class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{float:none}
 }
 @media (max-width:480px){.navbar-header h1.navbar-brand a{font-size:1em;white-space:normal}
-.navbar-header h1.navbar-brand{margin-top:0;padding-top:1em}
+.navbar-header h1.navbar-brand{margin-top:0}
 .navbar-header .slogan{margin-top:10px}
 [class*=" domain-ado"] .navbar-header .slogan,[class*=" domain-parent"] .navbar-header .slogan,[class*=" domain-reseau"] .navbar-header .slogan,[class*=" domain-radio"] .navbar-header .slogan{margin-left:100px}
-[class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{padding-left:0}
+[class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{padding-left:0;padding-top:1.8em}
 }
 body.domain-ados-mda34-org a.logo{background:url(../images/home_ado_big.gif) no-repeat}
 body.domain-parents-mda34-org a.logo{background:url(../images/home_parents_big.gif) no-repeat}
@@ -1725,6 +1725,8 @@ aside.col-sm-4 h3.block-title{font-size:1.2em;padding-bottom:8px;font-weight:700
 .block .views-row .views-field-title a{color:#000}
 .block .views-row:after,.block .views-row:before{content:" ";display:table}
 .block .img-title-wrapper{position:relative;width:360px;min-height:100px}
+@media screen and (max-width:768px){.block .img-title-wrapper{width:auto}
+}
 .block .img-title-wrapper h4{position:absolute;bottom:0;text-transform:none;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.6)}
 .block .img-title-wrapper h4 a{color:#fff;font-size:1.15em;padding:5px 10px;display:block}
 .block .img-title-wrapper h3{position:absolute;bottom:0;margin:0;padding:0;background-color:#000;background-color:rgba(0,0,0,.5);height:80px;overflow:hidden;font-weight:700;widows:100%;text-transform:none}
@@ -1734,7 +1736,7 @@ aside.col-sm-4 h3.block-title{font-size:1.2em;padding-bottom:8px;font-weight:700
 .block .img-title-wrapper h3 a{display:block;color:#fff;font-size:.8em;padding:10px 15px}
 .block .img-title-wrapper .dates-custom-wrapper{position:absolute;top:0;right:0;display:block;padding:0 2px 0 5px;color:#fff;font-family:arial;font-weight:700}
 .block .img-title-wrapper .event-location-block,.block .img-title-wrapper .event-type-block{position:absolute;top:56%;left:0;display:block;padding:3px 5px;background-color:#000;color:#fff;z-index:1;font-family:arial;font-weight:700}
-@media (max-width:480px){.block .img-title-wrapper .event-location-block,.block .img-title-wrapper .event-type-block{top:0}
+@media (max-width:480px){.block .img-title-wrapper .event-location-block,.block .img-title-wrapper .event-type-block{top:0;display:none}
 }
 .block .img-title-wrapper .event-location-block{left:auto;right:0}
 .block p{color:#000}
@@ -1828,12 +1830,18 @@ body.domain-parents-mda34-org #block-system-main ul li{background:url(../images/
 body.domain-parents-mda34-org #block-system-main ul.pagination li{background-image:none}
 body.domain-parents-mda34-org #block-system-main .field-name-field-event-website a{background-color:#32903f;color:#fff;margin:10px 0;border:0}
 body.domain-ados-mda34-org #block-system-main a,body.domain-ados-mda34-org h2.page-header{color:#f78c26}
+body.domain-ados-mda34-org .block-wrapper-custom h3{text-transform:none;margin-top:0}
 body.domain-ados-mda34-org #block-system-main a.btn-success{color:#fff;margin-top:10px}
 body.domain-ados-mda34-org #block-system-main ul li{background:url(../images/arrow-orange.png) 0 50% no-repeat}
 body.domain-ados-mda34-org #block-system-main ul.pagination li{background-image:none}
 body.domain-ados-mda34-org #block-system-main .field-name-field-event-website a{background-color:#f78c26;color:#fff;margin:10px 0;border:0}
 body.domain-reseau-pro-mda34-org #block-system-main a,body.domain-reseau-pro-mda34-org h2.page-header{color:#575095}
-@media (max-width:480px){body.domain-ados-mda34-org .zoom,body.domain-parents-mda34-org .zoom,body.domain-reseau-pro-mda34-org .zoom{display:none}
+@media (max-width:480px){body.domain-parents-mda34-org h1.name.navbar-brand{padding-top:1.8em}
+body.domain-parents-mda34-org .zoom{display:none}
+body.domain-ados-mda34-org h1.name.navbar-brand{padding-top:1.8em}
+body.domain-ados-mda34-org .zoom{display:none}
+body.domain-reseau-pro-mda34-org h1.name.navbar-brand{padding-top:1.8em}
+body.domain-reseau-pro-mda34-org .zoom{display:none}
 }
 body.domain-reseau-pro-mda34-org #block-system-main a.btn-success{color:#fff;margin-top:10px}
 body.domain-reseau-pro-mda34-org #block-system-main ul li{background:url(../images/arrow-violet.png) 0 50% no-repeat}
@@ -2022,7 +2030,7 @@ body.node-type-structure .field-name-body,body.node-type-structure .field-name-f
 body.node-type-structure .field-label,body.node-type-structure .field-name-field-action-types .field-items .field-item,body.node-type-structure .field-name-field-public .field-items .field-item{float:left;margin-right:10px}
 body.node-type-structure .field-name-field-coordinates{clear:both}
 .node-type-news h2.page-header:before,.page-actualites h2.page-header:before{font-weight:400;text-transform:none;color:#999;content:"\e804"}
-.page-actualites .view-news a>img{float:left;margin-right:20px;max-width:33.33%}
+.page-actualites .view-news a>img{float:left;margin-right:15px;max-width:33.33%}
 .page-actualites .view-news.view-display-id-news_last_news a>img{max-width:48%}
 .page-actualites .view-news .views-row{border-bottom:0 solid #999;margin-bottom:10px}
 .page-actualites .view-news .views-row .news-item-fields:after{content:'';display:block;clear:both;height:10px;margin:10px 0;float:none}
