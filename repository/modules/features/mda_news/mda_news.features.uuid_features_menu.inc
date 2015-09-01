@@ -22,11 +22,15 @@ function mda_news_menu_default_uuid_features_menu() {
           'd2' => 'd2',
           'd3' => 'd3',
           'd4' => 'd4',
+          'd6' => 'd6',
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(
-        'title' => '',
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
       ),
     ),
     'module' => 'menu',

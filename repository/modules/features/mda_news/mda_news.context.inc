@@ -97,5 +97,37 @@ function mda_news_context_default_contexts() {
   t('News');
   $export['news_front_portal'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'veille';
+  $context->description = '';
+  $context->tag = 'newsletter';
+  $context->conditions = array(
+    'domain' => array(
+      'values' => array(
+        6 => 6,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'kcore-mda_veille' => array(
+          'module' => 'kcore',
+          'delta' => 'mda_veille',
+          'region' => 'sidebar_second',
+          'weight' => '5',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('newsletter');
+  $export['veille'] = $context;
+
   return $export;
 }

@@ -25,6 +25,7 @@ dependencies[] = uuid_features_menu
 dependencies[] = views
 features[context][] = news_front
 features[context][] = news_front_portal
+features[context][] = veille
 features[ctools][] = context:context:3
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
