@@ -25,8 +25,8 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'ados_mda34_org',
     ),
-    'ados.mda34.foodies-planet.com' => array(
-      'pattern' => 'ados.mda34.foodies-planet.com',
+    'ados.mda34.bac' => array(
+      'pattern' => 'ados.mda34.bac',
       'redirect' => 0,
       'machine_name' => 'ados_mda34_org',
     ),
@@ -47,8 +47,8 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'parents_mda34_org',
     ),
-    'parents.mda34.foodies-planet.com' => array(
-      'pattern' => 'parents.mda34.foodies-planet.com',
+    'parents.mda34.bac' => array(
+      'pattern' => 'parents.mda34.bac',
       'redirect' => 0,
       'machine_name' => 'parents_mda34_org',
     ),
@@ -69,8 +69,8 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'philado_mda34_org',
     ),
-    'philado.mda34.foodies-planet.com' => array(
-      'pattern' => 'philado.mda34.foodies-planet.com',
+    'philado.mda34.bac' => array(
+      'pattern' => 'philado.mda34.bac',
       'redirect' => 0,
       'machine_name' => 'philado_mda34_org',
     ),
@@ -96,8 +96,8 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'radio_mda34_org',
     ),
-    'radio.mda34.foodies-planet.com' => array(
-      'pattern' => 'radio.mda34.foodies-planet.com',
+    'radio.mda34.bac' => array(
+      'pattern' => 'radio.mda34.bac',
       'redirect' => 0,
       'machine_name' => 'radio_mda34_org',
     ),
@@ -118,8 +118,8 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'reseau_pro_mda34_org',
     ),
-    'reseau-pro.mda34.foodies-planet.com' => array(
-      'pattern' => 'reseau-pro.mda34.foodies-planet.com',
+    'reseau-pro.mda34.bac' => array(
+      'pattern' => 'reseau-pro.mda34.bac',
       'redirect' => 0,
       'machine_name' => 'reseau_pro_mda34_org',
     ),
@@ -140,8 +140,8 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'www_mda34_org',
     ),
-    'www.mda34.foodies-planet.com' => array(
-      'pattern' => 'www.mda34.foodies-planet.com',
+    'www.mda34.bac' => array(
+      'pattern' => 'www.mda34.bac',
       'redirect' => 0,
       'machine_name' => 'www_mda34_org',
     ),
