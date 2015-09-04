@@ -38,18 +38,7 @@ function mda_newsletter_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'mailchimp_signup-newsletter' => array(
-          'module' => 'mailchimp_signup',
-          'delta' => 'newsletter',
-          'region' => 'sidebar_second',
-          'weight' => '0',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 1;
 
   // Translatables
