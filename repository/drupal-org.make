@@ -265,3 +265,8 @@ projects[views_autocomplete_filters][version] = "1.2"
 
 projects[mollom][subdir] = contrib
 projects[mollom][version] = "2.14"
+
+projects[l10n_update][subdir] = contrib
+projects[l10n_update][version] = "2.0"
+
+
