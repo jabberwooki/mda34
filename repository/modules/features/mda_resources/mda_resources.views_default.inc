@@ -48,14 +48,14 @@ function mda_resources_views_default_views() {
   $handler->display->display_options['row_options']['delta_fieldset']['delta_fields'] = array();
   $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
   $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'teaser';
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -66,34 +66,34 @@ function mda_resources_views_default_views() {
     'trim_length' => '300',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Lien */
+  /* Champ: Contenu : Lien */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'En savoir plus';
-  /* Sort criterion: Contenu: Date de publication */
+  /* Critère de tri: Contenu : Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['sorts']['created']['granularity'] = 'hour';
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'resource' => 'resource',
   );
-  /* Filter criterion: Contenu: Type de ressource (field_resource_type) */
+  /* Critère de filtrage: Contenu : Type de ressource (field_resource_type) */
   $handler->display->display_options['filters']['field_resource_type_tid']['id'] = 'field_resource_type_tid';
   $handler->display->display_options['filters']['field_resource_type_tid']['table'] = 'field_data_field_resource_type';
   $handler->display->display_options['filters']['field_resource_type_tid']['field'] = 'field_resource_type_tid';
@@ -103,21 +103,21 @@ function mda_resources_views_default_views() {
   $handler = $view->new_display('page_with_page_title', 'Liste ressources', 'list_resources');
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'resource' => 'resource',
   );
-  /* Filter criterion: Contenu: Type de ressource (field_resource_type) */
+  /* Critère de filtrage: Contenu : Type de ressource (field_resource_type) */
   $handler->display->display_options['filters']['field_resource_type_tid']['id'] = 'field_resource_type_tid';
   $handler->display->display_options['filters']['field_resource_type_tid']['table'] = 'field_data_field_resource_type';
   $handler->display->display_options['filters']['field_resource_type_tid']['field'] = 'field_resource_type_tid';
@@ -135,7 +135,7 @@ function mda_resources_views_default_views() {
   );
   $handler->display->display_options['filters']['field_resource_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_resource_type_tid']['vocabulary'] = 'resource_types';
-  /* Filter criterion: Contenu: Thèmes (field_themes) */
+  /* Critère de filtrage: Contenu : Thèmes (field_themes) */
   $handler->display->display_options['filters']['field_themes_tid']['id'] = 'field_themes_tid';
   $handler->display->display_options['filters']['field_themes_tid']['table'] = 'field_data_field_themes';
   $handler->display->display_options['filters']['field_themes_tid']['field'] = 'field_themes_tid';
@@ -153,7 +153,7 @@ function mda_resources_views_default_views() {
   );
   $handler->display->display_options['filters']['field_themes_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_themes_tid']['vocabulary'] = 'themes';
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';

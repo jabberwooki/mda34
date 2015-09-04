@@ -69,6 +69,18 @@ function mda_resources_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'last_item' => array(
+        'custom_settings' => FALSE,
+      ),
+      'sidebar_item' => array(
+        'custom_settings' => FALSE,
+      ),
+      'portal_slide' => array(
+        'custom_settings' => FALSE,
+      ),
+      'site_slide' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
