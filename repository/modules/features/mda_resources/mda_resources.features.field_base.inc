@@ -57,6 +57,50 @@ function mda_resources_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_nom_profil'
+  $field_bases['field_nom_profil'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_nom_profil',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_prenom_profil'
+  $field_bases['field_prenom_profil'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_prenom_profil',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_resource_authors'
   $field_bases['field_resource_authors'] = array(
     'active' => 1,

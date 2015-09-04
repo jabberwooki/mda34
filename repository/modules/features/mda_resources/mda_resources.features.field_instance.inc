@@ -964,6 +964,136 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
     ),
   );
 
+  // Exported field_instance: 'profile2-main-field_nom_profil'
+  $field_instances['profile2-main-field_nom_profil'] = array(
+    'bundle' => 'main',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_nom_profil',
+    'label' => 'Nom',
+    'required' => 1,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'context' => 'debug',
+      'context_default' => 'sdl_editor_representation',
+      'dnd_enabled' => 0,
+      'linkit' => array(
+        'button_text' => 'Rechercher',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'mee_enabled' => 0,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-main-field_prenom_profil'
+  $field_instances['profile2-main-field_prenom_profil'] = array(
+    'bundle' => 'main',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_prenom_profil',
+    'label' => 'Prénom',
+    'required' => 1,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'context' => 'debug',
+      'context_default' => 'sdl_editor_representation',
+      'dnd_enabled' => 0,
+      'linkit' => array(
+        'button_text' => 'Rechercher',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'mee_enabled' => 0,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 32,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('<p>Exemple de format : <b>978-2-330-04817-4</b></p>
@@ -986,6 +1116,8 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
   t('ISBN');
   t('Image');
   t('Lien');
+  t('Nom');
+  t('Prénom');
   t('Publié le');
   t('Son');
   t('Thèmes');
