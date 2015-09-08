@@ -269,4 +269,7 @@ projects[mollom][version] = "2.14"
 projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = "2.0"
 
+projects[profile2][subdir] = contrib
+projects[profile2[version] = "1.3"
+
 
