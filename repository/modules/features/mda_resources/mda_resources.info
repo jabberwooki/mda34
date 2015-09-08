@@ -64,7 +64,6 @@ features[field_instance][] = profile2-main-field_prenom_profil
 features[field_instance][] = profile2-main-field_statut_profil
 features[menu_links][] = main-menu_ressources:ressources
 features[menu_links][] = management_linkit-profiles:admin/config/content/linkit
-features[menu_links][] = management_profile-types:admin/structure/profiles
 features[node][] = resource
 features[profile2_type][] = main
 features[taxonomy][] = authors

@@ -272,4 +272,9 @@ projects[l10n_update][version] = "2.0"
 projects[profile2][subdir] = contrib
 projects[profile2[version] = "1.3"
 
+projects[eu_cookie_compliance][subdir] = contrib
+projects[eu_cookie_compliance][version] = "1.14"
+
+projects[jquery_colorpicker][subdir] = contrib
+projects[jquery_colorpicker][version] = "1.1"
 

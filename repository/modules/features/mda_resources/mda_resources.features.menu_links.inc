@@ -61,31 +61,9 @@ function mda_resources_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'management_rdaction-de-contenu:admin/config/content',
   );
-  // Exported menu link: management_profile-types:admin/structure/profiles
-  $menu_links['management_profile-types:admin/structure/profiles'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/structure/profiles',
-    'router_path' => 'admin/structure/profiles',
-    'link_title' => 'Profile types',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Manage profiles, including fields.',
-      ),
-      'identifier' => 'management_profile-types:admin/structure/profiles',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
-    'parent_identifier' => 'management_structure:admin/structure',
-  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Linkit Profiles');
-  t('Profile types');
   t('Ressources');
 
 
