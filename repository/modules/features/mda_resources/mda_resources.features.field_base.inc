@@ -10,6 +10,36 @@
 function mda_resources_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_dom_prof_profil'
+  $field_bases['field_dom_prof_profil'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_dom_prof_profil',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        1 => 'Professionnel de l’éducation',
+        2 => 'Professionnel du social',
+        3 => 'Professionnel de la santé',
+        4 => 'Professionnel du culturel',
+        5 => 'Professionnel de l’animation',
+        6 => 'Professionnel de l’information, documentation, Edition',
+      ),
+      'allowed_values_function' => '',
+      'profile2_private' => 1,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_editor'
   $field_bases['field_editor'] = array(
     'active' => 1,
@@ -73,7 +103,29 @@ function mda_resources_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
-      'profile2_private' => 0,
+      'profile2_private' => 1,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_nom_structure_profil'
+  $field_bases['field_nom_structure_profil'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_nom_structure_profil',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => 1,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -95,7 +147,7 @@ function mda_resources_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
-      'profile2_private' => 0,
+      'profile2_private' => 1,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -225,6 +277,35 @@ function mda_resources_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_statut_profil'
+  $field_bases['field_statut_profil'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_statut_profil',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        1 => 'Association',
+        2 => 'Établissement public',
+        3 => 'Collectivité territoriale',
+        4 => 'Libéral',
+        5 => 'Entreprise, société',
+      ),
+      'allowed_values_function' => '',
+      'profile2_private' => 1,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_themes'

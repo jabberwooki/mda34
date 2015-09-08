@@ -139,7 +139,17 @@ function mda_resources_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_profile2__main';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'account' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'redirect' => array(

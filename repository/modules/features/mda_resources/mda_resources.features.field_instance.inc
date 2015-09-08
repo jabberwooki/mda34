@@ -964,6 +964,37 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
     ),
   );
 
+  // Exported field_instance: 'profile2-main-field_dom_prof_profil'
+  $field_instances['profile2-main-field_dom_prof_profil'] = array(
+    'bundle' => 'main',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_dom_prof_profil',
+    'label' => 'Domaine professionnel',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 33,
+    ),
+  );
+
   // Exported field_instance: 'profile2-main-field_nom_profil'
   $field_instances['profile2-main-field_nom_profil'] = array(
     'bundle' => 'main',
@@ -972,7 +1003,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -1029,6 +1060,71 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
     ),
   );
 
+  // Exported field_instance: 'profile2-main-field_nom_structure_profil'
+  $field_instances['profile2-main-field_nom_structure_profil'] = array(
+    'bundle' => 'main',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_nom_structure_profil',
+    'label' => 'Nom de la structure',
+    'required' => 1,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'context' => 'debug',
+      'context_default' => 'sdl_editor_representation',
+      'dnd_enabled' => 0,
+      'linkit' => array(
+        'button_text' => 'Rechercher',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'mee_enabled' => 0,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 35,
+    ),
+  );
+
   // Exported field_instance: 'profile2-main-field_prenom_profil'
   $field_instances['profile2-main-field_prenom_profil'] = array(
     'bundle' => 'main',
@@ -1037,7 +1133,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -1094,6 +1190,37 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
     ),
   );
 
+  // Exported field_instance: 'profile2-main-field_statut_profil'
+  $field_instances['profile2-main-field_statut_profil'] = array(
+    'bundle' => 'main',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_statut_profil',
+    'label' => 'Statut de la structure',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 34,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('<p>Exemple de format : <b>978-2-330-04817-4</b></p>
@@ -1110,6 +1237,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
   t('Année de parution de la ressource');
   t('Auteurs');
   t('Body');
+  t('Domaine professionnel');
   t('Editeur');
   t('Fichier(s)');
   t('Galerie photo');
@@ -1117,9 +1245,11 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
   t('Image');
   t('Lien');
   t('Nom');
+  t('Nom de la structure');
   t('Prénom');
   t('Publié le');
   t('Son');
+  t('Statut de la structure');
   t('Thèmes');
   t('Titre infos pratiques');
   t('Type de ressource');
