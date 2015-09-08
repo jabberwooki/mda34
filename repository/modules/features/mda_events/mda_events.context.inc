@@ -155,6 +155,7 @@ function mda_events_context_default_contexts() {
     'path' => array(
       'values' => array(
         '~agenda' => '~agenda',
+        '~formations' => '~formations',
       ),
     ),
     'sitewide' => array(

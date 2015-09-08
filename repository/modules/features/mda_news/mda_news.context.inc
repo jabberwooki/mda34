@@ -109,6 +109,12 @@ function mda_news_context_default_contexts() {
         6 => 6,
       ),
     ),
+    'path' => array(
+      'values' => array(
+        '~agenda' => '~agenda',
+        '~faq' => '~faq',
+      ),
+    ),
   );
   $context->reactions = array(
     'block' => array(
@@ -117,12 +123,12 @@ function mda_news_context_default_contexts() {
           'module' => 'kcore',
           'delta' => 'mda_veille',
           'region' => 'sidebar_second',
-          'weight' => '5',
+          'weight' => '7',
         ),
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.

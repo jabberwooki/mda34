@@ -41,7 +41,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relation: Contenu: Taxonomy terms on node */
+  /* Relation: Contenu : Termes de taxonomie du nœud */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
@@ -62,7 +62,7 @@ function mda_events_views_default_views() {
     'resource_types' => 0,
     'structure_types' => 0,
   );
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
@@ -74,14 +74,14 @@ function mda_events_views_default_views() {
     'image_link' => 'content',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -95,7 +95,7 @@ function mda_events_views_default_views() {
     'multiple_to' => '',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -106,7 +106,7 @@ function mda_events_views_default_views() {
     'trim_length' => '200',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Type d'événement */
+  /* Champ: Contenu : Type d'événement */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
@@ -119,20 +119,20 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Sort criterion: Contenu: Date de publication */
+  /* Critère de tri: Contenu : Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['filter_groups']['operator'] = 'OR';
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -140,13 +140,13 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
   $handler->display->display_options['filters']['current_all']['group'] = 1;
-  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
   $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
@@ -154,13 +154,13 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
   $handler->display->display_options['filters']['uuid']['group'] = 1;
-  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  /* Critère de filtrage: Contenu : Dates de publication - date de début (field_event_pubdates) */
   $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
   $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
   $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
   $handler->display->display_options['filters']['field_event_pubdates_value']['operator'] = '<=';
   $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
-  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  /* Critère de filtrage: Contenu : Dates de publication - date de fin (field_event_pubdates:value2) */
   $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
   $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
   $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
@@ -181,7 +181,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Entête: Global: View area */
+  /* Entête: Global : Zone de vue */
   $handler->display->display_options['header']['view']['id'] = 'view';
   $handler->display->display_options['header']['view']['table'] = 'views';
   $handler->display->display_options['header']['view']['field'] = 'view';
@@ -189,7 +189,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['header']['view']['empty'] = TRUE;
   $handler->display->display_options['header']['view']['view_to_insert'] = 'events_filter:event_types_filter';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
@@ -202,7 +202,7 @@ function mda_events_views_default_views() {
     'image_link' => 'content',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -211,7 +211,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -226,7 +226,7 @@ function mda_events_views_default_views() {
     'multiple_to' => '',
     'field_formatter_class' => '',
   );
-  /* Champ: Global: Custom text */
+  /* Champ: Global : Texte personnalisé */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -237,7 +237,7 @@ function mda_events_views_default_views() {
   <h3>[title]</h3>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Type d'événement */
+  /* Champ: Contenu : Type d'événement */
   $handler->display->display_options['fields']['field_event_type_1']['id'] = 'field_event_type_1';
   $handler->display->display_options['fields']['field_event_type_1']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type_1']['field'] = 'field_event_type';
@@ -248,7 +248,7 @@ function mda_events_views_default_views() {
     'field_formatter_class' => '',
   );
   $handler->display->display_options['fields']['field_event_type_1']['delta_offset'] = '0';
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -286,7 +286,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
@@ -298,7 +298,7 @@ function mda_events_views_default_views() {
     'image_style' => 'img-col-4',
     'image_link' => 'content',
   );
-  /* Champ: Contenu: Type d'événement */
+  /* Champ: Contenu : Type d'événement */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
@@ -314,7 +314,7 @@ function mda_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -328,7 +328,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -337,7 +337,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Champ: Global: Custom text */
+  /* Champ: Global : Texte personnalisé */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -349,13 +349,13 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['label'] = '';
   $handler->display->display_options['fields']['field_address_locality']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -369,14 +369,14 @@ function mda_events_views_default_views() {
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -384,14 +384,14 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domaines: Nom système */
+  /* Critère de filtrage: Domaines : Nom système */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'domain';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'ados_mda34_org' => 'ados_mda34_org',
   );
-  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
   $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
@@ -411,7 +411,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
@@ -423,7 +423,7 @@ function mda_events_views_default_views() {
     'image_style' => 'img-col-4',
     'image_link' => 'content',
   );
-  /* Champ: Contenu: Type d'événement */
+  /* Champ: Contenu : Type d'événement */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
@@ -439,7 +439,7 @@ function mda_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -453,7 +453,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -462,7 +462,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Champ: Global: Custom text */
+  /* Champ: Global : Texte personnalisé */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -474,13 +474,13 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['label'] = '';
   $handler->display->display_options['fields']['field_address_locality']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -494,14 +494,14 @@ function mda_events_views_default_views() {
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -509,7 +509,7 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domaines: Nom système */
+  /* Critère de filtrage: Domaines : Nom système */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'domain';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
@@ -529,7 +529,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
@@ -541,7 +541,7 @@ function mda_events_views_default_views() {
     'image_style' => 'img-col-4',
     'image_link' => 'content',
   );
-  /* Champ: Contenu: Type d'événement */
+  /* Champ: Contenu : Type d'événement */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
@@ -557,7 +557,7 @@ function mda_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -571,7 +571,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -580,7 +580,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Champ: Global: Custom text */
+  /* Champ: Global : Texte personnalisé */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -592,13 +592,13 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['label'] = '';
   $handler->display->display_options['fields']['field_address_locality']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -612,14 +612,14 @@ function mda_events_views_default_views() {
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -627,14 +627,14 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domaines: Nom système */
+  /* Critère de filtrage: Domaines : Nom système */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'domain';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'reseau_pro_mda34_org' => 'reseau_pro_mda34_org',
   );
-  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
   $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
@@ -651,7 +651,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
@@ -663,7 +663,7 @@ function mda_events_views_default_views() {
     'image_style' => 'img-col-4',
     'image_link' => 'content',
   );
-  /* Champ: Contenu: Type d'événement */
+  /* Champ: Contenu : Type d'événement */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
@@ -679,7 +679,7 @@ function mda_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -693,14 +693,14 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['label'] = '';
   $handler->display->display_options['fields']['field_address_locality']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_address_locality']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -709,7 +709,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Champ: Global: Custom text */
+  /* Champ: Global : Texte personnalisé */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -724,14 +724,14 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -739,13 +739,13 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
   $handler->display->display_options['filters']['current_all']['group'] = 1;
-  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
   $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
@@ -769,7 +769,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
   $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
@@ -781,7 +781,7 @@ function mda_events_views_default_views() {
     'image_style' => 'img-col-4',
     'image_link' => 'content',
   );
-  /* Champ: Contenu: Type d'événement */
+  /* Champ: Contenu : Type d'événement */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type']['field'] = 'field_event_type';
@@ -797,7 +797,7 @@ function mda_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_type']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_event_type']['delta_offset'] = '0';
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -811,14 +811,14 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['label'] = '';
   $handler->display->display_options['fields']['field_address_locality']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_address_locality']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -827,7 +827,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Champ: Global: Custom text */
+  /* Champ: Global : Texte personnalisé */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -842,14 +842,14 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -857,13 +857,13 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
   $handler->display->display_options['filters']['current_all']['group'] = 1;
-  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
   $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
@@ -883,14 +883,14 @@ function mda_events_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -903,7 +903,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -916,14 +916,14 @@ function mda_events_views_default_views() {
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -931,13 +931,13 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
   $handler->display->display_options['filters']['current_all']['group'] = 1;
-  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
   $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
@@ -954,7 +954,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -968,7 +968,7 @@ function mda_events_views_default_views() {
     'multiple_to' => '',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -977,14 +977,14 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -992,13 +992,13 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
   $handler->display->display_options['filters']['current_all']['group'] = 1;
-  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
   $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
@@ -1014,7 +1014,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Date(s) */
+  /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
@@ -1027,7 +1027,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1036,14 +1036,14 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1051,13 +1051,13 @@ function mda_events_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
   $handler->display->display_options['filters']['current_all']['group'] = 1;
-  /* Filter criterion: Terme de taxonomie: Terme de taxonomie UUID */
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
   $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
@@ -1147,13 +1147,13 @@ function mda_events_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'isotope_filter_block';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Relation: Terme de taxonomie: Content with term */
+  /* Relation: Terme de taxonomie : Contenu avec terme */
   $handler->display->display_options['relationships']['nid']['id'] = 'nid';
   $handler->display->display_options['relationships']['nid']['table'] = 'taxonomy_index';
   $handler->display->display_options['relationships']['nid']['field'] = 'nid';
   $handler->display->display_options['relationships']['nid']['label'] = 'nœud(s) rattaché(s) au terme';
   $handler->display->display_options['relationships']['nid']['required'] = TRUE;
-  /* Champ: Terme de taxonomie: Nom */
+  /* Champ: Terme de taxonomie : Nom */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['name']['field'] = 'name';
@@ -1162,31 +1162,31 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['element_default_classes'] = FALSE;
-  /* Sort criterion: Terme de taxonomie: Nom */
+  /* Critère de tri: Terme de taxonomie : Nom */
   $handler->display->display_options['sorts']['name']['id'] = 'name';
   $handler->display->display_options['sorts']['name']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['sorts']['name']['field'] = 'name';
-  /* Filter criterion: Vocabulaire de taxonomie: Nom système */
+  /* Critère de filtrage: Vocabulaire de taxonomie : Nom système */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'event_types' => 'event_types',
   );
-  /* Filter criterion: Domain Access: Disponible sur le domaine actuel */
+  /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
   $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['relationship'] = 'nid';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
-  /* Filter criterion: Contenu: Dates de publication - date de début (field_event_pubdates) */
+  /* Critère de filtrage: Contenu : Dates de publication - date de début (field_event_pubdates) */
   $handler->display->display_options['filters']['field_event_pubdates_value']['id'] = 'field_event_pubdates_value';
   $handler->display->display_options['filters']['field_event_pubdates_value']['table'] = 'field_data_field_event_pubdates';
   $handler->display->display_options['filters']['field_event_pubdates_value']['field'] = 'field_event_pubdates_value';
   $handler->display->display_options['filters']['field_event_pubdates_value']['relationship'] = 'nid';
   $handler->display->display_options['filters']['field_event_pubdates_value']['operator'] = '<=';
   $handler->display->display_options['filters']['field_event_pubdates_value']['default_date'] = 'now';
-  /* Filter criterion: Contenu: Dates de publication - date de fin (field_event_pubdates:value2) */
+  /* Critère de filtrage: Contenu : Dates de publication - date de fin (field_event_pubdates:value2) */
   $handler->display->display_options['filters']['field_event_pubdates_value2']['id'] = 'field_event_pubdates_value2';
   $handler->display->display_options['filters']['field_event_pubdates_value2']['table'] = 'field_data_field_event_pubdates';
   $handler->display->display_options['filters']['field_event_pubdates_value2']['field'] = 'field_event_pubdates_value2';
