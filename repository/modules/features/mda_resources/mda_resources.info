@@ -110,4 +110,5 @@ features_exclude[dependencies][page_title] = page_title
 features_exclude[dependencies][views] = views
 features_exclude[uuid_term][6ba6c160-3d93-4e12-8c30-d44460eee9f9] = 6ba6c160-3d93-4e12-8c30-d44460eee9f9
 features_exclude[uuid_term][3c7b713b-1f5a-4bc8-9e71-d8d99f4c5850] = 3c7b713b-1f5a-4bc8-9e71-d8d99f4c5850
+features_exclude[menu_links][management_profile-types:admin/structure/profiles] = management_profile-types:admin/structure/profiles
 project path = profiles/mda/modules/features

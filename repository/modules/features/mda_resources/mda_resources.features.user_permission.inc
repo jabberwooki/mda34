@@ -59,7 +59,7 @@ function mda_resources_user_default_permissions() {
     'name' => 'edit own main profile',
     'roles' => array(
       'administrateur' => 'administrateur',
-      'authenticated user' => 'authenticated user',
+      'professionnel' => 'professionnel',
       'superadmin' => 'superadmin',
     ),
     'module' => 'profile2',
@@ -87,7 +87,7 @@ function mda_resources_user_default_permissions() {
     'name' => 'view own main profile',
     'roles' => array(
       'administrateur' => 'administrateur',
-      'authenticated user' => 'authenticated user',
+      'professionnel' => 'professionnel',
       'superadmin' => 'superadmin',
     ),
     'module' => 'profile2',
