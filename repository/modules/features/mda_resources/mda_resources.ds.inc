@@ -27,11 +27,6 @@ function mda_resources_ds_field_settings_info() {
         'class' => '',
       ),
     ),
-    'author' => array(
-      'weight' => '3',
-      'label' => 'inline',
-      'format' => 'author_linked',
-    ),
   );
   $export['node|resource|teaser'] = $ds_fieldsetting;
 
@@ -119,7 +114,7 @@ function mda_resources_ds_layout_settings_info() {
         2 => 'field_resource_type',
         3 => 'field_resource_image',
         4 => 'body',
-        5 => 'author',
+        5 => 'field_resource_authors',
         6 => 'field_resource_date_parution',
         7 => 'field_themes',
       ),
@@ -130,7 +125,7 @@ function mda_resources_ds_layout_settings_info() {
       'field_resource_type' => 'ds_content',
       'field_resource_image' => 'ds_content',
       'body' => 'ds_content',
-      'author' => 'ds_content',
+      'field_resource_authors' => 'ds_content',
       'field_resource_date_parution' => 'ds_content',
       'field_themes' => 'ds_content',
     ),
