@@ -20,6 +20,16 @@ function services_user_default_permissions() {
     'module' => 'mollom',
   );
 
+  // Exported permission: 'administer EU Cookie Compliance popup'.
+  $permissions['administer EU Cookie Compliance popup'] = array(
+    'name' => 'administer EU Cookie Compliance popup',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'eu_cookie_compliance',
+  );
+
   // Exported permission: 'administer mollom'.
   $permissions['administer mollom'] = array(
     'name' => 'administer mollom',
@@ -38,6 +48,17 @@ function services_user_default_permissions() {
       'superadmin' => 'superadmin',
     ),
     'module' => 'mollom',
+  );
+
+  // Exported permission: 'display EU Cookie Compliance popup'.
+  $permissions['display EU Cookie Compliance popup'] = array(
+    'name' => 'display EU Cookie Compliance popup',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+      'professionnel' => 'professionnel',
+    ),
+    'module' => 'eu_cookie_compliance',
   );
 
   // Exported permission: 'report to mollom'.

@@ -13,6 +13,48 @@ function services_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'eu_cookie_compliance_domain';
+  $strongarm->value = 'www.mda34.org';
+  $export['eu_cookie_compliance_domain'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'eu_cookie_compliance_fr';
+  $strongarm->value = array(
+    'popup_enabled' => 0,
+    'popup_clicking_confirmation' => 1,
+    'popup_position' => 0,
+    'popup_agree_button_message' => 'J\'accepte',
+    'popup_disagree_button_message' => 'Non, plus d\'infos',
+    'popup_info' => array(
+      'value' => '<h2>Nous utilisons des cookies sur ce site pour améliorer votre expérience d\'utilisateur</h2><p>En cliquant sur un lien sur cette page, vous donnez votre consentement pour nous de mettre les cookies.</p>',
+      'format' => 'plain_text',
+    ),
+    'popup_agreed_enabled' => 0,
+    'popup_hide_agreed' => 1,
+    'popup_find_more_button_message' => 'Plus d\'infos',
+    'popup_hide_button_message' => 'Masquer',
+    'popup_agreed' => array(
+      'value' => '<h2>Merci d\'avoir accepter les cookies</h2><p>Vous pouvez maintenant cacher ce message ou en savoir plus sur les cookies.</p>',
+      'format' => 'plain_text',
+    ),
+    'popup_link' => '/contact',
+    'popup_link_new_window' => 1,
+    'popup_height' => '',
+    'popup_width' => '100%',
+    'popup_delay' => '1',
+    'popup_bg_hex' => 'a3a3a3',
+    'popup_text_hex' => 'ffffff',
+    'domains_option' => '1',
+    'domains_list' => '',
+    'exclude_paths' => '',
+  );
+  $export['eu_cookie_compliance_fr'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'mollom_audio_captcha_enabled';
   $strongarm->value = 1;
   $export['mollom_audio_captcha_enabled'] = $strongarm;

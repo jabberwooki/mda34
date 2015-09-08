@@ -10,6 +10,27 @@
 function services_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance
+  $menu_links['management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/system/eu-cookie-compliance',
+    'router_path' => 'admin/config/system/eu-cookie-compliance',
+    'link_title' => 'EU Cookie Compliance',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Make your website compliant with the EU Directive on Privacy and Electronic Communications.',
+      ),
+      'identifier' => 'management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'management_systme:admin/config/system',
+  );
   // Exported menu link: management_mollom-content-moderation:admin/config/content/mollom
   $menu_links['management_mollom-content-moderation:admin/config/content/mollom'] = array(
     'menu_name' => 'management',
@@ -54,6 +75,7 @@ function services_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('EU Cookie Compliance');
   t('Mollom content moderation');
   t('Mollom statistics');
 
