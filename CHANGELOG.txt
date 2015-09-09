@@ -1,3 +1,11 @@
+MDA34 - 2015-09-09
+------------------
+- Less css
+- view
+- block
+- ajout module
+
+
 MDA34 - 2015-07-23
 ------------------
 - Less css mobile
