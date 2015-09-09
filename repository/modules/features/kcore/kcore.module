@@ -61,6 +61,11 @@ function kcore_block_info() {
 			'cache' => DRUPAL_NO_CACHE,
 	);
 	
+	$blocks['mda_veille'] = array(
+			'info' => t('MDA : Lien vers lettre veille'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
+	
 
 	return $blocks;
 }
@@ -251,6 +256,13 @@ function kcore_block_view($delta = '') {
 			$alt = 'financeurs';
 			//$content .= '<img src="' . $image_url . '" alt="' . $alt . '" class="financeurs">';
 			//$block['content'] = $content;
+			return $block;
+			break;
+			
+				case 'mda_veille':
+			$block['subject'] = 'Inscription à la Veille';
+			$content = '<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://widget.mailjet.com/226543c2c8ab43ef79e3fe52ebbf7653097041c6.html" width="252" height="150"></iframe>';
+			$block['content'] = $content;
 			return $block;
 				
 	}

@@ -50,9 +50,10 @@ function mda_resources_field_group_info() {
     'label' => 'group-link-resources',
     'weight' => '1',
     'children' => array(
-      0 => 'field_resource_type',
-      1 => 'field_themes',
-      2 => 'field_resource_date_parution',
+      0 => 'field_resource_authors',
+      1 => 'field_resource_type',
+      2 => 'field_themes',
+      3 => 'field_resource_date_parution',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -87,9 +88,8 @@ function mda_resources_field_group_info() {
       0 => 'field_editor',
       1 => 'field_isbn',
       2 => 'field_resource_authors',
-      3 => 'field_resource_public',
-      4 => 'field_resource_url',
-      5 => 'field_resource_date_parution',
+      3 => 'field_resource_url',
+      4 => 'field_resource_date_parution',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -121,8 +121,7 @@ function mda_resources_field_group_info() {
     'label' => 'Informations pratiques',
     'weight' => '3',
     'children' => array(
-      0 => 'field_practical_title',
-      1 => 'group_practical_content',
+      0 => 'group_practical_content',
     ),
     'format_type' => 'div',
     'format_settings' => array(

@@ -28,8 +28,10 @@ function mda_contacts_default_box() {
 
 <p><a href="http://www.openstreetmap.org/?mlat=43.6059082&amp;mlon=3.8781475&amp;zoom=17&amp;layers=M" style="text-align:left;">Voir sur une carte plus grande</a></p>
 
-<p>La MDA accueille les jeunes avec ou sans rendez-vous <strong>du lundi au vendredi de 13h à 18h</strong> et le samedi de 10h à 17h (sauf les samedis des vacances).<br />
-our les familles avec rendez-vous <strong>le lundi et jeudi de 13h à 18h</strong>.</p>
+<p>La MDA accueille les jeunes avec ou sans rendez-vous <strong>du lundi au vendredi de 13h à 18h</strong> et <strong>le samedi de 10h à 17h</strong> (sauf les samedis des vacances).<br />
+Lles familles sont accueillies sur&nbsp;rendez-vous <b>uniquement</b>.</p>
+
+<p>&nbsp;</p>
 ',
       'format' => 'full_html',
     ),

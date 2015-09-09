@@ -262,3 +262,19 @@ projects[menu_attributes][version] = "1.0-rc3"
 
 projects[views_autocomplete_filters][subdir] = contrib
 projects[views_autocomplete_filters][version] = "1.2"
+
+projects[mollom][subdir] = contrib
+projects[mollom][version] = "2.14"
+
+projects[l10n_update][subdir] = contrib
+projects[l10n_update][version] = "2.0"
+
+projects[profile2][subdir] = contrib
+projects[profile2[version] = "1.3"
+
+projects[eu_cookie_compliance][subdir] = contrib
+projects[eu_cookie_compliance][version] = "1.14"
+
+projects[jquery_colorpicker][subdir] = contrib
+projects[jquery_colorpicker][version] = "1.1"
+
