@@ -35,6 +35,7 @@ function administration_menu_default_uuid_features_menu() {
       'attributes' => array(
         'title' => 'Reports and usage statistics for the Mollom module.',
       ),
+      'identifier' => 'management_mollom-statistics:admin/reports/mollom',
     ),
     'module' => 'system',
     'hidden' => 0,
@@ -115,6 +116,7 @@ function administration_menu_default_uuid_features_menu() {
       'attributes' => array(
         'title' => 'Configure how the Mollom service moderates user-submitted content such as spam and profanity.',
       ),
+      'identifier' => 'management_mollom-content-moderation:admin/config/content/mollom',
     ),
     'module' => 'system',
     'hidden' => 0,
