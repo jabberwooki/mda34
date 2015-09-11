@@ -113,6 +113,7 @@ function mda_news_context_default_contexts() {
       'values' => array(
         '~agenda' => '~agenda',
         '~faq' => '~faq',
+        '~annuaire' => '~annuaire',
       ),
     ),
   );

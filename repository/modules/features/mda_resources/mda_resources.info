@@ -3,6 +3,7 @@ core = 7.x
 package = App
 version = 7.x-1.0
 project = mda_resources
+dependencies[] = administration
 dependencies[] = better_formats
 dependencies[] = date
 dependencies[] = field_group

@@ -117,6 +117,7 @@ function kcore_context_default_contexts() {
       'values' => array(
         '~agenda' => '~agenda',
         '~faq' => '~faq',
+        '~annuaire' => '~annuaire',
       ),
     ),
     'sitewide' => array(
