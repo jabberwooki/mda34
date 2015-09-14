@@ -235,7 +235,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['filters']['title']['expose']['autocomplete_raw_suggestion'] = 1;
   $handler->display->display_options['filters']['title']['expose']['autocomplete_raw_dropdown'] = 1;
   $handler->display->display_options['filters']['title']['expose']['autocomplete_dependent'] = 0;
-  /* Critère de filtrage: Contenu : Public (field_public) */
+  /* Critère de filtrage: Contenu : Public concerné (field_public) */
   $handler->display->display_options['filters']['field_public_tid']['id'] = 'field_public_tid';
   $handler->display->display_options['filters']['field_public_tid']['table'] = 'field_data_field_public';
   $handler->display->display_options['filters']['field_public_tid']['field'] = 'field_public_tid';
@@ -257,27 +257,6 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['filters']['field_public_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_public_tid']['vocabulary'] = 'publics';
   $handler->display->display_options['filters']['field_public_tid']['hierarchy'] = 1;
-  /* Critère de filtrage: Contenu : Type de structure (field_structure_type) */
-  $handler->display->display_options['filters']['field_structure_type_tid']['id'] = 'field_structure_type_tid';
-  $handler->display->display_options['filters']['field_structure_type_tid']['table'] = 'field_data_field_structure_type';
-  $handler->display->display_options['filters']['field_structure_type_tid']['field'] = 'field_structure_type_tid';
-  $handler->display->display_options['filters']['field_structure_type_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['operator_id'] = 'field_structure_type_tid_op';
-  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['label'] = 'Type de structure';
-  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['operator'] = 'field_structure_type_tid_op';
-  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['identifier'] = 'field_structure_type_tid';
-  $handler->display->display_options['filters']['field_structure_type_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    141037677 => 0,
-    183916278 => 0,
-    155963314 => 0,
-    22875792 => 0,
-    193262079 => 0,
-    109177673 => 0,
-  );
-  $handler->display->display_options['filters']['field_structure_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_structure_type_tid']['vocabulary'] = 'structure_types';
   /* Critère de filtrage: Contenu : Types d&#039;action (field_action_types) */
   $handler->display->display_options['filters']['field_action_types_tid']['id'] = 'field_action_types_tid';
   $handler->display->display_options['filters']['field_action_types_tid']['table'] = 'field_data_field_action_types';
@@ -324,7 +303,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu : Contact email */
+  /* Champ: Contenu : Email du gestionnaire */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -338,7 +317,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu : Adresse */
+  /* Champ: Contenu : Lieu de l'événement */
   $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
   $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
@@ -366,11 +345,10 @@ function mda_structures_views_default_views() {
     t('Rechercher'),
     t('Nom de la structure'),
     t('Public'),
-    t('Type de structure'),
     t('Types d\'actions'),
     t('Infos contact'),
     t('Infos visibles sur une fiche événement'),
-    t('Contact email'),
+    t('Email du gestionnaire'),
     t('Contact téléphone'),
   );
   $export['structures'] = $view;

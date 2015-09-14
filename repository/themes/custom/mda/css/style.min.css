@@ -134,7 +134,7 @@ dd{margin-left:0}
 .dl-horizontal dd{margin-left:180px}
 .container{width:750px}
 }
-.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-actions,.form-horizontal .form-group:after,.modal-footer:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after,fieldset .panel-body{clear:both}
+.block .views-row:after,.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-actions,.form-horizontal .form-group:after,.group-link-resources:after,.modal-footer:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after,fieldset .panel-body{clear:both}
 abbr[data-original-title],abbr[title]{cursor:help;border-bottom:1px dotted #999}
 .initialism{font-size:90%}
 blockquote{padding:10px 20px;margin:0 0 20px;font-size:17.5px;border-left:5px solid #cdcdcd}
@@ -1275,7 +1275,6 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .modal-footer .btn-group .btn+.btn{margin-left:-1px}
 .modal-footer .btn-block+.btn-block{margin-left:0}
 .modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}
-.carousel-inner,.region-help .block{overflow:hidden}
 @media (min-width:768px){.modal-dialog{width:600px;margin:30px auto}
 .modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,.5);-moz-box-shadow:0 5px 15px rgba(0,0,0,.5);box-shadow:0 5px 15px rgba(0,0,0,.5)}
 .modal-sm{width:300px}
@@ -1321,7 +1320,7 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .popover.bottom>.arrow:after{content:" ";top:1px;margin-left:-10px;border-top-width:0;border-bottom-color:#fff}
 .popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}
 .popover.left>.arrow:after{right:1px;border-right-width:0;border-left-color:#fff}
-.carousel-inner{width:100%}
+.carousel-inner{overflow:hidden;width:100%}
 .carousel-inner>.item{display:none;position:relative;-webkit-transition:.6s ease-in-out left;-o-transition:.6s ease-in-out left;transition:.6s ease-in-out left}
 .carousel-inner>.item>a>img,.carousel-inner>.item>img{line-height:1}
 @media all and (transform-3d),(-webkit-transform-3d){.carousel-inner>.item{-webkit-transition:-webkit-transform .6s ease-in-out;-moz-transition:-moz-transform .6s ease-in-out;-o-transition:-o-transform .6s ease-in-out;transition:transform .6s ease-in-out;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000;-moz-perspective:1000;perspective:1000}
@@ -1464,6 +1463,7 @@ ul.secondary{float:right}
 .block:first-child h2.block-title,.page-header{margin-top:0}
 p:last-child{margin-bottom:0}
 .region-help>.glyphicon{font-size:18px;float:left;margin:-.05em .5em 0 0}
+.region-help .block{overflow:hidden}
 form#search-block-form{margin:0}
 .navbar #block-search-form{float:none;margin:5px 0 5px 5px}
 @media screen and (min-width:992px){.navbar #block-search-form{float:right}
@@ -1504,7 +1504,6 @@ div.password-confirm{float:right;margin-top:1.5em;visibility:hidden;width:17em}
 div.form-item div.password-suggestions{padding:.2em .5em;margin:.7em 0;width:38.5em;border:1px solid #B4B4B4}
 div.password-suggestions ul{margin-bottom:0}
 .confirm-parent,.password-parent{clear:left;margin:0;width:36.3em}
-.block .views-row:after,.group-link-resources:after{clear:both}
 .progress-wrapper .progress{margin-bottom:10px}
 .pagination ul>li>a.progress-disabled{float:left}
 .form-autocomplete .glyphicon{color:#999;font-size:120%}
@@ -1569,7 +1568,6 @@ a{transition:all .25s ease-in-out;-moz-transition:all .25s ease-in-out;-webkit-t
 nav.navbar.shrink{min-height:35px}
 nav.shrink a{padding-top:10px!important;padding-bottom:10px!important;font-size:14px}
 nav.shrink .navbar-brand{background:url(../images/logo-mda34_60px.png) no-repeat;font-size:1pc;width:auto;padding-left:70px;height:70px}
-#skip-link,a#main-content{height:1px;overflow:hidden}
 nav.shrink .navbar-toggle{padding:4px 5px;margin:8px 15px 8px 0}
 #page-header{padding-top:24px}
 .zoom .block.block-views{border:0;margin-bottom:20px}
@@ -1578,6 +1576,7 @@ img{max-width:100%}
 h2,h3,h4{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
 p{font-family:arial}
 .no-padding-margin{padding:0;margin:0}
+a#main-content{height:1px;overflow:hidden}
 .orange{color:#f78c26}
 .black{color:#000}
 .green{color:#32903f}
@@ -1599,7 +1598,7 @@ p{font-family:arial}
 #block-menu-menu-shortcuts .nav>li{text-align:right;height:auto}
 #block-menu-menu-shortcuts .nav>li>a{display:inline-block;padding:5px 9pt 5px 10px;margin:0;text-transform:uppercase;font-family:arial;font-weight:700;font-size:14px}
 #block-menu-menu-shortcuts .nav>li>a:before{margin-right:6px;color:#fff}
-#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before{font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;text-transform:none;position:relative;top:1px}
+#block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before,#block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before{font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;text-transform:none;top:1px;position:relative}
 #block-menu-menu-shortcuts .nav>li>a.link-shortcut-faq:before{content:"\e805";color:#fff}
 #block-menu-menu-shortcuts .nav>li>a.link-shortcut-login:before{content:"\e80A";color:#000}
 .domain-reseau-pro-mda34-org h2,.domain-reseau-pro-mda34-org h2 a,.domain-reseau-pro-mda34-org h3,.domain-reseau-pro-mda34-org h3 a,.domain-reseau-pro-mda34-org h4,.domain-reseau-pro-mda34-org h4 a{color:#575095}
@@ -1630,7 +1629,7 @@ p{font-family:arial}
 .icon-twitter:before{content:"\e800"}
 .icon-youtube:before{content:"\e802"}
 .icon-gplus:before{content:"\e803"}
-.icon-doc:before{content:"\e804"}
+.icon-doc:before,.node-type-resource h2.page-header:before,.page-ressources h2.page-header:before{content:"\e804"}
 .icon-question:before{content:"\e805"}
 .icon-people:before{content:"\e806"}
 .icon-calendar:before{content:"\e807"}
@@ -1638,7 +1637,7 @@ p{font-family:arial}
 .icon-mail:before{content:"\e809"}
 .icon-person:before{content:"\e80A"}
 body{position:relative;background-color:#fff}
-#skip-link{position:absolute;width:1px;top:-1000em}
+#skip-link{position:absolute;width:1px;height:1px;top:-1000em;overflow:hidden}
 .navbar-inverse{background:url(../images/bg_header.jpg) 50% -43px no-repeat #f8f8f8;border-color:#fff!important}
 body.front #block-views-slides-block-portal-zoom,body.front.domain-radio-mda34-org .main-container{margin-top:75pt}
 body.front:not(.domain-www-mda34-org) #home-main-container-wrapper{margin-top:76px}
@@ -1792,6 +1791,7 @@ body.domain-reseau-pro-mda34-org #search-block-form .btn{background-color:#57509
 #block-views-multimedia-block-last-video{position:relative}
 #block-views-multimedia-block-last-video .view-header a{position:absolute;top:10px;right:0;color:#000;padding-right:15px;background:url(../images/arrow-black.png) 100% 50% no-repeat}
 #block-views-multimedia-block-last-video h3.block-title:before{position:relative;top:1px;font-family:fontello;font-size:1em;display:inline-block;color:#999;content:"\e82e"}
+.isotope-element .views-field-title a,body.front .block-kcore a h2{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
 body.domain-parents-mda34-org #block-views-multimedia-block-last-video .view-header a{background:url(../images/arrow-green.png) 100% 50% no-repeat}
 body.domain-ados-mda34-org #block-views-multimedia-block-last-video .view-header a{background:url(../images/arrow-orange.png) 100% 50% no-repeat}
 body.domain-reseau-pro-mda34-org #block-views-multimedia-block-last-video .view-header a{background:url(../images/arrow-violet.png) 100% 50% no-repeat}
@@ -1866,7 +1866,7 @@ body.front .block-kcore#block-kcore-mda-shortcut-parents .block-wrapper-custom a
 body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom{background:url(../images/button_fleche_pros.png) 98% 50% no-repeat}
 body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom a{border-bottom:1px solid #575095;background:url(../images/button_maison_pros.png) no-repeat}
 body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom a:hover h2,body.front .block-kcore#block-kcore-mda-shortcut-pros .block-wrapper-custom a:hover p{color:#575095}
-body.front .block-kcore a h2{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;color:#000;margin:0;padding:0}
+body.front .block-kcore a h2{color:#000;margin:0;padding:0}
 body.front .block-kcore a p{font-family:arial;color:#000;margin:0;padding:0;font-weight:700}
 body.front .block-kcore a:hover{text-decoration:none}
 #block-views-events-block-front-trainings{padding:0}
@@ -1904,7 +1904,6 @@ body.domain-www-mda34-org #home-main-container-wrapper #page-header{padding:40px
 body.front .block.block-views h3{border-bottom:0 solid #cdcdcd}
 .view-display-id-block_front_parents{margin:2em 0 0}
 .field-name-field-resource-date-parution .field-label:before,.node-type-resource h2.page-header:before,.page-ressources h2.page-header:before{display:inline-block;margin-right:10px;font-weight:400;text-decoration:inherit;width:1em;text-transform:none;color:#999;position:relative;top:1px;font-family:fontello;font-style:normal;font-size:1em;speak:none;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.node-type-resource h2.page-header:before,.page-ressources h2.page-header:before{content:"\e804"}
 .field-name-field-resource-date-parution .field-label:before{content:"\e807"}
 .group-link-resources .field-items,.view-display-id-list_resources .field-name-field-resource-image{float:left;margin-right:20px}
 .group-link-resources:after,.group-link-resources:before{content:" ";display:table}
@@ -1938,8 +1937,8 @@ body.page-faq .view-faqs>.view-content{min-height:900px}
 .isotope-element .views-field-field-faq-category-1{padding:20px 20px 0;background-color:#fff;border-left:1px solid #32903f;border-right:1px solid #32903f}
 .isotope-element .views-field-field-faq-category-1 a{color:#32903f!important;font-size:.8em;font-weight:lighter;padding-bottom:0;margin-bottom:0}
 .isotope-element .views-field-field-faq-category-1 a:after{content:'';background-image:none}
-.isotope-element .views-field-title{background-color:#fff;border-left:1px solid #32903f;border-right:1px solid #32903f;padding:0 20px}
-.isotope-element .views-field-title a{color:#000!important;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif}
+.isotope-element .views-field-title{border-left:1px solid #32903f;border-right:1px solid #32903f;padding:0 20px;background-color:#fff}
+.isotope-element .views-field-title a{color:#000!important}
 body.domain-ados-mda34-org.page-faq h2.page-header:before,body.page-agenda.domain-parents-mda34-org h2.page-header:before{font-family:fontello;font-size:1em;margin-right:10px;top:1px;font-style:normal;speak:none;display:inline-block;text-decoration:inherit;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-transform:none;position:relative;font-weight:400}
 .isotope-element .views-field-title a:after{content:''}
 body.page-agenda.domain-parents-mda34-org h2.page-header{color:#32903f}
@@ -1967,12 +1966,14 @@ body.domain-ados-mda34-org.page-faq .isotope-element{background:url(../images/bg
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-field-faq-category-1 a{color:#f78c26!important}
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-title a:after{background:url(../images/arrow-orange.png) no-repeat}
 body.page-annuaire.domain-reseau-pro-mda34-org #isotope-options ul#filters{padding:0;margin:1em 0;background-color:#fff}
-body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element{width:350px;background:0 0;border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:20px}
+body.page-annuaire.domain-reseau-pro-mda34-org .view-id-annuaire_filter .view-content{background-color:#fff}
+body.page-annuaire.domain-reseau-pro-mda34-org .view-content{background-color:#575095;margin:0 2.75em 0 0;padding:.75em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element{width:340px;background-image:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;background-color:#fff;box-shadow:1px 1px 1px #ccc}
 body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element .views-field-field-mission{color:#555;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;font-size:.95em}
-body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element .views-field-title{border:0;padding:0;margin-bottom:1em}
+body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element .views-field-title{border:0;padding:0;margin-bottom:.25em}
 body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element .views-field-title a{color:#575095!important}
 body.page-annuaire.domain-reseau-pro-mda34-org #isotope-options ul#filters li a.selected{background-color:#575095}
-body.page-annuaire.domain-reseau-pro-mda34-org img{width:auto;height:auto;margin:auto 1.5em auto auto;float:right}
+body.page-annuaire.domain-reseau-pro-mda34-org .views-field-field-logo img{width:auto;height:auto;margin:.5em;float:right}
 .node-type-radio-programme h2.page-header:before,.page-emissions h2.page-header:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-weight:400;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;text-transform:none;line-height:1em;color:#999;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:"\e808"}
 .node-type-radio-programme h2.icon-radio{display:none}
 body.domain-radio-mda34-org .views-row-first{padding-bottom:0}
@@ -2008,12 +2009,12 @@ body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-progra
 body.domain-radio-mda34-org #home-main-container-wrapper .view-display-id-programmes_list .views-row .field-name-field-scald-audio{margin-top:15px}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks{margin-top:0}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks .block-wrapper-custom{text-align:right;margin-top:0}
+.node-type-news h2.page-header:before,.page-actualites h2.page-header:before,body.page-annuaire h2.page-header:before{position:relative;top:1px;font-family:fontello;font-style:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks .block-wrapper-custom p{padding-top:18px}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks h3{margin:20px 0;color:#fff;background-color:#333}
 .block-wrapper-custom .view-radio-programmes h2>a{font-size:.6em;color:#000;text-transform:none}
-.node-type-news h2.page-header:before,.page-actualites h2.page-header:before,body.page-annuaire h2.page-header:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .ds-1col.node.node-radio-programme.view-mode-last_item.btn-group-vertical>.btn-group,.ds-1col.node.node-radio-programme.view-mode-last_item.btn-toolbar,.ds-1col.node.node-radio-programme.view-mode-last_item.clearfix,.ds-1col.node.node-radio-programme.view-mode-last_item.container,.ds-1col.node.node-radio-programme.view-mode-last_item.container-fluid,.ds-1col.node.node-radio-programme.view-mode-last_item.dl-horizontal dd,.ds-1col.node.node-radio-programme.view-mode-last_item.form-horizontal .form-group,.ds-1col.node.node-radio-programme.view-mode-last_item.modal-footer,.ds-1col.node.node-radio-programme.view-mode-last_item.nav,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar-collapse,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar-header,.ds-1col.node.node-radio-programme.view-mode-last_item.pager,.ds-1col.node.node-radio-programme.view-mode-last_item.panel-body,.ds-1col.node.node-radio-programme.view-mode-last_item.row{padding:1em}
-body.page-annuaire h2.page-header:before{font-weight:400;text-transform:none;color:#999;content:"\e82f"}
+body.page-annuaire h2.page-header:before{font-weight:400;font-size:1em;margin-right:10px;text-transform:none;color:#999;content:"\e82f"}
 body.page-annuaire #views-exposed-form-structures-list-structures{padding:20px}
 body.page-annuaire #views-exposed-form-structures-list-structures label{color:#575095}
 body.page-annuaire #views-exposed-form-structures-list-structures button{background-color:#575095;text-transform:uppercase;margin-top:26px;color:#fff}
@@ -2028,12 +2029,12 @@ body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-
 body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures label{color:#32903f}
 body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures button,body.page-annuaire.domain-parents-mda34-org table.views-table th{background-color:#32903f}
 body.domain-reseau-pro-mda34-org #block-system-main .field.field-name-field-website a{color:#fff}
-body.node-type-structure .group-practical-infos{float:right;margin-left:1em;margin-bottom:1em}
-body.node-type-structure .sharethis-buttons{float:right;min-width:15pc;margin-bottom:20px}
-body.node-type-structure .field-name-body,body.node-type-structure .field-name-field-competence-fields,body.node-type-structure .field-name-field-structure-type:after{clear:left}
-body.node-type-structure .field-label,body.node-type-structure .field-name-field-action-types .field-items .field-item,body.node-type-structure .field-name-field-public .field-items .field-item{float:left;margin-right:10px}
-body.node-type-structure .field-name-field-coordinates{clear:both}
-.node-type-news h2.page-header:before,.page-actualites h2.page-header:before{font-weight:400;text-transform:none;color:#999;content:"\e804"}
+body.node-type-structure .group-practical-infos{float:right;margin-left:1em;margin-bottom:1em;padding:10px;font-size:.9em}
+body.node-type-structure .sharethis-buttons{min-width:15pc;margin:1em 0}
+body.node-type-structure .field.field-name-field-mission .field-item{border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;margin-bottom:1.5em;font-weight:700;font-size:.9em}
+body.node-type-structure .group-term.field-group-div{border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;margin-bottom:1.5em;font-size:.9em}
+body.node-type-structure .field.field-name-field-coordinates{margin:1em}
+.node-type-news h2.page-header:before,.page-actualites h2.page-header:before{font-weight:400;font-size:1em;margin-right:10px;text-transform:none;color:#999;content:"\e804"}
 .page-actualites .view-news a>img{float:left;margin-right:15px;max-width:33.33%}
 .page-actualites .view-news.view-display-id-news_last_news a>img{max-width:48%}
 .page-actualites .view-news .views-row{border-bottom:0 solid #999;margin-bottom:10px}
