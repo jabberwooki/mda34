@@ -6,7 +6,7 @@ body.page-annuaire {
     } 
   }
   #views-exposed-form-structures-list-structures{
-    background-color: @gray-ultra-light;
+    
     padding: 20px;
     label{
       color: @violet-mda;
@@ -15,6 +15,7 @@ body.page-annuaire {
       background-color: @violet-mda;
       text-transform: uppercase;
       margin-top: 26px;
+      color:white;
     }
   }
   table.views-table{
@@ -76,30 +77,45 @@ body.node-type-structure{
     float: right;
       margin-left: 1em;
       margin-bottom: 1em;
+      padding :10px;
+      font-size:0.9em;
       
 
   }
   
   .sharethis-buttons{
-    float: right;
     min-width: 240px;
-    margin-bottom: 20px;
+    margin: 1em 0;
   }
   
-  .field-name-field-structure-type:after,
-  .field-name-field-competence-fields,
-  .field-name-body{
-    clear: left;
-  }
-  .field-name-body{
-    clear: left;
-  }
-  .field-label, .field-name-field-public .field-items .field-item,
-  .field-name-field-action-types .field-items .field-item{
-    float: left;
-    margin-right: 10px;
-  }
-  .field-name-field-coordinates{
-    clear: both;
-  }
+
+.field.field-name-field-mission .field-item
+{
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding:10px;
+    margin-bottom:1.5em;
+    font-weight : bold;
+    font-size:0.90em;
+}
+
+.group-term.field-group-div
+{
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding:10px;
+    margin-bottom:1.5em;
+    font-size:0.90em;
+}
+
+.field.field-name-field-coordinates
+{
+ margin:1em;
+
+}
+
 }

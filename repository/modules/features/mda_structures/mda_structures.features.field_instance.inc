@@ -31,7 +31,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -126,7 +126,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 15,
       ),
       'list' => array(
         'label' => 'above',
@@ -211,11 +211,14 @@ function mda_structures_field_default_field_instances() {
         'weight' => 11,
       ),
       'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'label' => 'inline',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 1,
+          'taxonomy_term_separator' => ' / ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 8,
       ),
       'list' => array(
         'label' => 'above',
@@ -272,7 +275,7 @@ function mda_structures_field_default_field_instances() {
         'weight' => 13,
       ),
       'full' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'addressfield',
         'settings' => array(
           'format_handlers' => array(
@@ -281,7 +284,7 @@ function mda_structures_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 6,
+        'weight' => 12,
       ),
       'list' => array(
         'label' => 'above',
@@ -361,11 +364,14 @@ function mda_structures_field_default_field_instances() {
         'weight' => 10,
       ),
       'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 6,
+        'label' => 'inline',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 1,
+          'taxonomy_term_separator' => ' / ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 9,
       ),
       'list' => array(
         'label' => 'above',
@@ -470,7 +476,7 @@ function mda_structures_field_default_field_instances() {
           ),
           'leaflet_map' => 'OSM Mapnik',
           'popup' => array(
-            'show' => 0,
+            'show' => 1,
             'text' => '',
           ),
           'vector_display' => array(
@@ -492,7 +498,7 @@ function mda_structures_field_default_field_instances() {
           ),
         ),
         'type' => 'geofield_leaflet',
-        'weight' => 9,
+        'weight' => 14,
       ),
       'list' => array(
         'label' => 'above',
@@ -547,11 +553,11 @@ function mda_structures_field_default_field_instances() {
         'weight' => 4,
       ),
       'full' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 4,
+        'weight' => 11,
       ),
       'list' => array(
         'label' => 'above',
@@ -615,7 +621,7 @@ function mda_structures_field_default_field_instances() {
           'image_style' => 'logo_120x120',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'above',
@@ -704,11 +710,11 @@ function mda_structures_field_default_field_instances() {
         'weight' => 16,
       ),
       'full' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
+        'type' => 'text_plain',
+        'weight' => 3,
       ),
       'list' => array(
         'label' => 'above',
@@ -831,7 +837,7 @@ function mda_structures_field_default_field_instances() {
           'timezone_field' => '',
         ),
         'type' => 'office_hours',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'list' => array(
         'label' => 'above',
@@ -904,7 +910,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'phone',
         'settings' => array(),
         'type' => 'phone',
-        'weight' => 5,
+        'weight' => 10,
       ),
       'list' => array(
         'label' => 'above',
@@ -968,10 +974,9 @@ function mda_structures_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
@@ -1053,11 +1058,14 @@ function mda_structures_field_default_field_instances() {
         'weight' => 9,
       ),
       'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'label' => 'inline',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 1,
+          'taxonomy_term_separator' => ' / ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 10,
       ),
       'list' => array(
         'label' => 'above',
@@ -1112,7 +1120,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
@@ -1167,7 +1175,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 13,
       ),
       'list' => array(
         'label' => 'above',

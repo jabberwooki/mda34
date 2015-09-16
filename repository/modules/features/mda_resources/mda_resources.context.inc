@@ -63,6 +63,7 @@ function mda_resources_context_default_contexts() {
       'values' => array(
         '~agenda' => '~agenda',
         '~ressources' => '~ressources',
+        '~annuaire' => '~annuaire',
       ),
     ),
     'sitewide' => array(
