@@ -19,3 +19,8 @@ function mda_resources_update_7001() {
   $vid = taxonomy_vocabulary_machine_name_load('resource_publics')->vid;
   taxonomy_vocabulary_delete($vid);
 }
+
+function ressources_update_7002() {
+	module_enable(array('profile2'));
+}
+

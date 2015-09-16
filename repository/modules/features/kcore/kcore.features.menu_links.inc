@@ -17,6 +17,12 @@ function kcore_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Retour au portail',
     'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
       'domain_menu_access' => array(
         'hide' => array(
           'd1' => 'd1',
@@ -24,12 +30,6 @@ function kcore_menu_default_menu_links() {
       ),
       'alter' => TRUE,
       'identifier' => 'menu-top-menu_retour-au-portail:http://www.mda34.org',
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
