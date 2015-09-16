@@ -82,6 +82,7 @@ features[variable][] = node_options_structure
 features[variable][] = node_preview_structure
 features[variable][] = node_submitted_structure
 features[variable][] = pathauto_node_structure_pattern
+features[views_view][] = annuaire_filter
 features[views_view][] = structures
 features_exclude[dependencies][ctools] = ctools
 features_exclude[dependencies][features] = features
