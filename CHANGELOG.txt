@@ -1,3 +1,9 @@
+MDA34 - 2015-09-16
+------------------
+- update drupal core 7.39
+- view structure isotop
+- Less node annuaire
+
 MDA34 - 2015-09-09
 ------------------
 - Less css
