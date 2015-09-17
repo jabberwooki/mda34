@@ -86,7 +86,7 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Informations pratiques',
-    'weight' => '5',
+    'weight' => '4',
     'children' => array(
       0 => 'field_access_means',
       1 => 'field_address',

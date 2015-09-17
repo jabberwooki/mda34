@@ -31,7 +31,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -218,7 +218,7 @@ function mda_structures_field_default_field_instances() {
           'taxonomy_term_separator' => ' / ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 8,
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'above',
@@ -371,7 +371,7 @@ function mda_structures_field_default_field_instances() {
           'taxonomy_term_separator' => ' / ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 9,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -621,7 +621,7 @@ function mda_structures_field_default_field_instances() {
           'image_style' => 'logo_120x120',
         ),
         'type' => 'image',
-        'weight' => 4,
+        'weight' => 0,
       ),
       'list' => array(
         'label' => 'above',
@@ -1065,7 +1065,7 @@ function mda_structures_field_default_field_instances() {
           'taxonomy_term_separator' => ' / ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 10,
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'above',
@@ -1120,7 +1120,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'weight' => 3,
       ),
       'list' => array(
         'label' => 'above',
