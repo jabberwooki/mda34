@@ -1620,7 +1620,7 @@ a#main-content{height:1px;overflow:hidden}
 #block-menu-menu-footer-menu ul.menu li a{font-size:.75em}
 [class*=" node-type-"] h2.page-header{text-transform:none}
 [class*=" node-type-"] div.node img{max-width:47%;float:left;margin-right:1em;margin-bottom:1em}
-.glyphicon,[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{font-family:fontello;font-weight:400;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-transform:none;line-height:1em;color:#999;font-style:normal;speak:none;text-align:center;font-variant:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:1em}
+.glyphicon,[class*=" icon-"]:before,[class*=" iconafter-"]:after,[class^=icon-]:before{font-weight:400;display:inline-block;text-decoration:inherit;width:1em;margin-right:10px;text-transform:none;line-height:1em;color:#999;font-style:normal;speak:none;text-align:center;font-variant:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:1em;font-family:fontello}
 @font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix) format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294) format('woff'),url(../images/fontello/font/fontello.ttf?90885294) format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello) format('svg');font-weight:400;font-style:normal}
 [class*=" icon-"]:hover{text-decoration:none}
 .no-marg-padd,body{margin:0;padding:0}
@@ -1965,6 +1965,16 @@ body.domain-ados-mda34-org.page-faq h2.page-header:before{width:1em;color:#999;c
 body.domain-ados-mda34-org.page-faq .isotope-element{background:url(../images/bg_faq_orange.png) 0 100% no-repeat;border-top:1px solid #f78c26;padding-bottom:17px}
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-field-faq-category-1 a{color:#f78c26!important}
 body.domain-ados-mda34-org.page-faq .isotope-element .views-field-title a:after{background:url(../images/arrow-orange.png) no-repeat}
+body.page-annuaire.domain-parents-mda34-org form#views-exposed-form-structures-list-structures{padding:0;margin:1em 0;background-color:#fff}
+body.page-annuaire.domain-parents-mda34-org #isotope-options ul#filters{padding:0;margin:0;background-color:#fff}
+body.page-annuaire.domain-parents-mda34-org .view-id-annuaire_filter .view-content{background-color:#fff}
+body.page-annuaire.domain-parents-mda34-org .isotope-element{width:340px;background-image:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;background-color:#fff;box-shadow:1px 1px 1px #ccc}
+body.page-annuaire.domain-parents-mda34-org .isotope-element .views-field-field-mission{color:#555;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;font-size:.95em}
+body.page-annuaire.domain-parents-mda34-org .isotope-element .views-field-title{border:0;padding:0;margin-bottom:.25em}
+body.page-annuaire.domain-parents-mda34-org .isotope-element .views-field-title a{color:#32903f!important}
+body.page-annuaire.domain-parents-mda34-org #isotope-options ul#filters li a.selected{background-color:#32903f}
+body.page-annuaire.domain-parents-mda34-org .views-field-field-logo img{width:auto;height:auto;margin:.5em;float:right}
+body.page-annuaire.domain-parents-mda34-org .view-content{background-color:#32903f;margin:0;padding:.75em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
 body.page-annuaire.domain-reseau-pro-mda34-org #isotope-options ul#filters{padding:0;margin:1em 0;background-color:#fff}
 body.page-annuaire.domain-reseau-pro-mda34-org .view-id-annuaire_filter .view-content{background-color:#fff}
 body.page-annuaire.domain-reseau-pro-mda34-org .view-content{background-color:#575095;margin:0 2.75em 0 0;padding:.75em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
@@ -2029,6 +2039,7 @@ body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-
 body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures label{color:#32903f}
 body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures button,body.page-annuaire.domain-parents-mda34-org table.views-table th{background-color:#32903f}
 body.domain-reseau-pro-mda34-org #block-system-main .field.field-name-field-website a{color:#fff}
+body.node-type-structure .field-name-field-logo img{float:right;max-width:47%}
 body.node-type-structure .group-practical-infos{float:right;margin-left:1em;margin-bottom:1em;padding:10px;font-size:.9em}
 body.node-type-structure .sharethis-buttons{min-width:15pc;margin:1em 0}
 body.node-type-structure .field.field-name-field-mission .field-item{border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;margin-bottom:1.5em;font-weight:700;font-size:.9em}
