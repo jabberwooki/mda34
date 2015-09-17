@@ -43,11 +43,11 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Champ: Atome: Identifiant Scald */
+  /* Champ: Atome : Identifiant Scald */
   $handler->display->display_options['fields']['sid']['id'] = 'sid';
   $handler->display->display_options['fields']['sid']['table'] = 'scald_atoms';
   $handler->display->display_options['fields']['sid']['field'] = 'sid';
-  /* Champ: Atome: Représentation */
+  /* Champ: Atome : Représentation */
   $handler->display->display_options['fields']['representation']['id'] = 'representation';
   $handler->display->display_options['fields']['representation']['table'] = 'scald_atoms';
   $handler->display->display_options['fields']['representation']['field'] = 'representation';
@@ -68,14 +68,14 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Entête: Global: Unfiltered text */
+  /* Entête: Global : Texte non filtré */
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['label'] = 'Lien Toutes les vidéos';
   $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/multimedia/videos">Toutes nos videos</a>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Atome: Représentation */
+  /* Champ: Atome : Représentation */
   $handler->display->display_options['fields']['representation']['id'] = 'representation';
   $handler->display->display_options['fields']['representation']['table'] = 'scald_atoms';
   $handler->display->display_options['fields']['representation']['field'] = 'representation';
@@ -83,13 +83,13 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['fields']['representation']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['representation']['context'] = 'scald_col_4';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Global: Au hasard */
+  /* Critère de tri: Global : Au hasard */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
   $handler->display->display_options['sorts']['random']['table'] = 'views';
   $handler->display->display_options['sorts']['random']['field'] = 'random';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Atome: Type */
+  /* Critère de filtrage: Atome : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'scald_atoms';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -100,11 +100,11 @@ function mda_multimedia_views_default_views() {
   /* Display: Videos */
   $handler = $view->new_display('page', 'Videos', 'page_1');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Atome: Identifiant Scald */
+  /* Champ: Atome : Identifiant Scald */
   $handler->display->display_options['fields']['sid']['id'] = 'sid';
   $handler->display->display_options['fields']['sid']['table'] = 'scald_atoms';
   $handler->display->display_options['fields']['sid']['field'] = 'sid';
-  /* Champ: Atome: Représentation */
+  /* Champ: Atome : Représentation */
   $handler->display->display_options['fields']['representation']['id'] = 'representation';
   $handler->display->display_options['fields']['representation']['table'] = 'scald_atoms';
   $handler->display->display_options['fields']['representation']['field'] = 'representation';
@@ -112,14 +112,14 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['fields']['representation']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['representation']['context'] = 'list';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Atome: Date de création */
+  /* Critère de tri: Atome : Date de création */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'scald_atoms';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Atome: Type */
+  /* Critère de filtrage: Atome : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'scald_atoms';
   $handler->display->display_options['filters']['type']['field'] = 'type';

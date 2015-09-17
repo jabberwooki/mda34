@@ -24,7 +24,9 @@ function mda_faqs_menu_default_menu_links() {
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_faq:faq',
     ),
     'module' => 'menu',
