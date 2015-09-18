@@ -1915,7 +1915,6 @@ body.front .block.block-views h3{border-bottom:0 solid #cdcdcd}
 .group-link-resources .field-name-field-themes .field-items a:after{content:" - "}
 .page-ressources.domain-reseau-pro-mda34-org .view-filters{border:1px solid #999;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:5px 15px 20px;background-color:#e9e9e9}
 .page-ressources.domain-reseau-pro-mda34-org .btn-info{color:#fff;background-color:#575095;border-color:#ccc}
-.page-annuaire.domain-reseau-pro-mda34-org .view-filters{border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fff;margin:1em 2.75em 1em .75em}
 .node-type-resource .field.field-name-field-resource-files{margin:1em 0;font-weight:700}
 .node-type-resource div.node img.file-icon{margin:.15em .25em}
 .node-type-resource .field.field-name-field-themes{margin-bottom:1em}
@@ -1975,8 +1974,9 @@ body.page-annuaire.domain-parents-mda34-org .isotope-element .views-field-title 
 body.page-annuaire.domain-parents-mda34-org #isotope-options ul#filters li a.selected{background-color:#32903f}
 body.page-annuaire.domain-parents-mda34-org .views-field-field-logo img{width:auto;height:auto;margin:.5em;float:right}
 body.page-annuaire.domain-parents-mda34-org .view-content{background-color:#32903f;margin:0;padding:.75em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
-body.page-annuaire.domain-reseau-pro-mda34-org #isotope-options ul#filters{padding:0;margin:1em 0;background-color:#fff}
+body.page-annuaire.domain-reseau-pro-mda34-org #isotope-options ul#filters{padding:0;margin:0;background-color:#fff}
 body.page-annuaire.domain-reseau-pro-mda34-org .view-id-annuaire_filter .view-content{background-color:#fff}
+body.page-annuaire.domain-reseau-pro-mda34-org .view-filters{border:0 solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fff;margin-bottom:1.25em}
 body.page-annuaire.domain-reseau-pro-mda34-org .view-content{background-color:#575095;margin:0 2.75em 0 0;padding:.75em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
 body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element{width:340px;background-image:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;background-color:#fff;box-shadow:1px 1px 1px #ccc}
 body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element .views-field-field-mission{color:#555;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;font-size:.95em}
@@ -2025,7 +2025,6 @@ body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks 
 .block-wrapper-custom .view-radio-programmes h2>a{font-size:.6em;color:#000;text-transform:none}
 .ds-1col.node.node-radio-programme.view-mode-last_item.btn-group-vertical>.btn-group,.ds-1col.node.node-radio-programme.view-mode-last_item.btn-toolbar,.ds-1col.node.node-radio-programme.view-mode-last_item.clearfix,.ds-1col.node.node-radio-programme.view-mode-last_item.container,.ds-1col.node.node-radio-programme.view-mode-last_item.container-fluid,.ds-1col.node.node-radio-programme.view-mode-last_item.dl-horizontal dd,.ds-1col.node.node-radio-programme.view-mode-last_item.form-horizontal .form-group,.ds-1col.node.node-radio-programme.view-mode-last_item.modal-footer,.ds-1col.node.node-radio-programme.view-mode-last_item.nav,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar-collapse,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar-header,.ds-1col.node.node-radio-programme.view-mode-last_item.pager,.ds-1col.node.node-radio-programme.view-mode-last_item.panel-body,.ds-1col.node.node-radio-programme.view-mode-last_item.row{padding:1em}
 body.page-annuaire h2.page-header:before{font-weight:400;font-size:1em;margin-right:10px;text-transform:none;color:#999;content:"\e82f"}
-body.page-annuaire #views-exposed-form-structures-list-structures{padding:20px}
 body.page-annuaire #views-exposed-form-structures-list-structures label{color:#575095}
 body.page-annuaire #views-exposed-form-structures-list-structures button{background-color:#575095;text-transform:uppercase;margin-top:26px;color:#fff}
 body.page-annuaire table.views-table{margin-top:33px}
