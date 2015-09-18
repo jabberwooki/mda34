@@ -63,6 +63,12 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'competence_fields' => 'competence_fields',
   );
+  /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
+  $handler->display->display_options['filters']['current_all']['id'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
+  $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
+  $handler->display->display_options['filters']['current_all']['relationship'] = 'nid';
+  $handler->display->display_options['filters']['current_all']['value'] = '1';
 
   /* Display: Filtre annuaire */
   $handler = $view->new_display('block', 'Filtre annuaire', 'annuaire_champs_filter');
