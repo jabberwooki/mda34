@@ -86,7 +86,7 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Informations pratiques',
-    'weight' => '4',
+    'weight' => '3',
     'children' => array(
       0 => 'field_access_means',
       1 => 'field_address',
@@ -124,7 +124,7 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Caractéristiques',
-    'weight' => '2',
+    'weight' => '1',
     'children' => array(
       0 => 'field_action_types',
       1 => 'field_competence_fields',
