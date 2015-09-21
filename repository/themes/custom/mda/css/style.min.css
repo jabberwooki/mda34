@@ -1658,17 +1658,17 @@ body:not(.front) .main-container{margin-top:90pt}
 .navbar-header .slogan{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;width:162px;border-top:1px solid #000;margin-left:193px;text-align:center}
 @media (max-width:768px){.navbar-header .slogan{text-align:center;margin-left:90pt;width:111px}
 }
-[class*=" domain-ado"] a.logo,[class*=" domain-parent"] a.logo,[class*=" domain-reseau"] a.logo,[class*=" domain-radio"] a.logo{text-indent:-375pc;width:72px;height:83px}
-[class*=" domain-ado"] .navbar-header .slogan,[class*=" domain-parent"] .navbar-header .slogan,[class*=" domain-reseau"] .navbar-header .slogan,[class*=" domain-radio"] .navbar-header .slogan{margin-left:150px}
-[class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{padding-left:28px}
+[class*=" domain-ado"] a.logo,[class*=" domain-parent"] a.logo,[class*=" domain-reseau"] a.logo,[class*=" domain-radio"] a.logo,[class*=" domain-philado"] a.logo{text-indent:-375pc;width:72px;height:83px}
+[class*=" domain-ado"] .navbar-header .slogan,[class*=" domain-parent"] .navbar-header .slogan,[class*=" domain-reseau"] .navbar-header .slogan,[class*=" domain-radio"] .navbar-header .slogan,[class*=" domain-philado"] .navbar-header .slogan{margin-left:150px}
+[class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a,[class*=" domain-philado"] h1.navbar-brand a{padding-left:28px}
 @media screen and (min-width:1200px){.navbar-header h1.navbar-brand a{float:right}
-[class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{float:none}
+[class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a,[class*=" domain-philado"] h1.navbar-brand a{float:none}
 }
 @media (max-width:480px){.navbar-header h1.navbar-brand a{font-size:1em;white-space:normal}
 .navbar-header h1.navbar-brand{margin-top:0}
 .navbar-header .slogan{margin-top:10px}
-[class*=" domain-ado"] .navbar-header .slogan,[class*=" domain-parent"] .navbar-header .slogan,[class*=" domain-reseau"] .navbar-header .slogan,[class*=" domain-radio"] .navbar-header .slogan{margin-left:75pt}
-[class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a{padding-left:0;padding-top:1.8em}
+[class*=" domain-ado"] .navbar-header .slogan,[class*=" domain-parent"] .navbar-header .slogan,[class*=" domain-reseau"] .navbar-header .slogan,[class*=" domain-radio"] .navbar-header .slogan,[class*=" domain-philado"] .navbar-header .slogan{margin-left:75pt}
+[class*=" domain-ado"] h1.navbar-brand a,[class*=" domain-parent"] h1.navbar-brand a,[class*=" domain-reseau"] h1.navbar-brand a,[class*=" domain-radio"] h1.navbar-brand a,[class*=" domain-philado"] h1.navbar-brand a{padding-left:0;padding-top:1.8em}
 }
 body.domain-ados-mda34-org a.logo{background:url(../images/home_ado_big.gif) no-repeat}
 body.domain-parents-mda34-org a.logo{background:url(../images/home_parents_big.gif) no-repeat}
@@ -1680,6 +1680,13 @@ body.domain-reseau-pro-mda34-org h1.navbar-brand a{padding-left:20px}
 body.domain-radio-mda34-org a.logo{background:url(../images/home_radio_big.gif) no-repeat;width:97px}
 body.domain-radio-mda34-org .navbar-header .slogan{margin-left:117px}
 body.domain-radio-mda34-org h1.navbar-brand a{padding-left:33px}
+body.domain-philado-mda34-org a.logo{background:url(../images/logo-philado.png) no-repeat;width:89px;height:93px}
+body.domain-philado-mda34-org h1.navbar-brand a{padding-left:13px}
+body.domain-philado-mda34-org h1.navbar-brand{margin-bottom:0;margin-top:25px;float:none}
+body.domain-philado-mda34-org .navbar-inverse{background-image:none}
+body.domain-philado-mda34-org .navbar-header p.slogan{display:none}
+body.domain-philado-mda34-org .footer-center .logo-footer{display:none;text-align:center}
+body.domain-philado-mda34-org #main-footer{background-image:none;background-color:#F8F8F8}
 button.navbar-toggle{margin-top:-25px;margin-bottom:0;background-color:#000}
 @media (max-width:480px){button.navbar-toggle{margin-top:-15px;margin-right:-20px}
 }
