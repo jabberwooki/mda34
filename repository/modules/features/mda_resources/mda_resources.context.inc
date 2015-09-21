@@ -22,20 +22,32 @@ function mda_resources_context_default_contexts() {
         4 => 4,
       ),
     ),
-    'sitewide' => array(
+    'path' => array(
       'values' => array(
-        1 => 1,
+        '<front>' => '<front>',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-philado-block' => array(
+          'module' => 'views',
+          'delta' => 'philado-block',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'views-events-block_pros_trainings' => array(
+          'module' => 'views',
+          'delta' => 'events-block_pros_trainings',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
         'boxes-philado_resources_link' => array(
           'module' => 'boxes',
           'delta' => 'philado_resources_link',
           'region' => 'sidebar_second',
-          'weight' => '5',
+          'weight' => '-8',
         ),
       ),
     ),

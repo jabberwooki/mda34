@@ -1828,6 +1828,8 @@ body.domain-ados-mda34-org .block.block-views h3{color:#f78c26}
 #block-menu-menu-footer-menu ul.menu li a{color:#000}
 body.domain-parents-mda34-org #block-system-main a,body.domain-parents-mda34-org h2.page-header{color:#32903f}
 #block-menu-menu-footer-menu ul.menu li a:hover{background-color:transparent;text-decoration:underline}
+body.domain-philado-mda34-org #page-header{padding-top:44px}
+body.domain-philado-mda34-org section#block-block-1{display:none}
 body.domain-parents-mda34-org #block-system-main a.btn-success{color:#fff;margin-top:10px}
 body.domain-parents-mda34-org #block-system-main ul li{background:url(../images/arrow-green.png) 0 50% no-repeat}
 body.domain-parents-mda34-org #block-system-main ul.pagination li{background-image:none}
