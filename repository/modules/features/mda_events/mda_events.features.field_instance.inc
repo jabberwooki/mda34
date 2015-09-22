@@ -242,7 +242,7 @@ function mda_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'leaflet',
         'settings' => array(
-          'height' => 300,
+          'height' => 400,
           'icon' => array(
             'html' => '',
             'htmlClass' => '',
@@ -269,8 +269,8 @@ function mda_events_field_default_field_instances() {
           ),
           'leaflet_map' => 'OSM Mapnik',
           'popup' => array(
-            'show' => 0,
-            'text' => '',
+            'show' => 1,
+            'text' => '[node:field-organiser][node:field_unregistered_organiser] - [node:field-address:thoroughfare] [node:field-address:locality]',
           ),
           'vector_display' => array(
             'clickable' => 0,
@@ -285,9 +285,9 @@ function mda_events_field_default_field_instances() {
             'weight' => '',
           ),
           'zoom' => array(
-            'initialZoom' => 12,
-            'maxZoom' => 18,
-            'minZoom' => 0,
+            'initialZoom' => -1,
+            'maxZoom' => -1,
+            'minZoom' => 1,
           ),
         ),
         'type' => 'geofield_leaflet',
