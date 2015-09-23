@@ -910,44 +910,99 @@ function mda_events_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Formations';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_event_dates' => 'field_event_dates',
+    'title' => 'title',
+    'field_address_locality' => 'field_address_locality',
+    'field_organiser' => 'field_organiser',
+    'field_unregistered_organiser' => 'field_unregistered_organiser',
+  );
+  $handler->display->display_options['style_options']['default'] = 'field_event_dates';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_event_dates' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'title' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'field_address_locality' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'field_organiser' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'field_unregistered_organiser' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+  );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu : Titre */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
-  $handler->display->display_options['fields']['field_event_dates']['label'] = '';
+  $handler->display->display_options['fields']['field_event_dates']['label'] = 'Date de début';
   $handler->display->display_options['fields']['field_event_dates']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['settings'] = array(
     'format_type' => 'short_no_time',
-    'fromto' => 'both',
+    'fromto' => 'value',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu : Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '200',
-    'field_formatter_class' => '',
+  /* Champ: Contenu : Titre */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'Formation';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Champ: Contenu : Organisateur */
+  $handler->display->display_options['fields']['field_organiser']['id'] = 'field_organiser';
+  $handler->display->display_options['fields']['field_organiser']['table'] = 'field_data_field_organiser';
+  $handler->display->display_options['fields']['field_organiser']['field'] = 'field_organiser';
+  $handler->display->display_options['fields']['field_organiser']['label'] = 'Organisme';
+  $handler->display->display_options['fields']['field_organiser']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organiser']['settings'] = array(
+    'link' => 0,
   );
+  /* Champ: Contenu : Organisateur */
+  $handler->display->display_options['fields']['field_unregistered_organiser']['id'] = 'field_unregistered_organiser';
+  $handler->display->display_options['fields']['field_unregistered_organiser']['table'] = 'field_data_field_unregistered_organiser';
+  $handler->display->display_options['fields']['field_unregistered_organiser']['field'] = 'field_unregistered_organiser';
+  $handler->display->display_options['fields']['field_unregistered_organiser']['label'] = 'Organisme';
+  $handler->display->display_options['fields']['field_unregistered_organiser']['element_label_colon'] = FALSE;
+  /* Champ: Contenu : Adresse - Localité (c&#039;est-à-dire Ville) */
+  $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
+  $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
+  $handler->display->display_options['fields']['field_address_locality']['label'] = 'Lieu';
+  $handler->display->display_options['fields']['field_address_locality']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Critère de filtrage: Contenu : Publié */
@@ -1166,6 +1221,10 @@ function mda_events_views_default_views() {
 </div>'),
     t('Liste des formations'),
     t('Formations'),
+    t('Date de début'),
+    t('Formation'),
+    t('Organisme'),
+    t('Lieu'),
     t('Accueil portail (formations)'),
     t('Espace pros (formations)'),
     t('Formations à venir'),
