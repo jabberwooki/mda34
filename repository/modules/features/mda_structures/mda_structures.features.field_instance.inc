@@ -958,7 +958,7 @@ function mda_structures_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'list' => array(
         'label' => 'above',
@@ -1093,10 +1093,11 @@ function mda_structures_field_default_field_instances() {
         'weight' => 18,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'file',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'file_default',
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'above',
@@ -1171,10 +1172,13 @@ function mda_structures_field_default_field_instances() {
         'weight' => 17,
       ),
       'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'inline',
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 0,
+        ),
+        'type' => 'zoom_block',
+        'weight' => 8,
       ),
       'list' => array(
         'label' => 'above',
@@ -1207,7 +1211,7 @@ function mda_structures_field_default_field_instances() {
       'active' => 1,
       'module' => 'atom_reference',
       'settings' => array(
-        'context' => 'sdl_editor_representation',
+        'context' => 'zoom_block',
       ),
       'type' => 'atom_reference_textfield',
       'weight' => 16,

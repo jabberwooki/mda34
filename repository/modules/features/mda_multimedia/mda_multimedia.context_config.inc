@@ -496,6 +496,7 @@ function mda_multimedia_default_scald_context_config() {
     ),
     'video' => array(
       '*' => 'default',
+      'settings' => array(),
     ),
   );
   $context_config->data = array(
@@ -667,7 +668,7 @@ function mda_multimedia_default_scald_context_config() {
     ),
   );
   $context_config->data = array(
-    'width' => '',
+    'width' => '50%',
     'height' => '',
   );
   $export['zoom_block'] = $context_config;

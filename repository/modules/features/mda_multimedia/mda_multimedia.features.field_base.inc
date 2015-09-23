@@ -100,7 +100,9 @@ function mda_multimedia_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'atom_reference',
-    'settings' => array(),
+    'settings' => array(
+      'profile2_private' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'atom_reference',
   );
