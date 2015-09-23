@@ -1038,6 +1038,35 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
   $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
+  /* Critère de filtrage: Contenu : Public (field_public) */
+  $handler->display->display_options['filters']['field_public_tid']['id'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['table'] = 'field_data_field_public';
+  $handler->display->display_options['filters']['field_public_tid']['field'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['value'] = array(
+    28 => '28',
+    23 => '23',
+    24 => '24',
+    25 => '25',
+    27 => '27',
+  );
+  $handler->display->display_options['filters']['field_public_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_public_tid']['expose']['operator_id'] = 'field_public_tid_op';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['label'] = 'Public';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['operator'] = 'field_public_tid_op';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['identifier'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    141037677 => 0,
+    183916278 => 0,
+    155963314 => 0,
+    22875792 => 0,
+    193262079 => 0,
+    109177673 => 0,
+  );
+  $handler->display->display_options['filters']['field_public_tid']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_public_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_public_tid']['vocabulary'] = 'publics';
   $handler->display->display_options['path'] = 'formations';
 
   /* Display: Accueil portail (formations) */
@@ -1225,6 +1254,7 @@ function mda_events_views_default_views() {
     t('Formation'),
     t('Organisme'),
     t('Lieu'),
+    t('Public'),
     t('Accueil portail (formations)'),
     t('Espace pros (formations)'),
     t('Formations à venir'),
