@@ -178,8 +178,9 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['title'] = 'L\'annuaire';
   $handler->display->display_options['defaults']['exposed_form'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Rechercher';
-  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Réinitialiser';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'ok';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'annuler';
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Trier par';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope';
@@ -303,14 +304,13 @@ function mda_structures_views_default_views() {
     193262079 => 0,
     109177673 => 0,
   );
-  $handler->display->display_options['filters']['title']['expose']['autocomplete_filter'] = 1;
   $handler->display->display_options['filters']['title']['expose']['autocomplete_items'] = '10';
   $handler->display->display_options['filters']['title']['expose']['autocomplete_min_chars'] = '0';
   $handler->display->display_options['filters']['title']['expose']['autocomplete_field'] = 'title';
   $handler->display->display_options['filters']['title']['expose']['autocomplete_raw_suggestion'] = 1;
   $handler->display->display_options['filters']['title']['expose']['autocomplete_raw_dropdown'] = 1;
   $handler->display->display_options['filters']['title']['expose']['autocomplete_dependent'] = 0;
-  /* Critère de filtrage: Contenu : Public concerné (field_public) */
+  /* Critère de filtrage: Contenu : Public (field_public) */
   $handler->display->display_options['filters']['field_public_tid']['id'] = 'field_public_tid';
   $handler->display->display_options['filters']['field_public_tid']['table'] = 'field_data_field_public';
   $handler->display->display_options['filters']['field_public_tid']['field'] = 'field_public_tid';
@@ -378,7 +378,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu : Email du gestionnaire */
+  /* Champ: Contenu : Contact email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -392,7 +392,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu : Lieu de l'événement */
+  /* Champ: Contenu : Adresse */
   $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
   $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
@@ -417,13 +417,14 @@ function mda_structures_views_default_views() {
     t('terme'),
     t('Liste'),
     t('L\'annuaire'),
-    t('Rechercher'),
+    t('ok'),
+    t('annuler'),
     t('Nom de la structure'),
     t('Public'),
     t('Types d\'actions'),
     t('Infos contact'),
     t('Infos visibles sur une fiche événement'),
-    t('Email du gestionnaire'),
+    t('Contact email'),
     t('Contact téléphone'),
   );
   $export['structures'] = $view;

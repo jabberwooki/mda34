@@ -15,6 +15,7 @@ function mda_structures_default_fe_block_settings() {
   $export['views-2f4bc1693461feea59a96fc185411b94'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => '2f4bc1693461feea59a96fc185411b94',
     'module' => 'views',
     'node_types' => array(),
@@ -34,6 +35,8 @@ function mda_structures_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-structures-block_1'] = array(
