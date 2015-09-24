@@ -100,7 +100,7 @@ function mda_structures_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '7',
+            'weight' => '8',
             'visible' => TRUE,
           ),
           'list' => array(

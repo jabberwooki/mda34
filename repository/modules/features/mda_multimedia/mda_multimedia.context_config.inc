@@ -397,8 +397,8 @@ function mda_multimedia_default_scald_context_config() {
     ),
   );
   $context_config->data = array(
-    'width' => '100%',
-    'height' => '',
+    'width' => '360',
+    'height' => '274',
   );
   $export['scald_col_4'] = $context_config;
 
@@ -668,8 +668,8 @@ function mda_multimedia_default_scald_context_config() {
     ),
   );
   $context_config->data = array(
-    'width' => '50%',
-    'height' => '',
+    'width' => '280',
+    'height' => '158',
   );
   $export['zoom_block'] = $context_config;
 

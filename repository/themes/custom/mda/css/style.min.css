@@ -2046,12 +2046,14 @@ body.page-annuaire table.views-table td.views-field-title a{font-weight:700;colo
 body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures label{color:#32903f}
 body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures button,body.page-annuaire.domain-parents-mda34-org table.views-table th{background-color:#32903f}
 body.domain-reseau-pro-mda34-org #block-system-main .field.field-name-field-website a{color:#fff}
-body.node-type-structure .field-name-field-logo img{float:right;max-width:47%}
-body.node-type-structure .group-practical-infos{float:right;margin-left:1em;margin-bottom:1em;padding:10px;font-size:.9em}
+body.node-type-structure .field-name-field-logo img{float:left;max-width:47%}
+body.node-type-structure .group-practical-infos{float:right;margin-left:1em;margin-bottom:1em;padding-top:1.25em;padding-bottom:1.25em;font-size:.9em}
 body.node-type-structure .sharethis-buttons{min-width:15pc;margin:1em 0}
 body.node-type-structure .field.field-name-field-mission .field-item{border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;margin-bottom:1.5em;font-weight:700;font-size:.9em}
 body.node-type-structure .group-term.field-group-div{border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;margin-bottom:1.5em;font-size:.9em}
-body.node-type-structure .field.field-name-field-coordinates{margin:1em}
+body.node-type-structure .field.field-name-field-coordinates{margin:1em 0}
+body.node-type-structure .field.field-name-field-scald-video.field-type-atom-reference.field-label-hidden{margin-bottom:1em}
+body.node-type-structure .field.field-name-field-website.field-type-link-field.field-label-hidden{float:right}
 .node-type-news h2.page-header:before,.page-actualites h2.page-header:before{font-weight:400;font-size:1em;margin-right:10px;text-transform:none;color:#999;content:"\e804"}
 .page-actualites .view-news a>img{float:left;margin-right:15px;max-width:33.33%}
 .page-actualites .view-news.view-display-id-news_last_news a>img{max-width:48%}

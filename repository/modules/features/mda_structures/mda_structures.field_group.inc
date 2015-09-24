@@ -90,11 +90,11 @@ function mda_structures_field_group_info() {
     'children' => array(
       0 => 'field_access_means',
       1 => 'field_address',
-      2 => 'field_coordinates',
-      3 => 'field_email',
-      4 => 'field_office_hours',
-      5 => 'field_phone',
-      6 => 'field_website',
+      2 => 'field_email',
+      3 => 'field_office_hours',
+      4 => 'field_phone',
+      5 => 'field_website',
+      6 => 'field_scald_video',
     ),
     'format_type' => 'div',
     'format_settings' => array(

@@ -22,7 +22,7 @@ function administration_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'eu_cookie_compliance_fr';
   $strongarm->value = array(
-    'popup_enabled' => 0,
+    'popup_enabled' => 1,
     'popup_clicking_confirmation' => 1,
     'popup_position' => 0,
     'popup_agree_button_message' => 'J\'accepte',
@@ -32,7 +32,7 @@ function administration_strongarm() {
       'format' => 'plain_text',
     ),
     'popup_agreed_enabled' => 0,
-    'popup_hide_agreed' => 1,
+    'popup_hide_agreed' => 0,
     'popup_find_more_button_message' => 'Plus d\'infos',
     'popup_hide_button_message' => 'Masquer',
     'popup_agreed' => array(
@@ -40,14 +40,15 @@ function administration_strongarm() {
       'format' => 'plain_text',
     ),
     'popup_link' => '/contact',
-    'popup_link_new_window' => 1,
+    'popup_link_new_window' => 0,
     'popup_height' => '',
     'popup_width' => '100%',
     'popup_delay' => '1',
     'popup_bg_hex' => 'a3a3a3',
     'popup_text_hex' => 'ffffff',
-    'domains_option' => '1',
-    'domains_list' => '',
+    'domains_option' => '0',
+    'domains_list' => 'http://mda34.bac
+http://www.mda34.bac',
     'exclude_paths' => '',
   );
   $export['eu_cookie_compliance_fr'] = $strongarm;
@@ -91,7 +92,7 @@ function administration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'l10n_update_last_check';
-  $strongarm->value = 1441791919;
+  $strongarm->value = 1442840947;
   $export['l10n_update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -4812,7 +4813,7 @@ function administration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1441791915;
+  $strongarm->value = 1443087063;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

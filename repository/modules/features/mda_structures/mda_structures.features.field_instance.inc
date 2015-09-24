@@ -122,7 +122,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 14,
       ),
       'list' => array(
         'label' => 'above',
@@ -277,7 +277,7 @@ function mda_structures_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 4,
+        'weight' => 10,
       ),
       'list' => array(
         'label' => 'above',
@@ -488,7 +488,7 @@ function mda_structures_field_default_field_instances() {
           ),
         ),
         'type' => 'geofield_leaflet',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
@@ -545,7 +545,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 3,
+        'weight' => 11,
       ),
       'list' => array(
         'label' => 'above',
@@ -823,7 +823,7 @@ function mda_structures_field_default_field_instances() {
           'timezone_field' => '',
         ),
         'type' => 'office_hours',
-        'weight' => 1,
+        'weight' => 13,
       ),
       'list' => array(
         'label' => 'above',
@@ -894,7 +894,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'phone',
         'settings' => array(),
         'type' => 'phone',
-        'weight' => 2,
+        'weight' => 9,
       ),
       'list' => array(
         'label' => 'above',
@@ -1167,15 +1167,17 @@ function mda_structures_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 17,
       ),
       'full' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'zoom_block',
         'weight' => 8,
@@ -1290,7 +1292,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 5,
+        'weight' => 12,
       ),
       'list' => array(
         'label' => 'above',
