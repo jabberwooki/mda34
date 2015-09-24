@@ -1,3 +1,14 @@
+MDA34 1.1.5, 2015-09-24
+----------------------
+- update modules
+- update modules scald - fixed
+- view formation changed
+- node annuaire changed
+- fields fichier et video added
+- css modified
+- view map changed
+
+
 MDA34 1.1.4, 2015-09-18
 ----------------------
 - View structure isotop
