@@ -49,6 +49,7 @@ function mda_resources_user_default_permissions() {
     'name' => 'edit any main profile',
     'roles' => array(
       'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
       'superadmin' => 'superadmin',
     ),
     'module' => 'profile2',
@@ -59,6 +60,7 @@ function mda_resources_user_default_permissions() {
     'name' => 'edit own main profile',
     'roles' => array(
       'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
       'professionnel' => 'professionnel',
       'superadmin' => 'superadmin',
     ),
@@ -77,6 +79,7 @@ function mda_resources_user_default_permissions() {
     'name' => 'view any main profile',
     'roles' => array(
       'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
       'superadmin' => 'superadmin',
     ),
     'module' => 'profile2',
@@ -87,6 +90,7 @@ function mda_resources_user_default_permissions() {
     'name' => 'view own main profile',
     'roles' => array(
       'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
       'professionnel' => 'professionnel',
       'superadmin' => 'superadmin',
     ),

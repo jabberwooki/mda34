@@ -15,9 +15,21 @@ function administration_user_default_permissions() {
     'name' => 'access mollom statistics',
     'roles' => array(
       'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
       'superadmin' => 'superadmin',
     ),
     'module' => 'mollom',
+  );
+
+  // Exported permission: 'access scald dnd library'.
+  $permissions['access scald dnd library'] = array(
+    'name' => 'access scald dnd library',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'scald_dnd_library',
   );
 
   // Exported permission: 'administer EU Cookie Compliance popup'.
@@ -28,6 +40,15 @@ function administration_user_default_permissions() {
       'superadmin' => 'superadmin',
     ),
     'module' => 'eu_cookie_compliance',
+  );
+
+  // Exported permission: 'administer boxes'.
+  $permissions['administer boxes'] = array(
+    'name' => 'administer boxes',
+    'roles' => array(
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'boxes',
   );
 
   // Exported permission: 'administer mollom'.
@@ -45,6 +66,7 @@ function administration_user_default_permissions() {
     'name' => 'bypass mollom protection',
     'roles' => array(
       'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
       'superadmin' => 'superadmin',
     ),
     'module' => 'mollom',
@@ -59,6 +81,15 @@ function administration_user_default_permissions() {
       'professionnel' => 'professionnel',
     ),
     'module' => 'eu_cookie_compliance',
+  );
+
+  // Exported permission: 'edit boxes'.
+  $permissions['edit boxes'] = array(
+    'name' => 'edit boxes',
+    'roles' => array(
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'boxes',
   );
 
   // Exported permission: 'report to mollom'.

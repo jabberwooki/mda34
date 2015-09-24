@@ -69,6 +69,7 @@ function mda_faqs_context_default_contexts() {
       'values' => array(
         '~agenda' => '~agenda',
         '~faq' => '~faq',
+        '~annuaire' => '~annuaire',
       ),
     ),
   );
