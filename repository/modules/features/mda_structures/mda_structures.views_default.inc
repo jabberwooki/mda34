@@ -178,8 +178,9 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['title'] = 'L\'annuaire';
   $handler->display->display_options['defaults']['exposed_form'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Rechercher';
-  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Réinitialiser';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'ok';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'annuler';
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Trier par';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'isotope';
@@ -303,7 +304,6 @@ function mda_structures_views_default_views() {
     193262079 => 0,
     109177673 => 0,
   );
-  $handler->display->display_options['filters']['title']['expose']['autocomplete_filter'] = 1;
   $handler->display->display_options['filters']['title']['expose']['autocomplete_items'] = '10';
   $handler->display->display_options['filters']['title']['expose']['autocomplete_min_chars'] = '0';
   $handler->display->display_options['filters']['title']['expose']['autocomplete_field'] = 'title';
@@ -417,7 +417,8 @@ function mda_structures_views_default_views() {
     t('terme'),
     t('Liste'),
     t('L\'annuaire'),
-    t('Rechercher'),
+    t('ok'),
+    t('annuler'),
     t('Nom de la structure'),
     t('Public'),
     t('Types d\'actions'),

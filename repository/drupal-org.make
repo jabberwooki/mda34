@@ -9,10 +9,10 @@ projects[better_formats][subdir] = contrib
 projects[better_formats][version] = "1.0-beta1"
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = "1.6"
+projects[ctools][version] = "1.9"
 
 projects[ds][subdir] = contrib
-projects[ds][version] = "2.7"
+projects[ds][version] = "2.11"
 
 projects[entity][subdir] = contrib
 projects[entity][version] = "1.6"
@@ -36,7 +36,7 @@ projects[imce_mkdir][subdir] = contrib
 projects[imce_mkdir][version] = "1.0"
 
 projects[jquery_update][subdir] = contrib
-projects[jquery_update][version] = "2.5"
+projects[jquery_update][version] = "2.6"
 
 projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = "2.0"
@@ -75,7 +75,7 @@ projects[uuid_features][subdir] = contrib
 projects[uuid_features][version] = "1.0-alpha4"
 
 projects[views][subdir] = contrib
-projects[views][version] = "3.10"
+projects[views][version] = "3.11"
 
 ;=== Modules - optional =======================================================
 projects[addressfield][subdir] = contrib
@@ -183,10 +183,10 @@ projects[domain_views][version] = "1.5"
 
 ;--- Scald and media related --------------------------------------------------
 projects[scald][subdir] = contrib
-projects[scald][version] = "1.3"
+projects[scald][version] = "1.5"
 
 projects[scald_file][subdir] = contrib
-projects[scald_file][version] = "1.01"
+projects[scald_file][version] = "1.2"
 
 projects[scald_dailymotion][subdir] = contrib
 projects[scald_dailymotion][version] = "1.4"
@@ -194,11 +194,14 @@ projects[scald_dailymotion][version] = "1.4"
 projects[scald_vimeo][subdir] = contrib
 projects[scald_vimeo][version] = "1.4"
 
+projects[scald_youtube][subdir] = contrib
+projects[scald_youtube][version] = "1.5"
+
 projects[scald_soundcloud][subdir] = contrib
 projects[scald_soundcloud][version] = "1.2"
 
 projects[scald_gallery][subdir] = contrib
-projects[scald_gallery][version] = "2.4"
+projects[scald_gallery][version] = "2.5"
 
 projects[filefield_sources][subdir] = contrib
 projects[filefield_sources][version] = "1.9"

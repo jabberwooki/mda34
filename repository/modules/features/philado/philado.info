@@ -1,0 +1,17 @@
+name = Philado
+description = philado
+core = 7.x
+package = App
+version = 7.x-1.0
+project = philado
+dependencies[] = boxes
+dependencies[] = fe_block
+dependencies[] = mda_resources
+dependencies[] = views
+features[ctools][] = boxes:box:1
+features[ctools][] = views:views_default:3.0
+features[fe_block_settings][] = boxes-philado_resources_link
+features[fe_block_settings][] = views-philado-block
+features[features_api][] = api:2
+features[views_view][] = philado
+features_exclude[dependencies][ctools] = ctools
