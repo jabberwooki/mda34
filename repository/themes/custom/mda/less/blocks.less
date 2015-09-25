@@ -95,7 +95,7 @@ aside.col-sm-4 h3.block-title{
       a{
         display: block;
         color: white;
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 10px 15px;
       }
     }
@@ -141,7 +141,7 @@ body.front {
       border-bottom: 1px solid @gray-lighter;
     }
     .views-row:not(.views-row-last){
-      border-bottom: 1px solid @gray-lighter;
+      border-bottom: 0px solid @gray-lighter;
     }
   }
 }
@@ -417,26 +417,28 @@ body.domain-reseau-pro-mda34-org{
   }
   a{
     display: block;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     font-weight: bold;
     padding-left: 15px;
     &:after{
       content: "";
-      display: inline-block;
-      background: transparent url(../images/arrow-green.png) no-repeat 0 0;
-      width: 8px;
-      height: 15px;
-      margin-left: 12px;
+     
     } 
   }
 }
-#block-views-faqs-block-front-ados .block-wrapper-custom .view-faqs a:after{
+
+#block-views-faqs-block-front-parents .block-wrapper-custom .view-faqs a{
   content: "";
-  display: inline-block;
-  background: transparent url(../images/arrow-orange.png) no-repeat 0 0;
-  width: 8px;
-  height: 15px;
-  margin-left: 12px;
+  background: transparent url(../images/arrow-green.png) no-repeat;
+  margin: 0px 12px 0;
+}
+
+
+
+#block-views-faqs-block-front-ados .block-wrapper-custom .view-faqs a{
+  content: "";
+  background: transparent url(../images/arrow-orange.png) no-repeat;
+  margin: 12px 12px 0;
 }
 /* bloc faq ado ***************************************************************/
 
