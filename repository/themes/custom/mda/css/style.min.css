@@ -1504,7 +1504,7 @@ div.password-confirm{float:right;margin-top:1.5em;visibility:hidden;width:17em}
 div.form-item div.password-suggestions{padding:.2em .5em;margin:.7em 0;width:38.5em;border:1px solid #B4B4B4}
 div.password-suggestions ul{margin-bottom:0}
 .confirm-parent,.password-parent{clear:left;margin:0;width:36.3em}
-.block .views-row:after,.group-link-resources:after,body.domain-reseau-pro-mda34-org div#edit-field-public-tid-wrapper{clear:both}
+.block .views-row:after,.group-link-resources:after,body.domain-parents-mda34-org div#edit-field-public-tid-wrapper,body.domain-reseau-pro-mda34-org div#edit-field-public-tid-wrapper{clear:both}
 .progress-wrapper .progress{margin-bottom:10px}
 .pagination ul>li>a.progress-disabled{float:left}
 .form-autocomplete .glyphicon{color:#999;font-size:120%}
