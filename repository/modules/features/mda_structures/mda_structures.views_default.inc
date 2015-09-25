@@ -284,11 +284,39 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['filters']['current_all']['table'] = 'domain_access';
   $handler->display->display_options['filters']['current_all']['field'] = 'current_all';
   $handler->display->display_options['filters']['current_all']['value'] = '1';
+  $handler->display->display_options['filters']['current_all']['group'] = 1;
+  /* Critère de filtrage: Contenu : Secteur géographique (field_secteur_geo) */
+  $handler->display->display_options['filters']['field_secteur_geo_value']['id'] = 'field_secteur_geo_value';
+  $handler->display->display_options['filters']['field_secteur_geo_value']['table'] = 'field_data_field_secteur_geo';
+  $handler->display->display_options['filters']['field_secteur_geo_value']['field'] = 'field_secteur_geo_value';
+  $handler->display->display_options['filters']['field_secteur_geo_value']['value'] = array(
+    'all' => 'all',
+    0 => '0',
+    1 => '1',
+  );
+  $handler->display->display_options['filters']['field_secteur_geo_value']['group'] = 1;
+  $handler->display->display_options['filters']['field_secteur_geo_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_secteur_geo_value']['expose']['operator_id'] = 'field_secteur_geo_value_op';
+  $handler->display->display_options['filters']['field_secteur_geo_value']['expose']['label'] = 'Secteur géographique';
+  $handler->display->display_options['filters']['field_secteur_geo_value']['expose']['operator'] = 'field_secteur_geo_value_op';
+  $handler->display->display_options['filters']['field_secteur_geo_value']['expose']['identifier'] = 'field_secteur_geo_value';
+  $handler->display->display_options['filters']['field_secteur_geo_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    141037677 => 0,
+    183916278 => 0,
+    155963314 => 0,
+    22875792 => 0,
+    193262079 => 0,
+    109177673 => 0,
+  );
+  $handler->display->display_options['filters']['field_secteur_geo_value']['expose']['reduce'] = TRUE;
   /* Critère de filtrage: Contenu : Titre */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
   $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['group'] = 1;
   $handler->display->display_options['filters']['title']['exposed'] = TRUE;
   $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['label'] = 'Nom de la structure';
@@ -314,6 +342,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['filters']['field_public_tid']['id'] = 'field_public_tid';
   $handler->display->display_options['filters']['field_public_tid']['table'] = 'field_data_field_public';
   $handler->display->display_options['filters']['field_public_tid']['field'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_public_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_public_tid']['expose']['operator_id'] = 'field_public_tid_op';
   $handler->display->display_options['filters']['field_public_tid']['expose']['label'] = 'Public';
@@ -336,6 +365,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['filters']['field_action_types_tid']['id'] = 'field_action_types_tid';
   $handler->display->display_options['filters']['field_action_types_tid']['table'] = 'field_data_field_action_types';
   $handler->display->display_options['filters']['field_action_types_tid']['field'] = 'field_action_types_tid';
+  $handler->display->display_options['filters']['field_action_types_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_action_types_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_action_types_tid']['expose']['operator_id'] = 'field_action_types_tid_op';
   $handler->display->display_options['filters']['field_action_types_tid']['expose']['label'] = 'Types d\'actions';
@@ -419,6 +449,7 @@ function mda_structures_views_default_views() {
     t('L\'annuaire'),
     t('ok'),
     t('annuler'),
+    t('Secteur géographique'),
     t('Nom de la structure'),
     t('Public'),
     t('Types d\'actions'),

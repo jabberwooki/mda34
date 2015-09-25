@@ -21,7 +21,7 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Paramètres supplémentaires',
-    'weight' => '18',
+    'weight' => '19',
     'children' => array(
       0 => 'field_practical_title',
     ),
@@ -86,7 +86,7 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Informations pratiques',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_access_means',
       1 => 'field_address',
@@ -130,6 +130,7 @@ function mda_structures_field_group_info() {
       1 => 'field_competence_fields',
       2 => 'field_public',
       3 => 'field_structure_type',
+      4 => 'field_secteur_geo',
     ),
     'format_type' => 'div',
     'format_settings' => array(

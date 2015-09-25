@@ -1504,7 +1504,7 @@ div.password-confirm{float:right;margin-top:1.5em;visibility:hidden;width:17em}
 div.form-item div.password-suggestions{padding:.2em .5em;margin:.7em 0;width:38.5em;border:1px solid #B4B4B4}
 div.password-suggestions ul{margin-bottom:0}
 .confirm-parent,.password-parent{clear:left;margin:0;width:36.3em}
-.block .views-row:after,.group-link-resources:after{clear:both}
+.block .views-row:after,.group-link-resources:after,body.domain-reseau-pro-mda34-org div#edit-field-public-tid-wrapper{clear:both}
 .progress-wrapper .progress{margin-bottom:10px}
 .pagination ul>li>a.progress-disabled{float:left}
 .form-autocomplete .glyphicon{color:#999;font-size:120%}
@@ -2036,6 +2036,7 @@ body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks 
 .block-wrapper-custom .view-radio-programmes h2>a{font-size:.6em;color:#000;text-transform:none}
 .node-type-news h2.page-header:before,.page-actualites h2.page-header:before,body.page-annuaire h2.page-header:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .ds-1col.node.node-radio-programme.view-mode-last_item.btn-group-vertical>.btn-group,.ds-1col.node.node-radio-programme.view-mode-last_item.btn-toolbar,.ds-1col.node.node-radio-programme.view-mode-last_item.clearfix,.ds-1col.node.node-radio-programme.view-mode-last_item.container,.ds-1col.node.node-radio-programme.view-mode-last_item.container-fluid,.ds-1col.node.node-radio-programme.view-mode-last_item.dl-horizontal dd,.ds-1col.node.node-radio-programme.view-mode-last_item.form-horizontal .form-group,.ds-1col.node.node-radio-programme.view-mode-last_item.modal-footer,.ds-1col.node.node-radio-programme.view-mode-last_item.nav,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar-collapse,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar-header,.ds-1col.node.node-radio-programme.view-mode-last_item.pager,.ds-1col.node.node-radio-programme.view-mode-last_item.panel-body,.ds-1col.node.node-radio-programme.view-mode-last_item.row{padding:1em}
+body.page-annuaire .view-id-annuaire_filter .view-content{background-color:#fff;padding:0}
 body.page-annuaire h2.page-header:before{font-weight:400;margin-right:10px;text-transform:none;color:#999;content:"\e82f"}
 body.page-annuaire #views-exposed-form-structures-list-structures label{color:#575095}
 body.page-annuaire #views-exposed-form-structures-list-structures button{background-color:#575095;text-transform:uppercase;margin-top:26px;color:#fff}

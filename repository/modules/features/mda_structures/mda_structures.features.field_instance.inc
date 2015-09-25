@@ -29,7 +29,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -99,7 +99,7 @@ function mda_structures_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -186,7 +186,7 @@ function mda_structures_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -212,7 +212,7 @@ function mda_structures_field_default_field_instances() {
           'taxonomy_term_separator' => ' / ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -242,7 +242,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -336,7 +336,7 @@ function mda_structures_field_default_field_instances() {
         'visible_markers' => TRUE,
       ),
       'type' => 'addressfield_autocomplete',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -362,7 +362,7 @@ function mda_structures_field_default_field_instances() {
           'taxonomy_term_separator' => ' / ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'above',
@@ -392,7 +392,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -488,7 +488,7 @@ function mda_structures_field_default_field_instances() {
           ),
         ),
         'type' => 'geofield_leaflet',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'list' => array(
         'label' => 'above',
@@ -522,7 +522,7 @@ function mda_structures_field_default_field_instances() {
         'delta_handling' => 'default',
       ),
       'type' => 'addressfield_autocomplete_latlng',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -580,7 +580,7 @@ function mda_structures_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -608,7 +608,7 @@ function mda_structures_field_default_field_instances() {
           'image_style' => 'logo_120x120',
         ),
         'type' => 'image',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -678,7 +678,7 @@ function mda_structures_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -762,7 +762,7 @@ function mda_structures_field_default_field_instances() {
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -871,7 +871,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'office_hours',
       'settings' => array(),
       'type' => 'office_hours',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -932,7 +932,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'phone',
       'settings' => array(),
       'type' => 'phone_textfield',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -958,7 +958,7 @@ function mda_structures_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'list' => array(
         'label' => 'above',
@@ -1045,7 +1045,7 @@ function mda_structures_field_default_field_instances() {
           'taxonomy_term_separator' => ' / ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
@@ -1075,7 +1075,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -1097,7 +1097,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
@@ -1151,7 +1151,7 @@ function mda_structures_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -1216,7 +1216,57 @@ function mda_structures_field_default_field_instances() {
         'context' => 'zoom_block',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 16,
+      'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance: 'node-structure-field_secteur_geo'
+  $field_instances['node-structure-field_secteur_geo'] = array(
+    'bundle' => 'structure',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 19,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_secteur_geo',
+    'label' => 'Secteur géographique',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
     ),
   );
 
@@ -1239,7 +1289,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'above',
@@ -1269,7 +1319,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1350,7 +1400,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -1368,6 +1418,7 @@ function mda_structures_field_default_field_instances() {
   t('Mission');
   t('Moyens d\'accès');
   t('Public');
+  t('Secteur géographique');
   t('Site web');
   t('Titre infos pratiques');
   t('Type de structure');
