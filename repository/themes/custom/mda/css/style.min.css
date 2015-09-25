@@ -1642,7 +1642,7 @@ body{position:relative;background-color:#fff}
 .navbar-inverse{background:url(../images/bg_header.jpg) 50% -43px no-repeat #f8f8f8;border-color:#fff!important}
 body.front #block-views-slides-block-portal-zoom,body.front.domain-radio-mda34-org .main-container{margin-top:75pt}
 body.front:not(.domain-www-mda34-org) #home-main-container-wrapper{margin-top:76px}
-body.front.logged-in:not(.domain-www-mda34-org) #home-main-container-wrapper{margin-top:106px}
+body.front.logged-in:not(.domain-www-mda34-org) #home-main-container-wrapper{margin-top:90pt}
 body.front.logged-in.domain-radio-mda34-org #home-main-container-wrapper{margin-top:126px}
 body:not(.front) .main-container{margin-top:90pt}
 #navbar{margin-top:0}
