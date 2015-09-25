@@ -1,3 +1,11 @@
+MDA34 1.1.6, 2015-09-25
+----------------------
+- view formation changed
+- ajout champs structure
+- view annuaire
+- css modified font size body
+
+
 MDA34 1.1.5, 2015-09-24
 ----------------------
 - update modules
