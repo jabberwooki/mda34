@@ -100,7 +100,7 @@ function mda_articles_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '3',
+            'weight' => '8',
             'visible' => TRUE,
           ),
           'list' => array(
@@ -118,7 +118,7 @@ function mda_articles_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '7',
+            'weight' => '0',
             'visible' => TRUE,
           ),
           'list' => array(
