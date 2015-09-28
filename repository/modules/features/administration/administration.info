@@ -22,6 +22,7 @@ features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[menu_custom][] = management
 features[menu_links][] = management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance
+features[rules_config][] = rules_alerte_publication
 features[user_permission][] = access mollom statistics
 features[user_permission][] = access rules debug
 features[user_permission][] = access scald dnd library
