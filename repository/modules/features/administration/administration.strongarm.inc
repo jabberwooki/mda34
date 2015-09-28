@@ -14,7 +14,7 @@ function administration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'eu_cookie_compliance_domain';
-  $strongarm->value = 'www.mda34.org';
+  $strongarm->value = 'mda34.org';
   $export['eu_cookie_compliance_domain'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -52,6 +52,20 @@ http://www.mda34.bac',
     'exclude_paths' => '',
   );
   $export['eu_cookie_compliance_fr'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_rules_config';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_rules_config'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_component_locked_rules_config';
+  $strongarm->value = 0;
+  $export['features_component_locked_rules_config'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -4989,7 +5003,7 @@ http://www.mda34.bac',
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1443091370;
+  $strongarm->value = 1443442968;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

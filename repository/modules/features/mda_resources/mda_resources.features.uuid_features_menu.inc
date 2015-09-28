@@ -20,7 +20,6 @@ function mda_resources_menu_default_uuid_features_menu() {
       'attributes' => array(
         'title' => 'Manage Linkit profiles.',
       ),
-      'identifier' => 'management_linkit-profiles:admin/config/content/linkit',
     ),
     'module' => 'system',
     'hidden' => 0,

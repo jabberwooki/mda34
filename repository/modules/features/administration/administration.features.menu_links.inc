@@ -14,7 +14,7 @@ function administration_menu_default_menu_links() {
   $menu_links['management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance'] = array(
     'menu_name' => 'management',
     'link_path' => 'admin/config/system/eu-cookie-compliance',
-    'router_path' => 'admin/config/system/eu-cookie-compliance',
+    'router_path' => 'admin/config/system',
     'link_title' => 'EU Cookie Compliance',
     'options' => array(
       'attributes' => array(
