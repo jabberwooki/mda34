@@ -178,7 +178,7 @@ function kcontextes_context_default_contexts() {
       'values' => array(
         'presentation' => 'presentation',
         'ressources' => 'ressources',
-        'contact' => 'contact',
+        'contactez-nous' => 'contactez-nous',
         '~annuaire' => '~annuaire',
       ),
     ),

@@ -203,6 +203,7 @@ function kcore_menu_default_uuid_features_menu() {
         'class' => '',
         'style' => '',
       ),
+      'identifier' => 'main-menu_philado:http://philado.mda34.org',
     ),
     'module' => 'menu',
     'hidden' => 1,
