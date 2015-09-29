@@ -1693,7 +1693,8 @@ body.domain-philado-mda34-org .views-field.views-field-field-event-dates{color:#
 body.domain-philado-mda34-org .region.region-sidebar-second .views-field.views-field-title{text-decoration:underline}
 body.domain-philado-mda34-org h3.block-title{color:#286fc9}
 body.domain-philado-mda34-org #search-block-form .btn{color:#fff;background-color:#286fc9;margin-left:4px}
-body.domain-philado-mda34-org .views-field.views-field-field-scald-file{color:#fff;background-color:#286fc9;padding:18px;border-radius:4px}
+body.domain-philado-mda34-org .views-field.views-field-field-scald-file{color:#fff;background-color:#286fc9;padding:18px;border-radius:4px;text-align:center}
+body.domain-philado-mda34-org .views-field.views-field-field-scald-file a{color:#fff;font-weight:700;font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;text-align:center;font-size:1.25em}
 button.navbar-toggle{margin-top:-25px;margin-bottom:0;background-color:#000}
 @media (max-width:480px){button.navbar-toggle{margin-top:-15px;margin-right:-20px}
 }

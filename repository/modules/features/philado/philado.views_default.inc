@@ -91,6 +91,15 @@ function philado_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Réseau interprofessionnel de prise en charge des adolescents et des jeunes adultes en grande difficulté';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Champ: Contenu : Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Critère de filtrage: Domain Access : Identifiant (ID) du domaine */
@@ -170,6 +179,8 @@ function philado_views_default_views() {
 
   /* Display: Bloc 2 */
   $handler = $view->new_display('block', 'Bloc 2', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'TÉLÉCHARGER';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Champ: Contenu : Fichier(s) */
   $handler->display->display_options['fields']['field_scald_file']['id'] = 'field_scald_file';
@@ -218,11 +229,13 @@ function philado_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Block'),
+    t('Réseau interprofessionnel de prise en charge des adolescents et des jeunes adultes en grande difficulté'),
     t('philado une'),
     t('Bloc'),
     t('Vidéo'),
     t('video'),
     t('Bloc 2'),
+    t('TÉLÉCHARGER'),
   );
   $export['philado'] = $view;
 

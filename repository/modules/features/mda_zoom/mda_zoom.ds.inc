@@ -123,6 +123,34 @@ function mda_zoom_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|slide|diapo_philado';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'slide';
+  $ds_layout->view_mode = 'diapo_philado';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'field_slide_image',
+      ),
+    ),
+    'fields' => array(
+      'field_slide_image' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['node|slide|diapo_philado'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|slide|full';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'slide';
@@ -239,6 +267,15 @@ function mda_zoom_ds_layout_settings_info() {
  */
 function mda_zoom_ds_view_modes_info() {
   $export = array();
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'diapo_philado';
+  $ds_view_mode->label = 'Diapo philado';
+  $ds_view_mode->entities = array(
+    'node' => 'node',
+  );
+  $export['diapo_philado'] = $ds_view_mode;
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;

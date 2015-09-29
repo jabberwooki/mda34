@@ -162,5 +162,58 @@ function kcontextes_context_default_contexts() {
   t('Core');
   $export['not-front'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'philado';
+  $context->description = 'No front';
+  $context->tag = 'Philado';
+  $context->conditions = array(
+    'domain' => array(
+      'values' => array(
+        4 => 4,
+      ),
+    ),
+    'path' => array(
+      'values' => array(
+        'presentation' => 'presentation',
+        'ressources' => 'ressources',
+        'contact' => 'contact',
+        '~annuaire' => '~annuaire',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-events-block_pros_trainings' => array(
+          'module' => 'views',
+          'delta' => 'events-block_pros_trainings',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'views-philado-block_1' => array(
+          'module' => 'views',
+          'delta' => 'philado-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
+        'views-philado-block_2' => array(
+          'module' => 'views',
+          'delta' => 'philado-block_2',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('No front');
+  t('Philado');
+  $export['philado'] = $context;
+
   return $export;
 }

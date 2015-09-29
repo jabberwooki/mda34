@@ -31,11 +31,17 @@ function mda_resources_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-slides-block_1' => array(
+          'module' => 'views',
+          'delta' => 'slides-block_1',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'views-philado-block' => array(
           'module' => 'views',
           'delta' => 'philado-block',
           'region' => 'content',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'views-events-block_pros_trainings' => array(
           'module' => 'views',
