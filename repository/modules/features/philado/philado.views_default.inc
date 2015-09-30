@@ -50,11 +50,6 @@ function philado_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Critère de tri: Contenu : Date de publication */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   /* Critère de filtrage: Domain Access : Identifiant (ID) du domaine */
   $handler->display->display_options['filters']['gid']['id'] = 'gid';
   $handler->display->display_options['filters']['gid']['table'] = 'domain_access';
@@ -175,6 +170,13 @@ function philado_views_default_views() {
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
+  /* Critère de filtrage: Contenu : Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'article' => 'article',
+  );
   $handler->display->display_options['block_description'] = 'video';
 
   /* Display: Bloc 2 */
@@ -219,6 +221,11 @@ function philado_views_default_views() {
     'article' => 'article',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Critère de filtrage: Contenu : Promu en page d'accueil */
+  $handler->display->display_options['filters']['promote']['id'] = 'promote';
+  $handler->display->display_options['filters']['promote']['table'] = 'node';
+  $handler->display->display_options['filters']['promote']['field'] = 'promote';
+  $handler->display->display_options['filters']['promote']['value'] = '1';
   $translatables['philado'] = array(
     t('Master'),
     t('Dossier d\'admission'),

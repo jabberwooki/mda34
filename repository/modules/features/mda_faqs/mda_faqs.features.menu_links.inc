@@ -24,9 +24,7 @@ function mda_faqs_menu_default_menu_links() {
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_faq:faq',
     ),
     'module' => 'menu',
@@ -34,7 +32,7 @@ function mda_faqs_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 8,
+    'weight' => -46,
     'customized' => 1,
   );
   // Translatables
