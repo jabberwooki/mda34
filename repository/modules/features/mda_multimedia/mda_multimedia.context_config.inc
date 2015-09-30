@@ -173,8 +173,8 @@ function mda_multimedia_default_scald_context_config() {
     ),
   );
   $context_config->data = array(
-    'width' => '',
-    'height' => '',
+    'width' => '560',
+    'height' => '315',
   );
   $export['full'] = $context_config;
 
@@ -285,8 +285,8 @@ function mda_multimedia_default_scald_context_config() {
     ),
   );
   $context_config->data = array(
-    'width' => '',
-    'height' => '',
+    'width' => '360',
+    'height' => '274',
   );
   $export['scald_col_12'] = $context_config;
 

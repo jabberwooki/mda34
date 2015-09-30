@@ -21,7 +21,6 @@ function mda_zoom_context_default_contexts() {
       'values' => array(
         2 => 2,
         3 => 3,
-        4 => 4,
         6 => 6,
       ),
     ),

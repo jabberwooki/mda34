@@ -74,6 +74,12 @@ function mda_zoom_strongarm() {
       'portal_slide' => array(
         'custom_settings' => TRUE,
       ),
+      'diapo_philado' => array(
+        'custom_settings' => TRUE,
+      ),
+      'sidebar_item' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -115,6 +121,10 @@ function mda_zoom_strongarm() {
             'weight' => '14',
             'visible' => FALSE,
           ),
+          'diapo_philado' => array(
+            'weight' => '14',
+            'visible' => FALSE,
+          ),
         ),
         'sharethis' => array(
           'default' => array(
@@ -134,6 +144,10 @@ function mda_zoom_strongarm() {
             'visible' => FALSE,
           ),
           'site_slide' => array(
+            'weight' => '21',
+            'visible' => FALSE,
+          ),
+          'diapo_philado' => array(
             'weight' => '21',
             'visible' => FALSE,
           ),

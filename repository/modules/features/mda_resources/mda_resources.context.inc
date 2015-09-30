@@ -31,23 +31,35 @@ function mda_resources_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-slides-block_1' => array(
+          'module' => 'views',
+          'delta' => 'slides-block_1',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'views-philado-block' => array(
           'module' => 'views',
           'delta' => 'philado-block',
           'region' => 'content',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
         'views-events-block_pros_trainings' => array(
           'module' => 'views',
           'delta' => 'events-block_pros_trainings',
           'region' => 'sidebar_second',
-          'weight' => '-9',
+          'weight' => '-6',
         ),
-        'boxes-philado_resources_link' => array(
-          'module' => 'boxes',
-          'delta' => 'philado_resources_link',
+        'views-philado-block_1' => array(
+          'module' => 'views',
+          'delta' => 'philado-block_1',
           'region' => 'sidebar_second',
-          'weight' => '-8',
+          'weight' => '-5',
+        ),
+        'views-philado-block_2' => array(
+          'module' => 'views',
+          'delta' => 'philado-block_2',
+          'region' => 'sidebar_second',
+          'weight' => '-4',
         ),
       ),
     ),

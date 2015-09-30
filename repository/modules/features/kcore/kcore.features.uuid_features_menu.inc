@@ -187,16 +187,19 @@ function kcore_menu_default_uuid_features_menu() {
     'link_title' => 'Philado',
     'options' => array(
       'domain_menu_access' => array(
+        'show' => array(
+          'd6' => 'd6',
+        ),
         'hide' => array(
           'd1' => 'd1',
           'd2' => 'd2',
           'd3' => 'd3',
           'd4' => 'd4',
           'd5' => 'd5',
-          'd6' => 'd6',
         ),
       ),
       'alter' => TRUE,
+      'identifier' => 'main-menu_philado:http://philado.mda34.org',
       'attributes' => array(),
       'item_attributes' => array(
         'id' => '',
@@ -205,7 +208,7 @@ function kcore_menu_default_uuid_features_menu() {
       ),
     ),
     'module' => 'menu',
-    'hidden' => 1,
+    'hidden' => 0,
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,

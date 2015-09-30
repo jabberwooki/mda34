@@ -21,8 +21,10 @@ function mda_news_menu_default_uuid_features_menu() {
         'show' => array(
           'd2' => 'd2',
           'd3' => 'd3',
-          'd4' => 'd4',
           'd6' => 'd6',
+        ),
+        'hide' => array(
+          'd4' => 'd4',
         ),
       ),
       'alter' => TRUE,

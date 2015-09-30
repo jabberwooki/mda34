@@ -14,7 +14,7 @@ function administration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'eu_cookie_compliance_domain';
-  $strongarm->value = 'www.mda34.org';
+  $strongarm->value = 'mda34.org';
   $export['eu_cookie_compliance_domain'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -56,6 +56,20 @@ http://www.mda34.bac',
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_rules_config';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_rules_config'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'features_component_locked_rules_config';
+  $strongarm->value = 0;
+  $export['features_component_locked_rules_config'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'l10n_update_check_disabled';
   $strongarm->value = 0;
   $export['l10n_update_check_disabled'] = $strongarm;
@@ -92,7 +106,7 @@ http://www.mda34.bac',
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'l10n_update_last_check';
-  $strongarm->value = 1442840947;
+  $strongarm->value = 1443091364;
   $export['l10n_update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -281,6 +295,41 @@ http://www.mda34.bac',
             'type' => 'current',
           ),
         ),
+      ),
+    ),
+    'administration' => array(
+      'fr' => (object) array(
+        'name' => 'administration',
+        'project_type' => 'module',
+        'core' => '7.x',
+        'version' => '7.x-1.0',
+        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
+        'status' => '1',
+        'project' => 'administration',
+        'langcode' => 'fr',
+        'type' => '',
+        'timestamp' => 0,
+        'last_checked' => 0,
+        'files' => array(
+          'remote' => (object) array(
+            'project' => 'administration',
+            'langcode' => 'fr',
+            'version' => '7.x-1.0',
+            'type' => 'remote',
+            'filename' => 'administration-7.x-1.0.fr.po',
+            'uri' => 'http://ftp.drupal.org/files/translations/7.x/administration/administration-7.x-1.0.fr.po',
+          ),
+          'local' => (object) array(
+            'project' => 'administration',
+            'langcode' => 'fr',
+            'version' => '7.x-1.0',
+            'type' => 'local',
+            'filename' => 'administration-7.x-1.0.fr.po',
+            'directory' => 'translations://',
+            'uri' => 'translations://administration-7.x-1.0.fr.po',
+          ),
+        ),
+        'language' => 'fr',
       ),
     ),
     'admin_menu' => array(
@@ -1214,9 +1263,9 @@ http://www.mda34.bac',
         'status' => '1',
         'project' => 'entity',
         'langcode' => 'fr',
-        'type' => 'current',
-        'timestamp' => 1441369399,
-        'last_checked' => 1441369402,
+        'type' => 'remote',
+        'timestamp' => 1442069640,
+        'last_checked' => 1443090578,
         'files' => array(
           'remote' => (object) array(
             'project' => 'entity',
@@ -1225,7 +1274,7 @@ http://www.mda34.bac',
             'type' => 'remote',
             'filename' => 'entity-7.x-1.6.fr.po',
             'uri' => 'http://ftp.drupal.org/files/translations/7.x/entity/entity-7.x-1.6.fr.po',
-            'timestamp' => 1436802035,
+            'timestamp' => 1442069640,
           ),
           'local' => (object) array(
             'project' => 'entity',
@@ -1302,9 +1351,9 @@ http://www.mda34.bac',
         'status' => '1',
         'project' => 'entityreference',
         'langcode' => 'fr',
-        'type' => 'current',
-        'timestamp' => '1427212227',
-        'last_checked' => '1427212226',
+        'type' => 'remote',
+        'timestamp' => 1441992240,
+        'last_checked' => 1443090579,
         'files' => array(
           'remote' => (object) array(
             'project' => 'entityreference',
@@ -1313,7 +1362,7 @@ http://www.mda34.bac',
             'type' => 'remote',
             'filename' => 'entityreference-7.x-1.1.fr.po',
             'uri' => 'http://ftp.drupal.org/files/translations/7.x/entityreference/entityreference-7.x-1.1.fr.po',
-            'timestamp' => 1426035381,
+            'timestamp' => 1441992240,
           ),
           'local' => (object) array(
             'project' => 'entityreference',
@@ -1336,6 +1385,42 @@ http://www.mda34.bac',
             'type' => 'current',
           ),
         ),
+      ),
+    ),
+    'eu_cookie_compliance' => array(
+      'fr' => (object) array(
+        'name' => 'eu_cookie_compliance',
+        'project_type' => 'module',
+        'core' => '7.x',
+        'version' => '7.x-1.14',
+        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
+        'status' => '1',
+        'project' => 'eu_cookie_compliance',
+        'langcode' => 'fr',
+        'type' => 'remote',
+        'timestamp' => 1400697146,
+        'last_checked' => 1443090580,
+        'files' => array(
+          'remote' => (object) array(
+            'project' => 'eu_cookie_compliance',
+            'langcode' => 'fr',
+            'version' => '7.x-1.14',
+            'type' => 'remote',
+            'filename' => 'eu_cookie_compliance-7.x-1.14.fr.po',
+            'uri' => 'http://ftp.drupal.org/files/translations/7.x/eu_cookie_compliance/eu_cookie_compliance-7.x-1.14.fr.po',
+            'timestamp' => 1400697146,
+          ),
+          'local' => (object) array(
+            'project' => 'eu_cookie_compliance',
+            'langcode' => 'fr',
+            'version' => '7.x-1.14',
+            'type' => 'local',
+            'filename' => 'eu_cookie_compliance-7.x-1.14.fr.po',
+            'directory' => 'translations://',
+            'uri' => 'translations://eu_cookie_compliance-7.x-1.14.fr.po',
+          ),
+        ),
+        'language' => 'fr',
       ),
     ),
     'features' => array(
@@ -2137,6 +2222,42 @@ http://www.mda34.bac',
             'type' => 'current',
           ),
         ),
+      ),
+    ),
+    'jquery_colorpicker' => array(
+      'fr' => (object) array(
+        'name' => 'jquery_colorpicker',
+        'project_type' => 'module',
+        'core' => '7.x',
+        'version' => '7.x-1.1',
+        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
+        'status' => '1',
+        'project' => 'jquery_colorpicker',
+        'langcode' => 'fr',
+        'type' => 'remote',
+        'timestamp' => 1442225723,
+        'last_checked' => 1443090598,
+        'files' => array(
+          'remote' => (object) array(
+            'project' => 'jquery_colorpicker',
+            'langcode' => 'fr',
+            'version' => '7.x-1.1',
+            'type' => 'remote',
+            'filename' => 'jquery_colorpicker-7.x-1.1.fr.po',
+            'uri' => 'https://ftp.drupal.org/files/translations/7.x/jquery_colorpicker/jquery_colorpicker-7.x-1.x.fr.po',
+            'timestamp' => 1442225723,
+          ),
+          'local' => (object) array(
+            'project' => 'jquery_colorpicker',
+            'langcode' => 'fr',
+            'version' => '7.x-1.1',
+            'type' => 'local',
+            'filename' => 'jquery_colorpicker-7.x-1.1.fr.po',
+            'directory' => 'translations://',
+            'uri' => 'translations://jquery_colorpicker-7.x-1.1.fr.po',
+          ),
+        ),
+        'language' => 'fr',
       ),
     ),
     'jquery_update' => array(
@@ -3622,6 +3743,41 @@ http://www.mda34.bac',
         ),
       ),
     ),
+    'philado' => array(
+      'fr' => (object) array(
+        'name' => 'philado',
+        'project_type' => 'module',
+        'core' => '7.x',
+        'version' => '7.x-1.0',
+        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
+        'status' => '1',
+        'project' => 'philado',
+        'langcode' => 'fr',
+        'type' => '',
+        'timestamp' => 0,
+        'last_checked' => 0,
+        'files' => array(
+          'remote' => (object) array(
+            'project' => 'philado',
+            'langcode' => 'fr',
+            'version' => '7.x-1.0',
+            'type' => 'remote',
+            'filename' => 'philado-7.x-1.0.fr.po',
+            'uri' => 'http://ftp.drupal.org/files/translations/7.x/philado/philado-7.x-1.0.fr.po',
+          ),
+          'local' => (object) array(
+            'project' => 'philado',
+            'langcode' => 'fr',
+            'version' => '7.x-1.0',
+            'type' => 'local',
+            'filename' => 'philado-7.x-1.0.fr.po',
+            'directory' => 'translations://',
+            'uri' => 'translations://philado-7.x-1.0.fr.po',
+          ),
+        ),
+        'language' => 'fr',
+      ),
+    ),
     'phone' => array(
       'fr' => (object) array(
         'name' => 'phone',
@@ -3695,6 +3851,42 @@ http://www.mda34.bac',
             'directory' => 'translations://',
             'last_checked' => 1431755806,
             'language' => 'fr',
+          ),
+        ),
+        'language' => 'fr',
+      ),
+    ),
+    'profile2' => array(
+      'fr' => (object) array(
+        'name' => 'profile2',
+        'project_type' => 'module',
+        'core' => '7.x',
+        'version' => '7.x-1.3',
+        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
+        'status' => '1',
+        'project' => 'profile2',
+        'langcode' => 'fr',
+        'type' => 'remote',
+        'timestamp' => 1381531828,
+        'last_checked' => 1443090651,
+        'files' => array(
+          'remote' => (object) array(
+            'project' => 'profile2',
+            'langcode' => 'fr',
+            'version' => '7.x-1.3',
+            'type' => 'remote',
+            'filename' => 'profile2-7.x-1.3.fr.po',
+            'uri' => 'http://ftp.drupal.org/files/translations/7.x/profile2/profile2-7.x-1.3.fr.po',
+            'timestamp' => 1381531828,
+          ),
+          'local' => (object) array(
+            'project' => 'profile2',
+            'langcode' => 'fr',
+            'version' => '7.x-1.3',
+            'type' => 'local',
+            'filename' => 'profile2-7.x-1.3.fr.po',
+            'directory' => 'translations://',
+            'uri' => 'translations://profile2-7.x-1.3.fr.po',
           ),
         ),
         'language' => 'fr',
@@ -3841,9 +4033,9 @@ http://www.mda34.bac',
         'status' => '1',
         'project' => 'rules',
         'langcode' => 'fr',
-        'type' => 'current',
-        'timestamp' => 1441369509,
-        'last_checked' => 1441369511,
+        'type' => 'remote',
+        'timestamp' => 1441456443,
+        'last_checked' => 1443090654,
         'files' => array(
           'remote' => (object) array(
             'project' => 'rules',
@@ -3852,7 +4044,7 @@ http://www.mda34.bac',
             'type' => 'remote',
             'filename' => 'rules-7.x-2.9.fr.po',
             'uri' => 'http://ftp.drupal.org/files/translations/7.x/rules/rules-7.x-2.9.fr.po',
-            'timestamp' => 1436997308,
+            'timestamp' => 1441456443,
           ),
           'local' => (object) array(
             'project' => 'rules',
@@ -4068,36 +4260,73 @@ http://www.mda34.bac',
         'language' => 'fr',
       ),
     ),
-    'services' => array(
+    'scald_vimeo' => array(
       'fr' => (object) array(
-        'name' => 'services',
+        'name' => 'scald_vimeo',
         'project_type' => 'module',
         'core' => '7.x',
-        'version' => '7.x-1.0',
+        'version' => '7.x-1.4',
         'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
         'status' => '1',
-        'project' => 'services',
+        'project' => 'scald_vimeo',
         'langcode' => 'fr',
-        'type' => '',
-        'timestamp' => 0,
-        'last_checked' => 0,
+        'type' => 'remote',
+        'timestamp' => 1432017051,
+        'last_checked' => 1443090660,
         'files' => array(
           'remote' => (object) array(
-            'project' => 'services',
+            'project' => 'scald_vimeo',
             'langcode' => 'fr',
-            'version' => '7.x-1.0',
+            'version' => '7.x-1.4',
             'type' => 'remote',
-            'filename' => 'services-7.x-1.0.fr.po',
-            'uri' => 'http://ftp.drupal.org/files/translations/7.x/services/services-7.x-1.0.fr.po',
+            'filename' => 'scald_vimeo-7.x-1.4.fr.po',
+            'uri' => 'http://ftp.drupal.org/files/translations/7.x/scald_vimeo/scald_vimeo-7.x-1.4.fr.po',
+            'timestamp' => 1432017051,
           ),
           'local' => (object) array(
-            'project' => 'services',
+            'project' => 'scald_vimeo',
             'langcode' => 'fr',
-            'version' => '7.x-1.0',
+            'version' => '7.x-1.4',
             'type' => 'local',
-            'filename' => 'services-7.x-1.0.fr.po',
+            'filename' => 'scald_vimeo-7.x-1.4.fr.po',
             'directory' => 'translations://',
-            'uri' => 'translations://services-7.x-1.0.fr.po',
+            'uri' => 'translations://scald_vimeo-7.x-1.4.fr.po',
+          ),
+        ),
+        'language' => 'fr',
+      ),
+    ),
+    'scald_youtube' => array(
+      'fr' => (object) array(
+        'name' => 'scald_youtube',
+        'project_type' => 'module',
+        'core' => '7.x',
+        'version' => '7.x-1.5',
+        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
+        'status' => '1',
+        'project' => 'scald_youtube',
+        'langcode' => 'fr',
+        'type' => 'remote',
+        'timestamp' => 1437116189,
+        'last_checked' => 1443090661,
+        'files' => array(
+          'remote' => (object) array(
+            'project' => 'scald_youtube',
+            'langcode' => 'fr',
+            'version' => '7.x-1.5',
+            'type' => 'remote',
+            'filename' => 'scald_youtube-7.x-1.5.fr.po',
+            'uri' => 'http://ftp.drupal.org/files/translations/7.x/scald_youtube/scald_youtube-7.x-1.5.fr.po',
+            'timestamp' => 1437116189,
+          ),
+          'local' => (object) array(
+            'project' => 'scald_youtube',
+            'langcode' => 'fr',
+            'version' => '7.x-1.5',
+            'type' => 'local',
+            'filename' => 'scald_youtube-7.x-1.5.fr.po',
+            'directory' => 'translations://',
+            'uri' => 'translations://scald_youtube-7.x-1.5.fr.po',
           ),
         ),
         'language' => 'fr',
@@ -4463,9 +4692,9 @@ http://www.mda34.bac',
         'status' => '1',
         'project' => 'views',
         'langcode' => 'fr',
-        'type' => 'current',
-        'timestamp' => 1441369543,
-        'last_checked' => 1441369555,
+        'type' => 'remote',
+        'timestamp' => 1442050473,
+        'last_checked' => 1443090670,
         'files' => array(
           'remote' => (object) array(
             'project' => 'views',
@@ -4474,7 +4703,7 @@ http://www.mda34.bac',
             'type' => 'remote',
             'filename' => 'views-7.x-3.10.fr.po',
             'uri' => 'http://ftp.drupal.org/files/translations/7.x/views/views-7.x-3.10.fr.po',
-            'timestamp' => 1434070553,
+            'timestamp' => 1442050473,
           ),
           'local' => (object) array(
             'project' => 'views',
@@ -4574,45 +4803,6 @@ http://www.mda34.bac',
             'timestamp' => 1441369558,
             'directory' => 'translations://',
             'last_checked' => 1441369558,
-            'language' => 'fr',
-          ),
-        ),
-        'language' => 'fr',
-      ),
-    ),
-    'views_bulk_operations' => array(
-      'fr' => (object) array(
-        'name' => 'views_bulk_operations',
-        'project_type' => 'module',
-        'core' => '7.x',
-        'version' => '7.x-3.3',
-        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
-        'status' => '1',
-        'project' => 'views_bulk_operations',
-        'langcode' => 'fr',
-        'type' => 'current',
-        'timestamp' => 1441369560,
-        'last_checked' => 1441369560,
-        'files' => array(
-          'remote' => (object) array(
-            'project' => 'views_bulk_operations',
-            'langcode' => 'fr',
-            'version' => '7.x-3.3',
-            'type' => 'remote',
-            'filename' => 'views_bulk_operations-7.x-3.3.fr.po',
-            'uri' => 'http://ftp.drupal.org/files/translations/7.x/views_bulk_operations/views_bulk_operations-7.x-3.3.fr.po',
-            'timestamp' => 1435819289,
-          ),
-          'local' => (object) array(
-            'project' => 'views_bulk_operations',
-            'langcode' => 'fr',
-            'version' => '7.x-3.3',
-            'type' => 'local',
-            'filename' => 'views_bulk_operations-7.x-3.3.fr.po',
-            'uri' => 'translations://views_bulk_operations-7.x-3.3.fr.po',
-            'timestamp' => 1441369560,
-            'directory' => 'translations://',
-            'last_checked' => 1441369560,
             'language' => 'fr',
           ),
         ),
@@ -4813,7 +5003,7 @@ http://www.mda34.bac',
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1443087063;
+  $strongarm->value = 1443442968;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

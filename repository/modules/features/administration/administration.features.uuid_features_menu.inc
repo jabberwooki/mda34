@@ -45,6 +45,47 @@ function administration_menu_default_uuid_features_menu() {
     'uuid' => '2970c1b8-6fb7-4102-8c0b-2ba1d33682b2',
     'parent_uuid' => 'ca9daa58-a9d2-4aaf-af56-08a3683b55a1',
   );
+  // Exported menu link: 2bb7e3db-ed6c-4a2f-9274-647f03273c77
+  $menu_uuid_links['2bb7e3db-ed6c-4a2f-9274-647f03273c77'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/workflow/rules',
+    'router_path' => 'admin/config/workflow/rules',
+    'link_title' => 'Rules',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Manage reaction rules and rule components.',
+      ),
+      'identifier' => 'management_rules:admin/config/workflow/rules',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'uuid' => '2bb7e3db-ed6c-4a2f-9274-647f03273c77',
+    'parent_uuid' => '7ebfdd11-a089-4a23-80bf-196999bf5f50',
+  );
+  // Exported menu link: 7ebfdd11-a089-4a23-80bf-196999bf5f50
+  $menu_uuid_links['7ebfdd11-a089-4a23-80bf-196999bf5f50'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/workflow',
+    'router_path' => 'admin/config/workflow',
+    'link_title' => 'Workflow',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Content workflow, editorial workflow tools.',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => 5,
+    'uuid' => '7ebfdd11-a089-4a23-80bf-196999bf5f50',
+    'parent_uuid' => 'dcc7bddb-c97b-4a26-8d72-08ea974d409f',
+  );
   // Exported menu link: ca9daa58-a9d2-4aaf-af56-08a3683b55a1
   $menu_uuid_links['ca9daa58-a9d2-4aaf-af56-08a3683b55a1'] = array(
     'menu_name' => 'management',
@@ -134,6 +175,8 @@ function administration_menu_default_uuid_features_menu() {
   t('Mollom content moderation');
   t('Mollom statistics');
   t('Reports');
+  t('Rules');
+  t('Workflow');
 
   return $menu_uuid_links;
 }

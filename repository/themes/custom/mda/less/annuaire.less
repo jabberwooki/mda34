@@ -1,4 +1,11 @@
 body.page-annuaire {
+
+.view-id-annuaire_filter .view-content {
+    background-color: #fff;
+    padding: 0;
+}
+
+
   h2.page-header{
     &:before{
       .glyphicon();
@@ -6,6 +13,8 @@ body.page-annuaire {
     } 
   }
   #views-exposed-form-structures-list-structures{
+
+
 
     label{
       color: @violet-mda;
@@ -41,6 +50,23 @@ body.page-annuaire {
       }
     }
   }
+  
+/* philado ***/
+  &.domain-philado-mda34-org{
+    #views-exposed-form-structures-list-structures{
+      label{
+        color: #286fc9;
+      }
+      button{
+        background-color: #286fc9;
+      }
+
+    }
+     }
+  
+  
+  
+  
   /* parents ***/
   &.domain-parents-mda34-org{
     #views-exposed-form-structures-list-structures{
@@ -82,7 +108,6 @@ max-width : 47%;
       margin-bottom: 1em;
       padding-top :1.25em;
       padding-bottom :1.25em;
-      font-size:0.9em;
       
 
   }
@@ -102,7 +127,7 @@ max-width : 47%;
     padding:10px;
     margin-bottom:1.5em;
     font-weight : bold;
-    font-size:0.90em;
+
 }
 
 .group-term.field-group-div
@@ -113,7 +138,6 @@ max-width : 47%;
     border-radius: 4px;
     padding:10px;
     margin-bottom:1.5em;
-    font-size:0.90em;
 }
 
 .field.field-name-field-coordinates
@@ -129,6 +153,4 @@ max-width : 47%;
 .field.field-name-field-website.field-type-link-field.field-label-hidden {
     float: right;
 }
-
-
 }

@@ -60,6 +60,11 @@ function kcore_context_default_contexts() {
   $context->description = 'reseaux partenaires';
   $context->tag = 'Core';
   $context->conditions = array(
+    'domain' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
     'node' => array(
       'values' => array(
         'article' => 'article',
@@ -77,22 +82,22 @@ function kcore_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'kcore-mda_financeurs' => array(
-          'module' => 'kcore',
-          'delta' => 'mda_financeurs',
-          'region' => 'sidebar_second',
-          'weight' => '-8',
-        ),
         'kcore-mda_anmda' => array(
           'module' => 'kcore',
           'delta' => 'mda_anmda',
           'region' => 'sidebar_second',
           'weight' => '-9',
         ),
+        'kcore-mda_financeurs' => array(
+          'module' => 'kcore',
+          'delta' => 'mda_financeurs',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.

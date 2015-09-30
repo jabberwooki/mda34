@@ -21,6 +21,16 @@ function administration_user_default_permissions() {
     'module' => 'mollom',
   );
 
+  // Exported permission: 'access rules debug'.
+  $permissions['access rules debug'] = array(
+    'name' => 'access rules debug',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'rules',
+  );
+
   // Exported permission: 'access scald dnd library'.
   $permissions['access scald dnd library'] = array(
     'name' => 'access scald dnd library',
@@ -61,6 +71,16 @@ function administration_user_default_permissions() {
     'module' => 'mollom',
   );
 
+  // Exported permission: 'administer rules'.
+  $permissions['administer rules'] = array(
+    'name' => 'administer rules',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'rules',
+  );
+
   // Exported permission: 'bypass mollom protection'.
   $permissions['bypass mollom protection'] = array(
     'name' => 'bypass mollom protection',
@@ -70,6 +90,16 @@ function administration_user_default_permissions() {
       'superadmin' => 'superadmin',
     ),
     'module' => 'mollom',
+  );
+
+  // Exported permission: 'bypass rules access'.
+  $permissions['bypass rules access'] = array(
+    'name' => 'bypass rules access',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'rules',
   );
 
   // Exported permission: 'display EU Cookie Compliance popup'.
@@ -105,6 +135,13 @@ function administration_user_default_permissions() {
       'superadmin' => 'superadmin',
     ),
     'module' => 'mollom',
+  );
+
+  // Exported permission: 'show format selection for rules_config'.
+  $permissions['show format selection for rules_config'] = array(
+    'name' => 'show format selection for rules_config',
+    'roles' => array(),
+    'module' => 'better_formats',
   );
 
   return $permissions;

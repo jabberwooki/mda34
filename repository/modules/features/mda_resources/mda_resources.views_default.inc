@@ -22,7 +22,7 @@ function mda_resources_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Les ressources de la MDA';
+  $handler->display->display_options['title'] = 'Les ressources';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'plus';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -161,7 +161,7 @@ function mda_resources_views_default_views() {
   $handler->display->display_options['path'] = 'ressources';
   $translatables['resources'] = array(
     t('Master'),
-    t('Les ressources de la MDA'),
+    t('Les ressources'),
     t('plus'),
     t('Appliquer'),
     t('Réinitialiser'),
