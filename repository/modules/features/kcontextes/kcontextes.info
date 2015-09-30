@@ -18,6 +18,7 @@ features[context][] = all
 features[context][] = front
 features[context][] = not-front
 features[context][] = philado
+features[context][] = sans_formations
 features[ctools][] = boxes:box:1
 features[ctools][] = context:context:3
 features[fe_block_boxes][] = social_links
