@@ -18,15 +18,13 @@ function philado_menu_default_menu_links() {
     'link_title' => 'Philado',
     'options' => array(
       'domain_menu_access' => array(
-        'show' => array(
-          'd6' => 'd6',
-        ),
         'hide' => array(
           'd1' => 'd1',
           'd2' => 'd2',
           'd3' => 'd3',
           'd4' => 'd4',
           'd5' => 'd5',
+          'd6' => 'd6',
         ),
       ),
       'alter' => TRUE,
@@ -43,7 +41,7 @@ function philado_menu_default_menu_links() {
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 28,
+    'weight' => -38,
     'customized' => 1,
   );
   // Translatables

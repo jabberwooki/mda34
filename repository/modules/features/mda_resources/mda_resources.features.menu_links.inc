@@ -37,7 +37,7 @@ function mda_resources_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 14,
+    'weight' => -43,
     'customized' => 1,
   );
   // Translatables

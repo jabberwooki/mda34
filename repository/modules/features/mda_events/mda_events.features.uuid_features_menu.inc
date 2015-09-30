@@ -32,7 +32,7 @@ function mda_events_menu_default_uuid_features_menu() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 4,
+    'weight' => -48,
     'uuid' => '61a15f79-7a94-4294-a3d4-68462cc03625',
   );
   // Exported menu link: 61b8d9f0-5376-4f7f-8d62-ee2e60925e17
@@ -56,7 +56,7 @@ function mda_events_menu_default_uuid_features_menu() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 10,
+    'weight' => -45,
     'uuid' => '61b8d9f0-5376-4f7f-8d62-ee2e60925e17',
   );
 

@@ -40,7 +40,7 @@ function mda_news_menu_default_uuid_features_menu() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 6,
+    'weight' => -47,
     'uuid' => 'f70524d7-283b-4a38-aeef-101bb91c1316',
   );
 

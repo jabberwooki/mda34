@@ -282,6 +282,7 @@ function mda_faqs_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 1,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 6,
@@ -325,6 +326,7 @@ function mda_faqs_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 4,
@@ -368,6 +370,7 @@ function mda_faqs_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 7,
@@ -411,6 +414,7 @@ function mda_faqs_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 8,
@@ -637,6 +641,7 @@ function mda_faqs_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 4,
@@ -646,6 +651,7 @@ function mda_faqs_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 5,
@@ -694,6 +700,7 @@ function mda_faqs_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'full',
         'weight' => 3,
@@ -703,6 +710,7 @@ function mda_faqs_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'full',
         'weight' => 3,
@@ -751,6 +759,7 @@ function mda_faqs_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 5,
@@ -760,6 +769,7 @@ function mda_faqs_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 6,
@@ -808,6 +818,7 @@ function mda_faqs_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 6,
@@ -817,6 +828,7 @@ function mda_faqs_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 7,

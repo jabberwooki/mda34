@@ -17,9 +17,7 @@ function mda_articles_menu_default_uuid_features_menu() {
     'router_path' => 'presentation',
     'link_title' => 'Présentation',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'domain_menu_access' => array(
         'show' => array(
           'd1' => 'd1',
@@ -33,7 +31,7 @@ function mda_articles_menu_default_uuid_features_menu() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 2,
+    'weight' => -49,
     'uuid' => '6a5adf28-14b9-41ce-9dcd-037ae153bbe0',
   );
 
