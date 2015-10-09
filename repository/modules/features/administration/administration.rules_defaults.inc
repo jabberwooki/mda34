@@ -27,5 +27,26 @@ function administration_default_rules_configuration() {
       ]
     }
   }');
+  $items['rules_inscription_pocket_film'] = entity_import('rules_config', '{ "rules_inscription_pocket_film" : {
+      "LABEL" : "Inscription pocket film",
+      "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
+      "REQUIRES" : [ "rules", "entityform" ],
+      "ON" : { "entityform_insert" : [] },
+      "IF" : [
+        { "entity_has_field" : { "entity" : [ "entityform" ], "field" : "field_email_pf" } }
+      ],
+      "DO" : [
+        { "mail" : {
+            "to" : "culture@mda34.org,webmaster@mda34.org",
+            "subject" : "Demande de pr\\u00e9-inscription au pocket film 2016",
+            "message" : "Une nouvelle demande a \\u00e9t\\u00e9 effectu\\u00e9 sur le site\\r\\n-------------------------------------------------------------\\r\\n[entityform:field-nom-pf]\\r\\n[entityform:field-prenom-pf]\\r\\n[entityform:field-age-pf]\\r\\n[entityform:field-parti-pf]\\r\\n[entityform:field-reglement-pf]\\r\\n[entityform:field-email-pf]",
+            "from" : "[entityform:field-email-pf]\\t",
+            "language" : [ "" ]
+          }
+        }
+      ]
+    }
+  }');
   return $items;
 }

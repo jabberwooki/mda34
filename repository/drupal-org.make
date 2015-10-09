@@ -281,3 +281,12 @@ projects[eu_cookie_compliance][version] = "1.14"
 projects[jquery_colorpicker][subdir] = contrib
 projects[jquery_colorpicker][version] = "1.1"
 
+projects[entityform_block][subdir] = contrib
+projects[entityform_block][version] = "1.3"
+
+projects[fb_likebox][subdir] = contrib
+projects[fb_likebox][version] = "2.2"
+
+projects[patterns][subdir] = contrib
+projects[patterns][version] = "2.2"
+

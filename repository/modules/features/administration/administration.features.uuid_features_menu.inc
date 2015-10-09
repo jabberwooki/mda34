@@ -86,6 +86,66 @@ function administration_menu_default_uuid_features_menu() {
     'uuid' => '7ebfdd11-a089-4a23-80bf-196999bf5f50',
     'parent_uuid' => 'dcc7bddb-c97b-4a26-8d72-08ea974d409f',
   );
+  // Exported menu link: 8fce58fd-7552-474e-a554-77eaed34292c
+  $menu_uuid_links['8fce58fd-7552-474e-a554-77eaed34292c'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/structure/entityform_types',
+    'router_path' => 'admin/structure/entityform_types',
+    'link_title' => 'Entityform Types',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Manage entityform entity types, including adding and removing fields and the display of fields.',
+      ),
+      'identifier' => 'management_entityform-types:admin/structure/entityform_types',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => 0,
+    'uuid' => '8fce58fd-7552-474e-a554-77eaed34292c',
+    'parent_uuid' => 'd13172af-1878-4f10-abf3-d8ddf2d01d23',
+  );
+  // Exported menu link: a6d1949d-6083-40fc-ba71-11fcb919f096
+  $menu_uuid_links['a6d1949d-6083-40fc-ba71-11fcb919f096'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/content/entityform',
+    'router_path' => 'admin/config/content/entityform',
+    'link_title' => 'Entityform Settings',
+    'options' => array(
+      'identifier' => 'management_entityform-settings:admin/config/content/entityform',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'uuid' => 'a6d1949d-6083-40fc-ba71-11fcb919f096',
+    'parent_uuid' => 'f6d124df-c80f-4345-8f64-87c7420672bc',
+  );
+  // Exported menu link: bb54b7a3-47ba-419d-9815-857b71adfadf
+  $menu_uuid_links['bb54b7a3-47ba-419d-9815-857b71adfadf'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/reports/entityforms',
+    'router_path' => 'admin/reports/entityforms',
+    'link_title' => 'Entityform Submissions',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'View Submissions for all Entityforms',
+      ),
+      'identifier' => 'management_entityform-submissions:admin/reports/entityforms',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'uuid' => 'bb54b7a3-47ba-419d-9815-857b71adfadf',
+    'parent_uuid' => 'ca9daa58-a9d2-4aaf-af56-08a3683b55a1',
+  );
   // Exported menu link: ca9daa58-a9d2-4aaf-af56-08a3683b55a1
   $menu_uuid_links['ca9daa58-a9d2-4aaf-af56-08a3683b55a1'] = array(
     'menu_name' => 'management',
@@ -104,6 +164,26 @@ function administration_menu_default_uuid_features_menu() {
     'expanded' => 0,
     'weight' => 5,
     'uuid' => 'ca9daa58-a9d2-4aaf-af56-08a3683b55a1',
+    'parent_uuid' => '11150491-e4c1-4b17-af37-675d28b87bb7',
+  );
+  // Exported menu link: d13172af-1878-4f10-abf3-d8ddf2d01d23
+  $menu_uuid_links['d13172af-1878-4f10-abf3-d8ddf2d01d23'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/structure',
+    'router_path' => 'admin/structure',
+    'link_title' => 'Structure',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Administer blocks, content types, menus, etc.',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -8,
+    'uuid' => 'd13172af-1878-4f10-abf3-d8ddf2d01d23',
     'parent_uuid' => '11150491-e4c1-4b17-af37-675d28b87bb7',
   );
   // Exported menu link: dcc7bddb-c97b-4a26-8d72-08ea974d409f
@@ -172,10 +252,14 @@ function administration_menu_default_uuid_features_menu() {
   t('Administration');
   t('Configuration');
   t('Content authoring');
+  t('Entityform Settings');
+  t('Entityform Submissions');
+  t('Entityform Types');
   t('Mollom content moderation');
   t('Mollom statistics');
   t('Reports');
   t('Rules');
+  t('Structure');
   t('Workflow');
 
   return $menu_uuid_links;
