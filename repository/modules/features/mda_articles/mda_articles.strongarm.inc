@@ -66,12 +66,15 @@ function mda_articles_strongarm() {
         'custom_settings' => FALSE,
       ),
       'sidebar_item' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'site_slide' => array(
         'custom_settings' => FALSE,
       ),
       'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diapo_philado' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -111,6 +114,10 @@ function mda_articles_strongarm() {
             'weight' => '2',
             'visible' => TRUE,
           ),
+          'sidebar_item' => array(
+            'weight' => '2',
+            'visible' => TRUE,
+          ),
         ),
         'sharethis' => array(
           'default' => array(
@@ -127,6 +134,10 @@ function mda_articles_strongarm() {
           ),
           'teaser' => array(
             'weight' => '3',
+            'visible' => FALSE,
+          ),
+          'sidebar_item' => array(
+            'weight' => '19',
             'visible' => FALSE,
           ),
         ),

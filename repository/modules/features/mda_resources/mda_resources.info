@@ -6,7 +6,6 @@ project = mda_resources
 dependencies[] = administration
 dependencies[] = date
 dependencies[] = field_group
-dependencies[] = list
 dependencies[] = mda_faqs
 dependencies[] = profile2
 features[box][] = philado_resources_link
