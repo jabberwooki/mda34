@@ -414,7 +414,7 @@ function administration_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '',
+    'description' => '<a href="pocket-film/reglement-du-concours-2016">Lire le règlement ici </a>',
     'display' => array(
       'confirmation' => array(
         'label' => 'inline',
@@ -461,8 +461,8 @@ function administration_field_default_field_instances() {
     ),
     'entity_type' => 'entityform',
     'field_name' => 'field_reglement_pf',
-    'label' => 'J\'accepte le reglement',
-    'required' => 0,
+    'label' => 'J\'accepte le règlement du concours pour valider ma demande d\'inscription.',
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -479,8 +479,9 @@ function administration_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<a href="pocket-film/reglement-du-concours-2016">Lire le règlement ici </a>');
   t('Email');
-  t('J\'accepte le reglement');
+  t('J\'accepte le règlement du concours pour valider ma demande d\'inscription.');
   t('Nom');
   t('Participations à titre');
   t('Prénom');
