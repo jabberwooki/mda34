@@ -14,7 +14,7 @@ function administration_context_default_contexts() {
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'pocket';
-  $context->description = ' bloc droite';
+  $context->description = ' bloc droite all pocket';
   $context->tag = 'Pocket';
   $context->conditions = array(
     'node' => array(
@@ -42,23 +42,11 @@ function administration_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-multimedia-block_1' => array(
-          'module' => 'views',
-          'delta' => 'multimedia-block_1',
-          'region' => 'sidebar_second',
-          'weight' => '-43',
-        ),
-        'fb_likebox-0' => array(
-          'module' => 'fb_likebox',
-          'delta' => '0',
-          'region' => 'sidebar_second',
-          'weight' => '-42',
-        ),
         'entityform_block-pre_inscription_pocket_film' => array(
           'module' => 'entityform_block',
           'delta' => 'pre_inscription_pocket_film',
           'region' => 'sidebar_second',
-          'weight' => '-41',
+          'weight' => '11',
         ),
       ),
     ),
@@ -67,7 +55,7 @@ function administration_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t(' bloc droite');
+  t(' bloc droite all pocket');
   t('Pocket');
   $export['pocket'] = $context;
 

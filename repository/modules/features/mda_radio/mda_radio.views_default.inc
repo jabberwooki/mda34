@@ -45,7 +45,7 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_radio_image']['id'] = 'field_radio_image';
   $handler->display->display_options['fields']['field_radio_image']['table'] = 'field_data_field_radio_image';
   $handler->display->display_options['fields']['field_radio_image']['field'] = 'field_radio_image';
@@ -57,14 +57,14 @@ function mda_radio_views_default_views() {
     'image_link' => 'content',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Date d'enregistrement */
+  /* Champ: Contenu : Date d'enregistrement */
   $handler->display->display_options['fields']['field_record_date']['id'] = 'field_record_date';
   $handler->display->display_options['fields']['field_record_date']['table'] = 'field_data_field_record_date';
   $handler->display->display_options['fields']['field_record_date']['field'] = 'field_record_date';
@@ -76,26 +76,26 @@ function mda_radio_views_default_views() {
     'multiple_to' => '',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Lien */
+  /* Champ: Contenu : Lien */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'En savoir plus';
-  /* Sort criterion: Contenu: Date de publication */
+  /* Critère de tri: Contenu : Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -133,21 +133,21 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'radio_programme' => 'radio_programme',
   );
-  /* Filter criterion: Contenu: Catégorie (field_record_category) */
+  /* Critère de filtrage: Contenu : Catégorie (field_record_category) */
   $handler->display->display_options['filters']['field_record_category_tid']['id'] = 'field_record_category_tid';
   $handler->display->display_options['filters']['field_record_category_tid']['table'] = 'field_data_field_record_category';
   $handler->display->display_options['filters']['field_record_category_tid']['field'] = 'field_record_category_tid';
@@ -174,7 +174,7 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_radio_image']['id'] = 'field_radio_image';
   $handler->display->display_options['fields']['field_radio_image']['table'] = 'field_data_field_radio_image';
   $handler->display->display_options['fields']['field_radio_image']['field'] = 'field_radio_image';
@@ -196,14 +196,14 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = 'La dernière émission';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Date d'enregistrement */
+  /* Champ: Contenu : Date d'enregistrement */
   $handler->display->display_options['fields']['field_record_date']['id'] = 'field_record_date';
   $handler->display->display_options['fields']['field_record_date']['table'] = 'field_data_field_record_date';
   $handler->display->display_options['fields']['field_record_date']['field'] = 'field_record_date';
@@ -215,7 +215,7 @@ function mda_radio_views_default_views() {
     'multiple_to' => '',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -229,7 +229,7 @@ function mda_radio_views_default_views() {
     'field_formatter_class' => '',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Global: Null */
+  /* Filtre contextuel: Global : Vide */
   $handler->display->display_options['arguments']['null']['id'] = 'null';
   $handler->display->display_options['arguments']['null']['table'] = 'views';
   $handler->display->display_options['arguments']['null']['field'] = 'null';
@@ -269,7 +269,7 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'last_item';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_radio_image']['id'] = 'field_radio_image';
   $handler->display->display_options['fields']['field_radio_image']['table'] = 'field_data_field_radio_image';
   $handler->display->display_options['fields']['field_radio_image']['field'] = 'field_radio_image';
@@ -290,14 +290,14 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = 'La dernière émission';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Date d'enregistrement */
+  /* Champ: Contenu : Date d'enregistrement */
   $handler->display->display_options['fields']['field_record_date']['id'] = 'field_record_date';
   $handler->display->display_options['fields']['field_record_date']['table'] = 'field_data_field_record_date';
   $handler->display->display_options['fields']['field_record_date']['field'] = 'field_record_date';
@@ -309,7 +309,7 @@ function mda_radio_views_default_views() {
     'multiple_to' => '',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -321,14 +321,14 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Lien */
+  /* Champ: Contenu : Lien */
   $handler->display->display_options['fields']['view_node_1']['id'] = 'view_node_1';
   $handler->display->display_options['fields']['view_node_1']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node_1']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node_1']['label'] = '';
   $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node_1']['text'] = 'Lire la suite';
-  /* Champ: Contenu: Son */
+  /* Champ: Contenu : Son */
   $handler->display->display_options['fields']['field_scald_audio']['id'] = 'field_scald_audio';
   $handler->display->display_options['fields']['field_scald_audio']['table'] = 'field_data_field_scald_audio';
   $handler->display->display_options['fields']['field_scald_audio']['field'] = 'field_scald_audio';
@@ -340,7 +340,7 @@ function mda_radio_views_default_views() {
     'field_formatter_class' => '',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Global: Null */
+  /* Filtre contextuel: Global : Vide */
   $handler->display->display_options['arguments']['null']['id'] = 'null';
   $handler->display->display_options['arguments']['null']['table'] = 'views';
   $handler->display->display_options['arguments']['null']['field'] = 'null';
@@ -377,7 +377,7 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'sidebar_item';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Image */
+  /* Champ: Contenu : Image */
   $handler->display->display_options['fields']['field_radio_image']['id'] = 'field_radio_image';
   $handler->display->display_options['fields']['field_radio_image']['table'] = 'field_data_field_radio_image';
   $handler->display->display_options['fields']['field_radio_image']['field'] = 'field_radio_image';
@@ -398,14 +398,14 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = 'La dernière émission';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Date d'enregistrement */
+  /* Champ: Contenu : Date d'enregistrement */
   $handler->display->display_options['fields']['field_record_date']['id'] = 'field_record_date';
   $handler->display->display_options['fields']['field_record_date']['table'] = 'field_data_field_record_date';
   $handler->display->display_options['fields']['field_record_date']['field'] = 'field_record_date';
@@ -417,7 +417,7 @@ function mda_radio_views_default_views() {
     'multiple_to' => '',
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Body */
+  /* Champ: Contenu : Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -429,14 +429,14 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu: Lien */
+  /* Champ: Contenu : Lien */
   $handler->display->display_options['fields']['view_node_1']['id'] = 'view_node_1';
   $handler->display->display_options['fields']['view_node_1']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node_1']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node_1']['label'] = '';
   $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node_1']['text'] = 'Lire la suite';
-  /* Champ: Contenu: Son */
+  /* Champ: Contenu : Son */
   $handler->display->display_options['fields']['field_scald_audio']['id'] = 'field_scald_audio';
   $handler->display->display_options['fields']['field_scald_audio']['table'] = 'field_data_field_scald_audio';
   $handler->display->display_options['fields']['field_scald_audio']['field'] = 'field_scald_audio';
@@ -448,7 +448,7 @@ function mda_radio_views_default_views() {
     'field_formatter_class' => '',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Global: Null */
+  /* Filtre contextuel: Global : Vide */
   $handler->display->display_options['arguments']['null']['id'] = 'null';
   $handler->display->display_options['arguments']['null']['table'] = 'views';
   $handler->display->display_options['arguments']['null']['field'] = 'null';
@@ -472,14 +472,14 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Son */
+  /* Champ: Contenu : Son */
   $handler->display->display_options['fields']['field_scald_audio']['id'] = 'field_scald_audio';
   $handler->display->display_options['fields']['field_scald_audio']['table'] = 'field_data_field_scald_audio';
   $handler->display->display_options['fields']['field_scald_audio']['field'] = 'field_scald_audio';
@@ -491,7 +491,7 @@ function mda_radio_views_default_views() {
     'field_formatter_class' => '',
   );
   $handler->display->display_options['fields']['field_scald_audio']['delta_offset'] = '0';
-  /* Champ: Contenu: Lien ShareThis */
+  /* Champ: Contenu : Lien ShareThis */
   $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
   $handler->display->display_options['fields']['sharethis']['table'] = 'node';
   $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
@@ -500,26 +500,26 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'radio_programme' => 'radio_programme',
   );
-  /* Filter criterion: Contenu: Promu en page d'accueil */
+  /* Critère de filtrage: Contenu : Promu en page d'accueil */
   $handler->display->display_options['filters']['promote']['id'] = 'promote';
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
-  /* Filter criterion: Domain Access: Identifiant (ID) du domaine */
+  /* Critère de filtrage: Domain Access : Identifiant (ID) du domaine */
   $handler->display->display_options['filters']['gid']['id'] = 'gid';
   $handler->display->display_options['filters']['gid']['table'] = 'domain_access';
   $handler->display->display_options['filters']['gid']['field'] = 'gid';
@@ -536,14 +536,14 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu: Titre */
+  /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu: Son */
+  /* Champ: Contenu : Son */
   $handler->display->display_options['fields']['field_scald_audio']['id'] = 'field_scald_audio';
   $handler->display->display_options['fields']['field_scald_audio']['table'] = 'field_data_field_scald_audio';
   $handler->display->display_options['fields']['field_scald_audio']['field'] = 'field_scald_audio';
@@ -555,7 +555,7 @@ function mda_radio_views_default_views() {
     'field_formatter_class' => '',
   );
   $handler->display->display_options['fields']['field_scald_audio']['delta_offset'] = '0';
-  /* Champ: Contenu: Lien ShareThis */
+  /* Champ: Contenu : Lien ShareThis */
   $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
   $handler->display->display_options['fields']['sharethis']['table'] = 'node';
   $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
@@ -564,26 +564,26 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Contenu: Publié */
+  /* Critère de filtrage: Contenu : Publié */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Contenu: Type */
+  /* Critère de filtrage: Contenu : Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'radio_programme' => 'radio_programme',
   );
-  /* Filter criterion: Contenu: Promu en page d'accueil */
+  /* Critère de filtrage: Contenu : Promu en page d'accueil */
   $handler->display->display_options['filters']['promote']['id'] = 'promote';
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
-  /* Filter criterion: Domain Access: Identifiant (ID) du domaine */
+  /* Critère de filtrage: Domain Access : Identifiant (ID) du domaine */
   $handler->display->display_options['filters']['gid']['id'] = 'gid';
   $handler->display->display_options['filters']['gid']['table'] = 'domain_access';
   $handler->display->display_options['filters']['gid']['field'] = 'gid';
