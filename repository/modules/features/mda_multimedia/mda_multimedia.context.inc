@@ -28,6 +28,9 @@ function mda_multimedia_context_default_contexts() {
       'values' => array(
         '~agenda' => '~agenda',
         '~faq' => '~faq',
+        '~annuaire' => '~annuaire',
+        '~article*' => '~article*',
+        '~rubrique*' => '~rubrique*',
       ),
     ),
     'sitewide' => array(

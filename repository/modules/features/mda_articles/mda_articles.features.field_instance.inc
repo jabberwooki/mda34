@@ -20,9 +20,7 @@ function mda_articles_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -31,7 +29,7 @@ function mda_articles_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -41,6 +39,12 @@ function mda_articles_field_default_field_instances() {
         ),
         'type' => 'text_default',
         'weight' => 0,
+      ),
+      'sidebar_item' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -122,7 +126,13 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 18,
+      ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -156,12 +166,8 @@ function mda_articles_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'atom_reference',
-        'settings' => array(
-          'field_formatter_class' => '',
-          'link' => 0,
-        ),
-        'type' => 'title',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 6,
       ),
       'full' => array(
@@ -169,9 +175,16 @@ function mda_articles_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'scald_col_4',
-        'weight' => 0,
+        'weight' => 1,
+      ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -179,6 +192,7 @@ function mda_articles_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 1,
+          'override' => 0,
         ),
         'type' => 'scald_col_4',
         'weight' => 0,
@@ -220,8 +234,8 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 3,
@@ -231,6 +245,7 @@ function mda_articles_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 5,
@@ -241,9 +256,16 @@ function mda_articles_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 3,
+      ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -288,20 +310,21 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 4,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 1,
+          'override' => 0,
         ),
         'type' => 'file_representation',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
@@ -309,9 +332,16 @@ function mda_articles_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 4,
+      ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -356,8 +386,8 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 1,
@@ -367,9 +397,10 @@ function mda_articles_field_default_field_instances() {
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
-        'weight' => 2,
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'above',
@@ -377,9 +408,16 @@ function mda_articles_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 1,
+      ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -421,22 +459,23 @@ function mda_articles_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
-        'type' => 'title',
+        'type' => 'sdl_editor_representation',
         'weight' => 2,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
           'link' => 0,
+          'override' => 0,
         ),
-        'type' => 'title',
+        'type' => 'full',
         'weight' => 4,
       ),
       'list' => array(
@@ -445,9 +484,16 @@ function mda_articles_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 2,
+      ),
+      'sidebar_item' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',

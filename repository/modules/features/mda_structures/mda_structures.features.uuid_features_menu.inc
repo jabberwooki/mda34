@@ -25,9 +25,7 @@ function mda_structures_menu_default_uuid_features_menu() {
         ),
       ),
       'alter' => TRUE,
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_annuaire:annuaire',
     ),
     'module' => 'menu',
@@ -35,7 +33,7 @@ function mda_structures_menu_default_uuid_features_menu() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 12,
+    'weight' => -44,
     'uuid' => '494c6277-83ce-4b4b-ab17-6ba06f185d1c',
   );
 

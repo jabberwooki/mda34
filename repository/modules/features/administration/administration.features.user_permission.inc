@@ -15,9 +15,31 @@ function administration_user_default_permissions() {
     'name' => 'access mollom statistics',
     'roles' => array(
       'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
       'superadmin' => 'superadmin',
     ),
     'module' => 'mollom',
+  );
+
+  // Exported permission: 'access rules debug'.
+  $permissions['access rules debug'] = array(
+    'name' => 'access rules debug',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'rules',
+  );
+
+  // Exported permission: 'access scald dnd library'.
+  $permissions['access scald dnd library'] = array(
+    'name' => 'access scald dnd library',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'scald_dnd_library',
   );
 
   // Exported permission: 'administer EU Cookie Compliance popup'.
@@ -30,6 +52,25 @@ function administration_user_default_permissions() {
     'module' => 'eu_cookie_compliance',
   );
 
+  // Exported permission: 'administer boxes'.
+  $permissions['administer boxes'] = array(
+    'name' => 'administer boxes',
+    'roles' => array(
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'boxes',
+  );
+
+  // Exported permission: 'administer entityform types'.
+  $permissions['administer entityform types'] = array(
+    'name' => 'administer entityform types',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'entityform',
+  );
+
   // Exported permission: 'administer mollom'.
   $permissions['administer mollom'] = array(
     'name' => 'administer mollom',
@@ -40,25 +81,100 @@ function administration_user_default_permissions() {
     'module' => 'mollom',
   );
 
+  // Exported permission: 'administer rules'.
+  $permissions['administer rules'] = array(
+    'name' => 'administer rules',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'rules',
+  );
+
   // Exported permission: 'bypass mollom protection'.
   $permissions['bypass mollom protection'] = array(
     'name' => 'bypass mollom protection',
     'roles' => array(
       'administrateur' => 'administrateur',
+      'equipe mda' => 'equipe mda',
       'superadmin' => 'superadmin',
     ),
     'module' => 'mollom',
+  );
+
+  // Exported permission: 'bypass rules access'.
+  $permissions['bypass rules access'] = array(
+    'name' => 'bypass rules access',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'rules',
+  );
+
+  // Exported permission: 'delete any entityform'.
+  $permissions['delete any entityform'] = array(
+    'name' => 'delete any entityform',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'entityform',
+  );
+
+  // Exported permission: 'delete own entityform'.
+  $permissions['delete own entityform'] = array(
+    'name' => 'delete own entityform',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'entityform',
   );
 
   // Exported permission: 'display EU Cookie Compliance popup'.
   $permissions['display EU Cookie Compliance popup'] = array(
     'name' => 'display EU Cookie Compliance popup',
     'roles' => array(
+      'admin philado' => 'admin philado',
+      'administrateur' => 'administrateur',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'equipe mda' => 'equipe mda',
+      'equipe philado' => 'equipe philado',
       'professionnel' => 'professionnel',
+      'superadmin' => 'superadmin',
     ),
     'module' => 'eu_cookie_compliance',
+  );
+
+  // Exported permission: 'edit any entityform'.
+  $permissions['edit any entityform'] = array(
+    'name' => 'edit any entityform',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'entityform',
+  );
+
+  // Exported permission: 'edit boxes'.
+  $permissions['edit boxes'] = array(
+    'name' => 'edit boxes',
+    'roles' => array(
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'boxes',
+  );
+
+  // Exported permission: 'edit own entityform'.
+  $permissions['edit own entityform'] = array(
+    'name' => 'edit own entityform',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'entityform',
   );
 
   // Exported permission: 'report to mollom'.
@@ -69,6 +185,40 @@ function administration_user_default_permissions() {
       'superadmin' => 'superadmin',
     ),
     'module' => 'mollom',
+  );
+
+  // Exported permission: 'show format selection for entityform'.
+  $permissions['show format selection for entityform'] = array(
+    'name' => 'show format selection for entityform',
+    'roles' => array(),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show format selection for rules_config'.
+  $permissions['show format selection for rules_config'] = array(
+    'name' => 'show format selection for rules_config',
+    'roles' => array(),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'view any entityform'.
+  $permissions['view any entityform'] = array(
+    'name' => 'view any entityform',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'entityform',
+  );
+
+  // Exported permission: 'view own entityform'.
+  $permissions['view own entityform'] = array(
+    'name' => 'view own entityform',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'entityform',
   );
 
   return $permissions;

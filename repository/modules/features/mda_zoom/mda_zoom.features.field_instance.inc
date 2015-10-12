@@ -20,11 +20,15 @@ function mda_zoom_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 0,
+      ),
+      'diapo_philado' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -129,11 +133,15 @@ function mda_zoom_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'list_default',
         'weight' => 7,
+      ),
+      'diapo_philado' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
       ),
       'full' => array(
         'label' => 'above',
@@ -180,11 +188,15 @@ function mda_zoom_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'list_default',
         'weight' => 6,
+      ),
+      'diapo_philado' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 20,
       ),
       'full' => array(
         'label' => 'above',
@@ -231,12 +243,21 @@ function mda_zoom_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
-          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => '',
         ),
         'type' => 'image',
         'weight' => 2,
+      ),
+      'diapo_philado' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'slide_750x576',
+        ),
+        'type' => 'image',
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -342,11 +363,15 @@ function mda_zoom_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'link',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'link_default',
         'weight' => 4,
+      ),
+      'diapo_philado' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
       ),
       'full' => array(
         'label' => 'inline',
@@ -430,11 +455,15 @@ function mda_zoom_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'diapo_philado' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -527,11 +556,15 @@ function mda_zoom_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 5,
+      ),
+      'diapo_philado' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
       ),
       'full' => array(
         'label' => 'above',

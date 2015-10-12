@@ -282,6 +282,7 @@ function mda_faqs_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 1,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 6,
@@ -325,6 +326,7 @@ function mda_faqs_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 4,
@@ -368,6 +370,7 @@ function mda_faqs_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 7,
@@ -411,6 +414,7 @@ function mda_faqs_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 8,
@@ -451,18 +455,14 @@ function mda_faqs_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 4,
       ),
@@ -544,7 +544,6 @@ function mda_faqs_field_default_field_instances() {
           'delete' => 'Supprimer',
           'description' => TRUE,
           'edit' => 'Modifier',
-          'field_formatter_class' => '',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
@@ -558,7 +557,6 @@ function mda_faqs_field_default_field_instances() {
           'delete' => '',
           'description' => 1,
           'edit' => '',
-          'field_formatter_class' => '',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
@@ -597,18 +595,14 @@ function mda_faqs_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 2,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 2,
       ),
@@ -646,8 +640,8 @@ function mda_faqs_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 4,
@@ -656,8 +650,8 @@ function mda_faqs_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 5,
@@ -705,8 +699,8 @@ function mda_faqs_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'full',
         'weight' => 3,
@@ -715,8 +709,8 @@ function mda_faqs_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'full',
         'weight' => 3,
@@ -764,8 +758,8 @@ function mda_faqs_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 5,
@@ -774,8 +768,8 @@ function mda_faqs_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 6,
@@ -823,8 +817,8 @@ function mda_faqs_field_default_field_instances() {
         'label' => 'above',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 6,
@@ -833,8 +827,8 @@ function mda_faqs_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 7,
@@ -885,9 +879,7 @@ function mda_faqs_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 7,
       ),

@@ -66,12 +66,15 @@ function mda_articles_strongarm() {
         'custom_settings' => FALSE,
       ),
       'sidebar_item' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'site_slide' => array(
         'custom_settings' => FALSE,
       ),
       'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diapo_philado' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -100,7 +103,7 @@ function mda_articles_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '3',
+            'weight' => '8',
             'visible' => TRUE,
           ),
           'list' => array(
@@ -111,6 +114,10 @@ function mda_articles_strongarm() {
             'weight' => '2',
             'visible' => TRUE,
           ),
+          'sidebar_item' => array(
+            'weight' => '2',
+            'visible' => TRUE,
+          ),
         ),
         'sharethis' => array(
           'default' => array(
@@ -118,7 +125,7 @@ function mda_articles_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '7',
+            'weight' => '0',
             'visible' => TRUE,
           ),
           'list' => array(
@@ -127,6 +134,10 @@ function mda_articles_strongarm() {
           ),
           'teaser' => array(
             'weight' => '3',
+            'visible' => FALSE,
+          ),
+          'sidebar_item' => array(
+            'weight' => '19',
             'visible' => FALSE,
           ),
         ),
@@ -185,7 +196,7 @@ function mda_articles_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_article_pattern';
-  $strongarm->value = '[node:field-article-type:name]/[node:title]';
+  $strongarm->value = 'article/[node:field-article-type:name]/[node:title]';
   $export['pathauto_node_article_pattern'] = $strongarm;
 
   return $export;

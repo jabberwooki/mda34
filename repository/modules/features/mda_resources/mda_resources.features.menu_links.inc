@@ -37,33 +37,11 @@ function mda_resources_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 14,
+    'weight' => -43,
     'customized' => 1,
-  );
-  // Exported menu link: management_linkit-profiles:admin/config/content/linkit
-  $menu_links['management_linkit-profiles:admin/config/content/linkit'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/config/content/linkit',
-    'router_path' => 'admin/config/content/linkit',
-    'link_title' => 'Linkit Profiles',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Manage Linkit profiles.',
-      ),
-      'identifier' => 'management_linkit-profiles:admin/config/content/linkit',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'parent_identifier' => 'management_rdaction-de-contenu:admin/config/content',
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Linkit Profiles');
   t('Ressources');
 
 

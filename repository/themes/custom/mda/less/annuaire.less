@@ -1,4 +1,11 @@
 body.page-annuaire {
+
+.view-id-annuaire_filter .view-content {
+    background-color: #fff;
+    padding: 0;
+}
+
+
   h2.page-header{
     &:before{
       .glyphicon();
@@ -6,8 +13,9 @@ body.page-annuaire {
     } 
   }
   #views-exposed-form-structures-list-structures{
-    background-color: @gray-ultra-light;
-    padding: 20px;
+
+
+
     label{
       color: @violet-mda;
     }
@@ -15,6 +23,7 @@ body.page-annuaire {
       background-color: @violet-mda;
       text-transform: uppercase;
       margin-top: 26px;
+      color:white;
     }
   }
   table.views-table{
@@ -41,11 +50,26 @@ body.page-annuaire {
       }
     }
   }
+  
+/* philado ***/
+  &.domain-philado-mda34-org{
+    #views-exposed-form-structures-list-structures{
+      label{
+        color: #286fc9;
+      }
+      button{
+        background-color: #286fc9;
+      }
+
+    }
+     }
+  
+  
+  
+  
   /* parents ***/
   &.domain-parents-mda34-org{
     #views-exposed-form-structures-list-structures{
-      background-color: @gray-ultra-light;
-      padding: 20px;
       label{
         color: @green-mda;
       }
@@ -72,34 +96,61 @@ body.domain-reseau-pro-mda34-org {
 body.node-type-structure{
 
 
+.field-name-field-logo img{
+float:left;
+max-width : 47%;
+  }
+
+
   .group-practical-infos{
     float: right;
       margin-left: 1em;
       margin-bottom: 1em;
+      padding-top :1.25em;
+      padding-bottom :1.25em;
       
 
   }
   
   .sharethis-buttons{
-    float: right;
     min-width: 240px;
-    margin-bottom: 20px;
+    margin: 1em 0;
   }
   
-  .field-name-field-structure-type:after,
-  .field-name-field-competence-fields,
-  .field-name-body{
-    clear: left;
-  }
-  .field-name-body{
-    clear: left;
-  }
-  .field-label, .field-name-field-public .field-items .field-item,
-  .field-name-field-action-types .field-items .field-item{
-    float: left;
-    margin-right: 10px;
-  }
-  .field-name-field-coordinates{
-    clear: both;
-  }
+
+.field.field-name-field-mission .field-item
+{
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding:10px;
+    margin-bottom:1.5em;
+    font-weight : bold;
+
+}
+
+.group-term.field-group-div
+{
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding:10px;
+    margin-bottom:1.5em;
+}
+
+.field.field-name-field-coordinates
+{
+ margin:1em 0;
+
+}
+
+.field.field-name-field-scald-video.field-type-atom-reference.field-label-hidden {
+    margin-bottom: 1em;
+}
+
+.field.field-name-field-website.field-type-link-field.field-label-hidden {
+    float: right;
+}
 }

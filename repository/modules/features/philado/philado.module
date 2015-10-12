@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the philado feature.
+ */
+
+include_once 'philado.features.inc';

@@ -20,9 +20,7 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 12,
       ),
@@ -31,7 +29,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -101,7 +99,7 @@ function mda_structures_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -115,18 +113,16 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 14,
       ),
       'list' => array(
         'label' => 'above',
@@ -190,7 +186,7 @@ function mda_structures_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -204,18 +200,19 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'weight' => 10,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 1,
+          'taxonomy_term_separator' => ' / ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -245,7 +242,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -262,7 +259,6 @@ function mda_structures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'addressfield',
         'settings' => array(
-          'field_formatter_class' => '',
           'format_handlers' => array(
             0 => 'address',
           ),
@@ -272,7 +268,7 @@ function mda_structures_field_default_field_instances() {
         'weight' => 13,
       ),
       'full' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'addressfield',
         'settings' => array(
           'format_handlers' => array(
@@ -281,7 +277,7 @@ function mda_structures_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 6,
+        'weight' => 10,
       ),
       'list' => array(
         'label' => 'above',
@@ -340,7 +336,7 @@ function mda_structures_field_default_field_instances() {
         'visible_markers' => TRUE,
       ),
       'type' => 'addressfield_autocomplete',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -354,17 +350,18 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 9,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 1,
+          'taxonomy_term_separator' => ' / ',
+        ),
+        'type' => 'ds_taxonomy_separator',
         'weight' => 6,
       ),
       'list' => array(
@@ -395,7 +392,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -410,7 +407,6 @@ function mda_structures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'geofield_map',
         'settings' => array(
-          'field_formatter_class' => '',
           'geofield_map_baselayers_hybrid' => 1,
           'geofield_map_baselayers_map' => 1,
           'geofield_map_baselayers_physical' => 0,
@@ -470,7 +466,7 @@ function mda_structures_field_default_field_instances() {
           ),
           'leaflet_map' => 'OSM Mapnik',
           'popup' => array(
-            'show' => 0,
+            'show' => 1,
             'text' => '',
           ),
           'vector_display' => array(
@@ -492,7 +488,7 @@ function mda_structures_field_default_field_instances() {
           ),
         ),
         'type' => 'geofield_leaflet',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'list' => array(
         'label' => 'above',
@@ -526,7 +522,7 @@ function mda_structures_field_default_field_instances() {
         'delta_handling' => 'default',
       ),
       'type' => 'addressfield_autocomplete_latlng',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -540,18 +536,16 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'email',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'email_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'full' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 4,
+        'weight' => 11,
       ),
       'list' => array(
         'label' => 'above',
@@ -586,7 +580,7 @@ function mda_structures_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -600,12 +594,11 @@ function mda_structures_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
-          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 11,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -615,7 +608,7 @@ function mda_structures_field_default_field_instances() {
           'image_style' => 'logo_120x120',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -685,7 +678,7 @@ function mda_structures_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -704,10 +697,10 @@ function mda_structures_field_default_field_instances() {
         'weight' => 16,
       ),
       'full' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'text_plain',
         'weight' => 2,
       ),
       'list' => array(
@@ -769,7 +762,7 @@ function mda_structures_field_default_field_instances() {
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -793,7 +786,6 @@ function mda_structures_field_default_field_instances() {
           ),
           'date_first_day' => 1,
           'daysformat' => 'long',
-          'field_formatter_class' => '',
           'grouped' => FALSE,
           'hoursformat' => 0,
           'separator_day_hours' => ': ',
@@ -805,7 +797,7 @@ function mda_structures_field_default_field_instances() {
           'timezone_field' => '',
         ),
         'type' => 'office_hours',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'inline',
@@ -831,7 +823,7 @@ function mda_structures_field_default_field_instances() {
           'timezone_field' => '',
         ),
         'type' => 'office_hours',
-        'weight' => 8,
+        'weight' => 13,
       ),
       'list' => array(
         'label' => 'above',
@@ -879,7 +871,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'office_hours',
       'settings' => array(),
       'type' => 'office_hours',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -893,18 +885,16 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'phone',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'phone',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'phone',
         'settings' => array(),
         'type' => 'phone',
-        'weight' => 5,
+        'weight' => 9,
       ),
       'list' => array(
         'label' => 'above',
@@ -942,7 +932,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'phone',
       'settings' => array(),
       'type' => 'phone_textfield',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -960,18 +950,15 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 15,
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 10,
       ),
       'list' => array(
         'label' => 'above',
@@ -1046,18 +1033,19 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 9,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'weight' => 8,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 1,
+          'taxonomy_term_separator' => ' / ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
@@ -1087,7 +1075,198 @@ function mda_structures_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-structure-field_resource_files'
+  $field_instances['node-structure-field_resource_files'] = array(
+    'bundle' => 'structure',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 18,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 7,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_resource_files',
+    'label' => 'Fichier(s)',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'file_directory' => '',
+      'file_extensions' => 'pdf',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'filefield_sources' => array(
+          'filefield_sources' => array(
+            'attach' => 0,
+            'clipboard' => 0,
+            'reference' => 0,
+            'remote' => 0,
+            'scald' => 0,
+            'upload' => 'upload',
+          ),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+          ),
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 18,
+    ),
+  );
+
+  // Exported field_instance: 'node-structure-field_scald_video'
+  $field_instances['node-structure-field_scald_video'] = array(
+    'bundle' => 'structure',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 0,
+          'override' => 0,
+        ),
+        'type' => 'title',
+        'weight' => 17,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'atom_reference',
+        'settings' => array(
+          'link' => 0,
+          'override' => 0,
+        ),
+        'type' => 'zoom_block',
+        'weight' => 8,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_scald_video',
+    'label' => 'Vidéo',
+    'required' => 0,
+    'settings' => array(
+      'referencable_types' => array(
+        'audio' => 0,
+        'file' => 0,
+        'gallery' => 0,
+        'image' => 0,
+        'video' => 'video',
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'atom_reference',
+      'settings' => array(
+        'context' => 'zoom_block',
+      ),
+      'type' => 'atom_reference_textfield',
+      'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance: 'node-structure-field_secteur_geo'
+  $field_instances['node-structure-field_secteur_geo'] = array(
+    'bundle' => 'structure',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 19,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 3,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_secteur_geo',
+    'label' => 'Secteur géographique',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
     ),
   );
 
@@ -1101,11 +1280,9 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1142,7 +1319,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1156,18 +1333,16 @@ function mda_structures_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'link',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 12,
       ),
       'list' => array(
         'label' => 'above',
@@ -1225,7 +1400,7 @@ function mda_structures_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -1237,15 +1412,18 @@ function mda_structures_field_default_field_instances() {
   t('Contact téléphone');
   t('Coordonnées géographiques');
   t('Descriptif de la structure');
+  t('Fichier(s)');
   t('Horaires d\'ouverture');
   t('Logo');
   t('Mission');
   t('Moyens d\'accès');
   t('Public');
+  t('Secteur géographique');
   t('Site web');
   t('Titre infos pratiques');
   t('Type de structure');
   t('Types d\'action');
+  t('Vidéo');
 
   return $field_instances;
 }

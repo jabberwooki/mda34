@@ -262,6 +262,32 @@ function mda_structures_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_secteur_geo'
+  $field_bases['field_secteur_geo'] = array(
+    'active' => 1,
+    'cardinality' => 2,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_secteur_geo',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'Est Hérault Montpellier',
+        1 => 'Ouest Hérault Béziers',
+      ),
+      'allowed_values_function' => '',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_structure_type'
   $field_bases['field_structure_type'] = array(
     'active' => 1,

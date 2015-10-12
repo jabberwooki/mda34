@@ -119,6 +119,10 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type']['settings'] = array(
     'field_formatter_class' => '',
   );
+  /* Critère de tri: Contenu : Date(s) - date de début (field_event_dates) */
+  $handler->display->display_options['sorts']['field_event_dates_value']['id'] = 'field_event_dates_value';
+  $handler->display->display_options['sorts']['field_event_dates_value']['table'] = 'field_data_field_event_dates';
+  $handler->display->display_options['sorts']['field_event_dates_value']['field'] = 'field_event_dates_value';
   /* Critère de tri: Contenu : Date de publication */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -398,6 +402,12 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Critère de filtrage: Contenu : Date(s) - date de début (field_event_dates) */
+  $handler->display->display_options['filters']['field_event_dates_value']['id'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['table'] = 'field_data_field_event_dates';
+  $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
 
   /* Display: Accueil portail (parents) */
   $handler = $view->new_display('block', 'Accueil portail (parents)', 'block_front_parents');
@@ -516,6 +526,12 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'parents_mda34_org' => 'parents_mda34_org',
   );
+  /* Critère de filtrage: Contenu : Date(s) - date de début (field_event_dates) */
+  $handler->display->display_options['filters']['field_event_dates_value']['id'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['table'] = 'field_data_field_event_dates';
+  $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
 
   /* Display: Accueil portail (pros) */
   $handler = $view->new_display('block', 'Accueil portail (pros)', 'block_front_pros');
@@ -641,6 +657,12 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Critère de filtrage: Contenu : Date(s) - date de début (field_event_dates) */
+  $handler->display->display_options['filters']['field_event_dates_value']['id'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['table'] = 'field_data_field_event_dates';
+  $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
 
   /* Display: Bloc événements */
   $handler = $view->new_display('block', 'Bloc événements', 'block_front_events');
@@ -752,6 +774,12 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Critère de filtrage: Contenu : Date(s) - date de début (field_event_dates) */
+  $handler->display->display_options['filters']['field_event_dates_value']['id'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['table'] = 'field_data_field_event_dates';
+  $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
 
   /* Display: Bloc événements pros */
   $handler = $view->new_display('block', 'Bloc événements pros', 'block_events_pros');
@@ -870,50 +898,113 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['operator'] = '!=';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Critère de filtrage: Contenu : Date(s) - date de début (field_event_dates) */
+  $handler->display->display_options['filters']['field_event_dates_value']['id'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['table'] = 'field_data_field_event_dates';
+  $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
 
   /* Display: Liste des formations */
   $handler = $view->new_display('page_with_page_title', 'Liste des formations', 'list_trainings');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Formations';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_event_dates' => 'field_event_dates',
+    'title' => 'title',
+    'field_address_locality' => 'field_address_locality',
+    'field_organiser' => 'field_organiser',
+    'field_unregistered_organiser' => 'field_unregistered_organiser',
+  );
+  $handler->display->display_options['style_options']['default'] = 'field_event_dates';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_event_dates' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'title' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'field_address_locality' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'field_organiser' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+    'field_unregistered_organiser' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 1,
+    ),
+  );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Champ: Contenu : Titre */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Champ: Contenu : Date(s) */
   $handler->display->display_options['fields']['field_event_dates']['id'] = 'field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['table'] = 'field_data_field_event_dates';
   $handler->display->display_options['fields']['field_event_dates']['field'] = 'field_event_dates';
-  $handler->display->display_options['fields']['field_event_dates']['label'] = '';
+  $handler->display->display_options['fields']['field_event_dates']['label'] = 'Date de début';
   $handler->display->display_options['fields']['field_event_dates']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_dates']['settings'] = array(
     'format_type' => 'short_no_time',
-    'fromto' => 'both',
+    'fromto' => 'value',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu : Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '200',
-    'field_formatter_class' => '',
+  /* Champ: Contenu : Titre */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'Formation';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Champ: Contenu : Organisateur */
+  $handler->display->display_options['fields']['field_organiser']['id'] = 'field_organiser';
+  $handler->display->display_options['fields']['field_organiser']['table'] = 'field_data_field_organiser';
+  $handler->display->display_options['fields']['field_organiser']['field'] = 'field_organiser';
+  $handler->display->display_options['fields']['field_organiser']['label'] = 'Organisme';
+  $handler->display->display_options['fields']['field_organiser']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_organiser']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organiser']['settings'] = array(
+    'link' => 0,
   );
+  /* Champ: Contenu : Organisateur */
+  $handler->display->display_options['fields']['field_unregistered_organiser']['id'] = 'field_unregistered_organiser';
+  $handler->display->display_options['fields']['field_unregistered_organiser']['table'] = 'field_data_field_unregistered_organiser';
+  $handler->display->display_options['fields']['field_unregistered_organiser']['field'] = 'field_unregistered_organiser';
+  $handler->display->display_options['fields']['field_unregistered_organiser']['label'] = 'Organisme';
+  $handler->display->display_options['fields']['field_unregistered_organiser']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_unregistered_organiser']['empty'] = '[field_organiser]';
+  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
+  $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
+  $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
+  $handler->display->display_options['fields']['field_address_locality']['label'] = 'Lieu';
+  $handler->display->display_options['fields']['field_address_locality']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Critère de filtrage: Contenu : Publié */
@@ -943,6 +1034,41 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Critère de filtrage: Contenu : Date(s) - date de début (field_event_dates) */
+  $handler->display->display_options['filters']['field_event_dates_value']['id'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['table'] = 'field_data_field_event_dates';
+  $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
+  /* Critère de filtrage: Contenu : Public concerné (field_public) */
+  $handler->display->display_options['filters']['field_public_tid']['id'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['table'] = 'field_data_field_public';
+  $handler->display->display_options['filters']['field_public_tid']['field'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['value'] = array(
+    28 => '28',
+    23 => '23',
+    24 => '24',
+    25 => '25',
+    27 => '27',
+  );
+  $handler->display->display_options['filters']['field_public_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_public_tid']['expose']['operator_id'] = 'field_public_tid_op';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['label'] = 'Public';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['operator'] = 'field_public_tid_op';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['identifier'] = 'field_public_tid';
+  $handler->display->display_options['filters']['field_public_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    141037677 => 0,
+    183916278 => 0,
+    155963314 => 0,
+    22875792 => 0,
+    193262079 => 0,
+    109177673 => 0,
+  );
+  $handler->display->display_options['filters']['field_public_tid']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_public_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_public_tid']['vocabulary'] = 'publics';
   $handler->display->display_options['path'] = 'formations';
 
   /* Display: Accueil portail (formations) */
@@ -1004,6 +1130,12 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Critère de filtrage: Contenu : Date(s) - date de début (field_event_dates) */
+  $handler->display->display_options['filters']['field_event_dates_value']['id'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['table'] = 'field_data_field_event_dates';
+  $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
 
   /* Display: Espace pros (formations) */
   $handler = $view->new_display('block', 'Espace pros (formations)', 'block_pros_trainings');
@@ -1063,6 +1195,12 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['uuid']['value'] = 'b56b05a2-2bae-48fe-8f6f-4d67fe92dadc';
+  /* Critère de filtrage: Contenu : Date(s) - date de début (field_event_dates) */
+  $handler->display->display_options['filters']['field_event_dates_value']['id'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['table'] = 'field_data_field_event_dates';
+  $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
+  $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
   $translatables['events'] = array(
     t('Master'),
     t('plus'),
@@ -1114,6 +1252,12 @@ function mda_events_views_default_views() {
 </div>'),
     t('Liste des formations'),
     t('Formations'),
+    t('Date de début'),
+    t('Formation'),
+    t('Organisme'),
+    t('[field_organiser]'),
+    t('Lieu'),
+    t('Public'),
     t('Accueil portail (formations)'),
     t('Espace pros (formations)'),
     t('Formations à venir'),

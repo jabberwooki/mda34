@@ -162,6 +162,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 7,
@@ -172,6 +173,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'sdl_editor_representation',
         'weight' => 4,
@@ -221,6 +223,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 4,
@@ -231,6 +234,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'sdl_editor_representation',
         'weight' => 7,
@@ -280,6 +284,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 5,
@@ -290,6 +295,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'sdl_editor_representation',
         'weight' => 5,
@@ -339,6 +345,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 3,
@@ -349,6 +356,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'full',
         'weight' => 1,
@@ -398,6 +406,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'title',
         'weight' => 6,
@@ -408,6 +417,7 @@ function mda_news_field_default_field_instances() {
         'settings' => array(
           'field_formatter_class' => '',
           'link' => 0,
+          'override' => 0,
         ),
         'type' => 'sdl_editor_representation',
         'weight' => 6,

@@ -78,19 +78,19 @@ function mda_structures_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'domain' => array(
-          'weight' => '1',
-        ),
-        'metatags' => array(
-          'weight' => '19',
-        ),
-        'title' => array(
           'weight' => '0',
         ),
+        'metatags' => array(
+          'weight' => '22',
+        ),
+        'title' => array(
+          'weight' => '1',
+        ),
         'path' => array(
-          'weight' => '17',
+          'weight' => '20',
         ),
         'redirect' => array(
-          'weight' => '18',
+          'weight' => '21',
         ),
       ),
       'display' => array(
@@ -100,7 +100,7 @@ function mda_structures_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '0',
+            'weight' => '9',
             'visible' => TRUE,
           ),
           'list' => array(
@@ -118,7 +118,7 @@ function mda_structures_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '1',
+            'weight' => '0',
             'visible' => TRUE,
           ),
           'list' => array(

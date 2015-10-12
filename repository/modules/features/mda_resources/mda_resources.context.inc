@@ -22,20 +22,44 @@ function mda_resources_context_default_contexts() {
         4 => 4,
       ),
     ),
-    'sitewide' => array(
+    'path' => array(
       'values' => array(
-        1 => 1,
+        '<front>' => '<front>',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'boxes-philado_resources_link' => array(
-          'module' => 'boxes',
-          'delta' => 'philado_resources_link',
+        'views-slides-block_1' => array(
+          'module' => 'views',
+          'delta' => 'slides-block_1',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'views-philado-block' => array(
+          'module' => 'views',
+          'delta' => 'philado-block',
+          'region' => 'content',
+          'weight' => '-9',
+        ),
+        'views-events-block_pros_trainings' => array(
+          'module' => 'views',
+          'delta' => 'events-block_pros_trainings',
           'region' => 'sidebar_second',
-          'weight' => '5',
+          'weight' => '-6',
+        ),
+        'views-philado-block_1' => array(
+          'module' => 'views',
+          'delta' => 'philado-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-5',
+        ),
+        'views-philado-block_2' => array(
+          'module' => 'views',
+          'delta' => 'philado-block_2',
+          'region' => 'sidebar_second',
+          'weight' => '-4',
         ),
       ),
     ),
@@ -63,6 +87,7 @@ function mda_resources_context_default_contexts() {
       'values' => array(
         '~agenda' => '~agenda',
         '~ressources' => '~ressources',
+        '~annuaire' => '~annuaire',
       ),
     ),
     'sitewide' => array(
@@ -78,7 +103,13 @@ function mda_resources_context_default_contexts() {
           'module' => 'boxes',
           'delta' => 'pros_resources_link',
           'region' => 'sidebar_second',
-          'weight' => '5',
+          'weight' => '-4',
+        ),
+        'views-articles-block_1' => array(
+          'module' => 'views',
+          'delta' => 'articles-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-5',
         ),
       ),
     ),
