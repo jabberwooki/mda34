@@ -1,3 +1,9 @@
+MDA34 1.2.0, 2015-10-13
+-----------------------
+Mise en ligne de la page Poket film
+
+
+
 MDA34 1.1.10, 2015-09-30
 -----------------------
 Release philado with context
