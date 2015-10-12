@@ -10,38 +10,6 @@
 function administration_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_pocket-film:taxonomy/term/268
-  $menu_links['main-menu_pocket-film:taxonomy/term/268'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'taxonomy/term/268',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Pocket FIlm',
-    'options' => array(
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
-      'domain_menu_access' => array(
-        'show' => array(
-          'd2' => 'd2',
-        ),
-        'hide' => array(
-          'd1' => 'd1',
-        ),
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_pocket-film:taxonomy/term/268',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -36,
-    'customized' => 1,
-  );
   // Exported menu link: management_entityform-settings:admin/config/content/entityform
   $menu_links['management_entityform-settings:admin/config/content/entityform'] = array(
     'menu_name' => 'management',
@@ -129,7 +97,6 @@ function administration_menu_default_menu_links() {
   t('Entityform Settings');
   t('Entityform Submissions');
   t('Entityform Types');
-  t('Pocket FIlm');
 
 
   return $menu_links;
