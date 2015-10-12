@@ -1,0 +1,142 @@
+<?php
+/**
+ * @file
+ * Main module file for the scald_videojs module.
+ */
+
+/**
+ * Implements hook_init().
+ */
+function scald_audiojs_mda_init() {
+  drupal_add_css(drupal_get_path('module', 'scald_audiojs_mda') . '/css/mda_audiojs.css');
+}
+
+/**
+ * Implements hook_scald_player().
+ */
+function scald_audiojs_mda_scald_player() {
+  return array(
+    'audiojs' => array(
+      'name' => 'Audio.js (MDA version)',
+      'description' => 'Use the Audio.js player to play audio files',
+      'type' => array('audio'),
+      'settings' => array(
+        'presets' => NULL,
+        'audiojs_style' => 'default',
+        'audiojs_preload' => TRUE,
+        'audiojs_autoplay' => FALSE,
+        'audiojs_loop' => FALSE,
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_scald_player_settings_form().
+ */
+function scald_audiojs_mda_scald_player_settings_form($form, &$form_state) {
+  $element = array();
+
+  $player_settings = $form['#scald']['player_settings'];
+  $audiojs_style = isset($player_settings['audiojs_style']) ? $player_settings['audiojs_style'] : 'default';
+  $audiojs_preload = isset($player_settings['audiojs_preload']) ? $player_settings['audiojs_preload'] : TRUE;
+  $audiojs_autoplay = isset($player_settings['audiojs_autoplay']) ? $player_settings['audiojs_autoplay'] : FALSE;
+  $audiojs_loop = isset($player_settings['audiojs_loop']) ? $player_settings['audiojs_loop'] : FALSE;
+
+  $element['presets'] = array(
+    '#type' => 'value',
+  );
+  $element['audiojs_style'] = array(
+    '#type' => 'select',
+    '#title' => t('Display type'),
+    '#description' => t('Which display formatting should be used.'),
+    '#options' => array(
+      'default' => t('Default'),
+      'mini' => t('Mini'),
+      'none' => t('None'),
+    ),
+    '#default_value' => $audiojs_style,
+  );
+  $element['audiojs_preload'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Preload'),
+    '#description' => t('Should the browser pre-load the mp3 file?'),
+    '#default_value' => $audiojs_preload,
+  );
+  $element['audiojs_autoplay'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Autoplay'),
+    '#description' => t('Should the browser automatically play the mp3 file after loading?'),
+    '#default_value' => $audiojs_autoplay,
+  );
+  $element['audiojs_loop'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Loop'),
+    '#description' => t('Should the browser automatically restart playing the mp3 file after finishing playing?'),
+    '#default_value' => $audiojs_loop,
+  );
+
+  return $element;
+}
+
+
+/**
+ * Implements hook_scald_prerender().
+ */
+function scald_audiojs_mda_scald_prerender($atom, $context, $options, $mode) {
+  if ($mode == 'player') {
+
+    // Get the context config which must be used to render the video.
+    $config = scald_context_config_load($context);
+    $default_settings = scald_audiojs_mda_scald_player();
+
+    $player_settings = $config->player['audio']['settings'];
+
+    $audiojs_style = $player_settings['audiojs_style'];
+    $audiojs_preload = $player_settings['audiojs_preload'];
+    $audiojs_autoplay = $player_settings['audiojs_autoplay'];
+    $audiojs_loop = $player_settings['audiojs_loop'];
+
+    $source = file_create_url($atom->file_source);
+
+    $variables = array(
+      'url' => $source,
+      'description' => '',
+      'label' => '',
+      'preload' => $audiojs_preload,
+      'autoplay' => $audiojs_autoplay,
+      'loop' => $audiojs_loop,
+      'class' => $audiojs_style, // 'default', 'mini', 'none'
+    );
+
+    $audiojs_path = libraries_get_path('audiojs');
+    $audio_library = $audiojs_path . "/audiojs/audio.min.js";
+    $module_path = drupal_get_path('module', 'audio_js');
+
+    $settings = array(
+      'audio_js' => array(
+        'swf' => base_path() . $audiojs_path . "/audiojs/audiojs.swf",
+      ),
+    );
+
+    $render = array(
+      '#markup' => theme('audio_js_audio_tag', $variables),
+      '#attached' => array(
+        'js' => array(
+          $audio_library,
+          $module_path . '/js/audio_js_init.js',
+          array(
+            'data' => $settings,
+            'type' => 'setting'
+          )
+        ),
+        'css' => array(
+          $module_path . '/css/audio_js_' . $audiojs_style . '.css'
+        ),
+      ),
+    );
+
+    $atom->rendered->player = $render; //theme('audio_js_audio_tag', $variables);
+    $atom->rendered->player_settings = $config->player['audio'];
+  }
+}

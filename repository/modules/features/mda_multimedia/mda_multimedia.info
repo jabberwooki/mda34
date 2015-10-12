@@ -15,6 +15,7 @@ dependencies[] = mee
 dependencies[] = plupload
 dependencies[] = scald
 dependencies[] = scald_audio
+dependencies[] = scald_audiojs_mda
 dependencies[] = scald_dnd_library
 dependencies[] = scald_file
 dependencies[] = scald_galleria

@@ -182,6 +182,9 @@ projects[domain_views][subdir] = contrib
 projects[domain_views][version] = "1.5"
 
 ;--- Scald and media related --------------------------------------------------
+projects[audio_js][subdir] = contrib
+projects[audio_js][version] = "1.2"
+
 projects[scald][subdir] = contrib
 projects[scald][version] = "1.3"
 
