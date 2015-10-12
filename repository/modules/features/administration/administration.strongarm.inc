@@ -13,6 +13,98 @@ function administration_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'entityform_block_types';
+  $strongarm->value = array(
+    0 => 'pre_inscription_pocket_film',
+  );
+  $export['entityform_block_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entityreference:base-tables';
+  $strongarm->value = array(
+    'scald_atom' => array(
+      0 => 'scald_atoms',
+      1 => 'sid',
+    ),
+    'entityform' => array(
+      0 => 'entityform',
+      1 => 'entityform_id',
+    ),
+    'entityform_type' => array(
+      0 => 'entityform_type',
+      1 => 'id',
+    ),
+    'field_collection_item' => array(
+      0 => 'field_collection_item',
+      1 => 'item_id',
+    ),
+    'mailchimp_signup' => array(
+      0 => 'mailchimp_signup',
+      1 => 'mcs_id',
+    ),
+    'node' => array(
+      0 => 'node',
+      1 => 'nid',
+    ),
+    'profile2' => array(
+      0 => 'profile',
+      1 => 'pid',
+    ),
+    'profile2_type' => array(
+      0 => 'profile_type',
+      1 => 'id',
+    ),
+    'redirect' => array(
+      0 => 'redirect',
+      1 => 'rid',
+    ),
+    'registration' => array(
+      0 => 'registration',
+      1 => 'registration_id',
+    ),
+    'registration_type' => array(
+      0 => 'registration_type',
+      1 => 'id',
+    ),
+    'registration_state' => array(
+      0 => 'registration_state',
+      1 => 'registration_state_id',
+    ),
+    'file' => array(
+      0 => 'file_managed',
+      1 => 'fid',
+    ),
+    'taxonomy_term' => array(
+      0 => 'taxonomy_term_data',
+      1 => 'tid',
+    ),
+    'taxonomy_vocabulary' => array(
+      0 => 'taxonomy_vocabulary',
+      1 => 'vid',
+    ),
+    'user' => array(
+      0 => 'users',
+      1 => 'uid',
+    ),
+    'rules_config' => array(
+      0 => 'rules_config',
+      1 => 'id',
+    ),
+  );
+  $export['entityreference:base-tables'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entity_cache_tables_created';
+  $strongarm->value = '';
+  $export['entity_cache_tables_created'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'eu_cookie_compliance_domain';
   $strongarm->value = 'mda34.org';
   $export['eu_cookie_compliance_domain'] = $strongarm;
@@ -56,6 +148,13 @@ http://www.mda34.bac',
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'features_admin_show_component_entityform_type';
+  $strongarm->value = 1;
+  $export['features_admin_show_component_entityform_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'features_admin_show_component_rules_config';
   $strongarm->value = 1;
   $export['features_admin_show_component_rules_config'] = $strongarm;
@@ -63,9 +162,58 @@ http://www.mda34.bac',
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'features_component_locked_entityform_type';
+  $strongarm->value = 0;
+  $export['features_component_locked_entityform_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'features_component_locked_rules_config';
   $strongarm->value = 0;
   $export['features_component_locked_rules_config'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_entityform__pre_inscription_pocket_film';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => TRUE,
+      ),
+      'email' => array(
+        'custom_settings' => TRUE,
+      ),
+      'confirmation' => array(
+        'custom_settings' => TRUE,
+      ),
+      'download' => array(
+        'custom_settings' => TRUE,
+      ),
+      'review' => array(
+        'custom_settings' => TRUE,
+      ),
+      'table' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(
+        'redirect' => array(
+          'weight' => '0',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_entityform__pre_inscription_pocket_film'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -5003,7 +5151,7 @@ http://www.mda34.bac',
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1443442968;
+  $strongarm->value = 1444314291;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -5021,6 +5169,46 @@ http://www.mda34.bac',
     0 => 'christophe.espiau@gmail.com',
   );
   $export['update_notify_emails'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_node';
+  $strongarm->value = array(
+    'news' => 0,
+    'article' => 0,
+    'slide' => 0,
+    'radio_programme' => 0,
+    'event' => 0,
+    'faq' => 0,
+    'page' => 0,
+    'resource' => 0,
+    'structure' => 0,
+  );
+  $export['uuid_features_entity_node'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_taxonomy_term';
+  $strongarm->value = array(
+    'radio_prog_categories' => 'radio_prog_categories',
+    'scald_authors' => 0,
+    'scald_tags' => 0,
+    'publics' => 0,
+    'action_types' => 0,
+    'competence_fields' => 0,
+    'structure_types' => 0,
+    'event_types' => 0,
+    'faq_categories' => 0,
+    'authors' => 0,
+    'editors' => 0,
+    'resource_publics' => 0,
+    'resource_types' => 0,
+    'themes' => 0,
+    'article_types' => 0,
+  );
+  $export['uuid_features_entity_taxonomy_term'] = $strongarm;
 
   return $export;
 }

@@ -127,6 +127,7 @@ function kcontextes_context_default_contexts() {
       'values' => array(
         '~<front>' => '~<front>',
         '~faq' => '~faq',
+        '~rubrique/pocket-film' => '~rubrique/pocket-film',
       ),
     ),
   );

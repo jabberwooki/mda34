@@ -1,36 +1,31 @@
 <?php
 /**
  * @file
- * mda_multimedia.context.inc
+ * mda_articles.context.inc
  */
 
 /**
  * Implements hook_context_default_contexts().
  */
-function mda_multimedia_context_default_contexts() {
+function mda_articles_context_default_contexts() {
   $export = array();
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'video_all';
-  $context->description = '';
-  $context->tag = 'Multimedia';
+  $context->name = 'pocket-front';
+  $context->description = 'Pocket front';
+  $context->tag = 'Pocket';
   $context->conditions = array(
     'domain' => array(
       'values' => array(
+        1 => 1,
         2 => 2,
-        3 => 3,
-        5 => 5,
       ),
     ),
     'path' => array(
       'values' => array(
-        '~agenda' => '~agenda',
-        '~faq' => '~faq',
-        '~annuaire' => '~annuaire',
-        '~article*' => '~article*',
-        '~rubrique*' => '~rubrique*',
+        'rubrique/*' => 'rubrique/*',
       ),
     ),
     'sitewide' => array(
@@ -42,11 +37,17 @@ function mda_multimedia_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-multimedia-block_last_video' => array(
-          'module' => 'views',
-          'delta' => 'multimedia-block_last_video',
+        'fb_likebox-0' => array(
+          'module' => 'fb_likebox',
+          'delta' => '0',
           'region' => 'sidebar_second',
-          'weight' => '-7',
+          'weight' => '-9',
+        ),
+        'views-multimedia-block_1' => array(
+          'module' => 'views',
+          'delta' => 'multimedia-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '10',
         ),
       ),
     ),
@@ -55,8 +56,9 @@ function mda_multimedia_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Multimedia');
-  $export['video_all'] = $context;
+  t('Pocket');
+  t('Pocket front');
+  $export['pocket-front'] = $context;
 
   return $export;
 }

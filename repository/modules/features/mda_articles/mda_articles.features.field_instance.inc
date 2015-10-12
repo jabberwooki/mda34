@@ -40,6 +40,12 @@ function mda_articles_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'sidebar_item' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -122,6 +128,12 @@ function mda_articles_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 18,
       ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -167,6 +179,12 @@ function mda_articles_field_default_field_instances() {
         ),
         'type' => 'scald_col_4',
         'weight' => 1,
+      ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -243,6 +261,12 @@ function mda_articles_field_default_field_instances() {
         'type' => 'title',
         'weight' => 3,
       ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -312,6 +336,12 @@ function mda_articles_field_default_field_instances() {
         ),
         'type' => 'title',
         'weight' => 4,
+      ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -383,6 +413,12 @@ function mda_articles_field_default_field_instances() {
         'type' => 'title',
         'weight' => 1,
       ),
+      'sidebar_item' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -452,6 +488,12 @@ function mda_articles_field_default_field_instances() {
         ),
         'type' => 'title',
         'weight' => 2,
+      ),
+      'sidebar_item' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',

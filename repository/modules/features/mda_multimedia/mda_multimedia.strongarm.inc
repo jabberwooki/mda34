@@ -13,6 +13,55 @@ function mda_multimedia_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'fb_likebox_height';
+  $strongarm->value = '500';
+  $export['fb_likebox_height'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fb_likebox_hide_header';
+  $strongarm->value = '0';
+  $export['fb_likebox_hide_header'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fb_likebox_show_faces';
+  $strongarm->value = '1';
+  $export['fb_likebox_show_faces'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fb_likebox_stream';
+  $strongarm->value = '0';
+  $export['fb_likebox_stream'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fb_likebox_title';
+  $strongarm->value = 'Notre page Facebook';
+  $export['fb_likebox_title'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fb_likebox_url';
+  $strongarm->value = 'https://www.facebook.com/mda34pocketfilm';
+  $export['fb_likebox_url'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fb_likebox_width';
+  $strongarm->value = '360';
+  $export['fb_likebox_width'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_scald_atom__audio';
   $strongarm->value = array(
     'view_modes' => array(
