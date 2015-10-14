@@ -135,7 +135,7 @@ function mda_radio_strongarm() {
           ),
           'sidebar_item' => array(
             'weight' => '1',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
         ),
       ),
