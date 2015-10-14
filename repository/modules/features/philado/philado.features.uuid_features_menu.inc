@@ -45,19 +45,20 @@ function philado_menu_default_uuid_features_menu() {
     'router_path' => 'eform/submit/%',
     'link_title' => 'Contact',
     'options' => array(
+      'domain_menu_access' => array(
+        'hide' => array(
+          'd4' => 'd4',
+          'd6' => 'd6',
+        ),
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_contact:eform/submit/contact',
       'attributes' => array(),
       'item_attributes' => array(
         'id' => '',
         'class' => '',
         'style' => '',
       ),
-      'domain_menu_access' => array(
-        'hide' => array(
-          'd4' => 'd4',
-        ),
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_contact:eform/submit/contact',
     ),
     'module' => 'menu',
     'hidden' => 0,

@@ -25,7 +25,6 @@ features[fe_block_settings][] = views-philado-block_1
 features[fe_block_settings][] = views-philado-block_2
 features[fe_block_settings][] = views-slides-block_1
 features[features_api][] = api:2
-features[menu_links][] = main-menu_philado:http://philado.mda34.org
 features[uuid_features_menu][] = 30b982e5-ceae-44c9-ad37-6e935cd27ebd
 features[uuid_features_menu][] = 8e754fc0-a04c-42fa-b54f-870df0a9210a
 features[views_view][] = philado

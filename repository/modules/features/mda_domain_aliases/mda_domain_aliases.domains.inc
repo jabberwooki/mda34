@@ -94,6 +94,31 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'philado_mda34_org',
     ),
+    'www.philado.korora.fr' => array(
+      'pattern' => 'www.philado.korora.fr',
+      'redirect' => 0,
+      'machine_name' => 'philado_mda34_org',
+    ),
+    'www.philado.mda34.bac' => array(
+      'pattern' => 'www.philado.mda34.bac',
+      'redirect' => 0,
+      'machine_name' => 'philado_mda34_org',
+    ),
+    'www.philado.mda34.rec' => array(
+      'pattern' => 'www.philado.mda34.rec',
+      'redirect' => 0,
+      'machine_name' => 'philado_mda34_org',
+    ),
+    'www.philado.mda34.dev' => array(
+      'pattern' => 'www.philado.mda34.dev',
+      'redirect' => 0,
+      'machine_name' => 'philado_mda34_org',
+    ),
+    'www.philado.mda34.prod.korora.fr' => array(
+      'pattern' => 'www.philado.mda34.prod.korora.fr',
+      'redirect' => 0,
+      'machine_name' => 'philado_mda34_org',
+    ),
   );
   $domain_aliases['radio_mda34_org'] = array(
     'radio.mda34.dev' => array(
