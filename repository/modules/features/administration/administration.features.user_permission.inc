@@ -136,14 +136,8 @@ function administration_user_default_permissions() {
   $permissions['display EU Cookie Compliance popup'] = array(
     'name' => 'display EU Cookie Compliance popup',
     'roles' => array(
-      'admin philado' => 'admin philado',
-      'administrateur' => 'administrateur',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
-      'equipe mda' => 'equipe mda',
-      'equipe philado' => 'equipe philado',
-      'professionnel' => 'professionnel',
-      'superadmin' => 'superadmin',
     ),
     'module' => 'eu_cookie_compliance',
   );
