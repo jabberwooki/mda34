@@ -1815,6 +1815,7 @@ body.domain-ados-mda34-org #block-views-multimedia-block-last-video .view-header
 body.domain-reseau-pro-mda34-org #block-views-multimedia-block-last-video .view-header a{background:url(../images/arrow-violet.png) 100% 50% no-repeat}
 body.domain-radio-mda34-org #block-views-multimedia-block-last-video .view-header a{background:url(../images/arrow-blue.png) 100% 50% no-repeat}
 body.domain-ados-mda34-org .block.block-views h3{color:#f78c26}
+.sc{display:none}
 .footer{margin-top:45px;padding-top:14px;padding-bottom:36px;border-top:1px solid #E5E5E5}
 #main-footer{background:url(../images/bg_header.jpg) 50% 0 no-repeat}
 .footer-center{margin:0 auto}
