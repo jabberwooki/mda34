@@ -15,6 +15,7 @@ function administration_default_fe_block_settings() {
   $export['entityform_block-pre_inscription_pocket_film'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'pre_inscription_pocket_film',
     'module' => 'entityform_block',
     'node_types' => array(),
@@ -34,6 +35,8 @@ function administration_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;

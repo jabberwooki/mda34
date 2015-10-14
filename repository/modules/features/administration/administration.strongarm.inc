@@ -106,7 +106,7 @@ function administration_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'eu_cookie_compliance_domain';
-  $strongarm->value = 'mda34.org';
+  $strongarm->value = '';
   $export['eu_cookie_compliance_domain'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -120,27 +120,35 @@ function administration_strongarm() {
     'popup_agree_button_message' => 'J\'accepte',
     'popup_disagree_button_message' => 'Non, plus d\'infos',
     'popup_info' => array(
-      'value' => '<h2>Nous utilisons des cookies sur ce site pour améliorer votre expérience d\'utilisateur</h2><p>En cliquant sur un lien sur cette page, vous donnez votre consentement pour nous de mettre les cookies.</p>',
-      'format' => 'plain_text',
+      'value' => '<div>Nous utilisons des cookies sur ce site pour améliorer votre expérience d\'utilisateur. En cliquant sur "j\'accepte", vous nous donnez votre consentement.</div>
+',
+      'format' => 'full_html',
     ),
     'popup_agreed_enabled' => 0,
     'popup_hide_agreed' => 0,
     'popup_find_more_button_message' => 'Plus d\'infos',
     'popup_hide_button_message' => 'Masquer',
     'popup_agreed' => array(
-      'value' => '<h2>Merci d\'avoir accepter les cookies</h2><p>Vous pouvez maintenant cacher ce message ou en savoir plus sur les cookies.</p>',
-      'format' => 'plain_text',
+      'value' => '<div>Merci d\'avoir accepter les cookies. Vous pouvez maintenant cacher ce message ou en savoir plus sur les cookies.</div>
+',
+      'format' => 'full_html',
     ),
-    'popup_link' => '/contact',
-    'popup_link_new_window' => 0,
-    'popup_height' => '',
+    'popup_link' => 'content/mentions-legales',
+    'popup_link_new_window' => 1,
+    'popup_height' => '50',
     'popup_width' => '100%',
     'popup_delay' => '1',
-    'popup_bg_hex' => 'a3a3a3',
+    'popup_bg_hex' => '1c1c1c',
     'popup_text_hex' => 'ffffff',
     'domains_option' => '0',
     'domains_list' => 'http://mda34.bac
-http://www.mda34.bac',
+http://www.mda34.bac
+http://mda34.org
+http://www.mda34.org
+http://ados.mda34.org
+http://parents.mda34.org
+http://reseau-pro.mda34.org
+',
     'exclude_paths' => '',
   );
   $export['eu_cookie_compliance_fr'] = $strongarm;
@@ -5151,7 +5159,7 @@ http://www.mda34.bac',
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1444314291;
+  $strongarm->value = 1444832856;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

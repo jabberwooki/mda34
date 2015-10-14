@@ -358,7 +358,7 @@ function mda_radio_views_default_views() {
   /* Display: Bloc colonne droite */
   $handler = $view->new_display('block', 'Bloc colonne droite', 'block_sidebar');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Radio';
+  $handler->display->display_options['title'] = 'Dernière émission radio';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -616,8 +616,9 @@ function mda_radio_views_default_views() {
     t('Bloc dernière émission'),
     t('Lire la suite'),
     t('Bloc colonne droite'),
-    t('Radio'),
+    t('Dernière émission radio'),
     t('Accueil portail ados'),
+    t('Radio'),
     t('Accueil portail pros'),
   );
   $export['radio_programmes'] = $view;

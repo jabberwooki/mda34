@@ -28,7 +28,7 @@ function mda_domains_domain_default_domains() {
     'machine_name' => 'parents_mda34_org',
   );
   $domains['philado_mda34_org'] = array(
-    'subdomain' => 'philado.mda34.org',
+    'subdomain' => 'www.philado.org',
     'sitename' => 'Réseau PHILADO',
     'scheme' => 'http',
     'valid' => 1,

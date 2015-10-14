@@ -52,6 +52,11 @@ function kcore_menu_default_uuid_features_menu() {
       'domain_menu_access' => array(
         'show' => array(
           'd1' => 'd1',
+          'd2' => 'd2',
+          'd3' => 'd3',
+          'd4' => 'd4',
+          'd5' => 'd5',
+          'd6' => 'd6',
         ),
       ),
       'alter' => TRUE,
@@ -182,18 +187,20 @@ function kcore_menu_default_uuid_features_menu() {
   // Exported menu link: af907ce2-4174-471c-a55e-e08e15142773
   $menu_uuid_links['af907ce2-4174-471c-a55e-e08e15142773'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'http://philado.mda34.org',
+    'link_path' => 'http://www.philado.org',
     'router_path' => '',
     'link_title' => 'Philado',
     'options' => array(
       'domain_menu_access' => array(
+        'show' => array(
+          'd6' => 'd6',
+        ),
         'hide' => array(
           'd1' => 'd1',
           'd2' => 'd2',
           'd3' => 'd3',
           'd4' => 'd4',
           'd5' => 'd5',
-          'd6' => 'd6',
         ),
       ),
       'alter' => TRUE,

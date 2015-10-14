@@ -145,7 +145,14 @@ function mda_multimedia_default_scald_context_config() {
   );
   $context_config->player = array(
     'audio' => array(
-      '*' => 'default',
+      '*' => 'audiojs',
+      'settings' => array(
+        'presets' => '',
+        'audiojs_style' => 'default',
+        'audiojs_preload' => 1,
+        'audiojs_autoplay' => 0,
+        'audiojs_loop' => 0,
+      ),
     ),
     'file' => array(
       '*' => 'default',
@@ -202,6 +209,13 @@ function mda_multimedia_default_scald_context_config() {
   $context_config->player = array(
     'audio' => array(
       '*' => 'default',
+      'settings' => array(
+        'presets' => '',
+        'audiojs_style' => 'mini',
+        'audiojs_preload' => 1,
+        'audiojs_autoplay' => 0,
+        'audiojs_loop' => 0,
+      ),
     ),
     'file' => array(
       '*' => 'default',
@@ -258,6 +272,13 @@ function mda_multimedia_default_scald_context_config() {
   $context_config->player = array(
     'audio' => array(
       '*' => 'default',
+      'settings' => array(
+        'presets' => '',
+        'audiojs_style' => 'default',
+        'audiojs_preload' => 0,
+        'audiojs_autoplay' => 0,
+        'audiojs_loop' => 0,
+      ),
     ),
     'file' => array(
       '*' => 'default',
@@ -314,6 +335,13 @@ function mda_multimedia_default_scald_context_config() {
   $context_config->player = array(
     'audio' => array(
       '*' => 'default',
+      'settings' => array(
+        'presets' => '',
+        'audiojs_style' => 'mini',
+        'audiojs_preload' => 1,
+        'audiojs_autoplay' => 0,
+        'audiojs_loop' => 0,
+      ),
     ),
     'file' => array(
       '*' => 'default',
@@ -369,7 +397,14 @@ function mda_multimedia_default_scald_context_config() {
   );
   $context_config->player = array(
     'audio' => array(
-      '*' => 'default',
+      '*' => 'audiojs',
+      'settings' => array(
+        'presets' => '',
+        'audiojs_style' => 'none',
+        'audiojs_preload' => 0,
+        'audiojs_autoplay' => 0,
+        'audiojs_loop' => 0,
+      ),
     ),
     'file' => array(
       '*' => 'default',
@@ -425,7 +460,14 @@ function mda_multimedia_default_scald_context_config() {
   );
   $context_config->player = array(
     'audio' => array(
-      '*' => 'default',
+      '*' => 'audiojs',
+      'settings' => array(
+        'presets' => '',
+        'audiojs_style' => 'none',
+        'audiojs_preload' => 0,
+        'audiojs_autoplay' => 0,
+        'audiojs_loop' => 0,
+      ),
     ),
     'file' => array(
       '*' => 'default',
@@ -481,7 +523,14 @@ function mda_multimedia_default_scald_context_config() {
   );
   $context_config->player = array(
     'audio' => array(
-      '*' => 'default',
+      '*' => 'audiojs',
+      'settings' => array(
+        'presets' => '',
+        'audiojs_style' => 'none',
+        'audiojs_preload' => 0,
+        'audiojs_autoplay' => 0,
+        'audiojs_loop' => 0,
+      ),
     ),
     'file' => array(
       '*' => 'default',
@@ -529,6 +578,13 @@ function mda_multimedia_default_scald_context_config() {
   $context_config->player = array(
     'audio' => array(
       '*' => 'default',
+      'settings' => array(
+        'presets' => '',
+        'audiojs_style' => 'default',
+        'audiojs_preload' => 1,
+        'audiojs_autoplay' => 0,
+        'audiojs_loop' => 0,
+      ),
     ),
     'file' => array(
       '*' => 'default',
@@ -641,6 +697,13 @@ function mda_multimedia_default_scald_context_config() {
   $context_config->player = array(
     'audio' => array(
       '*' => 'default',
+      'settings' => array(
+        'presets' => '',
+        'audiojs_style' => 'mini',
+        'audiojs_preload' => 1,
+        'audiojs_autoplay' => 0,
+        'audiojs_loop' => 0,
+      ),
     ),
     'file' => array(
       '*' => 'default',

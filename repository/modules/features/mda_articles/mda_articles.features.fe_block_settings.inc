@@ -15,6 +15,7 @@ function mda_articles_default_fe_block_settings() {
   $export['views-articles-block_1'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'articles-block_1',
     'module' => 'views',
     'node_types' => array(),
@@ -34,6 +35,8 @@ function mda_articles_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;

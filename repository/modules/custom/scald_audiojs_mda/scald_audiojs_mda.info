@@ -1,0 +1,8 @@
+name = Scald audio.js - MDA version
+description = Allows using the audio.js library as an audio player.
+package = Scald Providers
+core = 7.x
+dependencies[] = scald
+dependencies[] = audio_js
+version = "7.x-1.0"
+

@@ -1,3 +1,10 @@
+MDA34 1.2.1, 2015-10-14
+-----------------------
+- Mise en ligne ccokies
+- Player audio
+- bloc aganda aleatoire
+
+
 MDA34 1.2.0, 2015-10-13
 -----------------------
 Mise en ligne de la page Poket film

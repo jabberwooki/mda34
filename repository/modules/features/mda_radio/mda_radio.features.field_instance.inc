@@ -408,7 +408,6 @@ function mda_radio_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'atom_reference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => 0,
           'override' => 0,
         ),
