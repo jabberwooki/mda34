@@ -19,7 +19,6 @@ function mda_faqs_menu_default_uuid_features_menu() {
     'options' => array(
       'domain_menu_access' => array(
         'show' => array(
-          'd1' => 'd1',
           'd2' => 'd2',
           'd3' => 'd3',
         ),

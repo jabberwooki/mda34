@@ -52,6 +52,11 @@ function kcore_menu_default_uuid_features_menu() {
       'domain_menu_access' => array(
         'show' => array(
           'd1' => 'd1',
+          'd2' => 'd2',
+          'd3' => 'd3',
+          'd4' => 'd4',
+          'd5' => 'd5',
+          'd6' => 'd6',
         ),
       ),
       'alter' => TRUE,
