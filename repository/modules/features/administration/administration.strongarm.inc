@@ -145,9 +145,9 @@ function administration_strongarm() {
 http://www.mda34.bac
 http://mda34.org
 http://www.mda34.org
-http://ados.mda34.bac
-http://parents.mda34.bac
-http://reseau-pro.mda34.bac
+http://ados.mda34.org
+http://parents.mda34.org
+http://reseau-pro.mda34.org
 ',
     'exclude_paths' => '',
   );
