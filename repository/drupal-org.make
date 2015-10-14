@@ -210,7 +210,7 @@ projects[filefield_sources][subdir] = contrib
 projects[filefield_sources][version] = "1.9"
 
 projects[filefield_sources_scald][subdir] = contrib
-projects[filefield_sources_scald][version] = "1.0-rc2"
+projects[filefield_sources_scald][version] = "1.1"
 
 projects[plupload][subdir] = contrib
 projects[plupload][version] = "1.7"
@@ -247,7 +247,7 @@ libraries[geocomplete][destination] = "libraries"
 
 ;--- Events -------------------------------------------------------------------
 projects[registration][subdir] = contrib
-projects[registration][version] = "1.4"
+projects[registration][version] = "1.6"
 
 ;--- Newsletter ---------------------------------------------------------------
 projects[mailchimp][subdir] = contrib
@@ -261,7 +261,7 @@ projects[views_isotope][subdir] = contrib
 projects[views_isotope][version] = "1.0-beta2"
 
 projects[sharethis][subdir] = contrib
-projects[sharethis][version] = "2.10"
+projects[sharethis][version] = "2.12"
 
 projects[menu_attributes][subdir] = contrib
 projects[menu_attributes][version] = "1.0-rc3"
