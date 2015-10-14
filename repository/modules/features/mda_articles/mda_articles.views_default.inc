@@ -101,6 +101,8 @@ function mda_articles_views_default_views() {
 
   /* Display: Liste */
   $handler = $view->new_display('page', 'Liste', 'page_articles_list');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Présentation';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -189,6 +191,7 @@ function mda_articles_views_default_views() {
     t('Desc'),
     t('terme'),
     t('Liste'),
+    t('Présentation'),
     t('Bloc'),
     t('[title]'),
   );
