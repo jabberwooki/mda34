@@ -96,6 +96,15 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'video' => 'video',
   );
+  /* Critère de filtrage: Atomes : Tags (scald_tags) */
+  $handler->display->display_options['filters']['scald_tags_tid']['id'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['scald_tags_tid']['table'] = 'field_data_scald_tags';
+  $handler->display->display_options['filters']['scald_tags_tid']['field'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['scald_tags_tid']['value'] = array(
+    122 => '122',
+  );
+  $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
 
   /* Display: Lauréat */
   $handler = $view->new_display('block', 'Lauréat', 'laureat');
