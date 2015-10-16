@@ -495,8 +495,8 @@ function mda_multimedia_default_scald_context_config() {
     ),
   );
   $context_config->data = array(
-    'width' => '',
-    'height' => '',
+    'width' => '750',
+    'height' => '425',
   );
   $export['scald_col_8'] = $context_config;
 

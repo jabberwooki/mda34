@@ -37,6 +37,12 @@ function mda_articles_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-multimedia-block_3' => array(
+          'module' => 'views',
+          'delta' => 'multimedia-block_3',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'fb_likebox-0' => array(
           'module' => 'fb_likebox',
           'delta' => '0',
