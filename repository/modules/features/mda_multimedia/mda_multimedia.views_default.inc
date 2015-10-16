@@ -98,12 +98,12 @@ function mda_multimedia_views_default_views() {
   );
 
   /* Display: Lauréat */
-  $handler = $view->new_display('block', 'Lauréat', 'block_1');
+  $handler = $view->new_display('block', 'Lauréat', 'laureat');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Les lauréats 2015';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -113,7 +113,7 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['fields']['representation']['field'] = 'representation';
   $handler->display->display_options['fields']['representation']['label'] = '';
   $handler->display->display_options['fields']['representation']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['representation']['context'] = 'scald_col_4';
+  $handler->display->display_options['fields']['representation']['context'] = 'grille';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Critère de tri: Global : Au hasard */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
@@ -137,6 +137,7 @@ function mda_multimedia_views_default_views() {
   );
   $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
   $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
+  $handler->display->display_options['block_description'] = 'laureat';
 
   /* Display: Videos */
   $handler = $view->new_display('page', 'Videos', 'page_1');
@@ -212,7 +213,6 @@ function mda_multimedia_views_default_views() {
   /* Display: Teaser Poket Film */
   $handler = $view->new_display('block', 'Teaser Poket Film', 'block_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Poket Film 2016';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -274,10 +274,10 @@ function mda_multimedia_views_default_views() {
     t('<a href="/multimedia/videos">Toutes nos videos</a>'),
     t('Lauréat'),
     t('Les lauréats 2015'),
+    t('laureat'),
     t('Videos'),
     t('Affiche'),
     t('Teaser Poket Film'),
-    t('Poket Film 2016'),
   );
   $export['multimedia'] = $view;
 
