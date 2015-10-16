@@ -42,11 +42,11 @@ function administration_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'entityform_block-pre_inscription_pocket_film' => array(
-          'module' => 'entityform_block',
-          'delta' => 'pre_inscription_pocket_film',
+        'fb_likebox-0' => array(
+          'module' => 'fb_likebox',
+          'delta' => '0',
           'region' => 'sidebar_second',
-          'weight' => '11',
+          'weight' => '0',
         ),
       ),
     ),

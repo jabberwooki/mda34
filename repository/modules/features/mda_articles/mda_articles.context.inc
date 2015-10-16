@@ -19,18 +19,12 @@ function mda_articles_context_default_contexts() {
   $context->conditions = array(
     'domain' => array(
       'values' => array(
-        1 => 1,
         2 => 2,
       ),
     ),
     'path' => array(
       'values' => array(
         'rubrique/*' => 'rubrique/*',
-      ),
-    ),
-    'sitewide' => array(
-      'values' => array(
-        1 => 1,
       ),
     ),
   );
@@ -43,17 +37,11 @@ function mda_articles_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
-        'fb_likebox-0' => array(
-          'module' => 'fb_likebox',
-          'delta' => '0',
-          'region' => 'sidebar_second',
-          'weight' => '-9',
-        ),
-        'views-multimedia-block_1' => array(
+        'views-multimedia-laureat' => array(
           'module' => 'views',
-          'delta' => 'multimedia-block_1',
+          'delta' => 'multimedia-laureat',
           'region' => 'sidebar_second',
-          'weight' => '10',
+          'weight' => '1',
         ),
       ),
     ),
