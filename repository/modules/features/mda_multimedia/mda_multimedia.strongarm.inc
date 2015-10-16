@@ -471,13 +471,16 @@ function mda_multimedia_strongarm() {
         'custom_settings' => TRUE,
       ),
       'scald_col_2' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'scald_col_12' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'scald_large_square' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
+      ),
+      'grille' => array(
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -519,6 +522,22 @@ function mda_multimedia_strongarm() {
           'scald_col_8' => array(
             'weight' => '0',
             'visible' => TRUE,
+          ),
+          'scald_col_2' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'scald_col_12' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'scald_large_square' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'grille' => array(
+            'weight' => '1',
+            'visible' => FALSE,
           ),
         ),
       ),
@@ -583,6 +602,14 @@ function mda_multimedia_strongarm() {
     'scald_large_square' => array(
       'name' => 'scald_large_square',
       'title' => 'scald-large-square',
+      'description' => '',
+      'render_language' => 'XHTML',
+      'parseable' => TRUE,
+      'formats' => array(),
+    ),
+    'grille' => array(
+      'name' => 'grille',
+      'title' => 'Grille',
       'description' => '',
       'render_language' => 'XHTML',
       'parseable' => TRUE,

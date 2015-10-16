@@ -96,14 +96,23 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'video' => 'video',
   );
+  /* Critère de filtrage: Atomes : Tags (scald_tags) */
+  $handler->display->display_options['filters']['scald_tags_tid']['id'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['scald_tags_tid']['table'] = 'field_data_scald_tags';
+  $handler->display->display_options['filters']['scald_tags_tid']['field'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['scald_tags_tid']['value'] = array(
+    122 => '122',
+  );
+  $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
 
   /* Display: Lauréat */
-  $handler = $view->new_display('block', 'Lauréat', 'block_1');
+  $handler = $view->new_display('block', 'Lauréat', 'laureat');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Les lauréats 2015';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -113,7 +122,7 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['fields']['representation']['field'] = 'representation';
   $handler->display->display_options['fields']['representation']['label'] = '';
   $handler->display->display_options['fields']['representation']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['representation']['context'] = 'scald_col_4';
+  $handler->display->display_options['fields']['representation']['context'] = 'grille';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Critère de tri: Global : Au hasard */
   $handler->display->display_options['sorts']['random']['id'] = 'random';
@@ -137,6 +146,7 @@ function mda_multimedia_views_default_views() {
   );
   $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
   $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
+  $handler->display->display_options['block_description'] = 'laureat';
 
   /* Display: Videos */
   $handler = $view->new_display('page', 'Videos', 'page_1');
@@ -208,6 +218,48 @@ function mda_multimedia_views_default_views() {
   );
   $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
   $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
+
+  /* Display: Teaser Poket Film */
+  $handler = $view->new_display('block', 'Teaser Poket Film', 'block_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Champ: Atome : Représentation */
+  $handler->display->display_options['fields']['representation']['id'] = 'representation';
+  $handler->display->display_options['fields']['representation']['table'] = 'scald_atoms';
+  $handler->display->display_options['fields']['representation']['field'] = 'representation';
+  $handler->display->display_options['fields']['representation']['label'] = '';
+  $handler->display->display_options['fields']['representation']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['representation']['context'] = 'scald_col_8';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Critère de filtrage: Atome : Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'scald_atoms';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'video' => 'video',
+  );
+  /* Critère de filtrage: Atomes : Tags (scald_tags) */
+  $handler->display->display_options['filters']['scald_tags_tid']['id'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['scald_tags_tid']['table'] = 'field_data_scald_tags';
+  $handler->display->display_options['filters']['scald_tags_tid']['field'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['scald_tags_tid']['value'] = array(
+    290 => '290',
+  );
+  $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
   $translatables['multimedia'] = array(
     t('Master'),
     t('Multimedia'),
@@ -231,8 +283,10 @@ function mda_multimedia_views_default_views() {
     t('<a href="/multimedia/videos">Toutes nos videos</a>'),
     t('Lauréat'),
     t('Les lauréats 2015'),
+    t('laureat'),
     t('Videos'),
     t('Affiche'),
+    t('Teaser Poket Film'),
   );
   $export['multimedia'] = $view;
 

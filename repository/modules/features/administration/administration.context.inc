@@ -33,20 +33,27 @@ function administration_context_default_contexts() {
         'node_form' => '1',
       ),
     ),
-    'path' => array(
-      'values' => array(
-        'rubrique/pocket-film' => 'rubrique/pocket-film',
-      ),
-    ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'fb_likebox-0' => array(
+          'module' => 'fb_likebox',
+          'delta' => '0',
+          'region' => 'sidebar_second',
+          'weight' => '0',
+        ),
+        'views-multimedia-laureat' => array(
+          'module' => 'views',
+          'delta' => 'multimedia-laureat',
+          'region' => 'sidebar_second',
+          'weight' => '1',
+        ),
         'entityform_block-pre_inscription_pocket_film' => array(
           'module' => 'entityform_block',
           'delta' => 'pre_inscription_pocket_film',
           'region' => 'sidebar_second',
-          'weight' => '11',
+          'weight' => '2',
         ),
       ),
     ),

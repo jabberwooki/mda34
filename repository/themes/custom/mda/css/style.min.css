@@ -1726,8 +1726,10 @@ body.domain-radio-mda34-org #main-top-menu>ul>li>a:hover{color:#fff;background-c
 aside.col-sm-4 h3.block-title{font-size:1.2em;padding-bottom:8px;font-weight:700}
 .views-field-field-address-locality>.field-content{padding-left:15px;font-weight:700}
 .bg-block{background:url(../images/bg_blocks.gif)}
-.block .img-title-wrapper h3,.block .img-title-wrapper h4{margin:0;background-color:#000;text-transform:none;bottom:0}
 .domain-ados-mda34-org .block-social-networks h3.block-title{color:#fff}
+.domain-ados-mda34-org #block-views-multimedia-laureat{margin:1em 0 0}
+.domain-ados-mda34-org #block-views-multimedia-laureat .views-row{border:0 solid red;float:left;margin:0 .5em;width:75pt}
+.block .img-title-wrapper h3,.block .img-title-wrapper h4{margin:0;background-color:#000;text-transform:none;bottom:0}
 .domain-parents-mda34-org h3.block-title{color:#32903f}
 .block.block-views{padding-bottom:10px;border:0}
 .block.block-views h3{font-weight:700;letter-spacing:-.02em}
