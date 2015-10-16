@@ -38,7 +38,7 @@ function administration_default_entityform_type() {
       "preview_page" : 0,
       "submission_page_title" : "Confirmation de votre demande de pre-inscription au Pocket Film 2016",
       "submission_text" : {
-        "value" : "\\u003Cp\\u003EVotre demande de pre-inscription est bien enrgistr\\u00e9e, vous allez recevoir un email de confirmation de cette demande.\\u003Cbr \\/\\u003E\\r\\nNous vous recontacterons prochainement.\\u003C\\/p\\u003E\\r\\n\\r\\n\\u003Cp\\u003E\\u003Ca href=\\u0022http:\\/\\/rubrique\\/pocket-film\\/\\u0022\\u003ERetour \\u00e0 la page pocket film 2016\\u003C\\/a\\u003E\\u003C\\/p\\u003E\\r\\n\\r\\n\\u003Cp\\u003E\\u0026nbsp;\\u003C\\/p\\u003E\\r\\n",
+        "value" : "\\u003Cp\\u003EMerci pour votre inscription.\\u003Cbr \\/\\u003E\\r\\nNous vous recontacterons prochainement.\\u003C\\/p\\u003E\\r\\n\\r\\n\\u003Cp\\u003E\\u003Ca href=\\u0022http:\\/\\/rubrique\\/pocket-film\\/\\u0022\\u003ERetour \\u00e0 la page pocket film 2016\\u003C\\/a\\u003E\\u003C\\/p\\u003E\\r\\n\\r\\n\\u003Cp\\u003E\\u0026nbsp;\\u003C\\/p\\u003E\\r\\n",
         "format" : "full_html"
       },
       "submission_show_submitted" : 1,
