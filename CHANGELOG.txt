@@ -1,3 +1,9 @@
+MDA34 1.2.2, 2015-10-16
+-----------------------
+- Page pocket film bloc
+- formulaire inscription
+- Filtre chaine video ados
+
 MDA34 1.2.1, 2015-10-14
 -----------------------
 - Mise en ligne ccokies
