@@ -165,7 +165,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'weight' => 11,
       ),
       'full' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
