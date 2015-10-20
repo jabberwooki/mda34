@@ -107,7 +107,7 @@ function mda_resources_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '10',
+            'weight' => '15',
             'visible' => TRUE,
           ),
           'teaser' => array(
