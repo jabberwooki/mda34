@@ -70,11 +70,16 @@ padding: 5px 15px 20px;
       }
      
     div.node img.file-icon {
-    margin: 0.15em 0.25em;
+    margin: 0;
+    float: left;
     }
 
-	.field.field-name-field-themes {
-    margin-bottom: 1em;
+	.field.field-name-field-themes,
+	.field.field-name-field-resource-type,
+	.field-name-field-resource-authors,
+	.field-type-taxonomy-term-reference,
+	.field-name-field-isbn {
+     margin: 0.95em 0em;
     }
 
   .sharethis-buttons{
@@ -82,26 +87,36 @@ padding: 5px 15px 20px;
     min-width: 270px;
     margin-bottom: 5px;
   }
-  .field-name-body{
-    clear: left;
-    margin-top: 20px;
-  }
-  .group-practical-infos{
-    float: right;
-    margin-left: 1em;
-    margin-bottom: 1.25em;
-    margin-right: 5em;
-    margin-top: 1.25em;
-    min-width: 33%;
-    @media print and (max-width:@screen-sm){
-      width: 98%;
-      float: none;
-    }
-  }
-  .field-type-taxonomy-term-reference .field-item{
-    float: left;
-    margin-right: 15px;
-  }
 
+ 
+  span.auteurs {
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background-color: #F5F5F5;
+	padding: 6px;
+	font-weight:bold;
+	}
+
+	 
+  
+	span.tag {
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background-color: #F5F5F5;
+	padding: 6px;
+	font-weight:bold;
+	}
+  
+	div.node img {
+	max-width: 40%;
+	float: right;
+    margin-right: 0em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+	}
+
+  
 }
 
