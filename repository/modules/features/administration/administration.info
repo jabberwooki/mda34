@@ -31,6 +31,7 @@ dependencies[] = rules
 dependencies[] = rules_admin
 dependencies[] = scald_dnd_library
 dependencies[] = strongarm
+dependencies[] = taxonomy_formatter
 dependencies[] = text
 dependencies[] = uuid
 dependencies[] = uuid_features_menu

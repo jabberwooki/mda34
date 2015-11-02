@@ -5159,7 +5159,7 @@ http://reseau-pro.mda34.org
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1444832856;
+  $strongarm->value = 1445346448;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

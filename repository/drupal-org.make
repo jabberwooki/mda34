@@ -293,3 +293,9 @@ projects[fb_likebox][version] = "2.2"
 projects[patterns][subdir] = contrib
 projects[patterns][version] = "2.2"
 
+projects[taxonomy_formatter][subdir] = contrib
+projects[patterns][version] = "1.4"
+
+
+
+
