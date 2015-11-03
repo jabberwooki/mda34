@@ -253,7 +253,7 @@ projects[registration][version] = "1.6"
 projects[mailchimp][subdir] = contrib
 projects[mailchimp][version] = "3.3"
 
-;--- Others -------------------------------------------------------------------
+;--- Others --------------------------------------------------------------------
 projects[office_hours][subdir] = contrib
 projects[office_hours][version] = "1.4"
 
@@ -294,4 +294,4 @@ projects[patterns][subdir] = contrib
 projects[patterns][version] = "2.2"
 
 projects[taxonomy_formatter][subdir] = contrib
-projects[patterns][version] = "1.4"
+projects[taxonomy_formatter][version] = "1.4"
