@@ -1,3 +1,7 @@
+MDA34 1.2.6, 2015-11-03
+-----------------------
+- Resolution probleme deploiement
+
 MDA34 1.2.5, 2015-11-02
 -----------------------
 - make toxonomy formatter
