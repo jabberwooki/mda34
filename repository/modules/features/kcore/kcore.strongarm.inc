@@ -149,14 +149,13 @@ function kcore_strongarm() {
   $strongarm->name = 'sharethis_node_types';
   $strongarm->value = array(
     'news' => 'news',
+    'article' => 'article',
     'radio_programme' => 'radio_programme',
     'event' => 'event',
     'faq' => 'faq',
     'resource' => 'resource',
     'structure' => 'structure',
-    'article' => 0,
     'slide' => 0,
-    'media_tester' => 0,
     'page' => 0,
   );
   $export['sharethis_node_types'] = $strongarm;
