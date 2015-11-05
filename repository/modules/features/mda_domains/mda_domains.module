@@ -22,9 +22,9 @@ function mda_domains_preprocess_menu_link(&$variables) {
 	// Exploding a www.philado.* url against 'mda34' won't work
 	// and will give an array containing a single entry.
 	// So we must explode it against 'philado'.
-//	if (sizeof($domain_parts) == 1) {
-//	  $domain_parts = explode('philado.', $current_domain['subdomain']);
-//	}
+	if (sizeof($domain_parts) == 1) {
+	  $domain_parts = explode('philado.', $current_domain['subdomain']);
+	}
 
 	// We change the menu link url only if we are not on a *.org domain.
 	if ($domain_parts[1] != 'org') {
