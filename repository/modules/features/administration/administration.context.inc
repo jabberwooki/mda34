@@ -30,7 +30,7 @@ function administration_context_default_contexts() {
         268 => 268,
       ),
       'options' => array(
-        'node_form' => '1',
+        'node_form' => '0',
       ),
     ),
   );
