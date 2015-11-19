@@ -64,33 +64,8 @@ function mda_domain_aliases_domain_alias_default_aliases() {
     ),
   );
   $domain_aliases['philado_mda34_org'] = array(
-    'philado.mda34.dev' => array(
-      'pattern' => 'philado.mda34.dev',
-      'redirect' => 0,
-      'machine_name' => 'philado_mda34_org',
-    ),
-    'philado.mda34.korora.fr' => array(
-      'pattern' => 'philado.mda34.korora.fr',
-      'redirect' => 0,
-      'machine_name' => 'philado_mda34_org',
-    ),
-    'philado.mda34.prod.korora.fr' => array(
-      'pattern' => 'philado.mda34.prod.korora.fr',
-      'redirect' => 0,
-      'machine_name' => 'philado_mda34_org',
-    ),
-    'philado.mda34.bac' => array(
-      'pattern' => 'philado.mda34.bac',
-      'redirect' => 0,
-      'machine_name' => 'philado_mda34_org',
-    ),
-    'www.philado.org' => array(
-      'pattern' => 'www.philado.org',
-      'redirect' => 0,
-      'machine_name' => 'philado_mda34_org',
-    ),
-    'philado.mda34.rec' => array(
-      'pattern' => 'philado.mda34.rec',
+    'www.philado.dev' => array(
+      'pattern' => 'www.philado.dev',
       'redirect' => 0,
       'machine_name' => 'philado_mda34_org',
     ),
@@ -99,23 +74,13 @@ function mda_domain_aliases_domain_alias_default_aliases() {
       'redirect' => 0,
       'machine_name' => 'philado_mda34_org',
     ),
-    'www.philado.mda34.bac' => array(
-      'pattern' => 'www.philado.mda34.bac',
+    'www.philado.bac' => array(
+      'pattern' => 'www.philado.bac',
       'redirect' => 0,
       'machine_name' => 'philado_mda34_org',
     ),
-    'www.philado.mda34.rec' => array(
-      'pattern' => 'www.philado.mda34.rec',
-      'redirect' => 0,
-      'machine_name' => 'philado_mda34_org',
-    ),
-    'www.philado.mda34.dev' => array(
-      'pattern' => 'www.philado.mda34.dev',
-      'redirect' => 0,
-      'machine_name' => 'philado_mda34_org',
-    ),
-    'www.philado.mda34.prod.korora.fr' => array(
-      'pattern' => 'www.philado.mda34.prod.korora.fr',
+    'www.philado.rec' => array(
+      'pattern' => 'www.philado.rec',
       'redirect' => 0,
       'machine_name' => 'philado_mda34_org',
     ),

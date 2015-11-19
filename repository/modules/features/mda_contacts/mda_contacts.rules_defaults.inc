@@ -23,7 +23,7 @@ function mda_contacts_default_rules_configuration() {
         { "mail" : {
             "to" : [ "entityform:field-contact-recipient" ],
             "subject" : "[Contact [entityform:field-contact-recipient] MDA34] [entityform:field-subject]",
-            "message" : "Envoy\\u00e9 par : [entityform:field-name-nickname]\\r\\nA : [entityform:field-contact-recipient]\\r\\n\\r\\n-------------------------------------------------------------\\r\\n\\r\\n[entityform:field-message]",
+            "message" : "Envoy\\u00e9 par : [entityform:field-name-nickname]\\r\\nEmail : [entityform:field-contact-email]\\r\\n\\r\\n-------------------------------------------------------------\\r\\n\\r\\n[entityform:field-message]",
             "from" : "[entityform:field-contact-email]",
             "language" : [ "" ]
           }

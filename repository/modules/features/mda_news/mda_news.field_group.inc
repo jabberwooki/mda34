@@ -21,11 +21,8 @@ function mda_news_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Conteneur Auteur Node / Réseaux sociaux',
-    'weight' => '0',
-    'children' => array(
-      0 => 'sharethis',
-      1 => 'submitted_by',
-    ),
+    'weight' => '10',
+    'children' => array(),
     'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Conteneur Auteur Node / Réseaux sociaux',

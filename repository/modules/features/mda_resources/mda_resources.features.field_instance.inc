@@ -463,7 +463,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 13,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -673,7 +673,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -748,7 +748,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
           'override' => 0,
         ),
         'type' => 'scald_col_8',
-        'weight' => 12,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',

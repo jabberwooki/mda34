@@ -82,7 +82,7 @@ function mda_news_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '8',
+            'weight' => '9',
             'visible' => TRUE,
           ),
         ),
@@ -92,7 +92,7 @@ function mda_news_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '1',
+            'weight' => '0',
             'visible' => TRUE,
           ),
         ),
@@ -167,6 +167,13 @@ function mda_news_strongarm() {
     'search_result' => 0,
     'diff_standard' => 0,
     'token' => 0,
+    'diapo_philado' => 0,
+    'block' => 0,
+    'last_item' => 0,
+    'list' => 0,
+    'sidebar_item' => 0,
+    'portal_slide' => 0,
+    'site_slide' => 0,
     'revision' => 0,
   );
   $export['sharethis_news_options'] = $strongarm;

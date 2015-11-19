@@ -17,6 +17,7 @@ function philado_menu_default_uuid_features_menu() {
     'router_path' => 'eform/submit/%',
     'link_title' => 'Contact',
     'options' => array(
+      'identifier' => 'menu-shortcuts_contact:eform/submit/contact',
       'attributes' => array(
         'class' => array(
           0 => 'link-shortcut-contact',
@@ -28,7 +29,12 @@ function philado_menu_default_uuid_features_menu() {
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'menu-shortcuts_contact:eform/submit/contact',
+      'domain_menu_access' => array(
+        'hide' => array(
+          'd4' => 'd4',
+        ),
+      ),
+      'alter' => TRUE,
     ),
     'module' => 'menu',
     'hidden' => 0,

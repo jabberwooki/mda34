@@ -8,13 +8,29 @@
  * Implements MODULE_preprocess_menu_link().
  */
 function mda_domains_preprocess_menu_link(&$variables) {
-	if (substr($variables['element']['#href'],0,4) == 'http') {
-		$current_domain = domain_get_domain();
-		$domain_parts = explode('mda34.', $current_domain['subdomain']);
-		if ($domain_parts[1] != 'org') {
-			$variables['element']['#href'] = str_replace('org', $domain_parts[1], $variables['element']['#href']);
-		}
+  // Links in main menu pointing to other MDA domains are hard coded
+  // in menu link edit form (admin/structure/menu/manage/main-menu/add).
+  // So, we must intercept these external links (such as http://ados.mda34.org)
+  // and change their TLD depending on the Drupal instance (dev, staging or prod).
+  // Examples, on a dev instance (http://www.mda34.dev):
+  // - The link to Parents site (http://parents.mda34.org) must be rewritten as http://parents.mda34.dev
+  // - The link to Philado site http://www.philado.org must be rewritten as http://www.philado.dev
+  if (substr($variables['element']['#href'],0,4) == 'http') {
+	$current_domain = domain_get_domain();
+	$domain_parts = explode('mda34.', $current_domain['subdomain']);
+
+	// Exploding a www.philado.* url against 'mda34' won't work
+	// and will give an array containing a single entry.
+	// So we must explode it against 'philado'.
+	if (sizeof($domain_parts) == 1) {
+	  $domain_parts = explode('philado.', $current_domain['subdomain']);
 	}
+
+	// We change the menu link url only if we are not on a *.org domain.
+	if ($domain_parts[1] != 'org') {
+	  $variables['element']['#href'] = str_replace('org', $domain_parts[1], $variables['element']['#href']);
+	}
+  }
 }
 
 /**
