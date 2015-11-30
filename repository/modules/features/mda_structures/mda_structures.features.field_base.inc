@@ -280,6 +280,7 @@ function mda_structures_field_default_field_bases() {
       'allowed_values' => array(
         0 => 'Est Hérault Montpellier',
         1 => 'Ouest Hérault Béziers',
+        2 => 'Bassin de Thau Sète',
       ),
       'allowed_values_function' => '',
       'profile2_private' => FALSE,
