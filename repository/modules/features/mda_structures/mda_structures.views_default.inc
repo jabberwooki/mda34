@@ -293,6 +293,7 @@ function mda_structures_views_default_views() {
     'all' => 'all',
     0 => '0',
     1 => '1',
+    2 => '2',
   );
   $handler->display->display_options['filters']['field_secteur_geo_value']['group'] = 1;
   $handler->display->display_options['filters']['field_secteur_geo_value']['exposed'] = TRUE;

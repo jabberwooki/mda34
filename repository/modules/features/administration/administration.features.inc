@@ -21,6 +21,52 @@ function administration_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function administration_default_entityform_type() {
   $items = array();
+  $items['canditature'] = entity_import('entityform_type', '{
+    "type" : "canditature",
+    "label" : "Canditature",
+    "data" : {
+      "draftable" : 0,
+      "draft_redirect_path" : "",
+      "draft_button_text" : "",
+      "draft_save_text" : { "value" : "", "format" : "full_html" },
+      "submit_button_text" : "",
+      "submit_confirm_msg" : "",
+      "your_submissions" : "",
+      "disallow_resubmit_msg" : "",
+      "delete_confirm_msg" : "",
+      "page_title_view" : "",
+      "preview_page" : 1,
+      "submission_page_title" : "",
+      "submission_text" : {
+        "value" : "\\u003Cp\\u003E\\u003Cem\\u003EVotre candidature a bien \\u00e9t\\u00e9 envoy\\u00e9, nous vous remercions de votre int\\u00e9r\\u00eat pour la Maison des adoslecents de l\\u0027H\\u00e9rault.\\u003Cbr \\/\\u003E\\r\\nUne r\\u00e9ponse vous sera communiquer par email apr\\u00e8s le 15 Janvier 2016.\\u003C\\/em\\u003E\\u003C\\/p\\u003E\\r\\n\\r\\n\\u003Cp\\u003E\\u003Cem\\u003EUne copie de votre candidature en ligne vous a \\u00e9t\\u00e9 adress\\u00e9 par email.\\u003C\\/em\\u003E\\u003C\\/p\\u003E\\r\\n\\r\\n\\u003Cp\\u003E\\u0026nbsp;\\u003C\\/p\\u003E\\r\\n",
+        "format" : "full_html"
+      },
+      "submission_show_submitted" : 1,
+      "submissions_view" : "default",
+      "user_submissions_view" : "default",
+      "form_status" : "ENTITYFORM_OPEN",
+      "roles" : {
+        "1" : "1",
+        "2" : "2",
+        "141037677" : "141037677",
+        "183916278" : "183916278",
+        "155963314" : "155963314",
+        "22875792" : "22875792",
+        "193262079" : "193262079",
+        "109177673" : "109177673"
+      },
+      "resubmit_action" : "new",
+      "redirect_path" : "",
+      "instruction_pre" : {
+        "value" : "\\u003Cp\\u003EPour postuler, veuiller remplir les champs suivants.\\u003C\\/p\\u003E\\r\\n",
+        "format" : "full_html"
+      },
+      "enable_block" : 0
+    },
+    "weight" : "0",
+    "rdf_mapping" : [],
+    "paths" : []
+  }');
   $items['pre_inscription_pocket_film'] = entity_import('entityform_type', '{
     "type" : "pre_inscription_pocket_film",
     "label" : "Pre-inscription pocket film",
