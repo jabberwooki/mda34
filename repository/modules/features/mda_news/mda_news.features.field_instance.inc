@@ -31,7 +31,7 @@ function mda_news_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -173,7 +173,7 @@ function mda_news_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'sdl_editor_representation',
-        'weight' => 5,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -233,7 +233,7 @@ function mda_news_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'sdl_editor_representation',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -293,7 +293,7 @@ function mda_news_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'sdl_editor_representation',
-        'weight' => 6,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -352,8 +352,8 @@ function mda_news_field_default_field_instances() {
           'link' => 0,
           'override' => 0,
         ),
-        'type' => 'full',
-        'weight' => 3,
+        'type' => 'scald_col_4',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -413,7 +413,7 @@ function mda_news_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'full',
-        'weight' => 7,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
