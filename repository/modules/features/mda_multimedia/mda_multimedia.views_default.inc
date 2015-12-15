@@ -43,6 +43,10 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relation: Atomes : Tags (scald_tags) */
+  $handler->display->display_options['relationships']['scald_tags_tid']['id'] = 'scald_tags_tid';
+  $handler->display->display_options['relationships']['scald_tags_tid']['table'] = 'field_data_scald_tags';
+  $handler->display->display_options['relationships']['scald_tags_tid']['field'] = 'scald_tags_tid';
   /* Champ: Atome : Identifiant Scald */
   $handler->display->display_options['fields']['sid']['id'] = 'sid';
   $handler->display->display_options['fields']['sid']['table'] = 'scald_atoms';
@@ -96,15 +100,12 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'video' => 'video',
   );
-  /* Critère de filtrage: Atomes : Tags (scald_tags) */
-  $handler->display->display_options['filters']['scald_tags_tid']['id'] = 'scald_tags_tid';
-  $handler->display->display_options['filters']['scald_tags_tid']['table'] = 'field_data_scald_tags';
-  $handler->display->display_options['filters']['scald_tags_tid']['field'] = 'scald_tags_tid';
-  $handler->display->display_options['filters']['scald_tags_tid']['value'] = array(
-    122 => '122',
-  );
-  $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = '9fd4d5c4-a656-4906-922d-1a801916704a';
 
   /* Display: Lauréat */
   $handler = $view->new_display('block', 'Lauréat', 'laureat');
@@ -137,15 +138,12 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'video' => 'video',
   );
-  /* Critère de filtrage: Atomes : Tags (scald_tags) */
-  $handler->display->display_options['filters']['scald_tags_tid']['id'] = 'scald_tags_tid';
-  $handler->display->display_options['filters']['scald_tags_tid']['table'] = 'field_data_scald_tags';
-  $handler->display->display_options['filters']['scald_tags_tid']['field'] = 'scald_tags_tid';
-  $handler->display->display_options['filters']['scald_tags_tid']['value'] = array(
-    270 => '270',
-  );
-  $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = '341803af-f616-45d1-af01-8013093cb8b6';
   $handler->display->display_options['block_description'] = 'laureat';
 
   /* Display: Videos */
@@ -209,15 +207,12 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'image' => 'image',
   );
-  /* Critère de filtrage: Atomes : Tags (scald_tags) */
-  $handler->display->display_options['filters']['scald_tags_tid']['id'] = 'scald_tags_tid';
-  $handler->display->display_options['filters']['scald_tags_tid']['table'] = 'field_data_scald_tags';
-  $handler->display->display_options['filters']['scald_tags_tid']['field'] = 'scald_tags_tid';
-  $handler->display->display_options['filters']['scald_tags_tid']['value'] = array(
-    270 => '270',
-  );
-  $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = '341803af-f616-45d1-af01-8013093cb8b6';
 
   /* Display: Teaser Poket Film */
   $handler = $view->new_display('block', 'Teaser Poket Film', 'block_3');
@@ -251,15 +246,12 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'video' => 'video',
   );
-  /* Critère de filtrage: Atomes : Tags (scald_tags) */
-  $handler->display->display_options['filters']['scald_tags_tid']['id'] = 'scald_tags_tid';
-  $handler->display->display_options['filters']['scald_tags_tid']['table'] = 'field_data_scald_tags';
-  $handler->display->display_options['filters']['scald_tags_tid']['field'] = 'scald_tags_tid';
-  $handler->display->display_options['filters']['scald_tags_tid']['value'] = array(
-    290 => '290',
-  );
-  $handler->display->display_options['filters']['scald_tags_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['scald_tags_tid']['vocabulary'] = 'scald_tags';
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = 'f9aebd06-c8f6-42d3-8186-2c18d534c6d0';
   $translatables['multimedia'] = array(
     t('Master'),
     t('Multimedia'),
@@ -276,6 +268,7 @@ function mda_multimedia_views_default_views() {
     t('‹ précédent'),
     t('suivant ›'),
     t('dernier »'),
+    t('terme à partir de scald_tags'),
     t('Identifiant Scald'),
     t('Liste'),
     t('Notre chaine'),

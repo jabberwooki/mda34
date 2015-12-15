@@ -42,6 +42,7 @@ function mda_multimedia_default_fe_block_settings() {
   $export['views-multimedia-block_3'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'multimedia-block_3',
     'module' => 'views',
     'node_types' => array(),
@@ -61,6 +62,8 @@ function mda_multimedia_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-multimedia-laureat'] = array(

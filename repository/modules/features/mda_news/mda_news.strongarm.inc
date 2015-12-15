@@ -82,7 +82,7 @@ function mda_news_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '9',
+            'weight' => '7',
             'visible' => TRUE,
           ),
         ),
@@ -92,7 +92,7 @@ function mda_news_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '0',
+            'weight' => '5',
             'visible' => TRUE,
           ),
         ),

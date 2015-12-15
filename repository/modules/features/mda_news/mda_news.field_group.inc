@@ -21,7 +21,7 @@ function mda_news_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Conteneur Auteur Node / Réseaux sociaux',
-    'weight' => '10',
+    'weight' => '18',
     'children' => array(),
     'format_type' => 'div',
     'format_settings' => array(
