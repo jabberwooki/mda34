@@ -59,7 +59,7 @@ function mda_contacts_field_default_field_instances() {
     'bundle' => 'contact',
     'default_value' => array(
       0 => array(
-        'value' => 'standard@mda34.org',
+        'value' => 'accueil@mda34.org',
       ),
     ),
     'deleted' => 0,
