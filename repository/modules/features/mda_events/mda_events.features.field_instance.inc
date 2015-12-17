@@ -285,9 +285,9 @@ function mda_events_field_default_field_instances() {
             'weight' => '',
           ),
           'zoom' => array(
-            'initialZoom' => -1,
+            'initialZoom' => 11,
             'maxZoom' => -1,
-            'minZoom' => 1,
+            'minZoom' => -1,
           ),
         ),
         'type' => 'geofield_leaflet',
@@ -907,6 +907,7 @@ function mda_events_field_default_field_instances() {
         'module' => 'registration',
         'settings' => array(
           'field_formatter_class' => '',
+          'i18n_string_key' => NULL,
           'label' => NULL,
         ),
         'type' => 'registration_link',
@@ -924,6 +925,7 @@ function mda_events_field_default_field_instances() {
         'module' => 'registration',
         'settings' => array(
           'field_formatter_class' => '',
+          'i18n_string_key' => NULL,
           'label' => NULL,
         ),
         'type' => 'registration_link',

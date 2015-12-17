@@ -353,7 +353,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -489,7 +489,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -618,7 +618,7 @@ function mda_events_views_default_views() {
 <h4>[title]</h4>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -730,7 +730,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -854,7 +854,7 @@ function mda_events_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -1014,7 +1014,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_unregistered_organiser']['label'] = 'Organisme';
   $handler->display->display_options['fields']['field_unregistered_organiser']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_unregistered_organiser']['empty'] = '[field_organiser]';
-  /* Champ: Contenu : Lieu de l&#039;événement - Localité (c&#039;est-à-dire Ville) */
+  /* Champ: Contenu : Adresse - Localité (c&#039;est-à-dire Ville) */
   $handler->display->display_options['fields']['field_address_locality']['id'] = 'field_address_locality';
   $handler->display->display_options['fields']['field_address_locality']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address_locality']['field'] = 'field_address_locality';
@@ -1055,7 +1055,7 @@ function mda_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_dates_value']['field'] = 'field_event_dates_value';
   $handler->display->display_options['filters']['field_event_dates_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_dates_value']['default_date'] = 'now';
-  /* Critère de filtrage: Contenu : Public concerné (field_public) */
+  /* Critère de filtrage: Contenu : Public (field_public) */
   $handler->display->display_options['filters']['field_public_tid']['id'] = 'field_public_tid';
   $handler->display->display_options['filters']['field_public_tid']['table'] = 'field_data_field_public';
   $handler->display->display_options['filters']['field_public_tid']['field'] = 'field_public_tid';

@@ -467,7 +467,7 @@ function mda_structures_field_default_field_instances() {
           'leaflet_map' => 'OSM Mapnik',
           'popup' => array(
             'show' => 1,
-            'text' => '',
+            'text' => '[node:title] - [node:field-address:thoroughfare] [node:field-address:locality]',
           ),
           'vector_display' => array(
             'clickable' => 0,
@@ -482,9 +482,9 @@ function mda_structures_field_default_field_instances() {
             'weight' => '',
           ),
           'zoom' => array(
-            'initialZoom' => -1,
+            'initialZoom' => 12,
             'maxZoom' => -1,
-            'minZoom' => 1,
+            'minZoom' => -1,
           ),
         ),
         'type' => 'geofield_leaflet',
