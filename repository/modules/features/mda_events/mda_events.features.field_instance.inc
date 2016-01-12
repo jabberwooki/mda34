@@ -20,9 +20,7 @@ function mda_events_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 9,
       ),
@@ -116,7 +114,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'module' => 'addressfield',
         'settings' => array(
-          'field_formatter_class' => '',
           'format_handlers' => array(
             0 => 'address',
           ),
@@ -207,35 +204,57 @@ function mda_events_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'geofield_map',
+        'module' => 'leaflet',
         'settings' => array(
-          'field_formatter_class' => '',
-          'geofield_map_baselayers_hybrid' => 0,
-          'geofield_map_baselayers_map' => 1,
-          'geofield_map_baselayers_physical' => 0,
-          'geofield_map_baselayers_satellite' => 1,
-          'geofield_map_center' => array(
-            'geocode' => 'Find my location',
-            'lat' => '',
-            'lon' => '',
+          'height' => 400,
+          'icon' => array(
+            'html' => '',
+            'htmlClass' => '',
+            'iconAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconImageStyle' => '',
+            'iconSize' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconType' => 'marker',
+            'iconUrl' => '',
+            'popupAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowUrl' => '',
           ),
-          'geofield_map_controltype' => 'large',
-          'geofield_map_draggable' => 1,
-          'geofield_map_height' => '300px',
-          'geofield_map_maptype' => 'map',
-          'geofield_map_max_zoom' => 20,
-          'geofield_map_min_zoom' => 2,
-          'geofield_map_mtc' => 'standard',
-          'geofield_map_overview' => 0,
-          'geofield_map_overview_opened' => 0,
-          'geofield_map_pancontrol' => 1,
-          'geofield_map_scale' => 1,
-          'geofield_map_scrollwheel' => 1,
-          'geofield_map_streetview_show' => 0,
-          'geofield_map_width' => '100%',
-          'geofield_map_zoom' => 6,
+          'leaflet_map' => 'OSM Mapnik',
+          'popup' => array(
+            'show' => 1,
+            'text' => '[node:field-organiser][node:field_unregistered_organiser] - [node:field-address:thoroughfare] [node:field-address:locality]',
+          ),
+          'vector_display' => array(
+            'clickable' => 0,
+            'color' => '',
+            'dashArray' => '',
+            'fill' => 0,
+            'fillColor' => '',
+            'fillOpacity' => '',
+            'opacity' => '',
+            'stroke' => 0,
+            'stroke_override' => 0,
+            'weight' => '',
+          ),
+          'zoom' => array(
+            'initialZoom' => 10,
+            'maxZoom' => 14,
+            'minZoom' => 2,
+          ),
         ),
-        'type' => 'geofield_map_map',
+        'type' => 'geofield_leaflet',
         'weight' => 11,
       ),
       'full' => array(
@@ -339,9 +358,7 @@ function mda_events_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'email',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'email_default',
         'weight' => 14,
       ),
@@ -395,7 +412,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'field_formatter_class' => '',
           'format_type' => 'long',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -476,7 +492,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'module' => 'image',
         'settings' => array(
-          'field_formatter_class' => '',
           'image_link' => '',
           'image_style' => '',
         ),
@@ -570,7 +585,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
-          'field_formatter_class' => '',
           'format_type' => 'long',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -644,9 +658,7 @@ function mda_events_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 0,
       ),
@@ -699,9 +711,7 @@ function mda_events_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'link',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'link_default',
         'weight' => 10,
       ),
@@ -780,7 +790,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'field_formatter_class' => '',
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -846,9 +855,7 @@ function mda_events_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
       ),
@@ -906,7 +913,6 @@ function mda_events_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'registration',
         'settings' => array(
-          'field_formatter_class' => '',
           'i18n_string_key' => NULL,
           'label' => NULL,
         ),
@@ -986,9 +992,7 @@ function mda_events_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 5,
       ),
