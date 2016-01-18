@@ -69,28 +69,10 @@ function mda_events_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-events-block_front_ados' => array(
-          'module' => 'views',
-          'delta' => 'events-block_front_ados',
+        'boxes-boite_ados' => array(
+          'module' => 'boxes',
+          'delta' => 'boite_ados',
           'region' => 'preface_first',
-          'weight' => '-2',
-        ),
-        'views-events-block_front_parents' => array(
-          'module' => 'views',
-          'delta' => 'events-block_front_parents',
-          'region' => 'preface_second',
-          'weight' => '-6',
-        ),
-        'views-events-block_front_pros' => array(
-          'module' => 'views',
-          'delta' => 'events-block_front_pros',
-          'region' => 'preface_third',
-          'weight' => '-6',
-        ),
-        'views-events-block_front_trainings' => array(
-          'module' => 'views',
-          'delta' => 'events-block_front_trainings',
-          'region' => 'preface_third',
           'weight' => '-10',
         ),
       ),
