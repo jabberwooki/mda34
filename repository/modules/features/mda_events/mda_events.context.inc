@@ -75,6 +75,18 @@ function mda_events_context_default_contexts() {
           'region' => 'preface_first',
           'weight' => '-10',
         ),
+        'boxes-boite_parents' => array(
+          'module' => 'boxes',
+          'delta' => 'boite_parents',
+          'region' => 'preface_second',
+          'weight' => '-10',
+        ),
+        'boxes-boite_pro' => array(
+          'module' => 'boxes',
+          'delta' => 'boite_pro',
+          'region' => 'preface_third',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
