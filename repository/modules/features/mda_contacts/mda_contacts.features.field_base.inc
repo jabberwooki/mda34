@@ -41,11 +41,12 @@ function mda_contacts_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'standard@mda34.org' => 'Secrétariat',
+        'accueil@mda34.org' => 'Secrétariat',
         'f.riccino@mda.org' => 'Professionnels',
         'webmaster@mda34.org' => 'Webmaster',
       ),
       'allowed_values_function' => '',
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_text',

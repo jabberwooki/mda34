@@ -74,6 +74,9 @@ function mda_events_strongarm() {
       'site_slide' => array(
         'custom_settings' => FALSE,
       ),
+      'diapo_philado' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

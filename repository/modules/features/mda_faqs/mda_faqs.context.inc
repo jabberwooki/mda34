@@ -28,24 +28,7 @@ function mda_faqs_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-faqs-block_front_ados' => array(
-          'module' => 'views',
-          'delta' => 'faqs-block_front_ados',
-          'region' => 'preface_first',
-          'weight' => '-6',
-        ),
-        'views-faqs-block_front_parents' => array(
-          'module' => 'views',
-          'delta' => 'faqs-block_front_parents',
-          'region' => 'preface_second',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 1;
 
   // Translatables

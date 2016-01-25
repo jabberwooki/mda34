@@ -66,30 +66,7 @@ function mda_news_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-news-block_front_ados' => array(
-          'module' => 'views',
-          'delta' => 'news-block_front_ados',
-          'region' => 'preface_first',
-          'weight' => '-10',
-        ),
-        'views-news-block_front_parents' => array(
-          'module' => 'views',
-          'delta' => 'news-block_front_parents',
-          'region' => 'preface_second',
-          'weight' => '-2',
-        ),
-        'views-news-block_front_pros' => array(
-          'module' => 'views',
-          'delta' => 'news-block_front_pros',
-          'region' => 'preface_third',
-          'weight' => '2',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 1;
 
   // Translatables
