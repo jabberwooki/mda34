@@ -103,7 +103,7 @@ function administration_default_rules_configuration() {
         { "mail" : {
             "to" : "l.ahmar@mda34.org,culture@mda34.org,webmaster@mda34.org",
             "subject" : "Demande de pr\\u00e9-inscription au pocket film 2016",
-            "message" : "Une nouvelle demande a \\u00e9t\\u00e9 effectu\\u00e9 sur le site\\r\\n-------------------------------------------------------------\\r\\nNOM\\/PSEUDO : [entityform:field-nom-pf] [entityform:field-prenom-pf]\\r\\nEmail : [entityform:field-email-pf]\\r\\nTranche d\\u0027\\u00e2ge du ou des participants : [entityform:field-age-pf]\\r\\nParticipations \\u00e0 titre : [entityform:field-parti-pf]\\r\\nCode postal : [entityform:field-code-postal-pf]\\r\\nJ\\u0027accepte le r\\u00e8glement du concours pour valider ma demande d\\u0027inscription : [entityform:field-reglement-pf]\\r\\n-------------------------------------------------------------",
+            "message" : "Une nouvelle demande a \\u00e9t\\u00e9 effectu\\u00e9 sur le site\\r\\n-------------------------------------------------------------\\r\\nNOM\\/PSEUDO : [entityform:field-nom-pf] [entityform:field-prenom-pf]\\r\\nEmail : [entityform:field-email-pf]\\r\\nTranche d\\u0027\\u00e2ge du ou des participants : [entityform:field-age-pf]\\r\\nParticipations \\u00e0 titre : [entityform:field-parti-pf]\\r\\nLocalisation : [entityform:field_geo_pk] - [entityform:field_code_postal_pf]\\r\\nJ\\u0027accepte le r\\u00e8glement du concours pour valider ma demande d\\u0027inscription : [entityform:field-reglement-pf]\\r\\n-------------------------------------------------------------",
             "from" : "[entityform:field-email-pf]\\t",
             "language" : [ "" ]
           }
