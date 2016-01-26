@@ -12,7 +12,7 @@ aside.col-sm-4 h3.block-title{
   font-weight: bold;
 }
 .bg-block{
-  background: url('../images/bg_blocks.gif') repeat scroll 0% 0% transparent;
+  background: #F8F8F8;;
 }
 /* ADOS ***********************************************************************/
 .domain-ados-mda34-org .block-social-networks h3.block-title{
@@ -300,7 +300,9 @@ body.domain-ados-mda34-org{
 /* Block recherche ************************************************************/
 #search-block-form{
   padding: 18px;
-  background-color: @gray-ultra-light;
+  background-color: #F8F8F8;
+      border: 1px solid #CCC;
+
   border-radius: 4px;
   .btn{
     font-family: arial;
@@ -320,21 +322,26 @@ body.domain-reseau-pro-mda34-org{
 /* Block newsletter ***********************************************************/
 
 #block-mailchimp-signup-newsletter{
+    border: 1px solid #CCC;
+    border-radius: 4px;
   .bg-block();
   padding: 0px;
   margin-top: 15px;
   h3.block-title{
-    background-color: @deep-blue-mda;
+    background-color: #000;
+          text-transform: none;
     margin: 0;
     color: white;
     display: inline-block;
     padding: 10px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     &:before {
       .glyphicon();
       content: "\e82c";
       color: white;
-      margin-right: 10px
+      margin-right: 10px;
+
+      
     }
   }
   label{
@@ -342,7 +349,7 @@ body.domain-reseau-pro-mda34-org{
     width: 25%;
     padding-left: 5%;
     margin-top: 18px;
-    color: @deep-blue-mda;
+    color: #555;
   }
   input{
     width: 70%;
@@ -356,7 +363,7 @@ body.domain-reseau-pro-mda34-org{
     text-transform: uppercase;
     color: white;
     font-family: arial;
-    background-color: @deep-blue-mda;
+    background-color: #555;
   }
 }
 /* block "nous suivre" ********************************************************/
@@ -539,6 +546,72 @@ body.domain-ados-mda34-org .block.block-views h3 {
 .sc {
 display: none;
 }
+
+
+
+#block-boxes-boite-contact {
+    padding: 0em;
+    margin: 0px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+background: #F8F8F8;
+    
+    h3.block-title {
+    background-color: #000;
+     text-transform: none;
+    margin: 0px;
+    color: #FFF;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
+    &:before{
+      .glyphicon();
+      content: "\e828";
+      color: white;
+    }
+}
+    
+	.boxes-box-content{
+	padding: 0 1em;
+	}
+   
+}
+
+
+#block-search-form {
+    margin: 1em 0;
+}
+
+
+#block-views-multimedia-block-1 {
+    padding: 0em;
+    margin-bottom: 1em;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+background: #F8F8F8;
+    
+    h3.block-title {
+    background-color: #000;
+     text-transform: none;
+    margin: 0px;
+    color: #FFF;
+    padding: 10px;
+    font-size: 1.25em;
+    &:before{
+      .glyphicon();
+      content: "\e827";
+      color: white;
+    }
+}
+    
+.views-row {
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+	
+   
+}
+
 
 
 

@@ -12,6 +12,31 @@ function administration_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['boxes-boite_contact'] = array(
+    'cache' => -2,
+    'context_group' => 'Boîtes pour Box',
+    'css_class' => '',
+    'delta' => 'boite_contact',
+    'module' => 'boxes',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
+      'mda' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'mda',
+        'weight' => 0,
+      ),
+    ),
+  );
+
   $export['entityform_block-pre_inscription_pocket_film'] = array(
     'cache' => -1,
     'css_class' => '',

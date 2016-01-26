@@ -252,6 +252,46 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_tags_tid';
   $handler->display->display_options['filters']['uuid']['value'] = 'f9aebd06-c8f6-42d3-8186-2c18d534c6d0';
+
+  /* Display: Vidéo présentation */
+  $handler = $view->new_display('block', 'Vidéo présentation', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'La MDA 34 en vidéo';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Champ: Atome : Représentation */
+  $handler->display->display_options['fields']['representation']['id'] = 'representation';
+  $handler->display->display_options['fields']['representation']['table'] = 'scald_atoms';
+  $handler->display->display_options['fields']['representation']['field'] = 'representation';
+  $handler->display->display_options['fields']['representation']['label'] = '';
+  $handler->display->display_options['fields']['representation']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['representation']['context'] = 'scald_col_4';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Critère de filtrage: Atome : Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'scald_atoms';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'video' => 'video',
+  );
+  /* Critère de filtrage: Atome : Identifiant Scald */
+  $handler->display->display_options['filters']['sid']['id'] = 'sid';
+  $handler->display->display_options['filters']['sid']['table'] = 'scald_atoms';
+  $handler->display->display_options['filters']['sid']['field'] = 'sid';
+  $handler->display->display_options['filters']['sid']['value']['value'] = '129';
+  $handler->display->display_options['block_description'] = 'Video presentation';
   $translatables['multimedia'] = array(
     t('Master'),
     t('Multimedia'),
@@ -280,6 +320,9 @@ function mda_multimedia_views_default_views() {
     t('Videos'),
     t('Affiche'),
     t('Teaser Poket Film'),
+    t('Vidéo présentation'),
+    t('La MDA 34 en vidéo'),
+    t('Video presentation'),
   );
   $export['multimedia'] = $view;
 

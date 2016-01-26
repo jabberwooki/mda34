@@ -39,11 +39,62 @@ function mda_multimedia_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['views-multimedia-block_1'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'delta' => 'multimedia-block_1',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
+      'mda' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'mda',
+        'weight' => 0,
+      ),
+    ),
+  );
+
   $export['views-multimedia-block_3'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
     'delta' => 'multimedia-block_3',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
+      'mda' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'mda',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-multimedia-block_last_video'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'multimedia-block_last_video',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
