@@ -102,6 +102,7 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['field_faq_category_1']['table'] = 'field_data_field_faq_category';
   $handler->display->display_options['fields']['field_faq_category_1']['field'] = 'field_faq_category';
   $handler->display->display_options['fields']['field_faq_category_1']['label'] = '';
+  $handler->display->display_options['fields']['field_faq_category_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_faq_category_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_faq_category_1']['settings'] = array(
     'field_formatter_class' => '',
@@ -114,6 +115,13 @@ function mda_faqs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Champ: Contenu : Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Champ: Filtre isotope */
   $handler->display->display_options['fields']['field_faq_category']['id'] = 'field_faq_category';
   $handler->display->display_options['fields']['field_faq_category']['table'] = 'field_data_field_faq_category';
