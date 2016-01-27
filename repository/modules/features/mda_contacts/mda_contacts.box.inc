@@ -19,19 +19,14 @@ function mda_contacts_default_box() {
   $box->description = 'MDA Contact';
   $box->options = array(
     'body' => array(
-      'value' => '<p>MDA 34<br />
-9 rue de la République<br />
-34000 Montpellier<br />
-<strong>04 67 92 99 18</strong></p>
+      'value' => '<h3>Tel : 04 67 92 99 18</h3>
 
-<p><iframe frameborder="0" height="350" scrolling="no" src="http://cartosm.eu/map?lon=3.8781475&amp;lat=43.6059082&amp;zoom=17&amp;width=600&amp;height=350&amp;mark=true&amp;nav=true&amp;pan=true&amp;zb=inout&amp;style=default&amp;icon=down" width="600"></iframe></p>
+<p>La MDA accueille les jeunes avec ou sans rendez-vous du <strong>lundi au vendredi de 13h à 18h</strong><br />
+Les familles et les professionnels sont accueillies <strong>sur&nbsp;rendez-vous uniquement</strong>.</p>
 
-<p><a href="http://www.openstreetmap.org/?mlat=43.6059082&amp;mlon=3.8781475&amp;zoom=17&amp;layers=M" style="text-align:left;">Voir sur une carte plus grande</a></p>
+<p>9 rue de la République - 34000 Montpellier</p>
 
-<p>La MDA accueille les jeunes avec ou sans rendez-vous <strong>du lundi au vendredi de 13h à 18h</strong> et <strong>le samedi de 10h à 17h</strong> (sauf les samedis des vacances).<br />
-Lles familles sont accueillies sur&nbsp;rendez-vous <b>uniquement</b>.</p>
-
-<p>&nbsp;</p>
+<p><iframe frameborder="0" height="400" marginheight="0" marginwidth="0" scrolling="no" src="http://www.openstreetmap.org/export/embed.html?bbox=3.876403570175171%2C43.60503099128943%2C3.8798126578330994%2C43.60677507765297&amp;layer=mapnik&amp;marker=43.605903040792136%2C3.8781094551086426" style="border: 0px solid black" width="750"></iframe></p>
 ',
       'format' => 'full_html',
     ),

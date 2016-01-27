@@ -22,12 +22,13 @@ function administration_default_box() {
       'value' => '<h3 class="rtecenter">04 67 92 99 18</h3>
 
 <p class="rtecenter">Accueil possible sans rendez vous pour les jeunes,<br />
-et avec rendez vous pour les parents et les professionnels, du lundi au vendredi de 13h à 18h</p>
+et avec rendez vous pour les parents et les professionnels, du lundi au vendredi de 13h à 18h.</p>
 
 <p class="rtecenter">&nbsp;</p>
 ',
       'format' => 'full_html',
     ),
+    'additional_classes' => '',
   );
   $export['boite_contact'] = $box;
 
