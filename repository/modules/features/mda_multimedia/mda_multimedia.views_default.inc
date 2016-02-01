@@ -286,11 +286,12 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'video' => 'video',
   );
-  /* Critère de filtrage: Atome : Identifiant Scald */
-  $handler->display->display_options['filters']['sid']['id'] = 'sid';
-  $handler->display->display_options['filters']['sid']['table'] = 'scald_atoms';
-  $handler->display->display_options['filters']['sid']['field'] = 'sid';
-  $handler->display->display_options['filters']['sid']['value']['value'] = '129';
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = '16a9102b-edab-4a3d-ba6c-496a3503f043';
   $handler->display->display_options['block_description'] = 'Video presentation';
   $translatables['multimedia'] = array(
     t('Master'),

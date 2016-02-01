@@ -1,3 +1,4 @@
+
 /* Liens haut isotope base + parents ******************************************/
 #isotope-options ul#filters{
   .no-padding-margin();
@@ -32,6 +33,7 @@
     }
   }
 }
+
 /* Largeur totale prise par les réponses pour le fond ***********************/
 /*.view-display-id-page_faqs > .view-content{
   margin: 0 -1500px;
@@ -110,6 +112,9 @@ body.page-agenda.domain-parents-mda34-org {
   #isotope-options {
     background-color: transparent;
   }
+ 
+ 
+ 
   /* isotope **/
   .isotope-element {
     /*border-bottom : 1px solid @gray-base;*/
@@ -151,22 +156,68 @@ body.page-agenda .isotope-element{
     color: @gray-base;
   }
 }
+
+
+
 /* faq parents *****/
 body.page-faq.domain-parents-mda34-org{
   .view-faqs { 
+  .view-header{
+		  margin-bottom: 1em;
+		}
     > .view-content {
       background: transparent url(../images/fond_faq_parents.png) no-repeat 50% 0;
+      -webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
     }
   }
   
-    .views-field-title{
-      padding-bottom: 1.25em;
-   
+     #isotope-options {
+    background-color: white;
+    padding: 0em 0em 0em;
+    }
+      
+  
+  	.views-field-body{
+    padding: 0px 0.5em;
+    background: white;
     }
   
+     .views-field-title{
+      color:black;
+      font-size: 1.15em;
+      border:0;
+       padding: 0px 0.5em 0.5em;
+      font-weight:700;
+      font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+      }
+      
+      #isotope-container {
+      width:92%;
+      margin:0 auto;
+      }
+      
+      .isotope-element {
+		 width: 320px;
+		padding: 1em 0.25em;
+		margin: 1.5em 1em 1em;
+		background: white;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		@media (max-width:@screen-xs)
+		{
+		width: 262px;
+		margin:0.5em 0;
+		
+		}
+	  }
   
-  
+
 }
+
+
 /* Agenda pro *****************************************************************/
 body.page-agenda.domain-reseau-pro-mda34-org {
   .isotope-element {
@@ -192,6 +243,8 @@ body.page-agenda.domain-reseau-pro-mda34-org {
   
   
 }
+
+
 /* Agenda Ados ****************************************************************/
 body.page-agenda.domain-ados-mda34-org{ 
   /* isotope **/
@@ -220,48 +273,89 @@ body.page-agenda.domain-ados-mda34-org{
     }
   }
 }
+
+
+
 /* FAQ Ados *******************************************************************/
-body.domain-ados-mda34-org.page-faq{
-  h2.page-header{
-    &:before{
-      .glyphicon();
-      content: "\e805";
-    } 
-  }
-  #isotope-options ul#filters{
-    li{
-      a{
-        &.selected{
-          background-color: @orange-mda;
-        }
-      }
-    }
-  }
-  .view-display-id-page_faqs{
+body.page-faq.domain-ados-mda34-org.page-faq{
+
+	 #isotope-options ul#filters{
+		li{
+		  a{
+			&.selected{
+			  background-color: @orange-mda;
+			}
+		  }
+		}
+	  }
+	  
+	  
+	.view-display-id-page_faqs{
     background-color: @orange-mda;
   }
-  .isotope-element{
-    background: transparent url(../images/bg_faq_orange.png) no-repeat 0 100%;
-    border-top: 1px solid @orange-mda;
-    padding-bottom: 17px;
-    .views-field-field-faq-category-1{
-      border-left: 1px solid @orange-mda;
-      border-right: 1px solid @orange-mda;
-      a{
-        color: @orange-mda !important;
-      }
-    }
-    .views-field-title{
-      border-left: 1px solid @orange-mda;
-      border-right: 1px solid @orange-mda;
-      padding-bottom: 1.25em;
-      a:after {
-        ;
-      }
-    }
-
-  }
+  
+  
+  	 .view-faqs {
+		.view-header{
+		  margin-bottom: 1em;
+		}
+		> .view-content {
+		  min-height: 900px;
+		  -webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		}
+	  }
+	  
+	  #isotope-options {
+    background-color: white;
+    padding: 0em 0em 1em;
 }
+      
+  
+  
+  
+  
+  	.views-field-body{
+    padding: 0px 0.5em;
+    background: white;
+    }
+  
+      .views-field-title{
+      color:black;
+      font-size: 1.15em;
+      border:0;
+       padding: 0px 0.5em 0.5em;
+      font-weight:700;
+      font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+      }
+      
+      
+      #isotope-container {
+      width:92%;
+      margin:0 auto;
+      }
+   
+      
+      
+      .isotope-element {
+		 width: 320px;
+		padding: 1em 0.25em;
+		margin: 1em;
+		background: white;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		@media (max-width:@screen-xs)
+		{
+		width: 262px;
+		margin:0.5em 0;
+		
+		}
+	  }
+	  
+}
+
 
 /* structure annuaire PARENTS *************************************************************/
 body.page-annuaire.domain-parents-mda34-org {
@@ -408,8 +502,6 @@ body.page-annuaire.domain-reseau-pro-mda34-org {
     }
 
 }
-
-
 
 
 /* structure annuaire PHILADO*************************************************************/
