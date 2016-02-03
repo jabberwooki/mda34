@@ -15,5 +15,6 @@ features[metatag][] = global
 features[metatag][] = global:403
 features[metatag][] = global:404
 features[metatag][] = global:frontpage
+features[metatag][] = global:philado_mda34_org frontpage
 features[metatag][] = node
 features_exclude[dependencies][metatag] = metatag

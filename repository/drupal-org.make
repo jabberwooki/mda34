@@ -295,3 +295,6 @@ projects[patterns][version] = "2.2"
 
 projects[taxonomy_formatter][subdir] = contrib
 projects[taxonomy_formatter][version] = "1.4"
+
+projects[domains_metatag][subdir] = contrib
+projects[domains_metatag][version] = "1.1"

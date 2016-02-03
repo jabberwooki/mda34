@@ -13,7 +13,6 @@ function kseo_metatag_export_default() {
   // Exported Metatag config instance: global.
   $config['global'] = array(
     'instance' => 'global',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[current-page:title] | [site:name]',
@@ -33,7 +32,6 @@ function kseo_metatag_export_default() {
   // Exported Metatag config instance: global:403.
   $config['global:403'] = array(
     'instance' => 'global:403',
-    'disabled' => FALSE,
     'config' => array(
       'canonical' => array(
         'value' => '[site:url]',
@@ -47,7 +45,6 @@ function kseo_metatag_export_default() {
   // Exported Metatag config instance: global:404.
   $config['global:404'] = array(
     'instance' => 'global:404',
-    'disabled' => FALSE,
     'config' => array(
       'canonical' => array(
         'value' => '[site:url]',
@@ -83,10 +80,34 @@ function kseo_metatag_export_default() {
     ),
   );
 
+  // Exported Metatag config instance: global:philado_mda34_org frontpage.
+  $config['global:philado_mda34_org frontpage'] = array(
+    'instance' => 'global:philado_mda34_org frontpage',
+    'config' => array(
+      'title' => array(
+        'value' => '[site:name] | [site:slogan]',
+      ),
+      'description' => array(
+        'value' => 'Réseau de prise en charge des adolescents en grande difficulté.',
+      ),
+      'abstract' => array(
+        'value' => 'Réseau de prise en charge des adolescents en grande difficulté.',
+      ),
+      'keywords' => array(
+        'value' => 'philado,CHU Montpellier',
+      ),
+      'canonical' => array(
+        'value' => '[site:url]',
+      ),
+      'shortlink' => array(
+        'value' => '[site:url]',
+      ),
+    ),
+  );
+
   // Exported Metatag config instance: node.
   $config['node'] = array(
     'instance' => 'node',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[node:title] | [site:name]',
