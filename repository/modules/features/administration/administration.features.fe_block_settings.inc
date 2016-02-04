@@ -14,8 +14,8 @@ function administration_default_fe_block_settings() {
 
   $export['boxes-boite_contact'] = array(
     'cache' => -2,
-    'context_group' => 'Boîtes pour Box',
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'boite_contact',
     'module' => 'boxes',
     'node_types' => array(),
@@ -35,6 +35,8 @@ function administration_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['entityform_block-pre_inscription_pocket_film'] = array(
