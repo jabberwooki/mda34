@@ -11,12 +11,23 @@
 
 .droite{
   float:right;
+  @media (max-width:@screen-xs){
+    float: right;
+    width: 100%;
+    text-align: center;
+    }
 }
 
 .gauche {
 float: left;
 width:50%;
+@media (max-width:@screen-xs){
+    float: left;
+    width: 100%;
+    text-align: center;
+    }
 }
+
 
 .footer-center{
   margin: 0 auto;
@@ -56,6 +67,11 @@ width:50%;
     &.icon-gplus:hover:before{
       color: @orange-gplus;
     }
+    
+    @media (max-width:@screen-xs){
+        font-size: 1em;
+    }
+    
 
     @media (max-width: @container-desktop){
       &:before{
