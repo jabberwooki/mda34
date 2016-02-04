@@ -32,7 +32,7 @@ function mda_events_default_box() {
 	<li><a href="/agenda">Des adresses utiles</a></li>
 	<li><a href="http://ados.mda34.org/agenda">Un Agenda</a></li>
 	<li><a href="http://radio.mda34.org/">Notre radio</a></li>
-	<li><a href="http://ados.mda34.org/rubrique/pocket-film">Le concours Poket Film</a></li>
+	<li><a href="http://ados.mda34.org/rubrique/pocket-film">Le concours Pocket Film</a></li>
 </ul>
 ',
       'format' => 'full_html',
@@ -52,10 +52,10 @@ function mda_events_default_box() {
     'body' => array(
       'value' => '<p class="rtecenter"><strong>L\'equipe de la MDA 34, vous aide à trouver des réponses ...</strong></p>
 
-<p class="rtecenter"><a class="btn btn-primary" href="http://ados.mda34.bac" role="button">Entrer</a></p>
+<p class="rtecenter"><a class="btn btn-primary" href="http://parents.mda34.org" role="button">Entrer</a></p>
 
 <p><br />
-<strong>Dans cet epace vous y trouverez :</strong></p>
+<strong>Dans cet espace vous y trouverez :</strong></p>
 
 <ul>
 	<li><a href="http://parents.mda34.org/faq">Notre fonctionnement</a></li>
@@ -82,17 +82,17 @@ function mda_events_default_box() {
     'body' => array(
       'value' => '<p class="rtecenter"><strong>L\'equipe de la MDA 34, vous propose un accompagnement ou un partenariat ...</strong></p>
 
-<p class="rtecenter"><a class="btn btn-primary" href="http://ados.mda34.bac" role="button">Entrer</a></p>
+<p class="rtecenter"><a class="btn btn-primary" href="http://reseau-pro.mda34.org" role="button">Entrer</a></p>
 
 <p><br />
-<strong>Dans cet epace vous y trouverez :</strong></p>
+<strong>Dans cet espace vous y trouverez :</strong></p>
 
 <ul>
-	<li><a href="http://pro.mda34.org/annuaire">Un annuaire des structures</a></li>
+	<li><a href="http://reseau-pro.mda34.org/annuaire">Un annuaire des structures</a></li>
 	<li><a href="http://reseau-pro.mda34.org/ressources">Des ressources</a></li>
 	<li><a href="http://reseau-pro.mda34.org/formations">Des formations</a></li>
 	<li><a href="http://reseau-pro.mda34.org/agenda">Un agenda</a></li>
-	<li><a href="http://parents.mda34.org/contact">Nous contacter</a></li>
+	<li><a href="http://reseau-pro.mda34.org/contact">Nous contacter</a></li>
 </ul>
 ',
       'format' => 'full_html',
