@@ -60,18 +60,17 @@ function mda_articles_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'sharethis',
-        1 => 'field_articles_image',
-        2 => 'body',
-        3 => 'field_scald_video',
-        4 => 'field_scald_audio',
-        5 => 'field_scald_gallery',
-        6 => 'field_scald_file',
-        7 => 'domain',
+        0 => 'field_articles_image',
+        1 => 'body',
+        2 => 'field_scald_video',
+        3 => 'field_scald_audio',
+        4 => 'field_scald_gallery',
+        5 => 'field_scald_file',
+        6 => 'domain',
+        7 => 'sharethis',
       ),
     ),
     'fields' => array(
-      'sharethis' => 'ds_content',
       'field_articles_image' => 'ds_content',
       'body' => 'ds_content',
       'field_scald_video' => 'ds_content',
@@ -79,6 +78,7 @@ function mda_articles_ds_layout_settings_info() {
       'field_scald_gallery' => 'ds_content',
       'field_scald_file' => 'ds_content',
       'domain' => 'ds_content',
+      'sharethis' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

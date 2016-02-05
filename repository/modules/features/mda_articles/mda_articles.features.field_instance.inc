@@ -29,7 +29,7 @@ function mda_articles_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -178,7 +178,7 @@ function mda_articles_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'scald_col_4',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'sidebar_item' => array(
         'label' => 'above',
@@ -248,7 +248,7 @@ function mda_articles_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'title',
-        'weight' => 5,
+        'weight' => 3,
       ),
       'list' => array(
         'label' => 'above',
@@ -324,7 +324,7 @@ function mda_articles_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'file_representation',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -400,7 +400,7 @@ function mda_articles_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'title',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'above',
@@ -476,7 +476,7 @@ function mda_articles_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'full',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'list' => array(
         'label' => 'above',
