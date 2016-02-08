@@ -107,7 +107,7 @@ function mda_resources_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '15',
+            'weight' => '14',
             'visible' => TRUE,
           ),
           'teaser' => array(
@@ -121,7 +121,7 @@ function mda_resources_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '0',
+            'weight' => '15',
             'visible' => TRUE,
           ),
           'teaser' => array(

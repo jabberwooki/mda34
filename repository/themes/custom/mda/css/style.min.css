@@ -1,5 +1,5 @@
 .btn,.btn-group,.btn-group-vertical,.caret,.checkbox-inline,.radio-inline,img{vertical-align:middle}
-.collapsing,.nav .nav-divider,.sr-only,svg:not(:root){overflow:hidden}
+.sr-only,svg:not(:root){overflow:hidden}
 hr,img{border:0}
 .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.pre-scrollable{max-height:340px}
 .btn-group>.btn-group,.btn-toolbar .btn-group,.btn-toolbar .input-group,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.dropdown-menu{float:left}
@@ -135,16 +135,17 @@ dd{margin-left:0}
 .dl-horizontal dd{margin-left:180px}
 .container{width:750px}
 }
+.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-actions,.form-horizontal .form-group:after,.modal-footer:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after,fieldset .panel-body{clear:both}
 abbr[data-original-title],abbr[title]{cursor:help;border-bottom:1px dotted #999}
 .initialism{font-size:90%}
 blockquote{padding:9px 18px;margin:0 0 18px;font-size:16.25px;border-left:5px solid #cdcdcd}
 blockquote .small,blockquote footer,blockquote small{display:block;font-size:80%;color:#999}
 legend,pre{display:block;color:#333}
 blockquote .small:before,blockquote footer:before,blockquote small:before{content:'\2014 \00A0'}
+#isotope-options ul#filters li a:after,.blockquote-reverse .small:before,.blockquote-reverse footer:before,.blockquote-reverse small:before,blockquote.pull-right .small:before,blockquote.pull-right footer:before,blockquote.pull-right small:before{content:''}
 .blockquote-reverse,blockquote.pull-right{padding-right:15px;padding-left:0;border-right:5px solid #cdcdcd;border-left:0;text-align:right}
 code,kbd{padding:2px 4px;font-size:90%}
 caption,th{text-align:left}
-.blockquote-reverse .small:before,.blockquote-reverse footer:before,.blockquote-reverse small:before,blockquote.pull-right .small:before,blockquote.pull-right footer:before,blockquote.pull-right small:before{content:''}
 .blockquote-reverse .small:after,.blockquote-reverse footer:after,.blockquote-reverse small:after,blockquote.pull-right .small:after,blockquote.pull-right footer:after,blockquote.pull-right small:after{content:'\00A0 \2014'}
 address{font-style:normal}
 code,kbd,pre,samp{font-family:Menlo,Monaco,Consolas,"Courier New",monospace}
@@ -540,7 +541,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 .collapse.in{display:block;visibility:visible}
 tr.collapse.in{display:table-row}
 tbody.collapse.in{display:table-row-group}
-.collapsing{height:0;-webkit-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;transition-timing-function:ease}
+.collapsing{height:0;overflow:hidden;-webkit-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;transition-timing-function:ease}
 @font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 .glyphicon{top:1px}
 .glyphicon-asterisk:before{content:"\2a"}
@@ -887,7 +888,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .nav>li.disabled>a{color:#999}
 .nav>li.disabled>a:focus,.nav>li.disabled>a:hover{color:#999;text-decoration:none;background-color:transparent;cursor:not-allowed}
 .nav .open>a,.nav .open>a:focus,.nav .open>a:hover{background-color:#cdcdcd;border-color:#337ab7}
-.nav .nav-divider{height:1px;margin:8px 0;background-color:#e5e5e5}
+.nav .nav-divider{height:1px;margin:8px 0;overflow:hidden;background-color:#e5e5e5}
 .nav>li>a>img{max-width:none}
 .nav-tabs{border-bottom:1px solid #ddd}
 .nav-tabs>li{float:left;margin-bottom:-1px}
@@ -1044,7 +1045,6 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .pagination{padding-left:0;margin:18px 0;border-radius:4px}
 .pager li,.pagination>li{display:inline}
 .pagination>li>a,.pagination>li>span{position:relative;float:left;padding:6px 9pt;line-height:1.42857143;text-decoration:none;color:#337ab7;background-color:#fff;border:1px solid #ddd;margin-left:-1px}
-.close,.list-group-item>.badge,.pager .next>a,.pager .next>span{float:right}
 .badge,.label{font-weight:700;line-height:1;vertical-align:baseline;white-space:nowrap;text-align:center}
 .pagination>li:first-child>a,.pagination>li:first-child>span{margin-left:0;border-bottom-left-radius:4px;border-top-left-radius:4px}
 .pagination>li:last-child>a,.pagination>li:last-child>span{border-bottom-right-radius:4px;border-top-right-radius:4px}
@@ -1060,7 +1060,9 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .pager{padding-left:0;margin:18px 0;list-style:none;text-align:center}
 .pager li>a,.pager li>span{display:inline-block;padding:5px 14px;background-color:#fff;border:1px solid #ddd;border-radius:15px}
 .pager li>a:focus,.pager li>a:hover{text-decoration:none;background-color:#cdcdcd}
+.pager .next>a,.pager .next>span{float:right}
 .pager .previous>a,.pager .previous>span{float:left}
+.close,.list-group-item>.badge{float:right}
 .pager .disabled>a,.pager .disabled>a:focus,.pager .disabled>a:hover,.pager .disabled>span{color:#999;background-color:#fff;cursor:not-allowed}
 a.badge:focus,a.badge:hover,a.label:focus,a.label:hover{color:#fff;cursor:pointer;text-decoration:none}
 .label{display:inline;padding:.2em .6em .3em;font-size:75%;color:#fff;border-radius:.25em}
@@ -1355,7 +1357,6 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .navbar.container{max-width:45pc}
 }
 .btn-group-vertical>.btn-group:after,.btn-group-vertical>.btn-group:before,.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.dl-horizontal dd:after,.dl-horizontal dd:before,.form-horizontal .form-group:after,.form-horizontal .form-group:before,.modal-footer:after,.modal-footer:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.pager:after,.pager:before,.panel-body:after,.panel-body:before,.row:after,.row:before{content:" ";display:table}
-.btn-group-vertical>.btn-group:after,.btn-toolbar:after,.clearfix:after,.container-fluid:after,.container:after,.dl-horizontal dd:after,.form-horizontal .form-group:after,.modal-footer:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.pager:after,.panel-body:after,.row:after{clear:both}
 .center-block{display:block;margin-left:auto;margin-right:auto}
 .pull-right{float:right!important}
 .pull-left{float:left!important}
@@ -1472,10 +1473,8 @@ ul.action-links .glyphicon{padding-right:.5em}
 .uneditable-input,input,select,textarea{max-width:100%;width:auto}
 input.error{color:#a94442;border-color:#ebccd1}
 fieldset legend.panel-heading{float:left;line-height:1em;margin:0}
-fieldset .panel-body{clear:both}
 fieldset .panel-heading a.panel-title{color:inherit;display:block;margin:-10px -15px;padding:10px 15px}
 fieldset .panel-heading a.panel-title:hover{text-decoration:none}
-.form-actions{clear:both}
 .resizable-textarea textarea{border-radius:4px 4px 0 0}
 .checkbox:first-child,.radio:first-child{margin-top:0}
 .checkbox:last-child,.radio:last-child{margin-bottom:0}
@@ -1896,7 +1895,7 @@ body.domain-philado-mda34-org button#edit-submit-resources{color:#fff;background
 body.domain-radio-mda34-org #block-system-main #block-system-main a,body.domain-radio-mda34-org #block-system-main h2.page-header{color:#0080ff}
 body.domain-radio-mda34-org #block-system-main #block-system-main a.btn-success{color:#fff;margin-top:10px}
 body.domain-radio-mda34-org #block-system-main #block-system-main ul li{background:url(../images/arrow-blue.png) 0 50% no-repeat}
-body.domain-radio-mda34-org #block-system-main #block-system-main ul.pagination li,body.no-front #block-system-main ul.pagination li{background-image:none}
+#isotope-options ul#filters li,body.domain-radio-mda34-org #block-system-main #block-system-main ul.pagination li,body.no-front #block-system-main ul.pagination li{background-image:none}
 body.domain-radio-mda34-org #block-system-main #block-system-main .field-name-field-event-website a{background-color:#0080ff;color:#fff;margin:10px 0;border:0}
 body.domain-radio-mda34-org #block-system-main .btn-success{background-color:#0080ff;color:#fff;border:0}
 body.front .block-kcore .block-wrapper-custom a{display:block;padding:9pt 0 15px 70px}
@@ -1999,10 +1998,10 @@ body.front .block.block-views h3{border-bottom:0 solid #cdcdcd}
 .node-type-resource span.auteurs,.node-type-resource span.tag{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#F5F5F5;padding:6px;font-weight:700}
 .node-type-resource div.node img{max-width:40%;float:right;margin-right:0;margin-bottom:1em;margin-left:1em}
 #isotope-options ul#filters{padding:0;margin:0;background-color:#fff}
-#isotope-options ul#filters li{list-style:none;float:left;display:block;margin-right:10px;margin-bottom:8px;padding:0;background-image:none}
+#isotope-options ul#filters li{list-style:none;float:left;display:block;margin-right:10px;margin-bottom:8px;padding:0}
 #isotope-options ul#filters li a{background-color:#F1F1F1;display:block;color:#000;text-transform:uppercase;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
-#isotope-options ul#filters li a:after{content:'';background-image:none;margin:0}
-body.page-agenda.domain-parents-mda34-org h2.page-header:before,body.page-faq h2.page-header:before{margin-right:10px;top:1px;font-style:normal;speak:none;display:inline-block;text-decoration:inherit;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-transform:none;position:relative}
+#isotope-options ul#filters li a:after{background-image:none;margin:0}
+body.page-agenda.domain-parents-mda34-org h2.page-header:before,body.page-faq h2.page-header:before{margin-right:10px;top:1px;font-style:normal;speak:none;display:inline-block;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-transform:none;position:relative;text-decoration:inherit}
 #isotope-options ul#filters li a.selected{background-color:#32903f;color:#fff}
 body.page-faq h2.page-header:before{font-weight:400;color:#999;content:"\e805"}
 body.page-faq .view-faqs .view-header{margin-bottom:37px}
@@ -2119,10 +2118,10 @@ body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks 
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks .block-wrapper-custom p{padding-top:18px}
 body.domain-radio-mda34-org #home-main-container-wrapper .block-social-networks h3{margin:20px 0;color:#fff;background-color:#333}
 .block-wrapper-custom .view-radio-programmes h2>a{font-size:.6em;color:#000;text-transform:none}
-.node-type-news h2.page-header:before,.page-actualites h2.page-header:before,body.page-annuaire h2.page-header:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-size:1em;speak:none;display:inline-block;text-decoration:inherit;width:1em;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.node-type-news h2.page-header:before,.page-actualites h2.page-header:before,body.page-annuaire h2.page-header:before{position:relative;top:1px;font-family:fontello;font-style:normal;font-size:1em;speak:none;width:1em;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .ds-1col.node.node-radio-programme.view-mode-last_item.btn-group-vertical>.btn-group,.ds-1col.node.node-radio-programme.view-mode-last_item.btn-toolbar,.ds-1col.node.node-radio-programme.view-mode-last_item.clearfix,.ds-1col.node.node-radio-programme.view-mode-last_item.container,.ds-1col.node.node-radio-programme.view-mode-last_item.container-fluid,.ds-1col.node.node-radio-programme.view-mode-last_item.dl-horizontal dd,.ds-1col.node.node-radio-programme.view-mode-last_item.form-horizontal .form-group,.ds-1col.node.node-radio-programme.view-mode-last_item.modal-footer,.ds-1col.node.node-radio-programme.view-mode-last_item.nav,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar-collapse,.ds-1col.node.node-radio-programme.view-mode-last_item.navbar-header,.ds-1col.node.node-radio-programme.view-mode-last_item.pager,.ds-1col.node.node-radio-programme.view-mode-last_item.panel-body,.ds-1col.node.node-radio-programme.view-mode-last_item.row{padding:1em}
 body.page-annuaire .view-id-annuaire_filter .view-content{background-color:#fff;padding:0}
-body.page-annuaire h2.page-header:before{font-weight:400;margin-right:10px;text-transform:none;color:#999;content:"\e82f"}
+body.page-annuaire h2.page-header:before{font-weight:400;display:inline-block;text-decoration:inherit;margin-right:10px;text-transform:none;color:#999;content:"\e82f"}
 body.page-annuaire #views-exposed-form-structures-list-structures label{color:#575095}
 body.page-annuaire #views-exposed-form-structures-list-structures button{background-color:#575095;text-transform:uppercase;margin-top:26px;color:#fff}
 body.page-annuaire table.views-table{margin-top:33px}
@@ -2134,9 +2133,23 @@ body.page-annuaire table.views-table td{border:2px solid #fff}
 body.page-annuaire table.views-table td.views-field-title a{font-weight:700;color:#000}
 body.page-annuaire.domain-philado-mda34-org #views-exposed-form-structures-list-structures label{color:#286fc9}
 body.page-annuaire.domain-philado-mda34-org #views-exposed-form-structures-list-structures button{background-color:#286fc9}
-body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures label{color:#32903f}
-body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures button,body.page-annuaire.domain-parents-mda34-org table.views-table th{background-color:#32903f}
+body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures label{color:#32903f;font-weight:400}
+body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures button{background-color:#32903f}
+body.page-annuaire.domain-parents-mda34-org .views-exposed-form .form-item{margin-top:0;margin-bottom:0;float:left}
+body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-all a,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-all a.active{display:none}
+body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-0 a.active,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-1 a.active,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-2 a.active{display:block;color:#fff;background-color:#32903F;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #CCC}
+body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-0 a,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-1 a,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-2 a{display:block;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #CCC;background-color:none}
+body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-0 a:hover,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-1 a:hover,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-2 a:hover{display:block;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #32903F;background-color:none}
+body.page-annuaire.domain-parents-mda34-org #edit-title-wrapper{clear:both}
+body.page-annuaire.domain-parents-mda34-org table.views-table th{background-color:#32903f}
 body.domain-reseau-pro-mda34-org #block-system-main .field.field-name-field-website a{color:#fff}
+body.domain-reseau-pro-mda34-org .views-exposed-form .form-item{margin-top:0;margin-bottom:0;float:left}
+body.domain-reseau-pro-mda34-org #views-exposed-form-structures-list-structures label{font-weight:400}
+body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-all a,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-all a.active{display:none}
+body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-0 a.active,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-1 a.active,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-2 a.active{display:block;color:#fff;background-color:#575095;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #CCC}
+body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-0 a,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-1 a,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-2 a{display:block;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #CCC;background-color:none}
+body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-0 a:hover,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-1 a:hover,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-2 a:hover{display:block;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #575095;background-color:none}
+body.domain-reseau-pro-mda34-org #edit-title-wrapper{clear:both}
 body.node-type-structure .field-name-field-logo img{float:left;max-width:47%}
 body.node-type-structure .group-practical-infos{float:right;margin-left:1em;margin-bottom:1em;padding-top:1.25em;padding-bottom:1.25em}
 body.node-type-structure .sharethis-buttons{min-width:15pc;margin:1em 0}
@@ -2145,7 +2158,7 @@ body.node-type-structure .group-term.field-group-div{border:1px solid #ccc;-webk
 body.node-type-structure .field.field-name-field-coordinates{margin:1em 0}
 body.node-type-structure .field.field-name-field-scald-video.field-type-atom-reference.field-label-hidden{margin-bottom:1em}
 body.node-type-structure .field.field-name-field-website.field-type-link-field.field-label-hidden{float:right}
-.node-type-news h2.page-header:before,.page-actualites h2.page-header:before{font-weight:400;margin-right:10px;text-transform:none;color:#999;content:"\e804"}
+.node-type-news h2.page-header:before,.page-actualites h2.page-header:before{font-weight:400;display:inline-block;text-decoration:inherit;margin-right:10px;text-transform:none;color:#999;content:"\e804"}
 .page-actualites .view-news a>img{float:left;margin-right:15px;max-width:33.33%}
 .page-actualites .view-news.view-display-id-news_last_news a>img{max-width:48%}
 .page-actualites .view-news .views-row{border-bottom:0 solid #999;margin-bottom:10px}

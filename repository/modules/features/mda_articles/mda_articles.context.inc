@@ -97,6 +97,12 @@ function mda_articles_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-8',
         ),
+        'boxes-boite_partenaires_pocket' => array(
+          'module' => 'boxes',
+          'delta' => 'boite_partenaires_pocket',
+          'region' => 'sidebar_second',
+          'weight' => '-7',
+        ),
       ),
     ),
   );

@@ -298,3 +298,6 @@ projects[taxonomy_formatter][version] = "1.4"
 
 projects[domains_metatag][subdir] = contrib
 projects[domains_metatag][version] = "1.1"
+
+projects[better_exposed_filters][subdir] = contrib
+projects[better_exposed_filters][version] = "3.2"
