@@ -195,36 +195,22 @@ $navbar_classes .= ' navbar-inverse navbar-fixed-top';
   </div>
   
  	<div class="footer-bottom container">
-  <?php
-  // Create a variable to hold the full path, in our theme, to the image.
-  //   path_to_theme() takes care of creating the correct path for the active theme (which is likely your own custom one)
-  $my_static_banner = path_to_theme() . '/images/logo_hp.jpg';
-  $my_static_banner2 = path_to_theme() . '/images/logo-nv-region.jpg';
-  $my_static_banner3 = path_to_theme() . '/images/logolrmp.jpg';
-  $my_static_banner4 = path_to_theme() . '/images/dep_herault1.png';
-  $my_static_banner5 = path_to_theme() . '/images/logo-ville-72-dpi-jpg.jpg';
-  $my_static_banner6 = path_to_theme() . '/images/logo-minitere-culture.jpg';
-  $my_static_banner7 = path_to_theme() . '/images/mj-pjjlogo.png';
-  $my_static_banner8 = path_to_theme() . '/images/adages.jpg';
-  $my_static_banner9 = path_to_theme() . '/images/chu.png';
-  $my_static_banner10 = path_to_theme() . '/images/logo_ados.jpg';
-  $my_static_banner11 = path_to_theme() . '/images/dep_herault1.png';
-  ?>
+
 
 		<div class="gauche">
-			<img src="<?php print $my_static_banner ?>" alt="hp" style="width:120px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner2 ?>" alt="lr" style="width:55px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner3 ?>" alt="ars" style="width:65px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner4 ?>" alt="Accueil" style="width:95px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner5 ?>" alt="Accueil" style="width:35px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner6 ?>" alt="Accueil" style="width:40px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner7 ?>" alt="Accueil" style="width:50px; height:auto;padding:0.25em;">
+			<img alt="" style="width:120px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo_hp.jpg">
+			<img alt="" style="width:55px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo-nv-region.jpg">
+			<img alt="" style="width:65px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logolrmp.jpg">
+			<img alt="" style="width:95px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/dep_herault1.png">
+			<img alt="" style="width:35px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo-ville-72-dpi-jpg.jpg">
+			<img alt="" style="width:40px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo-minitere-culture.jpg">
+			<img alt="" style="width:45px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/mj-pjjlogo.png">
 		</div>	
 	
 		 <div class="droite">
-			<img src="<?php print $my_static_banner8 ?>" alt="hp" style="width:75px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner9 ?>" alt="lr" style="width:80px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner10 ?>" alt="ars" style="width:50px; height:auto;padding:0.25em;">
+			<img alt="Adages" style="width:75px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/adages.jpg">
+			<img alt="CHU" style="width:80px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/chu.png">
+			<img alt="" style="width:50px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo_ados.jpg">
 		</div> 
 	
 	</div>
