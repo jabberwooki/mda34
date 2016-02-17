@@ -383,15 +383,37 @@ body.page-annuaire.domain-parents-mda34-org {
 	}
 }
 
-  .isotope-element {
-  width: 340px;
-  background-image: none;
-  -webkit-border-radius: 4px;
+ .view-filters {
+    border: 0px solid #ccc;
+    -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    padding:10px;
-    background-color: white;
-    box-shadow: 1px 1px 1px #ccc;
+     background-color: #fff;
+    margin-bottom: 1.25em;
+    }
+ 
+ 
+   #isotope-container {
+      width:92%;
+      margin:0 auto;
+      }
+      
+      .isotope-element {
+		 width: 320px;
+		padding: 1em;
+		margin: 1.5em 1em 1em;
+		    background: white;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		@media (max-width:@screen-xs)
+		{
+		width: 262px;
+		margin:1em 0;
+		
+		}
+ 
+ 
 	.views-field-field-mission {
     color: #555;
 
@@ -414,19 +436,23 @@ body.page-annuaire.domain-parents-mda34-org {
     font-weight:bold;
   }
  
-   .views-field-field-logo img {
-      width: auto;
+ .views-field-field-logo img {
+      width: 20%;
     height: auto;
     margin: 0.5em;
     /* display: block; */
     float: right;
+    
+    @media (max-width:@screen-xs)
+		{
+	display:none;
+		
+		}
     }
  
 	.view-content
 	{
 		background-color: #F1F1F1;
-		margin: 1em 0em 0em 0em;
-		padding:0.75em;
 		  -webkit-border-radius: 4px;
 		-moz-border-radius: 4px;
 		border-radius: 4px;
@@ -466,21 +492,36 @@ body.page-annuaire.domain-reseau-pro-mda34-org {
 .view-content
 {
     background-color: #F1F1F1;
-    padding:1.75em;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
 
-  .isotope-element {
-  width: 340px;
-  background-image: none;
-  -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    padding:10px;
-    background-color: white;
-    box-shadow: 1px 1px 1px #ccc;
+
+
+
+  #isotope-container {
+      width:92%;
+      margin:0 auto;
+      }
+      
+      .isotope-element {
+		 width: 320px;
+		padding: 1em;
+		margin: 1.5em 1em 1em;
+		    background: white;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		@media (max-width:@screen-xs)
+		{
+		width: 262px;
+		margin:1em 0;
+		
+		}
+
+
+
     
 	.views-field-field-mission {
     color: #555;
@@ -502,11 +543,17 @@ body.page-annuaire.domain-reseau-pro-mda34-org {
   }
   
   .views-field-field-logo img {
-      width: auto;
+      width: 20%;
     height: auto;
     margin: 0.5em;
     /* display: block; */
     float: right;
+    
+    @media (max-width:@screen-xs)
+		{
+	display:none;
+		
+		}
     }
 
 }

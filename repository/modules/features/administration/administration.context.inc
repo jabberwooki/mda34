@@ -25,12 +25,9 @@ function administration_context_default_contexts() {
         'node_form' => '0',
       ),
     ),
-    'node_taxonomy' => array(
+    'path' => array(
       'values' => array(
-        268 => 268,
-      ),
-      'options' => array(
-        'node_form' => '0',
+        'article/pocket-film-2016/*' => 'article/pocket-film-2016/*',
       ),
     ),
   );
@@ -48,12 +45,6 @@ function administration_context_default_contexts() {
           'delta' => 'multimedia-laureat',
           'region' => 'sidebar_second',
           'weight' => '1',
-        ),
-        'entityform_block-pre_inscription_pocket_film' => array(
-          'module' => 'entityform_block',
-          'delta' => 'pre_inscription_pocket_film',
-          'region' => 'sidebar_second',
-          'weight' => '2',
         ),
       ),
     ),

@@ -1991,6 +1991,8 @@ body.front .block.block-views h3{border-bottom:0 solid #cdcdcd}
 .group-link-resources .field-name-field-themes .field-items a:after{content:" - "}
 .page-ressources.domain-reseau-pro-mda34-org .view-filters{border:1px solid #eee;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:5px 15px 20px;background-color:#e9e9e9}
 .page-ressources.domain-reseau-pro-mda34-org .btn-info{color:#fff;background-color:#575095;border-color:#ccc}
+.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.btn-group-vertical>.btn-group,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.btn-toolbar,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.clearfix,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.container,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.container-fluid,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.dl-horizontal dd,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.form-horizontal .form-group,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.modal-footer,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.nav,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.navbar,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.navbar-collapse,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.navbar-header,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.pager,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.panel-body,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.row{margin:1em 0}
+.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.btn-group-vertical>.btn-group .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.btn-toolbar .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.clearfix .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.container .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.container-fluid .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.dl-horizontal dd .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.form-horizontal .form-group .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.modal-footer .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.nav .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.navbar .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.navbar-collapse .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.navbar-header .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.pager .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.panel-body .field-item,.node-type-resource .field.field-name-field-disponible-la-mda.field-type-list-boolean.field-label-inline.row .field-item{background-color:#dff0d8;border-radius:4px;border:1px solid transparent;padding:0 5px;color:#3c763d}
 .node-type-resource .field.field-name-field-resource-files{margin:1em 0;font-weight:700}
 .node-type-resource div.node img.file-icon{margin:0;float:left}
 .node-type-resource .field-name-field-isbn,.node-type-resource .field-name-field-resource-authors,.node-type-resource .field-type-taxonomy-term-reference,.node-type-resource .field.field-name-field-resource-type,.node-type-resource .field.field-name-field-themes{margin:.95em 0}
@@ -2001,7 +2003,7 @@ body.front .block.block-views h3{border-bottom:0 solid #cdcdcd}
 #isotope-options ul#filters li{list-style:none;float:left;display:block;margin-right:10px;margin-bottom:8px;padding:0}
 #isotope-options ul#filters li a{background-color:#F1F1F1;display:block;color:#000;text-transform:uppercase;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
 #isotope-options ul#filters li a:after{background-image:none;margin:0}
-body.page-agenda.domain-parents-mda34-org h2.page-header:before,body.page-faq h2.page-header:before{margin-right:10px;top:1px;font-style:normal;speak:none;display:inline-block;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-transform:none;position:relative;text-decoration:inherit}
+body.page-agenda.domain-parents-mda34-org h2.page-header:before,body.page-faq h2.page-header:before{display:inline-block;margin-right:10px;top:1px;font-style:normal;speak:none;text-align:center;font-variant:normal;line-height:1em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-transform:none;position:relative;text-decoration:inherit}
 #isotope-options ul#filters li a.selected{background-color:#32903f;color:#fff}
 body.page-faq h2.page-header:before{font-weight:400;color:#999;content:"\e805"}
 body.page-faq .view-faqs .view-header{margin-bottom:37px}
@@ -2053,23 +2055,32 @@ body.page-faq.domain-ados-mda34-org.page-faq .isotope-element{width:20pc;padding
 }
 body.page-annuaire.domain-parents-mda34-org #isotope-options ul#filters{padding:0;margin:0;background-color:#fff;font-weight:700}
 body.page-annuaire.domain-parents-mda34-org .view-id-annuaire_filter .view-content{background-color:#fff}
-body.page-annuaire.domain-parents-mda34-org .isotope-element{width:340px;background-image:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;background-color:#fff;box-shadow:1px 1px 1px #ccc}
+body.page-annuaire.domain-parents-mda34-org .view-filters{border:0 solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fff;margin-bottom:1.25em}
+body.page-annuaire.domain-parents-mda34-org #isotope-container{width:92%;margin:0 auto}
+body.page-annuaire.domain-parents-mda34-org .isotope-element{width:20pc;padding:1em;margin:1.5em 1em 1em;background:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+@media (max-width:380px){body.page-annuaire.domain-parents-mda34-org .isotope-element{width:262px;margin:1em 0}
+body.page-annuaire.domain-parents-mda34-org .views-field-field-logo img{display:none}
+}
 body.page-annuaire.domain-parents-mda34-org .isotope-element .views-field-field-mission{color:#555}
 body.page-annuaire.domain-parents-mda34-org .isotope-element .views-field-title{border:0;padding:0;margin-bottom:.25em}
 body.page-annuaire.domain-parents-mda34-org .isotope-element .views-field-title a{color:#32903f!important;font-size:1.15em}
 body.page-annuaire.domain-parents-mda34-org #isotope-options ul#filters li a.selected{background-color:#32903f;font-weight:700}
-body.page-annuaire.domain-parents-mda34-org .views-field-field-logo img{width:auto;height:auto;margin:.5em;float:right}
-body.page-annuaire.domain-parents-mda34-org .view-content{background-color:#F1F1F1;margin:1em 0 0;padding:.75em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+body.page-annuaire.domain-parents-mda34-org .views-field-field-logo img{width:20%;height:auto;margin:.5em;float:right}
+body.page-annuaire.domain-parents-mda34-org .view-content{background-color:#F1F1F1;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
 body.page-annuaire.domain-reseau-pro-mda34-org #isotope-options ul#filters{padding:0;margin:0;background-color:#fff;font-weight:700}
 body.page-annuaire.domain-reseau-pro-mda34-org .view-id-annuaire_filter .view-content{background-color:#fff}
 body.page-annuaire.domain-reseau-pro-mda34-org .view-filters{border:0 solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fff;margin-bottom:1.25em}
-body.page-annuaire.domain-reseau-pro-mda34-org .view-content{background-color:#F1F1F1;padding:1.75em;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
-body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element{width:340px;background-image:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px;background-color:#fff;box-shadow:1px 1px 1px #ccc}
+body.page-annuaire.domain-reseau-pro-mda34-org .view-content{background-color:#F1F1F1;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+body.page-annuaire.domain-reseau-pro-mda34-org #isotope-container{width:92%;margin:0 auto}
+body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element{width:20pc;padding:1em;margin:1.5em 1em 1em;background:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+@media (max-width:380px){body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element{width:262px;margin:1em 0}
+body.page-annuaire.domain-reseau-pro-mda34-org .views-field-field-logo img{display:none}
+}
 body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element .views-field-field-mission{color:#555}
 body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element .views-field-title{border:0;padding:0;margin-bottom:.25em}
 body.page-annuaire.domain-reseau-pro-mda34-org .isotope-element .views-field-title a{color:#575095!important;font-size:1.15em}
 body.page-annuaire.domain-reseau-pro-mda34-org #isotope-options ul#filters li a.selected{background-color:#575095}
-body.page-annuaire.domain-reseau-pro-mda34-org .views-field-field-logo img{width:auto;height:auto;margin:.5em;float:right}
+body.page-annuaire.domain-reseau-pro-mda34-org .views-field-field-logo img{width:20%;height:auto;margin:.5em;float:right}
 body.page-annuaire.domain-philado-mda34-org #isotope-options ul#filters{padding:0;margin:0;background-color:#fff;font-weight:700}
 body.page-annuaire.domain-philado-mda34-org .view-id-annuaire_filter .view-content{background-color:#fff}
 body.page-annuaire.domain-philado-mda34-org .view-filters{border:0 solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fff;margin-bottom:1.25em}
@@ -2136,20 +2147,24 @@ body.page-annuaire.domain-philado-mda34-org #views-exposed-form-structures-list-
 body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures label{color:#32903f;font-weight:400}
 body.page-annuaire.domain-parents-mda34-org #views-exposed-form-structures-list-structures button{background-color:#32903f}
 body.page-annuaire.domain-parents-mda34-org .views-exposed-form .form-item{margin-top:0;margin-bottom:0;float:left}
+@media (max-width:380px){body.page-annuaire.domain-parents-mda34-org .views-exposed-form .form-item{margin-bottom:.5em}
+body.page-annuaire.domain-parents-mda34-org #edit-title-wrapper,body.page-annuaire.domain-parents-mda34-org .views-exposed-widget.views-submit-button{display:none}
+}
 body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-all a,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-all a.active{display:none}
 body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-0 a.active,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-1 a.active,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-2 a.active{display:block;color:#fff;background-color:#32903F;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #CCC}
 body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-0 a,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-1 a,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-2 a{display:block;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #CCC;background-color:none}
 body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-0 a:hover,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-1 a:hover,body.page-annuaire.domain-parents-mda34-org #edit-field-secteur-geo-value-2 a:hover{display:block;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #32903F;background-color:none}
-body.page-annuaire.domain-parents-mda34-org #edit-title-wrapper{clear:both}
 body.page-annuaire.domain-parents-mda34-org table.views-table th{background-color:#32903f}
 body.domain-reseau-pro-mda34-org #block-system-main .field.field-name-field-website a{color:#fff}
-body.domain-reseau-pro-mda34-org .views-exposed-form .form-item{margin-top:0;margin-bottom:0;float:left}
 body.domain-reseau-pro-mda34-org #views-exposed-form-structures-list-structures label{font-weight:400}
 body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-all a,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-all a.active{display:none}
+body.domain-reseau-pro-mda34-org .views-exposed-form .form-item{margin-top:0;margin-bottom:0;float:left}
+@media (max-width:380px){body.domain-reseau-pro-mda34-org #edit-title-wrapper,body.domain-reseau-pro-mda34-org .views-exposed-widget.views-submit-button{display:none}
+body.domain-reseau-pro-mda34-org .views-exposed-form .form-item{margin-bottom:.5em}
+}
 body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-0 a.active,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-1 a.active,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-2 a.active{display:block;color:#fff;background-color:#575095;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #CCC}
 body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-0 a,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-1 a,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-2 a{display:block;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #CCC;background-color:none}
 body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-0 a:hover,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-1 a:hover,body.domain-reseau-pro-mda34-org #edit-field-secteur-geo-value-2 a:hover{display:block;padding:8px 14px;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 .5em 0 0;border:1px solid #575095;background-color:none}
-body.domain-reseau-pro-mda34-org #edit-title-wrapper{clear:both}
 body.node-type-structure .field-name-field-logo img{float:left;max-width:47%}
 body.node-type-structure .group-practical-infos{float:right;margin-left:1em;margin-bottom:1em;padding-top:1.25em;padding-bottom:1.25em}
 body.node-type-structure .sharethis-buttons{min-width:15pc;margin:1em 0}

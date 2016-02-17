@@ -81,9 +81,23 @@ body.page-annuaire {
     
  .views-exposed-form .form-item {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0em;
     float: left;
+    @media (max-width:@screen-xs)
+		{
+		margin-bottom:0.5em;
+		
+		}
 }
+
+
+#edit-title-wrapper,.views-exposed-widget.views-submit-button {
+ @media (max-width:@screen-xs)
+		{
+		display:none;
+		
+		}
+		}
 
 
 #views-exposed-form-structures-list-structures label {
@@ -148,11 +162,6 @@ body.page-annuaire {
 }
 
 
-
-#edit-title-wrapper {
-    clear: both;
-}
-	
     
     
     
@@ -176,6 +185,13 @@ body.domain-reseau-pro-mda34-org {
     margin-bottom: 0;
     float: left;
 }
+#edit-title-wrapper,.views-exposed-widget.views-submit-button {
+ @media (max-width:@screen-xs)
+		{
+		display:none;
+		
+		}
+		}
 
 
 #views-exposed-form-structures-list-structures label {
@@ -187,7 +203,16 @@ body.domain-reseau-pro-mda34-org {
     display:none;
 }
 	
-	
+	 .views-exposed-form .form-item {
+    margin-top: 0;
+    margin-bottom: 0em;
+    float: left;
+    @media (max-width:@screen-xs)
+		{
+		margin-bottom:0.5em;
+		
+		}
+}
 
 	#edit-field-secteur-geo-value-0 a.active,
 	#edit-field-secteur-geo-value-1 a.active,
@@ -240,12 +265,6 @@ body.domain-reseau-pro-mda34-org {
 }
 
 
-
-#edit-title-wrapper {
-    clear: both;
-}
-	
-	
 	
 	
 }
