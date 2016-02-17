@@ -89,7 +89,57 @@ function mda_resources_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 11,
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-resource-field_disponible_la_mda'
+  $field_instances['node-resource-field_disponible_la_mda'] = array(
+    'bundle' => 'resource',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 17,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_disponible_la_mda',
+    'label' => 'Disponible en prêt à la MDA',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 5,
     ),
   );
 
@@ -143,7 +193,7 @@ function mda_resources_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -231,7 +281,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'size' => 20,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -257,7 +307,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -367,7 +417,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -393,15 +443,8 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       ),
       'full' => array(
         'label' => 'inline',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'short_no_time',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 6,
       ),
       'teaser' => array(
@@ -441,7 +484,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -512,7 +555,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -598,7 +641,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -673,7 +716,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 5,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -719,7 +762,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -778,7 +821,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -807,7 +850,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
           'override' => 0,
         ),
         'type' => 'scald_col_8',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -837,7 +880,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -896,7 +939,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'context' => 'sdl_editor_representation',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -974,7 +1017,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1272,6 +1315,7 @@ Le numéro ISBN comporte 13 chiffres répartis en 5 nombres.
   t('Année de parution de la ressource');
   t('Auteurs');
   t('Body');
+  t('Disponible en prêt à la MDA');
   t('Domaine professionnel');
   t('Editeur');
   t('Fichier(s)');

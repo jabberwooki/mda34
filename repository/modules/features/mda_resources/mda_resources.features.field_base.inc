@@ -10,6 +10,32 @@
 function mda_resources_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_disponible_la_mda'
+  $field_bases['field_disponible_la_mda'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_disponible_la_mda',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'Non',
+        1 => 'Oui',
+      ),
+      'allowed_values_function' => '',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_boolean',
+  );
+
   // Exported field_base: 'field_dom_prof_profil'
   $field_bases['field_dom_prof_profil'] = array(
     'active' => 1,
