@@ -4,7 +4,7 @@
  * @file
  * Display Suite 1 column template with layout wrapper.
  */
-$pret=($content['field_disponible_la_mda']['#items'][0]['value']);
+$pret=render($content['field_disponible_la_mda']['#items'][0]['value']);
 
 ?>
 <<?php print $layout_wrapper; print $layout_attributes; ?> class="ds-1col <?php print $classes;?> clearfix">
@@ -25,12 +25,17 @@ $pret=($content['field_disponible_la_mda']['#items'][0]['value']);
     <?php print render($content['field_editor']); ?>
 <?php endif; ?>
 
+
+<?php if (!empty($content['field_isbn']['#title'])): ?>
 <div class="field field-name-field-isbn field-type-text field-label-inline clearfix">
 	<div class="field-label"><?php print render($content['field_isbn']['#title']);?></div>
 	<div class="field-items">
 		<div class="field-item even"> : <?php print render($content['field_isbn']['#items'][0]['value']);?></div>
 	</div>
 </div>
+<?php endif; ?>
+
+
 <?php 
 if ($pret=="1"){
 print render($content['field_disponible_la_mda']); 
@@ -42,6 +47,8 @@ else {
 <?php print render($content['body']);?>
 <?php print render($content['field_resource_files']); ?>
 <?php print render($content['field_resource_url']); ?>
+</br>
+<?php print render($content['field_scald_video']); ?>
 
 </<?php print $layout_wrapper ?>>
 
