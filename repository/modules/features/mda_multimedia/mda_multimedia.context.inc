@@ -31,6 +31,7 @@ function mda_multimedia_context_default_contexts() {
         '~annuaire' => '~annuaire',
         '~article*' => '~article*',
         '~rubrique*' => '~rubrique*',
+        '~multimedia*' => '~multimedia*',
       ),
     ),
     'sitewide' => array(
