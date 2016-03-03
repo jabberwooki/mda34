@@ -28,6 +28,7 @@ function mda_radio_context_default_contexts() {
         '~faq' => '~faq',
         '~article*' => '~article*',
         '~rubrique*' => '~rubrique*',
+        '~multimedia*' => '~multimedia*',
       ),
     ),
   );
