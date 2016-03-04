@@ -181,7 +181,7 @@ function kcore_menu_default_uuid_features_menu() {
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -37,
+    'weight' => -36,
     'uuid' => 'ac6e0fe7-0993-4d7c-ae0f-0092a88509ef',
   );
   // Exported menu link: af907ce2-4174-471c-a55e-e08e15142773
@@ -217,7 +217,7 @@ function kcore_menu_default_uuid_features_menu() {
     'external' => 1,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -38,
+    'weight' => -37,
     'uuid' => 'af907ce2-4174-471c-a55e-e08e15142773',
   );
   // Exported menu link: cbef5c2e-c868-4faf-9fff-c2e9afa72272
