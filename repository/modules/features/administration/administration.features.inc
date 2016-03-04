@@ -93,7 +93,7 @@ function administration_default_entityform_type() {
       "submission_show_submitted" : 1,
       "submissions_view" : "default",
       "user_submissions_view" : "default",
-      "form_status" : "ENTITYFORM_OPEN",
+      "form_status" : "ENTITYFORM_CLOSED",
       "roles" : {
         "1" : "1",
         "2" : "2",
