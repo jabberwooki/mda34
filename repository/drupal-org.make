@@ -24,7 +24,7 @@ projects[features_extra][subdir] = contrib
 projects[features_extra][version] = "1.0-beta1"
 
 projects[field_group][subdir] = contrib
-projects[field_group][version] = "1.4"
+projects[field_group][version] = "1.5"
 
 projects[files_undo_remove][subdir] = contrib
 projects[files_undo_remove][version] = "1.3"
@@ -36,7 +36,7 @@ projects[imce_mkdir][subdir] = contrib
 projects[imce_mkdir][version] = "1.0"
 
 projects[jquery_update][subdir] = contrib
-projects[jquery_update][version] = "2.6"
+projects[jquery_update][version] = "2.7"
 
 projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = "2.0"
@@ -85,7 +85,7 @@ projects[addressfield][version] = "1.0"
 ;projects[bean][version] = "1.9"
 
 projects[block_class][subdir] = contrib
-projects[block_class][version] = "2.1"
+projects[block_class][version] = "2.3"
 
 projects[boxes][subdir] = contrib
 projects[boxes][version] = "1.2"
@@ -189,7 +189,7 @@ projects[scald][subdir] = contrib
 projects[scald][version] = "1.5"
 
 projects[scald_file][subdir] = contrib
-projects[scald_file][version] = "1.2"
+projects[scald_file][version] = "1.3"
 
 projects[scald_dailymotion][subdir] = contrib
 projects[scald_dailymotion][version] = "1.4"
