@@ -152,12 +152,6 @@ function kcontextes_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-8',
         ),
-        'mailchimp_signup-newsletter' => array(
-          'module' => 'mailchimp_signup',
-          'delta' => 'newsletter',
-          'region' => 'sidebar_second',
-          'weight' => '-7',
-        ),
         'boxes-pros_resources_link' => array(
           'module' => 'boxes',
           'delta' => 'pros_resources_link',
