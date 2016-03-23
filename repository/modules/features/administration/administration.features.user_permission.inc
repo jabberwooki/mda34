@@ -42,6 +42,16 @@ function administration_user_default_permissions() {
     'module' => 'scald_dnd_library',
   );
 
+  // Exported permission: 'administer CAPTCHA settings'.
+  $permissions['administer CAPTCHA settings'] = array(
+    'name' => 'administer CAPTCHA settings',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'captcha',
+  );
+
   // Exported permission: 'administer EU Cookie Compliance popup'.
   $permissions['administer EU Cookie Compliance popup'] = array(
     'name' => 'administer EU Cookie Compliance popup',
@@ -79,6 +89,16 @@ function administration_user_default_permissions() {
       'superadmin' => 'superadmin',
     ),
     'module' => 'mollom',
+  );
+
+  // Exported permission: 'administer recaptcha'.
+  $permissions['administer recaptcha'] = array(
+    'name' => 'administer recaptcha',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'recaptcha',
   );
 
   // Exported permission: 'administer rules'.
@@ -193,6 +213,16 @@ function administration_user_default_permissions() {
     'name' => 'show format selection for rules_config',
     'roles' => array(),
     'module' => 'better_formats',
+  );
+
+  // Exported permission: 'skip CAPTCHA'.
+  $permissions['skip CAPTCHA'] = array(
+    'name' => 'skip CAPTCHA',
+    'roles' => array(
+      'administrateur' => 'administrateur',
+      'superadmin' => 'superadmin',
+    ),
+    'module' => 'captcha',
   );
 
   // Exported permission: 'view any entityform'.
