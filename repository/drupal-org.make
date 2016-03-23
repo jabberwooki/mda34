@@ -301,3 +301,9 @@ projects[domains_metatag][version] = "1.1"
 
 projects[better_exposed_filters][subdir] = contrib
 projects[better_exposed_filters][version] = "3.2"
+
+projects[recaptcha][subdir] = contrib
+projects[recaptcha][version] = "2.0"
+
+projects[captcha][subdir] = contrib
+projects[captcha][version] = "1.3"
