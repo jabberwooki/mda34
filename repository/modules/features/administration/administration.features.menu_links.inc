@@ -25,7 +25,7 @@ function administration_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 0,
-    'customized' => 1,
+    'customized' => 0,
     'parent_identifier' => 'management_rdaction-de-contenu:admin/config/content',
   );
   // Exported menu link: management_entityform-submissions:admin/reports/entityforms
@@ -46,7 +46,7 @@ function administration_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 0,
-    'customized' => 1,
+    'customized' => 0,
     'parent_identifier' => 'management_rapports:admin/reports',
   );
   // Exported menu link: management_entityform-types:admin/structure/entityform_types
@@ -67,7 +67,7 @@ function administration_menu_default_menu_links() {
     'has_children' => 1,
     'expanded' => 0,
     'weight' => 0,
-    'customized' => 1,
+    'customized' => 0,
     'parent_identifier' => 'management_structure:admin/structure',
   );
   // Exported menu link: management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance
