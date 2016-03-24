@@ -15,7 +15,7 @@ function administration_captcha_default_points() {
   $captcha->api_version = 1;
   $captcha->form_id = 'user_login';
   $captcha->module = '';
-  $captcha->captcha_type = 'default';
+  $captcha->captcha_type = '';
   $export['user_login'] = $captcha;
 
   $captcha = new stdClass();

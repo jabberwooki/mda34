@@ -90,11 +90,6 @@ function administration_strongarm() {
       'key' => 'actions',
       'weight' => 99,
     ),
-    'user_register_form' => array(
-      'path' => array(),
-      'key' => 'actions',
-      'weight' => 99,
-    ),
   );
   $export['captcha_placement_map_cache'] = $strongarm;
 
