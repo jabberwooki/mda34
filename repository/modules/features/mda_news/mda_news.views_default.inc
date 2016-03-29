@@ -93,7 +93,7 @@ function mda_news_views_default_views() {
   /* Display: Liste des actus */
   $handler = $view->new_display('page_with_page_title', 'Liste des actus', 'news_list');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Les actualités de la MDA34';
+  $handler->display->display_options['title'] = 'Actualités';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -202,7 +202,8 @@ function mda_news_views_default_views() {
   $handler->display->display_options['fields']['field_scald_image']['field'] = 'field_scald_image';
   $handler->display->display_options['fields']['field_scald_image']['label'] = '';
   $handler->display->display_options['fields']['field_scald_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_scald_image']['type'] = 'full';
+  $handler->display->display_options['fields']['field_scald_image']['click_sort_column'] = 'sid';
+  $handler->display->display_options['fields']['field_scald_image']['type'] = 'scald_col_4';
   $handler->display->display_options['fields']['field_scald_image']['settings'] = array(
     'link' => '1',
   );
@@ -647,7 +648,7 @@ function mda_news_views_default_views() {
     t('dernier »'),
     t('Lire la suite >'),
     t('Liste des actus'),
-    t('Les actualités de la MDA34'),
+    t('Actualités'),
     t('Lire la suite'),
     t('<div class="news-item-fields">
 <h3>[title]</h3>
@@ -658,7 +659,6 @@ function mda_news_views_default_views() {
     t('La dernière actualité'),
     t('Tout'),
     t('Accueil portail ados'),
-    t('Actualités'),
     t('<div class="img-title-wrapper">
 [field_scald_image]
 <h4>[title]</h4>

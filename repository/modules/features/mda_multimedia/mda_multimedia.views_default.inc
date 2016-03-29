@@ -215,14 +215,23 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_tags_tid';
   $handler->display->display_options['filters']['uuid']['value'] = '9fd4d5c4-a656-4906-922d-1a801916704a';
+  /* Critère de filtrage: Atome : Fournisseur */
+  $handler->display->display_options['filters']['provider']['id'] = 'provider';
+  $handler->display->display_options['filters']['provider']['table'] = 'scald_atoms';
+  $handler->display->display_options['filters']['provider']['field'] = 'provider';
+  $handler->display->display_options['filters']['provider']['value'] = array(
+    'scald_dailymotion' => 'scald_dailymotion',
+    'scald_vimeo' => 'scald_vimeo',
+    'scald_youtube' => 'scald_youtube',
+  );
 
   /* Display: Lauréat */
   $handler = $view->new_display('block', 'Lauréat', 'laureat');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Les lauréats 2015';
+  $handler->display->display_options['title'] = 'Les lauréats 2016';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -253,6 +262,13 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_tags_tid';
   $handler->display->display_options['filters']['uuid']['value'] = '341803af-f616-45d1-af01-8013093cb8b6';
+  /* Critère de filtrage: Atome : Fournisseur */
+  $handler->display->display_options['filters']['provider']['id'] = 'provider';
+  $handler->display->display_options['filters']['provider']['table'] = 'scald_atoms';
+  $handler->display->display_options['filters']['provider']['field'] = 'provider';
+  $handler->display->display_options['filters']['provider']['value'] = array(
+    'scald_video' => 'scald_video',
+  );
   $handler->display->display_options['block_description'] = 'laureat';
 
   /* Display: Videos */
@@ -326,6 +342,7 @@ function mda_multimedia_views_default_views() {
   /* Display: Teaser Poket Film */
   $handler = $view->new_display('block', 'Teaser Poket Film', 'block_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Lauréats 2016';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -428,11 +445,12 @@ function mda_multimedia_views_default_views() {
     t('Lien Toutes les vidéos'),
     t('<a href="/multimedia/videos">Toutes nos videos</a>'),
     t('Lauréat'),
-    t('Les lauréats 2015'),
+    t('Les lauréats 2016'),
     t('laureat'),
     t('Videos'),
     t('Affiche'),
     t('Teaser Poket Film'),
+    t('Lauréats 2016'),
     t('Vidéo présentation'),
     t('La MDA 34 en vidéo'),
     t('Video presentation'),
