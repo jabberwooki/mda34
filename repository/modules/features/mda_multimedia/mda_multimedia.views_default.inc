@@ -172,6 +172,93 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
 
+  /* Display: Liste pocketfilm */
+  $handler = $view->new_display('page', 'Liste pocketfilm', 'page_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Les films du concours';
+  $handler->display->display_options['defaults']['query'] = FALSE;
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Éléments par page';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Tout -';
+  $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Décalage';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« premier';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ précédent';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'suivant ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'dernier »';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'isotope';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Champ: Atome : Identifiant Scald */
+  $handler->display->display_options['fields']['sid']['id'] = 'sid';
+  $handler->display->display_options['fields']['sid']['table'] = 'scald_atoms';
+  $handler->display->display_options['fields']['sid']['field'] = 'sid';
+  $handler->display->display_options['fields']['sid']['exclude'] = TRUE;
+  /* Champ: Atome : Représentation */
+  $handler->display->display_options['fields']['representation']['id'] = 'representation';
+  $handler->display->display_options['fields']['representation']['table'] = 'scald_atoms';
+  $handler->display->display_options['fields']['representation']['field'] = 'representation';
+  $handler->display->display_options['fields']['representation']['label'] = '';
+  $handler->display->display_options['fields']['representation']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['representation']['context'] = 'grille_player';
+  /* Champ: Atomes : Thumbnail */
+  $handler->display->display_options['fields']['scald_thumbnail']['id'] = 'scald_thumbnail';
+  $handler->display->display_options['fields']['scald_thumbnail']['table'] = 'field_data_scald_thumbnail';
+  $handler->display->display_options['fields']['scald_thumbnail']['field'] = 'scald_thumbnail';
+  $handler->display->display_options['fields']['scald_thumbnail']['label'] = '';
+  $handler->display->display_options['fields']['scald_thumbnail']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['scald_thumbnail']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['scald_thumbnail']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['scald_thumbnail']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'content',
+  );
+  /* Champ: Atome : Titre */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'scald_atoms';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '/atom/[sid]';
+  $handler->display->display_options['fields']['title']['alter']['path_case'] = 'ucfirst';
+  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '60';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Critère de filtrage: Atome : Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'scald_atoms';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'video' => 'video',
+  );
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_authors_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = 'ad6cb0c3-f74a-4ab1-8f50-6ada55ce5eca';
+  $handler->display->display_options['path'] = 'rubrique/pocket-film-2016/lesfilms';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Les films';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
+
   /* Display: Notre chaine */
   $handler = $view->new_display('block', 'Notre chaine', 'block_last_video');
   $handler->display->display_options['defaults']['title'] = FALSE;
@@ -234,6 +321,14 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Pied de page: Global : Zone de texte */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['empty'] = TRUE;
+  $handler->display->display_options['footer']['area']['content'] = '<a href="rubrique/pocket-film-2016/lesfilms">Tout les films</a>';
+  $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Champ: Atome : Représentation */
   $handler->display->display_options['fields']['representation']['id'] = 'representation';
@@ -441,11 +536,14 @@ function mda_multimedia_views_default_views() {
     t('Liste'),
     t('Vidéos'),
     t('TAG'),
+    t('Liste pocketfilm'),
+    t('Les films du concours'),
     t('Notre chaine'),
     t('Lien Toutes les vidéos'),
     t('<a href="/multimedia/videos">Toutes nos videos</a>'),
     t('Lauréat'),
     t('Les lauréats 2016'),
+    t('<a href="rubrique/pocket-film-2016/lesfilms">Tout les films</a>'),
     t('laureat'),
     t('Videos'),
     t('Affiche'),
