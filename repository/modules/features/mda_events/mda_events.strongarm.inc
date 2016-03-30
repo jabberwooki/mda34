@@ -125,6 +125,12 @@ function mda_events_strongarm() {
             'visible' => TRUE,
           ),
         ),
+        'disqus' => array(
+          'full' => array(
+            'weight' => '1002',
+            'visible' => FALSE,
+          ),
+        ),
       ),
     ),
   );

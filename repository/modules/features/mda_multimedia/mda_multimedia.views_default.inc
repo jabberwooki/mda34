@@ -327,7 +327,7 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
-  $handler->display->display_options['footer']['area']['content'] = '<a href="rubrique/pocket-film-2016/lesfilms">Tout les films</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/rubrique/pocket-film-2016/lesfilms">Tout les films</a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Champ: Atome : Représentation */
@@ -543,7 +543,7 @@ function mda_multimedia_views_default_views() {
     t('<a href="/multimedia/videos">Toutes nos videos</a>'),
     t('Lauréat'),
     t('Les lauréats 2016'),
-    t('<a href="rubrique/pocket-film-2016/lesfilms">Tout les films</a>'),
+    t('<a href="/rubrique/pocket-film-2016/lesfilms">Tout les films</a>'),
     t('laureat'),
     t('Videos'),
     t('Affiche'),
