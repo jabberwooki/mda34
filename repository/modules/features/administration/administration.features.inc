@@ -11,6 +11,9 @@ function administration_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "boxes" && $api == "box") {
     return array("version" => "1");
   }
+  if ($module == "captcha" && $api == "captcha") {
+    return array("version" => "1");
+  }
   if ($module == "context" && $api == "context") {
     return array("version" => "3");
   }
@@ -93,7 +96,7 @@ function administration_default_entityform_type() {
       "submission_show_submitted" : 1,
       "submissions_view" : "default",
       "user_submissions_view" : "default",
-      "form_status" : "ENTITYFORM_OPEN",
+      "form_status" : "ENTITYFORM_CLOSED",
       "roles" : {
         "1" : "1",
         "2" : "2",

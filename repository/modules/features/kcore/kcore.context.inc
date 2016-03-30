@@ -28,6 +28,7 @@ function kcore_context_default_contexts() {
         '~faq' => '~faq',
         '~rubrique*' => '~rubrique*',
         '~article*' => '~article*',
+        '~multimedia*' => '~multimedia*',
       ),
     ),
     'sitewide' => array(
@@ -171,6 +172,7 @@ function kcore_context_default_contexts() {
         '~faq*' => '~faq*',
         '~rubrique*' => '~rubrique*',
         '~article*' => '~article*',
+        '~multimedia*' => '~multimedia*',
       ),
     ),
     'sitewide' => array(

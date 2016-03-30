@@ -120,7 +120,7 @@ function mda_news_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -233,7 +233,7 @@ function mda_news_field_default_field_instances() {
           'override' => 0,
         ),
         'type' => 'sdl_editor_representation',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',

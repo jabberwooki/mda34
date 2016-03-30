@@ -10,35 +10,17 @@
 function administration_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: management_entityform-settings:admin/config/content/entityform
-  $menu_links['management_entityform-settings:admin/config/content/entityform'] = array(
+  // Exported menu link: management_captcha:admin/config/people/captcha
+  $menu_links['management_captcha:admin/config/people/captcha'] = array(
     'menu_name' => 'management',
-    'link_path' => 'admin/config/content/entityform',
-    'router_path' => 'admin/config/content/entityform',
-    'link_title' => 'Entityform Settings',
-    'options' => array(
-      'identifier' => 'management_entityform-settings:admin/config/content/entityform',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'parent_identifier' => 'management_rdaction-de-contenu:admin/config/content',
-  );
-  // Exported menu link: management_entityform-submissions:admin/reports/entityforms
-  $menu_links['management_entityform-submissions:admin/reports/entityforms'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/reports/entityforms',
-    'router_path' => 'admin/reports/entityforms',
-    'link_title' => 'Entityform Submissions',
+    'link_path' => 'admin/config/people/captcha',
+    'router_path' => 'admin/config/people',
+    'link_title' => 'CAPTCHA',
     'options' => array(
       'attributes' => array(
-        'title' => 'View Submissions for all Entityforms',
+        'title' => 'Administer how and where CAPTCHAs are used.',
       ),
-      'identifier' => 'management_entityform-submissions:admin/reports/entityforms',
+      'identifier' => 'management_captcha:admin/config/people/captcha',
     ),
     'module' => 'system',
     'hidden' => 0,
@@ -47,7 +29,7 @@ function administration_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
-    'parent_identifier' => 'management_rapports:admin/reports',
+    'parent_identifier' => 'management_personnes:admin/config/people',
   );
   // Exported menu link: management_entityform-types:admin/structure/entityform_types
   $menu_links['management_entityform-types:admin/structure/entityform_types'] = array(
@@ -67,7 +49,7 @@ function administration_menu_default_menu_links() {
     'has_children' => 1,
     'expanded' => 0,
     'weight' => 0,
-    'customized' => 1,
+    'customized' => 0,
     'parent_identifier' => 'management_structure:admin/structure',
   );
   // Exported menu link: management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance
@@ -93,9 +75,8 @@ function administration_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('CAPTCHA');
   t('EU Cookie Compliance');
-  t('Entityform Settings');
-  t('Entityform Submissions');
   t('Entityform Types');
 
 

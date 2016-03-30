@@ -17,10 +17,10 @@ function mda_news_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'news';
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
-    'submitted_by' => array(
-      'weight' => '0',
+    'disqus_comment' => array(
+      'weight' => '7',
       'label' => 'hidden',
-      'format' => 'ds_post_date_short',
+      'format' => 'default',
     ),
   );
   $export['node|news|full'] = $ds_fieldsetting;
@@ -49,9 +49,10 @@ function mda_news_ds_layout_settings_info() {
         2 => 'field_scald_audio',
         3 => 'field_scald_gallery',
         4 => 'field_scald_video',
-        5 => 'sharethis',
-        6 => 'field_scald_file',
-        7 => 'domain',
+        5 => 'field_scald_file',
+        6 => 'sharethis',
+        7 => 'disqus_comment',
+        8 => 'domain',
       ),
     ),
     'fields' => array(
@@ -60,8 +61,9 @@ function mda_news_ds_layout_settings_info() {
       'field_scald_audio' => 'central',
       'field_scald_gallery' => 'central',
       'field_scald_video' => 'central',
-      'sharethis' => 'central',
       'field_scald_file' => 'central',
+      'sharethis' => 'central',
+      'disqus_comment' => 'central',
       'domain' => 'central',
     ),
     'classes' => array(),

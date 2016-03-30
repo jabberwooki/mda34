@@ -14,8 +14,8 @@ function mda_articles_default_fe_block_settings() {
 
   $export['boxes-boite_partenaires_pocket'] = array(
     'cache' => -2,
-    'context_group' => 'Boîtes pour Box',
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'boite_partenaires_pocket',
     'module' => 'boxes',
     'node_types' => array(),
@@ -35,6 +35,8 @@ function mda_articles_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-articles-block_1'] = array(

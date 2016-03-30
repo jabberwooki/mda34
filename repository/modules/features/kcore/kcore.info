@@ -63,6 +63,7 @@ features[user_role][] = admin philado
 features[user_role][] = administrateur
 features[user_role][] = equipe mda
 features[user_role][] = equipe philado
+features[user_role][] = pocket film
 features[user_role][] = professionnel
 features[user_role][] = superadmin
 features[uuid_features_menu][] = 6a1586bb-604b-4514-9e14-ccbbaf3f654d

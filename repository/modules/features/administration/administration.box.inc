@@ -24,7 +24,7 @@ function administration_default_box() {
 <p class="rtecenter">Accueil possible sans rendez vous pour les jeunes,<br />
 et avec rendez vous pour les parents et les professionnels, du lundi au vendredi de 13h à 18h.</p>
 
-<p class="rtecenter">&nbsp;</p>
+<p><iframe frameborder="0" height="260" marginheight="0" marginwidth="0" scrolling="no" src="https://app.mailjet.com/widget/iframe/L0i/HF" width="320"></iframe></p>
 ',
       'format' => 'full_html',
     ),

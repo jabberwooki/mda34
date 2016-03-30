@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function mda_news_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -21,7 +21,7 @@ function mda_news_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Conteneur Auteur Node / Réseaux sociaux',
-    'weight' => '18',
+    'weight' => '20',
     'children' => array(),
     'format_type' => 'div',
     'format_settings' => array(
@@ -38,7 +38,11 @@ function mda_news_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_submitted_socialnetworks|node|news|full'] = $field_group;
+  $field_groups['group_submitted_socialnetworks|node|news|full'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Conteneur Auteur Node / Réseaux sociaux');
+
+  return $field_groups;
 }

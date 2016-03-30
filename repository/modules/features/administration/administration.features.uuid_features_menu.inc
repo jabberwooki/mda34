@@ -55,7 +55,6 @@ function administration_menu_default_uuid_features_menu() {
       'attributes' => array(
         'title' => 'Manage reaction rules and rule components.',
       ),
-      'identifier' => 'management_rules:admin/config/workflow/rules',
     ),
     'module' => 'system',
     'hidden' => 0,
@@ -113,9 +112,7 @@ function administration_menu_default_uuid_features_menu() {
     'link_path' => 'admin/config/content/entityform',
     'router_path' => 'admin/config/content/entityform',
     'link_title' => 'Entityform Settings',
-    'options' => array(
-      'identifier' => 'management_entityform-settings:admin/config/content/entityform',
-    ),
+    'options' => array(),
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
@@ -135,7 +132,6 @@ function administration_menu_default_uuid_features_menu() {
       'attributes' => array(
         'title' => 'View Submissions for all Entityforms',
       ),
-      'identifier' => 'management_entityform-submissions:admin/reports/entityforms',
     ),
     'module' => 'system',
     'hidden' => 0,
@@ -145,6 +141,26 @@ function administration_menu_default_uuid_features_menu() {
     'weight' => 0,
     'uuid' => 'bb54b7a3-47ba-419d-9815-857b71adfadf',
     'parent_uuid' => 'ca9daa58-a9d2-4aaf-af56-08a3683b55a1',
+  );
+  // Exported menu link: c82da05c-53f0-4e22-950d-aafa796ed9be
+  $menu_uuid_links['c82da05c-53f0-4e22-950d-aafa796ed9be'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/people',
+    'router_path' => 'admin/config/people',
+    'link_title' => 'People',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Configure user accounts.',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -20,
+    'uuid' => 'c82da05c-53f0-4e22-950d-aafa796ed9be',
+    'parent_uuid' => 'dcc7bddb-c97b-4a26-8d72-08ea974d409f',
   );
   // Exported menu link: ca9daa58-a9d2-4aaf-af56-08a3683b55a1
   $menu_uuid_links['ca9daa58-a9d2-4aaf-af56-08a3683b55a1'] = array(
@@ -206,6 +222,27 @@ function administration_menu_default_uuid_features_menu() {
     'uuid' => 'dcc7bddb-c97b-4a26-8d72-08ea974d409f',
     'parent_uuid' => '11150491-e4c1-4b17-af37-675d28b87bb7',
   );
+  // Exported menu link: f03e540b-62ab-4f04-95ac-edd00064f7c4
+  $menu_uuid_links['f03e540b-62ab-4f04-95ac-edd00064f7c4'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/config/people/captcha',
+    'router_path' => 'admin/config/people',
+    'link_title' => 'CAPTCHA',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Administer how and where CAPTCHAs are used.',
+      ),
+      'identifier' => 'management_captcha:admin/config/people/captcha',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'uuid' => 'f03e540b-62ab-4f04-95ac-edd00064f7c4',
+    'parent_uuid' => 'c82da05c-53f0-4e22-950d-aafa796ed9be',
+  );
   // Exported menu link: f6d124df-c80f-4345-8f64-87c7420672bc
   $menu_uuid_links['f6d124df-c80f-4345-8f64-87c7420672bc'] = array(
     'menu_name' => 'management',
@@ -250,6 +287,7 @@ function administration_menu_default_uuid_features_menu() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Administration');
+  t('CAPTCHA');
   t('Configuration');
   t('Content authoring');
   t('Entityform Settings');
@@ -257,6 +295,7 @@ function administration_menu_default_uuid_features_menu() {
   t('Entityform Types');
   t('Mollom content moderation');
   t('Mollom statistics');
+  t('People');
   t('Reports');
   t('Rules');
   t('Structure');

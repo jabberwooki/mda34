@@ -71,7 +71,7 @@ function philado_menu_default_uuid_features_menu() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -35,
+    'weight' => -34,
     'uuid' => '8e754fc0-a04c-42fa-b54f-870df0a9210a',
   );
 
