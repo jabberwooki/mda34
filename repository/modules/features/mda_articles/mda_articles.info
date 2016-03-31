@@ -47,7 +47,6 @@ features[field_instance][] = node-article-field_scald_audio
 features[field_instance][] = node-article-field_scald_file
 features[field_instance][] = node-article-field_scald_gallery
 features[field_instance][] = node-article-field_scald_video
-features[menu_links][] = main-menu_inscription:eform/submit/pre-inscription-pocket-film
 features[node][] = article
 features[taxonomy][] = article_types
 features[uuid_features_menu][] = 6a5adf28-14b9-41ce-9dcd-037ae153bbe0

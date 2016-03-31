@@ -127,14 +127,6 @@ function administration_strongarm() {
       0 => 'mailchimp_signup',
       1 => 'mcs_id',
     ),
-    'mailjet_campaign' => array(
-      0 => 'mailjet_campaign',
-      1 => 'campaign_id',
-    ),
-    'mailjet_event' => array(
-      0 => 'mailjet_event',
-      1 => 'id',
-    ),
     'node' => array(
       0 => 'node',
       1 => 'nid',

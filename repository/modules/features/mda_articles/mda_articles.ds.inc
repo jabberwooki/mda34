@@ -66,8 +66,9 @@ function mda_articles_ds_layout_settings_info() {
         3 => 'field_scald_audio',
         4 => 'field_scald_gallery',
         5 => 'field_scald_file',
-        6 => 'domain',
-        7 => 'sharethis',
+        6 => 'sharethis',
+        7 => 'disqus_comment',
+        8 => 'domain',
       ),
     ),
     'fields' => array(
@@ -77,8 +78,9 @@ function mda_articles_ds_layout_settings_info() {
       'field_scald_audio' => 'ds_content',
       'field_scald_gallery' => 'ds_content',
       'field_scald_file' => 'ds_content',
-      'domain' => 'ds_content',
       'sharethis' => 'ds_content',
+      'disqus_comment' => 'ds_content',
+      'domain' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

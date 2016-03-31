@@ -126,7 +126,7 @@ function mda_articles_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 20,
       ),
       'sidebar_item' => array(
         'label' => 'above',
@@ -507,6 +507,7 @@ function mda_articles_field_default_field_instances() {
     'label' => 'Vidéo',
     'required' => 0,
     'settings' => array(
+      'allow_override' => 0,
       'referencable_types' => array(
         'audio' => 0,
         'file' => 0,

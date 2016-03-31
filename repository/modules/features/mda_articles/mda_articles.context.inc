@@ -67,6 +67,9 @@ function mda_articles_context_default_contexts() {
         'rubrique/pocket-film/*' => 'rubrique/pocket-film/*',
         '~rubrique/pocket-film/inscription/*' => '~rubrique/pocket-film/inscription/*',
         '~rubrique/pocket-film/inscription' => '~rubrique/pocket-film/inscription',
+        '~rubrique/pocket-film-2016/lesfilms' => '~rubrique/pocket-film-2016/lesfilms',
+        '~rubrique/pocket-film-2016/lesfilms/*' => '~rubrique/pocket-film-2016/lesfilms/*',
+        '~rubrique/pocket-film-2016/lesfilms*' => '~rubrique/pocket-film-2016/lesfilms*',
       ),
     ),
   );
