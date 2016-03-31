@@ -15,11 +15,11 @@ function mda_articles_default_box() {
   $box->api_version = 1;
   $box->delta = 'boite_partenaires_pocket';
   $box->plugin_key = 'simple';
-  $box->title = 'premiers partenaires';
+  $box->title = 'Partenaires';
   $box->description = 'Premiers partenaires';
   $box->options = array(
     'body' => array(
-      'value' => '<p align="center"><img alt="" src="http://www.mda34.bac/sites/default/files/styles/large/public/thumbnails/image/part-pocket.jpg" style="width: 301px; height: 347px;" /></p>
+      'value' => '<p align="center"><img alt="" src="/sites/default/files/styles/large/public/thumbnails/image/logos_parternaires_pocketfilm2016_0.jpg" /></p>
 ',
       'format' => 'full_html',
     ),
