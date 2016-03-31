@@ -252,6 +252,21 @@ function mda_multimedia_views_default_views() {
   $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
   $handler->display->display_options['filters']['uuid']['relationship'] = 'scald_authors_tid';
   $handler->display->display_options['filters']['uuid']['value'] = 'ad6cb0c3-f74a-4ab1-8f50-6ada55ce5eca';
+  /* Critère de filtrage: Terme de taxonomie : Terme de taxonomie UUID */
+  $handler->display->display_options['filters']['uuid_1']['id'] = 'uuid_1';
+  $handler->display->display_options['filters']['uuid_1']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid_1']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid_1']['relationship'] = 'scald_tags_tid';
+  $handler->display->display_options['filters']['uuid_1']['value'] = '341803af-f616-45d1-af01-8013093cb8b6';
+  /* Critère de filtrage: Atome : Fournisseur */
+  $handler->display->display_options['filters']['provider']['id'] = 'provider';
+  $handler->display->display_options['filters']['provider']['table'] = 'scald_atoms';
+  $handler->display->display_options['filters']['provider']['field'] = 'provider';
+  $handler->display->display_options['filters']['provider']['value'] = array(
+    'scald_dailymotion' => 'scald_dailymotion',
+    'scald_vimeo' => 'scald_vimeo',
+    'scald_youtube' => 'scald_youtube',
+  );
   $handler->display->display_options['path'] = 'rubrique/pocket-film-2016/lesfilms';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Les films';
