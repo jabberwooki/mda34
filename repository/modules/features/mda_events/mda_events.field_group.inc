@@ -21,16 +21,8 @@ function mda_events_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Infos 1',
-    'weight' => '0',
-    'children' => array(
-      0 => 'field_address',
-      1 => 'field_event_dates',
-      2 => 'field_event_type',
-      3 => 'field_organiser',
-      4 => 'field_public',
-      5 => 'field_unregistered_organiser',
-      6 => 'sharethis',
-    ),
+    'weight' => '23',
+    'children' => array(),
     'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Infos 1',

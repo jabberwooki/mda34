@@ -202,9 +202,8 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_event_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'img-col-4-crop_360x240',
     'image_link' => 'content',
-    'field_formatter_class' => '',
   );
   /* Champ: Contenu : Titre */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -246,24 +245,13 @@ function mda_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_type_1']['table'] = 'field_data_field_event_type';
   $handler->display->display_options['fields']['field_event_type_1']['field'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type_1']['label'] = '';
+  $handler->display->display_options['fields']['field_event_type_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_type_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_type_1']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_event_type_1']['settings'] = array(
     'field_formatter_class' => '',
   );
   $handler->display->display_options['fields']['field_event_type_1']['delta_offset'] = '0';
-  /* Champ: Contenu : Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['max_length'] = '140';
-  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_plain';
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'field_formatter_class' => '',
-  );
   /* Champ: Filtre isotope */
   $handler->display->display_options['fields']['field_event_type']['id'] = 'field_event_type';
   $handler->display->display_options['fields']['field_event_type']['table'] = 'field_data_field_event_type';

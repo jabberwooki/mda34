@@ -118,63 +118,6 @@ body.page-faq {
   }
 }
 
-/* Agenda Parents *************************************************************/
-body.page-agenda.domain-parents-mda34-org {
-  h2.page-header{
-    color: @green-mda;
-    &:before{
-      .glyphicon();
-      content: "\e807";
-    } 
-  }
-  #isotope-options {
-    background-color: transparent;
-  }
- 
- 
- 
-  /* isotope **/
-  .isotope-element {
-    /*border-bottom : 1px solid @gray-base;*/
-    img{
-      width: 360px;
-      height: 240px;
-    }
-    .img-title-wrapper, h3{
-      width: auto;
-    }
-    .h3{
-      width: auto;
-    }
-    .dates-custom-wrapper{
-      background-color: @green-mda;
-    }
-    .views-field-field-address-locality{
-      color: @green-mda;
-    }
-    .views-field-field-event-type a{
-      background-color: @green-mda;
-      padding : 2px 5px;
-    }
-  }
-}
-body.page-agenda .isotope-element{
-  background-image: none;
-  border: 0;
-  img{
-    width: 360px;
-    height: 240px;
-  }
-  .views-field-field-event-type-1{
-    .field-content{
-      color: @green-mda;
-    }
-  }
-  .field-content{
-    color: @gray-base;
-  }
-}
-
 
 
 /* faq parents *****/
@@ -231,15 +174,67 @@ body.page-faq.domain-parents-mda34-org{
 		
 		}
 	  }
+}
+
+/******************************************************************/
+/* AGENDA *****************************************************************/
+/******************************************************************/
+
+/* Agenda Parents *************************************************************/
+body.page-agenda.domain-parents-mda34-org {
+	 
+  .isotope-element {
+  width: 275px;
+  padding: 0em;
+  margin: 0.25em;
+  background: white;
   
 
+  }
+  
+  .dates-custom-wrapper {
+	background-color: @green-mda;
+	}
+  
+  
+  #isotope-options ul#filters li a.selected {
+    background-color:@green-mda;
+  }
+  
+   img {
+      width: 275px;
+      height: auto;
+    }
+    .img-title-wrapper, h3{
+      width: auto;
+    }
+    
+    .block .img-title-wrapper h3 {
+    position: absolute;
+    padding: 0;
+    background-color: rgba(0,0,0,.6);
+    overflow: hidden;
+    font-weight: 700;
+    widows: 100%;
+    font-size: 1.5em;
 }
+	
+    
+}
+
+
 
 
 /* Agenda pro *****************************************************************/
 body.page-agenda.domain-reseau-pro-mda34-org {
+
   .isotope-element {
-    .views-field-field-event-type-1 .field-content {
+  width: 275px;
+  padding: 0em;
+  margin: 0.25em;
+  background: white;
+  
+	.views-field-field-event-type-1 .field-content {
       color: @violet-mda;
     }
     .dates-custom-wrapper{
@@ -251,45 +246,63 @@ body.page-agenda.domain-reseau-pro-mda34-org {
   }
   
    img {
-      width: 360px;
-      height: 240px;
+      width: 275px;
+      height: auto;
     }
     .img-title-wrapper, h3{
       width: auto;
     }
-  
-  
-  
+    
+    .block .img-title-wrapper h3 {
+    position: absolute;
+    padding: 0;
+    background-color: rgba(0,0,0,.6);
+    overflow: hidden;
+    font-weight: 700;
+    widows: 100%;
+    font-size: 1.5em;
+    }   
 }
 
 
 /* Agenda Ados ****************************************************************/
 body.page-agenda.domain-ados-mda34-org{ 
-  /* isotope **/
-  #isotope-options ul#filters li a.selected{
-    background-color: @orange-mda;
-  }
-  .isotope-element{
-    .views-field-field-event-type-1{
-    .field-content{
+
+  .isotope-element {
+  width: 275px;
+  padding: 0em;
+  margin: 0.25em;
+  background: white;
+  
+	.views-field-field-event-type-1 .field-content {
       color: @orange-mda;
     }
+    .dates-custom-wrapper{
+      background-color:@orange-mda;
+    }
   }
-    /*border-bottom : 1px solid @gray-base;*/
-    img {
-      width: 360px;
-      height: 240px;
+  #isotope-options ul#filters li a.selected {
+    background-color:@orange-mda;
+  }
+  
+   img {
+      width: 275px;
+      height: auto;
     }
     .img-title-wrapper, h3{
       width: auto;
     }
-    .dates-custom-wrapper{
-      background-color: @orange-mda;
-    }
-    .h3{
-      width: auto;
-    }
-  }
+    
+    .block .img-title-wrapper h3 {
+    position: absolute;
+    padding: 0;
+    background-color: rgba(0,0,0,.6);
+    overflow: hidden;
+    font-weight: 700;
+    widows: 100%;
+    font-size: 1.5em;
+    }  
+
 }
 
 
