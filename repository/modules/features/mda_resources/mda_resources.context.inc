@@ -105,12 +105,6 @@ function mda_resources_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-4',
         ),
-        'views-articles-block_1' => array(
-          'module' => 'views',
-          'delta' => 'articles-block_1',
-          'region' => 'sidebar_second',
-          'weight' => '-5',
-        ),
       ),
     ),
   );

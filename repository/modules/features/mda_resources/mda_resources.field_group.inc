@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function mda_resources_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -35,7 +35,7 @@ function mda_resources_field_group_info() {
       ),
     ),
   );
-  $export['group_additionnal_settings|node|resource|form'] = $field_group;
+  $field_groups['group_additionnal_settings|node|resource|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -70,7 +70,7 @@ function mda_resources_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_link_resources|node|resource|teaser'] = $field_group;
+  $field_groups['group_link_resources|node|resource|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -106,7 +106,7 @@ function mda_resources_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_practical_content|node|resource|full'] = $field_group;
+  $field_groups['group_practical_content|node|resource|full'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -138,7 +138,14 @@ function mda_resources_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_practical_infos|node|resource|full'] = $field_group;
+  $field_groups['group_practical_infos|node|resource|full'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Contenu infos pratiques');
+  t('Informations pratiques');
+  t('Paramètres MDA supplémentaires');
+  t('group-link-resources');
+
+  return $field_groups;
 }

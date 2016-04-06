@@ -107,7 +107,7 @@ function mda_events_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '7',
+            'weight' => '11',
             'visible' => TRUE,
           ),
         ),
@@ -121,14 +121,14 @@ function mda_events_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '7',
+            'weight' => '10',
             'visible' => TRUE,
           ),
         ),
         'disqus' => array(
           'full' => array(
-            'weight' => '1002',
-            'visible' => FALSE,
+            'weight' => '28',
+            'visible' => TRUE,
           ),
         ),
       ),

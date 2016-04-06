@@ -29,7 +29,7 @@ function mda_events_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 24,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -132,7 +132,7 @@ function mda_events_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 11,
+        'weight' => 2,
       ),
       'list' => array(
         'label' => 'above',
@@ -261,7 +261,7 @@ function mda_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'leaflet',
         'settings' => array(
-          'height' => 400,
+          'height' => 300,
           'icon' => array(
             'html' => '',
             'htmlClass' => '',
@@ -304,13 +304,13 @@ function mda_events_field_default_field_instances() {
             'weight' => '',
           ),
           'zoom' => array(
-            'initialZoom' => 11,
+            'initialZoom' => 12,
             'maxZoom' => -1,
             'minZoom' => -1,
           ),
         ),
         'type' => 'geofield_leaflet',
-        'weight' => 6,
+        'weight' => 8,
       ),
       'list' => array(
         'label' => 'above',
@@ -366,7 +366,7 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 27,
       ),
       'list' => array(
         'label' => 'above',
@@ -423,16 +423,9 @@ function mda_events_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'inline',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'value',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 8,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 25,
       ),
       'list' => array(
         'label' => 'above',
@@ -506,7 +499,7 @@ function mda_events_field_default_field_instances() {
           'image_style' => 'img-col-4',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -598,7 +591,7 @@ function mda_events_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 26,
       ),
       'list' => array(
         'label' => 'above',
@@ -667,7 +660,7 @@ function mda_events_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 9,
+        'weight' => 0,
       ),
       'list' => array(
         'label' => 'above',
@@ -720,7 +713,7 @@ function mda_events_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'above',
@@ -802,7 +795,7 @@ function mda_events_field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 12,
+        'weight' => 3,
       ),
       'list' => array(
         'label' => 'above',
@@ -860,11 +853,14 @@ function mda_events_field_default_field_instances() {
         'weight' => 3,
       ),
       'full' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 10,
+        'label' => 'inline',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 0,
+          'taxonomy_term_separator' => ' / ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 1,
       ),
       'list' => array(
         'label' => 'above',
@@ -924,7 +920,7 @@ function mda_events_field_default_field_instances() {
         'module' => 'registration',
         'settings' => array(),
         'type' => 'registration_form',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
@@ -1001,7 +997,7 @@ function mda_events_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'above',
