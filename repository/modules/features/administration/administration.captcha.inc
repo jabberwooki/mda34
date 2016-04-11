@@ -13,6 +13,14 @@ function administration_captcha_default_points() {
   $captcha = new stdClass();
   $captcha->disabled = FALSE; /* Edit this to true to make a default captcha disabled initially */
   $captcha->api_version = 1;
+  $captcha->form_id = 'contact_entityform_edit_form';
+  $captcha->module = '';
+  $captcha->captcha_type = 'default';
+  $export['contact_entityform_edit_form'] = $captcha;
+
+  $captcha = new stdClass();
+  $captcha->disabled = FALSE; /* Edit this to true to make a default captcha disabled initially */
+  $captcha->api_version = 1;
   $captcha->form_id = 'user_login';
   $captcha->module = '';
   $captcha->captcha_type = '';

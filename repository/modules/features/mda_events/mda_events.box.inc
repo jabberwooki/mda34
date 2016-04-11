@@ -60,7 +60,7 @@ function mda_events_default_box() {
 <ul>
 	<li><a href="http://parents.mda34.org/faq">Notre fonctionnement</a></li>
 	<li><a href="http://parents.mda34.org/annuaire">Un annuaire</a></li>
-	<li>Des ressources</li>
+	<li><a href="http://parents.mda34.org/ressources">Des ressources</a></li>
 	<li><a href="http://parents.mda34.org/agenda">Un agenda</a></li>
 	<li><a href="http://parents.mda34.org/contact">Comment nous contacter ?</a></li>
 </ul>

@@ -113,7 +113,7 @@ $date = format_date($maDate, 'custom', 'H:i');
 
             </div>
 
-            <div id="collapseThree" class="panel-collapse collapse">
+            <div id="collapseThree" class="panel-collapse collapse in">
 
                 <div class="panel-body">
 
