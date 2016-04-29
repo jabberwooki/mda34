@@ -33,12 +33,12 @@ function mda_zoom_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'portal_slide';
   $ds_fieldsetting->settings = array(
     'lien_diapo_h2' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'thematic_class' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -193,19 +193,19 @@ function mda_zoom_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'lien_diapo_h2',
-        1 => 'group_all_diapo',
-        2 => 'field_slide_image',
-        3 => 'thematic_class',
+        0 => 'group_all_diapo',
+        1 => 'lien_diapo_h2',
+        2 => 'thematic_class',
+        3 => 'field_slide_image',
         4 => 'group_conteneur_diapo',
         5 => 'group_link_theme',
       ),
     ),
     'fields' => array(
-      'lien_diapo_h2' => 'ds_content',
       'group_all_diapo' => 'ds_content',
-      'field_slide_image' => 'ds_content',
+      'lien_diapo_h2' => 'ds_content',
       'thematic_class' => 'ds_content',
+      'field_slide_image' => 'ds_content',
       'group_conteneur_diapo' => 'ds_content',
       'group_link_theme' => 'ds_content',
     ),
@@ -235,8 +235,8 @@ function mda_zoom_ds_layout_settings_info() {
         1 => 'field_slide_image',
         2 => 'group_conteneur_diapo',
         3 => 'lien_diapo_h2',
-        4 => 'thematic_class',
-        5 => 'group_link_theme',
+        4 => 'group_link_theme',
+        5 => 'thematic_class',
       ),
     ),
     'fields' => array(
@@ -244,8 +244,8 @@ function mda_zoom_ds_layout_settings_info() {
       'field_slide_image' => 'ds_content',
       'group_conteneur_diapo' => 'ds_content',
       'lien_diapo_h2' => 'ds_content',
-      'thematic_class' => 'ds_content',
       'group_link_theme' => 'ds_content',
+      'thematic_class' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

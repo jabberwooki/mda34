@@ -114,11 +114,11 @@ function mda_zoom_strongarm() {
             'visible' => TRUE,
           ),
           'portal_slide' => array(
-            'weight' => '15',
+            'weight' => '19',
             'visible' => FALSE,
           ),
           'site_slide' => array(
-            'weight' => '14',
+            'weight' => '13',
             'visible' => FALSE,
           ),
           'diapo_philado' => array(
@@ -140,11 +140,11 @@ function mda_zoom_strongarm() {
             'visible' => FALSE,
           ),
           'portal_slide' => array(
-            'weight' => '17',
+            'weight' => '21',
             'visible' => FALSE,
           ),
           'site_slide' => array(
-            'weight' => '21',
+            'weight' => '20',
             'visible' => FALSE,
           ),
           'diapo_philado' => array(

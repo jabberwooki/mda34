@@ -87,7 +87,7 @@ function mda_zoom_field_group_info() {
   $field_group->parent_name = 'group_all_diapo';
   $field_group->data = array(
     'label' => 'Container diapo',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'group_link_theme',
     ),
@@ -151,7 +151,7 @@ function mda_zoom_field_group_info() {
   $field_group->parent_name = 'group_conteneur_diapo';
   $field_group->data = array(
     'label' => 'group-link-theme',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'lien_diapo_h2',
       1 => 'thematic_class',
@@ -161,7 +161,7 @@ function mda_zoom_field_group_info() {
       'label' => 'group-link-theme',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'group-link-theme field-group-div',
+        'classes' => 'group-link-theme field-group-fieldset',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -184,7 +184,7 @@ function mda_zoom_field_group_info() {
   $field_group->parent_name = 'group_conteneur_diapo';
   $field_group->data = array(
     'label' => 'group-link-theme',
-    'weight' => '5',
+    'weight' => '3',
     'children' => array(
       0 => 'lien_diapo_h2',
       1 => 'thematic_class',
