@@ -20,11 +20,9 @@ function mda_contacts_field_default_field_instances() {
       'default' => array(
         'label' => 'inline',
         'module' => 'email',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'email_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'email' => array(
         'label' => 'inline',
@@ -50,7 +48,43 @@ function mda_contacts_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 3,
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-contact-field_contact_phone'
+  $field_instances['entityform-contact-field_contact_phone'] = array(
+    'bundle' => 'contact',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'phone',
+        'settings' => array(),
+        'type' => 'phone',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_contact_phone',
+    'label' => 'Téléphone',
+    'required' => 0,
+    'settings' => array(
+      'ca_phone_parentheses' => 1,
+      'ca_phone_separator' => '-',
+      'phone_country_code' => 0,
+      'phone_default_country_code' => 1,
+      'phone_int_max_length' => 15,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'phone',
+      'settings' => array(),
+      'type' => 'phone_textfield',
+      'weight' => 1,
     ),
   );
 
@@ -68,11 +102,9 @@ function mda_contacts_field_default_field_instances() {
       'default' => array(
         'label' => 'inline',
         'module' => 'list',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'email' => array(
         'label' => 'inline',
@@ -96,7 +128,7 @@ function mda_contacts_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -110,11 +142,9 @@ function mda_contacts_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'email' => array(
         'label' => 'above',
@@ -172,7 +202,7 @@ function mda_contacts_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -186,9 +216,7 @@ function mda_contacts_field_default_field_instances() {
       'default' => array(
         'label' => 'inline',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -248,7 +276,7 @@ function mda_contacts_field_default_field_instances() {
         'size' => 30,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 0,
     ),
   );
 
@@ -262,11 +290,9 @@ function mda_contacts_field_default_field_instances() {
       'default' => array(
         'label' => 'inline',
         'module' => 'text',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
+        'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'email' => array(
         'label' => 'inline',
@@ -324,7 +350,7 @@ function mda_contacts_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -335,6 +361,7 @@ function mda_contacts_field_default_field_instances() {
   t('Message');
   t('Nom/Pseudo');
   t('Objet');
+  t('Téléphone');
 
   return $field_instances;
 }

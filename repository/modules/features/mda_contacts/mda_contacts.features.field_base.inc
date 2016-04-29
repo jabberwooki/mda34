@@ -25,6 +25,24 @@ function mda_contacts_field_default_field_bases() {
     'type' => 'email',
   );
 
+  // Exported field_base: 'field_contact_phone'
+  $field_bases['field_contact_phone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_contact_phone',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'phone',
+    'settings' => array(
+      'country' => 'fr',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'phone',
+  );
+
   // Exported field_base: 'field_contact_recipient'
   $field_bases['field_contact_recipient'] = array(
     'active' => 1,

@@ -90,6 +90,13 @@ function administration_strongarm() {
       'key' => 'actions',
       'weight' => 99,
     ),
+    'contact_entityform_edit_form' => array(
+      'path' => array(
+        0 => 'actions',
+      ),
+      'key' => 'save',
+      'weight' => NULL,
+    ),
   );
   $export['captcha_placement_map_cache'] = $strongarm;
 
