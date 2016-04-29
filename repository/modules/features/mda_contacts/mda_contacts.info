@@ -33,7 +33,6 @@ features[field_base][] = field_contact_recipient
 features[field_base][] = field_message
 features[field_base][] = field_name_nickname
 features[field_base][] = field_subject
-features[field_group][] = group_message|entityform|contact|form
 features[field_instance][] = entityform-contact-field_contact_email
 features[field_instance][] = entityform-contact-field_contact_recipient
 features[field_instance][] = entityform-contact-field_message

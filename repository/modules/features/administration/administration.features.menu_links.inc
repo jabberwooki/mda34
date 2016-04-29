@@ -28,7 +28,7 @@ function administration_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 0,
-    'customized' => 1,
+    'customized' => 0,
     'parent_identifier' => 'management_personnes:admin/config/people',
   );
   // Exported menu link: management_entityform-types:admin/structure/entityform_types

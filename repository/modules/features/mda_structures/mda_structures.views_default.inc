@@ -585,7 +585,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu : Contact email */
+  /* Champ: Contenu : Email du gestionnaire */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -599,7 +599,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu : Adresse */
+  /* Champ: Contenu : Lieu de l'événement */
   $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
   $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
@@ -625,12 +625,12 @@ function mda_structures_views_default_views() {
     t('Liste'),
     t('L\'annuaire'),
     t('Options avancées'),
-    t('Select any filter and click on Apply to see results'),
+    t('Sélectionnez n\'importe quel filtre et cliquez sur Appliquer pour voir les résultats'),
     t('Secteur géographique'),
     t('Nom de la structure'),
     t('Infos contact'),
     t('Infos visibles sur une fiche événement'),
-    t('Contact email'),
+    t('Email du gestionnaire'),
     t('Contact téléphone'),
   );
   $export['structures'] = $view;

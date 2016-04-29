@@ -352,7 +352,7 @@ function mda_news_field_default_field_instances() {
           'link' => 0,
           'override' => 0,
         ),
-        'type' => 'scald_col_4',
+        'type' => 'scald_col_4_box',
         'weight' => 0,
       ),
       'teaser' => array(

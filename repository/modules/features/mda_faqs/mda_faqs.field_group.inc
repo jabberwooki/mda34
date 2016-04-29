@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function mda_faqs_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -36,7 +36,7 @@ function mda_faqs_field_group_info() {
       'formatter' => 'closed',
     ),
   );
-  $export['group_additionnal_settings|node|faq|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -68,7 +68,12 @@ function mda_faqs_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_attached_resources|node|faq|full'] = $field_group;
+  $field_groups[''] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Paramètres MDA supplémentaires');
+  t('Ressources liées');
+
+  return $field_groups;
 }

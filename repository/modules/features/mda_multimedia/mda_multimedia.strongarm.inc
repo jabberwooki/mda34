@@ -393,6 +393,9 @@ function mda_multimedia_strongarm() {
       'grille_video' => array(
         'custom_settings' => FALSE,
       ),
+      'scald_col_4_box' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
@@ -437,6 +440,10 @@ function mda_multimedia_strongarm() {
           'grille_player' => array(
             'weight' => '0',
             'visible' => TRUE,
+          ),
+          'scald_col_4_box' => array(
+            'weight' => '1',
+            'visible' => FALSE,
           ),
         ),
       ),
@@ -641,6 +648,14 @@ function mda_multimedia_strongarm() {
     'grille_player' => array(
       'name' => 'grille_player',
       'title' => 'Grille player',
+      'description' => '',
+      'render_language' => 'XHTML',
+      'parseable' => TRUE,
+      'formats' => array(),
+    ),
+    'scald_col_4_box' => array(
+      'name' => 'scald_col_4_box',
+      'title' => 'Scald-col-4-box',
       'description' => '',
       'render_language' => 'XHTML',
       'parseable' => TRUE,

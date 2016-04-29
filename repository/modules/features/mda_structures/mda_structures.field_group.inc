@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function mda_structures_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -35,7 +35,7 @@ function mda_structures_field_group_info() {
       ),
     ),
   );
-  $export['group_additionnal_settings|node|structure|form'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -73,7 +73,7 @@ function mda_structures_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_practical_content|node|structure|full'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -111,7 +111,7 @@ function mda_structures_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_practical_infos|node|structure|full'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -147,7 +147,14 @@ function mda_structures_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_term|node|structure|full'] = $field_group;
+  $field_groups[''] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Caractéristiques');
+  t('Contenu infos pratiques');
+  t('Informations pratiques');
+  t('Paramètres supplémentaires');
+
+  return $field_groups;
 }

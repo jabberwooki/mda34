@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function mda_zoom_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -41,7 +41,7 @@ function mda_zoom_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_all_diapo|node|slide|portal_slide'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -74,7 +74,7 @@ function mda_zoom_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_all_diapo|node|slide|site_slide'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -106,7 +106,7 @@ function mda_zoom_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_conteneur_diapo|node|slide|portal_slide'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -138,7 +138,7 @@ function mda_zoom_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_conteneur_diapo|node|slide|site_slide'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -171,7 +171,7 @@ function mda_zoom_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_link_theme|node|slide|portal_slide'] = $field_group;
+  $field_groups[''] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -204,7 +204,13 @@ function mda_zoom_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_link_theme|node|slide|site_slide'] = $field_group;
+  $field_groups[''] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Container diapo');
+  t('group-all-diapo');
+  t('group-link-theme');
+
+  return $field_groups;
 }

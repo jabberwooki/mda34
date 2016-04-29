@@ -38,7 +38,7 @@ function mda_news_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $field_groups['group_submitted_socialnetworks|node|news|full'] = $field_group;
+  $field_groups[''] = $field_group;
 
   // Translatables
   // Included for use with string extractors like potx.
