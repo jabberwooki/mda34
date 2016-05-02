@@ -32,11 +32,11 @@ function mda_news_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-news-block_actus' => array(
+        'views-news-block_1' => array(
           'module' => 'views',
-          'delta' => 'news-block_actus',
+          'delta' => 'news-block_1',
           'region' => 'content',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),

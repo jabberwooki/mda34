@@ -19,13 +19,17 @@ function mda_events_menu_default_uuid_features_menu() {
     'options' => array(
       'domain_menu_access' => array(
         'show' => array(
-          'd2' => 'd2',
           'd3' => 'd3',
           'd6' => 'd6',
         ),
       ),
       'alter' => TRUE,
       'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,

@@ -118,11 +118,17 @@ function mda_events_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-news-block_actus' => array(
+          'module' => 'views',
+          'delta' => 'news-block_actus',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'views-events-block_events_pros' => array(
           'module' => 'views',
           'delta' => 'events-block_events_pros',
           'region' => 'content',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),
