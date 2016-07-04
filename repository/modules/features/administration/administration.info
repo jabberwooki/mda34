@@ -96,7 +96,6 @@ features[field_instance][] = entityform-pre_inscription_pocket_film-field_nom_pf
 features[field_instance][] = entityform-pre_inscription_pocket_film-field_parti_pf
 features[field_instance][] = entityform-pre_inscription_pocket_film-field_reglement_pf
 features[menu_custom][] = management
-features[menu_links][] = management_captcha:admin/config/people/captcha
 features[menu_links][] = management_entityform-types:admin/structure/entityform_types
 features[menu_links][] = management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance
 features[rules_config][] = administration_candidature

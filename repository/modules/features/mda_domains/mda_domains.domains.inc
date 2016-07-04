@@ -38,7 +38,7 @@ function mda_domains_domain_default_domains() {
   );
   $domains['radio_mda34_org'] = array(
     'subdomain' => 'radio.mda34.org',
-    'sitename' => 'la radio',
+    'sitename' => 'Radio MDA 34',
     'scheme' => 'http',
     'valid' => 1,
     'weight' => 4,

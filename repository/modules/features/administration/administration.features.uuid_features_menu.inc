@@ -226,13 +226,12 @@ function administration_menu_default_uuid_features_menu() {
   $menu_uuid_links['f03e540b-62ab-4f04-95ac-edd00064f7c4'] = array(
     'menu_name' => 'management',
     'link_path' => 'admin/config/people/captcha',
-    'router_path' => 'admin/config/people',
+    'router_path' => 'admin/config/people/captcha',
     'link_title' => 'CAPTCHA',
     'options' => array(
       'attributes' => array(
         'title' => 'Administer how and where CAPTCHAs are used.',
       ),
-      'identifier' => 'management_captcha:admin/config/people/captcha',
     ),
     'module' => 'system',
     'hidden' => 0,

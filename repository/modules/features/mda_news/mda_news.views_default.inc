@@ -568,6 +568,7 @@ function mda_news_views_default_views() {
   $handler = $view->new_display('block', 'Bloc actus pro', 'block_actus');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Actualités';
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';

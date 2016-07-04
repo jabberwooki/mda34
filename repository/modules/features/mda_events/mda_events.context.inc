@@ -29,18 +29,7 @@ function mda_events_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-events-block_front_events' => array(
-          'module' => 'views',
-          'delta' => 'events-block_front_events',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 1;
 
   // Translatables
@@ -165,18 +154,7 @@ function mda_events_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-events-block_pros_trainings' => array(
-          'module' => 'views',
-          'delta' => 'events-block_pros_trainings',
-          'region' => 'sidebar_second',
-          'weight' => '-5',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 1;
 
   // Translatables

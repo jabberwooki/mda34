@@ -166,6 +166,7 @@ function mda_radio_views_default_views() {
   $handler->display->display_options['filters']['field_record_category_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_record_category_tid']['vocabulary'] = 'radio_prog_categories';
   $handler->display->display_options['path'] = 'emissions';
+  $handler->display->display_options['page_title_pattern'] = '[site:name] |  Maison des Adolescents de l\'Hérault';
 
   /* Display: Dernière émission (attachement) */
   $handler = $view->new_display('attachment', 'Dernière émission (attachement)', 'programmes_last');

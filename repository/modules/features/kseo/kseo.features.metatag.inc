@@ -115,6 +115,9 @@ function kseo_metatag_export_default() {
       'description' => array(
         'value' => '[node:summary]',
       ),
+      'image_src' => array(
+        'value' => '[node:field_scald_image]',
+      ),
     ),
   );
 
