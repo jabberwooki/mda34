@@ -198,10 +198,10 @@ $navbar_classes .= ' navbar-inverse navbar-fixed-top';
 
 
 		<div class="gauche">
-			<img alt="" style="width:120px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo_hp.jpg">
-			<img alt="" style="width:55px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo-nv-region.jpg">
+			<img alt="" style="width:100px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo_hp.jpg">
+			<img alt="" style="width:120px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo-nv-region.jpg">
 			<img alt="" style="width:65px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logolrmp.jpg">
-			<img alt="" style="width:95px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/dep_herault1.png">
+			<img alt="" style="width:85px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/dep_herault1.png">
 			<img alt="" style="width:35px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo-ville-72-dpi-jpg.jpg">
 			<img alt="" style="width:40px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/logo-minitere-culture.jpg">
 			<img alt="" style="width:45px; height:auto;padding:0.25em;" src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/mj-pjjlogo.png">

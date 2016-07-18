@@ -258,10 +258,10 @@
   ?>
 
 		<div class="gauche">
-			<img src="<?php print $my_static_banner ?>" alt="hp" style="width:120px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner2 ?>" alt="lr" style="width:55px; height:auto;padding:0.25em;">
+			<img src="<?php print $my_static_banner ?>" alt="hp" style="width:100px; height:auto;padding:0.25em;">
+			<img src="<?php print $my_static_banner2 ?>" alt="lr" style="width:120px; height:auto;padding:0.25em;">
 			<img src="<?php print $my_static_banner3 ?>" alt="ars" style="width:65px; height:auto;padding:0.25em;">
-			<img src="<?php print $my_static_banner4 ?>" alt="Accueil" style="width:95px; height:auto;padding:0.25em;">
+			<img src="<?php print $my_static_banner4 ?>" alt="Accueil" style="width:85px; height:auto;padding:0.25em;">
 			<img src="<?php print $my_static_banner5 ?>" alt="Accueil" style="width:35px; height:auto;padding:0.25em;">
 			<img src="<?php print $my_static_banner6 ?>" alt="Accueil" style="width:40px; height:auto;padding:0.25em;">
 			<img src="<?php print $my_static_banner7 ?>" alt="Accueil" style="width:50px; height:auto;padding:0.25em;">
