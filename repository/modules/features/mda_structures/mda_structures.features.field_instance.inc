@@ -10,6 +10,247 @@
 function mda_structures_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'field_collection_item-field_permanence-field_adress_perm'
+  $field_instances['field_collection_item-field_permanence-field_adress_perm'] = array(
+    'bundle' => 'field_permanence',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_adress_perm',
+    'label' => 'Lieu de la permanence',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'addressfield_autocomplete',
+      'settings' => array(
+        'available_countries' => array(
+          'FR' => 'FR',
+        ),
+        'default_country' => 'FR',
+        'draggable' => 1,
+        'format_handlers' => array(
+          'address' => 'address',
+          'address-hide-postal-code' => 0,
+          'address-hide-street' => 0,
+          'address-hide-country' => 0,
+          'organisation' => 0,
+          'name-full' => 0,
+          'name-oneline' => 0,
+          'address-optional' => 0,
+        ),
+        'geolocation' => TRUE,
+        'html5_geocode' => 1,
+        'manual_text' => 'Saisir une adresse manuellement',
+        'map' => 1,
+        'restrict_country' => array(),
+        'reveal' => 1,
+        'reverse_geocode' => 0,
+        'types' => 'geocode',
+        'visible_markers' => 1,
+      ),
+      'type' => 'addressfield_autocomplete',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_permanence-field_geo_perm'
+  $field_instances['field_collection_item-field_permanence-field_geo_perm'] = array(
+    'bundle' => 'field_permanence',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'leaflet',
+        'settings' => array(
+          'height' => 200,
+          'icon' => array(
+            'html' => '',
+            'htmlClass' => '',
+            'iconAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconImageStyle' => '',
+            'iconSize' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconType' => 'marker',
+            'iconUrl' => '',
+            'popupAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowUrl' => '',
+          ),
+          'leaflet_map' => 'OSM Mapnik',
+          'popup' => array(
+            'show' => 0,
+            'text' => '',
+          ),
+          'vector_display' => array(
+            'clickable' => 0,
+            'color' => '',
+            'dashArray' => '',
+            'fill' => 0,
+            'fillColor' => '',
+            'fillOpacity' => '',
+            'opacity' => '',
+            'stroke' => 0,
+            'stroke_override' => 0,
+            'weight' => '',
+          ),
+          'zoom' => array(
+            'initialZoom' => -1,
+            'maxZoom' => -1,
+            'minZoom' => -1,
+          ),
+        ),
+        'type' => 'geofield_leaflet',
+        'weight' => 1,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'geofield',
+        'settings' => array(
+          'data' => 'full',
+          'format' => 'decimal_degrees',
+          'labels' => 1,
+        ),
+        'type' => 'geofield_latlon',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_geo_perm',
+    'label' => 'Coordonnées géographiques',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'addressfield_autocomplete',
+      'settings' => array(
+        'addressfield_autocomplete_field' => 'field_adress_perm',
+        'delta_handling' => 'default',
+      ),
+      'type' => 'addressfield_autocomplete_latlng',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_permanence-field_horaires_per'
+  $field_instances['field_collection_item-field_permanence-field_horaires_per'] = array(
+    'bundle' => 'field_permanence',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'office_hours',
+        'settings' => array(
+          'closedformat' => 'Closed',
+          'compress' => FALSE,
+          'current_status' => array(
+            'closed_text' => 'Currently closed',
+            'open_text' => 'Currently open!',
+            'position' => 'hide',
+          ),
+          'date_first_day' => 1,
+          'daysformat' => 'long',
+          'grouped' => FALSE,
+          'hoursformat' => 0,
+          'separator_day_hours' => ': ',
+          'separator_days' => '<br />',
+          'separator_grouped_days' => ' - ',
+          'separator_hours_hours' => '-',
+          'separator_more_hours' => ', ',
+          'showclosed' => 'all',
+          'timezone_field' => '',
+        ),
+        'type' => 'office_hours',
+        'weight' => 2,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'office_hours',
+        'settings' => array(
+          'closedformat' => 'Closed',
+          'compress' => 0,
+          'current_status' => array(
+            'closed_text' => 'Currently closed',
+            'open_text' => 'Currently open!',
+            'position' => 'hide',
+          ),
+          'date_first_day' => 1,
+          'daysformat' => 'short',
+          'grouped' => 0,
+          'hoursformat' => 0,
+          'separator_day_hours' => ': ',
+          'separator_days' => '<br />',
+          'separator_grouped_days' => ' - ',
+          'separator_hours_hours' => '-',
+          'separator_more_hours' => ', ',
+          'showclosed' => 'open',
+          'timezone_field' => '',
+        ),
+        'type' => 'office_hours',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_horaires_per',
+    'label' => 'Horaires',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'office_hours',
+      'settings' => array(),
+      'type' => 'office_hours',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-structure-body'
   $field_instances['node-structure-body'] = array(
     'bundle' => 'structure',
@@ -29,7 +270,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -186,72 +427,14 @@ function mda_structures_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 14,
-    ),
-  );
-
-  // Exported field_instance: 'node-structure-field_action_types'
-  $field_instances['node-structure-field_action_types'] = array(
-    'bundle' => 'structure',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
-      ),
-      'full' => array(
-        'label' => 'inline',
-        'module' => 'ds',
-        'settings' => array(
-          'taxonomy_term_link' => 1,
-          'taxonomy_term_separator' => ' / ',
-        ),
-        'type' => 'ds_taxonomy_separator',
-        'weight' => 5,
-      ),
-      'list' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'field_formatter_class' => '',
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 22,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_action_types',
-    'label' => 'Types d\'action',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 15,
     ),
   );
 
   // Exported field_instance: 'node-structure-field_address'
   $field_instances['node-structure-field_address'] = array(
     'bundle' => 'structure',
-    'default_value' => array(
-      0 => array(),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -301,7 +484,7 @@ function mda_structures_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_address',
-    'label' => 'Adresse',
+    'label' => 'Adresse du siège de la structure',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -314,7 +497,7 @@ function mda_structures_field_default_field_instances() {
           'FR' => 'FR',
         ),
         'default_country' => 'FR',
-        'draggable' => TRUE,
+        'draggable' => 1,
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
@@ -326,14 +509,14 @@ function mda_structures_field_default_field_instances() {
           'address-optional' => 0,
         ),
         'geolocation' => TRUE,
-        'html5_geocode' => TRUE,
+        'html5_geocode' => 1,
         'manual_text' => 'Enter one manually',
-        'map' => TRUE,
+        'map' => 1,
         'restrict_country' => array(),
-        'reveal' => TRUE,
-        'reverse_geocode' => FALSE,
+        'reveal' => 1,
+        'reverse_geocode' => 0,
         'types' => 'geocode',
-        'visible_markers' => TRUE,
+        'visible_markers' => 1,
       ),
       'type' => 'addressfield_autocomplete',
       'weight' => 13,
@@ -383,6 +566,56 @@ function mda_structures_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_competence_fields',
     'label' => 'Champs d\'intervention',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-structure-field_composition_prof'
+  $field_instances['node-structure-field_composition_prof'] = array(
+    'bundle' => 'structure',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 23,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 12,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_composition_prof',
+    'label' => 'Composition professionnelle',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -391,8 +624,8 @@ function mda_structures_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 7,
+      'type' => 'options_buttons',
+      'weight' => 16,
     ),
   );
 
@@ -466,8 +699,8 @@ function mda_structures_field_default_field_instances() {
           ),
           'leaflet_map' => 'OSM Mapnik',
           'popup' => array(
-            'show' => 1,
-            'text' => '[node:title] - [node:field-address:thoroughfare] [node:field-address:locality]',
+            'show' => 0,
+            'text' => '',
           ),
           'vector_display' => array(
             'clickable' => 0,
@@ -482,13 +715,13 @@ function mda_structures_field_default_field_instances() {
             'weight' => '',
           ),
           'zoom' => array(
-            'initialZoom' => 12,
+            'initialZoom' => -1,
             'maxZoom' => -1,
-            'minZoom' => -1,
+            'minZoom' => 1,
           ),
         ),
         'type' => 'geofield_leaflet',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'above',
@@ -522,7 +755,7 @@ function mda_structures_field_default_field_instances() {
         'delta_handling' => 'default',
       ),
       'type' => 'addressfield_autocomplete_latlng',
-      'weight' => 16,
+      'weight' => 14,
     ),
   );
 
@@ -608,7 +841,7 @@ function mda_structures_field_default_field_instances() {
           'image_style' => 'logo_120x120',
         ),
         'type' => 'image',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'above',
@@ -766,6 +999,174 @@ function mda_structures_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-structure-field_nom_direction'
+  $field_instances['node-structure-field_nom_direction'] = array(
+    'bundle' => 'structure',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 21,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nom_direction',
+    'label' => 'Nom de la direction',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'context' => 'title',
+      'context_default' => 'sdl_editor_representation',
+      'dnd_enabled' => 0,
+      'linkit' => array(
+        'button_text' => 'Rechercher',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'mee_enabled' => 0,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-structure-field_nom_responsable'
+  $field_instances['node-structure-field_nom_responsable'] = array(
+    'bundle' => 'structure',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nom_responsable',
+    'label' => 'Nom responsable chef de service',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -9,
+            ),
+            'full_html' => array(
+              'weight' => -10,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'context' => 'title',
+      'context_default' => 'sdl_editor_representation',
+      'dnd_enabled' => 0,
+      'linkit' => array(
+        'button_text' => 'Rechercher',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'mee_enabled' => 0,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 15,
+    ),
+  );
+
   // Exported field_instance: 'node-structure-field_office_hours'
   $field_instances['node-structure-field_office_hours'] = array(
     'bundle' => 'structure',
@@ -871,7 +1272,69 @@ function mda_structures_field_default_field_instances() {
       'module' => 'office_hours',
       'settings' => array(),
       'type' => 'office_hours',
-      'weight' => 15,
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'node-structure-field_permanence'
+  $field_instances['node-structure-field_permanence'] = array(
+    'bundle' => 'structure',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Ajouter',
+          'delete' => 'Supprimer',
+          'description' => TRUE,
+          'edit' => 'Modifier',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 24,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Ajouter',
+          'delete' => 'Supprimer',
+          'description' => 1,
+          'edit' => 'Modifier',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 13,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_permanence',
+    'label' => 'Permanence(s)',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 25,
     ),
   );
 
@@ -936,6 +1399,61 @@ function mda_structures_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-structure-field_phone_sec'
+  $field_instances['node-structure-field_phone_sec'] = array(
+    'bundle' => 'structure',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'phone',
+        'settings' => array(),
+        'type' => 'phone',
+        'weight' => 20,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'phone',
+        'settings' => array(),
+        'type' => 'phone',
+        'weight' => 9,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_phone_sec',
+    'label' => 'Téléphone secretariat',
+    'required' => 0,
+    'settings' => array(
+      'ca_phone_parentheses' => 1,
+      'ca_phone_separator' => '-',
+      'phone_country_code' => 0,
+      'phone_default_country_code' => 1,
+      'phone_int_max_length' => 15,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'phone',
+      'settings' => array(),
+      'type' => 'phone_textfield',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-structure-field_practical_title'
   $field_instances['node-structure-field_practical_title'] = array(
     'bundle' => 'structure',
@@ -958,7 +1476,7 @@ function mda_structures_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 14,
       ),
       'list' => array(
         'label' => 'above',
@@ -1097,7 +1615,7 @@ function mda_structures_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'above',
@@ -1151,7 +1669,7 @@ function mda_structures_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 18,
+      'weight' => 20,
     ),
   );
 
@@ -1216,7 +1734,7 @@ function mda_structures_field_default_field_instances() {
         'context' => 'zoom_block',
       ),
       'type' => 'atom_reference_textfield',
-      'weight' => 17,
+      'weight' => 19,
     ),
   );
 
@@ -1406,23 +1924,29 @@ function mda_structures_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Adresse');
+  t('Adresse du siège de la structure');
   t('Champs d\'intervention');
+  t('Composition professionnelle');
   t('Contact email');
   t('Contact téléphone');
   t('Coordonnées géographiques');
   t('Descriptif de la structure');
   t('Fichier(s)');
+  t('Horaires');
   t('Horaires d\'ouverture');
+  t('Lieu de la permanence');
   t('Logo');
   t('Mission');
   t('Moyens d\'accès');
+  t('Nom de la direction');
+  t('Nom responsable chef de service');
+  t('Permanence(s)');
   t('Public');
   t('Secteur géographique');
   t('Site web');
   t('Titre infos pratiques');
   t('Type de structure');
-  t('Types d\'action');
+  t('Téléphone secretariat');
   t('Vidéo');
 
   return $field_instances;

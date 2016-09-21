@@ -479,10 +479,10 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_competence_fields']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_competence_fields']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Critère de tri: Global : Au hasard */
-  $handler->display->display_options['sorts']['random']['id'] = 'random';
-  $handler->display->display_options['sorts']['random']['table'] = 'views';
-  $handler->display->display_options['sorts']['random']['field'] = 'random';
+  /* Critère de tri: Contenu : Titre */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Critère de filtrage: Domain Access : Disponible sur le domaine actuel */
@@ -515,6 +515,7 @@ function mda_structures_views_default_views() {
     0 => '0',
     1 => '1',
     2 => '2',
+    3 => '3',
   );
   $handler->display->display_options['filters']['field_secteur_geo_value']['group'] = 1;
   $handler->display->display_options['filters']['field_secteur_geo_value']['exposed'] = TRUE;
@@ -526,6 +527,7 @@ function mda_structures_views_default_views() {
     2 => '2',
     1 => 0,
     141037677 => 0,
+    90711201 => 0,
     183916278 => 0,
     155963314 => 0,
     22875792 => 0,
@@ -585,7 +587,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Champ: Contenu : Email du gestionnaire */
+  /* Champ: Contenu : Contact email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -599,7 +601,7 @@ function mda_structures_views_default_views() {
   $handler->display->display_options['fields']['field_phone']['settings'] = array(
     'field_formatter_class' => '',
   );
-  /* Champ: Contenu : Lieu de l'événement */
+  /* Champ: Contenu : Adresse du siège de la structure */
   $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
   $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
@@ -630,7 +632,7 @@ function mda_structures_views_default_views() {
     t('Nom de la structure'),
     t('Infos contact'),
     t('Infos visibles sur une fiche événement'),
-    t('Email du gestionnaire'),
+    t('Contact email'),
     t('Contact téléphone'),
   );
   $export['structures'] = $view;

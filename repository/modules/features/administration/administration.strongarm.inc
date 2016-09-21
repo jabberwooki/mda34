@@ -83,26 +83,6 @@ function administration_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'captcha_placement_map_cache';
-  $strongarm->value = array(
-    'user_login' => array(
-      'path' => array(),
-      'key' => 'actions',
-      'weight' => 99,
-    ),
-    'contact_entityform_edit_form' => array(
-      'path' => array(
-        0 => 'actions',
-      ),
-      'key' => 'save',
-      'weight' => NULL,
-    ),
-  );
-  $export['captcha_placement_map_cache'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'entityform_block_types';
   $strongarm->value = array(
     0 => 'pre_inscription_pocket_film',

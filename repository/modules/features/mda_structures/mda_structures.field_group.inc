@@ -21,7 +21,7 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Paramètres supplémentaires',
-    'weight' => '19',
+    'weight' => '21',
     'children' => array(
       0 => 'field_practical_title',
     ),
@@ -40,37 +40,30 @@ function mda_structures_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_practical_content|node|structure|full';
-  $field_group->group_name = 'group_practical_content';
+  $field_group->identifier = 'group_equipe|node|structure|form';
+  $field_group->group_name = 'group_equipe';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'structure';
-  $field_group->mode = 'full';
-  $field_group->parent_name = 'group_practical_infos';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Contenu infos pratiques',
-    'weight' => '2',
+    'label' => 'Equipe',
+    'weight' => '17',
     'children' => array(
-      0 => 'field_access_means',
-      1 => 'field_address',
-      2 => 'field_email',
-      3 => 'field_logo',
-      4 => 'field_office_hours',
-      5 => 'field_phone',
-      6 => 'field_website',
+      0 => 'field_phone_sec',
+      1 => 'field_nom_direction',
+      2 => 'field_nom_responsable',
+      3 => 'field_composition_prof',
     ),
-    'format_type' => 'div',
+    'format_type' => 'fieldset',
     'format_settings' => array(
-      'label' => 'Contenu infos pratiques',
+      'formatter' => 'collapsible',
       'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-practical-content field-group-div panel-body',
         'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'none',
+        'classes' => 'group-equipe field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
       ),
-      'formatter' => 'open',
     ),
   );
   $field_groups[''] = $field_group;
@@ -86,7 +79,7 @@ function mda_structures_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Informations pratiques',
-    'weight' => '4',
+    'weight' => '3',
     'children' => array(
       0 => 'field_access_means',
       1 => 'field_address',
@@ -149,12 +142,41 @@ function mda_structures_field_group_info() {
   );
   $field_groups[''] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_territoire|node|structure|form';
+  $field_group->group_name = 'group_territoire';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'structure';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Territoire d’intervention',
+    'weight' => '18',
+    'children' => array(
+      0 => 'field_permanence',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-territoire field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups[''] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Caractéristiques');
-  t('Contenu infos pratiques');
+  t('Equipe');
   t('Informations pratiques');
   t('Paramètres supplémentaires');
+  t('Territoire d’intervention');
 
   return $field_groups;
 }

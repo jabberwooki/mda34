@@ -81,16 +81,16 @@ function mda_structures_strongarm() {
           'weight' => '0',
         ),
         'metatags' => array(
-          'weight' => '22',
+          'weight' => '24',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '20',
+          'weight' => '22',
         ),
         'redirect' => array(
-          'weight' => '21',
+          'weight' => '23',
         ),
       ),
       'display' => array(
@@ -100,7 +100,7 @@ function mda_structures_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => '9',
+            'weight' => '8',
             'visible' => TRUE,
           ),
           'list' => array(
